@@ -347,8 +347,9 @@ input[type="search"]::-webkit-search-results-decoration {
 		position: relative;
 	}
 	.dropdown-submenu > .dropdown-menu {
-		top: 0;
-		left: 100%;
+		top: 47px;
+		left: 0;
+		position: absolute;
 		margin-top: -6px;
 	}
 
@@ -366,8 +367,7 @@ input[type="search"]::-webkit-search-results-decoration {
 	li:hover > a {
 		color: #58585b;
 		padding: 0;
-
-		position: absolute;
+		position: relative;
 		font-weight: 900;
 	}
 
