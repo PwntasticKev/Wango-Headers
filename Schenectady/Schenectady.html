@@ -58,19 +58,6 @@
             <span class="header-toggle-text">SEARCH</span>
           </button>
 
-          <div class="page-search__row">
-            <div class="page-search__int row">
-              <div class="ais-search-box">
-                <input type="text" class="page-search__input js-psearch-input ais-search-box--input" id="page-search-input-head" name="keywords"
-                  placeholder="keyword search" required="required" aria-label="keyword search" value="" autocapitalize="off"
-                  autocomplete="off" autocorrect="off" role="textbox" spellcheck="false">
-              </div>
-
-              <span class="page-search__cancel js-psearch-cancel"></span>
-
-              <button type="button" class="search-close-toggle" data-search-toggle="true" title="Close Search" aria-label="Close search">X</button>
-            </div>
-          </div>
 
           <!-- END_SEARCH_ICON -->
           <button type="button" class="header-toggle header-toggle--nav" data-open="main-nav" title="Open main navigation" aria-label="Open main navigation"
@@ -85,6 +72,37 @@
     </div>
     </div>
   </section>
+
+  <div class="header-search">
+    <form id="page-search" class="page-search js-psearch" method="get" action="https://www.discoverschenectady.com/search/">
+      <div class="page-search__int">
+        <input type="hidden" name="CRAFT_CSRF_TOKEN" value="Ti6xp8HwpU0U4rq9Fp3_lyqGexxQaH1UScgtc81h">
+        <div class="page-search__row">
+          <div class="page-search__int row" id='page-search__int-id' id='mobile-input'>
+            <div class="ais-search-box">
+              <input type="text" class="page-search__input js-psearch-input ais-search-box--input" id="page-search-input-head" name="keywords"
+                placeholder="keyword search" required="required" aria-label="keyword search" value="" autocapitalize="off"
+                autocomplete="off" autocorrect="off" role="textbox" spellcheck="false">
+            </div>
+            <span class="page-search__cancel js-psearch-cancel"></span>
+            <section class='search-x-container'>
+              <button type="button" class="search-close-toggle" data-search-toggle="true" title="Close Search" aria-label="Close search">X</button>
+              <button type="submit" class="header-toggle header-toggle--search page-search__submit" title="Submit search" aria-label="Submit search"
+                id='mobile-search-icon'>
+                <svg viewBox="0 0 486 486" id="search" width="100%" height="100%" style='fill: white;'>
+                  <path d="M363.909 181.955C363.909 81.473 282.44 0 181.956 0 81.474 0 .001 81.473.001 181.955c0 100.482 81.473 181.951 181.955 181.951 100.484 0 181.953-81.469 181.953-181.951zM181.956 318.416c-75.252 0-136.465-61.208-136.465-136.46 0-75.252 61.213-136.465 136.465-136.465 75.25 0 136.468 61.213 136.468 136.465 0 75.252-61.218 136.46-136.468 136.46zm289.926 89.151L360.567 296.243a214.267 214.267 0 0 1-64.331 64.321L407.56 471.888c17.772 17.768 46.587 17.768 64.321 0 17.773-17.739 17.773-46.554.001-64.321z"></path>
+                </svg>
+              </button>
+          </div>
+        </div>
+
+        </section>
+      </div>
+      <div id="quick-hit-container" class="page-search__hit-list is-hidden"></div>
+    </form>
+  </div>
+
+
 </body>
 
 </html>

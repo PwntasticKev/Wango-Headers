@@ -112,3 +112,38 @@ html [type="button"] {
 #middle-col {
 	margin: 0px 20px;
 }
+
+/* HEADER_SEARCH */
+
+.header-search {
+	/* position: relative;
+	z-index: 50;
+	top: 0;
+	left: 0; */
+	width: 100%;
+	height: 100%;
+	background: lightblue;
+}
+
+#page-search__int-id {
+	margin: 0;
+}
+
+.search-close-toggle {
+	background: #507494;
+	height: 100%;
+	color: white;
+}
+
+#mobile-search-icon {
+	background: #a7ba79;
+}
+
+#page-search-input-head {
+	width: 100%;
+	height: 100%;
+}
+
+.ais-search-box {
+	width: 82%;
+}
