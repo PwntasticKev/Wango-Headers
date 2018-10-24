@@ -12,6 +12,7 @@
     crossorigin="anonymous">
 </head>
 
+
 <body>
   <header class='header-container'>
     <a href="https://www.fortworth.com/" class='logo'>
@@ -229,81 +230,101 @@
         <div class='X' style="display: none;">
           <i class="fa fa-times" aria-hidden="true"></i>
         </div>
-        <section class='searchInput'>
-          <div class="search-form active">
-            <form class="" data-sv-searchform="" action="https://www.fortworth.com/search/" method="GET">
-              <input data-sv-searchinput="" name="q" type="search" class="search-input" autocomplete="off" autocorrect="off" autocapitalize="off"
-                placeholder="" value="">
-              <button type="submit">
-                <i class="fa fa-search" aria-hidden="true"></i>
-              </button>
-            </form>
-          </div>
-        </section>
+        <div class="mobile-search">
+          <form class="" data-sv-searchform="" action="https://www.fortworth.com/search/" method="GET">
+            <input data-sv-searchinput="" name="q" type="search" class="search-input" autocomplete="off" autocorrect="off" autocapitalize="off"
+              placeholder="" value="">
+            <button type="submit">
+              <i class="fa fa-search" aria-hidden="true" id='mobile-search-glass'></i>
+            </button>
+          </form>
+        </div>
         <div class='language-container'>
           <a href='https://www.fortworth.com/about/weather/' class='weather'>
-            <i class="fa fa-sun-o" aria-hidden="true"></i>
-            59°
+            <i class="fas fa-cloud-sun" id='sun-mobile'></i>
+            <div id="temp">70°</div>
           </a>
-          <i class="fa fa-globe" aria-hidden="true"></i>
+          <i class="fas fa-globe-americas"></i>
           <div style="position: relative;">
-            <div id="google_translate_element">
-              Lang
-            </div>
+
           </div>
         </div>
         <section class='mobile-ul-container'>
 
-          <ul class="dropdown-menu">
-            <li>
-              <a href="#">Things To Do</a>
-            </li>
-            <!-- OPEN SECONDARY LI ↓ -->
-            <li class="dropdown-submenu">
-              <a tabindex="-1" href="#">More options</a>
-              <i class="fas fa-plus" id='more-options-plus'></i>
-              <!-- THIS IS SECOND LAYER DIV -->
-              <ul class="dropdown-menu" style="display: block">
-                <li>
-                  <a tabindex="-1" href="#">Second level</a>
-                </li>
-                <li>
-                  <a href="#">Second level</a>
-                </li>
-                <li>
-                  <!-- LAYER 3 OUTER ↓ -->
-                  <li class="dropdown-layer-3-container">
-                    <a tabindex="-1" href="#">3 options</a>
-                    <i class="fas fa-plus" id='more-options-plus'></i>
-                    <!-- THIS IS 3 LAYER DIV -->
-                    <ul class="layer-3-dropdown">
-                      <li>
-                        <a tabindex="-1" href="#">3 level</a>
-                      </li>
-                      <li>
-                        <a href="#">3 level</a>
-                      </li>
-                      <li>
-                        <a href="#">3 level</a>
-                      </li>
-                    </ul>
-                    <!-- THIS IS 3 LAYER DIV ↑ -->
-                  </li>
-                  <!-- LAYER 3 OUTER ↓ -->
-                </li>
-              </ul>
-              <!-- THIS IS SECOND LAYER DIV ↑ -->
-            </li>
-            <!-- CLOSE SECONDARY LI ↑ -->
-            <li>
-              <a href="#">Logout</a>
-            </li>
-          </ul>
+          <section class='link-container'>
+            <a href="https://www.fortworth.com/things-to-do/">Things To Do</a>
+            <i class="fa fa-plus" aria-hidden="true" id='plus'></i>
+          </section>
+
+          <section class='link-container'>
+            <a href="https://www.fortworth.com/events/">Events</a>
+            <i class="fa fa-plus" aria-hidden="true" id='plus'></i>
+          </section>
+
+          <section class='link-container'>
+            <a href="https://www.fortworth.com/restaurants/">Food</a>
+            <i class="fa fa-plus" aria-hidden="true" id='plus'></i>
+          </section>
+
+          <section class='link-container'>
+            <a href="https://www.fortworth.com/hotels/">Hotels</a>
+            <i class="fa fa-plus" aria-hidden="true" id='plus'></i>
+          </section>
+
+          <section class='link-container'>
+            <a href="https://www.fortworth.com/the-herd/">The Herd</a>
+            <i class="fa fa-plus" aria-hidden="true" id='plus'></i>
+          </section>
+
+          <section class='link-container'>
+            <a href="https://www.fortworth.com/meetings/">Meetings</a>
+            <i class="fa fa-plus" aria-hidden="true" id='plus'></i>
+          </section>
+
+          <section class='link-container'>
+            <a href="https://www.fortworth.com/sports/">Sports</a>
+            <i class="fa fa-plus" aria-hidden="true" id='plus'></i>
+          </section>
+
+          <section class='link-container'>
+            <a href="https://www.fortworth.com/trade/">Trade</a>
+          </section>
+
+          <section class='link-container'>
+            <a href="https://www.fortworth.com/media/">Media</a>
+            <i class="fa fa-plus" aria-hidden="true" id='plus'></i>
+          </section>
+
+          <section class='link-container'>
+            <a href="https://www.fortworth.com/film/">Film</a>
+            <i class="fa fa-plus" aria-hidden="true" id='plus'></i>
+          </section>
+
+          <section class='link-container'>
+            <a href="https://www.fortworth.com/music/">Music</a>
+            <i class="fa fa-plus" aria-hidden="true" id='plus'></i>
+          </section>
+
+          <section class='link-container'>
+            <a href="https://www.fortworth.com/about/">About</a>
+            <i class="fa fa-plus" aria-hidden="true" id='plus'></i>
+          </section>
+
+          <section class='link-container'>
+            <a href="https://www.fortworth.com/blog/">Blog</a>
+          </section>
+
+          <section class='link-container'>
+            <a href="https://www.fortworth.com/about/">About</a>
+          </section>
+
+          <section class='link-container'>
+            <a href="https://www.fortworth.com/fort-worth-visitors-information-centers/">Visitor Centers</a>
+          </section>
 
         </section>
       </section>
     </section>
-
 
     <!-- //END mobile -->
     <section class='main-container'>
@@ -324,32 +345,31 @@
           <a href="https://www.fortworth.com/the-herd/">The Herd</a>
         </li>
         <div class='language-container'>
-          <i class="fa fa-globe" aria-hidden="true"></i>
+          <i class="fas fa-globe-americas"></i>
           <div style="position: relative;">
-
             <div id="google_translate_element">
               Lang
             </div>
           </div>
           <a href='https://www.fortworth.com/about/weather/' class='weather'>
-            <i class="fa fa-sun-o" aria-hidden="true"></i>
-            59°
+            <i class="fas fa-cloud-sun"></i>
+            <div id="temp">70°</div>
           </a>
 
         </div>
         <div class='faSearch'>
-          <i id='search' class="fas fa-search"></i>
+          <i id='search' class="fas fa-search" style='z-index: 11;'></i>
         </div>
         <div class='faX' style="display: none;">
           <i class="fa fa-times" aria-hidden="true"></i>
         </div>
         <section class='searchInput' style="display: none;">
           <div class="search-form active">
-            <form class="" data-sv-searchform="" action="https://www.fortworth.com/search/" method="GET">
+            <form class="search-form" data-sv-searchform="" action="https://www.fortworth.com/search/" method="GET">
               <input data-sv-searchinput="" name="q" type="search" class="search-input" autocomplete="off" autocorrect="off" autocapitalize="off"
                 placeholder="" value="">
               <button type="submit">
-                <i class="fa fa-search" aria-hidden="true"></i>
+                <i class="fa fa-search" aria-hidden="true" style='z-index: 10;' id='search-glass'></i>
               </button>
             </form>
           </div>
@@ -388,6 +408,14 @@
         $(".X").hide()
         $('.mobile-nav-container').hide()
       });
+
+      var city = "Fort Worth";
+      var searchtext = "select item.condition from weather.forecast where woeid in (select woeid from geo.places(1) where text='" + city + "') and u='f'"
+      //change city variable dynamically as required
+      $.getJSON("https://query.yahooapis.com/v1/public/yql?q=" + searchtext + "&format=json").then(function (data) {
+        console.log(data);
+        $('#temp').html(data.query.results.channel.item.condition.temp + "°");
+      });
     })
   </script>
   <script type="text/javascript">
@@ -395,6 +423,8 @@
       new google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE }, 'google_translate_element');
     }
   </script>
+
+
 
   <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
