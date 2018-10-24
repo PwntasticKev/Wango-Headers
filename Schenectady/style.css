@@ -1,0 +1,114 @@
+.header-toggle__int {
+	position: relative;
+	width: 28px;
+	height: 28px;
+	margin: 0 auto;
+}
+
+.header-toggle__int:before {
+	content: "";
+	position: absolute;
+	left: 0;
+	width: 100%;
+	background: #fff;
+	top: 10px;
+	height: 4px;
+	box-shadow: 0 -10px 0 0 #fff, 0 10px 0 0 #fff;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+.show-for-sr,
+.show-on-focus {
+	position: absolute !important;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+}
+
+.container {
+	background: #132f46;
+}
+
+.header-toggle {
+	position: relative;
+	display: block;
+	float: right;
+	border: none;
+	z-index: 10;
+	height: 100%;
+	cursor: pointer;
+	padding: 8px;
+	background: transparent;
+	color: #fff;
+	text-align: center;
+	-webkit-transition: opacity 0.5s;
+	transition: opacity 0.5s;
+}
+
+.header-toggle--search {
+	width: 40px;
+}
+
+.itin__svg-wrapper {
+	display: inline-block;
+	width: 30px;
+	height: 28px;
+	border: 2px solid transparent;
+	border-radius: 50%;
+	background: transparent;
+}
+
+.nav__logo--header {
+	display: block;
+	position: absolute;
+	top: 11px;
+	left: 0;
+	right: 0;
+	width: 120px;
+	height: 39px;
+	margin: 0 auto;
+	-webkit-transition: -webkit-transform 1s;
+	transition: -webkit-transform 1s;
+	transition: transform 1s;
+	transition: transform 1s, -webkit-transform 1s;
+}
+
+html [type="button"] {
+	-webkit-appearance: button;
+}
+
+@media screen and (max-width: 640px) {
+	.header-toggle--weather .wthr__icon {
+		margin-top: 8px;
+	}
+}
+
+.small-12 {
+	-webkit-box-flex: 0;
+	flex: 0 0 100%;
+	max-width: 100%;
+}
+
+.header-toggle span {
+	display: none;
+}
+
+#col-flex {
+	align-items: center;
+	justify-content: space-between;
+	display: flex;
+	height: 60px;
+	padding: 0 5px;
+}
+
+.col a {
+	font-size: 29px;
+	display: flex;
+	align-items: center;
+}
+
+#middle-col {
+	margin: 0px 20px;
+}
