@@ -213,9 +213,20 @@ html [type="button"] {
 	min-height: 100vh;
 	margin-left: 0;
 	border: 0;
-	background: lightblue;
+	background: white;
+	/* background: url("https://www.discoverschenectady.com//images/bg-white.png"); */
 	border-radius: 0;
 	overflow-y: scroll;
+	z-index: 2000;
+	position: relative;
+}
+
+.splotchybackground {
+	position: absolute;
+	height: 100vh;
+	width: 100%;
+	left: 0;
+	top: 0;
 }
 
 .close-button {
@@ -258,7 +269,7 @@ html [type="button"] {
 .nav--primary-reveal .nav__link {
 	margin-bottom: 5px;
 	color: #252525;
-	font-size: 1.125rem;
+	font-size: 18px;
 	line-height: 1;
 }
 
@@ -266,7 +277,7 @@ html [type="button"] {
 	display: block;
 	text-decoration: none;
 	font-family: din-condensed, sans-serif;
-	font-size: 1.125rem;
+	font-size: 17px;
 	line-height: 1;
 	color: #252525;
 	text-transform: uppercase;
@@ -300,5 +311,105 @@ html [type="button"] {
 }
 
 #things-to-do-list {
-  display: none;
+	display: none;
+}
+
+#where-to-stay-list {
+	display: none;
+}
+
+#restauraunts-nightlife-list {
+	display: none;
+}
+
+#events-list {
+	display: none;
+}
+
+#plan-your-visit-list {
+	display: none;
+}
+
+.nav--secondary-reveal {
+	display: block;
+	padding: 20px 0 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: baseline;
+	font-family: din-2014, sans-serif;
+}
+
+.nav--secondary-reveal .nav__link {
+	margin-bottom: 10px;
+	padding: 0 18px;
+	text-transform: none;
+	font-family: din-2014, sans-serif;
+}
+
+.ilovenewyork {
+	width: 100%;
+	height: 22px;
+	fill: #000;
+	margin-top: 30px;
+}
+
+/* MEDIA QUERIES  */
+
+@media (min-width: 768px) {
+	.container {
+		max-width: 4000px !important;
+		width: 100% !important;
+	}
+
+	.main-menu-container {
+		top: 100px;
+		height: 58vh;
+		min-height: 40vh;
+	}
+	.mobile {
+		display: none;
+	}
+	.ilovenewyork-nav {
+		height: 22px;
+		fill: white;
+	}
+
+	#map-icon {
+		width: 70px;
+	}
+	#col-flex {
+		padding: 0 25px;
+	}
+	#middle-col {
+		margin: 0px 90px;
+	}
+	#things-to-do-list {
+		display: block;
+	}
+
+	#where-to-stay-list {
+		display: block;
+	}
+
+	#restauraunts-nightlife-list {
+		display: block;
+	}
+
+	#events-list {
+		display: block;
+	}
+
+	#plan-your-visit-list {
+		display: block;
+	}
+	.nav--primary-reveal .nav__item--primary {
+		width: 33.33%;
+		padding: 0;
+	}
+}
+
+@media (max-width: 767px) {
+	.desktop {
+		display: none;
+	}
 }
