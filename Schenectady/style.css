@@ -398,13 +398,46 @@ html [type="button"] {
 	#events-list {
 		display: block;
 	}
-
-	#plan-your-visit-list {
+	#things-to-do {
 		display: block;
+		font-size: 16px;
+		font-weight: 600;
+	}
+
+	#where-to-stay {
+		display: block;
+		font-size: 16px;
+		font-weight: 600;
+	}
+
+	#restauraunts-nightlife {
+		display: block;
+		font-size: 16px;
+		font-weight: 600;
+	}
+
+	#events {
+		display: block;
+		font-size: 16px;
+		font-weight: 600;
+	}
+
+	#plan-your-visit {
+		display: block;
+		font-size: 16px;
+		font-weight: 600;
 	}
 	.nav--primary-reveal .nav__item--primary {
 		width: 33.33%;
 		padding: 0;
+	}
+	#ul-container-desktop {
+		display: flex;
+		justify-content: space-between;
+	}
+	#ul-container-desktop li a {
+		font-size: 14px;
+		width: 250px;
 	}
 }
 
