@@ -24,7 +24,7 @@
             <a href="https://www.discoverschenectady.com/plan-your-visit/weather-average-temperatures/" class="header-toggle" title="Mostly Cloudy">
               <i class="fas fa-cloud-sun"></i>
               <span id="wthr-measure" class="wthr__measure"></span>
-              <span class="header-toggle-text header-toggle-text--weather">47
+              <span class="header-toggle-text header-toggle-text--weather" id='desktop-span'>47
                 <sup class="wthr__deg">°</sup>
               </span>
             </a>
@@ -36,6 +36,8 @@
                 <path d="M87.3 71l-1-12.3c-.6-7.3-6.7-12.8-14-12.8H66c8.1-11.5 7-27.1-2.6-37.3C53.1-2.4 36-2.9 25.2 7.4l-1.1 1.1c-9.6 10.2-10.7 25.8-2.7 37.3H15c-7.3 0-13.4 5.6-14 12.8L0 71c-.6 7.7 5.1 14.5 12.8 15.1h60.4c7.7 0 14-6.2 14-14 .1-.3.1-.7.1-1.1zM27 11.2c8.7-9.2 23.2-9.6 32.4-.9l.9.9c9.3 9.8 9.3 25.2 0 35.1L43.7 63.7 27 46.3c-9.3-9.9-9.3-25.3 0-35.1zm53.7 67.7c-1.9 2.1-4.6 3.2-7.4 3.2H14c-5.5 0-10-4.4-10-10v-.9L5 59c.5-5.2 4.8-9.2 10-9.2h9.8L42.3 68c.8.8 2 .8 2.8.1l.1-.1 17.4-18.1h9.8c5.2 0 9.5 4 10 9.2l1 12.3c.1 2.7-.8 5.4-2.7 7.5z"></path>
                 <path d="M43.7 35.6c5.8 0 10.6-4.7 10.6-10.6s-4.7-10.6-10.6-10.6S33.1 19.2 33.1 25c0 5.9 4.7 10.6 10.6 10.6zm0-17.1c3.6 0 6.6 3 6.6 6.6s-3 6.6-6.6 6.6-6.6-3-6.6-6.6c0-3.7 2.9-6.6 6.6-6.6z"></path>
               </svg>
+              <span class="header-toggle-text header-toggle-text--weather" id='desktop-span'>plan your visit
+              </span>
             </a>
           </div>
           <section class="desktop">
@@ -64,6 +66,7 @@
         <!-- END LOGO -->
         <div class="col" id='col-flex'>
           <section class="desktop">
+
             <a href="https://www.discoverschenectady.com/plan-your-visit/weather-average-temperatures/" class="header-toggle" title="Mostly Cloudy">
               <i class="fas fa-cloud-sun"></i>
               <span id="wthr-measure" class="wthr__measure"></span>
@@ -76,11 +79,10 @@
           <!-- SEARCH ICON -->
           <button type="button" class="header-toggle header-toggle--search" data-search-toggle="true" title="Open and close search"
             aria-label="Open and close search" id='nav-search-icon'>
-            <span class="show-for-sr">Open and close search</span>
-            <svg viewBox="0 0 486 486" id="search" width="100%" height="100%" style='fill: white;'>
+            <svg viewBox="0 0 486 486" id="search" width="100%" style='fill: white;'>
               <path d="M363.909 181.955C363.909 81.473 282.44 0 181.956 0 81.474 0 .001 81.473.001 181.955c0 100.482 81.473 181.951 181.955 181.951 100.484 0 181.953-81.469 181.953-181.951zM181.956 318.416c-75.252 0-136.465-61.208-136.465-136.46 0-75.252 61.213-136.465 136.465-136.465 75.25 0 136.468 61.213 136.468 136.465 0 75.252-61.218 136.46-136.468 136.46zm289.926 89.151L360.567 296.243a214.267 214.267 0 0 1-64.331 64.321L407.56 471.888c17.772 17.768 46.587 17.768 64.321 0 17.773-17.739 17.773-46.554.001-64.321z"></path>
             </svg>
-            <span class="header-toggle-text">SEARCH</span>
+            <!-- <span class="header-toggle-text" id='desktop-span'>SEARCH</span> -->
           </button>
 
 
@@ -91,7 +93,7 @@
             <div class='line' id='top-line'></div>
             <div class='line'></div>
             <div class='line' id='bottom-line'></div>
-            <span class="header-toggle-text">MENU</span>
+            <span class="header-toggle-text" id='desktop-span'>MENU</span>
           </section>
         </div>
       </div>
@@ -146,7 +148,7 @@
       <ul class="nav nav--primary-reveal" id='ul-container-desktop'>
         <li class="nav__item nav__item--primary has-children" role="presentation" aria-label="Go to Things to Do " id='things-to-do'>
           <!-- href="https://www.discoverschenectady.com/things-to-do/" -->
-          <a target="_self" rel="noopener" class="nav__link nav__link--primary ">
+          <a target="_self" rel="noopener" class="nav__link nav__link--primary " id='things-to-do-a'>
 
 
             Things to Do
@@ -342,50 +344,53 @@
         </li>
       </ul>
 
-      <ul class="nav nav--secondary-reveal">
-        <li class="nav__item nav__item--primary has-children" role="presentation" aria-label="Go to Meetings ">
-          <a href="https://www.discoverschenectady.com/meetings/" target="_self" rel="noopener" class="nav__link nav__link--primary ">
+      <section class='secondary-level'>
+
+        <ul class="nav nav--secondary-reveal">
+          <li class="nav__item nav__item--primary has-children" role="presentation" aria-label="Go to Meetings ">
+            <a href="https://www.discoverschenectady.com/meetings/" target="_self" rel="noopener" class="nav__link nav__link--primary ">
 
 
-            Meetings
-          </a>
-        </li>
-        <li class="nav__item nav__item--primary has-children" role="presentation" aria-label="Go to Weddings ">
-          <a href="https://www.discoverschenectady.com/weddings/" target="_self" rel="noopener" class="nav__link nav__link--primary ">
+              Meetings
+            </a>
+          </li>
+          <li class="nav__item nav__item--primary has-children" role="presentation" aria-label="Go to Weddings ">
+            <a href="https://www.discoverschenectady.com/weddings/" target="_self" rel="noopener" class="nav__link nav__link--primary ">
 
 
-            Weddings
-          </a>
-        </li>
-        <li class="nav__item nav__item--primary " role="presentation" aria-label="Go to About Us ">
-          <a href="https://www.discoverschenectady.com/about-us/" target="_self" rel="noopener" class="nav__link nav__link--primary ">
+              Weddings
+            </a>
+          </li>
+          <li class="nav__item nav__item--primary " role="presentation" aria-label="Go to About Us ">
+            <a href="https://www.discoverschenectady.com/about-us/" target="_self" rel="noopener" class="nav__link nav__link--primary ">
 
 
-            About Us
-          </a>
-        </li>
-        <li class="nav__item nav__item--primary has-children" role="presentation" aria-label="Go to Contact Us">
-          <a href="https://www.discoverschenectady.com/contact-us/" target="_self" rel="noopener" class="nav__link nav__link--primary ">
+              About Us
+            </a>
+          </li>
+          <li class="nav__item nav__item--primary has-children" role="presentation" aria-label="Go to Contact Us">
+            <a href="https://www.discoverschenectady.com/contact-us/" target="_self" rel="noopener" class="nav__link nav__link--primary ">
 
 
-            Contact Us
-          </a>
-        </li>
-        <li class="nav__item nav__item--primary " role="presentation" aria-label="Go to Partner Login">
-          <a href="https://discoverschenectady.idss.com/" target="_blank" rel="noopener" class="nav__link nav__link--primary  dms-ext-link">
+              Contact Us
+            </a>
+          </li>
+          <li class="nav__item nav__item--primary " role="presentation" aria-label="Go to Partner Login">
+            <a href="https://discoverschenectady.idss.com/" target="_blank" rel="noopener" class="nav__link nav__link--primary  dms-ext-link">
 
 
-            Partner Login
-          </a>
-        </li>
-        <li class="nav__item nav__item--primary has-children" role="presentation" aria-label="Go to Media &amp; Press">
-          <a href="https://www.discoverschenectady.com/media-press/" target="_self" rel="noopener" class="nav__link nav__link--primary ">
+              Partner Login
+            </a>
+          </li>
+          <li class="nav__item nav__item--primary has-children" role="presentation" aria-label="Go to Media &amp; Press">
+            <a href="https://www.discoverschenectady.com/media-press/" target="_self" rel="noopener" class="nav__link nav__link--primary ">
 
 
-            Media &amp; Press
-          </a>
-        </li>
-      </ul>
+              Media &amp; Press
+            </a>
+          </li>
+        </ul>
+      </section>
       <div class='ilovenewyork'>
 
         <svg viewBox="0 0 206 51" id="logo-ny" width="100%" height="100%">
