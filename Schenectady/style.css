@@ -27,7 +27,13 @@
 	clip: rect(0, 0, 0, 0);
 }
 
-.container {
+#weather-id {
+	text-decoration: none;
+	color: white;
+	list-style-type: none;
+}
+
+.header-container-nav {
 	background: #132f46;
 }
 
@@ -75,6 +81,11 @@
 	transition: transform 1s, -webkit-transform 1s;
 }
 
+.desktop a {
+	text-decoration: none;
+	color: white;
+}
+
 html [type="button"] {
 	-webkit-appearance: button;
 }
@@ -95,6 +106,10 @@ html [type="button"] {
 	display: none;
 }
 
+#desktop-span {
+	display: none;
+}
+
 #col-flex {
 	align-items: center;
 	justify-content: space-between;
@@ -107,6 +122,8 @@ html [type="button"] {
 	font-size: 29px;
 	display: flex;
 	align-items: center;
+	text-decoration: none;
+	color: white;
 }
 
 #middle-col {
@@ -356,14 +373,14 @@ html [type="button"] {
 /* MEDIA QUERIES  */
 
 @media (min-width: 768px) {
-	.container {
+	.header-container-nav {
 		max-width: 4000px !important;
 		width: 100% !important;
 	}
 
 	.main-menu-container {
 		top: 100px;
-		height: 58vh;
+		height: 60vh;
 		min-height: 40vh;
 	}
 	.mobile {
@@ -375,7 +392,7 @@ html [type="button"] {
 	}
 
 	#map-icon {
-		width: 70px;
+		width: 59px;
 	}
 	#col-flex {
 		padding: 0 25px;
@@ -383,48 +400,69 @@ html [type="button"] {
 	#middle-col {
 		margin: 0px 90px;
 	}
+
+	#ul-container-desktop li a {
+		font-size: 11px;
+		width: 250px;
+	}
+	#ul-container-desktop {
+		padding-right: 30px;
+		padding-left: 10px;
+		margin-top: 28px;
+	}
+
 	#things-to-do-list {
 		display: block;
+		font-size: 11px;
+		font-weight: normal;
+		margin-bottom: 15px;
 	}
 
 	#where-to-stay-list {
 		display: block;
+		font-size: 11px;
 	}
 
 	#restauraunts-nightlife-list {
 		display: block;
+		font-size: 11px;
 	}
 
 	#events-list {
 		display: block;
+		font-size: 14px !important;
 	}
-	#things-to-do {
+	#plan-your-visit-list {
 		display: block;
-		font-size: 16px;
+		font-size: 14px !important;
+	}
+	#things-to-do-a {
+		display: block;
+		font-size: 14px !important;
 		font-weight: 600;
 	}
 
 	#where-to-stay {
 		display: block;
-		font-size: 16px;
+		font-size: 14px !important;
 		font-weight: 600;
 	}
 
 	#restauraunts-nightlife {
 		display: block;
-		font-size: 16px;
+		font-size: 14px !important;
 		font-weight: 600;
 	}
 
 	#events {
 		display: block;
-		font-size: 16px;
+		font-size: 14px !important;
 		font-weight: 600;
 	}
 
 	#plan-your-visit {
 		display: block;
-		font-size: 16px;
+		font-size: 14px !important;
 		font-weight: 600;
 	}
 	.nav--primary-reveal .nav__item--primary {
@@ -435,9 +473,216 @@ html [type="button"] {
 		display: flex;
 		justify-content: space-between;
 	}
+	.nav--primary-reveal .nav__item-toggle {
+		display: none;
+	}
+	.reveal-logo {
+		padding: 28px 15px;
+	}
+	.nav--secondary-reveal {
+		margin: 0 50px;
+		flex-direction: row;
+		align-items: baseline;
+		font-family: din-2014, sans-serif;
+		justify-content: center;
+	}
+	.splotchybackground {
+		height: 60vh;
+	}
+	.ilovenewyork {
+		display: none;
+	}
+	.ais-search-box {
+		width: 85%;
+	}
+	.search-close-toggle {
+		width: 50px;
+	}
+	#mobile-search-icon {
+		width: 50px;
+	}
+	#page-search__int-id {
+		display: flex;
+		justify-content: center;
+	}
+	.close-button {
+		width: 45px;
+		height: 45px;
+		font-size: 18px;
+	}
+	.secondary-level {
+		bottom: 20px;
+		position: absolute;
+	}
+}
+
+@media (min-width: 1024px) {
+	.secondary-level {
+		position: absolute;
+		bottom: 20px;
+		width: 100%;
+		justify-content: center;
+		display: flex;
+		left: 0;
+	}
+	#events {
+		margin-top: 35px;
+	}
+	#plan-you-visit {
+		margin-top: 35px;
+	}
+	.splotchybackground {
+		height: 56vh;
+	}
+	.main-menu-container {
+		height: 56vh;
+	}
+	#map-icon {
+		width: 49px;
+	}
+}
+
+@media (min-width: 1025px) {
 	#ul-container-desktop li a {
-		font-size: 14px;
-		width: 255px;
+		width: 187px;
+		flex-wrap: nowrap;
+	}
+	#ul-container-desktop {
+		flex-wrap: nowrap;
+	}
+	#events {
+		margin-top: 0;
+	}
+	#ul-container-desktop {
+		padding-left: 22px;
+	}
+	.main-menu-container {
+		overflow-y: hidden;
+		top: 135px;
+		height: 64vh;
+	}
+	.splotchybackground {
+		height: 64vh;
+	}
+	.header-container-nav {
+		background: #132f46;
+		height: 83px;
+	}
+	#header-container {
+		padding: 0 45px;
+	}
+
+	.header-toggle span {
+		display: block;
+		font-size: 11px;
+	}
+	#col-flex {
+		align-items: center;
+		height: 80px;
+	}
+	.col a {
+		flex-direction: column;
+	}
+	.nav__logo--header {
+		width: 150px;
+		height: 55px;
+	}
+
+	#desktop-span {
+		position: absolute;
+		color: white;
+		font-size: 11px;
+		bottom: 2px;
+	}
+
+	#nav-span-search {
+		position: absolute;
+		bottom: 2px;
+		left: 0;
+	}
+
+	#nav-span-menu {
+		position: absolute;
+		bottom: 2px;
+		left: 7px;
+	}
+	#nav-span-weather {
+		position: absolute;
+		bottom: -15px;
+	}
+	#map-icon {
+		width: 50px;
+	}
+
+	.header-toggle-text {
+		display: block;
+		font-family: din-condensed, sans-serif;
+		font-size: 1.0625rem;
+		line-height: 1;
+		padding-top: 8px;
+	}
+
+	#desktop-span {
+		display: block;
+	}
+}
+@media (min-width: 1199px) {
+	.main-menu-container {
+		top: 130px;
+		height: 64vh;
+	}
+	.splotchybackground {
+		height: 64vh;
+	}
+	#ul-container-desktop {
+		padding-left: 35px;
+	}
+
+	.header-search {
+		top: 7px;
+	}
+	#page-search__int-id {
+		height: 70px;
+	}
+	.search-close-toggle {
+		height: 60px;
+	}
+	.ais-search-box {
+		width: 47%;
+	}
+	#map-icon {
+		width: 37px;
+	}
+	.reveal-overlay {
+		padding: 20px 69px;
+	}
+}
+
+@media (min-width: 1230px) {
+	#map-icon {
+		width: 40px;
+	}
+	#middle-col {
+		margin: 0px 160px;
+	}
+}
+
+@media (min-width: 1400px) {
+	#map-icon {
+		width: 35px;
+	}
+	#middle-col {
+		margin: 0px 190px;
+	}
+}
+@media (min-width: 1600px) {
+	#middle-col {
+		margin: 0px 240px;
+	}
+}
+@media (min-width: 1850px) {
+	#middle-col {
+		margin: 0px 340px;
 	}
 }
 
