@@ -37,6 +37,10 @@
 	background: #132f46;
 }
 
+#logo {
+  width: 143px;
+}
+
 .header-toggle {
 	position: relative;
 	display: block;
@@ -54,7 +58,12 @@
 }
 
 .header-toggle--search {
-	width: 40px;
+  width: 40px;
+  font-size:33px;
+}
+
+.fas {
+  font-size:26px;
 }
 
 .itin__svg-wrapper {
@@ -66,12 +75,14 @@
 	background: transparent;
 }
 
+.row1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+}
+
 .nav__logo--header {
 	display: block;
-	position: absolute;
-	top: 11px;
-	left: 0;
-	right: 0;
 	width: 120px;
 	height: 39px;
 	margin: 0 auto;
@@ -114,8 +125,8 @@ html [type="button"] {
 	align-items: center;
 	justify-content: space-between;
 	display: flex;
-	height: 60px;
-	padding: 0 5px;
+  height: 60px;
+  
 }
 
 .col a {
@@ -127,7 +138,7 @@ html [type="button"] {
 }
 
 #middle-col {
-	margin: 0px 20px;
+	margin: 0px 43px;
 }
 
 /* HEADER_SEARCH */
@@ -164,7 +175,8 @@ html [type="button"] {
 
 #page-search__int-id {
 	padding: 5px;
-	height: 60px;
+  height: 60px;
+  display: flex;
 }
 
 .ais-search-box {
@@ -223,11 +235,12 @@ html [type="button"] {
 
 .main-menu-container {
 	text-align: center;
-	left: 0;
+  left: 0;
+  top:20px;
 	width: 100%;
 	max-width: none;
-	height: 100vh;
-	min-height: 100vh;
+	height: 86vh;
+	min-height: 86vh;
 	margin-left: 0;
 	border: 0;
 	background: white;
@@ -240,11 +253,12 @@ html [type="button"] {
 
 .splotchybackground {
 	position: absolute;
-	height: 100vh;
+	height: 86vh;
 	width: 100%;
 	left: 0;
 	top: 0;
 }
+
 
 .close-button {
 	position: absolute;
@@ -267,7 +281,9 @@ html [type="button"] {
 	position: relative;
 	width: 100%;
 	padding: 10px 15px;
-	margin-bottom: 8px;
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: center;
 }
 
 .svg-container {
@@ -287,7 +303,13 @@ html [type="button"] {
 	margin-bottom: 5px;
 	color: #252525;
 	font-size: 18px;
-	line-height: 1;
+  line-height: 1;
+  padding: 7px 12px;
+}
+
+
+.nav--primary-reveal li {
+	border: none;
 }
 
 .nav__link {
@@ -306,10 +328,12 @@ html [type="button"] {
 	display: inline-block;
 }
 
+
+
 .nav--primary-reveal .nav__item-toggle {
 	display: block;
 	position: absolute;
-	top: -2px;
+	top: 4px;
 	right: 0;
 	width: 30px;
 	height: 20px;
@@ -324,7 +348,8 @@ html [type="button"] {
 	transition: -webkit-transform 0.25s linear;
 	transition: transform 0.25s linear;
 	transition: transform 0.25s linear, -webkit-transform 0.25s linear;
-	overflow: hidden;
+  overflow: hidden;
+  
 }
 
 #things-to-do-list {
@@ -355,12 +380,16 @@ html [type="button"] {
 	align-items: baseline;
 	font-family: din-2014, sans-serif;
 }
+.nav--secondary-reveal li {
+  border: none;
+}
 
 .nav--secondary-reveal .nav__link {
 	margin-bottom: 10px;
 	padding: 0 18px;
 	text-transform: none;
-	font-family: din-2014, sans-serif;
+  font-family: din-2014, sans-serif;
+  font-size: 18px;
 }
 
 .ilovenewyork {
@@ -380,7 +409,7 @@ html [type="button"] {
 
 	.main-menu-container {
 		top: 100px;
-		height: 60vh;
+		height: 64vh;
 		min-height: 40vh;
 	}
 	.mobile {
@@ -389,26 +418,31 @@ html [type="button"] {
 	.ilovenewyork-nav {
 		height: 22px;
 		fill: white;
-	}
+  }
+  
+  #logo-ny {
+    height: 25px;
+  }
 
 	#map-icon {
 		width: 59px;
 	}
-	#col-flex {
-		padding: 0 25px;
-	}
-	#middle-col {
-		margin: 0px 90px;
-	}
+  #middle-col {
+    margin: 0px 130px;
+}
 
 	#ul-container-desktop li a {
 		font-size: 11px;
-		width: 250px;
+    width: 250px;
+    border: none;
 	}
 	#ul-container-desktop {
 		padding-right: 30px;
 		padding-left: 10px;
-		margin-top: 28px;
+    margin-top: 28px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
 	}
 
 	#things-to-do-list {
@@ -480,14 +514,18 @@ html [type="button"] {
 		padding: 28px 15px;
 	}
 	.nav--secondary-reveal {
-		margin: 0 50px;
+		margin: 0 55px;
 		flex-direction: row;
-		align-items: baseline;
+    align-items: baseline;
+    flex-wrap: wrap;
+    justify-content: center;
 		font-family: din-2014, sans-serif;
-		justify-content: center;
-	}
+  }
+  .nav--secondary-reveal .nav__link {
+    border:none;
+}
 	.splotchybackground {
-		height: 60vh;
+		height: 64vh;
 	}
 	.ilovenewyork {
 		display: none;
@@ -511,7 +549,7 @@ html [type="button"] {
 		font-size: 18px;
 	}
 	.secondary-level {
-		bottom: 20px;
+		bottom: -7px;
 		position: absolute;
 	}
 }
@@ -559,10 +597,10 @@ html [type="button"] {
 	.main-menu-container {
 		overflow-y: hidden;
 		top: 135px;
-		height: 64vh;
+		height: 44vh;
 	}
 	.splotchybackground {
-		height: 64vh;
+		height: 44vh;
 	}
 	.header-container-nav {
 		background: #132f46;
@@ -592,7 +630,8 @@ html [type="button"] {
 		position: absolute;
 		color: white;
 		font-size: 11px;
-		bottom: 2px;
+    bottom: 2px;
+    left: 17px;
 	}
 
 	#nav-span-search {
@@ -608,7 +647,9 @@ html [type="button"] {
 	}
 	#nav-span-weather {
 		position: absolute;
-		bottom: -15px;
+    bottom: -15px;
+    left: 17px;
+
 	}
 	#map-icon {
 		width: 50px;
@@ -655,7 +696,10 @@ html [type="button"] {
 	}
 	.reveal-overlay {
 		padding: 20px 69px;
-	}
+  }
+  #middle-col {
+    margin: 0px 255px;
+}
 }
 
 @media (min-width: 1230px) {
@@ -663,7 +707,7 @@ html [type="button"] {
 		width: 40px;
 	}
 	#middle-col {
-		margin: 0px 160px;
+		margin: 0px 300px;
 	}
 }
 
@@ -672,7 +716,7 @@ html [type="button"] {
 		width: 35px;
 	}
 	#middle-col {
-		margin: 0px 190px;
+		margin: 0px 400px;
 	}
 }
 @media (min-width: 1600px) {
