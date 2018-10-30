@@ -616,7 +616,8 @@ html [type="button"] {
 	}
 	#col-flex {
 		align-items: center;
-		height: 80px;
+    height: 80px;
+    padding: 0 22px;
 	}
 	.col a {
 		flex-direction: column;
@@ -631,24 +632,34 @@ html [type="button"] {
 		color: white;
 		font-size: 11px;
     bottom: 2px;
-    left: 17px;
+    left: 42px;
+    font-weight: bold;
+    font-family: roboto, sans-serif;
 	}
 
 	#nav-span-search {
 		position: absolute;
 		bottom: 2px;
-		left: 0;
+    left: 2px;
+    font-weight: bold;
+    font-family: roboto, sans-serif;
 	}
 
 	#nav-span-menu {
 		position: absolute;
 		bottom: 2px;
-		left: 7px;
+    left: 9px;
+    font-weight: bold;
+    font-family: roboto, sans-serif;
 	}
 	#nav-span-weather {
 		position: absolute;
     bottom: -15px;
-    left: 17px;
+    left: 14px;
+    font-weight: bold;
+    font-family: roboto, sans-serif;
+    font-size: 15px
+
 
 	}
 	#map-icon {
@@ -670,10 +681,10 @@ html [type="button"] {
 @media (min-width: 1199px) {
 	.main-menu-container {
 		top: 130px;
-		height: 64vh;
+		height: 44vh;
 	}
 	.splotchybackground {
-		height: 64vh;
+		height: 44vh;
 	}
 	#ul-container-desktop {
 		padding-left: 35px;
@@ -692,7 +703,7 @@ html [type="button"] {
 		width: 47%;
 	}
 	#map-icon {
-		width: 37px;
+    width: 56px;
 	}
 	.reveal-overlay {
 		padding: 20px 69px;
