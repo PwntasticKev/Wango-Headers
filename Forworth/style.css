@@ -21,6 +21,10 @@
 	color: white;
 	list-style-type: none;
 	position: relative;
+	font-family: open-sans, sans-serif;
+	font-weight: 700;
+	-webkit-font-smoothing: antialiased;
+	margin-bottom: 9px;
 }
 
 .ul-container * {
@@ -28,10 +32,11 @@
 }
 
 .ul-container li {
-	font-size: 18px;
+	font-size: 16px;
 	cursor: pointer;
 	width: calc(8% + 50px);
 	text-align: center;
+	font-weight: 700;
 }
 
 .ul-container li a {
@@ -60,6 +65,8 @@
 
 .logo {
 	width: 191px;
+	margin-right: 140px;
+	padding-left: 7px;
 }
 
 .language-menu {
@@ -111,6 +118,7 @@
 .language-container {
 	display: flex;
 	align-items: center;
+	margin-left: 24px;
 }
 .weather {
 	margin: 0 20px;
