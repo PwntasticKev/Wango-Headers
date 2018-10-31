@@ -19,7 +19,7 @@
 }
 
 .search-x-container {
-  display:flex;
+	display: flex;
 }
 
 .show-for-sr,
@@ -38,11 +38,11 @@
 }
 
 .header-container-nav {
-  background: #132f46;
+	background: #132f46;
 }
 
 #logo {
-  width: 143px;
+	width: 143px;
 }
 
 .header-toggle {
@@ -62,12 +62,12 @@
 }
 
 .header-toggle--search {
-  width: 40px;
-  font-size:33px;
+	width: 40px;
+	font-size: 33px;
 }
 
 .fas {
-  font-size:26px;
+	font-size: 26px;
 }
 
 .itin__svg-wrapper {
@@ -80,10 +80,11 @@
 }
 
 .row1 {
-  display:flex;
-  justify-content: space-between;
-  align-items: center;
-  align-content: center;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	align-content: center;
+	padding: 0 20px;
 }
 
 .nav__logo--header {
@@ -130,8 +131,7 @@ html [type="button"] {
 	align-items: center;
 	justify-content: space-between;
 	display: flex;
-  height: 60px;
-  
+	height: 60px;
 }
 
 .col a {
@@ -153,26 +153,25 @@ html [type="button"] {
 	z-index: 50;
 	top: 0;
 	width: 100%;
-  height: 60px;
-  padding-left: 5px;
+	height: 60px;
+	padding-left: 5px;
 }
-
 
 .search-close-toggle {
 	background: #507494;
 	height: 50px;
 	color: white;
 	border: none;
-  margin: 0 1px;
-  align-items: center;
-  display: flex;
-  justify-content: center;
+	margin: 0 1px;
+	align-items: center;
+	display: flex;
+	justify-content: center;
 }
 
 #mobile-search-icon {
-  background: #a7ba79;
-  align-items: center;
-  display: flex;
+	background: #a7ba79;
+	align-items: center;
+	display: flex;
 }
 
 #page-search-input-head {
@@ -183,9 +182,9 @@ html [type="button"] {
 
 #page-search__int-id {
 	padding: 5px;
-  height: 60px;
-  display: flex;
-  width:102vw;
+	height: 60px;
+	display: flex;
+	width: 102vw;
 }
 
 .ais-search-box {
@@ -244,8 +243,8 @@ html [type="button"] {
 
 .main-menu-container {
 	text-align: center;
-  left: 0;
-  top:20px;
+	left: 0;
+	top: 20px;
 	width: 100%;
 	max-width: none;
 	height: 86vh;
@@ -268,7 +267,6 @@ html [type="button"] {
 	top: 0;
 }
 
-
 .close-button {
 	position: absolute;
 	top: 0;
@@ -290,9 +288,9 @@ html [type="button"] {
 	position: relative;
 	width: 100%;
 	padding: 10px 15px;
-  margin-bottom: 25px;
-  display: flex;
-  justify-content: center;
+	margin-bottom: 25px;
+	display: flex;
+	justify-content: center;
 }
 
 .svg-container {
@@ -305,19 +303,18 @@ html [type="button"] {
 .nav--primary-reveal .nav__item--primary {
 	width: 100%;
 	display: block;
-  text-align: left;
-  border: none;
-  background: none;
+	text-align: left;
+	border: none;
+	background: none;
 }
 
 .nav--primary-reveal .nav__link {
 	margin-bottom: 5px;
 	color: #252525;
 	font-size: 18px;
-  line-height: 1;
-  padding: 7px 12px;
+	line-height: 1;
+	padding: 7px 12px;
 }
-
 
 .nav--primary-reveal li {
 	border: none;
@@ -339,8 +336,6 @@ html [type="button"] {
 	display: inline-block;
 }
 
-
-
 .nav--primary-reveal .nav__item-toggle {
 	display: block;
 	position: absolute;
@@ -359,10 +354,9 @@ html [type="button"] {
 	transition: -webkit-transform 0.25s linear;
 	transition: transform 0.25s linear;
 	transition: transform 0.25s linear, -webkit-transform 0.25s linear;
-  overflow: hidden;
-  border:none;
-  background: none;
-  
+	overflow: hidden;
+	border: none;
+	background: none;
 }
 
 #things-to-do-list {
@@ -394,15 +388,15 @@ html [type="button"] {
 	font-family: din-2014, sans-serif;
 }
 .nav--secondary-reveal li {
-  border: none;
+	border: none;
 }
 
 .nav--secondary-reveal .nav__link {
 	margin-bottom: 10px;
 	padding: 0 18px;
 	text-transform: none;
-  font-family: din-2014, sans-serif;
-  font-size: 18px;
+	font-family: din-2014, sans-serif;
+	font-size: 18px;
 }
 
 .ilovenewyork {
@@ -431,33 +425,33 @@ html [type="button"] {
 	.ilovenewyork-nav {
 		height: 22px;
 		fill: white;
-  }
-  
-  #logo-ny {
-    height: 25px;
-  }
+	}
+
+	#logo-ny {
+		height: 25px;
+	}
 
 	#map-icon {
-    width: 59px;
-    
-    margin-bottom: 6px;
+		width: 59px;
+
+		margin-bottom: 6px;
 	}
-  #middle-col {
-    margin: 0px 180px;
-}
+	#middle-col {
+		margin: 0px 180px;
+	}
 
 	#ul-container-desktop li a {
 		font-size: 11px;
-    width: 250px;
-    border: none;
+		width: 250px;
+		border: none;
 	}
 	#ul-container-desktop {
 		padding-right: 30px;
 		padding-left: 10px;
-    margin-top: 28px;
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
+		margin-top: 28px;
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
 	}
 
 	#things-to-do-list {
@@ -531,14 +525,14 @@ html [type="button"] {
 	.nav--secondary-reveal {
 		margin: 0 55px;
 		flex-direction: row;
-    align-items: baseline;
-    flex-wrap: wrap;
-    justify-content: center;
+		align-items: baseline;
+		flex-wrap: wrap;
+		justify-content: center;
 		font-family: din-2014, sans-serif;
-  }
-  .nav--secondary-reveal .nav__link {
-    border:none;
-}
+	}
+	.nav--secondary-reveal .nav__link {
+		border: none;
+	}
 	.splotchybackground {
 		height: 64vh;
 	}
@@ -593,9 +587,17 @@ html [type="button"] {
 	#map-icon {
 		width: 49px;
 	}
+	#logo-ny {
+		height: 19px;
+		display: inline-block;
+		width: 83px;
+	}
 }
 
 @media (min-width: 1025px) {
+	.row1 {
+		padding: 0;
+	}
 	#ul-container-desktop li a {
 		width: 187px;
 		flex-wrap: nowrap;
@@ -631,8 +633,8 @@ html [type="button"] {
 	}
 	#col-flex {
 		align-items: center;
-    height: 80px;
-    padding: 0 22px;
+		height: 80px;
+		padding: 0 22px;
 	}
 	.col a {
 		flex-direction: column;
@@ -646,36 +648,35 @@ html [type="button"] {
 		position: absolute;
 		color: white;
 		font-size: 11px;
-    bottom: 2px;
-    left: 42px;
-    font-weight: bold;
-    font-family: roboto, sans-serif;
+		bottom: -21px;
+		left: -17px;
+		width: 100px;
+		font-weight: bold;
+		font-family: roboto, sans-serif;
 	}
 
 	#nav-span-search {
 		position: absolute;
 		bottom: 2px;
-    left: 2px;
-    font-weight: bold;
-    font-family: roboto, sans-serif;
+		left: 2px;
+		font-weight: bold;
+		font-family: roboto, sans-serif;
 	}
 
 	#nav-span-menu {
 		position: absolute;
 		bottom: 2px;
-    left: 9px;
-    font-weight: bold;
-    font-family: roboto, sans-serif;
+		left: 9px;
+		font-weight: bold;
+		font-family: roboto, sans-serif;
 	}
 	#nav-span-weather {
 		position: absolute;
-    bottom: -15px;
-    left: 14px;
-    font-weight: bold;
-    font-family: roboto, sans-serif;
-    font-size: 15px
-
-
+		bottom: -15px;
+		left: 14px;
+		font-weight: bold;
+		font-family: roboto, sans-serif;
+		font-size: 15px;
 	}
 	#map-icon {
 		width: 50px;
@@ -718,14 +719,14 @@ html [type="button"] {
 		width: 47%;
 	}
 	#map-icon {
-    width: 56px;
+		width: 56px;
 	}
 	.reveal-overlay {
 		padding: 20px 69px;
-  }
-  #middle-col {
-    margin:255px;
-}
+	}
+	#middle-col {
+		margin: 0 255px;
+	}
 }
 
 @media (min-width: 1230px) {
@@ -751,9 +752,9 @@ html [type="button"] {
 	}
 }
 @media (min-width: 1580px) {
-  #middle-col {
-    margin: 0 465px;
-}
+	#middle-col {
+		margin: 0 465px;
+	}
 }
 @media (min-width: 1850px) {
 	#middle-col {
