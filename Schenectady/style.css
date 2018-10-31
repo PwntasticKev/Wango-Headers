@@ -38,7 +38,7 @@
 }
 
 .header-container-nav {
-	background: #132f46;
+  background: #132f46;
 }
 
 #logo {
@@ -80,9 +80,10 @@
 }
 
 .row1 {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display:flex;
+  justify-content: space-between;
   align-items: center;
+  align-content: center;
 }
 
 .nav__logo--header {
@@ -162,8 +163,10 @@ html [type="button"] {
 	height: 50px;
 	color: white;
 	border: none;
-	margin: 0 1px;    align-items: center;
+  margin: 0 1px;
+  align-items: center;
   display: flex;
+  justify-content: center;
 }
 
 #mobile-search-icon {
@@ -341,7 +344,7 @@ html [type="button"] {
 .nav--primary-reveal .nav__item-toggle {
 	display: block;
 	position: absolute;
-	top: 4px;
+	top: 2px;
 	right: 0;
 	width: 30px;
 	height: 20px;
@@ -435,10 +438,12 @@ html [type="button"] {
   }
 
 	#map-icon {
-		width: 59px;
+    width: 59px;
+    
+    margin-bottom: 6px;
 	}
   #middle-col {
-    margin: 0px 130px;
+    margin: 0px 180px;
 }
 
 	#ul-container-desktop li a {
@@ -734,16 +739,21 @@ html [type="button"] {
 
 @media (min-width: 1400px) {
 	#map-icon {
-		width: 35px;
+		width: 50px;
 	}
 	#middle-col {
 		margin: 0 400px;
 	}
 }
-@media (min-width: 1600px) {
-	#middle-col {
-		margin: 0 240px;
+@media (min-width: 1475px) {
+	#map-icon {
+		width: 55px;
 	}
+}
+@media (min-width: 1580px) {
+  #middle-col {
+    margin: 0 465px;
+}
 }
 @media (min-width: 1850px) {
 	#middle-col {
