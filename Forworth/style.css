@@ -460,8 +460,12 @@ input[type="search"]::-webkit-search-results-decoration {
 		padding: 0 5px;
 	}
 	#li-things-to-do {
-		width: 228px;
-	}
+		width: 187px;
+  }
+  .logo {
+    margin-right: 129px;
+    margin-left: 4px;
+  }
 }
 @media (min-width: 1300px) {
 	.search-form.active {
