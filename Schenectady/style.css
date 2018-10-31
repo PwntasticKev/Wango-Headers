@@ -39,8 +39,6 @@
 
 .header-container-nav {
   background: #132f46;
-    display: grid;
-    grid-template-columns: 1fr;
 }
 
 #logo {
@@ -440,7 +438,9 @@ html [type="button"] {
   }
 
 	#map-icon {
-		width: 59px;
+    width: 59px;
+    
+    margin-bottom: 6px;
 	}
   #middle-col {
     margin: 0px 180px;
@@ -747,16 +747,13 @@ html [type="button"] {
 }
 @media (min-width: 1475px) {
 	#map-icon {
-		width: 50px;
-	}
-	#middle-col {
-		margin: 0 600px;
+		width: 55px;
 	}
 }
-@media (min-width: 1600px) {
-	#middle-col {
-		margin: 0 240px;
-	}
+@media (min-width: 1580px) {
+  #middle-col {
+    margin: 0 465px;
+}
 }
 @media (min-width: 1850px) {
 	#middle-col {
