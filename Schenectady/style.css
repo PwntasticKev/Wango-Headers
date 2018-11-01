@@ -42,7 +42,7 @@
 }
 
 #logo {
-	width: 143px;
+	width: 133px;
 }
 
 .header-toggle {
@@ -84,7 +84,6 @@
 	justify-content: space-between;
 	align-items: center;
 	align-content: center;
-	padding: 0 20px;
 }
 
 .nav__logo--header {
@@ -202,16 +201,16 @@ html [type="button"] {
 /* MOBILE MENU TRANSITION */
 
 #burger-container {
+	display: flex;
 	align-items: center;
 	flex-direction: column;
-	align-content: center;
-	display: grid;
+	justify-content: center;
 }
 
 .line {
 	width: 30px;
 	margin: 4px 0;
-	border-bottom: 3px solid white;
+	border-bottom: 3.5px solid white;
 	transition-property: transform, opacity;
 	transition: 0.5s ease-in-out;
 }
@@ -428,7 +427,7 @@ html [type="button"] {
 	}
 
 	#logo-ny {
-		height: 25px;
+		width: 90px;
 	}
 
 	#map-icon {
