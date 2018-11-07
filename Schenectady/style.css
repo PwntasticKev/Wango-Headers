@@ -88,8 +88,8 @@
 
 .nav__logo--header {
 	display: block;
-	width: 120px;
-	height: 39px;
+	width: 133px;
+	height: 58px;
 	margin: 0 auto;
 	-webkit-transition: -webkit-transform 1s;
 	transition: -webkit-transform 1s;
@@ -142,7 +142,15 @@ html [type="button"] {
 }
 
 #middle-col {
-	margin: 0 43px;
+	margin: 0 24px;
+	display: block;
+	position: absolute;
+	top: 11px;
+	left: 0;
+	right: 0;
+	width: 120px;
+	height: 39px;
+	margin: 0 auto;
 }
 
 /* HEADER_SEARCH */
@@ -411,6 +419,7 @@ html [type="button"] {
 	.header-container-nav {
 		max-width: 4000px !important;
 		width: 100% !important;
+		padding: 0 15px;
 	}
 
 	.main-menu-container {
@@ -590,6 +599,10 @@ html [type="button"] {
 		height: 19px;
 		display: inline-block;
 		width: 83px;
+	}
+
+	.col1:nth-of-type(3) * {
+		margin: 0 10px;
 	}
 }
 
