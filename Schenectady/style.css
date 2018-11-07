@@ -54,6 +54,7 @@
 	height: 100%;
 	cursor: pointer;
 	padding: 8px;
+	margin: 0 10px;
 	background: transparent;
 	color: #fff;
 	text-align: center;
@@ -142,14 +143,12 @@ html [type="button"] {
 }
 
 #middle-col {
-	margin: 0 24px;
 	display: block;
 	position: absolute;
-	top: 11px;
-	left: 0;
+	top: 0px;
+	left: 0px;
 	right: 0;
-	width: 120px;
-	height: 39px;
+	width: 133px;
 	margin: 0 auto;
 }
 
@@ -444,9 +443,6 @@ html [type="button"] {
 
 		margin-bottom: 6px;
 	}
-	#middle-col {
-		margin: 0px 180px;
-	}
 
 	#ul-container-desktop li a {
 		font-size: 11px;
@@ -599,10 +595,6 @@ html [type="button"] {
 		height: 19px;
 		display: inline-block;
 		width: 83px;
-	}
-
-	.col1:nth-of-type(3) * {
-		margin: 0 10px;
 	}
 }
 
