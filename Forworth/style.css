@@ -91,13 +91,12 @@
 	text-align: left;
 }
 
-.item a {
-	font-weight: 300;
+/* .item a {
 	font-family: open-sans, sans-serif;
 	font-size: 18px;
 	line-height: 35px;
 	color: #58585b;
-}
+} */
 
 .reveal-language-menu {
 	display: flex;
@@ -176,7 +175,6 @@ input[type="search"]::-webkit-search-results-decoration {
 	-webkit-appearance: none;
 	border-radius: 0;
 	background-color: #fff;
-	font-family: inherit;
 	border-style: solid;
 	border-width: 1px;
 	border-color: #ccc;
@@ -395,7 +393,7 @@ input[type="search"]::-webkit-search-results-decoration {
 		left: 11px;
 		top: 0;
 		opacity: 0;
-		font-family: open-sans, sans-serif !important;
+		font-family: open-sans, sans-serif;
 	}
 
 	#temp {
