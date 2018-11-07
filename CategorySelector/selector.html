@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Smart Filter</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="reset.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+</head>
+
+<body>
+  <input id="source" />
+  <div id="result"></div>
+
+
+
+
+  <script src="lodash.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script>
+
+    const $source = document.querySelector('#source');
+    const $result = document.querySelector('#result');
+
+    const typeHandler = function (e) {
+      $result.innerHTML = e.target.value;
+      console.log(e.target.value)
+    }
+
+    $source.addEventListener('input', typeHandler) // register for oninput
+    $source.addEventListener('propertychange', typeHandler)
+
+    let offers = [
+      {
+        name: "salt lake",
+        neighborhood: "Varrock"
+      },
+      {
+        name: "Chicago",
+        neighborhood: "Wilderness"
+      },
+      {
+        name: "arizona",
+        neighborhood: "Varrock"
+      },
+      {
+        name: "california",
+        neighborhood: "Lumbridge"
+      },
+    ]
+
+
+
+  </script>
+
+
+</body>
+
+</html>
