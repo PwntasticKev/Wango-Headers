@@ -21,37 +21,43 @@
 			const source = document.getElementById("source")
 			const $result = document.querySelector("#result")
 
-			const typeHandler = function(e) {
-				$result.innerHTML = e.target.value
-				let filteredOffer = offers.filter()
-			}
-
-			source.addEventListener("input", typeHandler) // register for oninput
-			source.addEventListener("propertychange", typeHandler)
-
 			let offers = [
 				{
+					id: 1,
 					cat: 1,
 					price: "$192",
 					name: "salt lake",
 					neighborhood: "Varrock"
 				},
 				{
+					id: 2,
 					name: "Chicago",
 					cat: 2,
 					neighborhood: "Wilderness"
 				},
 				{
+					id: 3,
 					name: "arizona",
 					cat: 2,
 					neighborhood: "Varrock"
 				},
 				{
+					id: 4,
 					name: "california",
 					cat: 3,
 					neighborhood: "Lumbridge"
 				}
 			]
+
+			let res = offers.map(
+				(v, i) =>
+					`<section key="${i}"><div>${v.name}</div><div>${v.id}</div></section>`
+			)
+			$(".test").append(res)
+
+			// let res = offers.map(v => v.name + v.cat)
+			// $(".test").append("<div>" + res + "</div>")
+
 			const containsDeep = (text, cat) => (value, cat) => {
 				if (!value || !cat) return false
 				const valueType = typeof value
@@ -67,9 +73,13 @@
 				}
 				return false
 			}
+			const filterVenues = function(e) {
+				$result.innerHTML = e.target.value
+				const filtered = offers.filter(containsDeep("yoi", 1))
+			}
 
-			const result = offers.filter(containsDeep("chicago", 1))
-			console.log(result)
+			source.addEventListener("input", filterVenues) // register for oninput
+			source.addEventListener("propertychange", filterVenues)
 		</script>
 	</body>
 </html>
