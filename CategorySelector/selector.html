@@ -21,21 +21,6 @@
 			const source = document.getElementById("source")
 			const $result = document.querySelector("#result")
 
-			const filterVenues = function(e) {
-				$result.innerHTML = e.target.value
-				let filtered =
-			}
-
-			source.addEventListener("input", filterVenues) // register for oninput
-			source.addEventListener("propertychange", filterVenues)
-
-			let test = {
-				cat: 1,
-				price: "$192",
-				name: "salt lake",
-				neighborhood: "Varrock"
-			}
-
 			let offers = [
 				{
 					id: 1,
@@ -88,7 +73,13 @@
 				}
 				return false
 			}
-			const filtered = offers.filter(containsDeep("yoi", 1))
+			const filterVenues = function(e) {
+				$result.innerHTML = e.target.value
+				const filtered = offers.filter(containsDeep("yoi", 1))
+			}
+
+			source.addEventListener("input", filterVenues) // register for oninput
+			source.addEventListener("propertychange", filterVenues)
 		</script>
 	</body>
 </html>
