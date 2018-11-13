@@ -10,10 +10,16 @@
 	</head>
 
 	<body>
+    <style>
+      .blah{
+        
+      }
+      </style>
 		<input id="source" placeholder="Search by Name..." />
 		<div id="result"></div>
 		<div class="test"></div>
-		<button onclick="">Click me brotha!</button>
+		<div class="filtered"></div>
+		<button onclick="filter($('#source').val())">Click me brotha!</button>
 
 		<!-- JAVASCRIPT -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
@@ -51,7 +57,8 @@
 				{
 					id: 5,
 					name: "orem",
-					cat: 2,
+					cat: [2, 5, 6],
+					price: "$200",
 					neighborhood: "Varrock"
 				},
 				{
@@ -62,22 +69,23 @@
 				}
 			]
 
-			let res = offers.map(
+			let offersCopy = offers.slice()
+			let res = offersCopy.map(
 				(v, i) =>
-					` <section key="${i}" style='display: flex;'>
-																																				    <div>${v.name}</div><div>${v.id}</div><div>${v.neighborhood}</div>
-																																				  </section>`
+					` <section key="${i}" style='display: flex;' class='cat_'>
+					    <div >${v.name}</div>
+					    <div>${v.id}</div>
+					    <div>${v.neighborhood}</div>
+					    <div>${v.cat}</div>
+					  </section>`
 			)
-			// $(".test").append(res.filter(v => {
-			// 	return v.name.toLowerCase().includes(e.target.value)
-			// }))
+			$(".test").html(res)
 
-			const filterVenues = function(e, cat, neighborhood) {
+			const filterVenues = function(e, id, neighborhood) {
 				// $result.innerHTML = e.target.value
-				let filtered = offers.filter(v => {
+				let filtered = offersCopy.filter(v => {
 					return v.name.toLowerCase().includes(e.target.value)
 				})
-				// const filtered = offers.filter(containsDeep(e.target.value, 1))
 				console.log(offers)
 				console.log(filtered)
 				$(".test").append(filtered)
