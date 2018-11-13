@@ -10,9 +10,10 @@
 	</head>
 
 	<body>
-		<input id="source" />
+		<input id="source" placeholder="Search by Name..." />
 		<div id="result"></div>
 		<div class="test"></div>
+		<button onclick="">Click me brotha!</button>
 
 		<!-- JAVASCRIPT -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
@@ -37,12 +38,24 @@
 				},
 				{
 					id: 3,
-					name: "arizona",
+					name: "murray",
+					cat: 4,
+					neighborhood: "rimmington"
+				},
+				{
+					id: 4,
+					name: "taylorsville",
+					cat: 2,
+					neighborhood: "ardougne"
+				},
+				{
+					id: 5,
+					name: "orem",
 					cat: 2,
 					neighborhood: "Varrock"
 				},
 				{
-					id: 4,
+					id: 6,
 					name: "california",
 					cat: 3,
 					neighborhood: "Lumbridge"
@@ -51,31 +64,23 @@
 
 			let res = offers.map(
 				(v, i) =>
-					`<section key="${i}"><div>${v.name}</div><div>${v.id}</div></section>`
+					` <section key="${i}" style='display: flex;'>
+																																				    <div>${v.name}</div><div>${v.id}</div><div>${v.neighborhood}</div>
+																																				  </section>`
 			)
-			$(".test").append(res)
+			// $(".test").append(res.filter(v => {
+			// 	return v.name.toLowerCase().includes(e.target.value)
+			// }))
 
-			// let res = offers.map(v => v.name + v.cat)
-			// $(".test").append("<div>" + res + "</div>")
-
-			const containsDeep = (text, cat) => (value, cat) => {
-				if (!value || !cat) return false
-				const valueType = typeof value
-
-				if (valueType === "string") {
-					return value.toLowerCase().indexOf(text.toLowerCase()) > -1
-				}
-				if (Array.isArray(value)) {
-					return value.some(containsDeep(text))
-				}
-				if (valueType === "object") {
-					return Object.values(value).some(containsDeep(text))
-				}
-				return false
-			}
-			const filterVenues = function(e) {
-				$result.innerHTML = e.target.value
-				const filtered = offers.filter(containsDeep("yoi", 1))
+			const filterVenues = function(e, cat, neighborhood) {
+				// $result.innerHTML = e.target.value
+				let filtered = offers.filter(v => {
+					return v.name.toLowerCase().includes(e.target.value)
+				})
+				// const filtered = offers.filter(containsDeep(e.target.value, 1))
+				console.log(offers)
+				console.log(filtered)
+				$(".test").append(filtered)
 			}
 
 			source.addEventListener("input", filterVenues) // register for oninput
