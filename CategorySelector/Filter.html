@@ -3,52 +3,140 @@
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>LecheMan</title>
+  <title>Leche</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" media="screen" href="reset.css" />
   <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 </head>
 
 <style>
-.Filter-Main-Container{
+.Main-Container-Filter{
   background: lightgray;
-  height:300px;
-  width:calc(50px + 10%);
-  display: flex;
-  justify-content: center;
-  padding:10px;
+    height: 100vh;
+    width: 245px;
+    display: flex;
+    flex-direction: column;
+    padding: 25px 15px;
 }
 
+/* SEARCH INPUT STYLES */
+
 .Filter-Search-Input {
-  width:100%;
-  height:20px;
+  width:50%;
+  height:35px;
+  background: black;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  border-bottom: 3px solid white;
 }
+
+.Search-Filter-Button {
+  background-color: transparent;
+    height: 35px;
+    font-family: 'Helvetica Neue LT W01_71488914', Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color:white;
+    border: none;
+    font-size: 15px;
+    background:black;
+   
+}
+
+/* CATEGORY CONTAIN STYLES */
+
+.category-container-filter {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.category-title-filter {
+  margin: 10px 0;
+  font-weight: 600;
+}
+
+.filter-checkbox {
+    background: black;
+    border: 1px solid #999;
+    border-radius: 2px;
+    width: 17px;
+    height: 17px;
+    font-family: FontAwesome;
+    content: '\f0c8';
+    color: transparent;
+}
+
+.filter-category-name-container {
+  display: flex;
+  align-items: center;
+  margin:3px 0;
+}
+
+.filter-category-name-container p{
+  margin: 0 5px;
+}
+
+.filter-category-amount {
+  font-size: 11px;
+  color: red;
+  margin:0 5px;
+}
+
+
+/* show more categories */
+ .Show-More-Categories {
+ }
+
+ .Show-More-Button- {
+   text-align: left;
+   color: blue;
+ }
+
+
 
 
 </style>
 
 <body>
-  <section class="Filter-Main-Container">
+  <section class="Main-Container-Filter">
     
+<section style="display: flex; align-items:center;">
+  <input type="text" placeholder='Keyword(s)....' class="Filter-Search-Input">
+  <button class="Search-Filter-Button">Search</button>
+</section>
 
-      <input type="text" placeholder='Search by Name...' class="Filter-Search-Input">
-      <section class="test">
+      <section class="category-container-filter">
+        <h5 class="category-title-filter">Categories</h5>
+        <section class='filter-category-name-container'>
+          <input type="checkbox" name="Checkbox-Category" id="category" onclick="" class="filter-checkbox">
+          <p>Tours</p>
+          <p class="filter-category-amount">(13)</p>
+        </section>
 
-        <input type="checkbox" name="Checkbox-Category" id="category" onclick="">
-        <input type="checkbox" name="Checkbox-Category" id="category" onclick="">
-        <input type="checkbox" name="Checkbox-Category" id="category" onclick="">
-        <input type="checkbox" name="Checkbox-Category" id="category" onclick="">
-        <input type="checkbox" name="Checkbox-Category" id="category" onclick="">
+        <section class='filter-category-name-container'>
+          <input type="checkbox" name="Checkbox-Category" id="category" onclick="" class="filter-checkbox">
+          <p>Tours</p>
+          <p class="filter-category-amount">(13)</p>
+        </section>
+
+        <section class='filter-category-name-container'>
+          <input type="checkbox" name="Checkbox-Category" id="category" onclick="" class="filter-checkbox">
+          <p>Tours</p>
+          <p class="filter-category-amount"> (13)</p>
+        </section>
+        <!-- MORE OPTIONS -->
+        <button class="Show-More-Button-">Show More</button>
+        <section class="Show-More-Categories">
+          <section class='filter-category-name-container'>
+              <input type="checkbox" name="Checkbox-Category" id="category" onclick="" class="filter-checkbox">
+              <p>Tours</p>
+              <p class="filter-category-amount"> (13)</p>
+            </section>
+
+        </section>
       </section>
-      <section class="test">
-2
-        <input type="checkbox" name="Checkbox-Category" id="category" onclick="">
-        <input type="checkbox" name="Checkbox-Category" id="category" onclick="">
-        <input type="checkbox" name="Checkbox-Category" id="category" onclick="">
-        <input type="checkbox" name="Checkbox-Category" id="category" onclick="">
-        <input type="checkbox" name="Checkbox-Category" id="category" onclick="">
-      </section>
-  </section>
 
 
  <!-- --- JS --- -->	
