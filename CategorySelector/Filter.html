@@ -92,6 +92,10 @@
  .Show-More-Button- {
    text-align: left;
    color: blue;
+   cursor:pointer;
+ }
+ .Show-More-Button-:focus, .Show-More-Button-:hover {
+  outline:none;
  }
 
 
@@ -117,26 +121,70 @@
 
         <section class='filter-category-name-container'>
           <input type="checkbox" name="Checkbox-Category" id="category" onclick="" class="filter-checkbox">
-          <p>Tours</p>
+          <p>Food</p>
           <p class="filter-category-amount">(13)</p>
         </section>
 
         <section class='filter-category-name-container'>
           <input type="checkbox" name="Checkbox-Category" id="category" onclick="" class="filter-checkbox">
-          <p>Tours</p>
+          <p>Beer & Wine</p>
           <p class="filter-category-amount"> (13)</p>
         </section>
         <!-- MORE OPTIONS -->
-        <button class="Show-More-Button-">Show More</button>
-        <section class="Show-More-Categories">
+        <section class="Show-More-Categories show-more-categories-section" style='display: none;'>
           <section class='filter-category-name-container'>
               <input type="checkbox" name="Checkbox-Category" id="category" onclick="" class="filter-checkbox">
-              <p>Tours</p>
+              <p>Cultural</p>
               <p class="filter-category-amount"> (13)</p>
             </section>
 
-        </section>
+          <section class='filter-category-name-container'>
+              <input type="checkbox" name="Checkbox-Category" id="category" onclick="" class="filter-checkbox">
+              <p>Experiences</p>
+              <p class="filter-category-amount"> (13)</p>
+            </section>
+          </section>
+             <!--END OF MORE OPTIONS -->
+            <button class="Show-More-Button- category-button">Show More</button>
       </section>
+
+      <section class="category-container-filter">
+          <h5 class="category-title-filter">Neighborhoods</h5>
+          <section class='filter-category-name-container'>
+            <input type="checkbox" name="Checkbox-Category" id="category" onclick="" class="filter-checkbox">
+            <p>Varrock</p>
+            <p class="filter-category-amount">(13)</p>
+          </section>
+  
+          <section class='filter-category-name-container'>
+            <input type="checkbox" name="Checkbox-Category" id="category" onclick="" class="filter-checkbox">
+            <p>Falador</p>
+            <p class="filter-category-amount">(13)</p>
+          </section>
+  
+          <section class='filter-category-name-container'>
+            <input type="checkbox" name="Checkbox-Category" id="category" onclick="" class="filter-checkbox">
+            <p>Wilderness</p>
+            <p class="filter-category-amount"> (13)</p>
+          </section>
+
+             <!-- MORE OPTIONS -->
+        <section class="Show-More-Categories show-more-neighborhoods-section" style='display: none;'>
+            <section class='filter-category-name-container '>
+                <input type="checkbox" name="Checkbox-Category" id="category" onclick="" class="filter-checkbox">
+                <p>Rimmington</p>
+                <p class="filter-category-amount"> (13)</p>
+              </section>
+  
+            <section class='filter-category-name-container'>
+                <input type="checkbox" name="Checkbox-Category" id="category" onclick="" class="filter-checkbox">
+                <p>Al-Kharid</p>
+                <p class="filter-category-amount"> (13)</p>
+              </section>
+            </section>
+               <!--END OF MORE OPTIONS -->
+              <button class="Show-More-Button- neighborhood-button">Show More</button>
+        </section>
 
 
  <!-- --- JS --- -->	
@@ -149,6 +197,14 @@ $('input[type="checkbox"]').on('change', function() {
    $(this).siblings('input[type="checkbox"]').prop('checked', false);
 });
 
+$('.category-button').click(_ => {
+  console.log('yo dawg')
+  $('.show-more-categories-section').toggle()
+})
+$('.neighborhood-button').click(_ => {
+  console.log('yo dawg')
+  $('.show-more-neighborhoods-section').toggle()
+})
   </script>
   <script>
   
