@@ -8,39 +8,48 @@
   <link rel="stylesheet" type="text/css" media="screen" href="reset.css" />
   <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800" rel="stylesheet">
 </head>
 
 <style>
 .Main-Container-Filter{
-  background: lightgray;
-    height: 100vh;
-    width: 245px;
+  background: #1D1D1D;
+    height: 93vh;
+    width: 200px;
     display: flex;
     flex-direction: column;
     padding: 25px 15px;
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
 }
+
 
 /* SEARCH INPUT STYLES */
 
 .Filter-Search-Input {
-  width:50%;
+  width:55%;
   height:35px;
-  background: black;
+  background: #1D1D1D;
   border: none;
   outline: none;
   border-radius: 4px;
-  border-bottom: 3px solid white;
+  border-bottom: 1px solid #ddd;
+  font-size: 15px;
+}
+.Filter-Search-Input, input[type=text]
+{
+color:white
 }
 
 .Search-Filter-Button {
   background-color: transparent;
     height: 35px;
-    font-family: 'Helvetica Neue LT W01_71488914', Arial, Helvetica, sans-serif;
-    font-weight: 600;
+    font-weight: 500;
     color:white;
     border: none;
     font-size: 15px;
-    background:black;
+    background:#1D1D1D;
+
    
 }
 
@@ -55,9 +64,13 @@
 .category-title-filter {
   margin: 10px 0;
   font-weight: 600;
+  color: white;
 }
 
 .filter-checkbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
     background: black;
     border: 1px solid #999;
     border-radius: 2px;
@@ -66,22 +79,29 @@
     font-family: FontAwesome;
     content: '\f0c8';
     color: transparent;
+    outline: none;
+}
+
+.filter-checkbox:checked {
+    background-color: lightgreen;
 }
 
 .filter-category-name-container {
   display: flex;
   align-items: center;
   margin:3px 0;
+  color: white;
+  cursor: pointer;
 }
 
 .filter-category-name-container p{
   margin: 0 5px;
+  font-weight: 100;
+    font-size: 14px;
 }
 
 .filter-category-amount {
-  font-size: 11px;
-  color: red;
-  margin:0 5px;
+  color: #0398D9;
 }
 
 
@@ -91,11 +111,19 @@
 
  .Show-More-Button- {
    text-align: left;
-   color: blue;
+   color: #0398D9;
    cursor:pointer;
+   padding: 0;
+    margin: 4px 0;
  }
- .Show-More-Button-:focus, .Show-More-Button-:hover {
-  outline:none;
+
+ .reset-fields-filter {
+   background: #0398D9;
+   border:none;
+   outline: none;
+   width:60%;
+   height:30px;
+   color:white;
  }
 
 
@@ -108,7 +136,7 @@
     
 <section style="display: flex; align-items:center;">
   <input type="text" placeholder='Keyword(s)....' class="Filter-Search-Input">
-  <button class="Search-Filter-Button">Search</button>
+  <button class="Search-Filter-Button">Search <i class="fas fa-search"></i></button>
 </section>
 
       <section class="category-container-filter">
@@ -119,11 +147,11 @@
           <p class="filter-category-amount">(13)</p>
         </section>
 
-        <section class='filter-category-name-container'>
+        <label class='filter-category-name-container'>
           <input type="checkbox" name="Checkbox-Category" id="category" onclick="" class="filter-checkbox">
           <p>Food</p>
           <p class="filter-category-amount">(13)</p>
-        </section>
+        </label>
 
         <section class='filter-category-name-container'>
           <input type="checkbox" name="Checkbox-Category" id="category" onclick="" class="filter-checkbox">
@@ -185,6 +213,10 @@
                <!--END OF MORE OPTIONS -->
               <button class="Show-More-Button- neighborhood-button">Show More</button>
         </section>
+<section style='display: flex; justify-content:center; position:absolute; bottom:5px; width:80%;'>
+  <button class="reset-fields-filter" onClick=''>RESET FIELDS</button>
+
+</section>
 
 
  <!-- --- JS --- -->	
@@ -198,16 +230,26 @@ $('input[type="checkbox"]').on('change', function() {
 });
 
 $('.category-button').click(_ => {
-  console.log('yo dawg')
-  $('.show-more-categories-section').toggle()
+  $('.show-more-categories-section').is(':hidden') ? $('.category-button').html('Show Less') : $('.category-button').html('Show More') 
+  $('.show-more-categories-section').slideToggle("fast")
 })
 $('.neighborhood-button').click(_ => {
-  console.log('yo dawg')
-  $('.show-more-neighborhoods-section').toggle()
+  $('.show-more-neighborhoods-section').is(':hidden') ? $('.neighborhood-button').html('Show Less') : $('.neighborhood-button').html('Show More') 
+  $('.show-more-neighborhoods-section').slideToggle("fast")
 })
-  </script>
+
+$('.reset-fields-filter').click(_ => {
+  $('input[type="checkbox"]').prop('checked', false)
+})
+</script>
+
+  <!-- // SUDO CODE
+  // 1. Function that resets the fields (select all categories)
+  // 2. function that filters the amount.length of the categories contained.
+  // 3. onClicks to call multiple categoriesbyCatId
+  // 4. -->
   <script>
-  
-  </script>
+      
+    </script>
 </body>
 </html>
