@@ -14,13 +14,13 @@
 <style>
 .Main-Container-Filter{
   background: #1D1D1D;
-    height: 93vh;
-    width: 200px;
+    width: 230px;
     display: flex;
     flex-direction: column;
     padding: 25px 15px;
     position: relative;
     font-family: 'Open Sans', sans-serif;
+    border-radius: 10px;
 }
 
 
@@ -49,6 +49,7 @@ color:white
     border: none;
     font-size: 15px;
     background:#1D1D1D;
+    width: 100px;
 
    
 }
@@ -106,8 +107,6 @@ color:white
 
 
 /* show more categories */
- .Show-More-Categories {
- }
 
  .Show-More-Button- {
    text-align: left;
@@ -116,15 +115,18 @@ color:white
    padding: 0;
     margin: 4px 0;
     font-size: 13px;
+    background: transparent;
+    border: none;
  }
 
- .reset-fields-filter {
+ .Filter-buttons-{
    background: #0398D9;
    border:none;
-   outline: none;
-   width:60%;
+   /* outline: none; */
+   width:100%;
    height:30px;
    color:white;
+   margin:2.5px 0;
  }
 
 
@@ -176,7 +178,7 @@ color:white
              <!--END OF MORE OPTIONS -->
             <button class="Show-More-Button- category-button">Show More</button>
       </section>
-
+      <!-- ↓↓↓↓ NEIGHBORHOODS SECTION ↓↓↓↓ -->
       <section class="category-container-filter">
           <h5 class="category-title-filter">Neighborhoods</h5>
           <label class='filter-category-name-container'>
@@ -214,8 +216,9 @@ color:white
                <!--END OF MORE OPTIONS -->
               <button class="Show-More-Button- neighborhood-button">Show More</button>
         </section>
-<section style='display: flex; justify-content:center; position:absolute; bottom:5px; width:80%;'>
-  <button class="reset-fields-filter" onClick=''>RESET FIELDS</button>
+<section style='display: flex; margin-top: 15px; flex-direction:column'>
+  <button class="Filter-buttons-" onClick=''>Filter Me</button>
+  <button class="Filter-buttons- reset-fields-filter" onClick=''>RESET FIELDS</button>
 
 </section>
 
@@ -242,6 +245,7 @@ $('.reset-fields-filter').click(_ => {
   $('.show-more-neighborhoods-section').slideUp("fast")
   $('.show-more-categories-section').slideUp("fast")
 })
+
 </script>
 
   <!-- // SUDO CODE
