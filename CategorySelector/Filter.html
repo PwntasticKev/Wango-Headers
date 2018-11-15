@@ -115,6 +115,7 @@ color:white
    cursor:pointer;
    padding: 0;
     margin: 4px 0;
+    font-size: 13px;
  }
 
  .reset-fields-filter {
@@ -141,11 +142,11 @@ color:white
 
       <section class="category-container-filter">
         <h5 class="category-title-filter">Categories</h5>
-        <section class='filter-category-name-container'>
+        <label class='filter-category-name-container'>
           <input type="checkbox" name="Checkbox-Category" id="category" onclick="" class="filter-checkbox">
           <p>Tours</p>
           <p class="filter-category-amount">(13)</p>
-        </section>
+        </label>
 
         <label class='filter-category-name-container'>
           <input type="checkbox" name="Checkbox-Category" id="category" onclick="" class="filter-checkbox">
@@ -153,24 +154,24 @@ color:white
           <p class="filter-category-amount">(13)</p>
         </label>
 
-        <section class='filter-category-name-container'>
+        <label class='filter-category-name-container'>
           <input type="checkbox" name="Checkbox-Category" id="category" onclick="" class="filter-checkbox">
           <p>Beer & Wine</p>
           <p class="filter-category-amount"> (13)</p>
-        </section>
+        </label>
         <!-- MORE OPTIONS -->
         <section class="Show-More-Categories show-more-categories-section" style='display: none;'>
-          <section class='filter-category-name-container'>
+          <label class='filter-category-name-container'>
               <input type="checkbox" name="Checkbox-Category" id="category" onclick="" class="filter-checkbox">
               <p>Cultural</p>
               <p class="filter-category-amount"> (13)</p>
-            </section>
+            </label>
 
-          <section class='filter-category-name-container'>
+          <label class='filter-category-name-container'>
               <input type="checkbox" name="Checkbox-Category" id="category" onclick="" class="filter-checkbox">
               <p>Experiences</p>
               <p class="filter-category-amount"> (13)</p>
-            </section>
+            </label>
           </section>
              <!--END OF MORE OPTIONS -->
             <button class="Show-More-Button- category-button">Show More</button>
@@ -178,37 +179,37 @@ color:white
 
       <section class="category-container-filter">
           <h5 class="category-title-filter">Neighborhoods</h5>
-          <section class='filter-category-name-container'>
+          <label class='filter-category-name-container'>
             <input type="checkbox" name="Checkbox-Category" id="category" onclick="" class="filter-checkbox">
             <p>Varrock</p>
             <p class="filter-category-amount">(13)</p>
-          </section>
+          </label>
   
-          <section class='filter-category-name-container'>
+          <label class='filter-category-name-container'>
             <input type="checkbox" name="Checkbox-Category" id="category" onclick="" class="filter-checkbox">
             <p>Falador</p>
             <p class="filter-category-amount">(13)</p>
-          </section>
+          </label>
   
-          <section class='filter-category-name-container'>
+          <label class='filter-category-name-container'>
             <input type="checkbox" name="Checkbox-Category" id="category" onclick="" class="filter-checkbox">
             <p>Wilderness</p>
             <p class="filter-category-amount"> (13)</p>
-          </section>
+          </label>
 
              <!-- MORE OPTIONS -->
         <section class="Show-More-Categories show-more-neighborhoods-section" style='display: none;'>
-            <section class='filter-category-name-container '>
+            <label class='filter-category-name-container '>
                 <input type="checkbox" name="Checkbox-Category" id="category" onclick="" class="filter-checkbox">
                 <p>Rimmington</p>
                 <p class="filter-category-amount"> (13)</p>
-              </section>
+              </label>
   
-            <section class='filter-category-name-container'>
+            <label class='filter-category-name-container'>
                 <input type="checkbox" name="Checkbox-Category" id="category" onclick="" class="filter-checkbox">
                 <p>Al-Kharid</p>
                 <p class="filter-category-amount"> (13)</p>
-              </section>
+              </label>
             </section>
                <!--END OF MORE OPTIONS -->
               <button class="Show-More-Button- neighborhood-button">Show More</button>
@@ -222,12 +223,10 @@ color:white
  <!-- --- JS --- -->	
  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <script>
-//  $("#category").on('change',_ => {
-//    $('#category').is(':checked') ? console.log('im so turned on') : console.log('im so turned off')
-// })
-$('input[type="checkbox"]').on('change', function() {
-   $(this).siblings('input[type="checkbox"]').prop('checked', false);
-});
+// $('.filter-category-name-container').on('click',() => {
+//   // console.log('clicked')
+//   //  $('.filter-category-name-container').siblings('.filter-checkbox').prop('checked',true);
+// });
 
 $('.category-button').click(_ => {
   $('.show-more-categories-section').is(':hidden') ? $('.category-button').html('Show Less') : $('.category-button').html('Show More') 
@@ -240,6 +239,8 @@ $('.neighborhood-button').click(_ => {
 
 $('.reset-fields-filter').click(_ => {
   $('input[type="checkbox"]').prop('checked', false)
+  $('.show-more-neighborhoods-section').slideUp("fast")
+  $('.show-more-categories-section').slideUp("fast")
 })
 </script>
 
