@@ -111,6 +111,7 @@ color:white
  .Show-More-Button- {
    text-align: left;
    color: #0398D9;
+   outline:none;
    cursor:pointer;
    padding: 0;
     margin: 4px 0;
@@ -145,33 +146,33 @@ color:white
       <section class="category-container-filter">
         <h5 class="category-title-filter">Categories</h5>
         <label class='filter-category-name-container'>
-          <input type="checkbox" name="Checkbox-Category" id="category" onclick="" class="filter-checkbox">
+          <input type="checkbox" name="Checkbox-Category" id="category" onclick="" class="filter-checkbox cat-653">
           <p>Tours</p>
           <p class="filter-category-amount">(13)</p>
         </label>
 
         <label class='filter-category-name-container'>
-          <input type="checkbox" name="Checkbox-Category" id="category" onclick="" class="filter-checkbox">
-          <p>Food</p>
+          <input type="checkbox" name="Checkbox-Category" id="category" onclick="" class="filter-checkbox cat-1031">
+          <p>Gift Ideas</p>
           <p class="filter-category-amount">(13)</p>
         </label>
 
         <label class='filter-category-name-container'>
-          <input type="checkbox" name="Checkbox-Category" id="category" onclick="" class="filter-checkbox">
-          <p>Beer & Wine</p>
+          <input type="checkbox" name="Checkbox-Category" id="category" onclick="" class="filter-checkbox cat-114">
+          <p>Adventure</p>
           <p class="filter-category-amount"> (13)</p>
         </label>
         <!-- MORE OPTIONS -->
         <section class="Show-More-Categories show-more-categories-section" style='display: none;'>
           <label class='filter-category-name-container'>
-              <input type="checkbox" name="Checkbox-Category" id="category" onclick="" class="filter-checkbox">
-              <p>Cultural</p>
+              <input type="checkbox" name="Checkbox-Category" id="category" onclick="" class="filter-checkbox cat-121">
+              <p>Kid Friendly</p>
               <p class="filter-category-amount"> (13)</p>
             </label>
 
           <label class='filter-category-name-container'>
-              <input type="checkbox" name="Checkbox-Category" id="category" onclick="" class="filter-checkbox">
-              <p>Experiences</p>
+              <input type="checkbox" name="Checkbox-Category" id="category" onclick="" class="filter-checkbox cat-128">
+              <p>Arts & Culture</p>
               <p class="filter-category-amount"> (13)</p>
             </label>
           </section>
@@ -246,6 +247,12 @@ $('.reset-fields-filter').click(_ => {
   $('.show-more-categories-section').slideUp("fast")
 })
 
+$('.filter-checkbox').click(_ => {
+  let x=$(".filter-checkbox").is(":checked");
+// var checkedValue = $('.filter-checkbox').is(':checked').val();
+console.log('checked', x)
+
+})
 </script>
 
   <!-- // SUDO CODE
