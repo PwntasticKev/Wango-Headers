@@ -68,11 +68,11 @@
 			let res = offersCopy.map(
 				(v, i) =>
 					` <section key="${i}" style='display: flex;' class='cat_'>
-					    <div >${v.name}</div>
-					    <div>${v.id}</div>
-					    <div>${v.neighborhood}</div>
-					    <div>${v.cat}</div>
-					  </section>`
+								    <div >${v.name}</div>
+								    <div>${v.id}</div>
+								    <div>${v.neighborhood}</div>
+								    <div>${v.cat}</div>
+								  </section>`
 			)
 			$(".test").html(res)
 
@@ -83,7 +83,6 @@
 				})
 				console.log(offers)
 				console.log(filtered)
-				$(".test").append(filtered)
 			}
 
 			source.addEventListener("input", filterVenues) // register for oninput
