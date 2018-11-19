@@ -241,38 +241,35 @@ $('.neighborhood-button').click(_ => {
   $('.show-more-neighborhoods-section').slideToggle("fast")
 })
 
+let selectedCategories = []
 $('.reset-fields-filter').click(_ => {
   $('input[type="checkbox"]').prop('checked', false)
   $('.show-more-neighborhoods-section').slideUp("fast")
   $('.show-more-categories-section').slideUp("fast")
+   selectedCategories = []
 })
 
-let selectedCategories = []
 $('.filter-checkbox').click(e => {
   let categoryId = $(e.currentTarget).attr("data-category")
-
-selectedCategories.map((v,i) => {
-  console.log('e',e)
-  if($(e.currentTarget).is(':checked' )) {
-     selectedCategories.push(categoryId)
+// selectedCategories.map((v,i) => {
+//   console.log('e',v)
+//   if($(e.currentTarget).is(':checked' )) {
+//      selectedCategories.push(categoryId)
+//   }
+//   else if( $(e.currentTarget).is(':checked' ) == false){
+//      console.log('hello im unchecked bro')
+//   }
+// })
+   if ( $(e.currentTarget).is(':checked' ) == false) {
+    let filterSelected = selectedCategories.filter((v,i) => {
+       v != e.currentTarget
+    })
+  console.log('newfilter',filterSelected)
   }
-  else if( $(e.currentTarget).is(':checked' )== false){
-     console.log('hello im unchecked bro')
-  }
-})
-
-  // if($(e.currentTarget).is(':checked' ) && !selectedCategories.includes(categoryId)) {
-  //   selectedCategories.push(categoryId)
-  // } else if( $(e.currentTarget).is(':checked' )== false) {
-    
-  //    seletcedCategories = selectedCategories.filter(v => {
-  //       return v!=categoryId
-  //     })
-    
-  // }
-    
+  if($(e.currentTarget).is(':checked' ) ) {
+    selectedCategories.push(categoryId)
+  } 
   console.log('myarr',selectedCategories)
-
 })
 
 $(".filter-me-button").on('click', _ => {
