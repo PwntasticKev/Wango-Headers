@@ -6,7 +6,6 @@
   <title>Leche</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" media="screen" href="reset.css" />
-  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800" rel="stylesheet">
 </head>
@@ -146,32 +145,32 @@ color:white
       <section class="category-container-filter">
         <h5 class="category-title-filter">Categories</h5>
         <label class='filter-category-name-container'>
-          <input type="checkbox" name="Checkbox-Category" id="category" onclick="" class="filter-checkbox cat-653">
+          <input type="checkbox" data-category="653" id="category" onclick="" class="filter-checkbox cat-653">
           <p>Tours</p>
           <p class="filter-category-amount">(13)</p>
         </label>
 
         <label class='filter-category-name-container'>
-          <input type="checkbox" name="Checkbox-Category" id="category" onclick="" class="filter-checkbox cat-1031">
+          <input type="checkbox" data-category="1031" id="category" onclick="" class="filter-checkbox cat-1031">
           <p>Gift Ideas</p>
           <p class="filter-category-amount">(13)</p>
         </label>
 
         <label class='filter-category-name-container'>
-          <input type="checkbox" name="Checkbox-Category" id="category" onclick="" class="filter-checkbox cat-114">
+          <input type="checkbox" data-category="114" id="category" onclick="" class="filter-checkbox cat-114">
           <p>Adventure</p>
           <p class="filter-category-amount"> (13)</p>
         </label>
         <!-- MORE OPTIONS -->
         <section class="Show-More-Categories show-more-categories-section" style='display: none;'>
           <label class='filter-category-name-container'>
-              <input type="checkbox" name="Checkbox-Category" id="category" onclick="" class="filter-checkbox cat-121">
+              <input type="checkbox" data-category="121" id="category" onclick="" class="filter-checkbox cat-121">
               <p>Kid Friendly</p>
               <p class="filter-category-amount"> (13)</p>
             </label>
 
           <label class='filter-category-name-container'>
-              <input type="checkbox" name="Checkbox-Category" id="category" onclick="" class="filter-checkbox cat-128">
+              <input type="checkbox" data-category="128" id="category" onclick="" class="filter-checkbox cat-128">
               <p>Arts & Culture</p>
               <p class="filter-category-amount"> (13)</p>
             </label>
@@ -183,19 +182,19 @@ color:white
       <section class="category-container-filter">
           <h5 class="category-title-filter">Neighborhoods</h5>
           <label class='filter-category-name-container'>
-            <input type="checkbox" name="Checkbox-Category" id="category" onclick="" class="filter-checkbox">
+            <input type="checkbox" data-category="1031" id="category" onclick="" class="filter-checkbox">
             <p>Varrock</p>
             <p class="filter-category-amount">(13)</p>
           </label>
   
           <label class='filter-category-name-container'>
-            <input type="checkbox" name="Checkbox-Category" id="category" onclick="" class="filter-checkbox">
+            <input type="checkbox" data-category="1031" id="category" onclick="" class="filter-checkbox">
             <p>Falador</p>
             <p class="filter-category-amount">(13)</p>
           </label>
   
           <label class='filter-category-name-container'>
-            <input type="checkbox" name="Checkbox-Category" id="category" onclick="" class="filter-checkbox">
+            <input type="checkbox" data-category="1031" id="category" onclick="" class="filter-checkbox">
             <p>Wilderness</p>
             <p class="filter-category-amount"> (13)</p>
           </label>
@@ -203,30 +202,31 @@ color:white
              <!-- MORE OPTIONS -->
         <section class="Show-More-Categories show-more-neighborhoods-section" style='display: none;'>
             <label class='filter-category-name-container '>
-                <input type="checkbox" name="Checkbox-Category" id="category" onclick="" class="filter-checkbox">
+                <input type="checkbox" data-category="1031" id="category" onclick="" class="filter-checkbox">
                 <p>Rimmington</p>
                 <p class="filter-category-amount"> (13)</p>
               </label>
   
             <label class='filter-category-name-container'>
-                <input type="checkbox" name="Checkbox-Category" id="category" onclick="" class="filter-checkbox">
+                <input type="checkbox" data-category="1031" id="category" onclick="" class="filter-checkbox">
                 <p>Al-Kharid</p>
                 <p class="filter-category-amount"> (13)</p>
               </label>
             </section>
                <!--END OF MORE OPTIONS -->
-              <button class="Show-More-Button- neighborhood-button">Show More</button>
-        </section>
-<section style='display: flex; margin-top: 15px; flex-direction:column'>
-  <button class="Filter-buttons-" onClick=''>Filter Me</button>
-  <button class="Filter-buttons- reset-fields-filter" onClick=''>RESET FIELDS</button>
-
-</section>
-
-
- <!-- --- JS --- -->	
- 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-  <script>
+               <button class="Show-More-Button- neighborhood-button">Show More</button>
+              </section>
+              <section style='display: flex; margin-top: 15px; flex-direction:column'>
+                <button class="Filter-buttons- filter-me-button" onClick='console.log(`clicked filter`)'>Filter Me</button>
+                <button class="Filter-buttons- reset-fields-filter" onClick=''>RESET FIELDS</button>
+                
+              </section>
+              
+              
+              <!-- --- JS --- -->	
+              <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+              <script>
+                  
 // $('.filter-category-name-container').on('click',() => {
 //   // console.log('clicked')
 //   //  $('.filter-category-name-container').siblings('.filter-checkbox').prop('checked',true);
@@ -241,27 +241,54 @@ $('.neighborhood-button').click(_ => {
   $('.show-more-neighborhoods-section').slideToggle("fast")
 })
 
+let selectedCategories = []
 $('.reset-fields-filter').click(_ => {
   $('input[type="checkbox"]').prop('checked', false)
   $('.show-more-neighborhoods-section').slideUp("fast")
   $('.show-more-categories-section').slideUp("fast")
+   selectedCategories = []
 })
 
-$('.filter-checkbox').click(_ => {
-  let x=$(".filter-checkbox").is(":checked");
-// var checkedValue = $('.filter-checkbox').is(':checked').val();
-console.log('checked', x)
-
+$('.filter-checkbox').click(e => {
+  let categoryId = $(e.currentTarget).attr("data-category")
+// selectedCategories.map((v,i) => {
+//   console.log('e',v)
+//   if($(e.currentTarget).is(':checked' )) {
+//      selectedCategories.push(categoryId)
+//   }
+//   else if( $(e.currentTarget).is(':checked' ) == false){
+//      console.log('hello im unchecked bro')
+//   }
+// })
+   if ( $(e.currentTarget).is(':checked' ) == false) {
+    let filterSelected = selectedCategories.filter((v,i) => {
+       v != e.currentTarget
+    })
+  console.log('newfilter',filterSelected)
+  }
+  if($(e.currentTarget).is(':checked' ) ) {
+    selectedCategories.push(categoryId)
+  } 
+  console.log('myarr',selectedCategories)
 })
+
+$(".filter-me-button").on('click', _ => {
+  console.log('selectarray here',selectedCategories)
+  // categoryFilter(categoriesSelectedArray, noScroll)
+})
+
+
 </script>
 
-  <!-- // SUDO CODE
-  // 1. Function that resets the fields (select all categories)
-  // 2. function that filters the amount.length of the categories contained.
-  // 3. onClicks to call multiple categoriesbyCatId
-  // 4. -->
   <script>
-      
+    const filterVenues = function(e, id, neighborhood) {
+      // $result.innerHTML = e.target.value
+      let filtered = offersCopy.filter(v => {
+        return v.name.toLowerCase().includes(e.target.value)
+      })
+      console.log(offers)
+      console.log(filtered)
+    }
     </script>
 </body>
 </html>
