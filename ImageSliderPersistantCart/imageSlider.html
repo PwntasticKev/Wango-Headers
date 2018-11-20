@@ -6,26 +6,37 @@
 		<title>ImageSliderpCart</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" type="text/css" media="screen" href="reset.css" />
+		<link rel="stylesheet" type="text/css" href="slick/slick/slick.css" />
+		<link rel="stylesheet" type="text/css" href="slick/slick/slick-theme.css" />
 	</head>
 	<!-- ↓ BEGIN STYLES ↓ -->
 	<style>
 		.pers-main-container {
-			display: flex;
+			/* display: flex;
 			flex-direction: column;
 			justify-content: center;
-			align-items: center;
+			align-items: center; */
 		}
 
 		.pers-card-container {
 			border-bottom: 1px solid lightgray;
 			padding: 13px;
-			width: 292px;
+			outline: none;
 			font-family: Roboto;
 			display: flex;
 			flex-direction: column;
 			margin-top: 10px;
-			font-family: Roboto;
-		}
+      font-family: Roboto;
+      display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    }
+    
+.pers-card-container .slick-slide {
+  margin: 0 40px;
+}
+
 		.pers-offer-image {
 			width: 292px;
 			height: 146px;
@@ -36,7 +47,7 @@
 			font-size: 14px;
 			font-weight: bold;
 			line-height: 18pt;
-			margin: 10px 0;
+      margin: 10px 0;
 		}
 
 		.pers-li-container {
@@ -87,13 +98,31 @@
 			text-align: center;
 			color: #4a4a4a;
 			font-family: Roboto;
-		}
+    }
+
+    .slick-active:nth-child(1) {
+      background: lightgray;
+    }
 
 		/* MEDIA QUERIES */
 		@media (min-width: 375px) {
 			.pers-text {
 				padding: 20px 50px;
-			}
+      }
+      .pers-card-container {
+display: flex !important;
+}
+.pers-offer-title {
+
+      padding: 0 30px;
+}
+		}
+		@media (min-width: 768px) {
+      .pers-offer-title {
+        padding: 0 33px;
+      }
+      .pers-card-container {
+      }
 		}
 	</style>
 	<!-- ↑ END STYLES ↑ -->
@@ -103,42 +132,128 @@
 			exclusive deals for many of the attractions and merchants featured in this
 			article—all delivered instantly to your phone.
 		</section>
-		<section class="pers-main-container">
-			<section class="pers-card-container">
-				<img class="pers-offer-image" />
-				<div class="pers-offer-title">
-					Houston Museum of Natural Science Value Access Pass
-				</div>
-				<ul class="pers-li-container">
-					<li class="pers-li">Over 50% off aduly tickets</li>
-					<li class="pers-li">
-						3-in-1 pass includes permanent exhibits, burke baker planetarium and
-						cockrell butterfly center
-					</li>
-					<li class="pers-li">Does not include special exhibitions</li>
-				</ul>
-				<div class="pers-offer-price">$35.00 - $40.00</div>
-				<button class="pers-button">LEARN MORE AND BUY</button>
-			</section>
+    <section class="pers-main-container">
+    <div class="test">
+      
+				<section class="pers-card-container">
+					<img class="pers-offer-image" />
+					<div class="pers-offer-title">
+						1Houston Museum of Natural Science Value Access Pass
+					</div>
+					<ul class="pers-li-container">
+						<li class="pers-li">Over 50% off aduly tickets</li>
+						<li class="pers-li">
+							3-in-1 pass includes permanent exhibits, burke baker planetarium
+							and cockrell butterfly center
+						</li>
+						<li class="pers-li">Does not include special exhibitions</li>
+					</ul>
+				<section style="width: 293px;">	<div class="pers-offer-price">$35.00 - $40.00</div></section>
+					<button class="pers-button">LEARN MORE AND BUY</button>
+				</section>
 
-			<section class="pers-card-container">
-				<img class="pers-offer-image" />
-				<div class="pers-offer-title">
-					Houston Museum of Natural Science Value Access Pass
-				</div>
-				<ul class="pers-li-container">
-					<li class="pers-li">Over 50% off aduly tickets</li>
-					<li class="pers-li">
-						3-in-1 pass includes permanent exhibits, burke baker planetarium and
-						cockrell butterfly center
-					</li>
-					<li class="pers-li">Does not include special exhibitions</li>
-				</ul>
-				<div class="pers-offer-price">$35.00 - $40.00</div>
-				<button class="pers-button">LEARN MORE AND BUY</button>
-			</section>
-		</section>
+				<section class="pers-card-container">
+					<img class="pers-offer-image" />
+					<div class="pers-offer-title">
+						2Houston Museum of Natural Science Value Access Pass
+					</div>
+					<ul class="pers-li-container">
+						<li class="pers-li">Over 50% off aduly tickets</li>
+						<li class="pers-li">
+							3-in-1 pass includes permanent exhibits, burke baker planetarium
+							and cockrell butterfly center
+						</li>
+						<li class="pers-li">Does not include special exhibitions</li>
+					</ul>
+					<div class="pers-offer-price">$35.00 - $40.00</div>
+					<button class="pers-button">LEARN MORE AND BUY</button>
+        </section>
 
-		<script></script>
+				<section class="pers-card-container">
+					<img class="pers-offer-image" />
+					<div class="pers-offer-title">
+						3BLAYH Museum of Natural Science Value Access Pass
+					</div>
+					<ul class="pers-li-container">
+						<li class="pers-li">Over 50% off aduly tickets</li>
+						<li class="pers-li">
+							3-in-1 pass includes permanent exhibits, burke baker planetarium
+							and cockrell butterfly center
+						</li>
+						<li class="pers-li">Does not include special exhibitions</li>
+					</ul>
+					<section style=""><div class="pers-offer-price">$35.00 - $40.00</div></section>
+					<button class="pers-button">LEARN MORE AND BUY</button>
+        </section>
+
+				<section class="pers-card-container">
+					<img class="pers-offer-image" />
+					<div class="pers-offer-title">
+						4BLAYH Museum of Natural Science Value Access Pass
+					</div>
+					<ul class="pers-li-container">
+						<li class="pers-li">Over 50% off aduly tickets</li>
+						<li class="pers-li">
+							3-in-1 pass includes permanent exhibits, burke baker planetarium
+							and cockrell butterfly center
+						</li>
+						<li class="pers-li">Does not include special exhibitions</li>
+					</ul>
+					<section class=''><div class="pers-offer-price">$35.00 - $40.00</div></section>
+					<button class="pers-button">LEARN MORE AND BUY</button>
+        </section>
+        
+      </section>
+      </div>
+      <!-- END TEST DIV -->
+
+
+
+		<script
+			type="text/javascript"
+			src="//code.jquery.com/jquery-1.11.0.min.js"
+		></script>
+		<script
+			type="text/javascript"
+			src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+		></script>
+		<script type="text/javascript" src="slick/slick/slick.min.js"></script>
+
+		<script type="text/javascript">
+	
+
+      $(function() {
+    $('.test').slick({
+      mobileFirst: true,
+		  slidesToShow: 1,
+      arrows: false,
+      focusOnSelect: true,
+      
+      responsive: [
+      {
+      breakpoint: 319,
+      settings: "unslick"
+    },
+    {
+      breakpoint: 767,
+      settings: {
+			slidesToShow: 2,
+      settings: "getSlick"
+			}
+    },
+			{
+        breakpoint: 790,
+        settings: {
+				slidesToShow: 2,
+			}
+    }
+  ]
+    });
+
+    $(window).on('resize', function() {
+        $('.test').slick('resize');
+    });
+});
+		</script>
 	</body>
 </html>
