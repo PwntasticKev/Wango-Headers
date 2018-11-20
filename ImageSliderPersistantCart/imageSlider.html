@@ -21,7 +21,7 @@
 		.pers-card-container {
 			border-bottom: 1px solid lightgray;
 			padding: 13px;
-			/* width: 292px; */
+			outline: none;
 			font-family: Roboto;
 			display: flex;
 			flex-direction: column;
@@ -30,6 +30,7 @@
       display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
     }
     
 .pers-card-container .slick-slide {
@@ -98,14 +99,10 @@
 			color: #4a4a4a;
 			font-family: Roboto;
     }
-    
-    /* .slick-next {
-      display: none !important;
-    } */
 
-		/* .test {
-			display: none;
-		} */
+    .slick-active:nth-child(1) {
+      background: lightgray;
+    }
 
 		/* MEDIA QUERIES */
 		@media (min-width: 375px) {
@@ -151,7 +148,7 @@ display: flex !important;
 						</li>
 						<li class="pers-li">Does not include special exhibitions</li>
 					</ul>
-				<section style='style="width:100%; background: red; height:20px;"'>	<div class="pers-offer-price">$35.00 - $40.00</div></section>
+				<section style="width: 293px;">	<div class="pers-offer-price">$35.00 - $40.00</div></section>
 					<button class="pers-button">LEARN MORE AND BUY</button>
 				</section>
 
