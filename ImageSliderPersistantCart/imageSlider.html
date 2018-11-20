@@ -13,6 +13,7 @@
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
+			align-items: center;
 		}
 
 		.pers-card-container {
@@ -62,11 +63,13 @@
 			outline: none;
 			background: none;
 			width: 280px;
-			height: 35px;
 			border: 1px solid gray;
 			font-weight: 500;
 			font-family: Roboto;
 			margin-bottom: 11px;
+			font-size: 12px;
+			padding: 10px 0;
+			cursor: pointer;
 		}
 
 		.pers-offer-price {
@@ -74,16 +77,23 @@
 		}
 
 		.pers-text {
-			padding: 20px 15px;
+			padding: 20px 20px;
 			border-bottom: 1px solid gray;
 			display: flex;
 			justify-content: center;
 			font-size: 14px;
-			font-weight: 400;
+			font-weight: 300;
 			line-height: 19pt;
 			text-align: center;
 			color: #4a4a4a;
 			font-family: Roboto;
+		}
+
+		/* MEDIA QUERIES */
+		@media (min-width: 375px) {
+			.pers-text {
+				padding: 20px 50px;
+			}
 		}
 	</style>
 	<!-- ↑ END STYLES ↑ -->
