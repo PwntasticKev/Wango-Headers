@@ -229,14 +229,19 @@ display: flex !important;
     $('.test').slick({
       mobileFirst: true,
 		  slidesToShow: 1,
-	  	slidesToScroll: 1,
       arrows: false,
-      dots: true,
+      focusOnSelect: true,
+      
       responsive: [
+      {
+      breakpoint: 319,
+      settings: "unslick"
+    },
     {
       breakpoint: 767,
       settings: {
 			slidesToShow: 2,
+      settings: "getSlick"
 			}
     },
 			{
