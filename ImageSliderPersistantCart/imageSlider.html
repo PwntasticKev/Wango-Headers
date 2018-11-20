@@ -21,7 +21,7 @@
 		.pers-card-container {
 			border-bottom: 1px solid lightgray;
 			padding: 13px;
-			width: 292px;
+			/* width: 292px; */
 			font-family: Roboto;
 			display: flex;
 			flex-direction: column;
@@ -46,7 +46,7 @@
 			font-size: 14px;
 			font-weight: bold;
 			line-height: 18pt;
-			margin: 10px 0;
+      margin: 10px 0;
 		}
 
 		.pers-li-container {
@@ -97,7 +97,11 @@
 			text-align: center;
 			color: #4a4a4a;
 			font-family: Roboto;
-		}
+    }
+    
+    /* .slick-next {
+      display: none !important;
+    } */
 
 		/* .test {
 			display: none;
@@ -107,14 +111,21 @@
 		@media (min-width: 375px) {
 			.pers-text {
 				padding: 20px 50px;
-			}
+      }
+      .pers-card-container {
+display: flex !important;
+}
+.pers-offer-title {
+
+      padding: 0 30px;
+}
 		}
 		@media (min-width: 768px) {
-			/* .test {
-				display: flex;
-				align-items: center;
-				justify-content: center;
-			} */
+      .pers-offer-title {
+        padding: 0 33px;
+      }
+      .pers-card-container {
+      }
 		}
 	</style>
 	<!-- ↑ END STYLES ↑ -->
@@ -140,7 +151,7 @@
 						</li>
 						<li class="pers-li">Does not include special exhibitions</li>
 					</ul>
-					<div class="pers-offer-price">$35.00 - $40.00</div>
+				<section style='style="width:100%; background: red; height:20px;"'>	<div class="pers-offer-price">$35.00 - $40.00</div></section>
 					<button class="pers-button">LEARN MORE AND BUY</button>
 				</section>
 
@@ -174,10 +185,10 @@
 						</li>
 						<li class="pers-li">Does not include special exhibitions</li>
 					</ul>
-					<div class="pers-offer-price">$35.00 - $40.00</div>
+					<section style=""><div class="pers-offer-price">$35.00 - $40.00</div></section>
 					<button class="pers-button">LEARN MORE AND BUY</button>
         </section>
-        
+
 				<section class="pers-card-container">
 					<img class="pers-offer-image" />
 					<div class="pers-offer-title">
@@ -191,7 +202,7 @@
 						</li>
 						<li class="pers-li">Does not include special exhibitions</li>
 					</ul>
-					<div class="pers-offer-price">$35.00 - $40.00</div>
+					<section class=''><div class="pers-offer-price">$35.00 - $40.00</div></section>
 					<button class="pers-button">LEARN MORE AND BUY</button>
         </section>
         
@@ -212,35 +223,35 @@
 		<script type="text/javascript" src="slick/slick/slick.min.js"></script>
 
 		<script type="text/javascript">
-			$(document).ready(function() {
-				$(".test").slick({
-					dots: true,
-					arrows: true,
-          slidesToShow: 2,
-  slidesToScroll: 1,
-  infinite: true,
-  responsive: [
+	
+
+      $(function() {
+    $('.test').slick({
+      mobileFirst: true,
+		  slidesToShow: 1,
+	  	slidesToScroll: 1,
+      arrows: false,
+      dots: true,
+      responsive: [
     {
-      breakpoint: 768,
+      breakpoint: 767,
       settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: '20px',
-        slidesToShow: 3
-      }
+			slidesToShow: 2,
+			}
     },
-    {
-      breakpoint: 480,
-      settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: '30px',
-        slidesToShow: 1
-      }
+			{
+        breakpoint: 790,
+        settings: {
+				slidesToShow: 2,
+			}
     }
   ]
-				})
-			})
+    });
+
+    $(window).on('resize', function() {
+        $('.test').slick('resize');
+    });
+});
 		</script>
 	</body>
 </html>
