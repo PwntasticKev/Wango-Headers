@@ -5,12 +5,105 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<title>ImageSliderpCart</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+		<link rel="stylesheet" type="text/css" media="screen" href="reset.css" />
 	</head>
 	<!-- ↓ BEGIN STYLES ↓ -->
-	<style></style>
+	<style>
+		.pers-main-container {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+
+		.pers-card-container {
+			border-bottom: 1px solid lightgray;
+			padding: 13px;
+			width: 292px;
+			font-family: Roboto;
+			display: flex;
+			flex-direction: column;
+			margin-top: 10px;
+			font-family: Roboto;
+		}
+		.pers-offer-image {
+			width: 292px;
+			height: 140px;
+			background: lightgray;
+		}
+
+		.pers-offer-title {
+			font-size: 14px;
+			font-weight: bold;
+			line-height: 18pt;
+			margin: 10px 0;
+		}
+
+		.pers-li {
+			font-size: 12px;
+			line-height: 16px;
+			color: #6c6c6c;
+		}
+
+		.pers-button {
+			outline: none;
+			background: none;
+			width: 280px;
+			height: 35px;
+			border: 1px solid gray;
+		}
+
+		.pers-offer-price {
+			margin: 18px 0;
+		}
+
+		.pers-li-container {
+			width: 265px;
+			color: #6c6c6c;
+			font-family: Roboto;
+			font-size: 12px;
+			line-height: 16px;
+			padding: 0 5px;
+		}
+
+		.pers-text {
+			padding: 20px 15px;
+			border-bottom: 1px solid gray;
+			display: flex;
+			justify-content: center;
+			font-size: 14px;
+			font-weight: 400;
+			line-height: 19pt;
+			text-align: center;
+			color: #4a4a4a;
+			font-family: Roboto;
+		}
+	</style>
 	<!-- ↑ END STYLES ↑ -->
 	<body>
+		<section class="pers-text">
+			These experience passes curated by Visit Houston provide access and
+			exclusive deals for many of the attractions and merchants featured in this
+			article—all delivered instantly to your phone.
+		</section>
+		<section class="pers-main-container">
+			<section class="pers-card-container">
+				<img class="pers-offer-image" />
+				<div class="pers-offer-title">
+					Houston Museum of Natural Science Value Access Pass
+				</div>
+				<section class="pers-li-container">
+					<li class="pers-li">Over 50% off aduly tickets</li>
+					<li class="pers-li">
+						3-in-1 pass includes permanent exhibits, burke baker planetarium and
+						cockrell butterfly center
+					</li>
+					<li class="pers-li">Does not include special exhibitions</li>
+				</section>
+				<div class="pers-offer-price">$35.00 - $40.00</div>
+				<button class="pers-button">LEARN MORE AND BUY</button>
+			</section>
+		</section>
+
 		<script></script>
 	</body>
 </html>
