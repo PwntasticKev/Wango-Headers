@@ -18,25 +18,32 @@
 			align-items: center; */
 		}
 
+		.pers-slick-container {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+
 		.pers-card-container {
 			border-bottom: 1px solid lightgray;
-      padding: 13px;
-      width:293px;
+			padding: 13px;
+			width: 293px;
 			outline: none;
 			font-family: Roboto;
 			display: flex;
 			flex-direction: column;
 			margin-top: 10px;
-      font-family: Roboto;
-      display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    }
+			font-family: Roboto;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			cursor: pointer;
+		}
 
-.pers-card-container .slick-slide {
-  margin: 0 40px;
-}
+		.pers-card-container .slick-slide {
+			margin: 0 40px;
+		}
 
 		.pers-offer-image {
 			width: 292px;
@@ -48,7 +55,8 @@
 			font-size: 14px;
 			font-weight: bold;
 			line-height: 18pt;
-      margin: 10px 0;
+			margin: 10px 0;
+			width: 292px;
 		}
 
 		.pers-li-container {
@@ -73,7 +81,7 @@
 		.pers-button {
 			outline: none;
 			background: none;
-			width: 280px;
+			width: 292px;
 			border: 1px solid gray;
 			font-weight: 500;
 			font-family: Roboto;
@@ -98,49 +106,54 @@
 			text-align: center;
 			color: #4a4a4a;
 			font-family: Roboto;
-    }
+		}
 
-.slick-active {
-  background: lightgray;
-}
+		.slick-active {
+			background: lightgray;
+		}
 
-.slick-active + .slick-active {
-  background: white;
-}
+		.slick-active + .slick-active {
+			background: white;
+		}
 
+		.pers-other-experiences {
+			text-align: left;
+			background: #dddddd;
+			color: #6c6c6c;
+		}
 
 		/* MEDIA QUERIES */
 		@media (min-width: 375px) {
 			.pers-text {
 				padding: 20px 50px;
-      }
-      .pers-card-container {
-        display: flex !important;
-      }
-      .test {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
-    }
+			}
+			.pers-card-container {
+				display: flex !important;
+			}
+			.test {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+			}
+		}
 
 		@media (min-width: 768px) {
-      .test {
-        display: block;
-      }
+			.pers-slick-container {
+				display: block;
+			}
 		}
 	</style>
 	<!-- ↑ END STYLES ↑ -->
+
 	<body>
 		<section class="pers-text">
 			These experience passes curated by Visit Houston provide access and
 			exclusive deals for many of the attractions and merchants featured in this
 			article—all delivered instantly to your phone.
 		</section>
-    <section class="pers-main-container">
-    <div class="test">
-
+		<section class="pers-main-container">
+			<section class="pers-slick-container">
 				<section class="pers-card-container">
 					<img class="pers-offer-image" />
 					<div class="pers-offer-title">
@@ -154,9 +167,11 @@
 						</li>
 						<li class="pers-li">Does not include special exhibitions</li>
 					</ul>
-				<section style="width: 293px;">	<div class="pers-offer-price">$35.00 - $40.00</div></section>
+					<section style="width: 293px;">
+						<div class="pers-offer-price">$35.00 - $40.00</div>
+					</section>
 					<button class="pers-button">LEARN MORE AND BUY</button>
-        </section>
+				</section>
 
 				<section class="pers-card-container">
 					<img class="pers-offer-image" />
@@ -171,11 +186,13 @@
 						</li>
 						<li class="pers-li">Does not include special exhibitions</li>
 					</ul>
-				<section style="width: 293px;">	<div class="pers-offer-price">$35.00 - $40.00</div></section>
+					<section style="width: 293px;">
+						<div class="pers-offer-price">$35.00 - $40.00</div>
+					</section>
 					<button class="pers-button">LEARN MORE AND BUY</button>
 				</section>
 
-        <section class="pers-card-container">
+				<section class="pers-card-container">
 					<img class="pers-offer-image" />
 					<div class="pers-offer-title">
 						3Houston Museum of Natural Science Value Access Pass
@@ -188,82 +205,79 @@
 						</li>
 						<li class="pers-li">Does not include special exhibitions</li>
 					</ul>
-				<section style="width: 293px;">	<div class="pers-offer-price">$35.00 - $40.00</div></section>
-					<button class="pers-button">LEARN MORE AND BUY</button>
-        </section>
-
-        <section class="pers-card-container">
-					<img class="pers-offer-image" />
-					<div class="pers-offer-title">
-						3Houston Museum of Natural Science Value Access Pass
-					</div>
-					<ul class="pers-li-container">
-						<li class="pers-li">Over 50% off aduly tickets</li>
-						<li class="pers-li">
-							3-in-1 pass includes permanent exhibits, burke baker planetarium
-							and cockrell butterfly center
-						</li>
-						<li class="pers-li">Does not include special exhibitions</li>
-					</ul>
-				<section style="width: 293px;">	<div class="pers-offer-price">$35.00 - $40.00</div></section>
+					<section style="width: 293px;">
+						<div class="pers-offer-price">$35.00 - $40.00</div>
+					</section>
 					<button class="pers-button">LEARN MORE AND BUY</button>
 				</section>
+			</section>
+		</section>
+		<!-- END TEST section -->
 
-      </section>
-      </div>
-      <!-- END TEST DIV -->
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-		<!-- <script
-			type="text/javascript"
-			src="//code.jquery.com/jquery-1.11.0.min.js"
-		></script>
-		<script
-			type="text/javascript"
-			src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
-		></script> -->
+		<div class="pers-other-experiences">OTHER POPULAR EXPERIENCES</div>
+
+		<section class="mobile-slider">
+			<section class="pers-slick-container-mobile">
+				<div>1</div>
+				<div>2</div>
+				<div>3</div>
+			</section>
+		</section>
+
+		<!-- JAVASCRIPT -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 		<script type="text/javascript" src="slick/slick/slick.min.js"></script>
 
 		<script type="text/javascript">
+			$(_ => {
+				$(".pers-slick-container-mobile").slick({
+					mobileFirst: true,
+					slidesToShow: 1.25,
+					arrows: false,
+					dots: true,
+					focusOnSelect: true,
+					infinite: true
+				})
 
-      $(_ => {
-    $('.test').slick({
-      mobileFirst: true,
-		  slidesToShow: 1,
-      arrows: false,
-      focusOnSelect: true,
-      infinite: true,
-      responsive: [
-      {
-      breakpoint: 319,
-      settings: "unslick"
-    },
-    {
-      breakpoint: 767,
-      settings: {
-			slidesToShow: 2,
-      settings: "getSlick"
-			}
-    },
-			{
-        breakpoint: 1023,
-        settings: {
-				slidesToShow: 3,
-			}
-    }
-  ]
-    });
+				$(_ => {
+					$(".pers-slick-container").slick({
+						mobileFirst: true,
+						slidesToShow: 1,
+						arrows: false,
+						focusOnSelect: true,
+						infinite: true,
+						responsive: [
+							{
+								breakpoint: 319,
+								settings: "unslick",
+							},
+							{
+								breakpoint: 767,
+								settings: {
+									slidesToShow: 2,
+									settings: "getSlick"
+								}
+							},
+							{
+								breakpoint: 1023,
+								settings: {
+									slidesToShow: 3
+								}
+							}
+						]
+					})
 
-    $(window).on('resize',_ => {
-        $('.test').slick('resize');
-    });
-});
+				$(window).on("resize", _ => {
+					$(".test").slick("resize")
+				})
+			})
 
-// $('.pers-card-container').on('click', e => {
-//   console.log(e.currentTarget)
-//   let currentVenue = e.currentTarget
-//   $(currentVenue).toggleClass('addbackground')
-  
-// })
+			// $('.pers-card-container').on('click', e => {
+			//   console.log(e.currentTarget)
+			//   let currentVenue = e.currentTarget
+			//   $(currentVenue).toggleClass('addbackground')
+
+			// })
 		</script>
 	</body>
 </html>
