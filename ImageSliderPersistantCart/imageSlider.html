@@ -100,9 +100,14 @@
 			font-family: Roboto;
     }
 
-    .addbackground {
-      background: gray
-    }
+.slick-active {
+  background: lightgray;
+}
+
+.slick-active + .slick-active {
+  background: white;
+}
+
 
 		/* MEDIA QUERIES */
 		@media (min-width: 375px) {
@@ -253,12 +258,12 @@
     });
 });
 
-$('.pers-card-container').on('click', e => {
-  console.log(e.currentTarget)
-  let currentVenue = e.currentTarget
-  $(currentVenue).toggleClass('addbackground')
+// $('.pers-card-container').on('click', e => {
+//   console.log(e.currentTarget)
+//   let currentVenue = e.currentTarget
+//   $(currentVenue).toggleClass('addbackground')
   
-})
+// })
 		</script>
 	</body>
 </html>
