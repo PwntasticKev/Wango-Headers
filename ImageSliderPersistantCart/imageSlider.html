@@ -216,56 +216,38 @@
 
 		<div class="pers-other-experiences">OTHER POPULAR EXPERIENCES</div>
 
-		<section class="mobile-slider">
-			<section class="pers-slick-container-mobile">
-				<div>1</div>
-				<div>2</div>
-				<div>3</div>
-			</section>
-		</section>
-
 		<!-- JAVASCRIPT -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 		<script type="text/javascript" src="slick/slick/slick.min.js"></script>
 
 		<script type="text/javascript">
 			$(_ => {
-				$(".pers-slick-container-mobile").slick({
+				$(".pers-slick-container").slick({
 					mobileFirst: true,
-					slidesToShow: 1.25,
+					slidesToShow: 1,
 					arrows: false,
-					dots: true,
 					focusOnSelect: true,
-					infinite: true
-				})
-
-				$(_ => {
-					$(".pers-slick-container").slick({
-						mobileFirst: true,
-						slidesToShow: 1,
-						arrows: false,
-						focusOnSelect: true,
-						infinite: true,
-						responsive: [
-							{
-								breakpoint: 319,
-								settings: "unslick",
-							},
-							{
-								breakpoint: 767,
-								settings: {
-									slidesToShow: 2,
-									settings: "getSlick"
-								}
-							},
-							{
-								breakpoint: 1023,
-								settings: {
-									slidesToShow: 3
-								}
+					infinite: true,
+					responsive: [
+						{
+							breakpoint: 319,
+							settings: "unslick"
+						},
+						{
+							breakpoint: 767,
+							settings: {
+								slidesToShow: 2,
+								settings: "getSlick"
 							}
-						]
-					})
+						},
+						{
+							breakpoint: 1023,
+							settings: {
+								slidesToShow: 3
+							}
+						}
+					]
+				})
 
 				$(window).on("resize", _ => {
 					$(".test").slick("resize")
