@@ -8,6 +8,14 @@
 		<link rel="stylesheet" type="text/css" media="screen" href="reset.css" />
 		<link rel="stylesheet" type="text/css" href="slick/slick/slick.css" />
 		<link rel="stylesheet" type="text/css" href="slick/slick/slick-theme.css" />
+		<link
+			href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300i,400,400i,700"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900"
+			rel="stylesheet"
+		/>
 	</head>
 	<!-- ↓ BEGIN STYLES ↓ -->
 
@@ -21,22 +29,27 @@
 
 		.pers-card-container {
 			border-bottom: 1px solid lightgray;
-			padding: 13px;
-			width: 190px;
+			padding: 0 5px;
+			width: 180px !important;
 			outline: none;
-			font-family: Roboto;
+			font-family: "Roboto", sans-serif;
 			display: flex;
 			flex-direction: column;
 			margin-top: 10px;
-			font-family: Roboto;
 			display: flex;
 			justify-content: center;
 			align-items: center;
 			cursor: pointer;
 		}
 
-		.pers-card-container .slick-slide {
-			margin: 0 40px;
+		.slick-slider {
+			overflow: hidden;
+		}
+		.slick-slide {
+			margin-left: 15px;
+		}
+		.slick-list {
+			margin-left: -15px;
 		}
 
 		.pers-offer-image {
@@ -110,10 +123,13 @@
 			text-align: left;
 			background: #dddddd;
 			color: #6c6c6c;
+			font-size: 12px;
+			font-weight: bold;
+			padding: 10px 15px;
+			font-family: "Roboto Condensed", sans-serif;
 		}
 		.desktop {
 			display: none;
-			/* blah */
 		}
 
 		/* MEDIA QUERIES */
@@ -252,7 +268,8 @@
 					arrows: false,
 					focusOnSelect: true,
 					infinite: true,
-					slidesToShow: 1.75,
+					slidesToShow: 1,
+					// accessibility: true,
 					responsive: [
 						{
 							breakpoint: 319
