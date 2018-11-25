@@ -28,38 +28,38 @@
 		}
 
 		.pers-card-container {
-			border-bottom: 1px solid lightgray;
-			padding: 0 5px;
-			width: 180px !important;
+			padding: 25px 17px;
+			border-top: 1px solid lightgray;
+			/* width: 195px; */
+			width: 165px;
 			outline: none;
 			font-family: "Roboto", sans-serif;
 			display: flex;
 			flex-direction: column;
-			margin-top: 10px;
+			/* margin-top: 10px; */
 			display: flex;
 			justify-content: center;
 			align-items: center;
 			cursor: pointer;
 		}
 
-		.slick-slider {
-			overflow: hidden;
+		.pers-card-container-desktop {
+			width: 330px !important;
+			/* height: 90px; */
 		}
-		.slick-slide {
-			margin-left: 15px;
-		}
-		.slick-list {
-			margin-left: -15px;
+
+		.pers-offer-image-desktop {
+			height: 160px !important;
 		}
 
 		.pers-offer-image {
 			width: 100%;
-			height: 90px;
+			height: 95px;
 			background: lightgray;
 		}
 
 		.pers-offer-title {
-			font-size: 16px;
+			font-size: 17px;
 			font-weight: bold;
 			line-height: 18pt;
 			margin: 10px 0;
@@ -76,10 +76,11 @@
 		}
 
 		.pers-li {
-			font-size: 12px;
+			font-size: 14px;
+			margin: 5px 0;
 			line-height: 16px;
 			color: #6c6c6c;
-			list-style: circle;
+			list-style: disc;
 			list-style-position: outside !important;
 			margin-left: 12px;
 			font-weight: 300;
@@ -94,7 +95,7 @@
 			font-family: Roboto;
 			margin-bottom: 11px;
 			font-size: 12px;
-			padding: 10px 0;
+			padding: 15px 0;
 			cursor: pointer;
 		}
 
@@ -132,20 +133,42 @@
 			display: none;
 		}
 
+		.pers-offer-price-mobile {
+			margin: 15px 0;
+		}
+
+		/* the parent */
+		/* .slick-list {
+			margin-left: -17px;
+    } */
+
+		/* .slick-slide {
+			width: 190px !important;
+		} */
+
+		.desktop-card-container {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+
 		/* MEDIA QUERIES */
 		@media (min-width: 375px) {
 			.pers-text {
 				padding: 20px 50px;
 			}
 
-			.pers-offer-image {
-				height: 146px;
-			}
 			.pers-card-container {
 				display: flex;
 				flex-direction: column;
 				justify-content: center;
 				align-items: center;
+				width: 320px;
+			}
+
+			.pers-card-container {
+				width: 190px;
 			}
 		}
 
@@ -155,6 +178,9 @@
 			}
 			.desktop {
 				display: block;
+			}
+			.mobile {
+				display: none;
 			}
 			.pers-offer-price {
 				margin: 18px 0;
@@ -177,6 +203,50 @@
 			exclusive deals for many of the attractions and merchants featured in this
 			article—all delivered instantly to your phone.
 		</section>
+		<section class="desktop-card-container mobile">
+			<section class="pers-card-container pers-card-container-desktop">
+				<img class="pers-offer-image pers-offer-image-desktop" />
+				<div class="pers-offer-title">
+					1Houston Museum of Natural Science Value Access Pass
+				</div>
+				<ul class="pers-li-container">
+					<li class="pers-li">Over 50% off aduly tickets</li>
+					<li class="pers-li">
+						3-in-1 pass includes permanent exhibits, burke baker planetarium and
+						cockrell butterfly center
+					</li>
+					<li class="pers-li">Does not include special exhibitions</li>
+				</ul>
+				<section style="width: 100%;">
+					<div class="pers-offer-price pers-offer-price-mobile">
+						$35.00 - $40.00
+					</div>
+				</section>
+				<button class="pers-button">LEARN MORE AND BUY</button>
+			</section>
+
+			<section class="pers-card-container pers-card-container-desktop">
+				<img class="pers-offer-image pers-offer-image-desktop" />
+				<div class="pers-offer-title">
+					2Houston Museum of Natural Science Value Access Pass
+				</div>
+				<ul class="pers-li-container">
+					<li class="pers-li">Over 50% off aduly tickets</li>
+					<li class="pers-li">
+						3-in-1 pass includes permanent exhibits, burke baker planetarium and
+						cockrell butterfly center
+					</li>
+					<li class="pers-li">Does not include special exhibitions</li>
+				</ul>
+				<section style="width: 100%;">
+					<div class="pers-offer-price pers-offer-price-mobile">
+						$35.00 - $40.00
+					</div>
+				</section>
+				<button class="pers-button">LEARN MORE AND BUY</button>
+			</section>
+		</section>
+
 		<div class="pers-other-experiences">OTHER POPULAR EXPERIENCES</div>
 		<section class="pers-slick-container">
 			<section class="pers-card-container">
@@ -254,6 +324,25 @@
 				</section>
 				<button class="pers-button desktop">LEARN MORE AND BUY</button>
 			</section>
+
+			<section class="pers-card-container">
+				<img class="pers-offer-image" />
+				<div class="pers-offer-title">
+					5Houston Museum of Natural Science Value Access Pass
+				</div>
+				<ul class="pers-li-container desktop">
+					<li class="pers-li">Over 50% off aduly tickets</li>
+					<li class="pers-li">
+						3-in-1 pass includes permanent exhibits, burke baker planetarium and
+						cockrell butterfly center
+					</li>
+					<li class="pers-li">Does not include special exhibitions</li>
+				</ul>
+				<section style="width: 100%;">
+					<div class="pers-offer-price">$35.00 - $40.00</div>
+				</section>
+				<button class="pers-button desktop">LEARN MORE AND BUY</button>
+			</section>
 		</section>
 		<!-- END TEST section -->
 
@@ -268,8 +357,7 @@
 					arrows: false,
 					focusOnSelect: true,
 					infinite: true,
-					slidesToShow: 1,
-					// accessibility: true,
+					slidesToShow: 1.5,
 					responsive: [
 						{
 							breakpoint: 319
@@ -283,7 +371,7 @@
 						{
 							breakpoint: 1023,
 							settings: {
-								slidesToShow: 3
+								slidesToShow: 4
 							}
 						}
 					]
