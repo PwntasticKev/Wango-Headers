@@ -30,6 +30,7 @@
 		.pers-card-container {
 			padding: 25px 17px;
 			border-top: 1px solid lightgray;
+			border-left: 1px solid lightgray;
 			/* width: 195px; */
 			width: 165px;
 			outline: none;
@@ -94,7 +95,7 @@
 			font-weight: 500;
 			font-family: Roboto;
 			margin-bottom: 11px;
-			font-size: 12px;
+			font-size: 16px;
 			padding: 15px 0;
 			cursor: pointer;
 		}
@@ -124,9 +125,9 @@
 			text-align: left;
 			background: #dddddd;
 			color: #6c6c6c;
-			font-size: 12px;
+			font-size: 15px;
 			font-weight: bold;
-			padding: 10px 15px;
+			padding: 15px 15px;
 			font-family: "Roboto Condensed", sans-serif;
 		}
 		.desktop {
@@ -137,21 +138,18 @@
 			margin: 15px 0;
 		}
 
-		/* the parent */
-		/* .slick-list {
-			margin-left: -17px;
-    } */
-
-		/* .slick-slide {
-			width: 190px !important;
-		} */
-
-		.desktop-card-container {
+		.slick-track {
+			/* border-bottom: 1px solid lightgray; */
+		}
+		.pers-slick-container {
+			border-bottom: 1px solid lightgray;
+		}
+		/* .desktop-card-container {
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
 			align-items: center;
-		}
+		} */
 
 		/* MEDIA QUERIES */
 		@media (min-width: 375px) {
@@ -195,6 +193,16 @@
 				margin-left: 0;
 			}
 		}
+		@media (min-width: 768px) {
+			/* .slick-slide {
+				margin-left: 27px;
+			} */
+
+			/* the parent */
+			.slick-list {
+				margin-left: 100px;
+			}
+		}
 	</style>
 	<!-- ↑ END STYLES ↑ -->
 	<body>
@@ -210,7 +218,7 @@
 					1Houston Museum of Natural Science Value Access Pass
 				</div>
 				<ul class="pers-li-container">
-					<li class="pers-li">Over 50% off aduly tickets</li>
+					<li class="pers-li">Over 50% off adult tickets</li>
 					<li class="pers-li">
 						3-in-1 pass includes permanent exhibits, burke baker planetarium and
 						cockrell butterfly center
@@ -265,7 +273,7 @@
 				<section style="width: 100%;">
 					<div class="pers-offer-price">$35.00 - $40.00</div>
 				</section>
-				<button class="pers-button desktop">LEARN MORE AND BUY</button>
+				<button class="pers-button mobile">LEARN MORE AND BUY</button>
 			</section>
 
 			<section class="pers-card-container">
@@ -284,7 +292,7 @@
 				<section style="width: 100%;">
 					<div class="pers-offer-price">$35.00 - $40.00</div>
 				</section>
-				<button class="pers-button desktop">LEARN MORE AND BUY</button>
+				<button class="pers-button mobile">LEARN MORE AND BUY</button>
 			</section>
 
 			<section class="pers-card-container">
@@ -303,7 +311,7 @@
 				<section style="width: 100%;">
 					<div class="pers-offer-price">$35.00 - $40.00</div>
 				</section>
-				<button class="pers-button desktop">LEARN MORE AND BUY</button>
+				<button class="pers-button mobile">LEARN MORE AND BUY</button>
 			</section>
 
 			<section class="pers-card-container">
@@ -322,7 +330,7 @@
 				<section style="width: 100%;">
 					<div class="pers-offer-price">$35.00 - $40.00</div>
 				</section>
-				<button class="pers-button desktop">LEARN MORE AND BUY</button>
+				<button class="pers-button mobile">LEARN MORE AND BUY</button>
 			</section>
 
 			<section class="pers-card-container">
@@ -341,7 +349,7 @@
 				<section style="width: 100%;">
 					<div class="pers-offer-price">$35.00 - $40.00</div>
 				</section>
-				<button class="pers-button desktop">LEARN MORE AND BUY</button>
+				<button class="pers-button mobile">LEARN MORE AND BUY</button>
 			</section>
 		</section>
 		<!-- END TEST section -->
@@ -371,7 +379,9 @@
 						{
 							breakpoint: 1023,
 							settings: {
-								slidesToShow: 4
+								slidesToShow: 3,
+								arrows: true,
+								dots: true
 							}
 						}
 					]
