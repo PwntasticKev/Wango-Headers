@@ -20,11 +20,17 @@
 	<!-- ↓ BEGIN STYLES ↓ -->
 
 	<style>
-		.pers-slick-container {
-			/* display: flex;
+		.desktop-card-container {
+			display: flex;
+			align-items: center;
 			flex-direction: column;
 			justify-content: center;
-			align-items: center; */
+		}
+
+		.pers-card-container-desktop {
+			width: 300px !important;
+			border-left: none !important;
+			/* height: 90px; */
 		}
 
 		.pers-card-container {
@@ -42,11 +48,6 @@
 			justify-content: center;
 			align-items: center;
 			cursor: pointer;
-		}
-
-		.pers-card-container-desktop {
-			width: 330px !important;
-			/* height: 90px; */
 		}
 
 		.pers-offer-image-desktop {
@@ -102,7 +103,6 @@
 
 		.pers-text {
 			padding: 20px 20px;
-			border-bottom: 1px solid gray;
 			display: flex;
 			justify-content: center;
 			font-size: 14px;
@@ -111,14 +111,6 @@
 			text-align: center;
 			color: #4a4a4a;
 			font-family: Roboto;
-		}
-
-		.slick-active:first-of-type {
-			background: lightgray;
-		}
-
-		.slick-active + .slick-active {
-			background: white;
 		}
 
 		.pers-other-experiences {
@@ -136,26 +128,33 @@
 
 		.pers-offer-price-mobile {
 			margin: 15px 0;
+			background: transparent;
 		}
 
-		.slick-track {
-			/* border-bottom: 1px solid lightgray; */
-		}
-
-		.slick-list {
-			/* padding-left: 57px; */
+		.pers-offer-price:nth-child(1) {
+			background: lightgray;
 		}
 		.pers-slick-container {
 			border-bottom: 1px solid lightgray;
+			background: white;
 		}
-		/* .desktop-card-container {
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			align-items: center;
-		} */
+
+		.slick-slide {
+			background-color: white;
+		}
+
+		.slick-slide.slick-current,
+		section {
+			background-color: lightgray;
+		}
 
 		/* MEDIA QUERIES */
+		@media (min-width: 320px) {
+			.pers-card-container-desktop {
+				padding: 25px 6px;
+			}
+		}
+
 		@media (min-width: 375px) {
 			.pers-text {
 				padding: 20px 50px;
@@ -171,6 +170,10 @@
 
 			.pers-card-container {
 				width: 190px;
+			}
+			.pers-card-container-desktop {
+				width: 340px !important;
+				border-left: none !important;
 			}
 		}
 
@@ -196,15 +199,18 @@
 			.slick-track {
 				margin-left: 0;
 			}
-		}
-		@media (min-width: 768px) {
-			/* .slick-slide {
-				margin-left: 27px;
-			} */
-
-			/* the parent */
 			.slick-list {
 				margin-left: 100px;
+			}
+		}
+		@media (min-width: 1024px) {
+			.pers-card-container-desktop {
+				width: 330px !important;
+				/* height: 90px; */
+			}
+
+			.pers-button {
+				display: none;
 			}
 		}
 	</style>
@@ -260,6 +266,7 @@
 		</section>
 
 		<div class="pers-other-experiences">OTHER POPULAR EXPERIENCES</div>
+
 		<section class="pers-slick-container">
 			<section class="pers-card-container">
 				<img class="pers-offer-image" />
@@ -365,11 +372,11 @@
 		<script>
 			$(document).ready(function() {
 				$(".pers-slick-container").slick({
-					mobileFirst: true,
 					arrows: false,
-					focusOnSelect: true,
 					infinite: true,
+					mobileFirst: true,
 					slidesToShow: 1.5,
+					focusOnSelect: true,
 					responsive: [
 						{
 							breakpoint: 319
@@ -383,9 +390,9 @@
 						{
 							breakpoint: 1023,
 							settings: {
-								slidesToShow: 3,
+								dots: true,
 								arrows: true,
-								dots: true
+								slidesToShow: 5
 							}
 						}
 					]
