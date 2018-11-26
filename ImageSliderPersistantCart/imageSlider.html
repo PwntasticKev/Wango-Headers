@@ -25,6 +25,7 @@
 			align-items: center;
 			flex-direction: column;
 			justify-content: center;
+			background: white;
 		}
 
 		.pers-card-container-desktop {
@@ -38,13 +39,11 @@
 			padding: 25px 17px;
 			border-top: 1px solid lightgray;
 			border-left: 1px solid lightgray;
-			/* width: 195px; */
 			width: 165px;
 			outline: none;
 			font-family: "Roboto", sans-serif;
 			display: flex;
 			flex-direction: column;
-			/* margin-top: 10px; */
 			display: flex;
 			justify-content: center;
 			align-items: center;
@@ -132,21 +131,17 @@
 			background: transparent;
 		}
 
-		.pers-offer-price:nth-child(1) {
-			background: lightgray;
-		}
 		.pers-slick-container {
 			border-bottom: 1px solid lightgray;
 			background: white;
 		}
 
 		.slick-slide {
-			background-color: white;
+			background: white;
 		}
 
-		.slick-slide.slick-current,
-		section {
-			background-color: lightgray;
+		.slick-slide.slick-current.pers-card-container {
+			background: lightgray;
 		}
 
 		/* MEDIA QUERIES */
@@ -236,11 +231,11 @@
 					</li>
 					<li class="pers-li">Does not include special exhibitions</li>
 				</ul>
-				<section style="width: 100%;">
+				<div style="width: 100%;">
 					<div class="pers-offer-price pers-offer-price-mobile">
 						$35.00 - $40.00
 					</div>
-				</section>
+				</div>
 				<button class="pers-button">LEARN MORE AND BUY</button>
 			</section>
 
@@ -257,11 +252,11 @@
 					</li>
 					<li class="pers-li">Does not include special exhibitions</li>
 				</ul>
-				<section style="width: 100%;">
+				<div style="width: 100%;">
 					<div class="pers-offer-price pers-offer-price-mobile">
 						$35.00 - $40.00
 					</div>
-				</section>
+				</div>
 				<button class="pers-button">LEARN MORE AND BUY</button>
 			</section>
 		</section>
@@ -282,10 +277,11 @@
 					</li>
 					<li class="pers-li">Does not include special exhibitions</li>
 				</ul>
-				<section style="width: 100%;">
+				<div style="width: 100%;">
 					<div class="pers-offer-price">$35.00 - $40.00</div>
-				</section>
+				</div>
 				<button class="pers-button desktop">LEARN MORE AND BUY</button>
+				<div>TRIANGLE</div>
 			</section>
 
 			<section class="pers-card-container">
@@ -301,9 +297,9 @@
 					</li>
 					<li class="pers-li">Does not include special exhibitions</li>
 				</ul>
-				<section style="width: 100%;">
+				<div style="width: 100%;">
 					<div class="pers-offer-price">$35.00 - $40.00</div>
-				</section>
+				</div>
 				<button class="pers-button desktop">LEARN MORE AND BUY</button>
 			</section>
 
@@ -320,9 +316,9 @@
 					</li>
 					<li class="pers-li">Does not include special exhibitions</li>
 				</ul>
-				<section style="width: 100%;">
+				<div style="width: 100%;">
 					<div class="pers-offer-price">$35.00 - $40.00</div>
-				</section>
+				</div>
 				<button class="pers-button desktop">LEARN MORE AND BUY</button>
 			</section>
 
@@ -339,9 +335,9 @@
 					</li>
 					<li class="pers-li">Does not include special exhibitions</li>
 				</ul>
-				<section style="width: 100%;">
+				<div style="width: 100%;">
 					<div class="pers-offer-price">$35.00 - $40.00</div>
-				</section>
+				</div>
 				<button class="pers-button desktop">LEARN MORE AND BUY</button>
 			</section>
 
@@ -358,9 +354,9 @@
 					</li>
 					<li class="pers-li">Does not include special exhibitions</li>
 				</ul>
-				<section style="width: 100%;">
+				<div style="width: 100%;">
 					<div class="pers-offer-price">$35.00 - $40.00</div>
-				</section>
+				</div>
 				<button class="pers-button desktop">LEARN MORE AND BUY</button>
 			</section>
 		</section>
@@ -377,6 +373,7 @@
 					infinite: true,
 					mobileFirst: true,
 					slidesToShow: 1.5,
+					slidesToScroll: 1,
 					focusOnSelect: true,
 					responsive: [
 						{
@@ -393,7 +390,7 @@
 							settings: {
 								dots: true,
 								arrows: true,
-								slidesToShow: 5
+								slidesToShow: 4
 							}
 						}
 					]
