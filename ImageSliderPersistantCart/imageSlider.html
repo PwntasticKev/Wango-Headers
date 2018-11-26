@@ -48,6 +48,7 @@
 			justify-content: center;
 			align-items: center;
 			cursor: pointer;
+			position: relative;
 		}
 
 		.pers-offer-image-desktop {
@@ -136,12 +137,24 @@
 			background: white;
 		}
 
+		.pers-arrow-container {
+			display: none;
+		}
+
 		.slick-slide {
 			background: white;
 		}
 
 		.slick-slide.slick-current.pers-card-container {
 			background: lightgray;
+		}
+
+		.arrow-down {
+			width: 0;
+			height: 0;
+			border-left: 12px solid transparent;
+			border-right: 12px solid transparent;
+			border-top: 12px solid white;
 		}
 
 		/* MEDIA QUERIES */
@@ -197,6 +210,14 @@
 			}
 			.slick-list {
 				margin-left: 100px;
+			}
+			.slick-slide.slick-current .pers-arrow-container {
+				background: lightgray;
+				display: flex;
+				justify-content: center;
+				position: absolute;
+				bottom: 0;
+				width: 80%;
 			}
 		}
 		@media (min-width: 1024px) {
@@ -281,7 +302,7 @@
 					<div class="pers-offer-price">$35.00 - $40.00</div>
 				</div>
 				<button class="pers-button desktop">LEARN MORE AND BUY</button>
-				<div>TRIANGLE</div>
+				<div class="pers-arrow-container"><div class="arrow-down"></div></div>
 			</section>
 
 			<section class="pers-card-container">
@@ -301,6 +322,7 @@
 					<div class="pers-offer-price">$35.00 - $40.00</div>
 				</div>
 				<button class="pers-button desktop">LEARN MORE AND BUY</button>
+				<div class="pers-arrow-container"><div class="arrow-down"></div></div>
 			</section>
 
 			<section class="pers-card-container">
@@ -320,6 +342,7 @@
 					<div class="pers-offer-price">$35.00 - $40.00</div>
 				</div>
 				<button class="pers-button desktop">LEARN MORE AND BUY</button>
+				<div class="pers-arrow-container"><div class="arrow-down"></div></div>
 			</section>
 
 			<section class="pers-card-container">
@@ -339,6 +362,7 @@
 					<div class="pers-offer-price">$35.00 - $40.00</div>
 				</div>
 				<button class="pers-button desktop">LEARN MORE AND BUY</button>
+				<div class="pers-arrow-container"><div class="arrow-down"></div></div>
 			</section>
 
 			<section class="pers-card-container">
@@ -358,6 +382,7 @@
 					<div class="pers-offer-price">$35.00 - $40.00</div>
 				</div>
 				<button class="pers-button desktop">LEARN MORE AND BUY</button>
+				<div class="pers-arrow-container"><div class="arrow-down"></div></div>
 			</section>
 		</section>
 		<!-- END TEST section -->
@@ -388,7 +413,6 @@
 						{
 							breakpoint: 1023,
 							settings: {
-								dots: true,
 								arrows: true,
 								slidesToShow: 4
 							}
