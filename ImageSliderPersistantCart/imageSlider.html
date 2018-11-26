@@ -157,6 +157,22 @@
 			border-top: 12px solid white;
 		}
 
+		.slick-next:before {
+			color: black;
+		}
+		.slick-prev:before {
+			color: black;
+			content: "←";
+		}
+
+		.slick-next {
+			right: 0px;
+		}
+
+		.slick-prev {
+			left: 20px;
+			z-index: 30;
+		}
 		/* MEDIA QUERIES */
 		@media (min-width: 320px) {
 			.pers-card-container-desktop {
@@ -400,6 +416,7 @@
 					slidesToShow: 1.5,
 					slidesToScroll: 1,
 					focusOnSelect: true,
+					arrows: true,
 					responsive: [
 						{
 							breakpoint: 319
@@ -407,18 +424,33 @@
 						{
 							breakpoint: 767,
 							settings: {
-								slidesToShow: 3
+								slidesToShow: 3,
+								arrows: true
 							}
 						},
 						{
 							breakpoint: 1023,
 							settings: {
 								arrows: true,
+								slidesToShow: 3
+							}
+						},
+						{
+							breakpoint: 1200,
+							settings: {
 								slidesToShow: 4
+							}
+						},
+						{
+							breakpoint: 1800,
+							settings: {
+								slidesToShow: 5
 							}
 						}
 					]
 				})
+				prevArrow: $(".prev").addClass("slick-carousel-arrow")
+				nextArrow: $(".next").addClass("slick-carousel-arrow")
 			})
 			$(window).on("resize", function() {
 				$(".pers-slick-container").slick("resize")
