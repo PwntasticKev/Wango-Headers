@@ -1,0 +1,40 @@
+.taco-main-container {
+	display: flex;
+	justify-content: space-between;
+	background-color: #0b9fc4;
+	align-items: center;
+}
+
+.tac-home-icon {
+	cursor: pointer;
+}
+
+.tac-glass {
+	color: white;
+	font-size: 24px;
+}
+
+.tac-burger {
+	width: 25px;
+	height: 25px;
+	border: 1px solid #fff;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	margin-right: 10px;
+}
+
+.tac-line {
+	margin-top: 3px;
+	cursor: pointer;
+	height: 2px;
+	width: 16px;
+	background: #fff;
+	display: block;
+	content: "";
+	box-shadow: none;
+	right: 4px;
+	top: 10px;
+	transition: all 0.5s ease-in-out;
+}
