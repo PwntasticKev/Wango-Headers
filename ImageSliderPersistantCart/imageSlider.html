@@ -159,11 +159,20 @@
 		.slick-next:before {
 			color: black;
 		}
-		.slick-prev:before {
-			color: black;
-      content: "←" !important;
-      background: none;
-		}
+		.slick-prev:before, .slick-next:before {
+			color: white;
+    font-weight: bolder;
+    font-size: 21px;
+    content: "←";
+    width: 19px;
+    opacity: 1;
+    font-family: sans-serif;
+    -webkit-font-smoothing: none;
+    }
+    
+    .slick-next:before {
+      content: '→'
+    }
 
 .slick-next {
     right: 0px;
