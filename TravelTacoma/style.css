@@ -3,6 +3,8 @@
 	justify-content: space-between;
 	background-color: #0b9fc4;
 	align-items: center;
+	font-family: calluna-sans, sans-serif;
+	padding-right: 15px;
 }
 
 .tac-home-icon {
@@ -10,7 +12,7 @@
 }
 
 .tac-glass {
-	color: white;
+	color: black;
 	font-size: 24px;
 }
 
@@ -26,7 +28,7 @@
 }
 
 .tac-line {
-	margin-top: 3px;
+	margin: 2px 0;
 	cursor: pointer;
 	height: 2px;
 	width: 16px;
@@ -37,4 +39,35 @@
 	right: 4px;
 	top: 10px;
 	transition: all 0.5s ease-in-out;
+}
+
+.border-slant {
+	position: relative;
+	height: 44px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: white;
+	border: none;
+	outline: none;
+}
+
+.border-slant:before {
+	content: "";
+	position: absolute;
+	left: -16px;
+	top: 0;
+	width: 0;
+	border-left: 16px solid transparent;
+	border-top: 45px solid #fff;
+}
+
+.border-slant:after {
+	content: "";
+	position: absolute;
+	right: -16px;
+	top: 0;
+	width: 0;
+	border-left: 16px solid #fff;
+	border-top: 45px solid transparent;
 }
