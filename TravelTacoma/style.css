@@ -108,6 +108,7 @@
 	line-height: 16px;
 	color: #333;
 	margin-left: 15px;
+	outline: none;
 }
 
 .navMobile .dl-menuwrapper li a.has-children:after {
@@ -117,5 +118,6 @@
 	position: absolute;
 	right: 16px;
 	top: 7px;
-	background: url(/includes/public/assets/icon-menu-arrow.png) no-repeat center;
+	background: url("http://www.traveltacoma.com//includes/public/assets/icon-menu-arrow.png")
+		no-repeat center;
 }
