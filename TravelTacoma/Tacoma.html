@@ -43,9 +43,14 @@
 		</section>
 
 		<!-- First Layer Menu -->
-		<section>
+		<section class="tac-first-layer-menu">
 			<section class="tac-search-container">
-				<form data-sv-searchform="" action="/search/" method="GET">
+				<form
+					data-sv-searchform=""
+					action="http://www.traveltacoma.com/search/"
+					method="GET"
+					style="position:relative;"
+				>
 					<input
 						data-sv-searchinput=""
 						name="q"
@@ -55,10 +60,63 @@
 						placeholder="SEARCH…"
 						value=""
 					/>
-					<i data-sv-searchbtn="" class="fa fa-inverse searchBtn"></i>
+					<i data-sv-searchbtn="" class="fa fa-inverse tac-search-button"></i>
 				</form>
 			</section>
-		</section>
+			<ul>
+				<ul class="tac-layer1-menu-item">
+					REGIONS
+				</ul>
+				<ul class="tac-layer1-menu-item">
+					THINGS TO DO
+				</ul>
+				<ul class="tac-layer1-menu-item">
+					RESTAURAUNTS
+				</ul>
+				<ul class="tac-layer1-menu-item">
+					HOTELS
+				</ul>
+				<ul class="tac-layer1-menu-item">
+					PLAN
+				</ul>
+			</ul>
+			<div class="tac-border" />
+			<ul>
+				<ul class="tac-layer1-menu-item layer1-mid-menu">
+					MEETINGS
+				</ul>
+				<ul class="tac-layer1-menu-item layer1-mid-menu">
+					PARTNERS
+				</ul>
+				<ul class="tac-layer1-menu-item layer1-mid-menu">
+					MEDIA
+				</ul>
+				<ul class="tac-layer1-menu-item layer1-mid-menu">
+					TOURS
+				</ul>
+			</ul>
+			<div class="tac-border" />
+			<ul>
+				<ul class="tac-layer1-menu-item layer1-mid-menu">
+					ABOUT
+				</ul>
+				<ul class="tac-layer1-menu-item layer1-mid-menu">
+					CONTACT
+				</ul>
+				<li class="tac-layer1-menu-item layer1-mid-menu">PRIVACY POLICY</li>
+			</ul>
+      <section class="tac-search-container">
+        <a href="http://www.traveltacoma.com//tripbuilder/" class="tac-flex tac-my-itinerary">
+          <img src="http://www.traveltacoma.com//includes/public/assets/tripbuilder/tripbuilder-icon.png"> 
+          <div class="tac-my-itin-txt">
+            My Intinerary (0)
+          </div>
+        </a>
+      </section>
+      <section>
+        <div id="testWeather"></div>
+      </section>
+    </section>
 
 		<!-- JS -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
@@ -67,7 +125,39 @@
 				$("#tac-top-line").toggleClass("tac-top-line")
 				$("#tac-mid-line").toggleClass("tac-mid-line")
 				$("#tac-bot-line").toggleClass("tac-bot-line")
-			})
+      })
+      
+  var Weather = function(options) {
+	let _queryUri, _unit, _lat, _lnt
+	_lnt = options.lnt
+	_lat = options.lat
+	_unit = options.unit ? options.unit : "c"
+	_queryUri = `https://query.yahooapis.com/v1/public/yql?q=select * from weather.forecast where u='${_unit}' AND woeid in (SELECT woeid FROM geo.places WHERE text="(${_lat},${_lnt})")&format=json`
+	return $.ajax(_queryUri).then(res => {
+		if (res.status >= 400) {
+			throw new Error("Bad response from server")
+		}
+		return res.query.results
+			? res.query.results.channel.item.condition
+			: { code: "NA", temp: "NA" }
+	})
+}
+$("#testWeather").append(
+		Weather({ lat: 47.1185, lnt: -122.5633, unit: "f" }).then(function(
+			res
+		) {
+			console.log('this is my response',res)
+			$("#testWeather").append( 
+				$(
+					`<div class="tac-weather"><i class="climacon i${
+						res.code
+					}"></i><span class="tac-weather"><b>${
+						res.temp
+					}</b><sup>°</sup></span></div>`
+				)
+			)
+		})
+	)
 		</script>
 	</body>
 </html>
