@@ -1,9 +1,17 @@
+/* GLOBAL CSS  */
+.tac-flex {
+	display: flex;
+	align-items: center;
+}
+
+/* MOBILE */
 .taco-main-container {
 	display: flex;
 	justify-content: space-between;
 	background-color: #0b9fc4;
 	align-items: center;
 	font-family: calluna-sans, sans-serif;
+	text-decoration: none;
 }
 
 .tac-home-icon {
@@ -89,6 +97,10 @@
 
 /* FIRST MENU CSS */
 
+.tac-first-layer-menu {
+	font-family: calluna-sans, sans-serif;
+}
+
 .tac-search-container {
 	background-color: #b95915;
 	width: 100%;
@@ -96,6 +108,7 @@
 	background: #b95915;
 	display: flex;
 	align-items: center;
+	color: #ffffff;
 }
 
 .tac-search-input {
@@ -109,9 +122,34 @@
 	color: #333;
 	margin-left: 15px;
 	outline: none;
+	position: relative;
 }
 
-.navMobile .dl-menuwrapper li a.has-children:after {
+.tac-search-button {
+	content: "";
+	width: 22px;
+	height: 22px;
+	position: absolute;
+	right: 0;
+	top: 2px;
+	background: url("http://www.traveltacoma.com/includes/public/assets/search/arrow.png")
+		no-repeat center;
+}
+
+.tac-layer1-menu-item {
+	position: relative;
+	padding: 7px 30px 7px 16px;
+	font-size: 22px;
+	line-height: 22px;
+	color: #333;
+	text-transform: uppercase;
+}
+
+.layer1-mid-menu {
+	font-size: 18px;
+}
+
+.tac-layer1-menu-item:after {
 	content: "";
 	width: 22px;
 	height: 22px;
@@ -120,4 +158,20 @@
 	top: 7px;
 	background: url("http://www.traveltacoma.com//includes/public/assets/icon-menu-arrow.png")
 		no-repeat center;
+}
+
+.tac-border {
+	width: 100%;
+	height: 1px;
+	margin: 7px 0;
+	background: #d8d2c9;
+}
+
+/* MY ITIN && WEATHER */
+
+.tac-my-itinerary {
+	font-size: 18px;
+	padding: 7px 30px 7px 16px;
+	text-decoration: none;
+	color: white;
 }
