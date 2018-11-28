@@ -114,7 +114,7 @@
         </a>
       </section>
       <section>
-        <div id="testWeather">wee</div>
+        <div id="testWeather"></div>
       </section>
     </section>
 
@@ -142,12 +142,12 @@
 			: { code: "NA", temp: "NA" }
 	})
 }
-$(".sltl-mobilenav--top").append(
-		Weather({ lat: 40.7762691, lnt: -112.2006695, unit: "f" }).then(function(
+$("#testWeather").append(
+		Weather({ lat: 47.1185, lnt: -122.5633, unit: "f" }).then(function(
 			res
 		) {
-			console.log(res)
-			$(".testWeather").append(
+			console.log('this is my response',res)
+			$("#testWeather").append( 
 				$(
 					`<div class="sltl-weather"><i class="climacon i${
 						res.code

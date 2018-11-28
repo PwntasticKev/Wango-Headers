@@ -66,7 +66,7 @@
 
 .border-slant {
 	position: relative;
-	height: 44px;
+	height: 45px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -177,4 +177,107 @@
 .tac-my-itin-txt {
 	font-size: 18px;
 	padding-left: 5px;
+}
+
+/* CLIMA ICONS */
+.climacon:before {
+	font-family: sv-climacons !important;
+	speak: none;
+	font-size: inherit;
+	font-style: normal;
+	font-weight: 400;
+}
+.climacon.i26:before {
+	content: "\E000";
+}
+.climacon.i28:before,
+.climacon.i30:before,
+.climacon.i44:before {
+	content: "\E001";
+}
+.climacon.i27:before,
+.climacon.i29:before {
+	content: "\E002";
+}
+.climacon.i11:before,
+.climacon.i12:before,
+.climacon.i40:before,
+.climacon.i9:before {
+	content: "\E003";
+}
+.climacon.i32:before,
+.climacon.i34:before {
+	content: "\E028";
+}
+.climacon.i3200:before {
+	content: "\D8";
+	font-weight: 700;
+}
+.climacon.i10:before,
+.climacon.i8:before {
+	content: "\E00C";
+}
+.climacon.i18:before,
+.climacon.i6:before,
+.climacon.i7:before {
+	content: "\E010";
+}
+.climacon.i17:before,
+.climacon.i35:before {
+	content: "\E013";
+}
+.climacon.i5:before {
+	content: "\E004";
+}
+.climacon.i13:before,
+.climacon.i14:before,
+.climacon.i15:before,
+.climacon.i16:before,
+.climacon.i41:before,
+.climacon.i42:before,
+.climacon.i43:before,
+.climacon.i46:before {
+	content: "\E018";
+}
+.climacon.i20:before {
+	content: "\E01B";
+}
+.climacon.i21:before,
+.climacon.i22:before,
+.climacon.i23:before {
+	content: "\E01F";
+}
+.climacon.i24:before {
+	content: "\E021";
+}
+.climacon.i2:before {
+	content: "\E022";
+}
+.climacon.i19:before {
+	content: "\E023";
+}
+.climacon.i37:before,
+.climacon.i38:before,
+.climacon.i39:before,
+.climacon.i3:before,
+.climacon.i45:before,
+.climacon.i47:before,
+.climacon.i4:before {
+	content: "\E025";
+}
+.climacon.i31:before,
+.climacon.i33:before {
+	content: "\E02D";
+}
+.climacon.i0:before {
+	content: "\E037";
+}
+.climacon.i25:before {
+	content: "\E03A";
+}
+.climacon.i36:before {
+	content: "\E03D";
+}
+.climacon.i1:before {
+	content: "\E00A";
 }
