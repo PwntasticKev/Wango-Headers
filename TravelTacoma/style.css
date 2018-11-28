@@ -182,7 +182,6 @@
 /* CLIMA ICONS */
 .climacon:before {
 	font-family: sv-climacons !important;
-	speak: none;
 	font-size: inherit;
 	font-style: normal;
 	font-weight: 400;
