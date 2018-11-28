@@ -106,12 +106,15 @@
 				<li class="tac-layer1-menu-item layer1-mid-menu">PRIVACY POLICY</li>
 			</ul>
       <section class="tac-search-container">
-        <a href="/tripbuilder/" class="tac-flex">
-          <img src="/includes/public/assets/tripbuilder/tripbuilder-icon.png"> 
-          <div class="tac-my-itinerary">
+        <a href="http://www.traveltacoma.com//tripbuilder/" class="tac-flex tac-my-itinerary">
+          <img src="http://www.traveltacoma.com//includes/public/assets/tripbuilder/tripbuilder-icon.png"> 
+          <div class="tac-my-itin-txt">
             My Intinerary (0)
           </div>
         </a>
+      </section>
+      <section>
+        <div id="testWeather">wee</div>
       </section>
     </section>
 
@@ -122,7 +125,39 @@
 				$("#tac-top-line").toggleClass("tac-top-line")
 				$("#tac-mid-line").toggleClass("tac-mid-line")
 				$("#tac-bot-line").toggleClass("tac-bot-line")
-			})
+      })
+      
+  var Weather = function(options) {
+	let _queryUri, _unit, _lat, _lnt
+	_lnt = options.lnt
+	_lat = options.lat
+	_unit = options.unit ? options.unit : "c"
+	_queryUri = `https://query.yahooapis.com/v1/public/yql?q=select * from weather.forecast where u='${_unit}' AND woeid in (SELECT woeid FROM geo.places WHERE text="(${_lat},${_lnt})")&format=json`
+	return $.ajax(_queryUri).then(res => {
+		if (res.status >= 400) {
+			throw new Error("Bad response from server")
+		}
+		return res.query.results
+			? res.query.results.channel.item.condition
+			: { code: "NA", temp: "NA" }
+	})
+}
+$(".sltl-mobilenav--top").append(
+		Weather({ lat: 40.7762691, lnt: -112.2006695, unit: "f" }).then(function(
+			res
+		) {
+			console.log(res)
+			$(".testWeather").append(
+				$(
+					`<div class="sltl-weather"><i class="climacon i${
+						res.code
+					}"></i><span class="sltl-weather--temp"><b>${
+						res.temp
+					}</b><sup>°</sup></span></div>`
+				)
+			)
+		})
+	)
 		</script>
 	</body>
 </html>
