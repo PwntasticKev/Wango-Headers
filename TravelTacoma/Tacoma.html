@@ -22,15 +22,18 @@
 				alt="Taco Man img"
 				class="tac-home-icon"
 			/>
-			<section style="display: flex; justify-content: space-evenly; width:100%">
+			<section
+				id="tac-menu-container"
+				style="display: flex; justify-content: space-evenly; width:100%"
+			>
 				<div class="border-slant">
 					<i class="fa fa-search tac-glass " aria-hidden="true"></i>
 				</div>
 				<section style="display: flex; align-items:center;">
 					<div class="tac-burger">
-						<br class="tac-line" />
-						<br class="tac-line" />
-						<br class="tac-line" />
+						<br class="tac-line" id="tac-top-line" />
+						<br class="tac-line" id="tac-mid-line" />
+						<br class="tac-line" id="tac-bot-line" />
 					</div>
 					<div style="color:white; font-weight: 600; font-size: 20px;">
 						MENU
@@ -39,8 +42,32 @@
 			</section>
 		</section>
 
-		<!-- JS -->
+		<!-- First Layer Menu -->
+		<section>
+			<section class="tac-search-container">
+				<form data-sv-searchform="" action="/search/" method="GET">
+					<input
+						data-sv-searchinput=""
+						name="q"
+						type="search"
+						class="tac-search-input"
+						autocapitalize="off"
+						placeholder="SEARCH…"
+						value=""
+					/>
+					<i data-sv-searchbtn="" class="fa fa-inverse searchBtn"></i>
+				</form>
+			</section>
+		</section>
 
-		<script></script>
+		<!-- JS -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		<script>
+			$("#tac-menu-container").click(function() {
+				$("#tac-top-line").toggleClass("tac-top-line")
+				$("#tac-mid-line").toggleClass("tac-mid-line")
+				$("#tac-bot-line").toggleClass("tac-bot-line")
+			})
+		</script>
 	</body>
 </html>
