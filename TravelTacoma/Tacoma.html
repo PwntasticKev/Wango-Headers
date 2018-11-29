@@ -126,12 +126,12 @@
 				$("#tac-mid-line").toggleClass("tac-mid-line")
 				$("#tac-bot-line").toggleClass("tac-bot-line")
       })
+      
+$("#tac-menu-container").click(function () {
+    $('.tac-first-layer-menu').animate({width:'toggle',opacity:"toggle"},250);
+  });
 
-      $('#tac-menu-container').click(function() {
-  console.log('in')
-    $('.tac-first-layer-menu').animate( { scrollLeft: '+=460' }, 1000);
-});
-// $
+
       
   var Weather = function(options) {
 	let _queryUri, _unit, _lat, _lnt

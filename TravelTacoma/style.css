@@ -104,6 +104,10 @@ ul {
 
 .tac-first-layer-menu {
   font-family: calluna-sans, sans-serif;
+  position: fixed;
+  right: 0;
+  width: 100%;
+  opacity: 1
 }
 
 .tac-search-container {
