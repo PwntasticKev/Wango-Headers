@@ -126,6 +126,12 @@
 				$("#tac-mid-line").toggleClass("tac-mid-line")
 				$("#tac-bot-line").toggleClass("tac-bot-line")
       })
+
+      $('#tac-menu-container').click(function() {
+  console.log('in')
+    $('.tac-first-layer-menu').animate( { scrollLeft: '+=460' }, 1000);
+});
+// $
       
   var Weather = function(options) {
 	let _queryUri, _unit, _lat, _lnt
@@ -149,15 +155,21 @@ $("#testWeather").append(
 			console.log('this is my response',res)
 			$("#testWeather").append( 
 				$(
-					`<div class="tac-weather"><i class="climacon i${
+					`<div class="tac-weather">
+          <i class="climacon i${
 						res.code
-					}"></i><span class="tac-weather"><b>${
+					}"></i>
+          <span class="tac-weather"><b>${
 						res.temp
-					}</b><sup>°</sup></span></div>`
+					}</b><sup>°</sup>
+          </span>
+          <span class="tac-weather tac-weather-text">${res.text}</span>
+          </div>`
 				)
 			)
 		})
 	)
+
 		</script>
 	</body>
 </html>
