@@ -146,20 +146,11 @@
 				$("#tac-mid-line").toggleClass("tac-mid-line")
 				$("#tac-bot-line").toggleClass("tac-bot-line")
       })
-      
+      // MAIN MENU CLICK
 $("#tac-menu-container").click(function () {
-  // $('.tac-first-layer-menu').width()
-    $('.tac-first-layer-menu').animate({width:'toggle',opacity:"toggle"},200, _ => {
-      console.log('after')
-    });
+    $('.tac-first-layer-menu').toggle({opacity:"toggle"},200);
   });
 
-
-    $('#tac-regions-option').on('click', function() {
-    $('.tac-first-layer-menu').animate({width:'hide',opacity:"toggle"},200, function() {
-      $('#tac-regions-menu').animate({width:'toggle',opacity:"toggle"},200);
-    });
-  })
 
 
       
