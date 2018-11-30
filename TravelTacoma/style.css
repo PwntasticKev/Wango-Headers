@@ -16,7 +16,7 @@ ul {
 	background-color: #0b9fc4;
 	align-items: center;
 	font-family: calluna-sans, sans-serif;
-	text-decoration: none;
+  text-decoration: none;
 }
 
 .tac-home-icon {
@@ -104,7 +104,7 @@ ul {
 
 .tac-first-layer-menu {
   font-family: calluna-sans, sans-serif;
-  position: fixed;
+  position: absolute;
   right: 0;
   width: 100%;
   opacity: 1;
@@ -216,4 +216,12 @@ ul {
     color: #333;
     text-transform: uppercase;
     cursor: pointer;
+}
+
+/* MEDIA QUERIES */
+@media (min-width: 375px) and (min-height: 812px) {
+  .tac-first-layer-menu {
+    height: 80vh;
+    box-shadow: 0px 3px 36px -9px rgba(0,0,0,0.29);
+  }
 }
