@@ -64,7 +64,7 @@
 				</form>
 			</section>
 			<ul >
-				<ul class="tac-layer1-menu-item">
+				<ul class="tac-layer1-menu-item" id='tac-regions-option'>
 					REGIONS
 				</ul>
 				<ul class="tac-layer1-menu-item">
@@ -120,9 +120,23 @@
     <!-- END FIRST LAYER↑ -->
     <!-- REGIONS MENU 1rst layer -->
     
-    <section class="tac-search-container">
-<div class="tac-basic-menu-item" style='color: white;'>BACK</div>
-    </section>
+  <section id='tac-regions-menu' style='display: none;'>
+      <section class="tac-search-container">
+  <div class="tac-basic-menu-item" style='color: white;'>BACK</div>
+      </section>
+      <ul style='font-family: calluna-sans, sans-serif;'>
+        <li class="tac-basic-menu-item">regions</li>
+        <li class="tac-basic-menu-item">mount raineer</li>
+        <ul class="tac-layer1-menu-item">Tacoma</ul>
+        <li class="tac-basic-menu-item">lakewood</li>
+        <li class="tac-basic-menu-item">puyallup</li>
+        <li class="tac-basic-menu-item">fife</li>
+        <li class="tac-basic-menu-item">gig harbor</li>
+        <li class="tac-basic-menu-item">sumner</li>
+        <li class="tac-basic-menu-item">dupont</li>
+        <li class="tac-basic-menu-item">small communities</li>
+      </ul>
+  </section>
 
 		<!-- JS -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
@@ -134,8 +148,18 @@
       })
       
 $("#tac-menu-container").click(function () {
-    $('.tac-first-layer-menu').animate({width:'toggle',opacity:"toggle"},200);
+  // $('.tac-first-layer-menu').width()
+    $('.tac-first-layer-menu').animate({width:'toggle',opacity:"toggle"},200, _ => {
+      console.log('after')
+    });
   });
+
+
+    $('#tac-regions-option').on('click', function() {
+    $('.tac-first-layer-menu').animate({width:'hide',opacity:"toggle"},200, function() {
+      $('#tac-regions-menu').animate({width:'toggle',opacity:"toggle"},200);
+    });
+  })
 
 
       
