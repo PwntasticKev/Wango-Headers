@@ -93,9 +93,15 @@
     text-transform: uppercase;
   }
 
+  .dist-menu-option:hover {
+    opacity: .8;
+    color:black;
+  }
+
   .dist-menu-option:first-child:before {
     content: ''
   }
+
 
   .dist-menu-option:before {
     content: '|';
