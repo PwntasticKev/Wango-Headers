@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>Distillery</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" type="text/css" media="screen" href="reset.css" />
+		<link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+			integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+			crossorigin="anonymous"
+    />
+  </head>
+	<body>
+<header>
+  <section class="dist-main-head-container">
+    <div class="dist-burger">
+      <br class="dist-line" id="dist-top-line" />
+      <br class="dist-line" id="dist-mid-line" />
+      <br class="dist-line" id="dist-bot-line" />
+    </div>
+    <img class="dist-logo" src="https://www.distilleryrowpdx.com/wp-content/uploads/2018/05/distillery_row_reg.png" alt="">
+  </section>
+  <section class="dist-menu-container" style='display: none;'>
+    <a target="_blank" class="dist-menu-option" href="https://www.distilleryrowpdx.com/"><div>Home</div></a>
+    <a target="_blank" class="dist-menu-option" href="https://www.distilleryrowpdx.com/about/"><div>About</div></a>
+    <a target="_blank" class="dist-menu-option" href="https://www.distilleryrowpdx.com/distillery-row-map/"><div>Row Map</div></a>
+    <a target="_blank" class="dist-menu-option" href="https://www.distilleryrowpdx.com/meet-the-distilleries/"><div>The Distrilleries</div></a>
+    <a target="_blank" class="dist-menu-option" href="https://www.distilleryrowpdx.com/frequently-asked-questions/"><div>FAQ</div></a>
+    <a target="_blank" class="dist-menu-option" href="https://www.distilleryrowpdx.com/frequently-asked-questions/"><div>News + Events</div></a>
+    <a target="_blank" class="dist-menu-option" href='https://www.distilleryrowpdx.com/contact/'><div>Contact</div></a>
+  </section>
+</header>
+		<!-- JS -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		<script>
+        $(document).ready(function() {
+
+      $('.dist-burger').on('click', function() {
+        $('.dist-menu-container').slideToggle("fast",)
+      })
+
+$(window).resize(function(e) {
+  resize();
+});
+
+
+// function resize() {
+//   if ($(window).width() = 1024 && $('.dist-menu-container').is(':visible')) {
+//     $('.dist-menu-container').show()
+//   }
+// }
+});
+    </script>
+	</body>
+</html>
