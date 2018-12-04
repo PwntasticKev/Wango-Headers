@@ -398,7 +398,7 @@ ul {
 		align-items: center;
 		position: relative;
 		height: 49px;
-		padding-right: 65px;
+		padding-right: 57px;
 		padding-left: 10px;
 		background: #009fc3;
 		min-width: 665px;
@@ -436,7 +436,15 @@ ul {
   #tac-regions-option {
     padding: 0 25px;
   }
-  
+  .border-slant-sub-menu:before {
+		content: "";
+		position: absolute;
+		left: -16px;
+		top: 0;
+		width: 0;
+		border-left: 16px solid transparent;
+		border-top: 49px solid #009fc3;;
+	}
 }
 
 /* WEATHER CLIMACONS */
