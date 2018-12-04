@@ -248,7 +248,7 @@ ul {
   }
   #tac-menu-container {
     justify-content: space-between !important;
-    width: 40% !important;
+    width: 39% !important;
   }
   .tac-weather-desktop {
     width:45px;
@@ -306,6 +306,25 @@ background: #b95915;
   }
   .border-slant:first-of-type:before{
     border-top: 45px solid #b95915;
+  }
+  .border-slant-blue {
+    position: relative;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #009fc3;
+    border: none;
+    outline: none;
+  }
+  .border-slant-blue:after{
+    content: "";
+    position: absolute;
+    right: -16px;
+    top: 0;
+    width: 0;
+    border-left: 16px solid #009fc3;
+    border-top: 45px solid transparent;
   }
 }
 
