@@ -269,10 +269,10 @@ ul {
     background: white;
   }
   .taco-main-container {
-    background-color: transparent;
+    /* background-color: transparent; */
   }
   .tac-my-itinerary {
-    padding: 0;
+    padding: 0 5px;
   }
   .border-slant:last-of-type {
     background: #009fc3;
@@ -359,6 +359,37 @@ background: #b95915;
     margin: 0 10px;
   }
   .tac-mobile-burger {
+    display: none;
+  }
+  .border-slant-white {
+    position: relative;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    border: none;
+    outline: none;
+  }
+  .border-slant-white:after{
+    content: "";
+    position: absolute;
+    right: -16px;
+    top: 0;
+    width: 0;
+    border-left: 16px solid white;
+    border-top: 45px solid transparent;
+  }
+  .border-slant-white:before {
+    content: "";
+    position: absolute;
+    left: -16px;
+    top: 0;
+    width: 0;
+    border-left: 16px solid transparent;
+    border-top: 45px solid #fff;
+  }
+  .tac-burger {
     display: none;
   }
 }
