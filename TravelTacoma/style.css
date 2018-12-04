@@ -270,6 +270,7 @@ ul {
   }
   .taco-main-container {
     /* background-color: transparent; */
+    background-color: lightgray;
   }
   .tac-my-itinerary {
     padding: 0 5px;
@@ -353,7 +354,7 @@ background: #b95915;
     display: none;
   }
   #tac-menu-container {
-    width: 50% !important;
+    width: 51% !important;
   }
   .tac-menu-option {
     margin: 0 10px;
@@ -367,7 +368,7 @@ background: #b95915;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: white;
+    background: #fff;
     border: none;
     outline: none;
   }
@@ -377,7 +378,7 @@ background: #b95915;
     right: -16px;
     top: 0;
     width: 0;
-    border-left: 16px solid white;
+    border-left: 16px solid #fff;
     border-top: 45px solid transparent;
   }
   .border-slant-white:before {
@@ -392,11 +393,38 @@ background: #b95915;
   .tac-burger {
     display: none;
   }
+  .tac-desktop-sub-menu {
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    position: relative;
+    height: 49px;
+    padding-right: 65px;
+    padding-left: 10px;
+    background: #009fc3;
+    min-width: 693px;
+    right: 100px;
+  }
+  .tac-desktop-sub-menu:before {
+    content: "";
+    position: absolute;
+    left: -16px;
+    top: 0;
+    width: 0;
+    border-left: 16px solid transparent;
+    border-top: 49px solid #009fc3;
+  }
+  .border-slant:nth-of-type(4):before {
+    border-top: none;
+}
+.border-slant:last-of-type {
+  background: none;
+}
 }
 
 /* WEATHER CLIMACONS */
 
-@font-face {
+/* @font-face {
 	font-family: sv-Climacons;
 	src: url(/fonts/climacons/sv_climacons_webfont.eot);
 	src: url(/fonts/climacons/sv_climacons_webfont.eot?#iefix)
@@ -518,4 +546,4 @@ background: #b95915;
 		url(/fonts/streamline/streamline-30px.svg#streamline-30px) format("svg");
 	font-weight: 400;
 	font-style: normal;
-}
+} */
