@@ -17,33 +17,60 @@
 	</head>
 	<body>
 		<section class="taco-main-container">
-			<img
-				src="http://www.traveltacoma.com/includes/public/assets/shell/logo-mobile.png"
-				alt="Taco Man img"
-				class="tac-home-icon"
-			/>
+	<section class="border-slant-blue">
+	  		<img
+  				src="http://www.traveltacoma.com/includes/public/assets/shell/logo-mobile.png"
+  				alt="Taco Man img"
+  				class="tac-home-icon"
+  			/>
+	</section>
 			<section
 				id="tac-menu-container"
 				style="display: flex; justify-content: space-evenly; width:100%"
-			>
+      >
+      <div class="border-slant desktop">
+
+        <a href="http://www.traveltacoma.com//tripbuilder/" class="tac-flex tac-my-itinerary desktop">
+          <img src="http://www.traveltacoma.com/includes/public/assets/tripbuilder/tripbuilder-icon.png"> 
+        <div class="tac-my-itin-txt">
+            <p class='mobile'>My Intinerary</p>(0)
+          </div>
+          </a>
+      </div>
+        <div class="border-slant desktop">
+          <div id="testWeather" class='desktop tac-weather-desktop'>
+          </div>
+        </div>
 				<div class="border-slant">
 					<i class="fa fa-search tac-glass " aria-hidden="true"></i>
-				</div>
+        </div>
+        <section class='mobile' style="display: flex; align-items:center;">
+            <div class="tac-burger">
+              <br class="tac-line" id="tac-top-line" />
+              <br class="tac-line" id="tac-mid-line" />
+              <br class="tac-line" id="tac-bot-line" />
+            </div>
+              <div style="color:white; font-weight: 600; font-size: 20px;">
+                MENU
+              </div>
+            </section>
+        <div class="border-slant desktop border-slant-blue">
 				<section style="display: flex; align-items:center;">
 					<div class="tac-burger">
 						<br class="tac-line" id="tac-top-line" />
 						<br class="tac-line" id="tac-mid-line" />
 						<br class="tac-line" id="tac-bot-line" />
-					</div>
-					<div style="color:white; font-weight: 600; font-size: 20px;">
-						MENU
-					</div>
-				</section>
+          </div>
+            <div style="color:white; font-weight: 600; font-size: 20px;">
+              MENU
+            </div>
+          </section>
+        </div>
 			</section>
 		</section>
 
 		<!-- First Layer Menu -->
-		<section class="tac-first-layer-menu">
+		<section class="tac-first-layer-menu" style='display:none;'>
 			<section class="tac-search-container">
 				<form
 					data-sv-searchform=""
@@ -63,8 +90,8 @@
 					<i data-sv-searchbtn="" class="fa fa-inverse tac-search-button"></i>
 				</form>
 			</section>
-			<ul>
-				<ul class="tac-layer1-menu-item">
+			<ul >
+				<ul class="tac-layer1-menu-item" id='tac-regions-option'>
 					REGIONS
 				</ul>
 				<ul class="tac-layer1-menu-item">
@@ -81,7 +108,7 @@
 				</ul>
 			</ul>
 			<div class="tac-border" />
-			<ul>
+			<ul style='padding:7px 0;'>
 				<ul class="tac-layer1-menu-item layer1-mid-menu">
 					MEETINGS
 				</ul>
@@ -96,7 +123,7 @@
 				</ul>
 			</ul>
 			<div class="tac-border" />
-			<ul>
+			<ul style='padding:7px 0;'>
 				<ul class="tac-layer1-menu-item layer1-mid-menu">
 					ABOUT
 				</ul>
@@ -117,6 +144,26 @@
         <div id="testWeather"></div>
       </section>
     </section>
+    <!-- END FIRST LAYER↑ -->
+    <!-- REGIONS MENU 1rst layer -->
+    
+  <section id='tac-regions-menu' style='display: none;'>
+      <section class="tac-search-container">
+  <div class="tac-basic-menu-item" style='color: white;'>BACK</div>
+      </section>
+      <ul style='font-family: calluna-sans, sans-serif;'>
+        <li class="tac-basic-menu-item">regions</li>
+        <li class="tac-basic-menu-item">mount raineer</li>
+        <ul class="tac-layer1-menu-item">Tacoma</ul>
+        <li class="tac-basic-menu-item">lakewood</li>
+        <li class="tac-basic-menu-item">puyallup</li>
+        <li class="tac-basic-menu-item">fife</li>
+        <li class="tac-basic-menu-item">gig harbor</li>
+        <li class="tac-basic-menu-item">sumner</li>
+        <li class="tac-basic-menu-item">dupont</li>
+        <li class="tac-basic-menu-item">small communities</li>
+      </ul>
+  </section>
 
 		<!-- JS -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
@@ -126,13 +173,11 @@
 				$("#tac-mid-line").toggleClass("tac-mid-line")
 				$("#tac-bot-line").toggleClass("tac-bot-line")
       })
-      
+      // MAIN MENU CLICK
 $("#tac-menu-container").click(function () {
-    $('.tac-first-layer-menu').animate({width:'toggle',opacity:"toggle"},250);
+    $('.tac-first-layer-menu').toggle({opacity:"toggle"},200);
   });
 
-
-      
   var Weather = function(options) {
 	let _queryUri, _unit, _lat, _lnt
 	_lnt = options.lnt

@@ -1,4 +1,3 @@
-
 /* GLOBAL CSS  */
 .tac-flex {
 	display: flex;
@@ -20,7 +19,7 @@ ul {
 }
 
 .tac-home-icon {
-  cursor: pointer;
+	cursor: pointer;
 }
 
 .tac-glass {
@@ -29,7 +28,7 @@ ul {
 }
 
 .tac-burger {
-  width: 25px;
+	width: 25px;
 	height: 25px;
 	border: 1px solid #fff;
 	display: flex;
@@ -40,7 +39,7 @@ ul {
 }
 
 .tac-line {
-  margin: 2px 0;
+	margin: 2px 0;
 	cursor: pointer;
 	height: 2px;
 	width: 16px;
@@ -54,23 +53,23 @@ ul {
 }
 
 .tac-top-line {
-  transform: rotate(45deg);
+	transform: rotate(45deg);
 	transform-origin: 13% 197%;
 	width: 18px;
 }
 
 .tac-mid-line {
-  opacity: 0;
+	opacity: 0;
 }
 
 .tac-bot-line {
-  transform: rotate(-45deg);
+	transform: rotate(-45deg);
 	transform-origin: 10% -122%;
 	width: 18px;
 }
 
 .border-slant {
-  position: relative;
+	position: relative;
 	height: 45px;
 	display: flex;
 	justify-content: center;
@@ -91,7 +90,7 @@ ul {
 }
 
 .border-slant:after {
-  content: "";
+	content: "";
 	position: absolute;
 	right: -16px;
 	top: 0;
@@ -103,25 +102,26 @@ ul {
 /* FIRST MENU CSS */
 
 .tac-first-layer-menu {
-  font-family: calluna-sans, sans-serif;
-  position: fixed;
-  right: 0;
-  width: 100%;
-  opacity: 1
+	font-family: calluna-sans, sans-serif;
+	position: absolute;
+	right: 0;
+	width: 100%;
+	opacity: 1;
 }
 
 .tac-search-container {
-  background-color: #b95915;
+	background-color: #b95915;
 	width: 100%;
-	height: 45px;
+	height: 42px;
 	background: #b95915;
 	display: flex;
 	align-items: center;
 	color: #ffffff;
+	font-family: calluna-sans, sans-serif;
 }
 
 .tac-search-input {
-  border: none;
+	border: none;
 	box-shadow: none;
 	width: 263px;
 	height: 26px;
@@ -135,18 +135,18 @@ ul {
 }
 
 .tac-search-button {
-  content: "";
+	content: "";
 	width: 22px;
 	height: 22px;
 	position: absolute;
 	right: 0;
 	top: 2px;
 	background: url("http://www.traveltacoma.com/includes/public/assets/search/arrow.png")
-  no-repeat center;
+		no-repeat center;
 }
 
 .tac-layer1-menu-item {
-  position: relative;
+	position: relative;
 	padding: 7px 30px 7px 16px;
 	font-size: 22px;
 	line-height: 22px;
@@ -155,22 +155,22 @@ ul {
 }
 
 .layer1-mid-menu {
-  font-size: 18px;
+	font-size: 18px;
 }
 
 .tac-layer1-menu-item:after {
-  content: "";
+	content: "";
 	width: 22px;
 	height: 22px;
 	position: absolute;
 	right: 16px;
 	top: 7px;
 	background: url("http://www.traveltacoma.com//includes/public/assets/icon-menu-arrow.png")
-  no-repeat center;
+		no-repeat center;
 }
 
 .tac-border {
-  width: 100%;
+	width: 100%;
 	height: 1px;
 	margin: 7px 0;
 	background: #d8d2c9;
@@ -179,57 +179,277 @@ ul {
 /* MY ITIN && WEATHER */
 
 .tac-my-itinerary {
-  padding: 5px;
+	padding: 5px;
 	text-decoration: none;
 	color: white;
 }
 .tac-my-itin-txt {
-  font-size: 18px;
+	font-size: 18px;
 	padding-left: 5px;
 }
 
-/* CLIMA ICONS && WEATHER */
-/* @font-face{font-family:sv-Climacons;
-  src:url(/fonts/climacons/sv_climacons_webfont.eot);
-  src:url(/fonts/climacons/sv_climacons_webfont.eot?#iefix) format("embedded-opentype"),
-  url(/fonts/climacons/sv_climacons_webfont.svg#Climacons-Font) format("svg"),
-  url(/fonts/climacons/sv_climacons_webfont.woff) format("woff"),
-  url(/fonts/climacons/sv_climacons_webfont.ttf) format("truetype");font-weight:400;font-style:normal}
-.climacon:before{font-family:sv-climacons!important;speak:none;font-size:inherit;font-style:normal;font-weight:400}
-.climacon.i26:before{content:"\E000"}
-.climacon.i28:before,.climacon.i30:before,.climacon.i44:before{content:"\E001"}
-.climacon.i27:before,.climacon.i29:before{content:"\E002"}
-.climacon.i11:before,.climacon.i12:before,.climacon.i40:before,.climacon.i9:before{content:"\E003"}
-.climacon.i32:before,.climacon.i34:before{content:"\E028"}
-.climacon.i3200:before{content:"\D8";font-weight:700}
-.climacon.i10:before,.climacon.i8:before{content:"\E00C"}
-.climacon.i18:before,.climacon.i6:before,.climacon.i7:before{content:"\E010"}
-.climacon.i17:before,.climacon.i35:before{content:"\E013"}
-.climacon.i5:before{content:"\E004"}
-.climacon.i13:before,.climacon.i14:before,.climacon.i15:before,.climacon.i16:before,.climacon.i41:before,.climacon.i42:before,.climacon.i43:before,.climacon.i46:before{content:"\E018"}
-.climacon.i20:before{content:"\E01B"}
-.climacon.i21:before,.climacon.i22:before,.climacon.i23:before{content:"\E01F"}
-.climacon.i24:before{content:"\E021"}.climacon.i2:before{content:"\E022"}
-.climacon.i19:before{content:"\E023"}
-.climacon.i37:before,.climacon.i38:before,.climacon.i39:before,.climacon.i3:before,.climacon.i45:before,.climacon.i47:before,.climacon.i4:before{content:"\E025"}
-.climacon.i31:before,.climacon.i33:before{content:"\E02D"}
-.climacon.i0:before{content:"\E037"}
-.climacon.i25:before{content:"\E03A"}
-.climacon.i36:before{content:"\E03D"}
-.climacon.i1:before{content:"\E00A"} */
+/*WEATHER */
 
 .tac-weather {
-  color: #009fc3;
-  font-size: 22px;
-  line-height: 22px;
+	color: #009fc3;
+	font-size: 22px;
+	line-height: 22px;
 }
 
 #testWeather {
-  padding: 20px 30px 7px 16px;
+	padding: 20px 30px 7px 16px;
 }
 
 .tac-weather-text {
-  color: #b95915;
-  font-family: calluna-sans, sans-serif;
-  font-size: 18px;
+	color: #b95915;
+	font-family: calluna-sans, sans-serif;
+	font-size: 18px;
+}
+
+.tac-basic-menu-item {
+	position: relative;
+	padding: 7px 30px 7px 16px;
+	font-size: 22px;
+	line-height: 22px;
+	color: #333;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+.desktop {
+  display: none;
+}
+
+
+
+
+/* MEDIA QUERIES */
+@media (min-width: 375px) and (min-height: 812px) {
+	.tac-first-layer-menu {
+		height: 80vh;
+		box-shadow: 0px 3px 36px -9px rgba(0, 0, 0, 0.29);
+	}
+}
+@media(min-width: 414px) {
+  .tac-menu-container {
+    width: 45%;
+  }
+}
+
+@media(min-width: 768px) {
+  .desktop {
+    display: flex;
+  }
+  .mobile {
+    display: none !important;
+  }
+  .tac-first-layer-menu {
+    height: 54.5vh;
+  }
+  #tac-menu-container {
+    justify-content: space-between !important;
+    width: 39% !important;
+  }
+  .tac-weather-desktop {
+    width:45px;
+    background: white;
+  }
+  .taco-main-container {
+    background-color: transparent;
+  }
+  .tac-my-itinerary {
+    padding: 0;
+  }
+  .border-slant:last-of-type {
+    background: #009fc3;
+  }
+  .border-slant-blue:nth-of-type(4):before {
+    border-top: 45px solid #009fc3;
+  }
+  .border-slant-blue:nth-of-type(4):after {
+    border-left: none;
+  }
+  .border-slant:nth-of-type(3):after {
+    border-left: 16px solid white;
+  }
+  .border-slant:nth-of-type(3):before {
+    border-top: 45px solid white;
+  }
+  .border-slant:nth-of-type(2) {
+    background:white;
+  }
+  .border-slant {
+    background: none;
+    padding: 0 5px;
+  }
+  .border-slant:nth-of-type(3) {
+    background: white;
+  }
+  .border-slant:nth-of-type(1) {
+    background: white;
+    color:#009fc3;
+  }
+  .tac-weather {
+   display: flex;
+  }
+  #testWeather {
+    padding: 0;
+  }
+ .tac-weather-text {
+   display: none;
+ }
+.border-slant:first-of-type {
+background: #b95915;
+  }
+  .border-slant:first-of-type:after{
+    border-left: 16px solid #b95915;
+  }
+  .border-slant:first-of-type:before{
+    border-top: 45px solid #b95915;
+  }
+  .border-slant-blue {
+    position: relative;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #009fc3;
+    border: none;
+    outline: none;
+  }
+  .border-slant-blue:after{
+    content: "";
+    position: absolute;
+    right: -16px;
+    top: 0;
+    width: 0;
+    border-left: 16px solid #009fc3;
+    border-top: 45px solid transparent;
+  }
+}
+
+/* WEATHER CLIMACONS */
+
+@font-face {
+	font-family: sv-Climacons;
+	src: url(/fonts/climacons/sv_climacons_webfont.eot);
+	src: url(/fonts/climacons/sv_climacons_webfont.eot?#iefix)
+			format("embedded-opentype"),
+		url(/fonts/climacons/sv_climacons_webfont.svg#Climacons-Font) format("svg"),
+		url(/fonts/climacons/sv_climacons_webfont.woff) format("woff"),
+		url(/fonts/climacons/sv_climacons_webfont.ttf) format("truetype");
+	font-weight: 400;
+	font-style: normal;
+}
+.climacon:before {
+	font-family: sv-climacons !important;
+	font-size: inherit;
+	font-style: normal;
+	font-weight: 400;
+}
+.climacon.i26:before {
+	content: "\E000";
+}
+.climacon.i28:before,
+.climacon.i30:before,
+.climacon.i44:before {
+	content: "\E001";
+}
+.climacon.i27:before,
+.climacon.i29:before {
+	content: "\E002";
+}
+.climacon.i11:before,
+.climacon.i12:before,
+.climacon.i40:before,
+.climacon.i9:before {
+	content: "\E003";
+}
+.climacon.i32:before,
+.climacon.i34:before {
+	content: "\E028";
+}
+.climacon.i3200:before {
+	content: "\D8";
+	font-weight: 700;
+}
+.climacon.i10:before,
+.climacon.i8:before {
+	content: "\E00C";
+}
+.climacon.i18:before,
+.climacon.i6:before,
+.climacon.i7:before {
+	content: "\E010";
+}
+.climacon.i17:before,
+.climacon.i35:before {
+	content: "\E013";
+}
+.climacon.i5:before {
+	content: "\E004";
+}
+.climacon.i13:before,
+.climacon.i14:before,
+.climacon.i15:before,
+.climacon.i16:before,
+.climacon.i41:before,
+.climacon.i42:before,
+.climacon.i43:before,
+.climacon.i46:before {
+	content: "\E018";
+}
+.climacon.i20:before {
+	content: "\E01B";
+}
+.climacon.i21:before,
+.climacon.i22:before,
+.climacon.i23:before {
+	content: "\E01F";
+}
+.climacon.i24:before {
+	content: "\E021";
+}
+.climacon.i2:before {
+	content: "\E022";
+}
+.climacon.i19:before {
+	content: "\E023";
+}
+.climacon.i37:before,
+.climacon.i38:before,
+.climacon.i39:before,
+.climacon.i3:before,
+.climacon.i45:before,
+.climacon.i47:before,
+.climacon.i4:before {
+	content: "\E025";
+}
+.climacon.i31:before,
+.climacon.i33:before {
+	content: "\E02D";
+}
+.climacon.i0:before {
+	content: "\E037";
+}
+.climacon.i25:before {
+	content: "\E03A";
+}
+.climacon.i36:before {
+	content: "\E03D";
+}
+.climacon.i1:before {
+	content: "\E00A";
+}
+@font-face {
+	font-family: streamline-30px;
+	src: url(/fonts/streamline/streamline-30px.eot);
+	src: url(/fonts/streamline/streamline-30px.eot?#iefix)
+			format("embedded-opentype"),
+		url(/fonts/streamline/streamline-30px.woff2) format("woff2"),
+		url(/fonts/streamline/streamline-30px.woff) format("woff"),
+		url(/fonts/streamline/streamline-30px.ttf) format("truetype"),
+		url(/fonts/streamline/streamline-30px.svg#streamline-30px) format("svg");
+	font-weight: 400;
+	font-style: normal;
 }
