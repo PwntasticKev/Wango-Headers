@@ -257,8 +257,11 @@ ul {
   .tac-my-itinerary {
     padding: 0;
   }
-  .border-slant:before .border-slant-blue:before {
+  /* .border-slant:nth-of-type(1):before {
     background-color: red;
+  } */
+  .border-slant:before {
+    background-color: blue;
   }
 }
 
