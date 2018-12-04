@@ -13,6 +13,10 @@ ul {
   color: #333;
 }
 
+.tac-menu-text {
+  color:white; font-weight: 600; font-size: 20px;
+}
+
 /* MOBILE */
 .taco-main-container {
 	display: flex;
@@ -279,12 +283,6 @@ ul {
   .border-slant:nth-of-type(4):after {
     border-left: none;
   }
-  .border-slant:nth-of-type(3):after {
-    /* border-left: 16px solid white; */
-  }
-  .border-slant:nth-of-type(3):before {
-    /* border-top: 45px solid white; */
-  }
   .border-slant:nth-of-type(2) {
     background:white;
   }
@@ -359,6 +357,9 @@ background: #b95915;
   }
   .tac-menu-option {
     margin: 0 10px;
+  }
+  .tac-mobile-burger {
+    display: none;
   }
 }
 
