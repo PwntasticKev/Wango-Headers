@@ -26,14 +26,17 @@
 				id="tac-menu-container"
 				style="display: flex; justify-content: space-evenly; width:100%"
       >
-      <a href="http://www.traveltacoma.com//tripbuilder/" class="tac-flex tac-my-itinerary desktop">
-        <img src="http://www.traveltacoma.com//includes/public/assets/tripbuilder/tripbuilder-icon.png"> 
-      <div class="tac-my-itin-txt">
-          <p class='mobile'>My Intinerary</p>(0)
-        </div>
-        </a>
+      <div class="border-slant desktop">
+
+        <a href="http://www.traveltacoma.com//tripbuilder/" class="tac-flex tac-my-itinerary desktop">
+          <img src="http://www.traveltacoma.com/includes/public/assets/tripbuilder/tripbuilder-icon.png"> 
+        <div class="tac-my-itin-txt">
+            <p class='mobile'>My Intinerary</p>(0)
+          </div>
+          </a>
+      </div>
         <div class="border-slant desktop">
-          <div id="#testWeather" class='desktop tac-weather-desktop'>
+          <div id="testWeather" class='desktop tac-weather-desktop'>
           </div>
         </div>
 				<div class="border-slant">
@@ -173,9 +176,6 @@ $("#tac-menu-container").click(function () {
     $('.tac-first-layer-menu').toggle({opacity:"toggle"},200);
   });
 
-
-
-      
   var Weather = function(options) {
 	let _queryUri, _unit, _lat, _lnt
 	_lnt = options.lnt

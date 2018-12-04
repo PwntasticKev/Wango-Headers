@@ -243,25 +243,69 @@ ul {
   .mobile {
     display: none !important;
   }
+  .tac-first-layer-menu {
+    height: 54.5vh;
+  }
   #tac-menu-container {
     justify-content: space-between !important;
-    width: 35% !important;
+    width: 40% !important;
   }
   .tac-weather-desktop {
     width:45px;
     background: white;
   }
   .taco-main-container {
-    /* background-color: transparent; */
+    background-color: transparent;
   }
   .tac-my-itinerary {
     padding: 0;
   }
-  /* .border-slant:nth-of-type(1):before {
-    background-color: red;
-  } */
-  .border-slant:before {
-    background-color: blue;
+  .border-slant:last-of-type {
+    background: #009fc3;
+  }
+  .border-slant-blue:nth-of-type(4):before {
+    border-top: 45px solid #009fc3;
+  }
+  .border-slant-blue:nth-of-type(4):after {
+    border-left: none;
+  }
+  .border-slant:nth-of-type(3):after {
+    border-left: 16px solid white;
+  }
+  .border-slant:nth-of-type(3):before {
+    border-top: 45px solid white;
+  }
+  .border-slant:nth-of-type(2) {
+    background:white;
+  }
+  .border-slant {
+    background: none;
+    padding: 0 5px;
+  }
+  .border-slant:nth-of-type(3) {
+    background: white;
+  }
+  .border-slant:nth-of-type(1) {
+    background: white;
+    color:#009fc3;
+  }
+  .tac-weather {
+   display: flex;
+  }
+  #testWeather {
+    padding: 0;
+  }
+ .tac-weather-text {
+   display: none;
+ }
+.border-slant:first-of-type {
+background: #b95915;
+  }
+  .border-slant:first-of-type:after{
+    border-left: 16px solid #b95915;
+  }
+  .border-slant:first-of-type:before{
+    border-top: 45px solid #b95915;
   }
 }
 
