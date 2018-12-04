@@ -267,8 +267,8 @@ ul {
 		background: white;
 	}
 	.taco-main-container {
-		/* background-color: transparent; */
-		background-color: lightgray;
+		background-color: transparent;
+		/* background-color: lightgray; */
 	}
 	.tac-my-itinerary {
 		padding: 0 5px;
@@ -353,6 +353,7 @@ ul {
 	}
 	#tac-menu-container {
     width: 539px!important;
+    padding-right: 85px;
 	}
 	.tac-menu-option {
 		margin: 0 10px;
@@ -425,7 +426,11 @@ ul {
 	}
 
 	.tac-menu-option {
-		font-size: 14px;
+    font-size: 14px;
+    cursor:pointer;
+	}
+	.tac-menu-option:hover {
+    text-decoration: underline;
 	}
 
 	.tac-big-logo {
@@ -449,7 +454,7 @@ ul {
 
 /* WEATHER CLIMACONS */
 
-/* @font-face {
+@font-face {
 	font-family: sv-Climacons;
 	src: url(/fonts/climacons/sv_climacons_webfont.eot);
 	src: url(/fonts/climacons/sv_climacons_webfont.eot?#iefix)
@@ -571,4 +576,4 @@ ul {
 		url(/fonts/streamline/streamline-30px.svg#streamline-30px) format("svg");
 	font-weight: 400;
 	font-style: normal;
-} */
+} 
