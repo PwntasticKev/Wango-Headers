@@ -264,7 +264,10 @@ ul {
 	}
 	.mobile {
 		display: none !important;
-	}
+  }
+  #tac-mobile-weather{
+    display: none;
+  }
 	.tac-first-layer-menu {
 		height: 54.5vh;
 	}
