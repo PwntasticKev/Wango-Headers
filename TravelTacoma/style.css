@@ -201,6 +201,10 @@ ul {
   display: flex;
 }
 
+#tac-mobile-weather {
+  padding: 20px 30px 7px 16px;
+}
+
 /*WEATHER */
 
 .tac-weather {

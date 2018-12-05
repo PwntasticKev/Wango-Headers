@@ -44,7 +44,7 @@
           </div>
           </a>
       </div>
-        <div class="border-slant desktop">
+        <div class="desktop border-slant">
           <div id="testWeather" class='desktop tac-weather-desktop'>
           </div>
         </div>
@@ -165,7 +165,7 @@
         </a>
       </section>
       <section>
-        <div id="testWeather " class="tac-mobile-weather"></div>
+        <div id="tac-mobile-weather"></div>
       </section>
     </section>
     <!-- END FIRST LAYER↑ -->
@@ -213,7 +213,6 @@
 // calling redesignScreen initially
 redesignScreen();
         })
-
           var Weather = function (options) {
             let _queryUri, _unit, _lat, _lnt
             _lnt = options.lnt
@@ -235,6 +234,28 @@ redesignScreen();
             ) {
               console.log('this is my response', res)
               $("#testWeather").append(
+                $(
+                  `<div class="tac-weather">
+          <i class="climacon i${
+                  res.code
+                  }"></i>
+          <span class="tac-weather"><b>${
+                  res.temp
+                  }</b><sup>°</sup>
+          </span>
+          <span class="tac-weather tac-weather-text">${res.text}</span>
+          </div>`
+                )
+              )
+            })
+          )
+
+                  $("#tac-mobile-weather").append(
+            Weather({ lat: 47.1185, lnt: -122.5633, unit: "f" }).then(function (
+              res
+            ) {
+              console.log('this is my response', res)
+              $("#tac-mobile-weather").append(
                 $(
                   `<div class="tac-weather">
           <i class="climacon i${
