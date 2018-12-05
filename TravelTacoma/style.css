@@ -466,66 +466,79 @@ ul {
 }
 
 /* WEATHER CLIMACONS */
-
 @font-face {
-	font-family: sv-Climacons;
-	src: url(/fonts/climacons/sv_climacons_webfont.eot);
-	src: url(/fonts/climacons/sv_climacons_webfont.eot?#iefix)
-			format("embedded-opentype"),
-		url(/fonts/climacons/sv_climacons_webfont.svg#Climacons-Font) format("svg"),
-		url(/fonts/climacons/sv_climacons_webfont.woff) format("woff"),
-		url(/fonts/climacons/sv_climacons_webfont.ttf) format("truetype");
-	font-weight: 400;
-	font-style: normal;
+  font-family: 'sv-Climacons';
+  src:url('../fonts/climacons/sv_climacons_webfont.eot');
+  src:url('../fonts/climacons/sv_climacons_webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/climacons/sv_climacons_webfont.svg#Climacons-Font') format('svg'),
+  url('../fonts/climacons/sv_climacons_webfont.woff') format('woff'),
+  url('../fonts/climacons/sv_climacons_webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
-.climacon:before {
-	font-family: sv-climacons !important;
-	font-size: inherit;
-	font-style: normal;
-	font-weight: 400;
+.climacon:before{
+  font-family: 'sv-climacons';
+  speak: none;
+  font-size: inherit;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
 }
+
 .climacon.i26:before {
-	content: "\E000";
+  content: "\e000";
 }
+
 .climacon.i28:before,
 .climacon.i30:before,
-.climacon.i44:before {
-	content: "\E001";
+.climacon.i44:before {/*cloud sun / partly cloudy day*/
+  content: "\e001";
 }
-.climacon.i27:before,
-.climacon.i29:before {
-	content: "\E002";
+
+.climacon.i29:before,
+.climacon.i27:before {/*cloud moon / partly cloudy (night)*/
+  content: "\e002";
 }
+
+.climacon.i9:before,
 .climacon.i11:before,
 .climacon.i12:before,
-.climacon.i40:before,
-.climacon.i9:before {
-	content: "\E003";
+.climacon.i40:before {/*rain cloud*/
+  content: "\e003";
 }
+
 .climacon.i32:before,
 .climacon.i34:before {
-	content: "\E028";
+  content: "\e028";
 }
+
 .climacon.i3200:before {
-	content: "\D8";
-	font-weight: 700;
+  content: "\00d8";
+  font-weight: 700;
 }
-.climacon.i10:before,
-.climacon.i8:before {
-	content: "\E00C";
+
+.climacon.i8:before,
+.climacon.i10:before
+{
+  content: "\e00c";
 }
-.climacon.i18:before,
+
 .climacon.i6:before,
-.climacon.i7:before {
-	content: "\E010";
+.climacon.i7:before,
+.climacon.i18:before {
+  content: "\e010";
 }
+
 .climacon.i17:before,
 .climacon.i35:before {
-	content: "\E013";
+  content: "\e013";
 }
-.climacon.i5:before {
-	content: "\E004";
+
+.climacon.i5:before{
+  content: "\e004";
 }
+
 .climacon.i13:before,
 .climacon.i14:before,
 .climacon.i15:before,
@@ -533,60 +546,59 @@ ul {
 .climacon.i41:before,
 .climacon.i42:before,
 .climacon.i43:before,
-.climacon.i46:before {
-	content: "\E018";
+.climacon.i46:before{
+  content: "\e018";
 }
+
 .climacon.i20:before {
-	content: "\E01B";
+  content: "\e01b";
 }
+
 .climacon.i21:before,
 .climacon.i22:before,
 .climacon.i23:before {
-	content: "\E01F";
+  content: "\e01f";
 }
+
 .climacon.i24:before {
-	content: "\E021";
+  content: "\e021";
 }
+
 .climacon.i2:before {
-	content: "\E022";
+  content: "\e022";
 }
+
 .climacon.i19:before {
-	content: "\E023";
+  content: "\e023";
 }
+
+.climacon.i3:before,
+.climacon.i4:before,
 .climacon.i37:before,
 .climacon.i38:before,
 .climacon.i39:before,
-.climacon.i3:before,
 .climacon.i45:before,
-.climacon.i47:before,
-.climacon.i4:before {
-	content: "\E025";
+.climacon.i47:before{
+  content: "\e025";
 }
+
 .climacon.i31:before,
 .climacon.i33:before {
-	content: "\E02D";
+  content: "\e02d";
 }
+
 .climacon.i0:before {
-	content: "\E037";
+  content: "\e037";
 }
+
 .climacon.i25:before {
-	content: "\E03A";
+  content: "\e03a";
 }
+
 .climacon.i36:before {
-	content: "\E03D";
+  content: "\e03d";
 }
+
 .climacon.i1:before {
-	content: "\E00A";
+  content: "\e00a";
 }
-@font-face {
-	font-family: streamline-30px;
-	src: url(/fonts/streamline/streamline-30px.eot);
-	src: url(/fonts/streamline/streamline-30px.eot?#iefix)
-			format("embedded-opentype"),
-		url(/fonts/streamline/streamline-30px.woff2) format("woff2"),
-		url(/fonts/streamline/streamline-30px.woff) format("woff"),
-		url(/fonts/streamline/streamline-30px.ttf) format("truetype"),
-		url(/fonts/streamline/streamline-30px.svg#streamline-30px) format("svg");
-	font-weight: 400;
-	font-style: normal;
-} 
