@@ -196,7 +196,9 @@ ul {
 }
 .tac-my-itin-txt {
 	font-size: 18px;
-	padding-left: 5px;
+  padding-left: 5px;
+  align-items: center;
+  display: flex;
 }
 
 /*WEATHER */
@@ -205,6 +207,10 @@ ul {
 	color: #009fc3;
 	font-size: 22px;
 	line-height: 22px;
+}
+
+.tac-mobile-weather {
+  display: block;
 }
 
 #testWeather {
