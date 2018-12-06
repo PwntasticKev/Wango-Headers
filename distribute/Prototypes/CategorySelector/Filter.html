@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Leche</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="reset.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800" rel="stylesheet">
+</head>
+
+<style>
+.Main-Container-Filter{
+  background: #1D1D1D;
+    width: 230px;
+    display: flex;
+    flex-direction: column;
+    padding: 25px 15px;
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 10px;
+}
+
+
+/* SEARCH INPUT STYLES */
+
+.Filter-Search-Input {
+  width:55%;
+  height:35px;
+  background: #1D1D1D;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  border-bottom: 1px solid #ddd;
+  font-size: 15px;
+}
+.Filter-Search-Input, input[type=text]
+{
+color:white
+}
+
+.Search-Filter-Button {
+  background-color: transparent;
+    height: 35px;
+    font-weight: 500;
+    color:white;
+    border: none;
+    font-size: 15px;
+    background:#1D1D1D;
+    width: 100px;
+
+   
+}
+
+/* CATEGORY CONTAIN STYLES */
+
+.category-container-filter {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.category-title-filter {
+  margin: 10px 0;
+  font-weight: 600;
+  color: white;
+}
+
+.filter-checkbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+    background: black;
+    border: 1px solid #999;
+    border-radius: 2px;
+    width: 17px;
+    height: 17px;
+    font-family: FontAwesome;
+    content: '\f0c8';
+    color: transparent;
+    outline: none;
+}
+
+.filter-checkbox:checked {
+    background-color: lightgreen;
+}
+
+.filter-category-name-container {
+  display: flex;
+  align-items: center;
+  margin:3px 0;
+  color: white;
+  cursor: pointer;
+}
+
+.filter-category-name-container p{
+  margin: 0 5px;
+  font-weight: 100;
+    font-size: 14px;
+}
+
+.filter-category-amount {
+  color: #0398D9;
+}
+
+
+/* show more categories */
+
+ .Show-More-Button- {
+   text-align: left;
+   color: #0398D9;
+   outline:none;
+   cursor:pointer;
+   padding: 0;
+    margin: 4px 0;
+    font-size: 13px;
+    background: transparent;
+    border: none;
+ }
+
+ .Filter-buttons-{
+   background: #0398D9;
+   border:none;
+   /* outline: none; */
+   width:100%;
+   height:30px;
+   color:white;
+   margin:2.5px 0;
+ }
+
+
+
+
+</style>
+
+<body>
+  <section class="Main-Container-Filter">
+    
+<section style="display: flex; align-items:center;">
+  <input type="text" placeholder='Keyword(s)....' class="Filter-Search-Input">
+  <button class="Search-Filter-Button">Search <i class="fas fa-search"></i></button>
+</section>
+
+      <section class="category-container-filter">
+        <h5 class="category-title-filter">Categories</h5>
+        <label class='filter-category-name-container'>
+          <input type="checkbox" data-category="653" id="category" onclick="" class="filter-checkbox cat-653">
+          <p>Tours</p>
+          <p class="filter-category-amount">(13)</p>
+        </label>
+
+        <label class='filter-category-name-container'>
+          <input type="checkbox" data-category="1031" id="category" onclick="" class="filter-checkbox cat-1031">
+          <p>Gift Ideas</p>
+          <p class="filter-category-amount">(13)</p>
+        </label>
+
+        <label class='filter-category-name-container'>
+          <input type="checkbox" data-category="114" id="category" onclick="" class="filter-checkbox cat-114">
+          <p>Adventure</p>
+          <p class="filter-category-amount"> (13)</p>
+        </label>
+        <!-- MORE OPTIONS -->
+        <section class="Show-More-Categories show-more-categories-section" style='display: none;'>
+          <label class='filter-category-name-container'>
+              <input type="checkbox" data-category="121" id="category" onclick="" class="filter-checkbox cat-121">
+              <p>Kid Friendly</p>
+              <p class="filter-category-amount"> (13)</p>
+            </label>
+
+          <label class='filter-category-name-container'>
+              <input type="checkbox" data-category="128" id="category" onclick="" class="filter-checkbox cat-128">
+              <p>Arts & Culture</p>
+              <p class="filter-category-amount"> (13)</p>
+            </label>
+          </section>
+             <!--END OF MORE OPTIONS -->
+            <button class="Show-More-Button- category-button">Show More</button>
+      </section>
+      <!-- ↓↓↓↓ NEIGHBORHOODS SECTION ↓↓↓↓ -->
+      <section class="category-container-filter">
+          <h5 class="category-title-filter">Neighborhoods</h5>
+          <label class='filter-category-name-container'>
+            <input type="checkbox" data-category="1031" id="category" onclick="" class="filter-checkbox">
+            <p>Varrock</p>
+            <p class="filter-category-amount">(13)</p>
+          </label>
+  
+          <label class='filter-category-name-container'>
+            <input type="checkbox" data-category="1031" id="category" onclick="" class="filter-checkbox">
+            <p>Falador</p>
+            <p class="filter-category-amount">(13)</p>
+          </label>
+  
+          <label class='filter-category-name-container'>
+            <input type="checkbox" data-category="1031" id="category" onclick="" class="filter-checkbox">
+            <p>Wilderness</p>
+            <p class="filter-category-amount"> (13)</p>
+          </label>
+
+             <!-- MORE OPTIONS -->
+        <section class="Show-More-Categories show-more-neighborhoods-section" style='display: none;'>
+            <label class='filter-category-name-container '>
+                <input type="checkbox" data-category="1031" id="category" onclick="" class="filter-checkbox">
+                <p>Rimmington</p>
+                <p class="filter-category-amount"> (13)</p>
+              </label>
+  
+            <label class='filter-category-name-container'>
+                <input type="checkbox" data-category="1031" id="category" onclick="" class="filter-checkbox">
+                <p>Al-Kharid</p>
+                <p class="filter-category-amount"> (13)</p>
+              </label>
+            </section>
+               <!--END OF MORE OPTIONS -->
+               <button class="Show-More-Button- neighborhood-button">Show More</button>
+              </section>
+              <section style='display: flex; margin-top: 15px; flex-direction:column'>
+                <button class="Filter-buttons- filter-me-button" onClick='console.log(`clicked filter`)'>Filter Me</button>
+                <button class="Filter-buttons- reset-fields-filter" onClick=''>RESET FIELDS</button>
+                
+              </section>
+
+              <!-- --- JS --- -->	
+              <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+              <script>
+
+// $('.filter-category-name-container').on('click',() => {
+//   // console.log('clicked')
+//   //  $('.filter-category-name-container').siblings('.filter-checkbox').prop('checked',true);
+// });
+
+$('.category-button').click(_ => {
+  $('.show-more-categories-section').is(':hidden') ? $('.category-button').html('Show Less') : $('.category-button').html('Show More') 
+  $('.show-more-categories-section').slideToggle("fast")
+})
+$('.neighborhood-button').click(_ => {
+  $('.show-more-neighborhoods-section').is(':hidden') ? $('.neighborhood-button').html('Show Less') : $('.neighborhood-button').html('Show More') 
+  $('.show-more-neighborhoods-section').slideToggle("fast")
+})
+
+let selectedCategories = []
+$('.reset-fields-filter').click(_ => {
+  $('input[type="checkbox"]').prop('checked', false)
+  $('.show-more-neighborhoods-section').slideUp("fast")
+  $('.show-more-categories-section').slideUp("fast")
+   selectedCategories = []
+})
+
+$('.filter-checkbox').click(e => {
+  let categoryId = $(e.currentTarget).attr("data-category")
+// selectedCategories.map((v,i) => {
+//   console.log('e',v)
+//   if($(e.currentTarget).is(':checked' )) {
+//      selectedCategories.push(categoryId)
+//   }
+//   else if( $(e.currentTarget).is(':checked' ) == false){
+//      console.log('hello im unchecked bro')
+//   }
+// })
+   if ( $(e.currentTarget).is(':checked' ) == false) {
+    let filterSelected = selectedCategories.filter((v,i) => {
+       v != e.currentTarget
+    })
+  console.log('newfilter',filterSelected)
+  }
+  if($(e.currentTarget).is(':checked' ) ) {
+    selectedCategories.push(categoryId)
+  } 
+  console.log('myarr',selectedCategories)
+})
+
+$(".filter-me-button").on('click', _ => {
+  console.log('selectarray here',selectedCategories)
+  // categoryFilter(categoriesSelectedArray, noScroll)
+})
+
+
+</script>
+
+  <script>
+    const filterVenues = function(e, id, neighborhood) {
+      // $result.innerHTML = e.target.value
+      let filtered = offersCopy.filter(v => {
+        return v.name.toLowerCase().includes(e.target.value)
+      })
+      console.log(offers)
+      console.log(filtered)
+    }
+    </script>
+</body>
+</html>

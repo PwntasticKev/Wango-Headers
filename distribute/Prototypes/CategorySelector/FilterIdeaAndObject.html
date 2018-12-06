@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>Smart Filter</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" type="text/css" media="screen" href="reset.css" />
+		<link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+	</head>
+
+	<body>
+		<input id="source" placeholder="Search by Name..." />
+		<div id="result"></div>
+		<div class="test"></div>
+		<div class="filtered"></div>
+		<button onclick="filter($('#source').val())">Click me brotha!</button>
+
+		<!-- JAVASCRIPT -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+		<script>
+			const source = document.getElementById("source")
+			const $result = document.querySelector("#result")
+
+			let offers = [
+				{
+					id: 1,
+					cat: 1,
+					price: "$192",
+					name: "salt lake",
+					neighborhood: "Varrock"
+				},
+				{
+					id: 2,
+					name: "Chicago",
+					cat: 2,
+					neighborhood: "Wilderness"
+				},
+				{
+					id: 3,
+					name: "murray",
+					cat: 4,
+					neighborhood: "rimmington"
+				},
+				{
+					id: 4,
+					name: "taylorsville",
+					cat: 2,
+					neighborhood: "ardougne"
+				},
+				{
+					id: 5,
+					name: "orem",
+					cat: [2, 5, 6],
+					price: "$200",
+					neighborhood: "Varrock"
+				},
+				{
+					id: 6,
+					name: "california",
+					cat: 3,
+					neighborhood: "Lumbridge"
+				}
+			]
+
+			let offersCopy = offers.slice()
+			let res = offersCopy.map(
+				(v, i) =>
+					` <section key="${i}" style='display: flex;' class='cat_'>
+								    <div >${v.name}</div>
+								    <div>${v.id}</div>
+								    <div>${v.neighborhood}</div>
+								    <div>${v.cat}</div>
+								  </section>`
+			)
+			$(".test").html(res)
+
+			const filterVenues = function(e, id, neighborhood) {
+				// $result.innerHTML = e.target.value
+				let filtered = offersCopy.filter(v => {
+					return v.name.toLowerCase().includes(e.target.value)
+				})
+				console.log(offers)
+				console.log(filtered)
+			}
+
+			source.addEventListener("input", filterVenues) // register for oninput
+			source.addEventListener("propertychange", filterVenues)
+		</script>
+	</body>
+</html>
