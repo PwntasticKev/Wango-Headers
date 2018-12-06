@@ -40,4 +40,5 @@ gulp.task('sass', sassTask);
 gulp.task('copy', copyTask);
 gulp.task('connect', connectTask);
 gulp.task('watch', watchTask);
+gulp.task('prefix', prefix);
 gulp.task('default', gulp.series('sass', 'prefix','copy', 'connect', 'watch'));
