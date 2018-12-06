@@ -478,7 +478,7 @@ ul {
 }
 .climacon:before{
   font-family: 'sv-climacons';
-  speak: none;
+  /* speak: none; */
   font-size: inherit;
   font-style: normal;
   font-weight: normal;
