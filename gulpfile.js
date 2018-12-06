@@ -13,13 +13,14 @@ var copyTask = function() {
   return gulp.src('source/**/*.html')
     .pipe(gulp.dest('distribute'));
 };
-var connectTask = function() {
+var connectTask = function(done) {
   connect.server({
     root: 'distribute',
     port: '3000',
     host: 'localhost',
     livereload: true,
   });
+  done();
 };
 var watchTask = function(done) {
   gulp.watch('source/styles/**/*.scss', gulp.series('sass'));
