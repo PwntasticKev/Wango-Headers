@@ -1,0 +1,597 @@
+.header-toggle__int {
+  position: relative;
+  width: 28px;
+  height: 28px;
+  margin: 0 auto; }
+
+.header-toggle__int:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  top: 10px;
+  height: 4px;
+  box-shadow: 0 -10px 0 0 #fff, 0 10px 0 0 #fff;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s; }
+
+.search-x-container {
+  display: flex; }
+
+.show-for-sr,
+.show-on-focus {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0); }
+
+#weather-id {
+  text-decoration: none;
+  color: white;
+  list-style-type: none; }
+
+.header-container-nav {
+  background: #132f46; }
+
+/* #logo {
+	width: 133px;
+} */
+.header-toggle {
+  position: relative;
+  display: block;
+  float: right;
+  border: none;
+  z-index: 10;
+  height: 100%;
+  cursor: pointer;
+  padding: 8px;
+  background: transparent;
+  color: #fff;
+  text-align: center;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s; }
+
+.header-toggle--search {
+  width: 40px;
+  font-size: 33px; }
+
+.fas {
+  font-size: 26px; }
+
+.itin__svg-wrapper {
+  display: inline-block;
+  width: 30px;
+  height: 28px;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  background: transparent; }
+
+.row1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center; }
+
+.nav__logo--header {
+  display: block;
+  width: 137px;
+  height: 58px;
+  text-align: center;
+  margin: 0 auto;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s; }
+
+.desktop a {
+  text-decoration: none;
+  color: white; }
+
+html [type="button"] {
+  -webkit-appearance: button; }
+
+@media screen and (max-width: 640px) {
+  .header-toggle--weather .wthr__icon {
+    margin-top: 8px; } }
+
+.small-12 {
+  -webkit-box-flex: 0;
+  flex: 0 0 100%;
+  max-width: 100%; }
+
+.header-toggle span {
+  display: none; }
+
+#desktop-span {
+  display: none; }
+
+#col-flex {
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  height: 60px; }
+
+.col a {
+  font-size: 29px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white; }
+
+#middle-col {
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0;
+  margin: 0 auto; }
+
+/* HEADER_SEARCH */
+.header-search {
+  position: absolute;
+  z-index: 50;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  padding-left: 5px; }
+
+.search-close-toggle {
+  background: #507494;
+  height: 50px;
+  color: white;
+  border: none;
+  margin: 0 1px;
+  align-items: center;
+  display: flex;
+  justify-content: center; }
+
+#mobile-search-icon {
+  background: #a7ba79;
+  align-items: center;
+  display: flex; }
+
+#page-search-input-head {
+  width: 100%;
+  height: 100%;
+  padding-left: 20px; }
+
+#page-search__int-id {
+  padding: 5px;
+  height: 60px;
+  display: flex;
+  width: 102vw; }
+
+.ais-search-box {
+  width: 80%; }
+
+.reveal-header-search {
+  display: none; }
+
+#nav-search-icon {
+  outline: none; }
+
+/* MOBILE MENU TRANSITION */
+#burger-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center; }
+
+.line {
+  width: 30px;
+  margin: 4px 0;
+  border-bottom: 3.5px solid white;
+  transition-property: transform, opacity;
+  transition: 0.5s ease-in-out; }
+
+/* TRANSITION CLASSES */
+.top-line-transition {
+  transform: translateY(11px);
+  opacity: 1; }
+
+.bottom-line-transition {
+  transform: translateY(-11px);
+  opacity: 1; }
+
+/* MENU */
+.reveal-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1005;
+  padding: 20px;
+  display: none;
+  background-color: rgba(37, 37, 37, 0.9);
+  overflow-y: scroll; }
+
+.main-menu-container {
+  text-align: center;
+  left: 0;
+  top: 20px;
+  width: 100%;
+  max-width: none;
+  height: 86vh;
+  min-height: 86vh;
+  margin-left: 0;
+  border: 0;
+  background: white;
+  /* background: url("https://www.discoverschenectady.com//images/bg-white.png"); */
+  border-radius: 0;
+  overflow-y: scroll;
+  z-index: 2000;
+  position: relative; }
+
+.splotchybackground {
+  position: absolute;
+  height: 86vh;
+  width: 100%;
+  left: 0;
+  top: 0; }
+
+.close-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  color: #fff;
+  background: #132f46;
+  padding: 0 0.5rem;
+  line-height: 0.8;
+  overflow: hidden;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  font-size: 10px; }
+
+.reveal-logo {
+  position: relative;
+  width: 100%;
+  padding: 10px 15px;
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: center; }
+
+.svg-container {
+  height: 60px;
+  color: #252525; }
+
+/* NAV SECTION */
+.nav--primary-reveal .nav__item--primary {
+  width: 100%;
+  display: block;
+  text-align: left;
+  border: none;
+  background: none; }
+
+.nav--primary-reveal .nav__link {
+  margin-bottom: 5px;
+  color: #252525;
+  font-size: 18px;
+  line-height: 1;
+  padding: 7px 12px; }
+
+.nav--primary-reveal li {
+  border: none; }
+
+.nav__link {
+  display: block;
+  text-decoration: none;
+  font-family: din-condensed, sans-serif;
+  font-size: 17px;
+  line-height: 1;
+  color: #252525;
+  text-transform: uppercase;
+  padding: 7px 12px; }
+
+.nav__item {
+  position: relative;
+  display: inline-block; }
+
+.nav--primary-reveal .nav__item-toggle {
+  display: block;
+  position: absolute;
+  top: 2px;
+  right: 0;
+  width: 30px;
+  height: 20px;
+  padding-bottom: 6px;
+  font-size: 35px;
+  line-height: 0;
+  text-align: center;
+  outline: 0;
+  -webkit-transform: rotate(0);
+  transform: rotate(0);
+  -webkit-transition: -webkit-transform 0.25s linear;
+  transition: -webkit-transform 0.25s linear;
+  transition: transform 0.25s linear;
+  transition: transform 0.25s linear, -webkit-transform 0.25s linear;
+  overflow: hidden;
+  border: none;
+  background: none; }
+
+#things-to-do-list {
+  display: none; }
+
+#where-to-stay-list {
+  display: none; }
+
+#restauraunts-nightlife-list {
+  display: none; }
+
+#events-list {
+  display: none; }
+
+#plan-your-visit-list {
+  display: none; }
+
+.nav--secondary-reveal {
+  display: block;
+  padding: 20px 0 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  font-family: din-2014, sans-serif; }
+
+.nav--secondary-reveal li {
+  border: none; }
+
+.nav--secondary-reveal .nav__link {
+  margin-bottom: 10px;
+  padding: 0 18px;
+  text-transform: none;
+  font-family: din-2014, sans-serif;
+  font-size: 18px; }
+
+.ilovenewyork {
+  width: 100%;
+  height: 22px;
+  fill: #000;
+  margin-top: 30px; }
+
+/* MEDIA QUERIES  */
+@media (min-width: 768px) {
+  .header-container-nav {
+    max-width: 4000px !important;
+    width: 100% !important;
+    padding: 0 15px; }
+  .main-menu-container {
+    top: 100px;
+    height: 64vh;
+    min-height: 40vh; }
+  .mobile {
+    display: none; }
+  .ilovenewyork-nav {
+    height: 22px;
+    fill: white; }
+  #logo-ny {
+    width: 90px; }
+  #map-icon {
+    width: 59px;
+    margin-bottom: 6px; }
+  #ul-container-desktop li a {
+    font-size: 11px;
+    width: 250px;
+    border: none; }
+  #ul-container-desktop {
+    padding-right: 30px;
+    padding-left: 10px;
+    margin-top: 28px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+  #things-to-do-list {
+    display: block;
+    font-size: 11px;
+    font-weight: normal;
+    margin-bottom: 15px; }
+  #where-to-stay-list {
+    display: block;
+    font-size: 11px; }
+  #restauraunts-nightlife-list {
+    display: block;
+    font-size: 11px; }
+  #events-list {
+    display: block;
+    font-size: 14px !important; }
+  #plan-your-visit-list {
+    display: block;
+    font-size: 14px !important; }
+  #things-to-do-a {
+    display: block;
+    font-size: 14px !important;
+    font-weight: 600; }
+  #where-to-stay {
+    display: block;
+    font-size: 14px !important;
+    font-weight: 600; }
+  #restauraunts-nightlife {
+    display: block;
+    font-size: 14px !important;
+    font-weight: 600; }
+  #events {
+    display: block;
+    font-size: 14px !important;
+    font-weight: 600; }
+  #plan-your-visit {
+    display: block;
+    font-size: 14px !important;
+    font-weight: 600; }
+  .nav--primary-reveal .nav__item--primary {
+    width: 33.33%;
+    padding: 0; }
+  #ul-container-desktop {
+    display: flex;
+    justify-content: space-between; }
+  .nav--primary-reveal .nav__item-toggle {
+    display: none; }
+  .reveal-logo {
+    padding: 28px 15px; }
+  .nav--secondary-reveal {
+    margin: 0 55px;
+    flex-direction: row;
+    align-items: baseline;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: din-2014, sans-serif; }
+  .nav--secondary-reveal .nav__link {
+    border: none; }
+  .splotchybackground {
+    height: 64vh; }
+  .ilovenewyork {
+    display: none; }
+  .ais-search-box {
+    width: 85%; }
+  .search-close-toggle {
+    width: 50px; }
+  #mobile-search-icon {
+    width: 50px; }
+  #page-search__int-id {
+    display: flex;
+    justify-content: center; }
+  .close-button {
+    width: 45px;
+    height: 45px;
+    font-size: 18px; }
+  .secondary-level {
+    bottom: -7px;
+    position: absolute; } }
+
+@media (min-width: 1024px) {
+  .secondary-level {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    left: 0; }
+  #events {
+    margin-top: 35px; }
+  #plan-you-visit {
+    margin-top: 35px; }
+  .splotchybackground {
+    height: 56vh; }
+  .main-menu-container {
+    height: 56vh; }
+  #map-icon {
+    width: 49px; }
+  #logo-ny {
+    height: 19px;
+    display: inline-block;
+    width: 93px; }
+  .header-toggle {
+    margin: 0 10px; } }
+
+@media (min-width: 1025px) {
+  .row1 {
+    padding: 0; }
+  #ul-container-desktop li a {
+    width: 187px;
+    flex-wrap: nowrap; }
+  #ul-container-desktop {
+    flex-wrap: nowrap; }
+  #events {
+    margin-top: 0; }
+  #ul-container-desktop {
+    padding-left: 22px; }
+  .main-menu-container {
+    overflow-y: hidden;
+    top: 135px;
+    height: 44vh; }
+  .splotchybackground {
+    height: 44vh; }
+  .header-container-nav {
+    background: #132f46;
+    height: 83px; }
+  .header-toggle span {
+    display: block;
+    font-size: 14px; }
+  #col-flex {
+    align-items: center;
+    height: 80px;
+    padding: 0 22px; }
+  .col a {
+    flex-direction: column; }
+  .nav__logo--header {
+    width: 250px; }
+  #desktop-span {
+    position: absolute;
+    color: white;
+    font-size: 11px;
+    bottom: -21px;
+    left: -17px;
+    width: 100px;
+    font-weight: bold;
+    font-family: roboto, sans-serif; }
+  #nav-span-search {
+    position: absolute;
+    bottom: 2px;
+    left: 2px;
+    font-weight: bold;
+    font-family: roboto, sans-serif; }
+  #nav-span-menu {
+    position: absolute;
+    bottom: 2px;
+    left: 9px;
+    font-weight: bold;
+    font-family: roboto, sans-serif; }
+  #nav-span-weather {
+    position: absolute;
+    bottom: -15px;
+    left: 14px;
+    font-weight: bold;
+    font-family: roboto, sans-serif;
+    font-size: 15px; }
+  #map-icon {
+    width: 50px; }
+  .header-toggle-text {
+    display: block;
+    font-family: din-condensed, sans-serif;
+    font-size: 1.0625rem;
+    line-height: 1;
+    padding-top: 8px; }
+  #desktop-span {
+    display: block; }
+  .nav__logo--header {
+    width: 187px; } }
+
+@media (min-width: 1199px) {
+  .main-menu-container {
+    top: 130px;
+    height: 44vh; }
+  .splotchybackground {
+    height: 44vh; }
+  #ul-container-desktop {
+    padding-left: 35px; }
+  .header-search {
+    top: 7px; }
+  #page-search__int-id {
+    height: 70px; }
+  .search-close-toggle {
+    height: 60px; }
+  .ais-search-box {
+    width: 47%; }
+  #map-icon {
+    width: 56px; }
+  .reveal-overlay {
+    padding: 20px 69px; } }
+
+@media (min-width: 1230px) {
+  #map-icon {
+    width: 40px; } }
+
+@media (min-width: 1400px) {
+  #map-icon {
+    width: 50px; } }
+
+@media (min-width: 1475px) {
+  #map-icon {
+    width: 55px; } }
+
+@media (max-width: 767px) {
+  .desktop {
+    display: none; } }

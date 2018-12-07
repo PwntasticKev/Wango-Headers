@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css?family=Arimo:400,400i,700,700i,300,200");
+@import url("https://fonts.googleapis.com/css?family=Archivo+Black|Arimo:400,400i,700,700i");
+.dist-main-head-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  font-family: 'Arimo', sans-serif;
+  padding: 10px; }
+
+.dist-line {
+  margin: 3px 0;
+  cursor: pointer;
+  height: 2px;
+  width: 14px;
+  background: #9D9D9D;
+  display: block;
+  content: "";
+  box-shadow: none;
+  right: 4px;
+  top: 10px;
+  transition: all 0.5s ease-in-out; }
+
+.dist-burger {
+  position: absolute;
+  left: 45px;
+  top: 40px; }
+
+.dist-logo {
+  height: 80px;
+  visibility: visible;
+  display: inline-block; }
+
+.dist-menu-container {
+  padding: 0 45px 22px;
+  font-family: 'Arimo', sans-serif;
+  font-weight: 300;
+  background: white; }
+
+.dist-menu-option {
+  font-size: 13px;
+  font-weight: 400;
+  color: #888;
+  padding: 10px 0;
+  display: block;
+  position: relative;
+  text-transform: none;
+  line-height: 26px;
+  letter-spacing: 0;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased; }
+
+.dist-menu-option:after {
+  cursor: pointer;
+  display: inline-block;
+  height: 46px;
+  line-height: 46px;
+  margin: 0;
+  padding: 0 10px 0 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px;
+  -webkit-tap-highlight-color: transparent; }
+
+@media (min-width: 1024px) {
+  .dist-menu-container {
+    display: flex !important;
+    justify-content: center;
+    visibility: visible; }
+  .dist-burger {
+    display: none; }
+  .dist-menu-option {
+    margin-right: 7px;
+    color: #3d3d3d;
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase; }
+  .dist-menu-option:hover {
+    opacity: .8;
+    color: black; }
+  .dist-menu-option:first-child:before {
+    content: ''; }
+  .dist-menu-option:before {
+    content: '|';
+    position: relative;
+    left: -2px;
+    color: #9e9e9e;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 0 10px; }
+  .dist-logo {
+    height: 143px; } }
