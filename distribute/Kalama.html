@@ -19,7 +19,7 @@
 <section class="kala-flex kala-logo-container">
     <img class="kala-logo" src="https://www.discoverkalamazoo.com/wp-content/themes/discoverkalamazoo2018/assets/header-logo.png" alt="Disc LOGO">
 </section>
-<section class="kala-flex">
+<section class="kala-flex kala-right-nav">
     <i class="fas fa-search kala-search"></i>
     <div class="kala-burger">
         <br class="kala-line" id="kala-top-line" />
@@ -28,7 +28,7 @@
       </div>
 </section>
 </header>
-  <section class="kala-search-container">
+  <section class="kala-search-container" style='display:none;'>
       <form role="search" method="get" id="kala-form-container" action="https://www.discoverkalamazoo.com/site-search/">
         <span class="kala-mobile-search-close"> X </span>
         <input class='kala-search-text' type="text" placeholder="Search" value="" name="query" id="lar-search">
@@ -36,8 +36,38 @@
     </form>
   </section>
 
+  <!-- MOBILE MENU -->
+  <section>
+    <section class="kal-menu-container">
+      <section class="kala-flex kala-logo-container">
+        <img class="kala-logo" src="https://www.discoverkalamazoo.com/wp-content/themes/discoverkalamazoo2018/assets/header-logo.png" alt="Disc LOGO">
+        <div class="kal-green-x">X</div>
+      </section>
+      <section class="kal-upperMenu">
+        <ul class="kal-upperMenu-ul">
+          <a href=""><li class="kal-upperMenu-option">Home</li></a>
+          <a href=""><li class="kal-upperMenu-option">Play</li></a>
+          <a href=""><li class="kal-upperMenu-option">Stay</li></a>
+          <a href=""><li class="kal-upperMenu-option">Eat</li></a>
+          <a href=""><li class="kal-upperMenu-option">Drink</li></a>
+          <a href=""><li class="kal-upperMenu-option">Events</li></a>
+          <a href=""><li class="kal-upperMenu-option">Discover</li></a>
+        </ul>
+      </section>
+
+    </section>
+  </section>
+
   <!-- JS -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-  <script></script>
+  <script>
+  
+  $('.kala-search').on('click', function() {
+    $('.kala-search-container').toggle({ opacity: "toggle" }, 4000);
+  })
+  $('.kala-mobile-search-close').on('click', function() {
+    $('.kala-search-container').toggle({ opacity: "toggle" }, 4000);
+  })
+  </script>
 </body>
 </html>

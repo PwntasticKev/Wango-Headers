@@ -1,8 +1,16 @@
 /* GLOBAL CSS */
 @import url('https://fonts.googleapis.com/css?family=Montserrat:200,200i,300,300i,400,500,500i,600,600i,700');
+$montFont:"Montserrat", sans-serif;
+
 .kala-flex {
 	display: flex;
-	align-items: center;
+  align-items: center;
+  
+.kala-right-nav {
+  justify-content: space-around;
+  width:25%;
+}
+
 }
 
 .kala-logo {
@@ -25,24 +33,24 @@
 	flex-direction: column;
 	justify-content: center;
 	margin-right: 10px;
+
+  .kala-line {
+    margin: 2.5px 0;
+    cursor: pointer;
+    height: 2px;
+    width: 17px;
+    background: #fff;
+    display: block;
+    content: "";
+    box-shadow: none;
+    right: 4px;
+    top: 10px;
+    transition: all 0.5s ease-in-out;
+  }
 }
 
 .kala-logo-container {
 	width: 60%;
-}
-
-.kala-line {
-	margin: 2.5px 0;
-	cursor: pointer;
-	height: 2px;
-	width: 17px;
-	background: #fff;
-	display: block;
-	content: "";
-	box-shadow: none;
-	right: 4px;
-	top: 10px;
-	transition: all 0.5s ease-in-out;
 }
 
 .kala-button {
@@ -54,7 +62,7 @@
 	border-style: solid;
 	border-width: 0;
 	cursor: pointer;
-	font-family: "Montserrat", sans-serif;
+	font-family: $montFont;
 	font-weight: normal;
 	line-height: normal;
 	position: relative;
@@ -74,6 +82,10 @@
     padding: 0.5rem;
 }
 
+.kala-search {
+  font-size:23px;
+}
+
 .kala-mobile-search-close {
   padding: 9px;
   background-color: lightgray;
@@ -87,4 +99,35 @@
   display: flex;
   justify-content: center;
   background: white;
+  position: absolute;
+  top: 0;
+	right: 0;
+  width: 100%;
+  padding: 5px;
+  z-index: 40;
+  opacity: 1;
+}
+
+.kal-upperMenu-ul {
+  display: flex;
+  flex-direction: column;
+  a, .kal-upperMenu-option {
+    text-decoration: none;
+    color:black;
+  }
+
+  .kal-upperMenu-option {
+    background: rgba(255, 255, 255, 0);
+    padding: 11px 8px;
+    padding-left: 45px !important;
+    &:before {
+      content: '';
+      background: url('https://www.discoverkalamazoo.com/assets/oc-menu/home.png') no-repeat;
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      width: 20px;
+      height: 21px;
+    }
+  }
 }

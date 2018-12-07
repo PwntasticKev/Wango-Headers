@@ -1,12 +1,21 @@
 /* GLOBAL CSS */
 @import url('https://fonts.googleapis.com/css?family=Montserrat:200,200i,300,300i,400,500,500i,600,600i,700');
+$montFont:"Montserrat", sans-serif;
+
 .kala-flex {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  
+
+.kala-right-nav {
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  width:25%;
+}
 }
 
 .kala-logo {
@@ -40,26 +49,26 @@
 	-ms-flex-pack: center;
 	justify-content: center;
 	margin-right: 10px;
+
+  .kala-line {
+    margin: 2.5px 0;
+    cursor: pointer;
+    height: 2px;
+    width: 17px;
+    background: #fff;
+    display: block;
+    content: "";
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    right: 4px;
+    top: 10px;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+  }
 }
 
 .kala-logo-container {
 	width: 60%;
-}
-
-.kala-line {
-	margin: 2.5px 0;
-	cursor: pointer;
-	height: 2px;
-	width: 17px;
-	background: #fff;
-	display: block;
-	content: "";
-	-webkit-box-shadow: none;
-	box-shadow: none;
-	right: 4px;
-	top: 10px;
-	-webkit-transition: all 0.5s ease-in-out;
-	transition: all 0.5s ease-in-out;
 }
 
 .kala-button {
@@ -71,7 +80,7 @@
 	border-style: solid;
 	border-width: 0;
 	cursor: pointer;
-	font-family: "Montserrat", sans-serif;
+	font-family: $montFont;
 	font-weight: normal;
 	line-height: normal;
 	position: relative;
@@ -91,6 +100,10 @@
     color: rgba(0, 0, 0, 0.75);
     font-size: 0.875rem;
     padding: 0.5rem;
+}
+
+.kala-search {
+  font-size:23px;
 }
 
 .kala-mobile-search-close {
@@ -114,4 +127,11 @@
   -ms-flex-pack: center;
   justify-content: center;
   background: white;
+  position: absolute;
+  top: 0;
+  right:0;
+  width: 100%;
+  padding: 5px;
+  z-index: 40;
+  opacity: 1;
 }
