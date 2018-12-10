@@ -154,25 +154,26 @@ $montFont:"Montserrat", sans-serif;
     color:black;
   }
 
-}
-.kala-upperMenu-option {
-  background: rgba(255, 255, 255, 0);
-  padding: 11px 8px;
-  padding-left: 45px !important;
-  position: relative;
-  font-family: $montFont;
-  &:before {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    width: 20px;
-    height: 21px;
+  
+  .kala-upperMenu-option {
+    background: rgba(255, 255, 255, 0);
+    padding: 11px 8px;
+    padding-left: 45px !important;
+    position: relative;
+    font-family: $montFont;
+    &:before {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      width: 20px;
+      height: 21px;
+    }
   }
-}
-
-.kala-play {
-  &:before {
-    content:'';
-    background: url("https://www.discoverkalamazoo.com/assets/oc-menu/play.png") no-repeat;
+  
+  .kala-play {
+    &:before {
+      content:'*';
+      background: url("https://www.discoverkalamazoo.com/assets/oc-menu/play.png") no-repeat;
+    }
   }
 }
