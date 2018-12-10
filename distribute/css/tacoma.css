@@ -29,7 +29,8 @@ ul {
 
 .tac-glass {
   color: black;
-  font-size: 24px; }
+  font-size: 24px;
+  cursor: pointer; }
 
 .tac-burger {
   width: 25px;
@@ -208,6 +209,9 @@ ul {
 .desktop2 {
   display: none; }
 
+.tac-desktop-logo {
+  display: none; }
+
 /* MEDIA QUERIES */
 @media (min-width: 375px) and (min-height: 812px) {
   .tac-first-layer-menu {
@@ -232,7 +236,8 @@ ul {
     width: 39% !important; }
   .tac-weather-desktop {
     width: 45px;
-    background: white; }
+    background: white;
+    color: #009fc3; }
   .taco-main-container {
     background-color: transparent;
     /* background-color: lightgray; */ }
@@ -288,16 +293,27 @@ ul {
   #tac-menu-container {
     width: 250px !important; }
   .tac-menu-text {
-    display: none; } }
+    display: none; }
+  .tac-desktop-logo {
+    display: none; }
+  .tac-first-layer-menu {
+    height: 40.5vh; } }
 
 @media (min-width: 1111px) {
   .desktop2 {
     display: flex; }
   .border-slant-logo {
     display: none; }
+  .tac-desktop-logo {
+    display: block;
+    position: relative;
+    top: 4px;
+    left: 40px;
+    width: 243px; }
+  .tac-mobile-logo {
+    display: none; }
   #tac-menu-container {
-    width: 539px !important;
-    padding-right: 85px; }
+    width: 539px !important; }
   .tac-menu-option {
     margin: 0 10px; }
   .tac-mobile-burger {
@@ -367,6 +383,9 @@ ul {
     left: 66px; }
   #tac-regions-option {
     padding: 0 25px; }
+  .tac-desktop-sub-menu a:hover {
+    text-decoration: none;
+    color: yellow; }
   .border-slant-sub-menu:before {
     content: "";
     position: absolute;

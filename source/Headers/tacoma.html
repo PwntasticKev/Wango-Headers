@@ -18,11 +18,18 @@
 	</head>
 	<body>
 		<section class="taco-main-container">
-	<section class="border-slant-logo">
+	<section class="border-slant-logo tac-mobile-logo">
+	  		<img
+  				src="http://www.traveltacoma.com/includes/public/assets/shell/logo-mobile.png"
+  				alt="Taco Man img"
+  				class="tac-home-icon"
+  			/>
+  </section>
+	<section class="tac-desktop-logo">
 	  		<img
   				src="https://res.cloudinary.com/bandwango/image/upload/v1544480115/kv493vqkujikucewevtv.png"
   				alt="Taco Man img"
-  				class="tac-home-icon"
+  				class="tac-home-icon tac-desktop-logo"
   			/>
   </section>
   <img class="desktop2 tac-big-logo" src="http://www.traveltacoma.com/includes/public/assets/shell/logo.png" alt="yooo">
@@ -51,6 +58,9 @@
         </div>
 				<div class="border-slant">
 					<i class="fa fa-search tac-glass " aria-hidden="true"></i>
+        </div>
+        <div class="desktop tac-desktop-">
+
         </div>
         <section class='mobile tac-mobile-burger' style="display: flex; align-items:center;">
             <div class="tac-burger">
@@ -206,6 +216,11 @@
             $('.tac-first-layer-menu').toggle({ opacity: "toggle" }, 200);
           });
           }
+          if ((width < 1205)) {
+         // $('').on('click',function() {
+         //   $('').toggle()
+         // })
+       }
 
      }
       $(document).ready(function () {
@@ -272,6 +287,8 @@ redesignScreen();
               )
             })
           )
+
+     
 		</script>
 	</body>
 </html>

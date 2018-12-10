@@ -35,7 +35,8 @@ ul {
 
 .tac-glass {
 	color: black;
-	font-size: 24px;
+  font-size: 24px;
+  cursor:pointer;
 }
 
 .tac-burger {
@@ -245,6 +246,10 @@ ul {
 	display: none;
 }
 
+.tac-desktop-logo {
+  display: none;
+}
+
 /* MEDIA QUERIES */
 @media (min-width: 375px) and (min-height: 812px) {
 	.tac-first-layer-menu {
@@ -277,7 +282,8 @@ ul {
 	}
 	.tac-weather-desktop {
 		width: 45px;
-		background: white;
+    background: white;
+    color:#009fc3;
 	}
 	.taco-main-container {
 		background-color: transparent;
@@ -354,7 +360,13 @@ ul {
 	}
 	.tac-menu-text {
 		display: none;
-	}
+  }
+  .tac-desktop-logo {
+    display: none;
+  }
+  .tac-first-layer-menu {
+    height: 40.5vh;
+}
 }
 
 @media (min-width: 1111px) {
@@ -363,10 +375,19 @@ ul {
 	}
 	.border-slant-logo {
 		display: none;
-	}
+  }
+  .tac-desktop-logo {
+    display: block;
+    position: relative;
+    top: 4px;
+    left: 40px;
+    width: 243px;
+  }
+  .tac-mobile-logo {
+    display: none;
+  }
 	#tac-menu-container {
     width: 539px!important;
-    padding-right: 85px;
 	}
 	.tac-menu-option {
 		margin: 0 10px;
@@ -454,6 +475,10 @@ ul {
   #tac-regions-option {
     padding: 0 25px;
   }
+  .tac-desktop-sub-menu a:hover {
+    text-decoration: none;
+    color: yellow;
+}
   .border-slant-sub-menu:before {
 		content: "";
 		position: absolute;
