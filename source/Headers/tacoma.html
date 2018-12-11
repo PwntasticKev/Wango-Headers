@@ -56,11 +56,11 @@
           <div id="testWeather" class='desktop tac-weather-desktop'>
           </div>
         </div>
-				<div class="border-slant">
+				<div class="border-slant tac-glass-container">
 					<i class="fa fa-search tac-glass " aria-hidden="true"></i>
         </div>
-        <div class="desktop tac-desktop-">
-
+        <div class="desktop tac-desktop-search-container" style='display: none;'>
+yoyoyoyo
         </div>
         <section class='mobile tac-mobile-burger' style="display: flex; align-items:center;">
             <div class="tac-burger">
@@ -216,11 +216,12 @@
             $('.tac-first-layer-menu').toggle({ opacity: "toggle" }, 200);
           });
           }
-          if ((width < 1205)) {
-         // $('').on('click',function() {
-         //   $('').toggle()
-         // })
-       }
+          if(width > 1300) {
+            $('.tac-glass-container').on('click',function() {
+           console.log('yo mannnn')
+           $('tac-desktop-search-container').toggle()
+         })
+          }
 
      }
       $(document).ready(function () {
@@ -288,7 +289,6 @@ redesignScreen();
             })
           )
 
-     
 		</script>
 	</body>
 </html>
