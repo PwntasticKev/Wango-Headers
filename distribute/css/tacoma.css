@@ -445,7 +445,6 @@ ul {
 /* WEATHER CLIMACONS */
 @font-face {
   font-family: 'sv-Climacons';
-  src: url("../fonts/climacons/sv_climacons_webfont.eot");
   src: url("../fonts/climacons/sv_climacons_webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/climacons/sv_climacons_webfont.svg#Climacons-Font") format("svg"), url("../fonts/climacons/sv_climacons_webfont.woff") format("woff"), url("../fonts/climacons/sv_climacons_webfont.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
