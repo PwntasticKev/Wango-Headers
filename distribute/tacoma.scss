@@ -317,6 +317,9 @@ ul {
 	.mobile {
 		display: none !important;
   }
+  .tac-big-logo {
+   display: none;
+}
   #tac-mobile-weather{
     display: none;
   }
@@ -327,7 +330,9 @@ ul {
 		-webkit-box-pack: justify !important;
 		-ms-flex-pack: justify !important;
 		justify-content: space-between !important;
-		width: 39% !important;
+    width: 39% !important;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
 	}
 	.tac-weather-desktop {
 		width: 45px;
@@ -344,19 +349,23 @@ ul {
 	.border-slant:last-of-type {
 		background: #009fc3;
 	}
+	.border-slant:last-of-type:before {
+		border-top: 45px solid #009fc3;
+	}
 	.border-slant:nth-of-type(4):before {
 		border-top: 45px solid #009fc3;
 	}
 	.border-slant:nth-of-type(4):after {
-		border-left: none;
+    border-left: 16px solid #009fc3;
 	}
 	.border-slant:nth-of-type(2) {
 		background: white;
 	}
 	.border-slant {
-		background: none;
+    background: #009fc3;
 		padding: 0 5px;
 	}
+
 	.border-slant:nth-of-type(3) {
 		background: white;
 	}
@@ -413,16 +422,30 @@ ul {
 
 @media (min-width: 1024px) {
 	#tac-menu-container {
-		width: 250px !important;
+    width: 280px !important;
 	}
-	.tac-menu-text {
-		display: none;
-  }
   .tac-desktop-logo {
     display: none;
   }
   .tac-first-layer-menu {
     height: 40.5vh;
+}
+.tac-desktop-search-container {
+  position: relative;
+  right: 17px;
+  top: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 45px;
+  background-color: #b95915 !important;
+    background-position: right center;
+}
+.desktop-search-container-open {
+  background: #b95915
 }
 }
 
@@ -487,7 +510,8 @@ ul {
 		width: 0;
 		border-left: 16px solid transparent;
 		border-top: 45px solid #fff;
-	}
+  }
+
 	.tac-burger {
 		display: none;
 	}
@@ -535,12 +559,6 @@ ul {
 	.tac-menu-option:hover {
     text-decoration: underline;
 	}
-
-	.tac-big-logo {
-		position: relative;
-		top: 4px;
-		left: 66px;
-  }
   #tac-regions-option {
     padding: 0 25px;
   }
@@ -558,6 +576,24 @@ ul {
 		border-top: 49px solid #009fc3;;
 	}
 }
+
+@media (min-width: 1025px) {
+	#tac-menu-container {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .tac-search-input-active {
+    width: 115px;
+  }
+  .tac-menu-text {
+		display: none;
+  }
+
+  .border-slant:after {
+    display: none;
+  }
+}
+
 
 /* WEATHER CLIMACONS */
 @font-face {

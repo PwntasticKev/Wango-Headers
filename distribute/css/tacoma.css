@@ -248,14 +248,16 @@ ul {
     padding: 0 5px; }
   .border-slant:last-of-type {
     background: #009fc3; }
+  .border-slant:last-of-type:before {
+    border-top: 45px solid #009fc3; }
   .border-slant:nth-of-type(4):before {
     border-top: 45px solid #009fc3; }
   .border-slant:nth-of-type(4):after {
-    border-left: none; }
+    border-left: 16px solid #009fc3; }
   .border-slant:nth-of-type(2) {
     background: white; }
   .border-slant {
-    background: none;
+    background: #009fc3;
     padding: 0 5px; }
   .border-slant:nth-of-type(3) {
     background: white; }
@@ -295,8 +297,6 @@ ul {
 @media (min-width: 1024px) {
   #tac-menu-container {
     width: 280px !important; }
-  .tac-menu-text {
-    display: none; }
   .tac-desktop-logo {
     display: none; }
   .tac-first-layer-menu {
@@ -403,13 +403,18 @@ ul {
     top: 0;
     width: 0;
     border-left: 16px solid transparent;
-    border-top: 49px solid #009fc3; } }
+    border-top: 49px solid #009fc3; }
+  .border-slant:last-of-type:after {
+    border-left: 16px solid red;
+    background: red; } }
 
 @media (min-width: 1025px) {
   #tac-menu-container {
     flex-wrap: wrap; }
   .tac-search-input-active {
-    width: 115px; } }
+    width: 115px; }
+  .tac-menu-text {
+    display: none; } }
 
 /* WEATHER CLIMACONS */
 @font-face {
