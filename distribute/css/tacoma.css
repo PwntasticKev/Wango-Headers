@@ -365,7 +365,8 @@ ul {
   .tac-mobile-logo {
     display: none; }
   #tac-menu-container {
-    width: 539px !important; }
+    width: 539px !important;
+    padding-top: 22px; }
   .tac-menu-option {
     margin: 0 10px; }
   .tac-mobile-burger {
@@ -451,7 +452,7 @@ ul {
 
 .climacon:before {
   font-family: 'sv-climacons';
-  /* speak: none; */
+  speak: none;
   font-size: inherit;
   font-style: normal;
   font-weight: normal;

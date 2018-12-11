@@ -457,6 +457,7 @@ ul {
   }
   #tac-menu-container {
     width: 539px!important;
+    padding-top: 22px;
   }
   .tac-menu-option {
     margin: 0 10px;
@@ -550,7 +551,6 @@ ul {
     border-left: 16px solid transparent;
     border-top: 49px solid #009fc3;
   }
-  
 }
 
 /* WEATHER CLIMACONS */
@@ -566,7 +566,7 @@ ul {
 }
 .climacon:before{
   font-family: 'sv-climacons';
-  /* speak: none; */
+  speak: none;
   font-size: inherit;
   font-style: normal;
   font-weight: normal;
