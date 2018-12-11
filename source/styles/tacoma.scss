@@ -272,6 +272,7 @@ ul {
   display: none;
 }
 
+
 /* MEDIA QUERIES */
 @media (min-width: 375px) and (min-height: 812px) {
 	.tac-first-layer-menu {
@@ -407,11 +408,14 @@ ul {
 }
 .desktop-search-container-open {
   background: #b95915;
-  
 }
-// .border-slant:nth-of-type(4):before {
-//   border-top: 45px solid #b95915;
-// }
+.desktop-search-container-open:nth-of-type(4):before {
+  border:none;
+}
+.desktop-search-container-open:nth-of-type(4):after {
+  border-left: 16px solid #b95915;
+}
+
 }
 
 

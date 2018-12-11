@@ -56,7 +56,7 @@
           <div id="testWeather" class='desktop tac-weather-desktop'>
           </div>
         </div>
-        <div class="desktop tac-desktop-search-container border-slant-left" style='display: none;'>
+        <div class="desktop tac-desktop-search-container " style='display: none;'>
             <section class="tac-search-container">
                 <form
                   data-sv-searchform=""
@@ -76,9 +76,9 @@
                   <i data-sv-searchbtn="" class="fa fa-inverse tac-search-button"></i>
                 </form>
               </section>
-          <div class="border-slant tac-glass-container">
+          <!-- <div class="border-slant tac-glass-container">
             <i class="fa fa-search tac-glass " aria-hidden="true"></i>
-          </div>
+          </div> -->
         </div>
 
 				<div class="border-slant tac-glass-container">
@@ -242,9 +242,8 @@
             $('.tac-glass-container').on('click',function() {
            console.log('yo mannnn')
            $('.tac-desktop-search-container').toggle()
-           $('.tac-glass-container').addClass('desktop-search-container-open')
-           $('.border-slant:nth-of-type(4):before').
-          
+           $('.tac-glass-container').toggleClass('desktop-search-container-open')
+           $('.border-slant:nth-of-type(4):before').removeClass()
          })
           }
 
