@@ -270,6 +270,9 @@ ul {
 	.mobile {
 		display: none !important;
   }
+  .tac-big-logo {
+   display: none;
+}
   #tac-mobile-weather{
     display: none;
   }
@@ -278,7 +281,8 @@ ul {
 	}
 	#tac-menu-container {
 		justify-content: space-between !important;
-		width: 39% !important;
+    width: 39% !important;
+    flex-wrap: nowrap;
 	}
 	.tac-weather-desktop {
 		width: 45px;
@@ -356,7 +360,7 @@ ul {
 
 @media (min-width: 1024px) {
 	#tac-menu-container {
-		width: 250px !important;
+    width: 280px !important;
 	}
 	.tac-menu-text {
 		display: none;
@@ -366,6 +370,19 @@ ul {
   }
   .tac-first-layer-menu {
     height: 40.5vh;
+}
+.tac-desktop-search-container {
+  position: relative;
+  right: 17px;
+  top: 0px;
+  display: flex;
+  align-items: center;
+  height: 45px;
+  background-color: #b95915 !important;
+    background-position: right center;
+}
+.desktop-search-container-open {
+  background: #b95915
 }
 }
 
@@ -466,12 +483,6 @@ ul {
 	.tac-menu-option:hover {
     text-decoration: underline;
 	}
-
-	.tac-big-logo {
-		position: relative;
-		top: 4px;
-		left: 66px;
-  }
   #tac-regions-option {
     padding: 0 25px;
   }
@@ -489,6 +500,16 @@ ul {
 		border-top: 49px solid #009fc3;;
 	}
 }
+
+@media (min-width: 1025px) {
+	#tac-menu-container {
+    flex-wrap: wrap;
+  }
+  .tac-search-input-active {
+    width: 115px;
+  }
+}
+
 
 /* WEATHER CLIMACONS */
 @font-face {

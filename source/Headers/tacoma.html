@@ -32,10 +32,10 @@
   				class="tac-home-icon tac-desktop-logo"
   			/>
   </section>
-  <img class="desktop2 tac-big-logo" src="http://www.traveltacoma.com/includes/public/assets/shell/logo.png" alt="yooo">
+  <img class="desktop2 tac-big-logo" style='display: none;'src="http://www.traveltacoma.com/includes/public/assets/shell/logo.png" alt="yooo">
   <section
   id="tac-menu-container"
-  style="display: flex; justify-content: space-evenly; width:100%; flex-wrap: wrap;"
+  style="display: flex; justify-content: space-evenly; width:100%;"
   >
           <section class='tac-flex border-slant-white desktop2'>
             <div class="tac-menu-option" href=''>MEETINGS</div>
@@ -56,11 +56,33 @@
           <div id="testWeather" class='desktop tac-weather-desktop'>
           </div>
         </div>
+        <div class="desktop tac-desktop-search-container border-slant" style='display: flex;'>
+            <section class="tac-search-container">
+                <form
+                  data-sv-searchform=""
+                  action="http://www.traveltacoma.com/search/"
+                  method="GET"
+                  style="position:relative;"
+                >
+                  <input
+                    data-sv-searchinput=""
+                    name="q"
+                    type="search"
+                    class="tac-search-input tac-search-input-active"
+                    autocapitalize="off"
+                    placeholder="SEARCH…"
+                    value=""
+                  />
+                  <i data-sv-searchbtn="" class="fa fa-inverse tac-search-button"></i>
+                </form>
+              </section>
+          <div class="border-slant tac-glass-container">
+            <i class="fa fa-search tac-glass " aria-hidden="true"></i>
+          </div>
+        </div>
+
 				<div class="border-slant tac-glass-container">
 					<i class="fa fa-search tac-glass " aria-hidden="true"></i>
-        </div>
-        <div class="desktop tac-desktop-search-container" style='display: none;'>
-yoyoyoyo
         </div>
         <section class='mobile tac-mobile-burger' style="display: flex; align-items:center;">
             <div class="tac-burger">
@@ -216,10 +238,11 @@ yoyoyoyo
             $('.tac-first-layer-menu').toggle({ opacity: "toggle" }, 200);
           });
           }
-          if(width > 1300) {
+          if(width >= 1300) {
             $('.tac-glass-container').on('click',function() {
            console.log('yo mannnn')
-           $('tac-desktop-search-container').toggle()
+           $('.tac-desktop-search-container').toggle()
+           $('.tac-glass-container').toggleClass('desktop-search-container-open')
          })
           }
 
