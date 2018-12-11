@@ -188,6 +188,28 @@ ul {
 	background: #d8d2c9;
 }
 
+.border-slant-left {
+  position: relative;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #009fc3;
+  // background: lightblue;
+  border: none;
+  outline: none;
+  padding-right: 8px;
+}
+.border-slant-left:before {
+  content: "";
+  position: absolute;
+  left: -16px;
+  top: 0;
+  width: 0;
+  border-left: 16px solid transparent;
+  border-top: 45px solid #009fc3;
+}
+
 /* MY ITIN && WEATHER */
 
 .tac-my-itinerary {
@@ -281,8 +303,10 @@ ul {
 	}
 	#tac-menu-container {
 		justify-content: space-between !important;
-    width: 39% !important;
+    width: 320px !important;
     flex-wrap: nowrap;
+    position: absolute;
+    right: 0;
 	}
 	.tac-weather-desktop {
 		width: 45px;
@@ -363,9 +387,7 @@ ul {
 }
 
 @media (min-width: 1024px) {
-	#tac-menu-container {
-    width: 280px !important;
-	}
+
   .tac-desktop-logo {
     display: none;
   }
@@ -373,26 +395,48 @@ ul {
     height: 40.5vh;
 }
 .tac-desktop-search-container {
-  position: relative;
-  right: 17px;
+  position: absolute;
   top: 0px;
   display: flex;
   align-items: center;
   height: 45px;
   background-color: #b95915 !important;
-    background-position: right center;
+  background-position: right center;
+  right: 34px;
+  padding-right: 14px;
 }
 .desktop-search-container-open {
-  background: #b95915
+  background: #b95915;
+  
 }
+// .border-slant:nth-of-type(4):before {
+//   border-top: 45px solid #b95915;
+// }
+}
+
+
+@media (min-width: 1025px) {
+	#tac-menu-container {
+    flex-wrap: wrap;
+  }
+  .tac-search-input-active {
+    width: 115px;
+  }
+  .tac-menu-text {
+    display: none;
+  }
+  .border-slant-left {
+    display: none;
+  }
+  
 }
 
 @media (min-width: 1111px) {
-	.desktop2 {
-		display: flex;
-	}
-	.border-slant-logo {
-		display: none;
+  .desktop2 {
+    display: flex;
+  }
+  .border-slant-logo {
+    display: none;
   }
   .tac-desktop-logo {
     display: block;
@@ -404,87 +448,85 @@ ul {
   .tac-mobile-logo {
     display: none;
   }
-	#tac-menu-container {
+  #tac-menu-container {
     width: 539px!important;
-	}
-	.tac-menu-option {
-		margin: 0 10px;
-	}
-	.tac-mobile-burger {
-		display: none;
-	}
-	.border-slant-white {
-		position: relative;
-		height: 45px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		background: #fff;
-		border: none;
-		outline: none;
-	}
-	.border-slant-white:after {
-		content: "";
-		position: absolute;
-		right: -16px;
-		top: 0;
-		width: 0;
-		border-left: 16px solid #fff;
-		border-top: 45px solid transparent;
-	}
-	.border-slant-white:before {
-		content: "";
-		position: absolute;
-		left: -16px;
-		top: 0;
-		width: 0;
-		border-left: 16px solid transparent;
-		border-top: 45px solid #fff;
+  }
+  .tac-menu-option {
+    margin: 0 10px;
+  }
+  .tac-mobile-burger {
+    display: none;
+  }
+  .border-slant-white {
+    position: relative;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    border: none;
+    outline: none;
+  }
+  .border-slant-white:after {
+    content: "";
+    position: absolute;
+    right: -16px;
+    top: 0;
+    width: 0;
+    border-left: 16px solid #fff;
+    border-top: 45px solid transparent;
+  }
+  .border-slant-white:before {
+    content: "";
+    position: absolute;
+    left: -16px;
+    top: 0;
+    width: 0;
+    border-left: 16px solid transparent;
+    border-top: 45px solid #fff;
   }
 
-	.tac-burger {
-		display: none;
-	}
-	.tac-desktop-sub-menu {
-		display: flex;
-		text-decoration: none;
-		color: white;
-		align-items: center;
-		position: relative;
-		height: 49px;
-		padding-right: 57px;
-		padding-left: 10px;
-		background: #009fc3;
-		min-width: 665px;
-		right: 20%;
-	}
-	.tac-desktop-sub-menu a {
-		text-decoration: none;
-		color: white;
-	}
-	.tac-desktop-sub-menu:before {
-		content: "";
-		position: absolute;
-		left: -16px;
-		top: 0;
-		width: 0;
-		border-left: 16px solid transparent;
-		border-top: 49px solid #009fc3;
-	}
-	.border-slant:nth-of-type(4):before {
-		border-top: none;
-	}
-	.border-slant:last-of-type {
-		background: none;
-	}
+  .tac-burger {
+    display: none;
+  }
+  .tac-desktop-sub-menu {
+    display: flex;
+    text-decoration: none;
+    color: white;
+    align-items: center;
+    position: relative;
+    height: 49px;
+    padding-right: 57px;
+    padding-left: 10px;
+    background: #009fc3;
+    min-width: 665px;
+    right: 20%;
+  }
+  .tac-desktop-sub-menu a {
+    text-decoration: none;
+    color: white;
+  }
+  .tac-desktop-sub-menu:before {
+    content: "";
+    position: absolute;
+    left: -16px;
+    top: 0;
+    width: 0;
+    border-left: 16px solid transparent;
+    border-top: 49px solid #009fc3;
+  }
 
-	.tac-menu-option {
+  .border-slant:last-of-type {
+    background: none;
+  }
+
+  .tac-menu-option {
     font-size: 14px;
     cursor:pointer;
-	}
-	.tac-menu-option:hover {
+  }
+  .tac-menu-option:hover {
     text-decoration: underline;
-	}
+  }
   #tac-regions-option {
     padding: 0 25px;
   }
@@ -493,33 +535,16 @@ ul {
     color: yellow;
 }
   .border-slant-sub-menu:before {
-		content: "";
-		position: absolute;
-		left: -16px;
-		top: 0;
-		width: 0;
-		border-left: 16px solid transparent;
-		border-top: 49px solid #009fc3;;
+    content: "";
+    position: absolute;
+    left: -16px;
+    top: 0;
+    width: 0;
+    border-left: 16px solid transparent;
+    border-top: 49px solid #009fc3;
   }
-  .border-slant:last-of-type:after {
-    border-left: 16px solid red;
-    background:red;
-	}
+  
 }
-
-@media (min-width: 1025px) {
-	#tac-menu-container {
-    flex-wrap: wrap;
-  }
-  .tac-search-input-active {
-    width: 115px;
-  }
-  .tac-menu-text {
-		display: none;
-  }
-
-}
-
 
 /* WEATHER CLIMACONS */
 @font-face {

@@ -56,7 +56,7 @@
           <div id="testWeather" class='desktop tac-weather-desktop'>
           </div>
         </div>
-        <div class="desktop tac-desktop-search-container border-slant" style='display: none;'>
+        <div class="desktop tac-desktop-search-container border-slant-left" style='display: none;'>
             <section class="tac-search-container">
                 <form
                   data-sv-searchform=""
@@ -94,7 +94,7 @@
                 MENU
               </div>
             </section>
-        <div class="border-slant desktop mobile-burger-2">
+        <div class="border-slant-left desktop">
 				<section style="display: flex; align-items:center">
 					<div class="tac-burger">
 						<br class="tac-line" id="tac-top-line" />
@@ -238,11 +238,13 @@
             $('.tac-first-layer-menu').toggle({ opacity: "toggle" }, 200);
           });
           }
-          if(width >= 1300) {
+          if(width >= 1200) {
             $('.tac-glass-container').on('click',function() {
            console.log('yo mannnn')
            $('.tac-desktop-search-container').toggle()
-           $('.tac-glass-container').toggleClass('desktop-search-container-open')
+           $('.tac-glass-container').addClass('desktop-search-container-open')
+           $('.border-slant:nth-of-type(4):before').
+          
          })
           }
 

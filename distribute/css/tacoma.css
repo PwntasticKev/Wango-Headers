@@ -162,6 +162,26 @@ ul {
   margin: 7px 0;
   background: #d8d2c9; }
 
+.border-slant-left {
+  position: relative;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #009fc3;
+  border: none;
+  outline: none;
+  padding-right: 8px; }
+
+.border-slant-left:before {
+  content: "";
+  position: absolute;
+  left: -16px;
+  top: 0;
+  width: 0;
+  border-left: 16px solid transparent;
+  border-top: 45px solid #009fc3; }
+
 /* MY ITIN && WEATHER */
 .tac-my-itinerary {
   padding: 5px;
@@ -235,8 +255,10 @@ ul {
     height: 54.5vh; }
   #tac-menu-container {
     justify-content: space-between !important;
-    width: 39% !important;
-    flex-wrap: nowrap; }
+    width: 320px !important;
+    flex-wrap: nowrap;
+    position: absolute;
+    right: 0; }
   .tac-weather-desktop {
     width: 45px;
     background: white;
@@ -295,23 +317,32 @@ ul {
     border-top: 45px solid transparent; } }
 
 @media (min-width: 1024px) {
-  #tac-menu-container {
-    width: 280px !important; }
   .tac-desktop-logo {
     display: none; }
   .tac-first-layer-menu {
     height: 40.5vh; }
   .tac-desktop-search-container {
-    position: relative;
-    right: 17px;
+    position: absolute;
     top: 0px;
     display: flex;
     align-items: center;
     height: 45px;
     background-color: #b95915 !important;
-    background-position: right center; }
+    background-position: right center;
+    right: 34px;
+    padding-right: 14px; }
   .desktop-search-container-open {
     background: #b95915; } }
+
+@media (min-width: 1025px) {
+  #tac-menu-container {
+    flex-wrap: wrap; }
+  .tac-search-input-active {
+    width: 115px; }
+  .tac-menu-text {
+    display: none; }
+  .border-slant-left {
+    display: none; } }
 
 @media (min-width: 1111px) {
   .desktop2 {
@@ -382,8 +413,6 @@ ul {
     width: 0;
     border-left: 16px solid transparent;
     border-top: 49px solid #009fc3; }
-  .border-slant:nth-of-type(4):before {
-    border-top: none; }
   .border-slant:last-of-type {
     background: none; }
   .tac-menu-option {
@@ -403,18 +432,7 @@ ul {
     top: 0;
     width: 0;
     border-left: 16px solid transparent;
-    border-top: 49px solid #009fc3; }
-  .border-slant:last-of-type:after {
-    border-left: 16px solid red;
-    background: red; } }
-
-@media (min-width: 1025px) {
-  #tac-menu-container {
-    flex-wrap: wrap; }
-  .tac-search-input-active {
-    width: 115px; }
-  .tac-menu-text {
-    display: none; } }
+    border-top: 49px solid #009fc3; } }
 
 /* WEATHER CLIMACONS */
 @font-face {
