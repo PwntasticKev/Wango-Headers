@@ -198,7 +198,10 @@ ul {
 
 #tac-mobile-weather {
   padding: 20px 30px 7px 16px;
-  background: white; }
+  background: white;
+  -webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75); }
 
 /*WEATHER */
 .tac-weather {
@@ -206,7 +209,9 @@ ul {
   font-size: 22px;
   line-height: 22px;
   display: flex;
-  align-items: center; }
+  align-items: center;
+  padding-bottom: 5px;
+  margin: 0 -2px; }
 
 .tac-mobile-weather {
   display: block; }
@@ -345,15 +350,14 @@ ul {
 
 @media (min-width: 1025px) {
   #tac-menu-container {
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    margin-right: 70px; }
   .tac-search-input-active {
     width: 115px; }
   .tac-menu-text {
     display: none; }
   .border-slant-left {
     display: none; }
-  #tac-menu-container {
-    padding-right: 45px; }
   .taco-main-container {
     padding: 10px 10px 0 10px; } }
 
@@ -371,7 +375,7 @@ ul {
   .tac-mobile-logo {
     display: none; }
   #tac-menu-container {
-    width: 539px !important; }
+    width: 519px !important; }
   .tac-menu-option {
     margin: 0 10px; }
   .tac-mobile-burger {
@@ -414,7 +418,7 @@ ul {
     padding-left: 10px;
     background: #009fc3;
     min-width: 665px;
-    right: 20%; }
+    right: 5%; }
   .tac-desktop-sub-menu a {
     text-decoration: none;
     color: white; }
