@@ -19,7 +19,7 @@
 <section class="kala-flex kala-logo-container">
     <img class="kala-logo" src="https://www.discoverkalamazoo.com/wp-content/themes/discoverkalamazoo2018/assets/header-logo.png" alt="Disc LOGO">
 </section>
-<section class="kala-flex">
+<section class="kala-flex kala-right-nav">
     <i class="fas fa-search kala-search"></i>
     <div class="kala-burger">
         <br class="kala-line" id="kala-top-line" />
@@ -28,7 +28,7 @@
       </div>
 </section>
 </header>
-  <section class="kala-search-container">
+  <section class="kala-search-container" style='display:none;'>
       <form role="search" method="get" id="kala-form-container" action="https://www.discoverkalamazoo.com/site-search/">
         <span class="kala-mobile-search-close"> X </span>
         <input class='kala-search-text' type="text" placeholder="Search" value="" name="query" id="lar-search">
@@ -36,8 +36,99 @@
     </form>
   </section>
 
+  <!-- MOBILE MENU -->
+  <section>
+    <section class="kala-menu-container">
+      <section class="kala-flex kala-white-logo-container">
+        <img class="kala-logo-white" src="https://www.discoverkalamazoo.com/wp-content/themes/discoverkalamazoo2018/assets/logo-old.jpg"
+          alt="Disc LOGO">
+        <div class="kala-flex kala-green-x">X</div>
+      </section>
+      <section class="kala-upperMenu">
+        <ul class="kala-menu-ul">
+          <a href="">
+            <li class="kala-menu-option kal-home">Home</li>
+          </a>
+          <a href="">
+            <li class="kala-menu-option kal-play">Play</li>
+          </a>
+          <a href="">
+            <li class="kala-menu-option kal-stay">Stay</li>
+          </a>
+          <a href="">
+            <li class="kala-menu-option kal-eat">Eat</li>
+          </a>
+          <a href="">
+            <li class="kala-menu-option kal-drink">Drink</li>
+          </a>
+          <a href="">
+            <li class="kala-menu-option kal-events">Events</li>
+          </a>
+          <a href="">
+            <li class="kala-menu-option kal-discover">Discover</li>
+          </a>
+        </ul>
+      </section>
+      <div class="kala-br"></div>
+      <section class="kala-lowerMenu-container">
+        <svg class="t-nav__curve" fill='white' style='background: #333333; height: 15px;' width="100%" viewBox="0 0 1919.13 36" preserveAspectRatio="xMidYMin meet">
+          <path d="M0 6s490.406 31.942 959.316 30c468.91-1.942 959.815-30 959.815-30V0H0v6z"></path>
+        </svg>
+        <ul class="kala-menu-ul kala-lowerMenu">
+          <a href="">
+            <li class="kala-menu-option kala-lower-menu-option kal-home">Meetings & Events</li>
+          </a>
+          <a href="">
+            <li class="kala-menu-option kala-lower-menu-option kal-play">Sports Event Planning</li>
+          </a>
+          <a href="">
+            <li class="kala-menu-option kala-lower-menu-option kal-stay">Trevel Partners</li>
+          </a>
+          <a href="">
+            <li class="kala-menu-option kala-lower-menu-option kal-eat">Media</li>
+          </a>
+          <a href="">
+            <li class="kala-menu-option kala-lower-menu-option kal-drink">Blog</li>
+          </a>
+        </ul>
+        <section class="kala-connect-container">
+          <h1>CONNECT WITH US</h1>
+          <div class="kala-icon-container">
+              <i class="fa fa-facebook" aria-hidden="true"></i><img class='kala-icon' style='background: url()' src="" alt="tw">
+            <img class='kala-icon' style='background: url()' src="" alt="yt">
+            <img class='kala-icon' style='background: url()' src="" alt="p">
+            <img class='kala-icon' style='background: url()' src="" alt="dot">
+            <img class='kala-icon' style='background: url()' src="" alt="ins">
+            <img class='kala-icon' style='background: url()' src="" alt="g+">
+          </div>
+          <button class='kala-e-news'>E-NEWS SIGNUP</button>
+        </section>
+        <svg class="t-nav__curve" fill='#333333' style='background: white; margin-bottom: -9px;' width="100%" viewBox="0 0 1919.13 36" preserveAspectRatio="xMidYMin meet">
+            <path d="M0 6s490.406 31.942 959.316 30c468.91-1.942 959.815-30 959.815-30V0H0v6z"></path>
+          </svg>
+      </section>
+      <ul class="kala-contact-container">
+        <h2>CONTACT US</h2>
+        <li></li>
+        <li>141 E. Michigan Avenue, Suite 100</li>
+        <li>Kalamazoo, MI 49007</li>
+        <li>269.488.9000</li>
+        <span>800.888.0509</span>
+        <span>generalinfo@discoverkalamazoo.com</span>
+      </ul>
+    </section>
+  </section>
+
   <!-- JS -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-  <script></script>
+  <script>
+  
+  $('.kala-search').on('click', function() {
+    $('.kala-search-container').toggle({ opacity: "toggle" }, 4000);
+  })
+  $('.kala-mobile-search-close').on('click', function() {
+    $('.kala-search-container').toggle({ opacity: "toggle" }, 4000);
+  })
+  </script>
 </body>
 </html>

@@ -18,17 +18,24 @@
 	</head>
 	<body>
 		<section class="taco-main-container">
-	<section class="border-slant-logo">
+	<section class="border-slant-logo tac-mobile-logo">
 	  		<img
   				src="http://www.traveltacoma.com/includes/public/assets/shell/logo-mobile.png"
   				alt="Taco Man img"
   				class="tac-home-icon"
   			/>
   </section>
-  <img class="desktop2 tac-big-logo" src="http://www.traveltacoma.com/includes/public/assets/shell/logo.png" alt="yooo">
+	<section class="tac-desktop-logo">
+        <img
+          src="http://res.cloudinary.com/bandwango/image/upload/v1544479216/download-1_fwztmm.png"
+  				alt="Taco Man img"
+  				class="tac-home-icon tac-desktop-logo"
+        />
+  </section>
+  <img class="desktop2 tac-big-logo" style='display: none;'src="http://www.traveltacoma.com/includes/public/assets/shell/logo.png" alt="yooo">
   <section
   id="tac-menu-container"
-  style="display: flex; justify-content: space-evenly; width:100%; flex-wrap: wrap;"
+  style="display: flex; justify-content: space-evenly; width:100%;"
   >
           <section class='tac-flex border-slant-white desktop2'>
             <div class="tac-menu-option" href=''>MEETINGS</div>
@@ -49,7 +56,32 @@
           <div id="testWeather" class='desktop tac-weather-desktop'>
           </div>
         </div>
-				<div class="border-slant">
+        <div class="desktop tac-desktop-search-container " style='display: none;'>
+            <section class="tac-search-container">
+                <form
+                  data-sv-searchform=""
+                  action="http://www.traveltacoma.com/search/"
+                  method="GET"
+                  style="position:relative;"
+                >
+                  <input
+                    data-sv-searchinput=""
+                    name="q"
+                    type="search"
+                    class="tac-search-input tac-search-input-active"
+                    autocapitalize="off"
+                    placeholder="SEARCH…"
+                    value=""
+                  />
+                  <i data-sv-searchbtn="" class="fa fa-inverse tac-search-button"></i>
+                </form>
+              </section>
+          <!-- <div class="border-slant tac-glass-container">
+            <i class="fa fa-search tac-glass " aria-hidden="true"></i>
+          </div> -->
+        </div>
+
+				<div class="border-slant tac-glass-container">
 					<i class="fa fa-search tac-glass " aria-hidden="true"></i>
         </div>
         <section class='mobile tac-mobile-burger' style="display: flex; align-items:center;">
@@ -62,7 +94,7 @@
                 MENU
               </div>
             </section>
-        <div class="border-slant desktop ">
+        <div class="border-slant-left desktop">
 				<section style="display: flex; align-items:center">
 					<div class="tac-burger">
 						<br class="tac-line" id="tac-top-line" />
@@ -115,8 +147,8 @@
 					<i data-sv-searchbtn="" class="fa fa-inverse tac-search-button"></i>
 				</form>
 			</section>
-			<ul >
-				<ul class="tac-layer1-menu-item" id='tac-regions-option'>
+			<ul style='padding: 0 0 7px 0;' >
+				<ul class="tac-layer1-menu-item" id='tac-regions-option' style='background: white;'>
 					<a href='http://www.traveltacoma.com/regions/'>REGIONS</a>
 				</ul>
 				<ul class="tac-layer1-menu-item">
@@ -133,9 +165,9 @@
 				</ul>
 			</ul>
 			<div class="tac-border" />
-			<ul style='padding:7px 0;'>
-				<ul class="tac-layer1-menu-item layer1-mid-menu">
-					<a <a href='http://www.traveltacoma.com/meetings/'>MEETINGS</a>
+      <ul style='padding: 0 0 7px 0;background: white;margin: 0;'>
+        <ul class="tac-layer1-menu-item layer1-mid-menu">
+          <a <a href='http://www.traveltacoma.com/meetings/'>MEETINGS</a>
 				</ul>
 				<ul class="tac-layer1-menu-item layer1-mid-menu">
 					<a <a href='http://www.traveltacoma.com/partners/'>PARTNERS</a>
@@ -148,7 +180,7 @@
 				</ul>
 			</ul>
 			<div class="tac-border" />
-			<ul style='padding:7px 0;'>
+			<ul style='padding: 0 0 7px 0; padding-left: 0; background: white; margin-bottom: 0;'>
 				<ul class="tac-layer1-menu-item layer1-mid-menu">
 					<a <a href='http://www.traveltacoma.com/about/'>ABOUT</a>
 				</ul>
@@ -161,7 +193,7 @@
         <a href="http://www.traveltacoma.com//tripbuilder/" class="tac-flex tac-my-itinerary">
           <img src="http://www.traveltacoma.com//includes/public/assets/tripbuilder/tripbuilder-icon.png"> 
           <div class="tac-my-itin-txt">
-            <a>My Intinerary (0)</a>
+            My Intinerary (0)
           </div>
         </a>
       </section>
@@ -174,9 +206,9 @@
     
   <section id='tac-regions-menu' style='display: none;'>
       <section class="tac-search-container">
-  <div class="tac-basic-menu-item" style='color: white;'>BACK</div>
+  <div class="tac-basic-menu-item" style='color: white; padding-left: 0;'>BACK</div>
       </section>
-      <ul style='font-family: calluna-sans, sans-serif;'>
+      <ul style='font-family: calluna-sans, sans-serif; background: white;'>
         <li class="tac-basic-menu-item">regions</li>
         <li class="tac-basic-menu-item">mount raineer</li>
         <ul class="tac-layer1-menu-item">Tacoma</ul>
@@ -195,7 +227,7 @@
 		<script>
      var redesignScreen = function () {
           var width = $(window).width()
-          if((width < 1111)) {
+          if(width < 1111) {
           $("#tac-menu-container").click(function () {
             $("#tac-top-line").toggleClass("tac-top-line")
             $("#tac-mid-line").toggleClass("tac-mid-line")
@@ -205,6 +237,14 @@
           $("#tac-menu-container").click(function () {
             $('.tac-first-layer-menu').toggle({ opacity: "toggle" }, 200);
           });
+          }
+          if(width >= 1200) {
+            $('.tac-glass-container').on('click',function() {
+           console.log('yo mannnn')
+           $('.tac-desktop-search-container').toggle()
+           $('.tac-glass-container').toggleClass('desktop-search-container-open')
+           $('.border-slant:nth-of-type(4):before').removeClass()
+         })
           }
 
      }
@@ -264,7 +304,7 @@ redesignScreen();
                   }"></i>
           <span class="tac-weather"><b>${
                   res.temp
-                  }</b><sup>°</sup>
+                  }</b><div>°</div>
           </span>
           <span class="tac-weather tac-weather-text">${res.text}</span>
           </div>`
@@ -272,6 +312,7 @@ redesignScreen();
               )
             })
           )
+
 		</script>
 	</body>
 </html>
