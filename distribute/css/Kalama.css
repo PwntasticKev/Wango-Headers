@@ -170,6 +170,9 @@
       width: 20px;
       height: 21px;
       background: url("https://www.discoverkalamazoo.com/assets/oc-menu/home.png"); }
+    @media (min-width: 1025px) {
+      .kala-menu-ul .kala-menu-option {
+        content: ''; } }
 
 .kala-lowerMenu-container {
   background: #333333; }
@@ -232,3 +235,13 @@
     margin-bottom: 15px; }
   .kala-contact-container li {
     margin: 10px 0; }
+
+.kala-desktop-upperMenu {
+  flex-direction: row; }
+  .kala-desktop-upperMenu .kala-menu-option:before {
+    content: ''; }
+
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }

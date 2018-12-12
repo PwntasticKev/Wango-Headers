@@ -200,6 +200,9 @@ $montFont:"Montserrat", sans-serif;
       height: 21px;
       background: url('https://www.discoverkalamazoo.com/assets/oc-menu/home.png')
     }
+        @media(min-width: 1025px){
+          content:''
+        }
   }
 }
 
@@ -277,4 +280,17 @@ $montFont:"Montserrat", sans-serif;
   } li {
     margin: 10px 0;
   }
+}
+
+.kala-desktop-upperMenu {
+  flex-direction: row;
+  .kala-menu-option:before {
+    content: '';
+  }
+}
+
+.top-nav {
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
 }
