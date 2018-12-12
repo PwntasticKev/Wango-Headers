@@ -72,8 +72,8 @@
         <section class="kala-connect-container">
           <h1>CONNECT WITH US</h1>
           <div class="kala-icon-container">
-              <i class="fa fa-twitter" aria-hidden="true"></i>
-              <i class="fa fa-youtube-play" aria-hidden="true">Y</i>
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+            <i class="fa fa-youtube-play" aria-hidden="true"></i>
             <i class="fa fa-pinterest-p" aria-hidden="true"></i>
             <i class="fa fa-flickr" aria-hidden="true"></i>
             <i class="fa fa-instagram" aria-hidden="true"></i>
@@ -106,6 +106,12 @@
   })
   $('.kala-mobile-search-close').on('click', function() {
     $('.kala-search-container').toggle({ opacity: "toggle" }, 4000);
+  })
+  $('.kala-green-x').on('click',function() {
+    $('.kala-menu-container').fadeToggle()
+  })
+  $('.kala-burger').on('click',function() {
+    $('.kala-menu-container').fadeToggle()
   })
   </script>
 </body>
