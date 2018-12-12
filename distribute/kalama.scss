@@ -193,7 +193,6 @@ $montFont:"Montserrat", sans-serif;
     color:black;
   }
 
-  
   .kala-menu-option {
     background: rgba(255, 255, 255, 0);
     padding: 11px 8px;
@@ -209,20 +208,6 @@ $montFont:"Montserrat", sans-serif;
       width: 20px;
       height: 21px;
       background: url('https://www.discoverkalamazoo.com/assets/oc-menu/home.png')
-    }
-  }
-  
-  
-.kal-home {
-  &:before {
-    content:'*';
-    background: url('https://www.discoverkalamazoo.com/assets/oc-menu/home.png')
-  }
-}
-  .kala-play {
-    &:before {
-      content:'*';
-      background: url("https://www.discoverkalamazoo.com/assets/oc-menu/play.png") no-repeat;
     }
   }
 }
