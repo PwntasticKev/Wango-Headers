@@ -204,6 +204,7 @@ $montFont:"Montserrat", sans-serif;
     text-align: center;
     font-weight: bold;
     letter-spacing: 0.07em;
+    margin-bottom: 10px;
   }
 
   .kala-icon {
@@ -222,12 +223,13 @@ $montFont:"Montserrat", sans-serif;
   max-width: 147px;
   background-color: orange;
   color: white;
-  margin: auto;
+  margin: 15px auto 0 auto;
   text-align: center;
   padding: 10px 5px;
   color: #008CBA;
   width: 157px;
   font-size: 17px;
+  border:none;
 }
 
 .kala-contact-container {
@@ -242,7 +244,8 @@ $montFont:"Montserrat", sans-serif;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 0.07em;
+    margin-bottom: 15px;
   } li {
-    margin: 5px 0;
+    margin: 10px 0;
   }
 }
