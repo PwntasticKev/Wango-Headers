@@ -22,7 +22,8 @@ $montFont:"Montserrat", sans-serif;
 	background: #000000;
 	color: #ffffff;
 	height: 2.8125rem;
-	justify-content: space-between;
+  justify-content: space-between;
+  padding: 8px 0 8px 0;
 }
 
 .kala-burger {
@@ -46,11 +47,22 @@ $montFont:"Montserrat", sans-serif;
     right: 4px;
     top: 10px;
     transition: all 0.5s ease-in-out;
+    @media(min-width:768px) {
+      height:4px;
+      width:25px;
+      color:white;
+    }
   }
 }
 
 .kala-logo-container {
-	width: 60%;
+  width: 60%;
+  @media(min-width: 768px) {
+    width: 44%;
+  }
+  @media(min-width: 1024px) {
+    width: 35%;
+  }
 }
 
 .kala-button {
@@ -74,16 +86,31 @@ $montFont:"Montserrat", sans-serif;
 	transition: background-color 300ms ease-out;
 }
 
+.kala-curve {
+  @media(min-width:760px) {
+    height: 40px !important;
+  }
+
+}
+
 .kala-search-text {
   border: 1px solid lightgray;
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
     color: rgba(0, 0, 0, 0.75);
     font-size: 0.875rem;
     padding: 0.5rem;
+    @media(min-width:768px) {
+      width: 22rem;
+    }
 }
+
+
 
 .kala-search {
   font-size:23px;
+  @media(min-width: 1025px) {
+    font-size: 30px;
+  }
 }
 
 .kala-mobile-search-close {
@@ -106,6 +133,9 @@ $montFont:"Montserrat", sans-serif;
   padding: 5px;
   z-index: 40;
   opacity: 1;
+  @media(min-width:768px) {
+    padding: 12px;
+  }
 }
 
 // KAL-UPPERMENU-CSS
@@ -115,6 +145,7 @@ $montFont:"Montserrat", sans-serif;
   padding: 8px;
 }
 .kala-menu-container {
+  display: none;
   top: 0;
   position: absolute;
   z-index: 3040;
@@ -124,7 +155,6 @@ $montFont:"Montserrat", sans-serif;
     width: 240px;
     padding-left: 7px;
   }
-
   .kala-br {
     margin-top:20px;
     border-bottom: 1px solid lightgray;

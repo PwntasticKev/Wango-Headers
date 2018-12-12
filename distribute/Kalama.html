@@ -57,9 +57,10 @@
       </section>
       <div class="kala-br"></div>
       <section class="kala-lowerMenu-container">
-        <svg class="t-nav__curve" fill='white' style='background: #333333; height: 15px;' width="100%" viewBox="0 0 1919.13 36" preserveAspectRatio="xMidYMin meet">
+        <svg class="t-nav__curve kala-curve" fill='white' style='background: #333333; height: 15px;' width="100%" viewBox="0 0 1919.13 36" preserveAspectRatio="xMidYMin meet">
           <path d="M0 6s490.406 31.942 959.316 30c468.91-1.942 959.815-30 959.815-30V0H0v6z"></path>
         </svg>
+        
         <ul class="kala-menu-ul kala-lowerMenu">
           <li class="kala-menu-option kala-lower-menu-option kal-meetings"><a href="https://www.discoverkalamazoo.com/meeting-event-planners/">Meetings & Events</a></li>
           <li class="kala-menu-option kala-lower-menu-option kal-sports"><a href="https://www.discoverkalamazoo.com/sports-event-planners/">Sports Event Planning</a></li>
@@ -81,7 +82,7 @@
           </div>
           <button class='kala-e-news'>E-NEWS SIGNUP</button>
         </section>
-        <svg class="t-nav__curve" fill='#333333' style='background: white; margin-bottom: -9px;' width="100%" viewBox="0 0 1919.13 36" preserveAspectRatio="xMidYMin meet">
+        <svg class="t-nav__curve kala-curve" fill='#333333' style='background: white; margin-bottom: -9px;' width="100%" viewBox="0 0 1919.13 36" preserveAspectRatio="xMidYMin meet">
             <path d="M0 6s490.406 31.942 959.316 30c468.91-1.942 959.815-30 959.815-30V0H0v6z"></path>
           </svg>
       </section>
@@ -102,10 +103,10 @@
   <script>
   
   $('.kala-search').on('click', function() {
-    $('.kala-search-container').toggle({ opacity: "toggle" }, 4000);
+    $('.kala-search-container').slideToggle(500)
   })
   $('.kala-mobile-search-close').on('click', function() {
-    $('.kala-search-container').toggle({ opacity: "toggle" }, 4000);
+    $('.kala-search-container').slideToggle(500)
   })
   $('.kala-green-x').on('click',function() {
     $('.kala-menu-container').fadeToggle()
