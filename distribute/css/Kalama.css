@@ -134,16 +134,16 @@
     padding: 11px 8px;
     padding-left: 45px !important;
     position: relative;
-    font-family: "Montserrat", sans-serif; }
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500; }
     .kala-menu-ul .kala-menu-option:before {
       position: absolute;
+      content: '*';
       top: 10px;
       left: 10px;
       width: 20px;
-      height: 21px; }
-  .kala-menu-ul .kala-play:before {
-    content: '*';
-    background: url("https://www.discoverkalamazoo.com/assets/oc-menu/play.png") no-repeat; }
+      height: 21px;
+      background: url("https://www.discoverkalamazoo.com/assets/oc-menu/home.png"); }
 
 .kala-lowerMenu-container {
   background: #333333; }
@@ -176,6 +176,8 @@
   .kala-connect-container .kala-icon-container {
     display: flex;
     justify-content: center; }
+  .kala-connect-container i {
+    margin: 0 5px; }
 
 .kala-e-news {
   max-width: 147px;
