@@ -277,12 +277,12 @@ redesignScreen();
               $("#testWeather").append(
                 $(
                   `<div class="tac-weather">
-          <i class="climacon i${
+          <i style='margin-right: 5px;' class="climacon i${
                   res.code
                   }"></i>
           <span class="tac-weather"><b>${
                   res.temp
-                  }</b><sup>°</sup>
+                  }</b><div>°</div>
           </span>
           <span class="tac-weather tac-weather-text">${res.text}</span>
           </div>`
@@ -302,7 +302,7 @@ redesignScreen();
           <i class="climacon i${
                   res.code
                   }"></i>
-          <span class="tac-weather"><b>${
+          <span class="tac-weather" style='margin: 0 5px;'><b>${
                   res.temp
                   }</b><div>°</div>
           </span>
