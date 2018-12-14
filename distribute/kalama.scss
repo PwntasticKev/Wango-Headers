@@ -33,7 +33,6 @@ $montFont:"Montserrat", sans-serif;
 	-webkit-box-pack: justify;
 	-ms-flex-pack: justify;
 	justify-content: space-between;
-	padding: 20px 0;
 	list-style: none;
   @media(min-width: 768px) {
     padding: 26px 0;
@@ -42,13 +41,10 @@ $montFont:"Montserrat", sans-serif;
 		padding: 12px 0;
 		-webkit-box-shadow: 0 -4px 5px 0 rgba(0, 0, 0, 0.3);
 		box-shadow: 0 -4px 5px 0 rgba(0, 0, 0, 0.3);
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
 	}
+	@media(min-width: 1024px) {
+		padding: 20px 0;
+  }
 }
 
 .kala-burger {
@@ -184,6 +180,7 @@ $montFont:"Montserrat", sans-serif;
   padding: 5px;
   z-index: 40;
 	opacity: 1;
+	height: 40px;
   @media(min-width:768px) {
     padding: 12px;
   }
@@ -437,8 +434,6 @@ $montFont:"Montserrat", sans-serif;
 
 .right-nav-desktop{
 	display: none;
-	margin:0;
-	
 	@media(min-width: 1024px) {
 		position: relative;
 		display: -webkit-box;
@@ -452,7 +447,7 @@ $montFont:"Montserrat", sans-serif;
 		font-weight: 700;
 		font-size: 17px;
 		text-transform: uppercase;
-		list-style: none;
+		list-style:none;
 	}
 	@media(min-width: 1300px) {
 		width: 53%;
@@ -465,9 +460,8 @@ $montFont:"Montserrat", sans-serif;
 		font-size:2rem;
 	}
 
-	a {
+	.kala-menu-option {
 		:hover{
-			color:white;
 			-webkit-transform: scaleX(1);
 			-ms-transform: scaleX(1);
 			transform: scaleX(1);
