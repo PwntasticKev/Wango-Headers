@@ -151,7 +151,6 @@ $montFont:"Montserrat", sans-serif;
   padding: 5px;
   z-index: 40;
 	opacity: 1;
-	height: 40px;
   @media(min-width:768px) {
     padding: 12px;
   }
@@ -227,9 +226,6 @@ $montFont:"Montserrat", sans-serif;
     position: relative;
     font-family: $montFont;
 		font-weight: 500;
-		a {
-			color: white;
-		}
     &:before {
       position: absolute;
       content:'*';
@@ -362,6 +358,8 @@ $montFont:"Montserrat", sans-serif;
 
 .right-nav-desktop{
 	display: none;
+	margin:0;
+	
 	@media(min-width: 1024px) {
 		position: relative;
 		display: flex;
@@ -385,8 +383,9 @@ $montFont:"Montserrat", sans-serif;
 		font-size:2rem;
 	}
 
-	.kala-menu-option {
+	a {
 		:hover{
+			color:white;
 			transform: scaleX(1);
 			top: 6px;
 			height: 8px;

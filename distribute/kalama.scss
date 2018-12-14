@@ -30,17 +30,25 @@ $montFont:"Montserrat", sans-serif;
 	background: #000000;
 	color: #ffffff;
 	height: 2.8125rem;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	padding: 20px 0;
+	list-style: none;
   @media(min-width: 768px) {
-    padding: 8px 0;
+    padding: 26px 0;
   }
   @media(min-width: 1024px) {
 		padding: 12px 0;
 		-webkit-box-shadow: 0 -4px 5px 0 rgba(0, 0, 0, 0.3);
 		box-shadow: 0 -4px 5px 0 rgba(0, 0, 0, 0.3);
-  }
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+	}
 }
 
 .kala-burger {
@@ -175,7 +183,7 @@ $montFont:"Montserrat", sans-serif;
   width: 100%;
   padding: 5px;
   z-index: 40;
-  opacity: 1;
+	opacity: 1;
   @media(min-width:768px) {
     padding: 12px;
   }
@@ -197,7 +205,9 @@ $montFont:"Montserrat", sans-serif;
   position: absolute;
   z-index: 3040;
   background: white;
-  width: 100%;
+	width: 100%;
+	border-bottom: 1px solid lightgray;
+	list-style: none;
   .kala-logo-white {
     width: 240px;
     padding-left: 7px;
@@ -232,7 +242,8 @@ $montFont:"Montserrat", sans-serif;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  font-family: $montFont;
+	font-family: $montFont;
+	list-style: none;
   a, .kal-upperMenu-option {
     text-decoration: none;
     color:black;
@@ -249,10 +260,11 @@ $montFont:"Montserrat", sans-serif;
 		padding-right: 40px;
 		position: relative;
 	}
-	@media(min-width: 1300px) {
-		width: 53%;
-		padding-right: 99px;
-		font-size:1.25rem;
+	@media(min-width:1025px) {
+		width: 64%;
+	}
+	@media(min-width:1300px) {
+		width: 44%;
 	}
 
   .kala-menu-option {
@@ -425,6 +437,8 @@ $montFont:"Montserrat", sans-serif;
 
 .right-nav-desktop{
 	display: none;
+	margin:0;
+	
 	@media(min-width: 1024px) {
 		position: relative;
 		display: -webkit-box;
@@ -438,11 +452,35 @@ $montFont:"Montserrat", sans-serif;
 		font-weight: 700;
 		font-size: 17px;
 		text-transform: uppercase;
+		list-style: none;
 	}
 	@media(min-width: 1300px) {
 		width: 53%;
-		padding-right: 151px;
-		font-size: 22px;
+		padding-right: 99px;
+		font-size:1.5rem;
+	}
+	@media(min-width: 1600px) {
+		width: 53%;
+		padding-right: 35px;
+		font-size:2rem;
+	}
+
+	a {
+		:hover{
+			color:white;
+			-webkit-transform: scaleX(1);
+			-ms-transform: scaleX(1);
+			transform: scaleX(1);
+			top: 6px;
+			height: 8px;
+			content: '';
+			width: 100%;
+			border-bottom: solid 5px #57b649;
+			-webkit-transition: -webkit-transform 300ms ease-in-out;
+			transition: -webkit-transform 300ms ease-in-out;
+			transition: transform 300ms ease-in-out;
+			transition: transform 300ms ease-in-out, -webkit-transform 300ms ease-in-out;
+		}
 	}
 }
 
@@ -483,6 +521,9 @@ $montFont:"Montserrat", sans-serif;
 	align-items: center;
 	-webkit-transition: border-color 0.15s linear, background 0.15s linear;
 	transition: border-color 0.15s linear, background 0.15s linear;
+	@media(min-width: 1300px) {
+		height:19px;
+	}
 }
 
 
