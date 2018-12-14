@@ -34,10 +34,9 @@ $montFont:"Montserrat", sans-serif;
   @media(min-width: 1024px) {
 		padding: 12px 0;
 		box-shadow: 0 -4px 5px 0 rgba(0, 0, 0, 0.3);
+		display: flex;
+    justify-content: center;
 	}
-	@media(min-width: 1024px) {
-		padding: 20px 0;
-  }
 }
 
 .kala-burger {
@@ -228,6 +227,9 @@ $montFont:"Montserrat", sans-serif;
     position: relative;
     font-family: $montFont;
 		font-weight: 500;
+		a {
+			color: white;
+		}
     &:before {
       position: absolute;
       content:'*';

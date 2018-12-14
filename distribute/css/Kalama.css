@@ -140,10 +140,9 @@
   @media (min-width: 1024px) {
     .kala-header-container {
       padding: 12px 0;
-      box-shadow: 0 -4px 5px 0 rgba(0, 0, 0, 0.3); } }
-  @media (min-width: 1024px) {
-    .kala-header-container {
-      padding: 20px 0; } }
+      box-shadow: 0 -4px 5px 0 rgba(0, 0, 0, 0.3);
+      display: flex;
+      justify-content: center; } }
 
 .kala-burger {
   width: 25px;
@@ -311,6 +310,8 @@
     position: relative;
     font-family: "Montserrat", sans-serif;
     font-weight: 500; }
+    .kala-menu-ul .kala-menu-option a {
+      color: white; }
     .kala-menu-ul .kala-menu-option:before {
       position: absolute;
       content: '*';
