@@ -132,7 +132,8 @@
   color: #ffffff;
   height: 2.8125rem;
   justify-content: space-between;
-  padding: 20px 0; }
+  padding: 20px 0;
+  list-style: none; }
   @media (min-width: 768px) {
     .kala-header-container {
       padding: 8px 0; } }
@@ -257,7 +258,9 @@
   position: absolute;
   z-index: 3040;
   background: white;
-  width: 100%; }
+  width: 100%;
+  border-bottom: 1px solid lightgray;
+  list-style: none; }
   .kala-menu-container .kala-logo-white {
     width: 240px;
     padding-left: 7px; }
@@ -281,7 +284,8 @@
 .kala-menu-ul {
   display: flex;
   flex-direction: column;
-  font-family: "Montserrat", sans-serif; }
+  font-family: "Montserrat", sans-serif;
+  list-style: none; }
   .kala-menu-ul a, .kala-menu-ul .kal-upperMenu-option {
     text-decoration: none;
     color: black; }
