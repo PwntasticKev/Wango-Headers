@@ -20,14 +20,25 @@
       <div style='display: flex;' id='Weather'></div>
       <ul class="kala-menu-ul kala-desktop-upperMenu">
         <li class="kala-menu-option kal-home"><a src="https://www.discoverkalamazoo.com">Home</a></li>
-        <li  class="kala-menu-option kal-play"><a src="https://www.discoverkalamazoo.com/play/">Play</a></li>
-        <li class="kala-menu-option kal-stay"><a src="https://www.discoverkalamazoo.com/stay/">Stay</a></li>
-        <li  class="kala-menu-option kal-eat"><a src="https://www.discoverkalamazoo.com/eat/">Eat</a></li>
-        <li  class="kala-menu-option kal-drink"><a src="https://www.discoverkalamazoo.com/drink/">Drink</a></li>
-        <li  class="kala-menu-option kal-events"><a src="https://www.discoverkalamazoo.com/events/">Events</a></li>
-        <li  class="kala-menu-option kal-discover"><a src="https://www.discoverkalamazoo.com/discover/">Discover</a></li>
-      </ul>
-    </section>
+        <li class="kala-menu-option kala-lower-menu-option kal-meetings"><a href="https://www.discoverkalamazoo.com/meeting-event-planners/">Meetings & Events</a></li>
+        <li class="kala-menu-option kala-lower-menu-option kal-sports"><a href="https://www.discoverkalamazoo.com/sports-event-planners/">Sports Event Planning</a></li>
+        <li class="kala-menu-option kala-lower-menu-option kal-travel"><a href="https://www.discoverkalamazoo.com/travel-partners/">Travel Partners</a></li>
+        <li class="kala-menu-option kala-lower-menu-option kal-media"><a href="https://www.discoverkalamazoo.com/media/">Media</a></li>
+        <li class="kala-menu-option kala-lower-menu-option kal-blog"><a href="https://www.discoverkalamazoo.com/discover/blog/">Blog</a></li>
+        <ul style='display: flex; flex-direction: row-reverse;'>
+          <li id="searchIcon" style="visibility: visible;">
+            <a>
+              <img src="https://www.discoverkalamazoo.com/wp-content/themes/discoverkalamazoo2018/assets/search-icon.jpg">
+            </a>
+          </li>
+          <li>
+            <form role="search-desktop" method="get" id="topSearchForm" action="https://www.discoverkalamazoo.com/site-search/">
+              <input class="search-input search-input-desktop" type="text" placeholder="Search" value="" name="query" id="lar-search">
+            </form>
+          </li>
+        </ul>
+        </ul>
+        </section>
 <header class="kala-header-container kala-flex">
 <section class="kala-flex kala-logo-container">
     <img class="kala-logo" src="https://www.discoverkalamazoo.com/wp-content/themes/discoverkalamazoo2018/assets/header-logo.png" alt="Disc LOGO">
@@ -39,7 +50,15 @@
         <br class="kala-line" id="kala-mid-line" />
         <br class="kala-line" id="kala-bot-line" />
       </div>
-</section>
+    </section>
+        <ul class='right-nav-desktop'>
+          <li  class="kala-menu-option kal-play"><a src="https://www.discoverkalamazoo.com/play/">Play</a></li>
+          <li class="kala-menu-option kal-stay"><a src="https://www.discoverkalamazoo.com/stay/">Stay</a></li>
+          <li  class="kala-menu-option kal-eat"><a src="https://www.discoverkalamazoo.com/eat/">Eat</a></li>
+          <li  class="kala-menu-option kal-drink"><a src="https://www.discoverkalamazoo.com/drink/">Drink</a></li>
+          <li  class="kala-menu-option kal-events"><a src="https://www.discoverkalamazoo.com/events/">Events</a></li>
+          <li  class="kala-menu-option kal-discover"><a src="https://www.discoverkalamazoo.com/discover/">Discover</a></li>
+        </ul>
 </header>
   <section class="kala-search-container" style='display:none;'>
       <form role="search" method="get" id="kala-form-container" action="https://www.discoverkalamazoo.com/site-search/">
@@ -130,8 +149,6 @@
     $('.kala-menu-container').fadeToggle()
   })
 
-
-
      var Weather = function (options) {
             let _queryUri, _unit, _lat, _lnt
             _lnt = options.lnt
@@ -153,7 +170,7 @@
             ) {
               console.log('this is my response', res)
               $("#Weather").append(
-                $(`<div class="weather-container">
+                $(`<div class="weather-container" style='display: flex;'>
           <i style='margin-right: 5px;' class="climacon i${ res.code }"></i>
           <span class="weather-temp-container">
           <b>${ res.temp}</b>
@@ -164,7 +181,6 @@
               )
             })
           )
-               
   </script>
 </body>
 </html>
