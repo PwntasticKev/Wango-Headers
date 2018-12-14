@@ -15,8 +15,10 @@
   background: #000000;
   color: #ffffff;
   height: 2.8125rem;
-  justify-content: space-between;
-  padding: 8px 0 8px 0; }
+  justify-content: space-between; }
+  @media (min-width: 768px) {
+    .kala-header-container {
+      padding: 8px 0 8px 0; } }
 
 .kala-burger {
   width: 25px;
@@ -83,6 +85,10 @@
   color: rgba(0, 0, 0, 0.75);
   font-size: 0.875rem;
   padding: 0.5rem; }
+  .kala-search-text:focus {
+    background: #fafafa;
+    border-color: #999999;
+    outline: none; }
   @media (min-width: 768px) {
     .kala-search-text {
       width: 22rem; } }
@@ -170,9 +176,10 @@
       width: 20px;
       height: 21px;
       background: url("https://www.discoverkalamazoo.com/assets/oc-menu/home.png"); }
-    @media (min-width: 1025px) {
+    @media (min-width: 1024px) {
       .kala-menu-ul .kala-menu-option {
-        content: ''; } }
+        content: '';
+        padding-left: 0px !important; } }
 
 .kala-lowerMenu-container {
   background: #333333; }
@@ -242,6 +249,13 @@
     content: ''; }
 
 .top-nav {
-  display: flex;
+  display: none;
   justify-content: space-between;
   align-items: center; }
+  @media (min-width: 1024px) {
+    .top-nav {
+      display: flex; } }
+
+.weather-temp-container {
+  display: flex;
+  flex-direction: row; }

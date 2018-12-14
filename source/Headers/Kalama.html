@@ -17,7 +17,7 @@
 <body>
     <!-- TOP NAV  -->
     <section class='top-nav'>
-      <div>40°</div>
+      <div style='display: flex;' id='Weather'></div>
       <ul class="kala-menu-ul kala-desktop-upperMenu">
         <li class="kala-menu-option kal-home"><a src="https://www.discoverkalamazoo.com">Home</a></li>
         <li  class="kala-menu-option kal-play"><a src="https://www.discoverkalamazoo.com/play/">Play</a></li>
@@ -129,6 +129,42 @@
   $('.kala-burger').on('click',function() {
     $('.kala-menu-container').fadeToggle()
   })
+
+
+
+     var Weather = function (options) {
+            let _queryUri, _unit, _lat, _lnt
+            _lnt = options.lnt
+            _lat = options.lat
+            _unit = options.unit ? options.unit : "c"
+            _queryUri = `https://query.yahooapis.com/v1/public/yql?q=select * from weather.forecast where u='${_unit}' AND woeid in (SELECT woeid FROM geo.places WHERE text="(${_lat},${_lnt})")&format=json`
+            return $.ajax(_queryUri).then(res => {
+              if (res.status >= 400) {
+                throw new Error("Bad response from server")
+              }
+              return res.query.results
+                ? res.query.results.channel.item.condition
+                : { code: "NA", temp: "NA" }
+            })
+          }
+          $("#Weather").append(
+            Weather({ lat: 47.1185, lnt: -122.5633, unit: "f" }).then(function (
+              res
+            ) {
+              console.log('this is my response', res)
+              $("#Weather").append(
+                $(`<div class="weather-container">
+          <i style='margin-right: 5px;' class="climacon i${ res.code }"></i>
+          <span class="weather-temp-container">
+          <b>${ res.temp}</b>
+          <div>°</div>
+          </span>
+          </div>`
+                )
+              )
+            })
+          )
+               
   </script>
 </body>
 </html>
