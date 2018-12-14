@@ -132,7 +132,6 @@
   color: #ffffff;
   height: 2.8125rem;
   justify-content: space-between;
-  padding: 20px 0;
   list-style: none; }
   @media (min-width: 768px) {
     .kala-header-container {
@@ -140,9 +139,10 @@
   @media (min-width: 1024px) {
     .kala-header-container {
       padding: 12px 0;
-      box-shadow: 0 -4px 5px 0 rgba(0, 0, 0, 0.3);
-      display: flex;
-      justify-content: center; } }
+      box-shadow: 0 -4px 5px 0 rgba(0, 0, 0, 0.3); } }
+  @media (min-width: 1024px) {
+    .kala-header-container {
+      padding: 20px 0; } }
 
 .kala-burger {
   width: 25px;
@@ -241,7 +241,8 @@
   width: 100%;
   padding: 5px;
   z-index: 40;
-  opacity: 1; }
+  opacity: 1;
+  height: 40px; }
   @media (min-width: 768px) {
     #kala-form-container {
       padding: 12px; } }
@@ -417,8 +418,7 @@
     flex-direction: row; }
 
 .right-nav-desktop {
-  display: none;
-  margin: 0; }
+  display: none; }
   @media (min-width: 1024px) {
     .right-nav-desktop {
       position: relative;
@@ -441,8 +441,7 @@
       width: 53%;
       padding-right: 35px;
       font-size: 2rem; } }
-  .right-nav-desktop a :hover {
-    color: white;
+  .right-nav-desktop .kala-menu-option :hover {
     transform: scaleX(1);
     top: 6px;
     height: 8px;
