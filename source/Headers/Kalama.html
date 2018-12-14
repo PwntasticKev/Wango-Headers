@@ -25,8 +25,8 @@
         <li class="kala-menu-option kala-lower-menu-option kal-travel"><a href="https://www.discoverkalamazoo.com/travel-partners/">Travel Partners</a></li>
         <li class="kala-menu-option kala-lower-menu-option kal-media"><a href="https://www.discoverkalamazoo.com/media/">Media</a></li>
         <li class="kala-menu-option kala-lower-menu-option kal-blog"><a href="https://www.discoverkalamazoo.com/discover/blog/">Blog</a></li>
-        <ul style='display: flex; flex-direction: row-reverse;'>
-          <li id="searchIcon" style="visibility: visible;">
+        <ul style='display: flex; flex-direction: row-reverse; align-items: center;'>
+          <li id="searchIcon">
             <a>
               <img src="https://www.discoverkalamazoo.com/wp-content/themes/discoverkalamazoo2018/assets/search-icon.jpg">
             </a>
@@ -147,6 +147,10 @@
   })
   $('.kala-burger').on('click',function() {
     $('.kala-menu-container').fadeToggle()
+  })
+  $('#searchIcon-desktop').on('click', function() {
+    console.log('yo')
+    $('#search-desktop').toggle()
   })
 
      var Weather = function (options) {

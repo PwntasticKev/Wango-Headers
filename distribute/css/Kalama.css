@@ -137,7 +137,8 @@
       padding: 8px 0; } }
   @media (min-width: 1024px) {
     .kala-header-container {
-      padding: 18px 0; } }
+      padding: 18px 0;
+      box-shadow: 0 -4px 5px 0 rgba(0, 0, 0, 0.3); } }
 
 .kala-burger {
   width: 25px;
@@ -282,10 +283,11 @@
     color: black; }
   @media (min-width: 1024px) {
     .kala-menu-ul {
-      width: 70%;
+      width: 75%;
       text-align: center;
       justify-content: center;
-      align-items: center; } }
+      align-items: center;
+      padding-right: 50px; } }
   .kala-menu-ul .kala-menu-option {
     background: rgba(255, 255, 255, 0);
     padding: 11px 8px;
@@ -307,7 +309,7 @@
         font-weight: 400;
         color: #666666;
         padding-right: 15px;
-        font-size: 14px;
+        font-size: 0.8rem;
         padding-left: 0px !important; } }
 
 .kala-lowerMenu-container {
@@ -383,7 +385,8 @@
   align-items: center; }
   @media (min-width: 1024px) {
     .top-nav {
-      display: flex; } }
+      display: flex;
+      padding: 5px 0; } }
 
 .weather-container {
   width: 250px;
@@ -422,3 +425,11 @@
   display: block;
   font-family: inherit;
   font-size: 0.875rem; }
+
+.search-input-desktop {
+  visibility: visible;
+  height: 22px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
