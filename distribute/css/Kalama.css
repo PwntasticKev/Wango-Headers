@@ -137,7 +137,7 @@
       padding: 8px 0; } }
   @media (min-width: 1024px) {
     .kala-header-container {
-      padding: 18px 0;
+      padding: 12px 0;
       box-shadow: 0 -4px 5px 0 rgba(0, 0, 0, 0.3); } }
 
 .kala-burger {
@@ -174,6 +174,9 @@
   @media (min-width: 1024px) {
     .kala-logo-container {
       width: 35%; } }
+  @media (min-width: 1300px) {
+    .kala-logo-container {
+      width: 28%; } }
 
 .kala-button {
   padding: 9px;
@@ -287,7 +290,11 @@
       text-align: center;
       justify-content: center;
       align-items: center;
-      padding-right: 50px; } }
+      padding-right: 40px;
+      position: relative; } }
+  @media (min-width: 1300px) {
+    .kala-menu-ul {
+      width: 55%; } }
   .kala-menu-ul .kala-menu-option {
     background: rgba(255, 255, 255, 0);
     padding: 11px 8px;
@@ -309,7 +316,7 @@
         font-weight: 400;
         color: #666666;
         padding-right: 15px;
-        font-size: 0.8rem;
+        font-size: 0.7rem;
         padding-left: 0px !important; } }
 
 .kala-lowerMenu-container {
@@ -391,7 +398,7 @@
 .weather-container {
   width: 250px;
   display: flex;
-  font-size: 36px;
+  font-size: 29px;
   align-items: center;
   justify-content: center;
   font-family: "Montserrat", sans-serif; }
@@ -409,8 +416,13 @@
       padding-right: 50px;
       font-family: "Montserrat", sans-serif;
       font-weight: 700;
-      font-size: 20px;
+      font-size: 17px;
       text-transform: uppercase; } }
+  @media (min-width: 1300px) {
+    .right-nav-desktop {
+      width: 53%;
+      padding-right: 151px;
+      font-size: 22px; } }
 
 .search-desktop {
   display: flex; }
@@ -424,12 +436,24 @@
   color: rgba(0, 0, 0, 0.75);
   display: block;
   font-family: inherit;
-  font-size: 0.875rem; }
+  font-size: 0.875rem;
+  width: 95px;
+  border-right: none; }
 
-.search-input-desktop {
+#search-icon {
   visibility: visible;
-  height: 22px;
-  width: 30px;
+  height: 20px;
+  width: 26px;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  transition: border-color 0.15s linear, background 0.15s linear; }
+
+.toggle-search-icon {
+  border: 1px solid lightgray;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #cccccc;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  color: rgba(0, 0, 0, 0.75);
+  border-left: none; }

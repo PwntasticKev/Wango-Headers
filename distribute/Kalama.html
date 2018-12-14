@@ -26,14 +26,14 @@
         <li class="kala-menu-option kala-lower-menu-option kal-media"><a href="https://www.discoverkalamazoo.com/media/">Media</a></li>
         <li class="kala-menu-option kala-lower-menu-option kal-blog"><a href="https://www.discoverkalamazoo.com/discover/blog/">Blog</a></li>
         <ul style='display: flex; flex-direction: row-reverse;'>
-          <li id="searchIcon" style="visibility: visible;">
+          <li id="search-icon" style="visibility: visible;">
             <a>
               <img src="https://www.discoverkalamazoo.com/wp-content/themes/discoverkalamazoo2018/assets/search-icon.jpg">
             </a>
           </li>
           <li>
             <form role="search-desktop" method="get" id="topSearchForm" action="https://www.discoverkalamazoo.com/site-search/">
-              <input class="search-input" style='' type="text" placeholder="Search" value="" name="query" id="lar-search">
+              <input class="search-input search-input-desktop" style='display: none;' type="text" placeholder="Search" value="" name="query" id="lar-search">
             </form>
           </li>
         </ul>
@@ -147,6 +147,10 @@
   })
   $('.kala-burger').on('click',function() {
     $('.kala-menu-container').fadeToggle()
+  })
+  $('#search-icon').on('click',function() {
+    $('#search-icon').toggleClass('toggle-search-icon')
+    $('.search-input-desktop').animate({ width: "toggle" });
   })
 
      var Weather = function (options) {
