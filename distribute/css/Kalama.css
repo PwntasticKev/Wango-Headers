@@ -430,7 +430,8 @@
       font-family: "Montserrat", sans-serif;
       font-weight: 700;
       font-size: 17px;
-      text-transform: uppercase; } }
+      text-transform: uppercase;
+      list-style: none; } }
   @media (min-width: 1300px) {
     .right-nav-desktop {
       width: 53%;
