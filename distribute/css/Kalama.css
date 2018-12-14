@@ -242,7 +242,8 @@
   width: 100%;
   padding: 5px;
   z-index: 40;
-  opacity: 1; }
+  opacity: 1;
+  height: 40px; }
   @media (min-width: 768px) {
     #kala-form-container {
       padding: 12px; } }
