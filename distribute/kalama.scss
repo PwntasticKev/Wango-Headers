@@ -2,6 +2,8 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:200,200i,300,300i,400,500,500i,600,600i,700');
 $montFont:"Montserrat", sans-serif;
 
+@import 'climacons.scss';
+
 .kala-flex {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -9,13 +11,14 @@ $montFont:"Montserrat", sans-serif;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  
 .kala-right-nav {
   -ms-flex-pack: distribute;
   justify-content: space-around;
-  width:25%;
-}
-
+	width:25%;
+	@media(min-width:1024px) {
+		display: none;
+	}
+  }
 }
 
 .kala-logo {
@@ -30,6 +33,18 @@ $montFont:"Montserrat", sans-serif;
 	-webkit-box-pack: justify;
 	-ms-flex-pack: justify;
 	justify-content: space-between;
+	list-style: none;
+  @media(min-width: 768px) {
+    padding: 26px 0;
+  }
+  @media(min-width: 1024px) {
+		padding: 12px 0;
+		-webkit-box-shadow: 0 -4px 5px 0 rgba(0, 0, 0, 0.3);
+		box-shadow: 0 -4px 5px 0 rgba(0, 0, 0, 0.3);
+	}
+	@media(min-width: 1024px) {
+		padding: 20px 0;
+  }
 }
 
 .kala-burger {
@@ -64,11 +79,22 @@ $montFont:"Montserrat", sans-serif;
     top: 10px;
     -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
+    @media(min-width:768px) {
+      height:4px;
+      width:25px;
+      color:white;
+    }
   }
 }
 
 .kala-logo-container {
-	width: 60%;
+  width: 60%;
+  @media(min-width: 768px) {
+    width: 44%;
+  }
+  @media(min-width: 1024px) {
+    width: 35%;
+	}
 }
 
 .kala-button {
@@ -93,17 +119,37 @@ $montFont:"Montserrat", sans-serif;
 	transition: background-color 300ms ease-out;
 }
 
+.kala-curve {
+  @media(min-width:760px) {
+    height: 40px !important;
+  }
+
+}
+
 .kala-search-text {
   border: 1px solid lightgray;
   -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
     color: rgba(0, 0, 0, 0.75);
     font-size: 0.875rem;
-    padding: 0.5rem;
+		padding: 0.5rem;
+		&:focus {
+			background: #fafafa;
+			border-color: #999999;
+			outline: none;
+		}
+    @media(min-width:768px) {
+      width: 22rem;
+    }
 }
+
+
 
 .kala-search {
   font-size:23px;
+  @media(min-width: 1025px) {
+    font-size: 30px;
+  }
 }
 
 .kala-mobile-search-close {
@@ -133,7 +179,11 @@ $montFont:"Montserrat", sans-serif;
   width: 100%;
   padding: 5px;
   z-index: 40;
-  opacity: 1;
+	opacity: 1;
+	height: 40px;
+  @media(min-width:768px) {
+    padding: 12px;
+  }
 }
 
 // KAL-UPPERMENU-CSS
@@ -147,16 +197,18 @@ $montFont:"Montserrat", sans-serif;
   padding: 8px;
 }
 .kala-menu-container {
+  display: none;
   top: 0;
   position: absolute;
   z-index: 3040;
   background: white;
-  width: 100%;
+	width: 100%;
+	border-bottom: 1px solid lightgray;
+	list-style: none;
   .kala-logo-white {
     width: 240px;
     padding-left: 7px;
   }
-
   .kala-br {
     margin-top:20px;
     border-bottom: 1px solid lightgray;
@@ -187,33 +239,58 @@ $montFont:"Montserrat", sans-serif;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  font-family: $montFont;
+	font-family: $montFont;
+	list-style: none;
   a, .kal-upperMenu-option {
     text-decoration: none;
     color:black;
-  }
+	}
+	@media(min-width: 1024px) {
+		width: 75%;
+    text-align: center;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+		padding-right: 40px;
+		position: relative;
+	}
+	@media(min-width:1025px) {
+		width: 64%;
+	}
+	@media(min-width:1300px) {
+		width: 44%;
+	}
 
-  
   .kala-menu-option {
     background: rgba(255, 255, 255, 0);
     padding: 11px 8px;
     padding-left: 45px !important;
     position: relative;
     font-family: $montFont;
+		font-weight: 500;
     &:before {
       position: absolute;
+      content:'*';
       top: 10px;
       left: 10px;
       width: 20px;
       height: 21px;
+      background: url('https://www.discoverkalamazoo.com/assets/oc-menu/home.png')
     }
-  }
-  
-  .kala-play {
-    &:before {
-      content:'*';
-      background: url("https://www.discoverkalamazoo.com/assets/oc-menu/play.png") no-repeat;
-    }
+        @media(min-width: 1024px){
+					content:'';
+					font-weight: 400;
+					color: #666666;
+					padding-right:15px;
+					font-size: 0.7rem;
+					padding-left: 0px !important;
+				}
+				@media(min-width: 1024px){
+					font-size:1rem;
+				}
   }
 }
 
@@ -225,6 +302,9 @@ $montFont:"Montserrat", sans-serif;
     margin-top: -4px;
     .kala-lower-menu-option {
       color:white;
+    }
+    li a {
+      color: white;
     }
   }
 }
@@ -246,10 +326,10 @@ $montFont:"Montserrat", sans-serif;
   h1 {
     color: #FFFFFF;
     font-size: 20px;
-    margin-bottom: 0;
     text-align: center;
     font-weight: bold;
     letter-spacing: 0.07em;
+    margin-bottom: 10px;
   }
 
   .kala-icon {
@@ -266,18 +346,21 @@ $montFont:"Montserrat", sans-serif;
     -ms-flex-pack:center;
     justify-content:center;
   }
+  i {
+    margin: 0 5px;
+  }
 }
 
 .kala-e-news {
   max-width: 147px;
   background-color: orange;
-  color: white;
-  margin: auto;
+  margin: 15px auto 0 auto;
   text-align: center;
   padding: 10px 5px;
   color: #008CBA;
   width: 157px;
   font-size: 17px;
+  border:none;
 }
 
 .kala-contact-container {
@@ -292,7 +375,160 @@ $montFont:"Montserrat", sans-serif;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 0.07em;
+    margin-bottom: 15px;
   } li {
-    margin: 5px 0;
+    margin: 10px 0;
   }
+}
+
+.kala-desktop-upperMenu {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  .kala-menu-option:before {
+    content: '';
+  }
+}
+
+.top-nav {
+  display: none;
+  -webkit-box-pack:justify;
+  -ms-flex-pack:justify;
+  justify-content:space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  @media(min-width: 1024px) {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		padding:5px 0;
+
+  }
+}
+
+.weather-container {
+	width: 250px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	font-size: 29px;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	font-family: $montFont;
+	.weather-temp-container {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: row;
+		flex-direction: row;
+	}
+}
+
+.right-nav-desktop{
+	display: none;
+	@media(min-width: 1024px) {
+		position: relative;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+    width: 59%;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    padding-right: 50px;
+		font-family: $montFont;
+		font-weight: 700;
+		font-size: 17px;
+		text-transform: uppercase;
+		list-style:none;
+	}
+	@media(min-width: 1300px) {
+		width: 53%;
+		padding-right: 99px;
+		font-size:1.5rem;
+	}
+	@media(min-width: 1600px) {
+		width: 53%;
+		padding-right: 35px;
+		font-size:2rem;
+	}
+
+	.kala-menu-option {
+		:hover{
+			-webkit-transform: scaleX(1);
+			-ms-transform: scaleX(1);
+			transform: scaleX(1);
+			top: 6px;
+			height: 8px;
+			content: '';
+			width: 100%;
+			border-bottom: solid 5px #57b649;
+			-webkit-transition: -webkit-transform 300ms ease-in-out;
+			transition: -webkit-transform 300ms ease-in-out;
+			transition: transform 300ms ease-in-out;
+			transition: transform 300ms ease-in-out, -webkit-transform 300ms ease-in-out;
+		}
+	}
+}
+
+.search-desktop {
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+}
+
+.search-input-desktop {
+	-webkit-transition: border-color 0.15s linear, background 0.15s linear;
+	transition: border-color 0.15s linear, background 0.15s linear;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #cccccc;
+	-webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+	box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+	color: rgba(0, 0, 0, 0.75);
+	display: block;
+	font-family: inherit;
+	font-size: 0.875rem;
+	width: 95px;
+	border-right:none;
+}
+
+#search-icon {
+	visibility: visible;
+	height: 20px;
+	width: 26px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-transition: border-color 0.15s linear, background 0.15s linear;
+	transition: border-color 0.15s linear, background 0.15s linear;
+	@media(min-width: 1300px) {
+		height:19px;
+	}
+}
+
+
+
+.toggle-search-icon {
+	border: 1px solid lightgray;
+	border-style: solid;
+  border-width: 1px;
+  border-color: #cccccc;
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  color: rgba(0, 0, 0, 0.75);
+  border-left: none;
 }

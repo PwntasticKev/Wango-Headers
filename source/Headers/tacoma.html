@@ -225,9 +225,9 @@
 		<!-- JS -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 		<script>
-     var redesignScreen = function () {
-          var width = $(window).width()
-          if(width < 1111) {
+      var redesignScreen = function () {
+        var width = $(window).width()
+        if (width < 1111) {
           $("#tac-menu-container").click(function () {
             $("#tac-top-line").toggleClass("tac-top-line")
             $("#tac-mid-line").toggleClass("tac-mid-line")
@@ -237,23 +237,20 @@
           $("#tac-menu-container").click(function () {
             $('.tac-first-layer-menu').toggle({ opacity: "toggle" }, 200);
           });
-          }
-          if(width >= 1200) {
-            $('.tac-glass-container').on('click',function() {
-           console.log('yo mannnn')
-           $('.tac-desktop-search-container').toggle()
-           $('.tac-glass-container').toggleClass('desktop-search-container-open')
-           $('.border-slant:nth-of-type(4):before').removeClass()
-         })
-          }
-
-     }
+        }
+        if (width >= 1200) {
+          $('.tac-glass-container').on('click', function () {
+            console.log('yo mannnn')
+            $('.tac-desktop-search-container').toggle()
+            $('.tac-glass-container').toggleClass('desktop-search-container-open')
+            $('.border-slant:nth-of-type(4):before').removeClass()
+          })
+        }
+      }
       $(document).ready(function () {
-        window.onresize = redesignScreen;
-
-// calling redesignScreen initially
-redesignScreen();
-        })
+        window.onresize = redesignScreen; // calling redesignScreen initially
+        redesignScreen();
+      })
           var Weather = function (options) {
             let _queryUri, _unit, _lat, _lnt
             _lnt = options.lnt
@@ -275,14 +272,11 @@ redesignScreen();
             ) {
               console.log('this is my response', res)
               $("#testWeather").append(
-                $(
-                  `<div class="tac-weather">
-          <i class="climacon i${
-                  res.code
-                  }"></i>
-          <span class="tac-weather"><b>${
-                  res.temp
-                  }</b><sup>°</sup>
+                $(`<div class="tac-weather">
+          <i style='margin-right: 5px;' class="climacon i${ res.code}"></i>
+          <span class="tac-weather">
+          <b>${ res.temp}</b>
+          <div>°</div>
           </span>
           <span class="tac-weather tac-weather-text">${res.text}</span>
           </div>`
@@ -302,7 +296,7 @@ redesignScreen();
           <i class="climacon i${
                   res.code
                   }"></i>
-          <span class="tac-weather"><b>${
+          <span class="tac-weather" style='margin: 0 5px;'><b>${
                   res.temp
                   }</b><div>°</div>
           </span>

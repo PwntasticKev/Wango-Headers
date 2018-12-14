@@ -421,7 +421,8 @@ ul {
     right: 5%; }
   .tac-desktop-sub-menu a {
     text-decoration: none;
-    color: white; }
+    color: white;
+    font-weight: 800; }
   .tac-desktop-sub-menu:before {
     content: "";
     position: absolute;
