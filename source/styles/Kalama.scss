@@ -32,6 +32,9 @@ $montFont:"Montserrat", sans-serif;
   @media(min-width: 1024px) {
 		padding: 12px 0;
 		box-shadow: 0 -4px 5px 0 rgba(0, 0, 0, 0.3);
+	}
+	@media(min-width: 1024px) {
+		padding: 20px 0;
   }
 }
 
@@ -71,9 +74,6 @@ $montFont:"Montserrat", sans-serif;
   }
   @media(min-width: 1024px) {
     width: 35%;
-	}
-	@media(min-width: 1300px) {
-		width: 28%;
 	}
 }
 
@@ -208,8 +208,11 @@ $montFont:"Montserrat", sans-serif;
 		padding-right: 40px;
 		position: relative;
 	}
-	@media(min-width: 1300px) {
-		width: 55%;
+	@media(min-width:1025px) {
+		width: 64%;
+	}
+	@media(min-width:1300px) {
+		width: 44%;
 	}
 
   .kala-menu-option {
@@ -235,7 +238,10 @@ $montFont:"Montserrat", sans-serif;
 					padding-right:15px;
 					font-size: 0.7rem;
 					padding-left: 0px !important;
-        }
+				}
+				@media(min-width: 1024px){
+					font-size:1rem;
+				}
   }
 }
 
@@ -349,6 +355,7 @@ $montFont:"Montserrat", sans-serif;
 .right-nav-desktop{
 	display: none;
 	@media(min-width: 1024px) {
+		position: relative;
 		display: flex;
     width: 59%;
     justify-content: space-around;
@@ -360,8 +367,25 @@ $montFont:"Montserrat", sans-serif;
 	}
 	@media(min-width: 1300px) {
 		width: 53%;
-		padding-right: 151px;
-		font-size: 22px;
+		padding-right: 99px;
+		font-size:1.5rem;
+	}
+	@media(min-width: 1600px) {
+		width: 53%;
+		padding-right: 35px;
+		font-size:2rem;
+	}
+
+	.kala-menu-option {
+		:hover{
+			transform: scaleX(1);
+			top: 6px;
+			height: 8px;
+			content: '';
+			width: 100%;
+			border-bottom: solid 5px #57b649;
+			transition: transform 300ms ease-in-out;
+		}
 	}
 }
 
@@ -391,6 +415,9 @@ $montFont:"Montserrat", sans-serif;
 	justify-content: center;
 	align-items: center;
 	transition: border-color 0.15s linear, background 0.15s linear;
+	@media(min-width: 1300px) {
+		height:19px;
+	}
 }
 
 

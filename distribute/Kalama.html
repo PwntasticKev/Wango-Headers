@@ -172,7 +172,6 @@
             Weather({ lat: 47.1185, lnt: -122.5633, unit: "f" }).then(function (
               res
             ) {
-              console.log('this is my response', res)
               $("#Weather").append(
                 $(`<div class="weather-container" style='display: flex;'>
           <i style='margin-right: 5px;' class="climacon i${ res.code }"></i>

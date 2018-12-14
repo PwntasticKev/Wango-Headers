@@ -2,6 +2,8 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:200,200i,300,300i,400,500,500i,600,600i,700');
 $montFont:"Montserrat", sans-serif;
 
+@import 'climacons.scss';
+
 .kala-flex {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -9,13 +11,14 @@ $montFont:"Montserrat", sans-serif;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  
 .kala-right-nav {
   -ms-flex-pack: distribute;
   justify-content: space-around;
-  width:25%;
-}
-
+	width:25%;
+	@media(min-width:1024px) {
+		display: none;
+	}
+  }
 }
 
 .kala-logo {
@@ -30,7 +33,14 @@ $montFont:"Montserrat", sans-serif;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  padding: 8px 0 8px 0;
+  @media(min-width: 768px) {
+    padding: 8px 0;
+  }
+  @media(min-width: 1024px) {
+		padding: 12px 0;
+		-webkit-box-shadow: 0 -4px 5px 0 rgba(0, 0, 0, 0.3);
+		box-shadow: 0 -4px 5px 0 rgba(0, 0, 0, 0.3);
+  }
 }
 
 .kala-burger {
@@ -80,7 +90,7 @@ $montFont:"Montserrat", sans-serif;
   }
   @media(min-width: 1024px) {
     width: 35%;
-  }
+	}
 }
 
 .kala-button {
@@ -118,7 +128,12 @@ $montFont:"Montserrat", sans-serif;
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
     color: rgba(0, 0, 0, 0.75);
     font-size: 0.875rem;
-    padding: 0.5rem;
+		padding: 0.5rem;
+		&:focus {
+			background: #fafafa;
+			border-color: #999999;
+			outline: none;
+		}
     @media(min-width:768px) {
       width: 22rem;
     }
@@ -221,7 +236,24 @@ $montFont:"Montserrat", sans-serif;
   a, .kal-upperMenu-option {
     text-decoration: none;
     color:black;
-  }
+	}
+	@media(min-width: 1024px) {
+		width: 75%;
+    text-align: center;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+		padding-right: 40px;
+		position: relative;
+	}
+	@media(min-width: 1300px) {
+		width: 53%;
+		padding-right: 99px;
+		font-size:1.25rem;
+	}
 
   .kala-menu-option {
     background: rgba(255, 255, 255, 0);
@@ -229,7 +261,7 @@ $montFont:"Montserrat", sans-serif;
     padding-left: 45px !important;
     position: relative;
     font-family: $montFont;
-    font-weight: 500;
+		font-weight: 500;
     &:before {
       position: absolute;
       content:'*';
@@ -239,9 +271,17 @@ $montFont:"Montserrat", sans-serif;
       height: 21px;
       background: url('https://www.discoverkalamazoo.com/assets/oc-menu/home.png')
     }
-        @media(min-width: 1025px){
-          content:''
-        }
+        @media(min-width: 1024px){
+					content:'';
+					font-weight: 400;
+					color: #666666;
+					padding-right:15px;
+					font-size: 0.7rem;
+					padding-left: 0px !important;
+				}
+				@media(min-width: 1024px){
+					font-size:1rem;
+				}
   }
 }
 
@@ -343,13 +383,117 @@ $montFont:"Montserrat", sans-serif;
 }
 
 .top-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-pack:justify;
   -ms-flex-pack:justify;
   justify-content:space-between;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  @media(min-width: 1024px) {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		padding:5px 0;
+
+  }
+}
+
+.weather-container {
+	width: 250px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	font-size: 29px;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	font-family: $montFont;
+	.weather-temp-container {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: row;
+		flex-direction: row;
+	}
+}
+
+.right-nav-desktop{
+	display: none;
+	@media(min-width: 1024px) {
+		position: relative;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+    width: 59%;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    padding-right: 50px;
+		font-family: $montFont;
+		font-weight: 700;
+		font-size: 17px;
+		text-transform: uppercase;
+	}
+	@media(min-width: 1300px) {
+		width: 53%;
+		padding-right: 151px;
+		font-size: 22px;
+	}
+}
+
+.search-desktop {
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+}
+
+.search-input-desktop {
+	-webkit-transition: border-color 0.15s linear, background 0.15s linear;
+	transition: border-color 0.15s linear, background 0.15s linear;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #cccccc;
+	-webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+	box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+	color: rgba(0, 0, 0, 0.75);
+	display: block;
+	font-family: inherit;
+	font-size: 0.875rem;
+	width: 95px;
+	border-right:none;
+}
+
+#search-icon {
+	visibility: visible;
+	height: 20px;
+	width: 26px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-transition: border-color 0.15s linear, background 0.15s linear;
+	transition: border-color 0.15s linear, background 0.15s linear;
+}
+
+
+
+.toggle-search-icon {
+	border: 1px solid lightgray;
+	border-style: solid;
+  border-width: 1px;
+  border-color: #cccccc;
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  color: rgba(0, 0, 0, 0.75);
+  border-left: none;
 }
