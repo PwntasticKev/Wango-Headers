@@ -131,7 +131,8 @@
   background: #000000;
   color: #ffffff;
   height: 2.8125rem;
-  justify-content: space-between; }
+  justify-content: space-between;
+  padding: 20px 0; }
   @media (min-width: 768px) {
     .kala-header-container {
       padding: 8px 0; } }
