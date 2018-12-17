@@ -93,7 +93,7 @@ $montFont:"Montserrat", sans-serif;
     width: 44%;
   }
   @media(min-width: 1024px) {
-    width: 35%;
+    width: 30%;
 	}
 }
 
@@ -447,7 +447,8 @@ $montFont:"Montserrat", sans-serif;
 		font-weight: 700;
 		font-size: 17px;
 		text-transform: uppercase;
-		list-style:none;
+    list-style:none;
+    margin-bottom: 0;
 	}
 	@media(min-width: 1300px) {
 		width: 53%;
@@ -461,6 +462,9 @@ $montFont:"Montserrat", sans-serif;
 	}
 
 	.kala-menu-option {
+    a {
+      color:white;
+    }
 		:hover{
 			-webkit-transform: scaleX(1);
 			-ms-transform: scaleX(1);

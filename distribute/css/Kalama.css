@@ -1,118 +1,5 @@
 /* GLOBAL CSS */
 @import url("https://fonts.googleapis.com/css?family=Montserrat:200,200i,300,300i,400,500,500i,600,600i,700");
-@font-face {
-  font-family: 'sv-Climacons';
-  src: url("../fonts/climacons/sv_climacons_webfont.eot");
-  src: url("../fonts/climacons/sv_climacons_webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/climacons/sv_climacons_webfont.svg#Climacons-Font") format("svg"), url("../fonts/climacons/sv_climacons_webfont.woff") format("woff"), url("../fonts/climacons/sv_climacons_webfont.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal; }
-
-.climacon:before {
-  font-family: 'sv-climacons';
-  speak: none;
-  font-size: inherit;
-  font-style: normal;
-  font-weight: normal;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased; }
-
-.climacon.i26:before {
-  content: "\e000"; }
-
-.climacon.i28:before,
-.climacon.i30:before,
-.climacon.i44:before {
-  /*cloud sun / partly cloudy day*/
-  content: "\e001"; }
-
-.climacon.i29:before,
-.climacon.i27:before {
-  /*cloud moon / partly cloudy (night)*/
-  content: "\e002"; }
-
-.climacon.i9:before,
-.climacon.i11:before,
-.climacon.i12:before,
-.climacon.i40:before {
-  /*rain cloud*/
-  content: "\e003"; }
-
-.climacon.i32:before,
-.climacon.i34:before {
-  content: "\e028"; }
-
-.climacon.i3200:before {
-  content: "\00d8";
-  font-weight: 700; }
-
-.climacon.i8:before,
-.climacon.i10:before {
-  content: "\e00c"; }
-
-.climacon.i6:before,
-.climacon.i7:before,
-.climacon.i18:before {
-  content: "\e010"; }
-
-.climacon.i17:before,
-.climacon.i35:before {
-  content: "\e013"; }
-
-.climacon.i5:before {
-  content: "\e004"; }
-
-.climacon.i13:before,
-.climacon.i14:before,
-.climacon.i15:before,
-.climacon.i16:before,
-.climacon.i41:before,
-.climacon.i42:before,
-.climacon.i43:before,
-.climacon.i46:before {
-  content: "\e018"; }
-
-.climacon.i20:before {
-  content: "\e01b"; }
-
-.climacon.i21:before,
-.climacon.i22:before,
-.climacon.i23:before {
-  content: "\e01f"; }
-
-.climacon.i24:before {
-  content: "\e021"; }
-
-.climacon.i2:before {
-  content: "\e022"; }
-
-.climacon.i19:before {
-  content: "\e023"; }
-
-.climacon.i3:before,
-.climacon.i4:before,
-.climacon.i37:before,
-.climacon.i38:before,
-.climacon.i39:before,
-.climacon.i45:before,
-.climacon.i47:before {
-  content: "\e025"; }
-
-.climacon.i31:before,
-.climacon.i33:before {
-  content: "\e02d"; }
-
-.climacon.i0:before {
-  content: "\e037"; }
-
-.climacon.i25:before {
-  content: "\e03a"; }
-
-.climacon.i36:before {
-  content: "\e03d"; }
-
-.climacon.i1:before {
-  content: "\e00a"; }
-
 .kala-flex {
   display: flex;
   align-items: center; }
@@ -126,11 +13,14 @@
 .kala-logo {
   width: 100%;
   padding-left: 0.9375rem; }
+  @media (min-width: 1600px) {
+    .kala-logo {
+      padding-left: 6.9375rem; } }
 
 .kala-header-container {
   background: #000000;
   color: #ffffff;
-  height: 2.8125rem;
+  height: 3.8125rem;
   justify-content: space-between;
   list-style: none; }
   @media (min-width: 768px) {
@@ -138,11 +28,8 @@
       padding: 26px 0; } }
   @media (min-width: 1024px) {
     .kala-header-container {
-      padding: 12px 0;
+      padding: 40px 0;
       box-shadow: 0 -4px 5px 0 rgba(0, 0, 0, 0.3); } }
-  @media (min-width: 1024px) {
-    .kala-header-container {
-      padding: 20px 0; } }
 
 .kala-burger {
   width: 25px;
@@ -177,7 +64,10 @@
       width: 44%; } }
   @media (min-width: 1024px) {
     .kala-logo-container {
-      width: 35%; } }
+      width: 30%; } }
+  @media (min-width: 1600px) {
+    .kala-logo-container {
+      width: 36%; } }
 
 .kala-button {
   padding: 9px;
@@ -309,7 +199,8 @@
     padding-left: 45px !important;
     position: relative;
     font-family: "Montserrat", sans-serif;
-    font-weight: 500; }
+    font-weight: 500;
+    cursor: pointer; }
     .kala-menu-ul .kala-menu-option:before {
       position: absolute;
       content: '*';
@@ -430,17 +321,21 @@
       font-weight: 700;
       font-size: 17px;
       text-transform: uppercase;
-      list-style: none; } }
+      list-style: none;
+      margin-bottom: 0; } }
   @media (min-width: 1300px) {
     .right-nav-desktop {
       width: 53%;
       padding-right: 99px;
-      font-size: 1.5rem; } }
+      font-size: 2.5rem; } }
   @media (min-width: 1600px) {
     .right-nav-desktop {
       width: 53%;
       padding-right: 35px;
-      font-size: 2rem; } }
+      font-size: 3.5rem; } }
+  .right-nav-desktop .kala-menu-option a {
+    color: white;
+    cursor: pointer; }
   .right-nav-desktop .kala-menu-option :hover {
     transform: scaleX(1);
     top: 6px;
@@ -464,7 +359,8 @@
   font-family: inherit;
   font-size: 0.875rem;
   width: 95px;
-  border-right: none; }
+  border-right: none;
+  height: 19px; }
 
 #search-icon {
   visibility: visible;

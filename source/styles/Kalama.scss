@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:200,200i,300,300i,400,500,500i,600,600i,700');
 $montFont:"Montserrat", sans-serif;
 
-@import 'climacons.scss';
+// @import 'climacons.scss';
 
 .kala-flex {
 	display: flex;
@@ -18,25 +18,25 @@ $montFont:"Montserrat", sans-serif;
 
 .kala-logo {
 	width: 100%;
-	padding-left: 0.9375rem;
+  padding-left: 0.9375rem;
+  @media(min-width: 1600px) {
+    padding-left: 6.9375rem;
+  }
 }
 
 .kala-header-container {
 	background: #000000;
 	color: #ffffff;
-	height: 2.8125rem;
+	height: 3.8125rem;
 	justify-content: space-between;
 	list-style: none;
   @media(min-width: 768px) {
     padding: 26px 0;
   }
   @media(min-width: 1024px) {
-		padding: 12px 0;
+		padding: 40px 0;
 		box-shadow: 0 -4px 5px 0 rgba(0, 0, 0, 0.3);
 	}
-	@media(min-width: 1024px) {
-		padding: 20px 0;
-  }
 }
 
 .kala-burger {
@@ -74,7 +74,10 @@ $montFont:"Montserrat", sans-serif;
     width: 44%;
   }
   @media(min-width: 1024px) {
-    width: 35%;
+    width: 30%;
+	}
+  @media(min-width: 1600px) {
+    width: 36%;
 	}
 }
 
@@ -226,7 +229,8 @@ $montFont:"Montserrat", sans-serif;
     padding-left: 45px !important;
     position: relative;
     font-family: $montFont;
-		font-weight: 500;
+    font-weight: 500;
+    cursor: pointer;
     &:before {
       position: absolute;
       content:'*';
@@ -369,20 +373,25 @@ $montFont:"Montserrat", sans-serif;
 		font-weight: 700;
 		font-size: 17px;
 		text-transform: uppercase;
-		list-style:none;
+    list-style:none;
+    margin-bottom: 0;
 	}
 	@media(min-width: 1300px) {
 		width: 53%;
 		padding-right: 99px;
-		font-size:1.5rem;
+		font-size:2.5rem;
 	}
 	@media(min-width: 1600px) {
 		width: 53%;
 		padding-right: 35px;
-		font-size:2rem;
+		font-size:3.5rem;
 	}
 
 	.kala-menu-option {
+    a {
+      color:white;
+      cursor:pointer;
+    }
 		:hover{
 			transform: scaleX(1);
 			top: 6px;
@@ -410,7 +419,8 @@ $montFont:"Montserrat", sans-serif;
 	font-family: inherit;
 	font-size: 0.875rem;
 	width: 95px;
-	border-right:none;
+  border-right:none;
+  height: 19px;
 }
 
 #search-icon {
