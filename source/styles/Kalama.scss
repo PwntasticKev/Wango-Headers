@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:200,200i,300,300i,400,500,500i,600,600i,700');
 $montFont:"Montserrat", sans-serif;
 
-@import 'climacons.scss';
+// @import 'climacons.scss';
 
 .kala-flex {
 	display: flex;
@@ -173,7 +173,9 @@ $montFont:"Montserrat", sans-serif;
   z-index: 3040;
   background: white;
 	width: 100%;
-	border-bottom: 1px solid lightgray;
+	-webkit-box-shadow: 2px 9px 35px -9px rgba(0,0,0,0.47);
+-moz-box-shadow: 2px 9px 35px -9px rgba(0,0,0,0.47);
+box-shadow: 2px 9px 35px -9px rgba(0,0,0,0.47);
 	list-style: none;
   .kala-logo-white {
     width: 240px;
@@ -222,6 +224,9 @@ $montFont:"Montserrat", sans-serif;
 	@media(min-width:1300px) {
 		width: 44%;
 	}
+	@media(min-width:1300px) {
+		width: 30%;
+	}
 
   .kala-menu-option {
     background: rgba(255, 255, 255, 0);
@@ -249,7 +254,7 @@ $montFont:"Montserrat", sans-serif;
 					padding-left: 0px !important;
 				}
 				@media(min-width: 1024px){
-					font-size:1rem;
+					font-size:1.25rem;
 				}
   }
 }
@@ -301,7 +306,7 @@ $montFont:"Montserrat", sans-serif;
 }
 
 .kala-e-news {
-  max-width: 147px;
+  max-width: 155px;
   background-color: orange;
   margin: 15px auto 0 auto;
   text-align: center;
@@ -314,7 +319,7 @@ $montFont:"Montserrat", sans-serif;
 
 .kala-contact-container {
   color: #333333;
-  padding: 25px 0 15px 15px;
+  padding: 25px 0 30px 15px;
   max-width: 300px;
   margin: 10px auto 0 auto;
   font-family: $montFont;
@@ -358,7 +363,10 @@ $montFont:"Montserrat", sans-serif;
 	.weather-temp-container {
 		display: flex;
 		flex-direction: row;
-	}
+  }
+  @media(min-width: 1300px) {
+    width:550px;
+  }
 }
 
 .right-nav-desktop{
@@ -391,6 +399,7 @@ $montFont:"Montserrat", sans-serif;
     a {
       color:white;
       cursor:pointer;
+      text-decoration: none;
     }
 		:hover{
 			transform: scaleX(1);

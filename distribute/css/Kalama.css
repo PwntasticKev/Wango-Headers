@@ -1,118 +1,5 @@
 /* GLOBAL CSS */
 @import url("https://fonts.googleapis.com/css?family=Montserrat:200,200i,300,300i,400,500,500i,600,600i,700");
-@font-face {
-  font-family: 'sv-Climacons';
-  src: url("../fonts/climacons/sv_climacons_webfont.eot");
-  src: url("../fonts/climacons/sv_climacons_webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/climacons/sv_climacons_webfont.svg#Climacons-Font") format("svg"), url("../fonts/climacons/sv_climacons_webfont.woff") format("woff"), url("../fonts/climacons/sv_climacons_webfont.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal; }
-
-.climacon:before {
-  font-family: 'sv-climacons';
-  speak: none;
-  font-size: inherit;
-  font-style: normal;
-  font-weight: normal;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased; }
-
-.climacon.i26:before {
-  content: "\e000"; }
-
-.climacon.i28:before,
-.climacon.i30:before,
-.climacon.i44:before {
-  /*cloud sun / partly cloudy day*/
-  content: "\e001"; }
-
-.climacon.i29:before,
-.climacon.i27:before {
-  /*cloud moon / partly cloudy (night)*/
-  content: "\e002"; }
-
-.climacon.i9:before,
-.climacon.i11:before,
-.climacon.i12:before,
-.climacon.i40:before {
-  /*rain cloud*/
-  content: "\e003"; }
-
-.climacon.i32:before,
-.climacon.i34:before {
-  content: "\e028"; }
-
-.climacon.i3200:before {
-  content: "\00d8";
-  font-weight: 700; }
-
-.climacon.i8:before,
-.climacon.i10:before {
-  content: "\e00c"; }
-
-.climacon.i6:before,
-.climacon.i7:before,
-.climacon.i18:before {
-  content: "\e010"; }
-
-.climacon.i17:before,
-.climacon.i35:before {
-  content: "\e013"; }
-
-.climacon.i5:before {
-  content: "\e004"; }
-
-.climacon.i13:before,
-.climacon.i14:before,
-.climacon.i15:before,
-.climacon.i16:before,
-.climacon.i41:before,
-.climacon.i42:before,
-.climacon.i43:before,
-.climacon.i46:before {
-  content: "\e018"; }
-
-.climacon.i20:before {
-  content: "\e01b"; }
-
-.climacon.i21:before,
-.climacon.i22:before,
-.climacon.i23:before {
-  content: "\e01f"; }
-
-.climacon.i24:before {
-  content: "\e021"; }
-
-.climacon.i2:before {
-  content: "\e022"; }
-
-.climacon.i19:before {
-  content: "\e023"; }
-
-.climacon.i3:before,
-.climacon.i4:before,
-.climacon.i37:before,
-.climacon.i38:before,
-.climacon.i39:before,
-.climacon.i45:before,
-.climacon.i47:before {
-  content: "\e025"; }
-
-.climacon.i31:before,
-.climacon.i33:before {
-  content: "\e02d"; }
-
-.climacon.i0:before {
-  content: "\e037"; }
-
-.climacon.i25:before {
-  content: "\e03a"; }
-
-.climacon.i36:before {
-  content: "\e03d"; }
-
-.climacon.i1:before {
-  content: "\e00a"; }
-
 .kala-flex {
   display: flex;
   align-items: center; }
@@ -262,7 +149,9 @@
   z-index: 3040;
   background: white;
   width: 100%;
-  border-bottom: 1px solid lightgray;
+  -webkit-box-shadow: 2px 9px 35px -9px rgba(0, 0, 0, 0.47);
+  -moz-box-shadow: 2px 9px 35px -9px rgba(0, 0, 0, 0.47);
+  box-shadow: 2px 9px 35px -9px rgba(0, 0, 0, 0.47);
   list-style: none; }
   .kala-menu-container .kala-logo-white {
     width: 240px;
@@ -306,6 +195,9 @@
   @media (min-width: 1300px) {
     .kala-menu-ul {
       width: 44%; } }
+  @media (min-width: 1300px) {
+    .kala-menu-ul {
+      width: 30%; } }
   .kala-menu-ul .kala-menu-option {
     background: rgba(255, 255, 255, 0);
     padding: 11px 8px;
@@ -332,7 +224,7 @@
         padding-left: 0px !important; } }
     @media (min-width: 1024px) {
       .kala-menu-ul .kala-menu-option {
-        font-size: 1rem; } }
+        font-size: 1.25rem; } }
 
 .kala-lowerMenu-container {
   background: #333333; }
@@ -370,7 +262,7 @@
     margin: 0 5px; }
 
 .kala-e-news {
-  max-width: 147px;
+  max-width: 155px;
   background-color: orange;
   margin: 15px auto 0 auto;
   text-align: center;
@@ -382,7 +274,7 @@
 
 .kala-contact-container {
   color: #333333;
-  padding: 25px 0 15px 15px;
+  padding: 25px 0 30px 15px;
   max-width: 300px;
   margin: 10px auto 0 auto;
   font-family: "Montserrat", sans-serif; }
@@ -420,6 +312,9 @@
   .weather-container .weather-temp-container {
     display: flex;
     flex-direction: row; }
+  @media (min-width: 1300px) {
+    .weather-container {
+      width: 550px; } }
 
 .right-nav-desktop {
   display: none; }
@@ -448,7 +343,8 @@
       font-size: 3.5rem; } }
   .right-nav-desktop .kala-menu-option a {
     color: white;
-    cursor: pointer; }
+    cursor: pointer;
+    text-decoration: none; }
   .right-nav-desktop .kala-menu-option :hover {
     transform: scaleX(1);
     top: 6px;
