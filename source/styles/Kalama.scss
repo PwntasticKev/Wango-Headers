@@ -1,10 +1,12 @@
 /* GLOBAL CSS */
+@import '../styles/reset.scss';
 @import url('https://fonts.googleapis.com/css?family=Montserrat:200,200i,300,300i,400,500,500i,600,600i,700');
 $montFont:"Montserrat", sans-serif;
+@import 'climacons.scss';
 @import '../fonts/font-awesome/scss/fontawesome.scss';
 @import '../fonts/font-awesome/scss/solid.scss';
 @import '../fonts/font-awesome/scss/brands.scss';
-@import 'climacons.scss';
+
 
 .kala-flex {
 	display: flex;
@@ -235,15 +237,15 @@ box-shadow: 2px 9px 35px -9px rgba(0,0,0,0.47);
     font-family: $montFont;
     font-weight: 500;
     cursor: pointer;
-    &:before {
-      position: absolute;
-      content:'*';
-      top: 10px;
-      left: 10px;
-      width: 20px;
-      height: 21px;
-      background: url('https://www.discoverkalamazoo.com/assets/oc-menu/home.png')
-    }
+    // &:before {
+    //   position: absolute;
+    //   content:'*';
+    //   top: 10px;
+    //   left: 10px;
+    //   width: 20px;
+    //   height: 21px;
+    //   background: url('https://www.discoverkalamazoo.com/assets/oc-menu/home.png')
+    // }
         @media(min-width: 1024px){
 					content:'';
 					font-weight: 400;
@@ -280,7 +282,7 @@ box-shadow: 2px 9px 35px -9px rgba(0,0,0,0.47);
   justify-content: center;
   flex-direction: column;
   color:white;
-  padding: 31px 0 28px 0;
+  padding: 5px 0 28px 0;
   font-family: $montFont;
   h1 {
     color: #FFFFFF;
@@ -403,6 +405,12 @@ box-shadow: 2px 9px 35px -9px rgba(0,0,0,0.47);
 			transition: transform 300ms ease-in-out;
 		}
 	}
+}
+
+.fa-youtube-play {
+  @extend %fa-icon;
+  @extend .fas;
+  content: fa-content($fa-var-user);
 }
 
 .search-desktop {

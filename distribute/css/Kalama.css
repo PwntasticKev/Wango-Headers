@@ -1,11 +1,253 @@
 /* GLOBAL CSS */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 @import url("https://fonts.googleapis.com/css?family=Montserrat:200,200i,300,300i,400,500,500i,600,600i,700");
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol,
+ul {
+  list-style: none; }
+
+blockquote,
+q {
+  quotes: none; }
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@font-face {
+  font-family: 'sv-Climacons';
+  src: url("../fonts/climacons/sv_climacons_webfont.eot");
+  src: url("../fonts/climacons/sv_climacons_webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/climacons/sv_climacons_webfont.svg#Climacons-Font") format("svg"), url("../fonts/climacons/sv_climacons_webfont.woff") format("woff"), url("../fonts/climacons/sv_climacons_webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+.climacon:before {
+  font-family: 'sv-climacons';
+  speak: none;
+  font-size: inherit;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased; }
+
+.climacon.i26:before {
+  content: "\e000"; }
+
+.climacon.i28:before,
+.climacon.i30:before,
+.climacon.i44:before {
+  /*cloud sun / partly cloudy day*/
+  content: "\e001"; }
+
+.climacon.i29:before,
+.climacon.i27:before {
+  /*cloud moon / partly cloudy (night)*/
+  content: "\e002"; }
+
+.climacon.i9:before,
+.climacon.i11:before,
+.climacon.i12:before,
+.climacon.i40:before {
+  /*rain cloud*/
+  content: "\e003"; }
+
+.climacon.i32:before,
+.climacon.i34:before {
+  content: "\e028"; }
+
+.climacon.i3200:before {
+  content: "\00d8";
+  font-weight: 700; }
+
+.climacon.i8:before,
+.climacon.i10:before {
+  content: "\e00c"; }
+
+.climacon.i6:before,
+.climacon.i7:before,
+.climacon.i18:before {
+  content: "\e010"; }
+
+.climacon.i17:before,
+.climacon.i35:before {
+  content: "\e013"; }
+
+.climacon.i5:before {
+  content: "\e004"; }
+
+.climacon.i13:before,
+.climacon.i14:before,
+.climacon.i15:before,
+.climacon.i16:before,
+.climacon.i41:before,
+.climacon.i42:before,
+.climacon.i43:before,
+.climacon.i46:before {
+  content: "\e018"; }
+
+.climacon.i20:before {
+  content: "\e01b"; }
+
+.climacon.i21:before,
+.climacon.i22:before,
+.climacon.i23:before {
+  content: "\e01f"; }
+
+.climacon.i24:before {
+  content: "\e021"; }
+
+.climacon.i2:before {
+  content: "\e022"; }
+
+.climacon.i19:before {
+  content: "\e023"; }
+
+.climacon.i3:before,
+.climacon.i4:before,
+.climacon.i37:before,
+.climacon.i38:before,
+.climacon.i39:before,
+.climacon.i45:before,
+.climacon.i47:before {
+  content: "\e025"; }
+
+.climacon.i31:before,
+.climacon.i33:before {
+  content: "\e02d"; }
+
+.climacon.i0:before {
+  content: "\e037"; }
+
+.climacon.i25:before {
+  content: "\e03a"; }
+
+.climacon.i36:before {
+  content: "\e03d"; }
+
+.climacon.i1:before {
+  content: "\e00a"; }
+
 /*!
  * Font Awesome Free 5.5.0 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
  */
 .fa,
 .fas,
+.fa-youtube-play,
 .far,
 .fal,
 .fab {
@@ -16,6 +258,16 @@
   font-variant: normal;
   text-rendering: auto;
   line-height: 1; }
+
+.fa-youtube-play {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  vertical-align: -.125em; }
 
 .fa-lg {
   font-size: 1.33333em;
@@ -89,6 +341,7 @@
 
 .fa.fa-pull-left,
 .fas.fa-pull-left,
+.fa-pull-left.fa-youtube-play,
 .far.fa-pull-left,
 .fal.fa-pull-left,
 .fab.fa-pull-left {
@@ -96,6 +349,7 @@
 
 .fa.fa-pull-right,
 .fas.fa-pull-right,
+.fa-pull-right.fa-youtube-play,
 .far.fa-pull-right,
 .fal.fa-pull-right,
 .fab.fa-pull-right {
@@ -3977,7 +4231,8 @@ readers do not read off random characters that represent icons */
   src: url("../webfonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("../webfonts/fa-solid-900.woff2") format("woff2"), url("../webfonts/fa-solid-900.woff") format("woff"), url("../webfonts/fa-solid-900.ttf") format("truetype"), url("../webfonts/fa-solid-900.svg#fontawesome") format("svg"); }
 
 .fa,
-.fas {
+.fas,
+.fa-youtube-play {
   font-family: 'Font Awesome 5 Free';
   font-weight: 900; }
 
@@ -3994,119 +4249,6 @@ readers do not read off random characters that represent icons */
 
 .fab {
   font-family: 'Font Awesome 5 Brands'; }
-
-@font-face {
-  font-family: 'sv-Climacons';
-  src: url("../fonts/climacons/sv_climacons_webfont.eot");
-  src: url("../fonts/climacons/sv_climacons_webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/climacons/sv_climacons_webfont.svg#Climacons-Font") format("svg"), url("../fonts/climacons/sv_climacons_webfont.woff") format("woff"), url("../fonts/climacons/sv_climacons_webfont.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal; }
-
-.climacon:before {
-  font-family: 'sv-climacons';
-  speak: none;
-  font-size: inherit;
-  font-style: normal;
-  font-weight: normal;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased; }
-
-.climacon.i26:before {
-  content: "\e000"; }
-
-.climacon.i28:before,
-.climacon.i30:before,
-.climacon.i44:before {
-  /*cloud sun / partly cloudy day*/
-  content: "\e001"; }
-
-.climacon.i29:before,
-.climacon.i27:before {
-  /*cloud moon / partly cloudy (night)*/
-  content: "\e002"; }
-
-.climacon.i9:before,
-.climacon.i11:before,
-.climacon.i12:before,
-.climacon.i40:before {
-  /*rain cloud*/
-  content: "\e003"; }
-
-.climacon.i32:before,
-.climacon.i34:before {
-  content: "\e028"; }
-
-.climacon.i3200:before {
-  content: "\00d8";
-  font-weight: 700; }
-
-.climacon.i8:before,
-.climacon.i10:before {
-  content: "\e00c"; }
-
-.climacon.i6:before,
-.climacon.i7:before,
-.climacon.i18:before {
-  content: "\e010"; }
-
-.climacon.i17:before,
-.climacon.i35:before {
-  content: "\e013"; }
-
-.climacon.i5:before {
-  content: "\e004"; }
-
-.climacon.i13:before,
-.climacon.i14:before,
-.climacon.i15:before,
-.climacon.i16:before,
-.climacon.i41:before,
-.climacon.i42:before,
-.climacon.i43:before,
-.climacon.i46:before {
-  content: "\e018"; }
-
-.climacon.i20:before {
-  content: "\e01b"; }
-
-.climacon.i21:before,
-.climacon.i22:before,
-.climacon.i23:before {
-  content: "\e01f"; }
-
-.climacon.i24:before {
-  content: "\e021"; }
-
-.climacon.i2:before {
-  content: "\e022"; }
-
-.climacon.i19:before {
-  content: "\e023"; }
-
-.climacon.i3:before,
-.climacon.i4:before,
-.climacon.i37:before,
-.climacon.i38:before,
-.climacon.i39:before,
-.climacon.i45:before,
-.climacon.i47:before {
-  content: "\e025"; }
-
-.climacon.i31:before,
-.climacon.i33:before {
-  content: "\e02d"; }
-
-.climacon.i0:before {
-  content: "\e037"; }
-
-.climacon.i25:before {
-  content: "\e03a"; }
-
-.climacon.i36:before {
-  content: "\e03d"; }
-
-.climacon.i1:before {
-  content: "\e00a"; }
 
 .kala-flex {
   display: flex;
@@ -4311,14 +4453,6 @@ readers do not read off random characters that represent icons */
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     cursor: pointer; }
-    .kala-menu-ul .kala-menu-option:before {
-      position: absolute;
-      content: '*';
-      top: 10px;
-      left: 10px;
-      width: 20px;
-      height: 21px;
-      background: url("https://www.discoverkalamazoo.com/assets/oc-menu/home.png"); }
     @media (min-width: 1024px) {
       .kala-menu-ul .kala-menu-option {
         content: '';
@@ -4347,7 +4481,7 @@ readers do not read off random characters that represent icons */
   justify-content: center;
   flex-direction: column;
   color: white;
-  padding: 31px 0 28px 0;
+  padding: 5px 0 28px 0;
   font-family: "Montserrat", sans-serif; }
   .kala-connect-container h1 {
     color: #FFFFFF;
@@ -4452,6 +4586,9 @@ readers do not read off random characters that represent icons */
     width: 100%;
     border-bottom: solid 5px #57b649;
     transition: transform 300ms ease-in-out; }
+
+.fa-youtube-play {
+  content: "\f007"; }
 
 .search-desktop {
   display: flex; }
