@@ -242,6 +242,8 @@
   .kala-connect-container .kala-icon-container {
     display: flex;
     justify-content: center; }
+    .kala-connect-container .kala-icon-container .social-link {
+      color: gray; }
 
 .fa {
   margin: 0 5px;
