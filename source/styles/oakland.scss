@@ -18,15 +18,15 @@
       &:before {
         content: "";
         height: 2px;
-        top:8px;
-        width:31px;
+        top:11px;
+        width:24px;
         position: absolute;
         background: #1d1d1d;
         transition: all ease .35s 0s;
       }
       &:after {
         content: "";
-        width:31px;
+        width:24px;
         position: absolute;
         height: 2px;
         background: #1d1d1d;
@@ -35,6 +35,8 @@
     }
 
     .nav-hit-cont {
+      display: flex;
+      align-items: center;
       cursor: pointer;
       width: 24px;
       z-index: 2;
@@ -43,7 +45,7 @@
   }
 .nav-hit-hider {
   width: 23px;
-  height: 31px;
+  height: 26px;
 }
 
 .ae-img {
