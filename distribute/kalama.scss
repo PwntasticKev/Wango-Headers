@@ -23,13 +23,16 @@ $montFont:"Montserrat", sans-serif;
 
 .kala-logo {
 	width: 100%;
-	padding-left: 0.9375rem;
+  padding-left: 0.9375rem;
+  @media(min-width: 1600px) {
+    padding-left: 6.9375rem;
+  }
 }
 
 .kala-header-container {
 	background: #000000;
 	color: #ffffff;
-	height: 2.8125rem;
+	height: 3.8125rem;
 	-webkit-box-pack: justify;
 	-ms-flex-pack: justify;
 	justify-content: space-between;
@@ -38,13 +41,10 @@ $montFont:"Montserrat", sans-serif;
     padding: 26px 0;
   }
   @media(min-width: 1024px) {
-		padding: 12px 0;
+		padding: 40px 0;
 		-webkit-box-shadow: 0 -4px 5px 0 rgba(0, 0, 0, 0.3);
 		box-shadow: 0 -4px 5px 0 rgba(0, 0, 0, 0.3);
 	}
-	@media(min-width: 1024px) {
-		padding: 20px 0;
-  }
 }
 
 .kala-burger {
@@ -93,7 +93,10 @@ $montFont:"Montserrat", sans-serif;
     width: 44%;
   }
   @media(min-width: 1024px) {
-    width: 35%;
+    width: 30%;
+	}
+  @media(min-width: 1600px) {
+    width: 36%;
 	}
 }
 
@@ -203,7 +206,8 @@ $montFont:"Montserrat", sans-serif;
   z-index: 3040;
   background: white;
 	width: 100%;
-	border-bottom: 1px solid lightgray;
+	-webkit-box-shadow: 2px 9px 35px -9px rgba(0,0,0,0.47);
+box-shadow: 2px 9px 35px -9px rgba(0,0,0,0.47);
 	list-style: none;
   .kala-logo-white {
     width: 240px;
@@ -270,7 +274,8 @@ $montFont:"Montserrat", sans-serif;
     padding-left: 45px !important;
     position: relative;
     font-family: $montFont;
-		font-weight: 500;
+    font-weight: 500;
+    cursor: pointer;
     &:before {
       position: absolute;
       content:'*';
@@ -289,7 +294,7 @@ $montFont:"Montserrat", sans-serif;
 					padding-left: 0px !important;
 				}
 				@media(min-width: 1024px){
-					font-size:1rem;
+					font-size:1.25rem;
 				}
   }
 }
@@ -331,13 +336,6 @@ $montFont:"Montserrat", sans-serif;
     letter-spacing: 0.07em;
     margin-bottom: 10px;
   }
-
-  .kala-icon {
-    background-repeat: url('https://www.discoverkalamazoo.com/assets/social-icons.png') no-repeat;
-    height: 24px;
-    width: 24px;
-  }
-
   .kala-icon-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -346,13 +344,11 @@ $montFont:"Montserrat", sans-serif;
     -ms-flex-pack:center;
     justify-content:center;
   }
-  i {
-    margin: 0 5px;
-  }
 }
 
+
 .kala-e-news {
-  max-width: 147px;
+  max-width: 155px;
   background-color: orange;
   margin: 15px auto 0 auto;
   text-align: center;
@@ -365,7 +361,7 @@ $montFont:"Montserrat", sans-serif;
 
 .kala-contact-container {
   color: #333333;
-  padding: 25px 0 15px 15px;
+  padding: 25px 0 30px 15px;
   max-width: 300px;
   margin: 10px auto 0 auto;
   font-family: $montFont;
@@ -429,7 +425,10 @@ $montFont:"Montserrat", sans-serif;
 		-webkit-box-direction: normal;
 		-ms-flex-direction: row;
 		flex-direction: row;
-	}
+  }
+  @media(min-width: 1300px) {
+    width:550px;
+  }
 }
 
 .right-nav-desktop{
@@ -447,20 +446,26 @@ $montFont:"Montserrat", sans-serif;
 		font-weight: 700;
 		font-size: 17px;
 		text-transform: uppercase;
-		list-style:none;
+    list-style:none;
+    margin-bottom: 0;
 	}
 	@media(min-width: 1300px) {
 		width: 53%;
 		padding-right: 99px;
-		font-size:1.5rem;
+		font-size:2.5rem;
 	}
 	@media(min-width: 1600px) {
 		width: 53%;
 		padding-right: 35px;
-		font-size:2rem;
+		font-size:3.5rem;
 	}
 
 	.kala-menu-option {
+    a {
+      color:white;
+      cursor:pointer;
+      text-decoration: none;
+    }
 		:hover{
 			-webkit-transform: scaleX(1);
 			-ms-transform: scaleX(1);
@@ -497,7 +502,8 @@ $montFont:"Montserrat", sans-serif;
 	font-family: inherit;
 	font-size: 0.875rem;
 	width: 95px;
-	border-right:none;
+  border-right:none;
+  height: 19px;
 }
 
 #search-icon {
