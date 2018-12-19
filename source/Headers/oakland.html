@@ -19,11 +19,13 @@
       </form>
       <div class="logo standard-logo" data-sv-logo=""><a href="https://www.visitoakland.com/"><img src="https://www.visitoakland.com/includes/public/assets/images/logo.svg"></a></div>
       <div class="nav-hit-cont nav-right">
+        <div class="upper-line"></div>
           <div class="nav-hit-inner">
               <div class="nav-hit-hider">
                   <img src="https://www.visitoakland.com/includes/public/assets/images/menu-text.svg" class="ae-img">
               </div>
           </div>
+          <div class="lower-line"></div>
       </div>
     </section>
   </header>
@@ -53,7 +55,7 @@
                 $(`<div class="weather-container" style='display: flex;'>
           <i style='margin-right: 5px;' class="climacon i${ res.code }"></i>
           <span class="weather-temp-container">
-          <b>${ res.temp}</b>
+          <b>${ res.temp }</b>
           <div>°</div>
           </span>
           </div>`
@@ -64,8 +66,8 @@
 
           $('.nav-hit-cont').on('click',function() {
             console.log('yoo')
-            $('.nav-hit-inner').after().toggleClass('menubefore-active')
-            $('.ae-img').toggle()
+            $('.upper-line').toggleClass('menubefore-active')
+            $('.ae-img').animate({opacity: 'toggle'}, 250)
           })
   </script>
 </body>

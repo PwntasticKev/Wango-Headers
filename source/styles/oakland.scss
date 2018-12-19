@@ -1,3 +1,5 @@
+
+// MAIN MOBILE MENU
 .main-section {
   display: flex;
   justify-content: space-between;
@@ -14,30 +16,51 @@
     }
     }
 
-    .nav-hit-inner {
-      transition: all ease .35s 0s;
-      &:before {
-        content: "";
-        transform: rotate(0deg);
-        height: 2px;
-        top:11px;
-        width:24px;
-        position: absolute;
-        background: #1d1d1d;
-      }
-      &:after {
-        content: "";
-        width:24px;
-        position: absolute;
-        height: 2px;
-        background: #1d1d1d;
-        transition: all ease .35s 0s;
-      }
+    .nav-hit-hider {
+      width: 23px;
+      height: 26px;
+    }
+    
+    .ae-img {
+      width:24px;
+      opacity:1;
     }
 
+    .nav-hit-inner {
+      transition: all ease .35s 0s;
+    }
+
+    .upper-line {
+      content: "";
+      transform: rotate(0deg);
+      height: 2px;
+      top:11px;
+      width:24px;
+      position: absolute;
+      background: #1d1d1d;
+    }
+    .lower-line {
+      content: "";
+      width:24px;
+      position: absolute;
+      height: 2px;
+      background: #1d1d1d;
+      top: 43px;
+      transition: all ease .35s 0s;
+    }
+
+    // @keyframes menuTopAnimate {
+    //   0% { top: 11px; transform: rotate(0deg); }
+    //   10% { top: 28px; }
+    //   50%{}
+    //   100%{ transform: rotate(45deg); top:28px;}
+    // }
+
     .menubefore-active {
-      top: -1px;
-    transform: rotate(45deg);
+      top:28px;
+      transform: rotate(45deg);
+      transition: all ease .35s 0s;
+    // animation: menuTopAnimate 1s ease-in;
     }
 
     .nav-hit-cont {
@@ -49,11 +72,7 @@
       height: 34px;
       transition: all ease .35s .35s;
   }
-.nav-hit-hider {
-  width: 23px;
-  height: 26px;
-}
 
-.ae-img {
-  width:24px;
-}
+
+
+  // ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑
