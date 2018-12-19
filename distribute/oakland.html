@@ -11,14 +11,22 @@
 
 </head>
 <body>
-  <section>
-      <form action="/search/" method="GET" data-sv-searchform="" class="ae-form">
-        <input type="search" value="" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" class="searchInput ae-form-field" name="q" data-sv-searchinput="" data-ae-blurbtype="input">
+  <header>
+    <section class="main-section">
+      <form action="/search/" method="GET" data-sv-searchform="" class="ae-form" style='display: flex;'>
         <div class="search-btn" data-sv-searchbtn="" aria-hidden="true"><i class="fa fa-search" aria-hidden="true"></i></div>
-    </form>
-    <div class="logo"></div>
-    <div class="menu"></div>
-  </section>
+          <input type="search" style='display: none;' value="" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" class="searchInput ae-form-field" name="q" data-sv-searchinput="" data-ae-blurbtype="input">
+      </form>
+      <div class="logo standard-logo" data-sv-logo=""><a href="https://www.visitoakland.com/"><img src="https://www.visitoakland.com/includes/public/assets/images/logo.svg" class="ae-img"></a></div>
+      <div class="nav-hit-cont nav-right">
+          <div class="nav-hit-inner">
+              <div class="nav-hit-hider">
+                  <img src="https://www.visitoakland.com/includes/public/assets/images/menu-text.svg" class="ae-img">
+              </div>
+          </div>
+      </div>
+    </section>
+  </header>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <script>
