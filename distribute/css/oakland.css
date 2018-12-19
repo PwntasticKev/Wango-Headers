@@ -10,22 +10,27 @@
   max-width: 125px;
   max-height: 40px; }
 
-.nav-hit-inner:before {
-  content: "";
-  height: 2px;
-  top: 11px;
-  width: 24px;
-  position: absolute;
-  background: #1d1d1d;
+.nav-hit-inner {
   transition: all ease .35s 0s; }
+  .nav-hit-inner:before {
+    content: "";
+    transform: rotate(0deg);
+    height: 2px;
+    top: 11px;
+    width: 24px;
+    position: absolute;
+    background: #1d1d1d; }
+  .nav-hit-inner:after {
+    content: "";
+    width: 24px;
+    position: absolute;
+    height: 2px;
+    background: #1d1d1d;
+    transition: all ease .35s 0s; }
 
-.nav-hit-inner:after {
-  content: "";
-  width: 24px;
-  position: absolute;
-  height: 2px;
-  background: #1d1d1d;
-  transition: all ease .35s 0s; }
+.menubefore-active {
+  top: -1px;
+  transform: rotate(45deg); }
 
 .nav-hit-cont {
   display: flex;

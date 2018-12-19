@@ -15,14 +15,15 @@
     }
 
     .nav-hit-inner {
+      transition: all ease .35s 0s;
       &:before {
         content: "";
+        transform: rotate(0deg);
         height: 2px;
         top:11px;
         width:24px;
         position: absolute;
         background: #1d1d1d;
-        transition: all ease .35s 0s;
       }
       &:after {
         content: "";
@@ -32,6 +33,11 @@
         background: #1d1d1d;
         transition: all ease .35s 0s;
       }
+    }
+
+    .menubefore-active {
+      top: -1px;
+    transform: rotate(45deg);
     }
 
     .nav-hit-cont {
