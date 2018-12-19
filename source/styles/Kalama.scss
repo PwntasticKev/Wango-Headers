@@ -1,11 +1,6 @@
 /* GLOBAL CSS */
-// @import '../styles/reset.scss';
 @import url('https://fonts.googleapis.com/css?family=Montserrat:200,200i,300,300i,400,500,500i,600,600i,700');
 $montFont:"Montserrat", sans-serif;
-// @import 'climacons.scss';
-// @import '../fonts/font-awesome/scss/fontawesome.scss';
-// @import '../fonts/font-awesome/scss/solid.scss';
-// @import '../fonts/font-awesome/scss/brands.scss';
 
 
 .kala-flex {
@@ -296,6 +291,11 @@ box-shadow: 2px 9px 35px -9px rgba(0,0,0,0.47);
     display: flex;
     justify-content:center;
   }
+}
+
+.fa {
+  margin: 0 5px;
+  font-size: 20px;
 }
 
 

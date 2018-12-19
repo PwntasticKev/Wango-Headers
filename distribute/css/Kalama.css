@@ -244,6 +244,10 @@
     display: flex;
     justify-content: center; }
 
+.fa {
+  margin: 0 5px;
+  font-size: 20px; }
+
 .kala-e-news {
   max-width: 155px;
   background-color: orange;
