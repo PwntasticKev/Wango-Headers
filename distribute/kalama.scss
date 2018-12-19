@@ -265,7 +265,9 @@ box-shadow: 2px 9px 35px -9px rgba(0,0,0,0.47);
 	}
 	@media(min-width:1300px) {
 		width: 44%;
-	}
+  }
+  
+
 
   .kala-menu-option {
     background: rgba(255, 255, 255, 0);
@@ -343,6 +345,9 @@ box-shadow: 2px 9px 35px -9px rgba(0,0,0,0.47);
     -webkit-box-pack:center;
     -ms-flex-pack:center;
     justify-content:center;
+    .social-link {
+      color:gray;
+    }
   }
 }
 
