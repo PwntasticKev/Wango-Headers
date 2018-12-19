@@ -13,3 +13,39 @@
       max-height: 40px;
     }
     }
+
+    .nav-hit-inner {
+      &:before {
+        content: "";
+        height: 2px;
+        top:8px;
+        width:31px;
+        position: absolute;
+        background: #1d1d1d;
+        transition: all ease .35s 0s;
+      }
+      &:after {
+        content: "";
+        width:31px;
+        position: absolute;
+        height: 2px;
+        background: #1d1d1d;
+        transition: all ease .35s 0s;
+      }
+    }
+
+    .nav-hit-cont {
+      cursor: pointer;
+      width: 24px;
+      z-index: 2;
+      height: 34px;
+      transition: all ease .35s .35s;
+  }
+.nav-hit-hider {
+  width: 23px;
+  height: 31px;
+}
+
+.ae-img {
+  width:24px;
+}
