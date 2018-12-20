@@ -13,14 +13,14 @@
 <body>
   <header>
     <section class="main-section">
-      <form action="/search/" method="GET" data-sv-searchform="" class="ae-form" style='display: flex;'>
+      <form action="/search/" method="GET" data-sv-searchform="" style='display: flex;'>
         <div class="search-btn" data-sv-searchbtn="" aria-hidden="true"><i class="fa fa-search" aria-hidden="true"></i></div>
-          <input type="search" style='display: none;' value="" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" class="searchInput ae-form-field" name="q" data-sv-searchinput="" data-ae-blurbtype="input">
+          <input class='mobile-search-input' type="search" style='display: none;' value="" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" class="searchInput ae-form-field" name="q" data-sv-searchinput="" data-ae-blurbtype="input">
       </form>
       <section style='display: flex;'>
       <div class="menu-title visit-oakland-menu">Visit Oakland</div>
         <div class="pipe">|</div>
-        <div class="menu-title industry-meu">Industry</div>
+        <div class="menu-title industry-menu">Industry</div>
       </section>
       <div class="logo standard-logo" data-sv-logo="" style='display: none;'><a href="https://www.visitoakland.com/"><img src="https://www.visitoakland.com/includes/public/assets/images/logo.svg"></a></div>
       <div class="nav-hit-cont nav-right">
@@ -53,7 +53,7 @@
             })
           }
           $("#Weather").append(
-            Weather({ lat: 42.299152, lnt: -85.591736, unit: "f" }).then(function (
+            Weather({ lat: 29.6014, lnt: -96.8314, unit: "f" }).then(function (
               res
             ) {
               $("#Weather").append(
@@ -70,12 +70,22 @@
           )
 
           $('.nav-hit-cont').on('click',function() {
-            console.log('yoo')
             $('.ae-img').animate({opacity: 'toggle'}, 250)
             $('.upper-line').toggleClass('menubefore-active')
             $('.lower-line').toggleClass('menuafter-active')
             $('.logo').toggle()
             $('.visit-oakland-menu').addClass('menu-title-active')
+            $('.industry-menu').removeClass('menu-title-active')
+          })
+
+          $('.visit-oakland-menu').on('click', function() {
+            $('.visit-oakland-menu').addClass('menu-title-active')
+            $('.industry-menu').removeClass('menu-title-active')
+          })
+
+          $('.industry-menu').on('click', function() {
+            $('.industry-menu').addClass('menu-title-active')
+            $('.visit-oakland-menu').removeClass('menu-title-active')
           })
 
 
