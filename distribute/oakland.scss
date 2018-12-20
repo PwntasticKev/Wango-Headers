@@ -1,4 +1,4 @@
-
+@import './climacons.scss';
 // MAIN MOBILE MENU
 .main-section {
   display: -webkit-box;
@@ -17,10 +17,10 @@
 
 }
     .logo {
-    a img{
-      max-width: 125px;
-      max-height: 40px;
-    }
+      a img{
+        max-width: 125px;
+        max-height: 40px;
+     }
     }
 
     .nav-hit-hider {
@@ -105,6 +105,34 @@
       height: 34px;
       -webkit-transition: all ease .35s .35s;
       transition: all ease .35s .35s;
+  }
+
+  .pipe {
+    margin: 0 8px;
+  }
+
+  .menu-title {
+    background-color: transparent;
+    color: #1d1d1d;
+
+  }
+
+  .menu-title-active {
+    border-bottom: 2px solid #0498d9;
+  }
+
+  .mobile-search-input {
+    position: absolute;
+    z-index: 20;
+    left: 60px;
+    top: 16px;
+    height: 26px;
+    background: white;
+    border: 1px solid lightgray;
+  }
+
+  .menu-title {
+    width:50%;
   }
 
 

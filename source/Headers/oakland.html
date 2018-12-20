@@ -33,43 +33,24 @@
           <div class="lower-line"></div>
       </div>
     </section>
+    <section style='display: flex;'>
+        <div class='trans' id="google_translate_element">
+            <i class="fa fa-globe" aria-hidden="true"></i>
+        </div>
+      <div style='display:flex' id="Weather"></div>
+    </section>
   </header>
 
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+    }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <script>
-     var Weather = function (options) {
-            let _queryUri, _unit, _lat, _lnt
-            _lnt = options.lnt
-            _lat = options.lat
-            _unit = options.unit ? options.unit : "c"
-            _queryUri = `https://query.yahooapis.com/v1/public/yql?q=select * from weather.forecast where u='${_unit}' AND woeid in (SELECT woeid FROM geo.places WHERE text="(${_lat},${_lnt})")&format=json`
-            return $.ajax(_queryUri).then(res => {
-              if (res.status >= 400) {
-                throw new Error("Bad response from server")
-              }
-              return res.query.results
-                ? res.query.results.channel.item.condition
-                : { code: "NA", temp: "NA" }
-            })
-          }
-          $("#Weather").append(
-            Weather({ lat: 29.6014, lnt: -96.8314, unit: "f" }).then(function (
-              res
-            ) {
-              $("#Weather").append(
-                $(`<div class="weather-container" style='display: flex;'>
-          <i style='margin-right: 5px;' class="climacon i${ res.code }"></i>
-          <span class="weather-temp-container">
-          <b>${ res.temp }</b>
-          <div>°</div>
-          </span>
-          </div>`
-                )
-              )
-            })
-          )
 
-          $('.nav-hit-cont').on('click',function() {
+ $('.nav-hit-cont').on('click',function() {
             $('.ae-img').animate({opacity: 'toggle'}, 250)
             $('.upper-line').toggleClass('menubefore-active')
             $('.lower-line').toggleClass('menuafter-active')
@@ -92,6 +73,38 @@
             $('.mobile-search-input').animate({width:'toggle'}, 200)
           })
 
+
+     var Weather = function (options) {
+            let _queryUri, _unit, _lat, _lnt
+            _lnt = options.lnt
+            _lat = options.lat
+            _unit = options.unit ? options.unit : "c"
+            _queryUri = `https://query.yahooapis.com/v1/public/yql?q=select * from weather.forecast where u='${_unit}' AND woeid in (SELECT woeid FROM geo.places WHERE text="(${_lat},${_lnt})")&format=json`
+            return $.ajax(_queryUri).then(res => {
+              if (res.status >= 400) {
+                throw new Error("Bad response from server")
+              }
+              return res.query.results
+                ? res.query.results.channel.item.condition
+                : { code: "NA", temp: "NA" }
+            })
+          }
+          $("#Weather").append(
+            Weather({ lat: 42.299152, lnt: -85.591736, unit: "f" }).then(function (
+              res
+            ) {
+              $("#Weather").append(
+                $(`<div class="weather-container" style='display: flex;'>
+          <i style='margin-right: 5px;' class="climacon i${ res.code }"></i>
+          <span class="weather-temp-container" style='display: flex;'>
+          <b>${ res.temp }</b>
+          <div>°</div>
+          </span>
+          </div>`
+                )
+              )
+            })
+          )
 
   </script>
 </body>
