@@ -85,11 +85,15 @@
           $('.visit-oakland-menu').on('click', function() {
             $('.visit-oakland-menu').addClass('menu-title-active') //adds bue line
             $('.industry-menu').removeClass('menu-title-active') ////removes bue line
+            $('.oakland-menu-container').show()
+            $('.industry-container-menu').hide()
           })
 
           $('.industry-menu').on('click', function() {
             $('.industry-menu').addClass('menu-title-active') //adds blue lne
             $('.visit-oakland-menu').removeClass('menu-title-active') //removes blue line
+            $('.oakland-menu-container').hide()
+            $('.industry-container-menu').show()
           })
 
           $('.fa-search').on('click',function() {
