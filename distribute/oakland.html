@@ -17,12 +17,12 @@
         <div class="search-btn" data-sv-searchbtn="" aria-hidden="true"><i class="fa fa-search" aria-hidden="true"></i></div>
           <input class='mobile-search-input' type="search" style='display: none;' value="" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" class="searchInput ae-form-field" name="q" data-sv-searchinput="" data-ae-blurbtype="input">
       </form>
-      <section style='display: flex;'>
+      <section class='menu-title-container'>
       <div class="menu-title visit-oakland-menu">Visit Oakland</div>
         <div class="pipe">|</div>
         <div class="menu-title industry-menu">Industry</div>
       </section>
-      <div class="logo standard-logo" data-sv-logo="" style='display: none;'><a href="https://www.visitoakland.com/"><img src="https://www.visitoakland.com/includes/public/assets/images/logo.svg"></a></div>
+      <div class="logo standard-logo" data-sv-logo="" ><a href="https://www.visitoakland.com/"><img src="https://www.visitoakland.com/includes/public/assets/images/logo.svg"></a></div>
       <div class="nav-hit-cont nav-right">
         <div class="upper-line"></div>
           <div class="nav-hit-inner">
@@ -39,6 +39,27 @@
         </div>
       <div style='display:flex' id="Weather"></div>
     </section>
+    <!-- VISIT OAKLAND MENU -->
+    <ul class='oakland-menu-container' style='display: none;'>
+      <a href="https://www.visitoakland.com/things-to-do/"><li class='oakland-options'>Things To Do</li></a>
+      <a href='https://www.visitoakland.com/events/'><li class='oakland-options'>Events</li></a>
+      <a href='https://www.visitoakland.com/restaurants/'><li class='oakland-options'>Food & Drink</li></a>
+      <a href='https://www.visitoakland.com/stay/'><li class='oakland-options'>Stay</li></a>
+      <a href='https://www.visitoakland.com/plan/'><li class='oakland-options'>Trip Planning</li></a>
+      <a href='https://www.visitoakland.com/meet/'><li class='oakland-options'>Meetings & Groups</li></a>
+      <a href="http://www.youtube.com/visitoakland?sub_confirmation=1"><li class='oakland-options'>Oakland.TV</li></a>
+    </ul>
+    <!-- ↑ ↑ ↑ ↑ ↑ ↑ -->
+    
+    <!-- INDUSTRY MENU  -->
+    <ul class="industry-container-menu" style='display: none;'>
+        <a href="https://www.visitoakland.com/partners/"> </a><li class="oakland-options">Partners</li></a>
+        <a href="https://www.visitoakland.com/press/"> </a><li class="oakland-options">Press Room</li></a>
+        <a href="https://www.visitoakland.com/about/"> </a><li class="oakland-options">About</li></a>
+    </ul>
+    <!-- ↑ ↑ ↑ ↑ ↑ ↑ -->
+
+
   </header>
 
   <script type="text/javascript">
@@ -55,18 +76,20 @@
             $('.upper-line').toggleClass('menubefore-active')
             $('.lower-line').toggleClass('menuafter-active')
             $('.logo').toggle()
-            $('.visit-oakland-menu').addClass('menu-title-active')
-            $('.industry-menu').removeClass('menu-title-active')
+            $('.visit-oakland-menu').addClass('menu-title-active') // adds blue line underneath
+            $('.menu-title-container').toggleClass('menu-title-container--active') //puts the container in flex.
+            $('.oakland-menu-container').toggle() //turns oakland menu on/off
+            $('.industry-menu').removeClass('menu-title-active') //removes blue line 
           })
 
           $('.visit-oakland-menu').on('click', function() {
-            $('.visit-oakland-menu').addClass('menu-title-active')
-            $('.industry-menu').removeClass('menu-title-active')
+            $('.visit-oakland-menu').addClass('menu-title-active') //adds bue line
+            $('.industry-menu').removeClass('menu-title-active') ////removes bue line
           })
 
           $('.industry-menu').on('click', function() {
-            $('.industry-menu').addClass('menu-title-active')
-            $('.visit-oakland-menu').removeClass('menu-title-active')
+            $('.industry-menu').addClass('menu-title-active') //adds blue lne
+            $('.visit-oakland-menu').removeClass('menu-title-active') //removes blue line
           })
 
           $('.fa-search').on('click',function() {

@@ -85,7 +85,13 @@
   .menu-title {
     background-color: transparent;
     color: #1d1d1d;
+  }
 
+  .menu-title-container {
+    display: none;
+  }
+  .menu-title-container--active {
+    display: flex;
   }
 
   .menu-title-active {
@@ -117,6 +123,7 @@
   .trans {
     width:50%;
     position: relative;
+    padding-left: 15px;
   }
 
   .fa-globe {
@@ -130,15 +137,19 @@
     display: none;
   }
 
+  .weather-container {
+    padding-left: 13px;
+  }
+
   .goog-te-gadget-simple {
     position: relative;
     height: 32px;
     width: 99%;
     border: none !important;
     display: flex !important;
-    justify-content: center;
     align-items: center;
     outline: none;
+    padding-left:10px;
   }
 
   .goog-te-gadget-simple .goog-te-menu-value span:nth-of-type(3){
@@ -148,7 +159,31 @@
   .goog-te-gadget-simple .goog-te-menu-value span:nth-of-type(2){
     opacity: 0;
 }
-
-
-
   /*/ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑*/
+
+  // OAKLAND-MENU--CSS
+
+  .oakland-menu-container {
+    padding-left: 15px;
+    a{text-decoration: none;}
+    .oakland-options {
+      font-family: 'Helvetica Neue LT W01_71488914', Arial, Helvetica, sans-serif;
+      // font-size: 40px;
+      font-size:27px;
+      font-weight: 900;
+      // font-weight: normal;
+      line-height: 1.4;
+      color: #1d1d1d;
+      text-align: left;
+      // padding: 6px 5px 6px 0px;
+      transition: all .2s ease;
+    }
+  }
+
+  .industry-container-menu {
+    display: none;
+  }
+
+  .menu--active {
+    display: block;
+  }
