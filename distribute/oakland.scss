@@ -1,3 +1,5 @@
+
+// MAIN MOBILE MENU
 .main-section {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -19,6 +21,16 @@
       max-width: 125px;
       max-height: 40px;
     }
+    }
+
+    .nav-hit-hider {
+      width: 23px;
+      height: 26px;
+    }
+    
+    .ae-img {
+      width:24px;
+      opacity:1;
     }
 
     .nav-hit-inner {
@@ -43,16 +55,42 @@
       position: absolute;
       height: 2px;
       background: #1d1d1d;
+      top: 43px;
       -webkit-transition: all ease .35s 0s;
       transition: all ease .35s 0s;
     }
 
-    .menubefore-active {
-      top: -1px;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
+    @-webkit-keyframes menuTopAnimate {
+      0% { top: 11px; -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+      10% { top: 28px; }
+      50%{}
+      100%{ -webkit-transform: rotate(45deg); transform: rotate(45deg); top:28px;}
     }
+
+    @keyframes menuTopAnimate {
+      0% { top: 11px; -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+      10% { top: 28px; }
+      50%{}
+      100%{ -webkit-transform: rotate(45deg); transform: rotate(45deg); top:28px;}
+    }
+
+    .menubefore-active {
+      top:28px;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+      -webkit-transition: all ease .35s 0s;
+      transition: all ease .35s 0s;
+    // animation: menuTopAnimate 1s ease-in;
+    }
+    .menuafter-active {
+      top:28px;
+      -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+      -webkit-transition: all ease .35s 0s;
+      transition: all ease .35s 0s;
+   }
 
     .nav-hit-cont {
       display: -webkit-box;
@@ -68,12 +106,7 @@
       -webkit-transition: all ease .35s .35s;
       transition: all ease .35s .35s;
   }
-.nav-hit-hider {
-  width: 23px;
-  height: 26px;
-}
 
-.ae-img {
-  width:24px;
-  opacity:1;
-}
+
+
+  /*/ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑*/

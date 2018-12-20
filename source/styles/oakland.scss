@@ -49,12 +49,12 @@
       transition: all ease .35s 0s;
     }
 
-    // @keyframes menuTopAnimate {
-    //   0% { top: 11px; transform: rotate(0deg); }
-    //   10% { top: 28px; }
-    //   50%{}
-    //   100%{ transform: rotate(45deg); top:28px;}
-    // }
+    @keyframes menuTopAnimate {
+      0% { top: 11px; transform: rotate(0deg); }
+      10% { top: 28px; }
+      50%{}
+      100%{ transform: rotate(45deg); top:28px;}
+    }
 
     .menubefore-active {
       top:28px;
@@ -78,6 +78,20 @@
       transition: all ease .35s .35s;
   }
 
+  .pipe {
+    margin: 0 8px;
+  }
+
+  .menu-title {
+    background-color: transparent;
+    color: #1d1d1d;
+
+  }
+
+  .menu-title-active {
+    border-bottom: 2px solid #0498d9;
+  }
 
 
-  // ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑
+
+  /*/ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑*/
