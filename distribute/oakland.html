@@ -17,6 +17,11 @@
         <div class="search-btn" data-sv-searchbtn="" aria-hidden="true"><i class="fa fa-search" aria-hidden="true"></i></div>
           <input type="search" style='display: none;' value="" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" class="searchInput ae-form-field" name="q" data-sv-searchinput="" data-ae-blurbtype="input">
       </form>
+      <section style='display: flex;'>
+      <div>Visit Oakland</div>
+        <br>
+        <div>Industry</div>
+      </section>
       <div class="logo standard-logo" data-sv-logo=""><a href="https://www.visitoakland.com/"><img src="https://www.visitoakland.com/includes/public/assets/images/logo.svg"></a></div>
       <div class="nav-hit-cont nav-right">
         <div class="upper-line"></div>
@@ -69,7 +74,10 @@
             $('.ae-img').animate({opacity: 'toggle'}, 250)
             $('.upper-line').toggleClass('menubefore-active')
             $('.lower-line').toggleClass('menuafter-active')
+            $('.logo').toggle()
           })
+
+
   </script>
 </body>
 </html>

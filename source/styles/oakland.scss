@@ -64,10 +64,9 @@
     }
     .menuafter-active {
       top:28px;
-      transform: rotate(45deg);
+      transform: rotate(-45deg);
       transition: all ease .35s 0s;
-    // animation: menuTopAnimate 1s ease-in;
-    }
+   }
 
     .nav-hit-cont {
       display: flex;
