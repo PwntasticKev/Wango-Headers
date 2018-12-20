@@ -11,17 +11,96 @@
 
 </head>
 <body>
-  <section>
-      <form action="/search/" method="GET" data-sv-searchform="" class="ae-form">
-        <input type="search" value="" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" class="searchInput ae-form-field" name="q" data-sv-searchinput="" data-ae-blurbtype="input">
+  <header>
+    <section class="main-section">
+      <form action="https://www.visitoakland.com/search/" method="GET" data-sv-searchform="" style='display: flex;'>
         <div class="search-btn" data-sv-searchbtn="" aria-hidden="true"><i class="fa fa-search" aria-hidden="true"></i></div>
-    </form>
-    <div class="logo"></div>
-    <div class="menu"></div>
-  </section>
+          <input class='mobile-search-input' type="search" style='display: none;' value="" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" class="searchInput ae-form-field" name="q" data-sv-searchinput="" data-ae-blurbtype="input">
+      </form>
+      <section class='menu-title-container'>
+      <div class="menu-title visit-oakland-menu">Visit Oakland</div>
+        <div class="pipe">|</div>
+        <div class="menu-title industry-menu">Industry</div>
+      </section>
+      <div class="logo standard-logo" data-sv-logo="" ><a href="https://www.visitoakland.com/"><img src="https://www.visitoakland.com/includes/public/assets/images/logo.svg"></a></div>
+      <div class="nav-hit-cont nav-right">
+        <div class="upper-line"></div>
+          <div class="nav-hit-inner">
+              <div class="nav-hit-hider">
+                  <img src="https://www.visitoakland.com/includes/public/assets/images/menu-text.svg" class="ae-img">
+              </div>
+          </div>
+          <div class="lower-line"></div>
+      </div>
+    </section>
+    <section style='display: flex;'>
+        <div class='trans' id="google_translate_element">
+            <i class="fa fa-globe" aria-hidden="true"></i>
+        </div>
+      <div style='display:flex' id="Weather"></div>
+    </section>
+    <!-- VISIT OAKLAND MENU -->
+    <ul class='oakland-menu-container' style='display: none;'>
+      <a href="https://www.visitoakland.com/things-to-do/"><li class='oakland-options'>Things To Do</li></a>
+      <a href='https://www.visitoakland.com/events/'><li class='oakland-options'>Events</li></a>
+      <a href='https://www.visitoakland.com/restaurants/'><li class='oakland-options'>Food & Drink</li></a>
+      <a href='https://www.visitoakland.com/stay/'><li class='oakland-options'>Stay</li></a>
+      <a href='https://www.visitoakland.com/plan/'><li class='oakland-options'>Trip Planning</li></a>
+      <a href='https://www.visitoakland.com/meet/'><li class='oakland-options'>Meetings & Groups</li></a>
+      <a href="http://www.youtube.com/visitoakland?sub_confirmation=1"><li class='oakland-options'>Oakland.TV</li></a>
+    </ul>
+    <!-- ↑ ↑ ↑ ↑ ↑ ↑ -->
+    
+    <!-- INDUSTRY MENU  -->
+    <ul class="industry-container-menu" style='display: none;'>
+        <a href="https://www.visitoakland.com/partners/"> </a><li class="oakland-options">Partners</li></a>
+        <a href="https://www.visitoakland.com/press/"> </a><li class="oakland-options">Press Room</li></a>
+        <a href="https://www.visitoakland.com/about/"> </a><li class="oakland-options">About</li></a>
+    </ul>
+    <!-- ↑ ↑ ↑ ↑ ↑ ↑ -->
 
+
+  </header>
+
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+    }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <script>
+
+ $('.nav-hit-cont').on('click',function() {
+            $('.ae-img').animate({opacity: 'toggle'}, 250)
+            $('.upper-line').toggleClass('menubefore-active')
+            $('.lower-line').toggleClass('menuafter-active')
+            $('.logo').toggle()
+            $('.visit-oakland-menu').addClass('menu-title-active') // adds blue line underneath
+            $('.menu-title-container').toggleClass('menu-title-container--active') //puts the container in flex.
+            $('.oakland-menu-container').toggle() //turns oakland menu on/off
+            $('.industry-menu').removeClass('menu-title-active') //removes blue line 
+          })
+
+          $('.visit-oakland-menu').on('click', function() {
+            $('.visit-oakland-menu').addClass('menu-title-active') //adds bue line
+            $('.industry-menu').removeClass('menu-title-active') ////removes bue line
+            $('.oakland-menu-container').show()
+            $('.industry-container-menu').hide()
+          })
+
+          $('.industry-menu').on('click', function() {
+            $('.industry-menu').addClass('menu-title-active') //adds blue lne
+            $('.visit-oakland-menu').removeClass('menu-title-active') //removes blue line
+            $('.oakland-menu-container').hide()
+            $('.industry-container-menu').show()
+          })
+
+          $('.fa-search').on('click',function() {
+            $('.mobile-search-input').animate({width:'toggle'}, 200)
+          })
+
+
      var Weather = function (options) {
             let _queryUri, _unit, _lat, _lnt
             _lnt = options.lnt
@@ -44,8 +123,8 @@
               $("#Weather").append(
                 $(`<div class="weather-container" style='display: flex;'>
           <i style='margin-right: 5px;' class="climacon i${ res.code }"></i>
-          <span class="weather-temp-container">
-          <b>${ res.temp}</b>
+          <span class="weather-temp-container" style='display: flex;'>
+          <b>${ res.temp }</b>
           <div>°</div>
           </span>
           </div>`
@@ -53,6 +132,7 @@
               )
             })
           )
+
   </script>
 </body>
 </html>
