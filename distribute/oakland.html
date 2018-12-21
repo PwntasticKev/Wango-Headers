@@ -69,7 +69,7 @@
     <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <script>
-
+  
  $('.nav-hit-cont').unbind('click').bind('click',function() {
             $('.ae-img').animate({opacity: 'toggle'}, 250)
             $('.upper-line').toggleClass('menubefore-active')
@@ -109,19 +109,19 @@
           })
 
 
-
-
-function changeGoogleStyles() {
-if(($goog = $('.goog-te-menu-frame').contents().find('body')).length) {
-var stylesHtml = '
-
-';
-$goog.prepend(stylesHtml);
+function changeIFrameStyles() {
+if($('.goog-te-menu-frame').contents().find('.goog-te-menu2').length) {
+$('.goog-te-menu-frame').contents().find('.goog-te-menu2').css({
+  'max-width':'100%',
+  'overflow':'scroll',
+  'box-sizing':'border-box',
+  'height':'auto'
+});
 } else {
-setTimeout(changeGoogleStyles, 50);
+setTimeout(changeIFrameStyles, 50);
 }
 }
-changeGoogleStyles();
+changeIFrameStyles();
 
 
      var Weather = function (options) {
