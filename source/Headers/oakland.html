@@ -109,6 +109,19 @@
           })
 
 
+function changeIFrameStyles() {
+if($('.goog-te-menu-frame').contents().find('.goog-te-menu2').length) {
+$('.goog-te-menu-frame').contents().find('.goog-te-menu2').css({
+'max-width':'100%',
+'overflow':'scroll',
+'box-sizing':'border-box',
+'height':'auto'
+});
+} else {
+setTimeout(changeIFrameStyles, 50);
+}
+}
+changeIFrameStyles();
 
 
 
