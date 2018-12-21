@@ -26,7 +26,7 @@
       <div class="nav-hit-cont nav-right">
         <div class="upper-line"></div>
           <div class="nav-hit-inner">
-              <div class="nav-hit-hider">
+              <div class="nav-hit-hider x">
                   <img src="https://www.visitoakland.com/includes/public/assets/images/menu-text.svg" class="ae-img">
               </div>
           </div>
@@ -40,7 +40,7 @@
       <div style='display:flex' id="Weather"></div>
     </section>
     <!-- VISIT OAKLAND MENU -->
-    <ul class='oakland-menu-container' style='display: none;'>
+    <ul class='oakland-menu-container'>
       <a href="https://www.visitoakland.com/things-to-do/"><li class='oakland-options'>Things To Do</li></a>
       <a href='https://www.visitoakland.com/events/'><li class='oakland-options'>Events</li></a>
       <a href='https://www.visitoakland.com/restaurants/'><li class='oakland-options'>Food & Drink</li></a>
@@ -50,12 +50,11 @@
       <a href="http://www.youtube.com/visitoakland?sub_confirmation=1"><li class='oakland-options'>Oakland.TV</li></a>
     </ul>
     <!-- ↑ ↑ ↑ ↑ ↑ ↑ -->
-    
     <!-- INDUSTRY MENU  -->
     <ul class="industry-container-menu" style='display: none;'>
-        <a href="https://www.visitoakland.com/partners/"> </a><li class="oakland-options">Partners</li></a>
-        <a href="https://www.visitoakland.com/press/"> </a><li class="oakland-options">Press Room</li></a>
-        <a href="https://www.visitoakland.com/about/"> </a><li class="oakland-options">About</li></a>
+        <a href="https://www.visitoakland.com/partners/"><li class="oakland-options">Partners</li></a>
+        <a href="https://www.visitoakland.com/press/"><li class="oakland-options">Press Room</li></a>
+        <a href="https://www.visitoakland.com/about/"><li class="oakland-options">About</li></a>
     </ul>
     <!-- ↑ ↑ ↑ ↑ ↑ ↑ -->
 
@@ -71,15 +70,19 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <script>
 
- $('.nav-hit-cont').on('click',function() {
+ $('.nav-hit-cont').unbind('click').bind('click',function() {
             $('.ae-img').animate({opacity: 'toggle'}, 250)
             $('.upper-line').toggleClass('menubefore-active')
             $('.lower-line').toggleClass('menuafter-active')
             $('.logo').toggle()
             $('.visit-oakland-menu').addClass('menu-title-active') // adds blue line underneath
             $('.menu-title-container').toggleClass('menu-title-container--active') //puts the container in flex.
-            $('.oakland-menu-container').toggle() //turns oakland menu on/off
+            $('.industry-container-menu').hide()
             $('.industry-menu').removeClass('menu-title-active') //removes blue line 
+             if ($('.oakland-menu-container').hasClass('oakland-active')) { 
+                  $('.oakland-menu-container').removeClass('oakland-active'); 
+               }
+                else { $('.oakland-menu-container').addClass('oakland-active');}//turns oakland menu on/off
           })
 
           $('.visit-oakland-menu').on('click', function() {

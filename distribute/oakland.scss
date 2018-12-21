@@ -116,8 +116,13 @@
     color: #1d1d1d;
   }
 
-  .menu-title-continer {
+  .menu-title-container {
     display: none;
+  }
+  .menu-title-container--active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 
   .menu-title-active {
@@ -163,6 +168,10 @@
     display: none;
   }
 
+  .weather-container {
+    padding-left: 13px;
+  }
+
   .goog-te-gadget-simple {
     position: relative;
     height: 32px;
@@ -171,13 +180,11 @@
     display: -webkit-box !important;
     display: -ms-flexbox !important;
     display: flex !important;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
     outline: none;
+    padding-left:10px;
   }
 
   .goog-te-gadget-simple .goog-te-menu-value span:nth-of-type(3){
@@ -203,8 +210,16 @@
       line-height: 1.4;
       color: #1d1d1d;
       text-align: left;
-      padding: 6px 5px 6px 0px;
+      // padding: 6px 5px 6px 0px;
       -webkit-transition: all .2s ease;
       transition: all .2s ease;
     }
+  }
+
+  .industry-container-menu {
+    display: none;
+  }
+
+  .menu--active {
+    display: block;
   }

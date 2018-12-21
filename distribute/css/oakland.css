@@ -251,6 +251,7 @@
 
 /*/ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑*/
 .oakland-menu-container {
+  display: none;
   padding-left: 15px; }
   .oakland-menu-container a {
     text-decoration: none; }
@@ -262,6 +263,23 @@
     color: #1d1d1d;
     text-align: left;
     transition: all .2s ease; }
+
+.industry-container-menu {
+  padding-left: 15px; }
+  .industry-container-menu a {
+    text-decoration: none; }
+  .industry-container-menu .oakland-options {
+    font-family: 'Helvetica Neue LT W01_71488914', Arial, Helvetica, sans-serif;
+    font-size: 27px;
+    font-weight: 900;
+    line-height: 1.4;
+    color: #1d1d1d;
+    text-align: left;
+    transition: all .2s ease; }
+
+.oakland-active, .industry-active {
+  display: flex;
+  flex-direction: column; }
 
 .industry-container-menu {
   display: none; }
