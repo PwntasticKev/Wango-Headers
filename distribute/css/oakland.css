@@ -257,12 +257,10 @@
   opacity: 0; }
 
 .goog-te-menu-frame {
-  max-width: 100% !important;
-  width: 100%; }
+  max-width: 100% !important; }
 
 .goog-te-menu2 {
   max-width: 100% !important;
-  width: 100%;
   overflow: scroll !important;
   box-sizing: border-box !important;
   height: auto !important; }

@@ -170,12 +170,10 @@
 }
 
 .goog-te-menu-frame {
-  max-width:100% !important;
-  width:100%; //or whatever width you want
+  max-width:100% !important; //or whatever width you want
   }
   .goog-te-menu2 { //the element that contains the table of options
   max-width: 100% !important;
-  width:100%;
   overflow: scroll !important;
   box-sizing:border-box !important; //fixes a padding issue
   height:auto !important; //gets rid of vertical scroll caused by box-sizing
