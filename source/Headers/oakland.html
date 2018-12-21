@@ -51,7 +51,7 @@
     </ul>
     <!-- ↑ ↑ ↑ ↑ ↑ ↑ -->
     <!-- INDUSTRY MENU  -->
-    <ul class="industry-container-menu" style='display: none;'>
+    <ul class="industry-container-menu">
         <a href="https://www.visitoakland.com/partners/"><li class="oakland-options">Partners</li></a>
         <a href="https://www.visitoakland.com/press/"><li class="oakland-options">Press Room</li></a>
         <a href="https://www.visitoakland.com/about/"><li class="oakland-options">About</li></a>
@@ -82,21 +82,24 @@
              if ($('.oakland-menu-container').hasClass('oakland-active')) { 
                   $('.oakland-menu-container').removeClass('oakland-active'); 
                }
+               else if ($('.industry-container-menu').hasClass('industry-active')) {
+                $('.industry-container-menu').removeClass('industry-active');
+               }
                 else { $('.oakland-menu-container').addClass('oakland-active');}//turns oakland menu on/off
           })
 
           $('.visit-oakland-menu').on('click', function() {
             $('.visit-oakland-menu').addClass('menu-title-active') //adds bue line
             $('.industry-menu').removeClass('menu-title-active') ////removes bue line
-            $('.oakland-menu-container').show()
-            $('.industry-container-menu').hide()
+            $('.oakland-menu-container').addClass('oakland-active');
+            $('.industry-container-menu').removeClass('industry-active');
           })
 
           $('.industry-menu').on('click', function() {
             $('.industry-menu').addClass('menu-title-active') //adds blue lne
             $('.visit-oakland-menu').removeClass('menu-title-active') //removes blue line
-            $('.oakland-menu-container').hide()
-            $('.industry-container-menu').show()
+            $('.industry-container-menu').addClass('industry-active');
+            $('.oakland-menu-container').removeClass('oakland-active')
             
           })
 
