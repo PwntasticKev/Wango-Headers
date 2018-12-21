@@ -7,6 +7,9 @@
   transition: all 0.5s ease 0s;
   padding: 0 30px;
   align-items: center;
+  @media(min-width: 768px) {
+    padding-left: 15px;
+  }
 
 }
     .logo {
@@ -121,6 +124,9 @@
   .lang-weather-container {
     display: none;
     padding: 0 20px;
+    @media(min-width: 768px) {
+      width: 35%;
+    }
   }
   
   .lang-weather-container--active {
@@ -140,6 +146,9 @@
     top: 10px;
     left:5px;
     z-index: 200;
+    @media(min-width: 768px) {
+      left: -4px;
+    }
   }
   
   .goog-te-gadget img {
@@ -159,6 +168,9 @@
     align-items: center;
     outline: none;
     padding-left:10px;
+    @media(min-width: 768px) {
+      padding-left: 0;
+    }
   }
 
   .goog-te-gadget-simple .goog-te-menu-value span:nth-of-type(3){
@@ -194,6 +206,9 @@
       color: #1d1d1d;
       text-align: left;
       transition: all .2s ease;
+      @media(min-width:768px){
+        font-size: 23px;
+      }
     }
   }
 

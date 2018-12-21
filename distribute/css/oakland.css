@@ -119,6 +119,9 @@
   transition: all 0.5s ease 0s;
   padding: 0 30px;
   align-items: center; }
+  @media (min-width: 768px) {
+    .main-section {
+      padding-left: 15px; } }
 
 .logo a img {
   max-width: 125px;
@@ -218,6 +221,9 @@
 .lang-weather-container {
   display: none;
   padding: 0 20px; }
+  @media (min-width: 768px) {
+    .lang-weather-container {
+      width: 35%; } }
 
 .lang-weather-container--active {
   display: flex; }
@@ -232,6 +238,9 @@
   top: 10px;
   left: 5px;
   z-index: 200; }
+  @media (min-width: 768px) {
+    .fa-globe {
+      left: -4px; } }
 
 .goog-te-gadget img {
   display: none; }
@@ -248,6 +257,9 @@
   align-items: center;
   outline: none;
   padding-left: 10px; }
+  @media (min-width: 768px) {
+    .goog-te-gadget-simple {
+      padding-left: 0; } }
 
 .goog-te-gadget-simple .goog-te-menu-value span:nth-of-type(3) {
   position: absolute;
@@ -279,6 +291,9 @@
     color: #1d1d1d;
     text-align: left;
     transition: all .2s ease; }
+    @media (min-width: 768px) {
+      .oakland-menu-container .oakland-options {
+        font-size: 23px; } }
 
 .industry-container-menu {
   padding-left: 15px; }
