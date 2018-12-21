@@ -103,6 +103,7 @@
   }
 
   .mobile-search-input {
+    display: none;
     position: absolute;
     z-index: 20;
     left: 60px;
@@ -110,6 +111,15 @@
     height: 26px;
     background: white;
     border: 1px solid lightgray;
+    @media (min-width:768px) {
+      display:block;
+      border:none;
+      border-bottom: 1px solid lightgray;
+      left: 33px;
+      top: 11px;
+      padding:19px;
+      outline:none;
+    }
   }
 
   
@@ -127,10 +137,29 @@
     @media(min-width: 768px) {
       width: 35%;
     }
+    @media(min-width: 1024px) {
+      display: none;
+    }
   }
+
+  .lang-weather-container-desktop {
+    display: none;
+    // padding: 0 20px;
+    @media(min-width: 768px) {
+      width: 35%;
+    }
+    @media(min-width: 1025px) {
+      display: flex;
+    }
+  }
+
+ 
   
   .lang-weather-container--active {
     display: flex;
+    @media(min-width:1024px) {
+      display: none;
+    }
   }
 
   // G O O G L E   T R A N S L A T E 
@@ -197,6 +226,10 @@
   .oakland-menu-container {
     display: none;
     padding-left: 15px;
+    background: white;
+    display: none;
+    height: 100vh;
+    opacity: .8;
     a{text-decoration: none;}
     .oakland-options {
       font-family: 'Helvetica Neue LT W01_71488914', Arial, Helvetica, sans-serif;
@@ -214,6 +247,10 @@
 
   .industry-container-menu {
     padding-left: 15px;
+    background: white;
+    display: none;
+    height: 100vh;
+    opacity: .8;
     a{text-decoration: none;}
     .oakland-options {
       font-family: 'Helvetica Neue LT W01_71488914', Arial, Helvetica, sans-serif;

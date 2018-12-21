@@ -203,6 +203,7 @@
   border-bottom: 2px solid #0498d9; }
 
 .mobile-search-input {
+  display: none;
   position: absolute;
   z-index: 20;
   left: 60px;
@@ -210,6 +211,15 @@
   height: 26px;
   background: white;
   border: 1px solid lightgray; }
+  @media (min-width: 768px) {
+    .mobile-search-input {
+      display: block;
+      border: none;
+      border-bottom: 1px solid lightgray;
+      left: 33px;
+      top: 11px;
+      padding: 19px;
+      outline: none; } }
 
 #Weather {
   font-family: 'Helvetica Neue LT W01_71488914', Arial, Helvetica, sans-serif;
@@ -224,9 +234,24 @@
   @media (min-width: 768px) {
     .lang-weather-container {
       width: 35%; } }
+  @media (min-width: 1024px) {
+    .lang-weather-container {
+      display: none; } }
+
+.lang-weather-container-desktop {
+  display: none; }
+  @media (min-width: 768px) {
+    .lang-weather-container-desktop {
+      width: 35%; } }
+  @media (min-width: 1025px) {
+    .lang-weather-container-desktop {
+      display: flex; } }
 
 .lang-weather-container--active {
   display: flex; }
+  @media (min-width: 1024px) {
+    .lang-weather-container--active {
+      display: none; } }
 
 .trans {
   width: 50%;
@@ -280,7 +305,11 @@
 /*/ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ */
 .oakland-menu-container {
   display: none;
-  padding-left: 15px; }
+  padding-left: 15px;
+  background: white;
+  display: none;
+  height: 100vh;
+  opacity: .8; }
   .oakland-menu-container a {
     text-decoration: none; }
   .oakland-menu-container .oakland-options {
@@ -296,7 +325,11 @@
         font-size: 23px; } }
 
 .industry-container-menu {
-  padding-left: 15px; }
+  padding-left: 15px;
+  background: white;
+  display: none;
+  height: 100vh;
+  opacity: .8; }
   .industry-container-menu a {
     text-decoration: none; }
   .industry-container-menu .oakland-options {
