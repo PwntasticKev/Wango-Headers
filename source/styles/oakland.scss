@@ -117,7 +117,15 @@
     color: #1d1d1d;
     letter-spacing: -0.08em;
   }
+
+  .lang-weather-container {
+    display: none;
+    padding: 0 20px;
+  }
   
+  .lang-weather-container--active {
+    display: flex;
+  }
 
   // GOOGLE TRANSLATE
   
@@ -160,6 +168,20 @@
   .goog-te-gadget-simple .goog-te-menu-value span:nth-of-type(2){
     opacity: 0;
 }
+
+.goog-te-menu-frame {
+  max-width:100% !important;
+  width:100%; //or whatever width you want
+  }
+  .goog-te-menu2 { //the element that contains the table of options
+  max-width: 100% !important;
+  width:100%;
+  overflow: scroll !important;
+  box-sizing:border-box !important; //fixes a padding issue
+  height:auto !important; //gets rid of vertical scroll caused by box-sizing
+  }
+
+
   /*/ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑*/
 
   // OAKLAND-MENU--CSS

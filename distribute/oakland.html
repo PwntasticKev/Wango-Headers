@@ -33,7 +33,7 @@
           <div class="lower-line"></div>
       </div>
     </section>
-    <section style='display: flex;'>
+    <section class='lang-weather-container' >
         <div class='trans' id="google_translate_element">
             <i class="fa fa-globe" aria-hidden="true"></i>
         </div>
@@ -75,6 +75,7 @@
             $('.upper-line').toggleClass('menubefore-active')
             $('.lower-line').toggleClass('menuafter-active')
             $('.logo').toggle()
+            $('.lang-weather-container').toggleClass('lang-weather-container--active')
             $('.visit-oakland-menu').addClass('menu-title-active') // adds blue line underneath
             $('.menu-title-container').toggleClass('menu-title-container--active') //puts the container in flex.
             $('.industry-container-menu').hide()
