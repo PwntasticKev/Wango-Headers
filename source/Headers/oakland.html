@@ -159,8 +159,8 @@ changeIFrameStyles();
             ) {
               $("#Weather").append(
                 $(`<div class="weather-container" style='display: flex; font-weight: bold;'>
-          <i style='margin-right: 5px;' class="climacon i${ res.code }"></i>
-          <span class="weather-temp-container" style='display: flex;'>
+          <i style='margin-right: 5px; color: lightblue;' class="climacon i${ res.code }"></i>
+          <span class="weather-temp-container" style='display: flex; '>
           <b>${ res.temp }</b>
           <div>°</div>
           </span>
@@ -169,6 +169,17 @@ changeIFrameStyles();
               )
             })
           )
+
+					  $(document).ready(function(){
+    $('#google_translate_element').bind('DOMNodeInserted', function(event) {
+      $('.goog-te-menu-value span:first').html('English');
+      $('.goog-te-menu-frame.skiptranslate').load(function(){
+        setTimeout(function(){
+          $('.goog-te-menu-frame.skiptranslate').contents().find('.goog-te-menu2-item-selected .text').html('English');    
+        }, 100);
+      });
+    });
+  });
 
   </script>
 </body>
