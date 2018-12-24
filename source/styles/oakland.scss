@@ -16,6 +16,10 @@
       a img{
         max-width: 125px;
         max-height: 40px;
+        @media(min-width:1025px) {
+          max-width: 165px;
+          max-height: 50px;
+        }
      }
     }
 
@@ -122,7 +126,6 @@
     }
   }
 
-  
   #Weather {
     font-family: 'Helvetica Neue LT W01_71488914', Arial, Helvetica, sans-serif;
     font-size: 25px;
@@ -141,7 +144,7 @@
       display: flex;
       position: absolute;
       top: 11px;
-      right: -38px;
+      right: -85px;
     }
   }
 
@@ -161,6 +164,9 @@
     width:50%;
     position: relative;
     padding-left: 15px;
+    @media(min-width:1025px) {
+      width:35%;
+    }
   }
 
   .fa-globe {

@@ -126,6 +126,10 @@
 .logo a img {
   max-width: 125px;
   max-height: 40px; }
+  @media (min-width: 1025px) {
+    .logo a img {
+      max-width: 165px;
+      max-height: 50px; } }
 
 .nav-hit-hider {
   width: 23px;
@@ -239,7 +243,7 @@
       display: flex;
       position: absolute;
       top: 11px;
-      right: -38px; } }
+      right: -85px; } }
 
 .lang-weather-container--active {
   display: flex; }
@@ -251,6 +255,9 @@
   width: 50%;
   position: relative;
   padding-left: 15px; }
+  @media (min-width: 1025px) {
+    .trans {
+      width: 35%; } }
 
 .fa-globe {
   position: absolute;
