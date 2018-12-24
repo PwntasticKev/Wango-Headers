@@ -1,4 +1,4 @@
-@import './climacons.scss';
+// @import './climacons.scss';
 // M A I N   M O B I L E   M E N U 
 .main-section {
   display: flex;
@@ -31,6 +31,9 @@
     .nav-hit-hider {
       width: 23px;
       height: 26px;
+      @media(min-width: 1025px) {
+        width: 30px;
+      }
     }
     
     .ae-img {
@@ -171,11 +174,8 @@
       top: 11px;
       right: -85px;
     }
-    @media(min-width:1275px) {
-      width: 27%;
-    }
-    @media(min-width:1475px) {
-      width: 23%;
+    @media(min-width:1400px) {
+      width: 32%;
     }
   }
 
