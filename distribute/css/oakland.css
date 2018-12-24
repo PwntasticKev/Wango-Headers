@@ -1,117 +1,4 @@
 @charset "UTF-8";
-@font-face {
-  font-family: 'sv-Climacons';
-  src: url("../fonts/climacons/sv_climacons_webfont.eot");
-  src: url("../fonts/climacons/sv_climacons_webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/climacons/sv_climacons_webfont.svg#Climacons-Font") format("svg"), url("../fonts/climacons/sv_climacons_webfont.woff") format("woff"), url("../fonts/climacons/sv_climacons_webfont.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal; }
-
-.climacon:before {
-  font-family: 'sv-climacons';
-  speak: none;
-  font-size: inherit;
-  font-style: normal;
-  font-weight: normal;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased; }
-
-.climacon.i26:before {
-  content: "\e000"; }
-
-.climacon.i28:before,
-.climacon.i30:before,
-.climacon.i44:before {
-  /*cloud sun / partly cloudy day*/
-  content: "\e001"; }
-
-.climacon.i29:before,
-.climacon.i27:before {
-  /*cloud moon / partly cloudy (night)*/
-  content: "\e002"; }
-
-.climacon.i9:before,
-.climacon.i11:before,
-.climacon.i12:before,
-.climacon.i40:before {
-  /*rain cloud*/
-  content: "\e003"; }
-
-.climacon.i32:before,
-.climacon.i34:before {
-  content: "\e028"; }
-
-.climacon.i3200:before {
-  content: "\00d8";
-  font-weight: 700; }
-
-.climacon.i8:before,
-.climacon.i10:before {
-  content: "\e00c"; }
-
-.climacon.i6:before,
-.climacon.i7:before,
-.climacon.i18:before {
-  content: "\e010"; }
-
-.climacon.i17:before,
-.climacon.i35:before {
-  content: "\e013"; }
-
-.climacon.i5:before {
-  content: "\e004"; }
-
-.climacon.i13:before,
-.climacon.i14:before,
-.climacon.i15:before,
-.climacon.i16:before,
-.climacon.i41:before,
-.climacon.i42:before,
-.climacon.i43:before,
-.climacon.i46:before {
-  content: "\e018"; }
-
-.climacon.i20:before {
-  content: "\e01b"; }
-
-.climacon.i21:before,
-.climacon.i22:before,
-.climacon.i23:before {
-  content: "\e01f"; }
-
-.climacon.i24:before {
-  content: "\e021"; }
-
-.climacon.i2:before {
-  content: "\e022"; }
-
-.climacon.i19:before {
-  content: "\e023"; }
-
-.climacon.i3:before,
-.climacon.i4:before,
-.climacon.i37:before,
-.climacon.i38:before,
-.climacon.i39:before,
-.climacon.i45:before,
-.climacon.i47:before {
-  content: "\e025"; }
-
-.climacon.i31:before,
-.climacon.i33:before {
-  content: "\e02d"; }
-
-.climacon.i0:before {
-  content: "\e037"; }
-
-.climacon.i25:before {
-  content: "\e03a"; }
-
-.climacon.i36:before {
-  content: "\e03d"; }
-
-.climacon.i1:before {
-  content: "\e00a"; }
-
 .main-section {
   display: flex;
   justify-content: space-between;
@@ -119,18 +6,38 @@
   transition: all 0.5s ease 0s;
   padding: 0 30px;
   align-items: center; }
+  @media (min-width: 768px) {
+    .main-section {
+      padding-left: 15px; } }
+  @media (min-width: 1025px) {
+    .main-section {
+      padding: 0 47px; } }
 
 .logo a img {
   max-width: 125px;
   max-height: 40px; }
+  @media (min-width: 1025px) {
+    .logo a img {
+      max-width: 185px;
+      width: 185px;
+      max-height: 80px;
+      padding-top: 10px; } }
 
 .nav-hit-hider {
   width: 23px;
   height: 26px; }
+  @media (min-width: 1025px) {
+    .nav-hit-hider {
+      width: 30px; } }
 
 .ae-img {
   width: 24px;
   opacity: 1; }
+  @media (min-width: 1025px) {
+    .ae-img {
+      width: 35px;
+      left: -2px;
+      position: absolute; } }
 
 .nav-hit-inner {
   transition: all ease .35s 0s; }
@@ -139,10 +46,14 @@
   content: "";
   transform: rotate(0deg);
   height: 2px;
-  top: 11px;
+  top: -1px;
   width: 24px;
   position: absolute;
   background: #1d1d1d; }
+  @media (min-width: 1025px) {
+    .upper-line {
+      width: 35px;
+      left: -2px; } }
 
 .lower-line {
   content: "";
@@ -150,45 +61,46 @@
   position: absolute;
   height: 2px;
   background: #1d1d1d;
-  top: 43px;
+  top: 32px;
   transition: all ease .35s 0s; }
-
-@keyframes menuTopAnimate {
-  0% {
-    top: 11px;
-    transform: rotate(0deg); }
-  10% {
-    top: 28px; }
-  50% { }
-  100% {
-    transform: rotate(45deg);
-    top: 28px; } }
+  @media (min-width: 1025px) {
+    .lower-line {
+      width: 35px;
+      top: 40px;
+      left: -2px; } }
 
 .menubefore-active {
-  top: 28px;
+  top: 13px;
   transform: rotate(45deg);
   transition: all ease .35s 0s; }
 
 .menuafter-active {
-  top: 28px;
+  top: 13px;
   transform: rotate(-45deg);
   transition: all ease .35s 0s; }
 
 .nav-hit-cont {
   display: flex;
+  position: relative;
   align-items: center;
   cursor: pointer;
   width: 24px;
   z-index: 2;
   height: 34px;
   transition: all ease .35s .35s; }
+  @media (min-width: 1025px) {
+    .nav-hit-cont {
+      width: 35px; } }
 
 .pipe {
   margin: 0 8px; }
 
 .menu-title {
   background-color: transparent;
-  color: #1d1d1d; }
+  color: #1d1d1d;
+  font-weight: bold;
+  padding-bottom: 3px;
+  cursor: pointer; }
 
 .menu-title-container {
   display: none; }
@@ -200,13 +112,32 @@
   border-bottom: 2px solid #0498d9; }
 
 .mobile-search-input {
+  display: none;
   position: absolute;
   z-index: 20;
   left: 60px;
   top: 16px;
   height: 26px;
+  cursor: pointer;
   background: white;
   border: 1px solid lightgray; }
+  @media (min-width: 768px) {
+    .mobile-search-input {
+      display: block;
+      border: none;
+      border-bottom: 1px solid lightgray;
+      left: 33px;
+      top: 11px;
+      padding: 19px;
+      outline: none; } }
+  @media (min-width: 1025px) {
+    .mobile-search-input {
+      left: 84px;
+      font-size: 15px;
+      padding-left: 0; } }
+
+.search-btn {
+  font-size: 19px; }
 
 #Weather {
   font-family: 'Helvetica Neue LT W01_71488914', Arial, Helvetica, sans-serif;
@@ -215,16 +146,45 @@
   color: #1d1d1d;
   letter-spacing: -0.08em; }
 
+.lang-weather-container {
+  display: none;
+  padding: 0 20px; }
+  @media (min-width: 768px) {
+    .lang-weather-container {
+      width: 35%; } }
+  @media (min-width: 1024px) {
+    .lang-weather-container {
+      display: flex;
+      position: absolute;
+      top: 11px;
+      right: -85px; } }
+  @media (min-width: 1400px) {
+    .lang-weather-container {
+      width: 35%;
+      right: -118px; } }
+
+.lang-weather-container--active {
+  display: flex; }
+  @media (min-width: 1024px) {
+    .lang-weather-container--active {
+      display: none; } }
+
 .trans {
   width: 50%;
   position: relative;
   padding-left: 15px; }
+  @media (min-width: 1025px) {
+    .trans {
+      width: 35%; } }
 
 .fa-globe {
   position: absolute;
   top: 10px;
   left: 5px;
   z-index: 200; }
+  @media (min-width: 768px) {
+    .fa-globe {
+      left: -4px; } }
 
 .goog-te-gadget img {
   display: none; }
@@ -241,6 +201,9 @@
   align-items: center;
   outline: none;
   padding-left: 10px; }
+  @media (min-width: 768px) {
+    .goog-te-gadget-simple {
+      padding-left: 0; } }
 
 .goog-te-gadget-simple .goog-te-menu-value span:nth-of-type(3) {
   position: absolute;
@@ -249,9 +212,23 @@
 .goog-te-gadget-simple .goog-te-menu-value span:nth-of-type(2) {
   opacity: 0; }
 
-/*/ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑*/
+.goog-te-menu-frame {
+  max-width: 100% !important; }
+
+@media (min-width: 768px) {
+  .goog-te-menu2 {
+    max-width: 100% !important;
+    overflow: scroll !important;
+    box-sizing: border-box !important;
+    height: auto !important; } }
+
+/*/ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ */
 .oakland-menu-container {
-  padding-left: 15px; }
+  display: none;
+  padding-left: 15px;
+  background: white;
+  display: none;
+  height: 100vh; }
   .oakland-menu-container a {
     text-decoration: none; }
   .oakland-menu-container .oakland-options {
@@ -262,9 +239,41 @@
     color: #1d1d1d;
     text-align: left;
     transition: all .2s ease; }
+    @media (min-width: 768px) {
+      .oakland-menu-container .oakland-options {
+        font-size: 23px; } }
+    @media (min-width: 1025px) {
+      .oakland-menu-container .oakland-options {
+        font-size: 40px;
+        padding-left: 45px; } }
+
+.industry-container-menu {
+  padding-left: 15px;
+  background: white;
+  display: none;
+  height: 100vh;
+  opacity: .8; }
+  .industry-container-menu a {
+    text-decoration: none; }
+  .industry-container-menu .oakland-options {
+    font-family: 'Helvetica Neue LT W01_71488914', Arial, Helvetica, sans-serif;
+    font-size: 27px;
+    font-weight: 900;
+    line-height: 1.4;
+    color: #1d1d1d;
+    text-align: left;
+    transition: all .2s ease; }
+
+.oakland-active {
+  display: flex;
+  flex-direction: column; }
 
 .industry-container-menu {
   display: none; }
+
+.industry-active {
+  display: flex !important;
+  flex-direction: column; }
 
 .menu--active {
   display: block; }

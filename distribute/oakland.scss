@@ -1,5 +1,5 @@
 @import './climacons.scss';
-// MAIN MOBILE MENU
+// M A I N   M O B I L E   M E N U 
 .main-section {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -14,12 +14,20 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  @media(min-width: 768px) {
+    padding-left: 15px;
+  }
 
 }
     .logo {
       a img{
         max-width: 125px;
         max-height: 40px;
+        @media(min-width:1025px) {
+          max-width: 165px;
+          width:165px;
+          max-height: 50px;
+        }
      }
     }
 
@@ -107,6 +115,7 @@
       transition: all ease .35s .35s;
   }
 
+
   .pipe {
     margin: 0 8px;
   }
@@ -116,8 +125,13 @@
     color: #1d1d1d;
   }
 
-  .menu-title-continer {
+  .menu-title-container {
     display: none;
+  }
+  .menu-title-container--active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 
   .menu-title-active {
@@ -125,6 +139,7 @@
   }
 
   .mobile-search-input {
+    display: none;
     position: absolute;
     z-index: 20;
     left: 60px;
@@ -132,9 +147,17 @@
     height: 26px;
     background: white;
     border: 1px solid lightgray;
+    @media (min-width:768px) {
+      display:block;
+      border:none;
+      border-bottom: 1px solid lightgray;
+      left: 33px;
+      top: 11px;
+      padding:19px;
+      outline:none;
+    }
   }
 
-  
   #Weather {
     font-family: 'Helvetica Neue LT W01_71488914', Arial, Helvetica, sans-serif;
     font-size: 25px;
@@ -142,14 +165,44 @@
     color: #1d1d1d;
     letter-spacing: -0.08em;
   }
-  
 
-  // GOOGLE TRANSLATE
+  .lang-weather-container {
+    display: none;
+    padding: 0 20px;
+    @media(min-width: 768px) {
+      width: 35%;
+    }
+    @media(min-width: 1024px) {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      position: absolute;
+      top: 11px;
+      right: -85px;
+    }
+  }
+
+
+ 
+  
+  .lang-weather-container--active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    @media(min-width:1024px) {
+      display: none;
+    }
+  }
+
+  // G O O G L E   T R A N S L A T E 
   
   .trans {
     width:50%;
     position: relative;
     padding-left: 15px;
+    @media(min-width:1025px) {
+      width:35%;
+    }
   }
 
   .fa-globe {
@@ -157,10 +210,17 @@
     top: 10px;
     left:5px;
     z-index: 200;
+    @media(min-width: 768px) {
+      left: -4px;
+    }
   }
   
   .goog-te-gadget img {
     display: none;
+  }
+
+  .weather-container {
+    padding-left: 13px;
   }
 
   .goog-te-gadget-simple {
@@ -171,13 +231,14 @@
     display: -webkit-box !important;
     display: -ms-flexbox !important;
     display: flex !important;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
     outline: none;
+    padding-left:10px;
+    @media(min-width: 768px) {
+      padding-left: 0;
+    }
   }
 
   .goog-te-gadget-simple .goog-te-menu-value span:nth-of-type(3){
@@ -187,24 +248,89 @@
   .goog-te-gadget-simple .goog-te-menu-value span:nth-of-type(2){
     opacity: 0;
 }
-  /*/ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑*/
 
-  // OAKLAND-MENU--CSS
+.goog-te-menu-frame {
+  max-width:100% !important; 
+  }
+  .goog-te-menu2 { 
+@media(min-width:768px){
+  max-width: 100% !important;
+  overflow: scroll !important;
+  -webkit-box-sizing:border-box !important;
+  box-sizing:border-box !important;
+  height:auto !important;
+  
+}
+}
+  /*/ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ */
+
+  // O A K L A N D - M E N U - - C S S
 
   .oakland-menu-container {
+    display: none;
     padding-left: 15px;
+    background: white;
+    display: none;
+    height: 100vh;
+    opacity: .8;
     a{text-decoration: none;}
     .oakland-options {
       font-family: 'Helvetica Neue LT W01_71488914', Arial, Helvetica, sans-serif;
-      // font-size: 40px;
       font-size:27px;
       font-weight: 900;
-      // font-weight: normal;
       line-height: 1.4;
       color: #1d1d1d;
       text-align: left;
-      padding: 6px 5px 6px 0px;
+      -webkit-transition: all .2s ease;
+      transition: all .2s ease;
+      @media(min-width:768px){
+        font-size: 23px;
+      }
+    }
+  }
+
+  .industry-container-menu {
+    padding-left: 15px;
+    background: white;
+    display: none;
+    height: 100vh;
+    opacity: .8;
+    a{text-decoration: none;}
+    .oakland-options {
+      font-family: 'Helvetica Neue LT W01_71488914', Arial, Helvetica, sans-serif;
+      font-size:27px;
+      font-weight: 900;
+      line-height: 1.4;
+      color: #1d1d1d;
+      text-align: left;
       -webkit-transition: all .2s ease;
       transition: all .2s ease;
     }
+  }
+
+  .oakland-active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .industry-container-menu {
+    display: none;
+  }
+
+  .industry-active {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .menu--active {
+    display: block;
   }
