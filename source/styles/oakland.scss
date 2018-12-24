@@ -10,6 +10,9 @@
   @media(min-width: 768px) {
     padding-left: 15px;
   }
+  @media(min-width: 1025px) {
+    padding:0 47px;
+  }
 
 }
     .logo {
@@ -17,8 +20,10 @@
         max-width: 125px;
         max-height: 40px;
         @media(min-width:1025px) {
-          max-width: 165px;
-          max-height: 50px;
+          max-width: 185px;
+          width:185px;
+          max-height: 80px;
+          padding-top: 10px;
         }
      }
     }
@@ -31,6 +36,9 @@
     .ae-img {
       width:24px;
       opacity:1;
+      @media(min-width:1025px) {
+        width:35px;
+      }
     }
 
     .nav-hit-inner {
@@ -45,6 +53,9 @@
       width:24px;
       position: absolute;
       background: #1d1d1d;
+      @media(min-width:1025px) {
+        width: 35px;
+      }
     }
     .lower-line {
       content: "";
@@ -54,20 +65,18 @@
       background: #1d1d1d;
       top: 43px;
       transition: all ease .35s 0s;
+      @media(min-width:1025px) {
+        width: 35px;
+        top:52px;
+      }
     }
 
-    @keyframes menuTopAnimate {
-      0% { top: 11px; transform: rotate(0deg); }
-      10% { top: 28px; }
-      50%{}
-      100%{ transform: rotate(45deg); top:28px;}
-    }
+
 
     .menubefore-active {
       top:28px;
       transform: rotate(45deg);
       transition: all ease .35s 0s;
-    // animation: menuTopAnimate 1s ease-in;
     }
     .menuafter-active {
       top:28px;
@@ -83,6 +92,9 @@
       z-index: 2;
       height: 34px;
       transition: all ease .35s .35s;
+      @media(min-width:1025px) {
+        width: 35px;
+      }
   }
 
 
@@ -123,6 +135,9 @@
       top: 11px;
       padding:19px;
       outline:none;
+    }
+    @media (min-width: 1025px) {
+    left:86px;
     }
   }
 
@@ -210,14 +225,17 @@
 }
 
 .goog-te-menu-frame {
-  max-width:100% !important; //or whatever width you want
+  max-width:100% !important; 
   }
-  .goog-te-menu2 { //the element that contains the table of options
+  .goog-te-menu2 { 
+@media(min-width:768px){
   max-width: 100% !important;
   overflow: scroll !important;
-  box-sizing:border-box !important; //fixes a padding issue
-  height:auto !important; //gets rid of vertical scroll caused by box-sizing
-  }
+  box-sizing:border-box !important;
+  height:auto !important;
+  
+}
+}
   /*/ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ */
 
   // O A K L A N D - M E N U - - C S S

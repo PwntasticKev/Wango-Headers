@@ -122,14 +122,19 @@
   @media (min-width: 768px) {
     .main-section {
       padding-left: 15px; } }
+  @media (min-width: 1025px) {
+    .main-section {
+      padding: 0 47px; } }
 
 .logo a img {
   max-width: 125px;
   max-height: 40px; }
   @media (min-width: 1025px) {
     .logo a img {
-      max-width: 165px;
-      max-height: 50px; } }
+      max-width: 185px;
+      width: 185px;
+      max-height: 80px;
+      padding-top: 10px; } }
 
 .nav-hit-hider {
   width: 23px;
@@ -138,6 +143,9 @@
 .ae-img {
   width: 24px;
   opacity: 1; }
+  @media (min-width: 1025px) {
+    .ae-img {
+      width: 35px; } }
 
 .nav-hit-inner {
   transition: all ease .35s 0s; }
@@ -150,6 +158,9 @@
   width: 24px;
   position: absolute;
   background: #1d1d1d; }
+  @media (min-width: 1025px) {
+    .upper-line {
+      width: 35px; } }
 
 .lower-line {
   content: "";
@@ -159,17 +170,10 @@
   background: #1d1d1d;
   top: 43px;
   transition: all ease .35s 0s; }
-
-@keyframes menuTopAnimate {
-  0% {
-    top: 11px;
-    transform: rotate(0deg); }
-  10% {
-    top: 28px; }
-  50% { }
-  100% {
-    transform: rotate(45deg);
-    top: 28px; } }
+  @media (min-width: 1025px) {
+    .lower-line {
+      width: 35px;
+      top: 52px; } }
 
 .menubefore-active {
   top: 28px;
@@ -189,6 +193,9 @@
   z-index: 2;
   height: 34px;
   transition: all ease .35s .35s; }
+  @media (min-width: 1025px) {
+    .nav-hit-cont {
+      width: 35px; } }
 
 .pipe {
   margin: 0 8px; }
@@ -224,6 +231,9 @@
       top: 11px;
       padding: 19px;
       outline: none; } }
+  @media (min-width: 1025px) {
+    .mobile-search-input {
+      left: 86px; } }
 
 #Weather {
   font-family: 'Helvetica Neue LT W01_71488914', Arial, Helvetica, sans-serif;
@@ -297,11 +307,12 @@
 .goog-te-menu-frame {
   max-width: 100% !important; }
 
-.goog-te-menu2 {
-  max-width: 100% !important;
-  overflow: scroll !important;
-  box-sizing: border-box !important;
-  height: auto !important; }
+@media (min-width: 768px) {
+  .goog-te-menu2 {
+    max-width: 100% !important;
+    overflow: scroll !important;
+    box-sizing: border-box !important;
+    height: auto !important; } }
 
 /*/ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ */
 .oakland-menu-container {
