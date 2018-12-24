@@ -202,7 +202,9 @@
 
 .menu-title {
   background-color: transparent;
-  color: #1d1d1d; }
+  color: #1d1d1d;
+  font-weight: bold;
+  padding-bottom: 3px; }
 
 .menu-title-container {
   display: none; }
@@ -269,13 +271,13 @@
     .trans {
       width: 35%; } }
 
-.fa-globe {
+.fa-globe-americas {
   position: absolute;
   top: 10px;
   left: 5px;
   z-index: 200; }
   @media (min-width: 768px) {
-    .fa-globe {
+    .fa-globe-americas {
       left: -4px; } }
 
 .goog-te-gadget img {
@@ -320,8 +322,7 @@
   padding-left: 15px;
   background: white;
   display: none;
-  height: 100vh;
-  opacity: .8; }
+  height: 100vh; }
   .oakland-menu-container a {
     text-decoration: none; }
   .oakland-menu-container .oakland-options {
@@ -335,6 +336,9 @@
     @media (min-width: 768px) {
       .oakland-menu-container .oakland-options {
         font-size: 23px; } }
+    @media (min-width: 1025px) {
+      .oakland-menu-container .oakland-options {
+        font-size: 40px; } }
 
 .industry-container-menu {
   padding-left: 15px;

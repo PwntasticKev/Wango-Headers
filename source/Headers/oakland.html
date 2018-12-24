@@ -36,7 +36,7 @@
     </section>
     <section class='lang-weather-container' >
         <div class='trans' id="google_translate_element">
-            <i class="fa fa-globe" aria-hidden="true"></i>
+            <i class="fas fa-globe-americas"></i>
         </div>
       <div style='display:flex' id="Weather"></div>
     </section>
@@ -76,7 +76,6 @@
             $('.upper-line').toggleClass('menubefore-active')
             $('.lower-line').toggleClass('menuafter-active')
             $('.logo').toggle()
-            $('.lang-weather-container').toggleClass('lang-weather-container--active')
             $('.visit-oakland-menu').addClass('menu-title-active') // adds blue line underneath
             $('.menu-title-container').toggleClass('menu-title-container--active') //puts the container in flex.
             $('.industry-container-menu').hide()
@@ -88,7 +87,8 @@
                 $('.industry-container-menu').removeClass('industry-active');
                }
                 else { $('.oakland-menu-container').addClass('oakland-active');}//turns oakland menu on/off
-          })
+          
+					})
 
           $('.visit-oakland-menu').on('click', function() {
             $('.visit-oakland-menu').addClass('menu-title-active') //adds bue line
@@ -105,10 +105,6 @@
             
           })
 
-        
-
-
-
       var redesignScreen = function () {
         var width = $(window).width()
         if (width < 767) {
@@ -116,12 +112,16 @@
             $('.mobile-search-input').animate({width:'toggle'}, 200)
           })
         }
+				if(width < 1025) {
+					$('.nav-hit-cont').on('click',function() {
+						$('.lang-weather-container').toggleClass('lang-weather-container--active')
+					})
+				}
       }
 			$(document).ready(function () {
         window.onresize = redesignScreen; // calling redesignScreen initially
         redesignScreen();
       })
-
 
 function changeIFrameStyles() {
 if($('.goog-te-menu-frame').contents().find('.goog-te-menu2').length) {
@@ -131,14 +131,12 @@ $('.goog-te-menu-frame').contents().find('.goog-te-menu2').css({
   'box-sizing':'border-box',
   'height':'auto',
 	'width':'100%'
-	
 });
 } else {
 setTimeout(changeIFrameStyles, 50);
 }
 }
 changeIFrameStyles();
-
 
      var Weather = function (options) {
             let _queryUri, _unit, _lat, _lnt
