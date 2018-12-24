@@ -8,6 +8,8 @@
   <link rel="stylesheet" type="text/css" media="screen" href="css/reset.css" />
   <link rel="stylesheet" type="text/css" media="screen" href="css/oakland.css" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
 </head>
 <body>
   <header>
@@ -36,7 +38,7 @@
     </section>
     <section class='lang-weather-container' >
         <div class='trans' id="google_translate_element">
-            <i class="fas fa-globe-americas"></i>
+            <i class="fas fa-globe"></i>
         </div>
       <div style='display:flex' id="Weather"></div>
     </section>
@@ -158,7 +160,7 @@ changeIFrameStyles();
               res
             ) {
               $("#Weather").append(
-                $(`<div class="weather-container" style='display: flex;'>
+                $(`<div class="weather-container" style='display: flex; font-weight: bold;'>
           <i style='margin-right: 5px;' class="climacon i${ res.code }"></i>
           <span class="weather-temp-container" style='display: flex;'>
           <b>${ res.temp }</b>

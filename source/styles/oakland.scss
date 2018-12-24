@@ -107,6 +107,7 @@
     color: #1d1d1d;
     font-weight: bold;
     padding-bottom: 3px;
+    cursor:pointer;
   }
 
   .menu-title-container {
@@ -127,6 +128,7 @@
     left: 60px;
     top: 16px;
     height: 26px;
+    cursor:pointer;
     background: white;
     border: 1px solid lightgray;
     @media (min-width:768px) {
@@ -139,9 +141,15 @@
       outline:none;
     }
     @media (min-width: 1025px) {
-    left:86px;
+    left:84px;
+    font-size: 15px;
+    padding-left: 0;
     }
   }
+
+.search-btn {
+  font-size: 19px;
+}
 
   #Weather {
     font-family: 'Helvetica Neue LT W01_71488914', Arial, Helvetica, sans-serif;
@@ -162,6 +170,12 @@
       position: absolute;
       top: 11px;
       right: -85px;
+    }
+    @media(min-width:1275px) {
+      width: 27%;
+    }
+    @media(min-width:1475px) {
+      width: 23%;
     }
   }
 
@@ -186,7 +200,7 @@
     }
   }
 
-  .fa-globe-americas {
+  .fa-globe {
     position: absolute;
     top: 10px;
     left:5px;
@@ -263,6 +277,7 @@
       }
       @media(min-width:1025px){
         font-size: 40px;
+        padding-left: 45px;
       }
     }
   }

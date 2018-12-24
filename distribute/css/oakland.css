@@ -204,7 +204,8 @@
   background-color: transparent;
   color: #1d1d1d;
   font-weight: bold;
-  padding-bottom: 3px; }
+  padding-bottom: 3px;
+  cursor: pointer; }
 
 .menu-title-container {
   display: none; }
@@ -222,6 +223,7 @@
   left: 60px;
   top: 16px;
   height: 26px;
+  cursor: pointer;
   background: white;
   border: 1px solid lightgray; }
   @media (min-width: 768px) {
@@ -235,7 +237,12 @@
       outline: none; } }
   @media (min-width: 1025px) {
     .mobile-search-input {
-      left: 86px; } }
+      left: 84px;
+      font-size: 15px;
+      padding-left: 0; } }
+
+.search-btn {
+  font-size: 19px; }
 
 #Weather {
   font-family: 'Helvetica Neue LT W01_71488914', Arial, Helvetica, sans-serif;
@@ -256,6 +263,12 @@
       position: absolute;
       top: 11px;
       right: -85px; } }
+  @media (min-width: 1275px) {
+    .lang-weather-container {
+      width: 27%; } }
+  @media (min-width: 1475px) {
+    .lang-weather-container {
+      width: 23%; } }
 
 .lang-weather-container--active {
   display: flex; }
@@ -271,13 +284,13 @@
     .trans {
       width: 35%; } }
 
-.fa-globe-americas {
+.fa-globe {
   position: absolute;
   top: 10px;
   left: 5px;
   z-index: 200; }
   @media (min-width: 768px) {
-    .fa-globe-americas {
+    .fa-globe {
       left: -4px; } }
 
 .goog-te-gadget img {
@@ -338,7 +351,8 @@
         font-size: 23px; } }
     @media (min-width: 1025px) {
       .oakland-menu-container .oakland-options {
-        font-size: 40px; } }
+        font-size: 40px;
+        padding-left: 45px; } }
 
 .industry-container-menu {
   padding-left: 15px;
