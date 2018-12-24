@@ -11,7 +11,7 @@
       padding-left: 15px; } }
   @media (min-width: 1025px) {
     .main-section {
-      padding: 0 47px; } }
+      padding: 0 40px; } }
 
 .logo a img {
   max-width: 125px;
@@ -35,8 +35,8 @@
   opacity: 1; }
   @media (min-width: 1025px) {
     .ae-img {
-      width: 35px;
-      left: -2px;
+      width: 32px;
+      left: -1px;
       position: absolute; } }
 
 .nav-hit-inner {
@@ -119,13 +119,11 @@
   top: 16px;
   height: 26px;
   cursor: pointer;
-  background: white;
-  border: 1px solid lightgray; }
+  background: white; }
   @media (min-width: 768px) {
     .mobile-search-input {
       display: block;
       border: none;
-      border-bottom: 1px solid lightgray;
       left: 33px;
       top: 11px;
       padding: 19px;
@@ -156,12 +154,20 @@
     .lang-weather-container {
       display: flex;
       position: absolute;
-      top: 11px;
+      top: 17px;
       right: -85px; } }
   @media (min-width: 1400px) {
     .lang-weather-container {
       width: 35%;
       right: -118px; } }
+  @media (min-width: 1679px) {
+    .lang-weather-container {
+      width: 35%;
+      right: -188px; } }
+  @media (min-width: 1750px) {
+    .lang-weather-container {
+      width: 31%;
+      right: -230px; } }
 
 .lang-weather-container--active {
   display: flex; }
@@ -176,15 +182,20 @@
   @media (min-width: 1025px) {
     .trans {
       width: 35%; } }
+  @media (min-width: 1679px) {
+    .trans {
+      width: 30%; } }
 
 .fa-globe {
   position: absolute;
-  top: 10px;
+  height: 20px;
+  width: 20px;
+  top: 5px;
   left: 5px;
   z-index: 200; }
   @media (min-width: 768px) {
     .fa-globe {
-      left: -4px; } }
+      left: -9px; } }
 
 .goog-te-gadget img {
   display: none; }
@@ -251,8 +262,7 @@
   padding-left: 15px;
   background: white;
   display: none;
-  height: 100vh;
-  opacity: .8; }
+  height: 100vh; }
   .industry-container-menu a {
     text-decoration: none; }
   .industry-container-menu .oakland-options {
@@ -263,6 +273,13 @@
     color: #1d1d1d;
     text-align: left;
     transition: all .2s ease; }
+    @media (min-width: 768px) {
+      .industry-container-menu .oakland-options {
+        font-size: 23px; } }
+    @media (min-width: 1025px) {
+      .industry-container-menu .oakland-options {
+        font-size: 40px;
+        padding-left: 45px; } }
 
 .oakland-active {
   display: flex;
