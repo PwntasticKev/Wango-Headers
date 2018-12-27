@@ -1,0 +1,13 @@
+$main-color: #fcb133;
+$main-font: roboto;
+
+.main-header {
+  display: flex;
+  flex-direction: row-reverse;
+  height: 5.9375rem;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+  font-family: $main-font;
+  background: $main-color;
+}
