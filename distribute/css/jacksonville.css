@@ -7,3 +7,24 @@
   padding: 0 10px;
   font-family: roboto;
   background: #fcb133; }
+
+.burger-container {
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 10px; }
+  .burger-container .line {
+    margin: 2px 0;
+    cursor: pointer;
+    height: 2px;
+    width: 16px;
+    background: #fff;
+    display: block;
+    content: "";
+    box-shadow: none;
+    right: 4px;
+    top: 10px;
+    transition: all 0.5s ease-in-out; }
