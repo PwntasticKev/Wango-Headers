@@ -18,6 +18,9 @@ $main-font: roboto;
     margin-top: .25rem;
     text-transform: uppercase;
   }
+  @media(min-width: 768px) {
+    flex-direction:row;
+  }
 }
 
 .burger-container {
@@ -32,6 +35,7 @@ $main-font: roboto;
   .line {
     content:'';
     margin: 3px 0;
+    outline: none;
     cursor: pointer;
     height: 3px;
     width: 23px;
@@ -47,7 +51,6 @@ $main-font: roboto;
   top:0;
   position: absolute;
   background:white;
-  height:97.25vh;
   width:95%;
   border: .5rem solid #003662;
   #close-menu {
@@ -74,12 +77,15 @@ $main-font: roboto;
     border-left-width: .25rem;
     font-size: 1.2rem;
     // font-weight: 700;
-    margin-bottom: 18px;
+    margin-bottom: 15px;
     text-transform: uppercase;
     width: calc(100% - 2rem);
     font-family: Berthhold Condensed,Arial,Segoe,sans-serif;
     .menu-text {
       padding:8px;
     }
+  }
+  @media(min-width:768px) {
+    width:98%;
   }
 }

@@ -48,7 +48,7 @@
     </div>
     <div id='close-menu'>X</div>
   </section>
-  <div style='display: flex; flex-direction: column; padding: 1rem;'>
+  <div style='display: flex; flex-direction: column; padding: 1.5rem; align-items: center;'>
     <div class="menu-option">
       <p class='menu-text'>Things to do</p>
     </div>
@@ -68,14 +68,65 @@
       <p class='menu-text'>travel tools</p>
     </div>
     </section>
-    <section style='margin-top:40px;'>
+  <section style='margin-top:40px; display: flex; flex-direction: column;align-items: center;'>
       <div class="menu-option">
         <p class='menu-text'>meetings & groups</p>
       </div>
       <div class="menu-option">
         <p class='menu-text'>industry</p>
       </div>
+      <div class="menu-option">
+        <p class='menu-text'>media</p>
+      </div>
+      <div class="menu-option">
+        <p class='menu-text'>about us</p>
+      </div>
     </section>
-    </section>
+  </section>
+
+    <!-- javascript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script>
+      $('#close-menu').on('click',function() {
+        $('.main-menu-section').hide()
+      })
+      $('.burger-container').on('click',function() {
+        $('.main-menu-section').show()
+      })
+
+
+
+        var Weather = function (options) {
+            let _queryUri, _unit, _lat, _lnt
+            _lnt = options.lnt
+            _lat = options.lat
+            _unit = options.unit ? options.unit : "c"
+            _queryUri = `https://query.yahooapis.com/v1/public/yql?q=select * from weather.forecast where u='${_unit}' AND woeid in (SELECT woeid FROM geo.places WHERE text="(${_lat},${_lnt})")&format=json`
+            return $.ajax(_queryUri).then(res => {
+              if (res.status >= 400) {
+                throw new Error("Bad response from server")
+              }
+              return res.query.results
+                ? res.query.results.channel.item.condition
+                : { code: "NA", temp: "NA" }
+            })
+          }
+          $("#Weather").append(
+            Weather({ lat: 42.299152, lnt: -85.591736, unit: "f" }).then(function (
+              res
+            ) {
+              $("#Weather").append(
+                $(`<div class="weather-container" style='display: flex; font-weight: bold;'>
+          <i style='margin-right: 5px; color: lightblue; display: flex;align-items: center;' class="climacon i${ res.code }"></i>
+          <span class="weather-temp-container" style='display: flex; '>
+          <b>${ res.temp }</b>
+          <div>°</div>
+          </span>
+          </div>`
+                )
+              )
+            })
+          )
+    </script>
 </body>
 </html>
