@@ -14,6 +14,11 @@
     line-height: 1;
     margin-top: .25rem;
     text-transform: uppercase; }
+  .main-header .logo-svg {
+    height: 3.1rem; }
+    @media (min-width: 768px) {
+      .main-header .logo-svg {
+        height: 5rem; } }
   @media (min-width: 768px) {
     .main-header {
       flex-direction: row; } }
