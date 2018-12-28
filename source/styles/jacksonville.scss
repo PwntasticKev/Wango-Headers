@@ -47,7 +47,36 @@ $main-font: roboto;
   top:0;
   position: absolute;
   background:white;
-  height:100vh;
-  width:100%;
-  padding:5px;
+  height:97.25vh;
+  width:95%;
+  border: .5rem solid #003662;
+  #close-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fcb133;
+    color: #fff;
+    cursor: pointer;
+    height: 2rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 2rem;
+  }
+  .nav-open-logo {
+    background-color: #0074ae;
+    color: #fff;
+    margin: 0 auto;
+    padding: 9px .5rem;
+  }
+  .menu-option {
+    border: 1px solid #fcb133;
+    border-left-width: .25rem;
+    font-size: 1.2rem;
+    // font-weight: 700;
+
+    text-transform: uppercase;
+    width: calc(100% - 2rem);
+    font-family: Berthhold Condensed,Arial,Segoe,sans-serif;
+  }
 }
