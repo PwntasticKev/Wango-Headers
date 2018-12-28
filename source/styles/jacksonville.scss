@@ -10,25 +10,44 @@ $main-font: roboto;
   padding: 0 10px;
   font-family: $main-font;
   background: $main-color;
+  .menu-text {
+    color: #fefefe;
+    font-family: Berthhold Condensed,Arial,Segoe,sans-serif;
+    font-weight: 700;
+    line-height: 1;
+    margin-top: .25rem;
+    text-transform: uppercase;
+  }
 }
 
 .burger-container {
   width: 31px;
-	height: 30px;
+	// height: 30px;
 	display: flex;
 	align-items: center;
 	flex-direction: column;
 	justify-content: center;
-  border: 4px solid transparent;
+  // border: 4px solid transparent;
   
   .line {
     content:'';
-    margin: 2px 0;
+    margin: 3px 0;
     cursor: pointer;
     height: 3px;
-    width: 28px;
+    width: 23px;
     background: #fff;
     transition: all 0.5s ease-in-out;
   
   }
+}
+
+// main menu section
+
+.main-menu-section {
+  top:0;
+  position: absolute;
+  background:white;
+  height:100vh;
+  width:100%;
+  padding:5px;
 }
