@@ -58,6 +58,9 @@
     border: 1px solid #fcb133;
     border-left-width: .25rem;
     font-size: 1.2rem;
+    margin-bottom: 18px;
     text-transform: uppercase;
     width: calc(100% - 2rem);
     font-family: Berthhold Condensed,Arial,Segoe,sans-serif; }
+    .main-menu-section .menu-option .menu-text {
+      padding: 8px; }
