@@ -119,9 +119,9 @@
               res
             ) {
               $("#Weather").append(
-                $(`<div class="weather-container" style='display: flex; font-weight: bold;'>
-          <i style='margin-right: 5px; color: lightblue; display: flex;align-items: center;' class="climacon i${ res.code }"></i>
-          <span class="weather-temp-container" style='display: flex; '>
+                $(`<div class="weather-container" style='display: flex; color: white; flex-direction: column;'>
+          <i style='margin-right: 5px; color: white; display: flex; align-items: center;' class="climacon i${ res.code }"></i>
+          <span class="weather-temp-container" style='display: flex;'>
           <b>${ res.temp }</b>
           <div>°F</div>
           </span>
