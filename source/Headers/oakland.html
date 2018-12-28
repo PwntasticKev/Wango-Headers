@@ -38,7 +38,7 @@
     </section>
     <section class='lang-weather-container' >
         <div class='trans' id="google_translate_element">
-            <i class="fas fa-globe"></i>
+           <img src="https://www.visitoakland.com//includes/public/assets/images/globe-icon.svg" class='fa-globe' alt="">
         </div>
       <div style='display:flex' id="Weather"></div>
     </section>
@@ -105,6 +105,15 @@
             $('.oakland-menu-container').removeClass('oakland-active')
           })
 
+					$('.mobile-search-input').on('focus', function() {
+						$(this).css('border-bottom', '1px solid lightgray')
+					})
+
+					    $('#google_translate_element').bind('DOMNodeInserted', function(event) {
+      $('.goog-te-menu-value span:first').html('English');
+  
+    });
+
       var redesignScreen = function () {
         var width = $(window).width()
         if (width < 767) {
@@ -159,7 +168,7 @@ changeIFrameStyles();
             ) {
               $("#Weather").append(
                 $(`<div class="weather-container" style='display: flex; font-weight: bold;'>
-          <i style='margin-right: 5px; color: lightblue;' class="climacon i${ res.code }"></i>
+          <i style='margin-right: 5px; color: lightblue; display: flex;align-items: center;' class="climacon i${ res.code }"></i>
           <span class="weather-temp-container" style='display: flex; '>
           <b>${ res.temp }</b>
           <div>°</div>
@@ -169,17 +178,6 @@ changeIFrameStyles();
               )
             })
           )
-
-					  $(document).ready(function(){
-    $('#google_translate_element').bind('DOMNodeInserted', function(event) {
-      $('.goog-te-menu-value span:first').html('English');
-      $('.goog-te-menu-frame.skiptranslate').load(function(){
-        setTimeout(function(){
-          $('.goog-te-menu-frame.skiptranslate').contents().find('.goog-te-menu2-item-selected .text').html('English');    
-        }, 100);
-      });
-    });
-  });
 
   </script>
 </body>
