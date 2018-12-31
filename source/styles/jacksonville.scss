@@ -1,10 +1,15 @@
 $main-color: #fcb133;
-$main-font: Berthhold Condensed;
+$main-font: 'Berthhold Condensed';
 
 @font-face{font-family:'Berthhold Condensed';
   src:url("../fonts/Block-Berthold-Condensed-Regular/Block-Berthold-Condensed-Regular.otf?#iefix") format("embedded-opentype"),
-  url('../fonts/Block-Berthold-Condensed-Regular/Block-Berthold-Condensed-Regular.otf') format("woff"),
+  url('../fonts/Block-Berthold-Condensed-Regular/Block-Berthold-Condensed-Regular.otf') format("otf"),
   url('../fonts/Block-Berthold-Condensed-Regular/Block-Berthold-Condensed-Regular.otf') format("truetype");
+}
+
+@font-face {
+  font-family: "Berthhold Condensed";
+  src: url("../fonts/Block-Berthold-Condensed-Regular/Block-Berthold-Condensed-Regular.otf") format("otf"),
 }
 
 .main-header {
@@ -18,7 +23,7 @@ $main-font: Berthhold Condensed;
   background: $main-color;
   .menu-text {
     color: #fefefe;
-    font-family: Berthhold Condensed,Arial,Segoe,sans-serif;
+    font-family: $main-font,Arial,Segoe,sans-serif;
     font-weight: 700;
     line-height: 1;
     margin-top: .25rem;
@@ -104,4 +109,11 @@ $main-font: Berthhold Condensed;
 
 .lower-option {
   font-family: $main-font;
+}
+
+#Weather {
+  display: none;
+  @media(min-width: 768px) {
+    display: flex;
+  }
 }

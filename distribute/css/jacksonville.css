@@ -1,6 +1,10 @@
 @font-face {
   font-family: 'Berthhold Condensed';
-  src: url("../fonts/Block-Berthold-Condensed-Regular/Block-Berthold-Condensed-Regular.otf?#iefix") format("embedded-opentype"), url("../fonts/Block-Berthold-Condensed-Regular/Block-Berthold-Condensed-Regular.otf") format("woff"), url("../fonts/Block-Berthold-Condensed-Regular/Block-Berthold-Condensed-Regular.otf") format("truetype"); }
+  src: url("../fonts/Block-Berthold-Condensed-Regular/Block-Berthold-Condensed-Regular.otf?#iefix") format("embedded-opentype"), url("../fonts/Block-Berthold-Condensed-Regular/Block-Berthold-Condensed-Regular.otf") format("otf"), url("../fonts/Block-Berthold-Condensed-Regular/Block-Berthold-Condensed-Regular.otf") format("truetype"); }
+
+@font-face {
+  font-family: "Berthhold Condensed";
+  src: url("../fonts/Block-Berthold-Condensed-Regular/Block-Berthold-Condensed-Regular.otf") format("otf"); }
 
 .main-header {
   display: flex;
@@ -9,11 +13,11 @@
   align-items: center;
   justify-content: space-between;
   padding: 0 10px;
-  font-family: Berthhold Condensed;
+  font-family: "Berthhold Condensed";
   background: #fcb133; }
   .main-header .menu-text {
     color: #fefefe;
-    font-family: Berthhold Condensed,Arial,Segoe,sans-serif;
+    font-family: "Berthhold Condensed", Arial, Segoe, sans-serif;
     font-weight: 700;
     line-height: 1;
     margin-top: .25rem;
@@ -47,7 +51,7 @@
   top: 0;
   position: absolute;
   background: white;
-  font-family: Berthhold Condensed;
+  font-family: "Berthhold Condensed";
   width: 95%;
   border: .5rem solid #003662; }
   .main-menu-section #close-menu {
@@ -68,7 +72,7 @@
     margin: 0 auto;
     padding: 9px .5rem; }
   .main-menu-section .menu-option {
-    font-family: Berthhold Condensed;
+    font-family: "Berthhold Condensed";
     border: 1px solid #fcb133;
     border-left-width: .25rem;
     font-size: 1.2rem;
@@ -82,4 +86,10 @@
       width: 98%; } }
 
 .lower-option {
-  font-family: Berthhold Condensed; }
+  font-family: "Berthhold Condensed"; }
+
+#Weather {
+  display: none; }
+  @media (min-width: 768px) {
+    #Weather {
+      display: flex; } }
