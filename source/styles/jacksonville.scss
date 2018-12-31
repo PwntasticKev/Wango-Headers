@@ -1,5 +1,11 @@
 $main-color: #fcb133;
-$main-font: roboto;
+$main-font: Berthhold Condensed;
+
+@font-face{font-family:'Berthhold Condensed';
+  src:url("../fonts/Block-Berthold-Condensed-Regular/Block-Berthold-Condensed-Regular.otf?#iefix") format("embedded-opentype"),
+  url('../fonts/Block-Berthold-Condensed-Regular/Block-Berthold-Condensed-Regular.otf') format("woff"),
+  url('../fonts/Block-Berthold-Condensed-Regular/Block-Berthold-Condensed-Regular.otf') format("truetype");
+}
 
 .main-header {
   display: flex;
@@ -57,6 +63,7 @@ $main-font: roboto;
   top:0;
   position: absolute;
   background:white;
+  font-family: $main-font;
   width:95%;
   border: .5rem solid #003662;
   #close-menu {
@@ -79,14 +86,13 @@ $main-font: roboto;
     padding: 9px .5rem;
   }
   .menu-option {
+    font-family: $main-font;
     border: 1px solid #fcb133;
     border-left-width: .25rem;
     font-size: 1.2rem;
-    // font-weight: 700;
     margin-bottom: 15px;
     text-transform: uppercase;
     width: calc(100% - 2rem);
-    font-family: Berthhold Condensed,Arial,Segoe,sans-serif;
     .menu-text {
       padding:8px;
     }
@@ -94,4 +100,8 @@ $main-font: roboto;
   @media(min-width:768px) {
     width:98%;
   }
+}
+
+.lower-option {
+  font-family: $main-font;
 }

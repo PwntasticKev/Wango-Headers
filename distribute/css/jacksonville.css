@@ -1,3 +1,7 @@
+@font-face {
+  font-family: 'Berthhold Condensed';
+  src: url("../fonts/Block-Berthold-Condensed-Regular/Block-Berthold-Condensed-Regular.otf?#iefix") format("embedded-opentype"), url("../fonts/Block-Berthold-Condensed-Regular/Block-Berthold-Condensed-Regular.otf") format("woff"), url("../fonts/Block-Berthold-Condensed-Regular/Block-Berthold-Condensed-Regular.otf") format("truetype"); }
+
 .main-header {
   display: flex;
   flex-direction: row-reverse;
@@ -5,7 +9,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 0 10px;
-  font-family: roboto;
+  font-family: Berthhold Condensed;
   background: #fcb133; }
   .main-header .menu-text {
     color: #fefefe;
@@ -43,6 +47,7 @@
   top: 0;
   position: absolute;
   background: white;
+  font-family: Berthhold Condensed;
   width: 95%;
   border: .5rem solid #003662; }
   .main-menu-section #close-menu {
@@ -63,15 +68,18 @@
     margin: 0 auto;
     padding: 9px .5rem; }
   .main-menu-section .menu-option {
+    font-family: Berthhold Condensed;
     border: 1px solid #fcb133;
     border-left-width: .25rem;
     font-size: 1.2rem;
     margin-bottom: 15px;
     text-transform: uppercase;
-    width: calc(100% - 2rem);
-    font-family: Berthhold Condensed,Arial,Segoe,sans-serif; }
+    width: calc(100% - 2rem); }
     .main-menu-section .menu-option .menu-text {
       padding: 8px; }
   @media (min-width: 768px) {
     .main-menu-section {
       width: 98%; } }
+
+.lower-option {
+  font-family: Berthhold Condensed; }
