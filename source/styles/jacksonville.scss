@@ -116,7 +116,7 @@ $main-font: 'Berthhold Condensed';
 	}
   }
   @media(min-width: 375px) {
-	width: 95.6%;
+	width: 96.1%;
   }
   @media(min-width:768px) {
 	width:97.9%;
@@ -142,11 +142,24 @@ $main-font: 'Berthhold Condensed';
 	padding-left:5px;
   }
 
-  .lower-menu-icons {
-	  fill: black;
-	  height: 1.5rem;
-	  width: 1.5rem;
-  }
+//   LOWER MENU
+.lowerMenu {
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+	@media(min-width: 768px) {
+		padding: 0 40px;
+		justify-content: space-around;
+	}
+}
+.lower-menu-icons {
+	fill: black;
+	height: 1.5rem;
+	width: 1.5rem;
+	@media(min-width: 768px) {
+		display: block;
+	}
+}
 
 // /search styles
 .page-search__container {

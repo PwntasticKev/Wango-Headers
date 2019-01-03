@@ -96,7 +96,7 @@
       padding: 8px; }
   @media (min-width: 375px) {
     .main-menu-section {
-      width: 95.6%; } }
+      width: 96.1%; } }
   @media (min-width: 768px) {
     .main-menu-section {
       width: 97.9%; } }
@@ -117,10 +117,22 @@
   width: 1.25rem;
   padding-left: 5px; }
 
+.lowerMenu {
+  display: flex;
+  justify-content: space-between;
+  text-align: center; }
+  @media (min-width: 768px) {
+    .lowerMenu {
+      padding: 0 40px;
+      justify-content: space-around; } }
+
 .lower-menu-icons {
   fill: black;
   height: 1.5rem;
   width: 1.5rem; }
+  @media (min-width: 768px) {
+    .lower-menu-icons {
+      display: block; } }
 
 .page-search__container {
   background-color: #fefefe;
