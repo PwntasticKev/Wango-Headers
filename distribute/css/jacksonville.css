@@ -12,7 +12,7 @@
   height: 5.9375rem;
   align-items: center;
   justify-content: space-between;
-  padding: 0 10px;
+  padding-left: 10px;
   font-family: "Berthhold Condensed";
   background: #fcb133; }
   .main-header .menu-text {
@@ -30,23 +30,33 @@
         height: 5rem; } }
   @media (min-width: 768px) {
     .main-header {
-      flex-direction: row; } }
+      flex-direction: row;
+      padding-left: 0px;
+      padding-right: 10px; } }
 
-.burger-container {
-  width: 31px;
+.outer-burger-container {
+  justify-content: center;
+  height: 95px;
+  width: 65px;
+  background: #F89D05;
   display: flex;
-  align-items: center;
   flex-direction: column;
-  justify-content: center; }
-  .burger-container .line {
-    content: '';
-    margin: 3px 0;
-    outline: none;
-    cursor: pointer;
-    height: 3px;
-    width: 23px;
-    background: #fff;
-    transition: all 0.5s ease-in-out; }
+  align-items: center; }
+  .outer-burger-container .burger-container {
+    width: 31px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center; }
+    .outer-burger-container .burger-container .line {
+      content: '';
+      margin: 2.5px 0;
+      outline: none;
+      cursor: pointer;
+      height: 3px;
+      width: 23px;
+      background: #fff;
+      transition: all 0.5s ease-in-out; }
 
 .main-menu-section {
   top: 0;
@@ -71,7 +81,7 @@
     background-color: #0074ae;
     color: #fff;
     margin: 0 auto;
-    padding: 9px .5rem; }
+    padding: 4px .35rem; }
   .main-menu-section .menu-option {
     display: flex;
     align-items: center;
@@ -84,18 +94,12 @@
     width: calc(100% - 2rem); }
     .main-menu-section .menu-option .menu-text {
       padding: 8px; }
-    .main-menu-section .menu-option .menu-icons {
-      fill: #747676;
-      height: 1.25rem;
-      vertical-align: text-top;
-      width: 1.25rem;
-      padding-left: 5px; }
   @media (min-width: 375px) {
     .main-menu-section {
       width: 95.6%; } }
   @media (min-width: 768px) {
     .main-menu-section {
-      width: 98%; } }
+      width: 97.9%; } }
 
 .lower-option {
   font-family: "Berthhold Condensed"; }
@@ -106,6 +110,18 @@
     #Weather {
       display: flex; } }
 
+.menu-icons {
+  fill: #747676;
+  height: 1.25rem;
+  vertical-align: text-top;
+  width: 1.25rem;
+  padding-left: 5px; }
+
+.lower-menu-icons {
+  fill: black;
+  height: 1.5rem;
+  width: 1.5rem; }
+
 .page-search__container {
   background-color: #fefefe;
   border-bottom: .25rem solid #063a65;
@@ -115,9 +131,14 @@
   max-width: 18.75rem;
   padding: 1rem 1rem 0;
   position: absolute;
-  top: auto;
+  top: 86px;
   width: 100%;
   z-index: 10; }
+  @media (min-width: 768px) {
+    .page-search__container {
+      top: 86px;
+      right: 0 !important;
+      left: auto; } }
   .page-search__container .search-btn {
     -webkit-appearance: none;
     background-color: #0074ae;
@@ -139,6 +160,11 @@
     transition: background-color .3s ease,color .3s ease;
     vertical-align: middle;
     will-change: background-color,color; }
+  .page-search__container .cancel-btn {
+    background-color: transparent;
+    border: 1px solid #686b6b;
+    color: #686b6b;
+    text-transform: uppercase; }
   .page-search__container .page-search__input {
     background-color: #fefefe;
     border: 1px solid #cacaca;
@@ -155,3 +181,7 @@
     padding: .5rem;
     transition: box-shadow .5s,border-color .25s ease-in-out;
     width: 100%; }
+
+.flex {
+  display: flex;
+  align-items: center; }

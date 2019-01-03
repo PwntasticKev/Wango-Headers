@@ -13,7 +13,7 @@
 </head>
 <body>
  <header class="main-header">
-   <section style='display: flex; flex-direction: column; align-items: center;'>
+   <section class='outer-burger-container'>
      <div class="burger-container">
        <br class="line" id="top-line" />
        <br class="line" id="mid-line" />
@@ -26,28 +26,50 @@
     </a>
     <section style='display: flex; align-items:center;' >
       <div id="Weather"></div>
-      <section style='display: flex; flex-direction: column; align-items: center; color: white;'>
+      <section class='search-icon-container' style='display: flex; flex-direction: column; align-items: center; color: white;'>
         <i class="fas fa-search" style='font-size: 26px;'></i>
         <div class='menu-text'>search</div>
       </section>
     </section>
  </header>
  <section class="lowerMenu" style='display: flex; justify-content: space-between;     text-align: center;'>
-   <span class="lower-option">Waterways & outdoors</span>
-   <span class="lower-option">history, arts, culture</span>
-   <span class="lower-option">sports</span>
-   <span class="lower-option">culinary/breweries</span>
+  <div class='flex'>
+    <svg class='menu-icons lower-menu-icons' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" id="outdoors-nature" width="100%" height="100%">
+      <g fill-rule="evenodd" clip-rule="evenodd">
+        <path d="M29.488 19.67c-3.282.166-6.383.323-8.566 2.091-1.924 1.558-2.481 4.322-3.07 7.249-.448 2.222-.916 4.512-2.013 6.521 5.522 17.118 13.652 35.83 29.496 51.997-4.507-17.937-11.349-46.382-12.043-68.144-1.266.157-2.545.222-3.804.286z"></path>
+        <path d="M13.653 38.497c-.943 1.025-1.983 1.973-3.007 2.899-2.466 2.231-4.795 4.339-5.171 7.096-.511 3.752 2.035 8.96 7.362 15.063 7.401 8.478 18.287 16.659 26.09 21.474-12.922-14.8-20.185-31.229-25.274-46.532zm50.749-19.466c-2.4-.873-4.482-2.447-6.494-3.97-2.621-1.982-5.098-3.855-7.906-3.904H50c-2.528 0-4.705 1.738-7.01 3.579-1.838 1.468-3.739 2.985-5.975 3.799-.244.089-.492.165-.74.239.599 22.039 7.807 51.513 12.309 69.375 6.719-19.16 11.81-41.324 15.867-69.103l-.049-.015zm6.841 68.365c3.665-.499 6.853-2.841 6.853-6.128v-6.564C70.885 80.426 62.953 85.55 56.93 88.796a184.74 184.74 0 0 0 14.313-1.4zm15.058-48.653a11.856 11.856 0 0 1-1.236-1.727c-1.277-2.213-1.859-4.756-2.423-7.215-.733-3.204-1.427-6.231-3.548-8.075-1.868-1.624-4.688-1.692-7.671-1.765-1.337-.033-2.699-.07-4.037-.242-3.999 27.314-9.001 49.26-15.57 68.287 15.405-14.07 26.972-30.587 34.485-49.263zM21.772 81.708c.059 3.291 3.025 5.504 6.691 6.032 3.698.532 7.396.891 11.093 1.103-5.173-2.971-11.743-7.528-17.883-12.661l.099 5.526z"></path>
+        <path d="M94.571 48.397c-.173-2.417-2.355-4.27-4.666-6.231a83.66 83.66 0 0 1-1.305-1.123c-6.353 15.379-15.42 29.304-27.073 41.622 8.184-5.051 18.283-12.365 25.33-19.938 5.311-5.705 7.978-10.66 7.714-14.33z"></path>
+      </g>
+    </svg>
+    <span class="lower-option">Waterways & outdoors</span>
+  </div>
+  <div class='flex'>
+    <svg class='menu-icons lower-menu-icons' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" id="history-arts" width="100%" height="100%">
+      <path d="M92.75 2.5a4.763 4.763 0 0 1 4.75 4.75v9.5a4.764 4.764 0 0 1-4.75 4.75H7.25a4.764 4.764 0 0 1-4.75-4.75v-9.5A4.763 4.763 0 0 1 7.25 2.5h85.5zm-7.125 30.875V97.5H78.5V39.312c0-1.96-1.603-3.562-3.562-3.562s-3.562 1.603-3.562 3.562V97.5H61.58V39.312a3.572 3.572 0 0 0-3.562-3.562 3.573 3.573 0 0 0-3.562 3.562V97.5h-9.799V39.312c0-1.96-1.603-3.562-3.562-3.562s-3.562 1.603-3.562 3.562V97.5h-8.906V39.312c0-1.96-1.603-3.562-3.562-3.562S21.5 37.353 21.5 39.312V97.5h-7.125V33.375a4.765 4.765 0 0 1 4.75-4.75h61.75a4.765 4.765 0 0 1 4.75 4.75z"></path>
+    </svg>
+    <span class="lower-option">history, arts, culture</span>
+  </div>
+  <div class='flex'>
+    <svg class='menu-icons lower-menu-icons' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 67 104" id="sports" width="100%" height="100%">
+      <path fill-opacity=".9" fill-rule="evenodd" d="M7.252 89.209C.473 84.491-1.166 71.922.905 62.725c-.35-2.192-2.228-12.773.754-15.808 1.692-1.723 9.135-5.316 11.393-3.933 0-4.183 10.327-6.663 11.572-5.716-.779-3.542 8.727-8.262 11.88-6.543 0-7.36.827-18.294 3.609-26.819 1.968-6.03 16.217-4.298 17.018 0 2.23 8.211 2.239 36.758 2.784 43.804 2 3.204 4.574 8.704 6.248 13.704 2.41 6.245-2.811 27.445-9.754 31.377-.393 1.746-1.016 5.48-1.868 11.202H7.252V89.21zm-.981-36.347c0-1.625 4.6-3.222 6.384-2.19 1.62.939 5.396 15.824 4.6 17.829-.65 1.634-4.228 3.012-6.004 2.293-1.902-.77-5.534-13.034-4.98-17.932zm11.504-6.596c-.029-1.625 5.393-3.039 7.16-2.158 1.572 2.52 5.108 18.632 4.486 20.32-.607 1.646-4.836 3.097-6.542 2.563-2.103-.658-5.572-15.819-5.104-20.725zM44.95 7.923c.788-2.395 5.382-2.146 5.977-.315 1.347 4.14 2.02 34.562 2.02 37.613-.01-.63-7.404-2.104-8.585-2.104-1.399-4.748-.808-30.467.588-35.194zM30.021 40.465c-.028-1.624 5.317-3.683 7.797-2.28.494.278 1.79 2.28 2.065 4.688-2.694-.808-5.37-.718-6.272 0-1.157 1.093-1.894 6.74-.715 10.26 2.507 7.48 9.187 7.648 8.883 8.19-.776 1.384-2.853 1.236-5.444 1.28-2.601.046-6.782-17.231-6.314-22.138zM7.184 70.653c-.698-1.792.736 1.958 1.155 2.353 2.831 2.83 11.728 1.09 12.281-3.329 2.134 1.965 12.018.646 12.471-4.696.913 2.398 11.974 1.351 12.531-2.993 0 1.143.165 2.458.494 3.943-4.08.647-6.806 1.624-8.175 2.93-.576.427-.274 3.536 1.195 3.145.895-.422 4.883-2.329 8.57-2.329.965-.249 2.84-1.727 2.746-2.717-.319-.515-.841-3.356-.841-5.468 0-1.029-.95-1.978-2.215-2.39-1.494-.522-7.05-1.581-9.165-4.471-2.394-3.155-2.69-7.13-1.83-8.368.867-.5 8.272 1.297 14.697 3.434 2.804 2.404 7.892 11.1 8.759 14.752.876 4.412-3.18 24.351-14.235 26.076-1.872 1.303-.346 3.95 1.244 3.582.334-.077.962-.077 1.886 0l-.327 2.389H14.632c-.044-2.802-.044-4.328 0-4.577.067-.374 1.307 0 1.78 0 1.166 0 2.499-1.968 1.284-3.33-2.159-.924-10.512-6.959-10.512-17.936z"></path>
+    </svg>
+    <span class="lower-option">sports</span>
+  </div>
+  <div class='flex'>
+    <svg class='menu-icons lower-menu-icons' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 72" id="dining" width="100%" height="100%"><path d="M19.658.624A.704.704 0 0 0 18.964 0H16.03v16.13c0 .991-.78 1.8-1.743 1.8-.964 0-1.744-.809-1.744-1.8V0H9.071v16.13c0 .991-.78 1.8-1.743 1.8-.964 0-1.744-.809-1.744-1.8V0H2.75a.704.704 0 0 0-.695.624l-1.9 15.661c-.594 4.89 2 9.312 5.982 11.31.539.27.879.794.836 1.39l-2.721 35.39c-.283 3.699 2.31 7.2 5.995 7.526 4.167.368 7.569-3.076 7.257-7.144l-2.75-35.773c-.042-.595.298-1.12.837-1.389 3.982-2.012 6.576-6.434 5.98-11.31L19.659.624zM34.143.07c-.893-.142-1.729.51-1.729 1.417v65.07c0 2.664 1.885 5.116 4.536 5.4 3.33.368 6.052-2.424 5.683-5.656L39.97 42.28c-.185-1.673.354-3.373 1.544-4.564 1.007-1.006 1.744-2.24 1.744-3.67v-23.26c0-5.4-3.955-9.892-9.114-10.714zm31.734 27.283c3.586-2.338 6.052-7.242 6.052-12.926C71.93 6.448 67.096 0 61.143 0c-5.952 0-10.786 6.449-10.786 14.414 0 5.684 2.467 10.588 6.052 12.926.44.298.723.766.68 1.304l-2.55 35.717c-.284 3.699 2.31 7.2 5.995 7.526 4.167.368 7.568-3.076 7.257-7.144l-2.594-36.085c-.028-.538.24-1.02.68-1.304z"></path></svg>
+    <span class="lower-option">culinary/breweries</span>
+  </div>
  </section>
  
  <!-- SEARCH CONTAINER. -->
-<section class='page-search__container'>
+<section class='page-search__container' style='display: none'>
    <form id='page-search' method='get' action='https://www.visitjacksonville.com//search/'>
       <div class="ais-search-box">
         <input type="search" class="page-search__input js-psearch-input ais-search-box--input" id="page-search-input" name="keywords" placeholder="Enter search term" required="required" autocomplete="off" value="" autocapitalize="off" autocorrect="off" role="textbox" spellcheck="false">
       </div>
     <section style='display: flex;justify-content: space-between;'>
       <button class='search-btn'>SEARCH</button>
-      <button class='search-btn'>CANCEL</button>
+      <button class='search-btn cancel-btn'>CANCEL</button>
     </section>
   </form>
 </section>
@@ -120,6 +142,13 @@
       })
       $('.burger-container').on('click',function() {
         $('.main-menu-section').show()
+      })
+
+      $('.cancel-btn').on('click',function() {
+        $('.page-search__container').toggle()
+      })
+      $('.search-icon-container').on('click',function() {
+        $('.page-search__container').toggle()
       })
 
 
