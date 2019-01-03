@@ -37,6 +37,7 @@ $main-font: 'Berthhold Condensed';
     line-height: 1;
     margin-top: .25rem;
     text-transform: uppercase;
+    font-size: 11px;
 
   }
   .logo-svg {
@@ -120,6 +121,12 @@ $main-font: 'Berthhold Condensed';
     padding: 9px .5rem;
   }
   .menu-option {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align:center;
+    -ms-flex-align:center;
+    align-items:center;
     font-family: $main-font;
     border: 1px solid #fcb133;
     border-left-width: .25rem;
@@ -131,6 +138,16 @@ $main-font: 'Berthhold Condensed';
     .menu-text {
       padding:8px;
     }
+    .menu-icons {
+      fill: #747676;
+      height: 1.25rem;
+      vertical-align: text-top;
+      width: 1.25rem;
+      padding-left:5px;
+    }
+  }
+  @media(min-width: 375px) {
+    width: 95.6%;
   }
   @media(min-width:768px) {
     width:98%;

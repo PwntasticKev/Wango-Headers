@@ -26,11 +26,11 @@
     </a>
     <section style='display: flex; align-items:center;' >
       <div id="Weather"></div>
-     <section style='display: flex; flex-direction: column; align-items: center; color: white;'>
+      <section style='display: flex; flex-direction: column; align-items: center; color: white;'>
         <i class="fas fa-search" style='font-size: 26px;'></i>
-    <div class='menu-text'>search</div>
-  </section>
-  </section>
+        <div class='menu-text'>search</div>
+      </section>
+    </section>
  </header>
  <section class="lowerMenu" style='display: flex; justify-content: space-between;     text-align: center;'>
    <span class="lower-option">Waterways & outdoors</span>
@@ -38,6 +38,19 @@
    <span class="lower-option">sports</span>
    <span class="lower-option">culinary/breweries</span>
  </section>
+ 
+ <!-- SEARCH CONTAINER. -->
+<section class='page-search__container'>
+   <form id='page-search' method='get' action='https://www.visitjacksonville.com//search/'>
+      <div class="ais-search-box">
+        <input type="search" class="page-search__input js-psearch-input ais-search-box--input" id="page-search-input" name="keywords" placeholder="Enter search term" required="required" autocomplete="off" value="" autocapitalize="off" autocorrect="off" role="textbox" spellcheck="false">
+      </div>
+    <section style='display: flex;justify-content: space-between;'>
+      <button class='search-btn'>SEARCH</button>
+      <button class='search-btn'>CANCEL</button>
+    </section>
+  </form>
+</section>
 
  <!-- open menu -->
 <div class="main-menu-section" style='display: none;'>
@@ -98,13 +111,6 @@
     </section>
   </section>
 
-  <!-- SEARCH CONTAINER. -->
-  <section>
-    <input type="text">
-    <section>
-      <button></button><button></button>
-    </section>
-  </section>
 
     <!-- javascript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
