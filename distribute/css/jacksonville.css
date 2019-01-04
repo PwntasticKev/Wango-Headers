@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'Berthhold Condensed';
+  src: url("../fonts/Block-Berthold-Condensed-Regular/Block-Berthold-Condensed-Regular.otf?#iefix") format("embedded-opentype"), url("../fonts/Block-Berthold-Condensed-Regular/Block-Berthold-Condensed-Regular.otf") format("otf"), url("../fonts/Block-Berthold-Condensed-Regular/Block-Berthold-Condensed-Regular.otf") format("truetype"); }
+
+@font-face {
+  font-family: "Berthhold Condensed";
+  src: url("../fonts/Block-Berthold-Condensed-Regular/Block-Berthold-Condensed-Regular.otf") format("otf"); }
+
 .main-header {
   display: flex;
   flex-direction: row-reverse;
@@ -5,15 +13,16 @@
   align-items: center;
   justify-content: space-between;
   padding: 0 10px;
-  font-family: roboto;
+  font-family: "Berthhold Condensed";
   background: #fcb133; }
   .main-header .menu-text {
     color: #fefefe;
-    font-family: Berthhold Condensed,Arial,Segoe,sans-serif;
+    font-family: "Berthhold Condensed", Arial, Segoe, sans-serif;
     font-weight: 700;
     line-height: 1;
     margin-top: .25rem;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    font-size: 11px; }
   .main-header .logo-svg {
     height: 3.1rem; }
     @media (min-width: 768px) {
@@ -43,6 +52,7 @@
   top: 0;
   position: absolute;
   background: white;
+  font-family: "Berthhold Condensed";
   width: 95%;
   border: .5rem solid #003662; }
   .main-menu-section #close-menu {
@@ -63,15 +73,85 @@
     margin: 0 auto;
     padding: 9px .5rem; }
   .main-menu-section .menu-option {
+    display: flex;
+    align-items: center;
+    font-family: "Berthhold Condensed";
     border: 1px solid #fcb133;
     border-left-width: .25rem;
     font-size: 1.2rem;
     margin-bottom: 15px;
     text-transform: uppercase;
-    width: calc(100% - 2rem);
-    font-family: Berthhold Condensed,Arial,Segoe,sans-serif; }
+    width: calc(100% - 2rem); }
     .main-menu-section .menu-option .menu-text {
       padding: 8px; }
+    .main-menu-section .menu-option .menu-icons {
+      fill: #747676;
+      height: 1.25rem;
+      vertical-align: text-top;
+      width: 1.25rem;
+      padding-left: 5px; }
+  @media (min-width: 375px) {
+    .main-menu-section {
+      width: 95.6%; } }
   @media (min-width: 768px) {
     .main-menu-section {
       width: 98%; } }
+
+.lower-option {
+  font-family: "Berthhold Condensed"; }
+
+#Weather {
+  display: none; }
+  @media (min-width: 768px) {
+    #Weather {
+      display: flex; } }
+
+.page-search__container {
+  background-color: #fefefe;
+  border-bottom: .25rem solid #063a65;
+  border-left: 1px solid #063a65;
+  border-right: 1px solid #063a65;
+  left: 0;
+  max-width: 18.75rem;
+  padding: 1rem 1rem 0;
+  position: absolute;
+  top: auto;
+  width: 100%;
+  z-index: 10; }
+  .page-search__container .search-btn {
+    -webkit-appearance: none;
+    background-color: #0074ae;
+    border: 1px solid transparent;
+    border-radius: 0;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Berthhold Condensed,Arial,Segoe,sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    line-height: 1;
+    margin: 0 0 1rem;
+    padding: .7rem .9rem .5rem;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: background-color .25s ease-out,color .25s ease-out;
+    transition: background-color .3s ease,color .3s ease;
+    vertical-align: middle;
+    will-change: background-color,color; }
+  .page-search__container .page-search__input {
+    background-color: #fefefe;
+    border: 1px solid #cacaca;
+    border-radius: 0;
+    box-shadow: inset 0 1px 2px rgba(40, 40, 40, 0.1);
+    box-sizing: border-box;
+    color: #282828;
+    display: block;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 400;
+    height: 2.4375rem;
+    margin: 0 0 1rem;
+    padding: .5rem;
+    transition: box-shadow .5s,border-color .25s ease-in-out;
+    width: 100%; }
