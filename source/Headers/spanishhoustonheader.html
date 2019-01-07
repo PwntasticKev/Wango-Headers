@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Page Title</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<!-- <a target="_blank" href="https://www.visitahoustontexas.com/planea-tu-visita/clima/" id='Weather' class="hlh-weather--a">h</a> -->
+	<div style='display:flex' id="Weather">47</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script>
+	
+   $('.nav-hit-cont').unbind('click').bind('click',function() {
+			  $('.ae-img').animate({opacity: 'toggle'}, 250)
+			  $('.upper-line').toggleClass('menubefore-active')
+			  $('.lower-line').toggleClass('menuafter-active')
+			  $('.logo').toggle()
+			  $('.visit-oakland-menu').addClass('menu-title-active') // adds blue line underneath
+			  $('.menu-title-container').toggleClass('menu-title-container--active') //puts the container in flex.
+			  $('.industry-container-menu').hide()
+			  $('.industry-menu').removeClass('menu-title-active') //removes blue line 
+			   if ($('.oakland-menu-container').hasClass('oakland-active')) { 
+					$('.oakland-menu-container').removeClass('oakland-active'); 
+				 }
+				 else if ($('.industry-container-menu').hasClass('industry-active')) {
+				  $('.industry-container-menu').removeClass('industry-active');
+				 }
+				  else { $('.oakland-menu-container').addClass('oakland-active');} //turns oakland menu on/off
+					  })
+  
+			$('.visit-oakland-menu').on('click', function() {
+			  $('.visit-oakland-menu').addClass('menu-title-active') //adds bue line
+			  $('.industry-menu').removeClass('menu-title-active') ////removes bue line
+			  $('.oakland-menu-container').addClass('oakland-active');
+			  $('.industry-container-menu').removeClass('industry-active');
+			})
+  
+			$('.industry-menu').on('click', function() {
+			  $('.industry-menu').addClass('menu-title-active') //adds blue lne
+			  $('.visit-oakland-menu').removeClass('menu-title-active') //removes blue line
+			  $('.industry-container-menu').addClass('industry-active');
+			  $('.oakland-menu-container').removeClass('oakland-active')
+			})
+  
+					  $('.mobile-search-input').on('focus', function() {
+						  $(this).css('border-bottom', '1px solid lightgray')
+					  })
+  
+						  $('#google_translate_element').bind('DOMNodeInserted', function(event) {
+		$('.goog-te-menu-value span:first').html('English');
+	
+	  });
+  
+		var redesignScreen = function () {
+		  var width = $(window).width()
+		  if (width < 767) {
+					  $('.fa-search').on('click',function() {
+			  $('.mobile-search-input').animate({width:'toggle'}, 200)
+			})
+		  }
+				  if(width < 1025) {
+					  $('.nav-hit-cont').on('click',function() {
+						  $('.lang-weather-container').toggleClass('lang-weather-container--active')
+					  })
+				  }
+		}
+			  $(document).ready(function () {
+		  window.onresize = redesignScreen; // calling redesignScreen initially
+		  redesignScreen();
+		})
+  
+  function changeIFrameStyles() {
+  if($('.goog-te-menu-frame').contents().find('.goog-te-menu2').length) {
+  $('.goog-te-menu-frame').contents().find('.goog-te-menu2').css({
+	'max-width':'100%',
+	'overflow':'scroll',
+	'box-sizing':'border-box',
+	'height':'auto',
+	  'width':'100%'
+  });
+  } else {
+  setTimeout(changeIFrameStyles, 50);
+  }
+  }
+  changeIFrameStyles();
+  
+	   var Weather = function (options) {
+			  let _queryUri, _unit, _lat, _lnt
+			  _lnt = options.lnt
+			  _lat = options.lat
+			  _unit = options.unit ? options.unit : "c"
+			  _queryUri = `https://query.yahooapis.com/v1/public/yql?q=select * from weather.forecast where u='${_unit}' AND woeid in (SELECT woeid FROM geo.places WHERE text="(${_lat},${_lnt})")&format=json`
+			  return $.ajax(_queryUri).then(res => {
+				if (res.status >= 400) {
+				  throw new Error("Bad response from server")
+				}
+				return res.query.results
+				  ? res.query.results.channel.item.condition
+				  : { code: "NA", temp: "NA" }
+			  })
+			}
+			$("#Weather").append(
+			  Weather({ lat: 42.299152, lnt: -85.591736, unit: "f" }).then(function (
+				res
+			  ) {
+				$("#Weather").append(
+				  $(`<div class="weather-container" style='display: flex; font-weight: bold;'>
+			<i style='margin-right: 5px; color: lightblue; display: flex;align-items: center;' class="climacon i${ res.code }"></i>
+			<span class="weather-temp-container" style='display: flex; '>
+			<b>${ res.temp }</b>
+			<div>°</div>
+			</span>
+			</div>`
+				  )
+				)
+			  })
+			)
+  
+	</script>
+</body>
+</html>
