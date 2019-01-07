@@ -1,349 +1,353 @@
-<style>@font-face{font-family:Montserrat;src:url(/headers/hola-houston/Montserrat-Regular/Montserrat-Regular.eot);src:url(/headers/hola-houston/Montserrat-Regular/Montserrat-Regular.woff2) format("woff2"),url(/headers/hola-houston/Montserrat-Regular/Montserrat-Regular.woff) format("woff"),url(/headers/hola-houston/Montserrat-Regular/Montserrat-Regular.ttf) format("truetype"),url(/headers/hola-houston/Montserrat-Regular/Montserrat-Regular.svg#Montserrat-Regular) format("svg"),url(/headers/hola-houston/Montserrat-Regular/Montserrat-Regular.eot?#iefix) format("embedded-opentype");font-weight:400;font-style:normal}@font-face{font-family:Montserrat;src:url(/headers/hola-houston/Montserrat-SemiBold/Montserrat-SemiBold.eot),url(/headers/hola-houston/Montserrat-SemiBold/Montserrat-SemiBold.woff2) format("woff2"),url(/headers/hola-houston/Montserrat-SemiBold/Montserrat-SemiBold.woff) format("woff"),url(/headers/hola-houston/Montserrat-SemiBold/Montserrat-SemiBold.ttf) format("truetype"),url(/headers/hola-houston/Montserrat-SemiBold/Montserrat-SemiBold.svg#Montserrat-SemiBold) format("svg"),url(/headers/hola-houston/Montserrat-SemiBold/Montserrat-SemiBold.eot?#iefix) format("embedded-opentype");font-weight:600;font-style:normal}@font-face{font-family:Montserrat;src:url(/headers/hola-houston/Montserrat-Bold/Montserrat-Bold.eot),url(/headers/hola-houston/Montserrat-Bold/Montserrat-Bold.woff2) format("woff2"),url(/headers/hola-houston/Montserrat-Bold/Montserrat-Bold.woff) format("woff"),url(/headers/hola-houston/Montserrat-Bold/Montserrat-Bold.ttf) format("truetype"),url(/headers/hola-houston/Montserrat-Bold/Montserrat-Bold.svg#Montserrat-Bold) format("svg"),url(/headers/hola-houston/Montserrat-Bold/Montserrat-Bold.eot?#iefix) format("embedded-opentype");font-weight:700;font-style:normal}@font-face{font-family:sv-Climacons;src:url(/fonts/climacons/sv_climacons_webfont.eot);src:url(/fonts/climacons/sv_climacons_webfont.eot?#iefix) format("embedded-opentype"),url(/fonts/climacons/sv_climacons_webfont.svg#Climacons-Font) format("svg"),url(/fonts/climacons/sv_climacons_webfont.woff) format("woff"),url(/fonts/climacons/sv_climacons_webfont.ttf) format("truetype");font-weight:400;font-style:normal}.climacon:before{font-family:sv-climacons;speak:none;font-size:inherit;font-style:normal;font-weight:400;line-height:inherit;-webkit-font-smoothing:antialiased}.climacon.i26:before{content:"\E000"}.climacon.i28:before,.climacon.i30:before,.climacon.i44:before{content:"\E001"}.climacon.i27:before,.climacon.i29:before{content:"\E002"}.climacon.i9:before,.climacon.i11:before,.climacon.i12:before,.climacon.i40:before{content:"\E003"}.climacon.i32:before,.climacon.i34:before{content:"\E028"}.climacon.i3200:before{content:"\D8";font-weight:700}.climacon.i8:before,.climacon.i10:before{content:"\E00C"}.climacon.i6:before,.climacon.i7:before,.climacon.i18:before{content:"\E010"}.climacon.i17:before,.climacon.i35:before{content:"\E013"}.climacon.i5:before{content:"\E004"}.climacon.i13:before,.climacon.i14:before,.climacon.i15:before,.climacon.i16:before,.climacon.i41:before,.climacon.i42:before,.climacon.i43:before,.climacon.i46:before{content:"\E018"}.climacon.i20:before{content:"\E01B"}.climacon.i21:before,.climacon.i22:before,.climacon.i23:before{content:"\E01F"}.climacon.i24:before{content:"\E021"}.climacon.i2:before{content:"\E022"}.climacon.i19:before{content:"\E023"}.climacon.i3:before,.climacon.i4:before,.climacon.i37:before,.climacon.i38:before,.climacon.i39:before,.climacon.i45:before,.climacon.i47:before{content:"\E025"}.climacon.i31:before,.climacon.i33:before{content:"\E02D"}.climacon.i0:before{content:"\E037"}.climacon.i25:before{content:"\E03A"}.climacon.i36:before{content:"\E03D"}.climacon.i1:before{content:"\E00A"}@font-face{font-family:icomoon;src:url(/headers/hola-houston/icomoon/fonts/icomoon.eot?4ffa5j);src:url(/headers/hola-houston/icomoon/fonts/icomoon.eot?4ffa5j#iefix) format("embedded-opentype"),url(/headers/hola-houston/icomoon/fonts/icomoon.ttf?4ffa5j) format("truetype"),url(/headers/hola-houston/icomoon/fonts/icomoon.woff?4ffa5j) format("woff"),url(/headers/hola-houston/icomoon/fonts/icomoon.svg?4ffa5j#icomoon) format("svg");font-weight:400;font-style:normal}[class*=" icon-"],[class^=icon-]{font-family:icomoon!important;speak:none;font-style:normal;font-weight:400;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.icon-arow-right:before{content:"\E902"}.icon-skip-track:before{content:"\E903"}.icon-share-arrow:before{content:"\E904"}.icon-search:before{content:"\E900"}.icon-calendar:before{content:"\E905"}.icon-angle-right:before{content:"\E906"}.icon-close:before{content:"\E901"}.icon-angle-left:before{content:"\E907"}.px-0{padding-left:0!important;padding-right:0!important}.mx-auto{margin-right:auto;margin-left:auto}.hlh-search--place .form-control{border-radius:0;box-shadow:none;height:36px;border:none;font-weight:300;padding-bottom:0;padding-top:0;color:#555;padding-right:36px}.hlh-search--place .form-control::-webkit-input-placeholder{color:#654b0f}.hlh-search--place .form-control::-moz-placeholder{color:#654b0f}.hlh-search--place .form-control:-ms-input-placeholder{color:#654b0f}.hlh-search--place .form-control:-moz-placeholder{color:#654b0f}.hlh-search--place .form-control:focus{outline:none}.hlh-search--place .form-control:focus::-webkit-input-placeholder{color:transparent}.hlh-search--place .form-control:focus::-moz-placeholder{color:transparent}.hlh-search--place .form-control:focus:-ms-input-placeholder{color:transparent}.hlh-search--place .form-control:focus:-moz-placeholder{color:transparent}.d-none{display:none!important}.d-sm-none{display:block!important}@media (min-width:576px){.d-sm-none{display:none!important}}.d-sm-block{display:none!important}@media (min-width:576px){.d-sm-block{display:block!important}}.position-static{position:static}.ui-datepicker{margin-top:3px;border-radius:0;font-family:inherit}.ui-datepicker table{margin-bottom:0;border:none;width:calc(100% - 1px);font-size:.9em;border-collapse:collapse}.ui-datepicker th{color:#ccc;padding:.7em .3em;text-align:center;font-weight:700;border:0}.ui-datepicker td{width:14.28571%;border:1px solid #eee;padding:1px}.ui-datepicker td a,.ui-datepicker td span{height:35px;padding:8px;text-align:center;font-size:15px}.ui-datepicker .ui-widget-header{position:relative;background-color:transparent;border:none;padding:10px 0;font-weight:400}.ui-datepicker .ui-widget-header .ui-icon{display:none}.ui-datepicker .ui-widget-header a{border:none;cursor:pointer;color:#333;top:50%;-webkit-transform:translateY(-50%);transform:translateY(-50%)}.ui-datepicker .ui-datepicker-title{font-size:16px;margin:0 2.3em;line-height:1.8em;text-align:center;font-weight:inherit}.ui-datepicker .ui-datepicker-prev{position:absolute;top:0;left:0;width:45px;height:100%;padding:3px;text-align:center;font-size:22px;border-radius:0}.ui-datepicker .ui-datepicker-prev:before{content:"\E906";display:inline-block;font-family:icomoon!important;speak:none;font-style:normal;font-weight:400;font-variant:normal;text-transform:none;line-height:25px;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;position:absolute;top:50%;left:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}.ui-datepicker .ui-datepicker-next{position:absolute;top:0;right:0;width:45px;height:100%;padding:3px;text-align:center;font-size:22px;border-radius:0}.ui-datepicker .ui-datepicker-next:before{content:"\E907";display:inline-block;font-family:icomoon!important;speak:none;font-style:normal;font-weight:400;font-variant:normal;text-transform:none;line-height:25px;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;position:absolute;top:50%;left:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}.ui-datepicker .ui-datepicker-prev-hover{left:0;top:0;background-color:#eee}.ui-datepicker .ui-datepicker-next-hover{right:0;top:0;background-color:#eee}.ui-datepicker .ui-state-default{background-color:transparent}.ui-datepicker .ui-state-default:hover{background-color:#eee}.ui-button,.ui-state-default,.ui-widget-content .ui-state-default,.ui-widget-header .ui-state-default,html .ui-button.ui-state-disabled:active,html .ui-button.ui-state-disabled:hover{border:none}.ui-button.ui-state-active:hover,.ui-button:active,.ui-state-active,.ui-widget-content .ui-state-active,.ui-widget-header .ui-state-active,a.ui-button:active{background-color:#045d9b;border:none;color:#fff}.ui-state-highlight,.ui-widget-content .ui-state-highlight,.ui-widget-header .ui-state-highlight{background-color:rgba(109,158,18,.5);color:#fff;border-color:rgba(109,158,18,.5)}.ui-widget-content{border:1px solid #ddd;background:#fff;color:#333}.ui-state-disabled,.ui-widget-content .ui-state-disabled,.ui-widget-header .ui-state-disabled{opacity:.35;background-image:none}.ui-datepicker td a,.ui-datepicker td span{display:block;text-decoration:none!important;color:#333}.m-0{margin:0!important}.p-0{padding:0!important}.ml-auto{margin-left:auto}.px-0{padding-left:0;padding-right:0}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+</head>
+<body>
+	<style>@font-face{font-family:Montserrat;src:url(/headers/hola-houston/Montserrat-Regular/Montserrat-Regular.eot);src:url(/headers/hola-houston/Montserrat-Regular/Montserrat-Regular.woff2) format("woff2"),url(/headers/hola-houston/Montserrat-Regular/Montserrat-Regular.woff) format("woff"),url(/headers/hola-houston/Montserrat-Regular/Montserrat-Regular.ttf) format("truetype"),url(/headers/hola-houston/Montserrat-Regular/Montserrat-Regular.svg#Montserrat-Regular) format("svg"),url(/headers/hola-houston/Montserrat-Regular/Montserrat-Regular.eot?#iefix) format("embedded-opentype");font-weight:400;font-style:normal}@font-face{font-family:Montserrat;src:url(/headers/hola-houston/Montserrat-SemiBold/Montserrat-SemiBold.eot),url(/headers/hola-houston/Montserrat-SemiBold/Montserrat-SemiBold.woff2) format("woff2"),url(/headers/hola-houston/Montserrat-SemiBold/Montserrat-SemiBold.woff) format("woff"),url(/headers/hola-houston/Montserrat-SemiBold/Montserrat-SemiBold.ttf) format("truetype"),url(/headers/hola-houston/Montserrat-SemiBold/Montserrat-SemiBold.svg#Montserrat-SemiBold) format("svg"),url(/headers/hola-houston/Montserrat-SemiBold/Montserrat-SemiBold.eot?#iefix) format("embedded-opentype");font-weight:600;font-style:normal}@font-face{font-family:Montserrat;src:url(/headers/hola-houston/Montserrat-Bold/Montserrat-Bold.eot),url(/headers/hola-houston/Montserrat-Bold/Montserrat-Bold.woff2) format("woff2"),url(/headers/hola-houston/Montserrat-Bold/Montserrat-Bold.woff) format("woff"),url(/headers/hola-houston/Montserrat-Bold/Montserrat-Bold.ttf) format("truetype"),url(/headers/hola-houston/Montserrat-Bold/Montserrat-Bold.svg#Montserrat-Bold) format("svg"),url(/headers/hola-houston/Montserrat-Bold/Montserrat-Bold.eot?#iefix) format("embedded-opentype");font-weight:700;font-style:normal}@font-face{font-family:sv-Climacons;src:url(/fonts/climacons/sv_climacons_webfont.eot);src:url(/fonts/climacons/sv_climacons_webfont.eot?#iefix) format("embedded-opentype"),url(/fonts/climacons/sv_climacons_webfont.svg#Climacons-Font) format("svg"),url(/fonts/climacons/sv_climacons_webfont.woff) format("woff"),url(/fonts/climacons/sv_climacons_webfont.ttf) format("truetype");font-weight:400;font-style:normal}.climacon:before{font-family:sv-climacons;speak:none;font-size:inherit;font-style:normal;font-weight:400;line-height:inherit;-webkit-font-smoothing:antialiased}.climacon.i26:before{content:"\E000"}.climacon.i28:before,.climacon.i30:before,.climacon.i44:before{content:"\E001"}.climacon.i27:before,.climacon.i29:before{content:"\E002"}.climacon.i9:before,.climacon.i11:before,.climacon.i12:before,.climacon.i40:before{content:"\E003"}.climacon.i32:before,.climacon.i34:before{content:"\E028"}.climacon.i3200:before{content:"\D8";font-weight:700}.climacon.i8:before,.climacon.i10:before{content:"\E00C"}.climacon.i6:before,.climacon.i7:before,.climacon.i18:before{content:"\E010"}.climacon.i17:before,.climacon.i35:before{content:"\E013"}.climacon.i5:before{content:"\E004"}.climacon.i13:before,.climacon.i14:before,.climacon.i15:before,.climacon.i16:before,.climacon.i41:before,.climacon.i42:before,.climacon.i43:before,.climacon.i46:before{content:"\E018"}.climacon.i20:before{content:"\E01B"}.climacon.i21:before,.climacon.i22:before,.climacon.i23:before{content:"\E01F"}.climacon.i24:before{content:"\E021"}.climacon.i2:before{content:"\E022"}.climacon.i19:before{content:"\E023"}.climacon.i3:before,.climacon.i4:before,.climacon.i37:before,.climacon.i38:before,.climacon.i39:before,.climacon.i45:before,.climacon.i47:before{content:"\E025"}.climacon.i31:before,.climacon.i33:before{content:"\E02D"}.climacon.i0:before{content:"\E037"}.climacon.i25:before{content:"\E03A"}.climacon.i36:before{content:"\E03D"}.climacon.i1:before{content:"\E00A"}@font-face{font-family:icomoon;src:url(/headers/hola-houston/icomoon/fonts/icomoon.eot?4ffa5j);src:url(/headers/hola-houston/icomoon/fonts/icomoon.eot?4ffa5j#iefix) format("embedded-opentype"),url(/headers/hola-houston/icomoon/fonts/icomoon.ttf?4ffa5j) format("truetype"),url(/headers/hola-houston/icomoon/fonts/icomoon.woff?4ffa5j) format("woff"),url(/headers/hola-houston/icomoon/fonts/icomoon.svg?4ffa5j#icomoon) format("svg");font-weight:400;font-style:normal}[class*=" icon-"],[class^=icon-]{font-family:icomoon!important;speak:none;font-style:normal;font-weight:400;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.icon-arow-right:before{content:"\E902"}.icon-skip-track:before{content:"\E903"}.icon-share-arrow:before{content:"\E904"}.icon-search:before{content:"\E900"}.icon-calendar:before{content:"\E905"}.icon-angle-right:before{content:"\E906"}.icon-close:before{content:"\E901"}.icon-angle-left:before{content:"\E907"}.px-0{padding-left:0!important;padding-right:0!important}.mx-auto{margin-right:auto;margin-left:auto}.hlh-search--place .form-control{border-radius:0;box-shadow:none;height:36px;border:none;font-weight:300;padding-bottom:0;padding-top:0;color:#555;padding-right:36px}.hlh-search--place .form-control::-webkit-input-placeholder{color:#654b0f}.hlh-search--place .form-control::-moz-placeholder{color:#654b0f}.hlh-search--place .form-control:-ms-input-placeholder{color:#654b0f}.hlh-search--place .form-control:-moz-placeholder{color:#654b0f}.hlh-search--place .form-control:focus{outline:none}.hlh-search--place .form-control:focus::-webkit-input-placeholder{color:transparent}.hlh-search--place .form-control:focus::-moz-placeholder{color:transparent}.hlh-search--place .form-control:focus:-ms-input-placeholder{color:transparent}.hlh-search--place .form-control:focus:-moz-placeholder{color:transparent}.d-none{display:none!important}.d-sm-none{display:block!important}@media (min-width:576px){.d-sm-none{display:none!important}}.d-sm-block{display:none!important}@media (min-width:576px){.d-sm-block{display:block!important}}.position-static{position:static}.ui-datepicker{margin-top:3px;border-radius:0;font-family:inherit}.ui-datepicker table{margin-bottom:0;border:none;width:calc(100% - 1px);font-size:.9em;border-collapse:collapse}.ui-datepicker th{color:#ccc;padding:.7em .3em;text-align:center;font-weight:700;border:0}.ui-datepicker td{width:14.28571%;border:1px solid #eee;padding:1px}.ui-datepicker td a,.ui-datepicker td span{height:35px;padding:8px;text-align:center;font-size:15px}.ui-datepicker .ui-widget-header{position:relative;background-color:transparent;border:none;padding:10px 0;font-weight:400}.ui-datepicker .ui-widget-header .ui-icon{display:none}.ui-datepicker .ui-widget-header a{border:none;cursor:pointer;color:#333;top:50%;-webkit-transform:translateY(-50%);transform:translateY(-50%)}.ui-datepicker .ui-datepicker-title{font-size:16px;margin:0 2.3em;line-height:1.8em;text-align:center;font-weight:inherit}.ui-datepicker .ui-datepicker-prev{position:absolute;top:0;left:0;width:45px;height:100%;padding:3px;text-align:center;font-size:22px;border-radius:0}.ui-datepicker .ui-datepicker-prev:before{content:"\E906";display:inline-block;font-family:icomoon!important;speak:none;font-style:normal;font-weight:400;font-variant:normal;text-transform:none;line-height:25px;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;position:absolute;top:50%;left:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}.ui-datepicker .ui-datepicker-next{position:absolute;top:0;right:0;width:45px;height:100%;padding:3px;text-align:center;font-size:22px;border-radius:0}.ui-datepicker .ui-datepicker-next:before{content:"\E907";display:inline-block;font-family:icomoon!important;speak:none;font-style:normal;font-weight:400;font-variant:normal;text-transform:none;line-height:25px;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;position:absolute;top:50%;left:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}.ui-datepicker .ui-datepicker-prev-hover{left:0;top:0;background-color:#eee}.ui-datepicker .ui-datepicker-next-hover{right:0;top:0;background-color:#eee}.ui-datepicker .ui-state-default{background-color:transparent}.ui-datepicker .ui-state-default:hover{background-color:#eee}.ui-button,.ui-state-default,.ui-widget-content .ui-state-default,.ui-widget-header .ui-state-default,html .ui-button.ui-state-disabled:active,html .ui-button.ui-state-disabled:hover{border:none}.ui-button.ui-state-active:hover,.ui-button:active,.ui-state-active,.ui-widget-content .ui-state-active,.ui-widget-header .ui-state-active,a.ui-button:active{background-color:#045d9b;border:none;color:#fff}.ui-state-highlight,.ui-widget-content .ui-state-highlight,.ui-widget-header .ui-state-highlight{background-color:rgba(109,158,18,.5);color:#fff;border-color:rgba(109,158,18,.5)}.ui-widget-content{border:1px solid #ddd;background:#fff;color:#333}.ui-state-disabled,.ui-widget-content .ui-state-disabled,.ui-widget-header .ui-state-disabled{opacity:.35;background-image:none}.ui-datepicker td a,.ui-datepicker td span{display:block;text-decoration:none!important;color:#333}.m-0{margin:0!important}.p-0{padding:0!important}.ml-auto{margin-left:auto}.px-0{padding-left:0;padding-right:0}
 
-	.hlh-header{font-family:Montserrat,sans-serif;box-shadow:0 0 4px 2px rgba(0,0,0,.1);min-height:65px;border-bottom: 1px solid #eeeeee;}
-	
-	.hlh-header input:focus{box-shadow:none!important}.hlh-header button{outline:0!important;line-height:1}.hlh-header li{display:inline-block;vertical-align:middle;list-style-type:none}.hlh-header--top{position:relative;z-index:9;}@media (min-width:992px){.hlh-header--top>.container-fluid>.flex-row{min-height:48px; flex-wrap:nowrap;}}.hlh-header--top a{color:#F0595E;font-weight:600;text-transform:uppercase;display:block;font-size:12px;transition:color .2s;padding:10px 0}.hlh-header--top a:hover{text-decoration:underline}
-		.hlh-header--top .hlh-weather--a{min-width:60px;font-size:18px;line-height:1;padding:0 0 0 1.3em; color: #000;}
+		.hlh-header{font-family:Montserrat,sans-serif;box-shadow:0 0 4px 2px rgba(0,0,0,.1);min-height:65px;border-bottom: 1px solid #eeeeee;}
 		
-		.hlh-header--top .hlh-weather--a .icon{margin-right:10px;vertical-align:middle;position: absolute;top:0;left:0}.hlh-header--top 
+		.hlh-header input:focus{box-shadow:none!important}.hlh-header button{outline:0!important;line-height:1}.hlh-header li{display:inline-block;vertical-align:middle;list-style-type:none}.hlh-header--top{position:relative;z-index:9;}@media (min-width:992px){.hlh-header--top>.container-fluid>.flex-row{min-height:48px; flex-wrap:nowrap;}}.hlh-header--top a{color:#F0595E;font-weight:600;text-transform:uppercase;display:block;font-size:12px;transition:color .2s;padding:10px 0}.hlh-header--top a:hover{text-decoration:underline}
+			.hlh-header--top .hlh-weather--a{min-width:60px;font-size:18px;line-height:1;padding:0 0 0 1.3em; color: #000;}
+			
+			.hlh-header--top .hlh-weather--a .icon{margin-right:10px;vertical-align:middle;position: absolute;top:0;left:0}.hlh-header--top 
+			
+			.hlh-weather--a:hover{text-decoration:none}@media (min-width:992px){.hlh-header--top{background-color: #405461;}.hlh-header--top 
+			
+			.hlh-weather--a{font-size:22px; width:30px; height:30px;}
+			
+			.hlh-header--top a{color:#fff}.hlh-header--top a:hover{color:#ccc;text-decoration:none}}.hlh-search--wrapper{position:relative}@media (min-width:992px){.hlh-search--wrapper:after{content:"";position:absolute;right:-15px;height:100%;background-color: #405461;;width:15px;top:0}}.hlh-search--wrapper .hlh-search--submit{position:absolute;top:0;right:0;color:#ffa61e;background-color:#fff;border:none;height:100%;font-size:20px;outline:0;width:36px}.hlh-search--toggle{background: #405461;color:#fff;border:none;height:36px;position:relative;width:36px;padding:0;cursor:pointer;font-size:20px;display:block;z-index:6}.hlh-search--toggle i{transition:visibility .1s,-webkit-transform .3s;transition:transform .3s,visibility .1s;transition:transform .3s,visibility .1s,-webkit-transform .3s;position:absolute;left:50%;top:50%}.hlh-search--toggle i,.hlh-search--toggle i.icon-close{-webkit-transform:translate(-50%,-50%) scale(0);transform:translate(-50%,-50%) scale(0)}.hlh-search--toggle i.icon-close{visibility:hidden;font-size:18px}.hlh-search--toggle i.icon-search,.search-open .hlh-search--toggle i.icon-close{visibility:visible;-webkit-transform:translate(-50%,-50%) scale(1);transform:translate(-50%,-50%) scale(1)}.search-open .hlh-search--toggle i.icon-search{visibility:hidden;-webkit-transform:translate(-50%,-50%) scale(0);transform:translate(-50%,-50%) scale(0)}.search-open .hlh-search--toggle{background-color:#3a3a3a;color:#fff}.hlh-search--toggle:hover{text-decoration:none!important}.hlh-search--place{position:absolute;right:0;width:0;top:-18px;overflow:hidden;transition:width .2s}.search-open .hlh-search--place{width:250px}.hlh-nav--top{margin:0}.hlh-nav--top li+li{position:relative;margin-left:20px}.hlh-nav--top li+li:before{position:absolute;content:".";left:-14px;top:50%;-webkit-transform:translateY(-50%);transform:translateY(-50%);width:3px;height:3px;border-radius:50%;background-color:#fff}.hlh-nav--main a{color:#a3a3a3;font-weight:600;font-size:18px;text-transform:uppercase;transition:color 225ms ease-in-out;display:block;padding:20px 15px}.hlh-nav--main a:hover{color:#ffa200;text-decoration:none}.hlh-nav--main li+li{margin-left:30px}.hlh-newsletter--nav li+li{margin-left:20px}
+			.hlh-header--logo {
+			  width: 125px;
+			  position: absolute;
+			  left: -12px;
+			  z-index: 10;
+			  top: -69px;
+		}.hlh-header--logo a:hover img{}
+		.hlh-header--logo img {
+			border-radius:50%;transition:box-shadow .2s ease-in-out
+			}
+			
+			.hlh-header--mobileLogo {
+				  width: 71px;
+			margin-bottom: -5px;
+			position: relative;
+			top: 0px;
+			}
 		
-		.hlh-weather--a:hover{text-decoration:none}@media (min-width:992px){.hlh-header--top{background-color: #405461;}.hlh-header--top 
-		
-		.hlh-weather--a{font-size:22px; width:30px; height:30px;}
-		
-		.hlh-header--top a{color:#fff}.hlh-header--top a:hover{color:#ccc;text-decoration:none}}.hlh-search--wrapper{position:relative}@media (min-width:992px){.hlh-search--wrapper:after{content:"";position:absolute;right:-15px;height:100%;background-color: #405461;;width:15px;top:0}}.hlh-search--wrapper .hlh-search--submit{position:absolute;top:0;right:0;color:#ffa61e;background-color:#fff;border:none;height:100%;font-size:20px;outline:0;width:36px}.hlh-search--toggle{background: #405461;color:#fff;border:none;height:36px;position:relative;width:36px;padding:0;cursor:pointer;font-size:20px;display:block;z-index:6}.hlh-search--toggle i{transition:visibility .1s,-webkit-transform .3s;transition:transform .3s,visibility .1s;transition:transform .3s,visibility .1s,-webkit-transform .3s;position:absolute;left:50%;top:50%}.hlh-search--toggle i,.hlh-search--toggle i.icon-close{-webkit-transform:translate(-50%,-50%) scale(0);transform:translate(-50%,-50%) scale(0)}.hlh-search--toggle i.icon-close{visibility:hidden;font-size:18px}.hlh-search--toggle i.icon-search,.search-open .hlh-search--toggle i.icon-close{visibility:visible;-webkit-transform:translate(-50%,-50%) scale(1);transform:translate(-50%,-50%) scale(1)}.search-open .hlh-search--toggle i.icon-search{visibility:hidden;-webkit-transform:translate(-50%,-50%) scale(0);transform:translate(-50%,-50%) scale(0)}.search-open .hlh-search--toggle{background-color:#3a3a3a;color:#fff}.hlh-search--toggle:hover{text-decoration:none!important}.hlh-search--place{position:absolute;right:0;width:0;top:-18px;overflow:hidden;transition:width .2s}.search-open .hlh-search--place{width:250px}.hlh-nav--top{margin:0}.hlh-nav--top li+li{position:relative;margin-left:20px}.hlh-nav--top li+li:before{position:absolute;content:".";left:-14px;top:50%;-webkit-transform:translateY(-50%);transform:translateY(-50%);width:3px;height:3px;border-radius:50%;background-color:#fff}.hlh-nav--main a{color:#a3a3a3;font-weight:600;font-size:18px;text-transform:uppercase;transition:color 225ms ease-in-out;display:block;padding:20px 15px}.hlh-nav--main a:hover{color:#ffa200;text-decoration:none}.hlh-nav--main li+li{margin-left:30px}.hlh-newsletter--nav li+li{margin-left:20px}
-		.hlh-header--logo {
-		  width: 125px;
-		  position: absolute;
-		  left: -12px;
-		  z-index: 10;
-		  top: -69px;
-	}.hlh-header--logo a:hover img{}
-	.hlh-header--logo img {
-		border-radius:50%;transition:box-shadow .2s ease-in-out
+			
+			.hlh-mobile--navigation{display: none; height:100vh;position:absolute;width:100%;left:100%;bottom:0;right:0;top:65px;overflow:hidden;text-transform:uppercase;opacity:.2;z-index:8;background-color:#fff;transition:all .3s;padding:10px;border:1px solid #ebebeb}
+			@media (min-width:576px){.hlh-mobile--navigation{left:auto;right:-335px;bottom:auto;width:320px;transition:all .3s;border-right:none}}@media (min-width:992px){.hlh-mobile--navigation{left:100%}}.nav-open .hlh-mobile--navigation{left:0;overflow:scroll;opacity:1}@media (min-width:576px) and (max-width:991px){.nav-open .hlh-mobile--navigation{left:auto;right:0;width:320px}}@media (min-width:992px){.nav-open .hlh-mobile--navigation{left:100%;box-shadow:none}}.hlh-mobile--navigation .form-control{border:1px solid #d4c3b3;box-shadow:none;outline:none;color:#654b0f;height:36px;border-radius:0}.hlh-mobile--navigation .form-control::-webkit-input-placeholder{color:#654b0f}.hlh-mobile--navigation .form-control::-moz-placeholder{color:#654b0f}.hlh-mobile--navigation .form-control:-ms-input-placeholder{color:#654b0f}.hlh-mobile--navigation .form-control:-moz-placeholder{color:#654b0f}.hlh-mobile--navigation .form-control:focus{background:#fff;box-shadow:inset -1px -1px 2px 1px #ccc}.hlh-mobile--navigation li{list-style-type:none;display:block}.hlh-mobile--navigation a{position:relative;color:#049aad;text-transform:uppercase;font-weight:700;display:block;font-size:16px;padding:10px 20px}.hlh-mobile--navigation a:hover{text-decoration:none}.hlh-mobile--navigation .hlh-mobile-search{position:relative}.hlh-mobile--navigation .hlh-mobile-search button{position:absolute;right:0;background-color:#d4c3b3;height:36px;top:0;color:#fff;outline:0;font-size:17px;padding:0 6px;width:36px;border:none}.hlh-mobile--navigation .hlh-mobile--navbottom{position:relative;padding:10px 0}.hlh-mobile--navigation .hlh-mobile--navbottom a{font-size:14px;font-weight:400;padding:10px 20px}.hlh-mobile--navtop{position:relative;padding:20px 0 10px}.hlh-mobile--navtop:before{content:"";position:absolute;height:1px;background:#d4c3b3;bottom:0;width:auto;left:10px;right:10px}.hlh-mobile--newsletter li{margin-top:10px}.hlh-mobile--newsletter li:first-child a:hover{text-decoration:underline}.hlh-mobile--newsletter a{background:#ffa200;font-weight:400}.hlh-mobile--altsites a,.hlh-mobile--newsletter a{padding:0;text-align:center;text-transform:uppercase;display:block;color:#fff;height:40px;width:100%;line-height:40px}.hlh-mobile--altsites a{background-color:#d4c3b3;position:relative;font-weight:700}.hlh-mobile--altsites a i{position:absolute;right:10px;top:50%;-webkit-transform:translateY(-50%);transform:translateY(-50%)}@media (min-width:576px){.hlh-mobile--altsites{margin-top:40px}}.mobile-nav--trigger{height:36px;width:100%;display:block;line-height:1;margin-right:1px;font-size:12px;font-weight:500;padding:0 8px;color:#000;background-color:#fff;text-transform:uppercase;border:1px solid #000;padding-right:35px;position:relative}.mobile-nav--trigger .hamburger{width:22px;margin-left:5px;position:absolute;top:50%;-webkit-transform:translateY(-50%);transform:translateY(-50%);right:6px;height:22px}.mobile-nav--trigger .hamburger span{height:2px;display:block;background:#000;position:absolute;width:100%;top:50%;left:50%;-webkit-backface-visibility:hidden;transition:opacity .17s ease,-webkit-transform .4s ease;transition:transform .4s ease,opacity .17s ease;transition:transform .4s ease,opacity .17s ease,-webkit-transform .4s ease;-webkit-transform:translate(-50%,-50%) rotate(-180deg) scale(.9);transform:translate(-50%,-50%) rotate(-180deg) scale(.9)}.mobile-nav--trigger .hamburger span:first-child{margin-top:-6px}.mobile-nav--trigger .hamburger span:last-child{margin-top:6px}.nav-open .mobile-nav--trigger .hamburger span:first-child{margin-top:0}.nav-open .mobile-nav--trigger .hamburger span:first-child,.nav-open .mobile-nav--trigger .hamburger span:nth-child(2){-webkit-transform:translate(-50%,-50%) rotate(-45deg) scale(.9);transform:translate(-50%,-50%) rotate(-45deg) scale(.9)}.nav-open .mobile-nav--trigger .hamburger span:nth-child(2){opacity:0}.nav-open .mobile-nav--trigger .hamburger span:nth-child(3){-webkit-transform:translate(-50%,-50%) rotate(45deg) scale(.9);transform:translate(-50%,-50%) rotate(45deg) scale(.9);margin-top:0}.hlh-hotel--dropdown{position:static}.hlh-hotel--dropdown .dropdown-menu{background-image:url(/headers/hola-houston/images/maze-yellow.png);border:1px solid #fff;color:#fff;left:auto;width:100%;right:0;padding:20px 15px;border-radius:0;margin-top:10px;margin-bottom:10px;position:static;float:none}.hlh-hotel--dropdown .dropdown-menu .booking-dropdown--header{padding-bottom:20px;margin-bottom:20px;border-bottom:1px solid #fff}.hlh-hotel--dropdown .dropdown-menu .btn-submit{width:100%;height:50px;letter-spacing:1px;font-size:13px;font-weight:900;padding:16px 0;transition:all 225ms ease-in-out;position:relative;background-color:#a80e0e}.hlh-hotel--dropdown .dropdown-menu .btn-submit:before{content:"";position:absolute;left:0;right:0;bottom:0;top:0;border:1px solid #fff;transition:all 225ms ease-in-out}.hlh-hotel--dropdown .dropdown-menu .btn-submit i{position:relative;font-size:10px;left:0;transition:all .3s ease}.hlh-hotel--dropdown .dropdown-menu .btn-submit:hover:before{border:3px solid #cf0707;display:block;margin:-3px}.hlh-hotel--dropdown .dropdown-menu .btn-submit:hover i{left:5px}.hlh-hotel--dropdown .dropdown-menu label{display:block;cursor:pointer;text-transform:uppercase;padding-bottom:5px}.hlh-hotel--dropdown .dropdown-menu input{width:100%;height:50px;margin-bottom:15px;outline:none;text-transform:uppercase;border:none;padding:0 8px;color:#654b0f;font-size:15px}.hlh-hotel--dropdown .dropdown-menu input::-webkit-input-placeholder{color:#654b0f}.hlh-hotel--dropdown .dropdown-menu input::-moz-placeholder{color:#654b0f}.hlh-hotel--dropdown .dropdown-menu input:-ms-input-placeholder{color:#654b0f}.hlh-hotel--dropdown .dropdown-menu input:-moz-placeholder{color:#654b0f}.hlh-hotel--dropdown .dropdown-menu input:focus{outline:none}.hlh-hotel--dropdown .dropdown-menu input{background:#fff url(/images/calendar.svg) no-repeat right 10px center;background-size:20px}.hlh-hotel--dropdown .dropdown-menu .ui-datepicker{width:100%;padding:0;border:none;box-shadow:0 0 0 1px #000;margin-top:10px}@media (max-width:575px){.hlh-hotel--dropdown .dropdown-menu .ui-datepicker{position:static!important}}@media (min-width:576px){.hlh-hotel--dropdown .dropdown-menu{right:auto;position:absolute;width:320px;margin-top:0;margin-bottom:0}}
+			
+			.hlh-header--bottom {
+				margin-top: 10px;
+				height: 75px;
+			}
+			
+		.checkout-hero--container {
+			background: rgba(255, 255, 255, 0.9);
+			padding: 0 21px 21px 21px;
+			border-radius: 2px;
 		}
 		
-		.hlh-header--mobileLogo {
-			  width: 71px;
-		margin-bottom: -5px;
-		position: relative;
-		top: 0px;
-		}
-	
+			</style>
 		
-		.hlh-mobile--navigation{display: none; height:100vh;position:absolute;width:100%;left:100%;bottom:0;right:0;top:65px;overflow:hidden;text-transform:uppercase;opacity:.2;z-index:8;background-color:#fff;transition:all .3s;padding:10px;border:1px solid #ebebeb}
-		@media (min-width:576px){.hlh-mobile--navigation{left:auto;right:-335px;bottom:auto;width:320px;transition:all .3s;border-right:none}}@media (min-width:992px){.hlh-mobile--navigation{left:100%}}.nav-open .hlh-mobile--navigation{left:0;overflow:scroll;opacity:1}@media (min-width:576px) and (max-width:991px){.nav-open .hlh-mobile--navigation{left:auto;right:0;width:320px}}@media (min-width:992px){.nav-open .hlh-mobile--navigation{left:100%;box-shadow:none}}.hlh-mobile--navigation .form-control{border:1px solid #d4c3b3;box-shadow:none;outline:none;color:#654b0f;height:36px;border-radius:0}.hlh-mobile--navigation .form-control::-webkit-input-placeholder{color:#654b0f}.hlh-mobile--navigation .form-control::-moz-placeholder{color:#654b0f}.hlh-mobile--navigation .form-control:-ms-input-placeholder{color:#654b0f}.hlh-mobile--navigation .form-control:-moz-placeholder{color:#654b0f}.hlh-mobile--navigation .form-control:focus{background:#fff;box-shadow:inset -1px -1px 2px 1px #ccc}.hlh-mobile--navigation li{list-style-type:none;display:block}.hlh-mobile--navigation a{position:relative;color:#049aad;text-transform:uppercase;font-weight:700;display:block;font-size:16px;padding:10px 20px}.hlh-mobile--navigation a:hover{text-decoration:none}.hlh-mobile--navigation .hlh-mobile-search{position:relative}.hlh-mobile--navigation .hlh-mobile-search button{position:absolute;right:0;background-color:#d4c3b3;height:36px;top:0;color:#fff;outline:0;font-size:17px;padding:0 6px;width:36px;border:none}.hlh-mobile--navigation .hlh-mobile--navbottom{position:relative;padding:10px 0}.hlh-mobile--navigation .hlh-mobile--navbottom a{font-size:14px;font-weight:400;padding:10px 20px}.hlh-mobile--navtop{position:relative;padding:20px 0 10px}.hlh-mobile--navtop:before{content:"";position:absolute;height:1px;background:#d4c3b3;bottom:0;width:auto;left:10px;right:10px}.hlh-mobile--newsletter li{margin-top:10px}.hlh-mobile--newsletter li:first-child a:hover{text-decoration:underline}.hlh-mobile--newsletter a{background:#ffa200;font-weight:400}.hlh-mobile--altsites a,.hlh-mobile--newsletter a{padding:0;text-align:center;text-transform:uppercase;display:block;color:#fff;height:40px;width:100%;line-height:40px}.hlh-mobile--altsites a{background-color:#d4c3b3;position:relative;font-weight:700}.hlh-mobile--altsites a i{position:absolute;right:10px;top:50%;-webkit-transform:translateY(-50%);transform:translateY(-50%)}@media (min-width:576px){.hlh-mobile--altsites{margin-top:40px}}.mobile-nav--trigger{height:36px;width:100%;display:block;line-height:1;margin-right:1px;font-size:12px;font-weight:500;padding:0 8px;color:#000;background-color:#fff;text-transform:uppercase;border:1px solid #000;padding-right:35px;position:relative}.mobile-nav--trigger .hamburger{width:22px;margin-left:5px;position:absolute;top:50%;-webkit-transform:translateY(-50%);transform:translateY(-50%);right:6px;height:22px}.mobile-nav--trigger .hamburger span{height:2px;display:block;background:#000;position:absolute;width:100%;top:50%;left:50%;-webkit-backface-visibility:hidden;transition:opacity .17s ease,-webkit-transform .4s ease;transition:transform .4s ease,opacity .17s ease;transition:transform .4s ease,opacity .17s ease,-webkit-transform .4s ease;-webkit-transform:translate(-50%,-50%) rotate(-180deg) scale(.9);transform:translate(-50%,-50%) rotate(-180deg) scale(.9)}.mobile-nav--trigger .hamburger span:first-child{margin-top:-6px}.mobile-nav--trigger .hamburger span:last-child{margin-top:6px}.nav-open .mobile-nav--trigger .hamburger span:first-child{margin-top:0}.nav-open .mobile-nav--trigger .hamburger span:first-child,.nav-open .mobile-nav--trigger .hamburger span:nth-child(2){-webkit-transform:translate(-50%,-50%) rotate(-45deg) scale(.9);transform:translate(-50%,-50%) rotate(-45deg) scale(.9)}.nav-open .mobile-nav--trigger .hamburger span:nth-child(2){opacity:0}.nav-open .mobile-nav--trigger .hamburger span:nth-child(3){-webkit-transform:translate(-50%,-50%) rotate(45deg) scale(.9);transform:translate(-50%,-50%) rotate(45deg) scale(.9);margin-top:0}.hlh-hotel--dropdown{position:static}.hlh-hotel--dropdown .dropdown-menu{background-image:url(/headers/hola-houston/images/maze-yellow.png);border:1px solid #fff;color:#fff;left:auto;width:100%;right:0;padding:20px 15px;border-radius:0;margin-top:10px;margin-bottom:10px;position:static;float:none}.hlh-hotel--dropdown .dropdown-menu .booking-dropdown--header{padding-bottom:20px;margin-bottom:20px;border-bottom:1px solid #fff}.hlh-hotel--dropdown .dropdown-menu .btn-submit{width:100%;height:50px;letter-spacing:1px;font-size:13px;font-weight:900;padding:16px 0;transition:all 225ms ease-in-out;position:relative;background-color:#a80e0e}.hlh-hotel--dropdown .dropdown-menu .btn-submit:before{content:"";position:absolute;left:0;right:0;bottom:0;top:0;border:1px solid #fff;transition:all 225ms ease-in-out}.hlh-hotel--dropdown .dropdown-menu .btn-submit i{position:relative;font-size:10px;left:0;transition:all .3s ease}.hlh-hotel--dropdown .dropdown-menu .btn-submit:hover:before{border:3px solid #cf0707;display:block;margin:-3px}.hlh-hotel--dropdown .dropdown-menu .btn-submit:hover i{left:5px}.hlh-hotel--dropdown .dropdown-menu label{display:block;cursor:pointer;text-transform:uppercase;padding-bottom:5px}.hlh-hotel--dropdown .dropdown-menu input{width:100%;height:50px;margin-bottom:15px;outline:none;text-transform:uppercase;border:none;padding:0 8px;color:#654b0f;font-size:15px}.hlh-hotel--dropdown .dropdown-menu input::-webkit-input-placeholder{color:#654b0f}.hlh-hotel--dropdown .dropdown-menu input::-moz-placeholder{color:#654b0f}.hlh-hotel--dropdown .dropdown-menu input:-ms-input-placeholder{color:#654b0f}.hlh-hotel--dropdown .dropdown-menu input:-moz-placeholder{color:#654b0f}.hlh-hotel--dropdown .dropdown-menu input:focus{outline:none}.hlh-hotel--dropdown .dropdown-menu input{background:#fff url(/images/calendar.svg) no-repeat right 10px center;background-size:20px}.hlh-hotel--dropdown .dropdown-menu .ui-datepicker{width:100%;padding:0;border:none;box-shadow:0 0 0 1px #000;margin-top:10px}@media (max-width:575px){.hlh-hotel--dropdown .dropdown-menu .ui-datepicker{position:static!important}}@media (min-width:576px){.hlh-hotel--dropdown .dropdown-menu{right:auto;position:absolute;width:320px;margin-top:0;margin-bottom:0}}
+		<header class="hlh-header">
+			<div class="hlh-header--top">
+				<div class="container-fluid">
+					<div class="flex-row align-items-center justify-content-between ">
 		
-		.hlh-header--bottom {
-			margin-top: 10px;
-			height: 75px;
-		}
 		
-	.checkout-hero--container {
-		background: rgba(255, 255, 255, 0.9);
-		padding: 0 21px 21px 21px;
-		border-radius: 2px;
-	}
-	
-		</style>
-	
-	<header class="hlh-header">
-		<div class="hlh-header--top">
-			<div class="container-fluid">
-				<div class="flex-row align-items-center justify-content-between ">
-	
-	<div id="google_translate_element"></div>
-	
-					<div class="flex-col-auto" style='height:64px; display: flex;
-		align-items: center; list-style: none;'>
-						<div class="flex-row">
-							<div class="flex-col-auto hidden-md hidden-lg">
-								<div class="hlh-header--mobileLogo">
-									<a class="m-0 p-0" target="_blank" href="https://www.visitahoustontexas.com/"><img class="img-responsive" src="https://www.visitahoustontexas.com/includes/public/assets/images/hola-houston-logo.png" alt="Hola Houston"></a>
-								</div>
-							</div>
-							<div class="flex-col-auto hidden-xs hidden-sm">
-								<ul class="hlh-nav--top p-0">
-									<li>
-										<a target="_blank" href="https://www.visitahoustontexas.com/reuniones-y-convenciones/" title="Reuniones y Convenciones">Reuniones y Convenciones</a>
-									</li>
-									<li><a target="_blank" href="https://www.visitahoustontexas.com/prensa/" title="Prensa">Prensa</a>
-									</li>
-									<li><a target="_blank" href="https://www.visitahoustontexas.com/blog/" title="Blog">Blog</a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="flex-col-auto d-sm-block mx-auto" style='margin-right: 0 !important;'>
-						<ul class="hlh-newsletter--nav m-0 p-0">
-							<li>
-								<a target="_blank" href="https://www.visitahoustontexas.com/planea-tu-visita/e-news-signup/">Subscríbete</a>
-							</li>
-							<li>
-								<div class="hlh-hotel--dropdown dropdown">
-									<a role="button" class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-										Reservaciones </a>
-									<div class="dropdown-menu booking-dropdown" aria-labelledby="dropdownMenu1">
-										<form action="https://www.tkqlhce.com/click-8075397-10479934" method="get" target="_blank">
-											<input name="GOTO" type="hidden" value="HOTSEARCH">
-											<input name="eapid" type="hidden" value="74388">
-											<input name="CityName" type="hidden" value="Houston">
-											<input name="langid" type="hidden" value="2058"> <input name="NumRoom" type="hidden" value="1">
-											<input name="NumAdult" type="hidden" value="2"> <input name="NumChild" type="hidden" value="0">
-											<div class="booking-dropdown--header text-center">
-												<h3 class="m-0  ">RESERVA TU HOTEL</h3>
-											</div>
-											<div class="form-group">
-												<label for="hw-checkin">Fech De LLegada:</label>
-												<input class="is-datepicker hasDatepicker" id="hw-checkin" name="hw-checkin" type="text" placeholder="MM/DD/YYYY">
-											</div>
-											<div class="form-group">
-												<label for="hw-checkout">Fech De Partida:</label>
-												<input class="is-datepicker hasDatepicker" id="hw-checkout" name="hw-checkoute" type="text" placeholder="MM/DD/YYYY">
-											</div>
-											<div class="booking-dropdown--footer">
-												<button type="submit" class="btn-submit">BUSCAR <i class="icon-arrow-right"></i></button>
-											</div>
-										</form>
+		
+						<div class="flex-col-auto" style='height:64px; display: flex;
+			align-items: center; list-style: none;'>
+							<div class="flex-row">
+								<div class="flex-col-auto hidden-md hidden-lg">
+									<div class="hlh-header--mobileLogo">
+										<a class="m-0 p-0" target="_blank" href="https://www.visitahoustontexas.com/"><img class="img-responsive" src="https://www.visitahoustontexas.com/includes/public/assets/images/hola-houston-logo.png" alt="Hola Houston"></a>
 									</div>
 								</div>
-							</li>
-						</ul>
-					</div>
-					<div class="flex-col-auto ml-auto px-0" style='margin-left: 0 !important'>
-						<a target="_blank" href="https://www.visitahoustontexas.com/planea-tu-visita/clima/" id='Weather' class="hlh-weather--a"></a>
-					</div>
-					<div class="flex-col-auto search-col position-static hidden-xs hidden-sm">
-						<div class="hlh-search--wrapper">
-							<div class="flex-row align-items-center no-gutters">
-								<div class="flex-col-auto">
-									<div class="hlh-search--place">
-										<form action="https://www.visitahoustontexas.com/search" method="get">
-											<div class="form-group m-0">
-												<input class="form-control" name="q" type="text" placeholder="Buscar...">
-												<button class="hlh-search--submit"><i class="icon-search"></i>
-												</button>
-											</div>
-										</form>
-									</div>
-								</div>
-								<div class="flex-col-auto">
-									<button type="button" class="hlh-search--toggle"><i class="icon-search"></i>
-										<i class="icon-close"></i>
-									</button>
+								<div class="flex-col-auto hidden-xs hidden-sm">
+		<div> <div id="google_translate_element"></div></div>
+									<ul class="hlh-nav--top p-0">
+										<li>
+											<a target="_blank" href="https://www.visitahoustontexas.com/reuniones-y-convenciones/" title="Reuniones y Convenciones">Reuniones y Convenciones</a>
+										</li>
+										<li><a target="_blank" href="https://www.visitahoustontexas.com/prensa/" title="Prensa">Prensa</a>
+										</li>
+										<li><a target="_blank" href="https://www.visitahoustontexas.com/blog/" title="Blog">Blog</a></li>
+									</ul>
 								</div>
 							</div>
 						</div>
-					</div>
-					<div class="flex-col-auto hidden-md hidden-lg">
-						<button class="mobile-nav--trigger">
-							<span>Menu</span>
-							<span class="hamburger">
-							<span></span>
-							<span></span>
-							<span></span>
-						  </span>
-						</button>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="hlh-header--bottom hidden-xs hidden-sm">
-			<div class="container-fluid">
-				<div class="flex-row align-items-center">
-					<div class="flex-col-auto">
-						<div class="hlh-header--logo">
-							<a target="_blank" href="https://www.visitahoustontexas.com/"> <img class="img-responsive" src="https://www.visitahoustontexas.com/includes/public/assets/images/hola-houston-logo.png" alt="Hola Houston"> </a>
-						</div>
-					</div>
-					<div class="flex-col">
-						<nav class="hlh-nav--main">
-							<ul class="m-0 p-0 text-right">
-								<li><a target="_blank" href="https://www.visitahoustontexas.com/planea-tu-visita/">Planea Tu Visita</a>
+						<div class="flex-col-auto d-sm-block mx-auto" style='margin-right: 0 !important;'>
+							<ul class="hlh-newsletter--nav m-0 p-0">
+								<li>
+									<a target="_blank" href="https://www.visitahoustontexas.com/planea-tu-visita/e-news-signup/">Subscríbete</a>
 								</li>
-								<li><a target="_blank" href="https://www.visitahoustontexas.com/que-hacer/">Que Hacer</a></li>
-								<li><a target="_blank" href="https://www.visitahoustontexas.com/eventos/">Eventos</a></li>
-								<li><a target="_blank" href="https://www.visitahoustontexas.com/de-compras/">Compras</a></li>
-								<li><a target="_blank" href="https://www.visitahoustontexas.com/restaurantes-y-bares/">Restaurantes y Bares </a></li>
+								<li>
+									<div class="hlh-hotel--dropdown dropdown">
+										<a role="button" class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+											Reservaciones </a>
+										<div class="dropdown-menu booking-dropdown" aria-labelledby="dropdownMenu1">
+											<form action="https://www.tkqlhce.com/click-8075397-10479934" method="get" target="_blank">
+												<input name="GOTO" type="hidden" value="HOTSEARCH">
+												<input name="eapid" type="hidden" value="74388">
+												<input name="CityName" type="hidden" value="Houston">
+												<input name="langid" type="hidden" value="2058"> <input name="NumRoom" type="hidden" value="1">
+												<input name="NumAdult" type="hidden" value="2"> <input name="NumChild" type="hidden" value="0">
+												<div class="booking-dropdown--header text-center">
+													<h3 class="m-0  ">RESERVA TU HOTEL</h3>
+												</div>
+												<div class="form-group">
+													<label for="hw-checkin">Fech De LLegada:</label>
+													<input class="is-datepicker hasDatepicker" id="hw-checkin" name="hw-checkin" type="text" placeholder="MM/DD/YYYY">
+												</div>
+												<div class="form-group">
+													<label for="hw-checkout">Fech De Partida:</label>
+													<input class="is-datepicker hasDatepicker" id="hw-checkout" name="hw-checkoute" type="text" placeholder="MM/DD/YYYY">
+												</div>
+												<div class="booking-dropdown--footer">
+													<button type="submit" class="btn-submit">BUSCAR <i class="icon-arrow-right"></i></button>
+												</div>
+											</form>
+										</div>
+									</div>
+								</li>
 							</ul>
-						</nav>
+						</div>
+						<div class="flex-col-auto ml-auto px-0" style='margin-left: 0 !important'>
+							<a target="_blank" href="https://www.visitahoustontexas.com/planea-tu-visita/clima/" id='Weather' class="hlh-weather--a"></a>
+						</div>
+						<div class="flex-col-auto search-col position-static hidden-xs hidden-sm">
+							<div class="hlh-search--wrapper">
+								<div class="flex-row align-items-center no-gutters">
+									<div class="flex-col-auto">
+										<div class="hlh-search--place">
+											<form action="https://www.visitahoustontexas.com/search" method="get">
+												<div class="form-group m-0">
+													<input class="form-control" name="q" type="text" placeholder="Buscar...">
+													<button class="hlh-search--submit"><i class="icon-search"></i>
+													</button>
+												</div>
+											</form>
+										</div>
+									</div>
+									<div class="flex-col-auto">
+										<button type="button" class="hlh-search--toggle"><i class="icon-search"></i>
+											<i class="icon-close"></i>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="flex-col-auto hidden-md hidden-lg">
+							<button class="mobile-nav--trigger">
+								<span>Menu</span>
+								<span class="hamburger">
+								<span></span>
+								<span></span>
+								<span></span>
+							  </span>
+							</button>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-		<nav class="hlh-mobile--navigation d-md-none">
-			<div class="hlh-mobile-search">
-				<form action="https://www.visitahoustontexas.com/search">
-					<input class="form-control" name="q" id="q" type="text" placeholder="Buscar..." autocomplete="off"
-							autocorrret="off">
-					<button>
-						<i class="icon-skip-track"></i>
-					</button>
-				</form>
-			</div>
-			<ul class="hlh-mobile--navtop px-0 m-0">
-				<li><a target="_blank" href="https://www.visitahoustontexas.com/planea-tu-visita/" title="Planea Tu Visita">Planea Tu
-					Visita </a>
-				</li>
-				<li><a target="_blank" href="https://www.visitahoustontexas.com/que-hacer/" title="Que Hacer">Que Hacer </a></li>
-				<li><a target="_blank" href="https://www.visitahoustontexas.com/eventos/" title="Eventos">Eventos </a></li>
-				<li><a target="_blank" href="https://www.visitahoustontexas.com/de-compras/" title="Compras">Compras </a></li>
-				<li><a target="_blank" href="https://www.visitahoustontexas.com/restaurantes-y-bares/" title="Hoteles">Restaurantes y Bares </a></li>
-			</ul>
-			<ul class="hlh-mobile--navbottom px-0 m-0">
-				<li><a target="_blank" href="https://www.visitahoustontexas.com/reuniones-y-convenciones/">Reuniones Y Convenciones </a></li>
-				<li><a target="_blank" href="https://www.visitahoustontexas.com/prensa/">Prensa</a></li>
-				<li><a target="_blank" href="https://www.visitahoustontexas.com/blog/">Blog</a></li>
-			</ul>
-			<ul class="hlh-mobile--newsletter d-sm-none px-0 p-0">
-				<li><a target="_blank" href="">Subscribete</a></li>
-				<li>
-					<div class="hlh-hotel--dropdown dropdown">
-						<a role="button" class="dropdown-toggle" type="button" id="checkHotelRates2" data-toggle="dropdown"
-								aria-haspopup="true" aria-expanded="false"> Reservaciones </a>
-						<div class="dropdown-menu booking-dropdown" id="selectDaysDD2" aria-labelledby="checkHotelRates2">
-							<form action="https://www.tkqlhce.com/click-8075397-10479934" method="get" target="_blank">
-								<div class="form-group">
-									<label for="hw-checkin">Fech De LLegada:</label>
-									<input class="is-datepicker" id="hwmob-checkin" name="hwmob-checkin" type="text"
-											placeholder="MM/DD/YYYY">
-								</div>
-								<div class="form-group">
-									<label for="hw-checkout">Fech De Partida:</label>
-									<input class="is-datepicker" id="hwmob-checkout" name="hwmob-checkout" type="text"
-											placeholder="MM/DD/YYYY">
-								</div>
-								<div class="booking-dropdown--footer">
-									<button type="submit" class="btn-submit">BUSCAR <i class="icon-arow-right"></i></button>
-								</div>
-								<input name="GOTO" type="hidden" value="HOTSEARCH"> <input name="eapid" type="hidden"
-									value="74388">
-								<input name="CityName" type="hidden" value="Houston"> <input name="langid" type="hidden"
-									value="2058">
-								<input name="NumRoom" type="hidden" value="1"> <input name="NumAdult" type="hidden" value="2">
-								<input name="NumChild" type="hidden" value="0">
-							</form>
+			<div class="hlh-header--bottom hidden-xs hidden-sm">
+				<div class="container-fluid">
+					<div class="flex-row align-items-center">
+						<div class="flex-col-auto">
+							<div class="hlh-header--logo">
+								<a target="_blank" href="https://www.visitahoustontexas.com/"> <img class="img-responsive" src="https://www.visitahoustontexas.com/includes/public/assets/images/hola-houston-logo.png" alt="Hola Houston"> </a>
+							</div>
+						</div>
+						<div class="flex-col">
+							<nav class="hlh-nav--main">
+								<ul class="m-0 p-0 text-right">
+									<li><a target="_blank" href="https://www.visitahoustontexas.com/planea-tu-visita/">Planea Tu Visita</a>
+									</li>
+									<li><a target="_blank" href="https://www.visitahoustontexas.com/que-hacer/">Que Hacer</a></li>
+									<li><a target="_blank" href="https://www.visitahoustontexas.com/eventos/">Eventos</a></li>
+									<li><a target="_blank" href="https://www.visitahoustontexas.com/de-compras/">Compras</a></li>
+									<li><a target="_blank" href="https://www.visitahoustontexas.com/restaurantes-y-bares/">Restaurantes y Bares </a></li>
+								</ul>
+							</nav>
 						</div>
 					</div>
-				</li>
-			</ul>
-		</nav>
-	</header>
-	
-	
-	
-	
-	<script type="text/javascript">
-	function googleTranslateElementInit() {
-	  new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
-	}
-
-	(function ($) {
-    'use strict';
-    
-    var toggleSearch = '',
-      initDatepicker;
-    
-    
-    initDatepicker = (function () {
-      var init = function () {
-        var bookingdd;
-        
-        bookingdd = $('.hlh-hotel--dropdown');
-        bookingdd.find('#hw-checkin, #hwmob-checkin').val(moment(new Date()).add(1, 'days').format('MM/DD/YYYY'));
-        bookingdd.find('#hw-checkout, #hwmob-checkout').val(moment(new Date()).add(2, 'days').format('MM/DD/YYYY'));
-        bookingdd.find('#hw-checkin, #hwmob-checkin').datepicker({
-          minDate: '0',
-          onSelect() {
-            console.log('onSel');
-            setTimeout(() => {
-              const sdate = bookingdd.find('#hw-checkin, #hwmob-checkin').datepicker('getDate', '+1d');
-              sdate.setDate(sdate.getDate() + 1);
-              bookingdd.find('#hw-checkout, #hwmob-checkout').datepicker('option', 'minDate', sdate).find('#hw-checkout, #hwmob-checkout').datepicker('setDate', sdate);
-            }, 90);
-            
-          },
-          beforeShow(input, instance) {
-            console.log('BefSh');
-            const $pickerEl = $(instance.dpDiv);
-            
-            $pickerEl.on('click', (e) => {
-              e.stopPropagation();
-            }).insertAfter($(input));
-          },
-          onClose(a, b) {
-          
-          },
-        });
-        bookingdd.find('#hw-checkout, #hwmob-checkout').datepicker({minDate: '+1D'});
-      };
-      
-      return init;
-    })();
-    
-    
-    $(window).on('resize', function () {
-      toggleSearch = $(window).width() >= 992 ? 'search-open' : (function () {
-        $('.hlh-search--wrapper').removeClass('search-open');
-        return '';
-      }());
-    }).resize();
-    
-    $('body')
-    .on('click', 'input.is-datepicker', function () {
-      initDatepicker();
-    })
-    .on('click', '.hlh-search--toggle', function () {
-      $('.hlh-search--wrapper').toggleClass(toggleSearch);
-    })
-    .on('click', '.hlh-newsletter--nav .dropdown-menu', function (e) {
-      e.stopPropagation();
-    })
-       .on('click', '.mobile-nav--trigger', function () {
-       $('body').toggleClass('nav-open');
-        $('.hlh-mobile--navigation').slideToggle()
-    })
-  }(jQuery));
-
-  var Weather = function (options) {
-            let _queryUri, _unit, _lat, _lnt
-            _lnt = options.lnt
-            _lat = options.lat
-            _unit = options.unit ? options.unit : "c"
-            _queryUri = `https://query.yahooapis.com/v1/public/yql?q=select * from weather.forecast where u='${_unit}' AND woeid in (SELECT woeid FROM geo.places WHERE text="(${_lat},${_lnt})")&format=json`
-            return $.ajax(_queryUri).then(res => {
-              if (res.status >= 400) {
-                throw new Error("Bad response from server")
-              }
-              return res.query.results
-                ? res.query.results.channel.item.condition
-                : { code: "NA", temp: "NA" }
-            })
-          }
-          $("#Weather").append(
-            Weather({ lat: 42.299152, lnt: -85.591736, unit: "f" }).then(function (
-              res
-            ) {
-              $("#Weather").append(
-                $(`<div class="weather-container" style='display: flex; font-weight: bold;'>
-          <i style='margin-right: 5px; color: lightblue; display: flex;align-items: center;' class="climacon i${ res.code }"></i>
-          <span class="weather-temp-container" style='display: flex; '>
-          <b>${ res.temp }</b>
-          <div>°</div>
-          </span>
-          </div>`
-                )
-              )
-            })
-          )
-	</script>
-	
-	<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+				</div>
+			</div>
+			<nav class="hlh-mobile--navigation d-md-none">
+				<div class="hlh-mobile-search">
+					<form action="https://www.visitahoustontexas.com/search">
+						<input class="form-control" name="q" id="q" type="text" placeholder="Buscar..." autocomplete="off"
+								autocorrret="off">
+						<button>
+							<i class="icon-skip-track"></i>
+						</button>
+					</form>
+				</div>
+				<ul class="hlh-mobile--navtop px-0 m-0">
+					<li><a target="_blank" href="https://www.visitahoustontexas.com/planea-tu-visita/" title="Planea Tu Visita">Planea Tu
+						Visita </a>
+					</li>
+					<li><a target="_blank" href="https://www.visitahoustontexas.com/que-hacer/" title="Que Hacer">Que Hacer </a></li>
+					<li><a target="_blank" href="https://www.visitahoustontexas.com/eventos/" title="Eventos">Eventos </a></li>
+					<li><a target="_blank" href="https://www.visitahoustontexas.com/de-compras/" title="Compras">Compras </a></li>
+					<li><a target="_blank" href="https://www.visitahoustontexas.com/restaurantes-y-bares/" title="Hoteles">Restaurantes y Bares </a></li>
+				</ul>
+				<ul class="hlh-mobile--navbottom px-0 m-0">
+					<li><a target="_blank" href="https://www.visitahoustontexas.com/reuniones-y-convenciones/">Reuniones Y Convenciones </a></li>
+					<li><a target="_blank" href="https://www.visitahoustontexas.com/prensa/">Prensa</a></li>
+					<li><a target="_blank" href="https://www.visitahoustontexas.com/blog/">Blog</a></li>
+				</ul>
+				<ul class="hlh-mobile--newsletter d-sm-none px-0 p-0">
+					<li><a target="_blank" href="">Subscribete</a></li>
+					<li>
+						<div class="hlh-hotel--dropdown dropdown">
+							<a role="button" class="dropdown-toggle" type="button" id="checkHotelRates2" data-toggle="dropdown"
+									aria-haspopup="true" aria-expanded="false"> Reservaciones </a>
+							<div class="dropdown-menu booking-dropdown" id="selectDaysDD2" aria-labelledby="checkHotelRates2">
+								<form action="https://www.tkqlhce.com/click-8075397-10479934" method="get" target="_blank">
+									<div class="form-group">
+										<label for="hw-checkin">Fech De LLegada:</label>
+										<input class="is-datepicker" id="hwmob-checkin" name="hwmob-checkin" type="text"
+												placeholder="MM/DD/YYYY">
+									</div>
+									<div class="form-group">
+										<label for="hw-checkout">Fech De Partida:</label>
+										<input class="is-datepicker" id="hwmob-checkout" name="hwmob-checkout" type="text"
+												placeholder="MM/DD/YYYY">
+									</div>
+									<div class="booking-dropdown--footer">
+										<button type="submit" class="btn-submit">BUSCAR <i class="icon-arow-right"></i></button>
+									</div>
+									<input name="GOTO" type="hidden" value="HOTSEARCH"> <input name="eapid" type="hidden"
+										value="74388">
+									<input name="CityName" type="hidden" value="Houston"> <input name="langid" type="hidden"
+										value="2058">
+									<input name="NumRoom" type="hidden" value="1"> <input name="NumAdult" type="hidden" value="2">
+									<input name="NumChild" type="hidden" value="0">
+								</form>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</nav>
+		</header>
 		
-	
-	
-	
-	
-	
-	
-	  
+		
+		
+			<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+				
+		<script type="text/javascript">
+		function googleTranslateElementInit() {
+		  new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+		}
+		
+		(function ($) {
+			'use strict';
+			
+			var toggleSearch = '',
+			  initDatepicker;
+			
+			
+			initDatepicker = (function () {
+			  var init = function () {
+				var bookingdd;
+				
+				bookingdd = $('.hlh-hotel--dropdown');
+				bookingdd.find('#hw-checkin, #hwmob-checkin').val(moment(new Date()).add(1, 'days').format('MM/DD/YYYY'));
+				bookingdd.find('#hw-checkout, #hwmob-checkout').val(moment(new Date()).add(2, 'days').format('MM/DD/YYYY'));
+				bookingdd.find('#hw-checkin, #hwmob-checkin').datepicker({
+				  minDate: '0',
+				  onSelect() {
+					console.log('onSel');
+					setTimeout(() => {
+					  const sdate = bookingdd.find('#hw-checkin, #hwmob-checkin').datepicker('getDate', '+1d');
+					  sdate.setDate(sdate.getDate() + 1);
+					  bookingdd.find('#hw-checkout, #hwmob-checkout').datepicker('option', 'minDate', sdate).find('#hw-checkout, #hwmob-checkout').datepicker('setDate', sdate);
+					}, 90);
+					
+				  },
+				  beforeShow(input, instance) {
+					console.log('BefSh');
+					const $pickerEl = $(instance.dpDiv);
+					
+					$pickerEl.on('click', (e) => {
+					  e.stopPropagation();
+					}).insertAfter($(input));
+				  },
+				  onClose(a, b) {
+				  
+				  },
+				});
+				bookingdd.find('#hw-checkout, #hwmob-checkout').datepicker({minDate: '+1D'});
+			  };
+			  
+			  return init;
+			})();
+			
+			
+			$(window).on('resize', function () {
+			  toggleSearch = $(window).width() >= 992 ? 'search-open' : (function () {
+				$('.hlh-search--wrapper').removeClass('search-open');
+				return '';
+			  }());
+			}).resize();
+			
+			$('body')
+			.on('click', 'input.is-datepicker', function () {
+			  initDatepicker();
+			})
+			.on('click', '.hlh-search--toggle', function () {
+			  $('.hlh-search--wrapper').toggleClass(toggleSearch);
+			})
+			.on('click', '.hlh-newsletter--nav .dropdown-menu', function (e) {
+			  e.stopPropagation();
+			})
+			   .on('click', '.mobile-nav--trigger', function () {
+			   $('body').toggleClass('nav-open');
+				$('.hlh-mobile--navigation').slideToggle()
+			})
+		  }(jQuery));
+		
+		  var Weather = function (options) {
+					let _queryUri, _unit, _lat, _lnt
+					_lnt = options.lnt
+					_lat = options.lat
+					_unit = options.unit ? options.unit : "c"
+					_queryUri = `https://query.yahooapis.com/v1/public/yql?q=select * from weather.forecast where u='${_unit}' AND woeid in (SELECT woeid FROM geo.places WHERE text="(${_lat},${_lnt})")&format=json`
+					return $.ajax(_queryUri).then(res => {
+					  if (res.status >= 400) {
+						throw new Error("Bad response from server")
+					  }
+					  return res.query.results
+						? res.query.results.channel.item.condition
+						: { code: "NA", temp: "NA" }
+					})
+				  }
+				  $("#Weather").append(
+					Weather({ lat: 42.299152, lnt: -85.591736, unit: "f" }).then(function (
+					  res
+					) {
+					  $("#Weather").append(
+						$(`<div class="weather-container" style='display: flex; font-weight: bold;'>
+				  <i style='margin-right: 5px; color: lightblue; display: flex;align-items: center;' class="climacon i${ res.code }"></i>
+				  <span class="weather-temp-container" style='display: flex; '>
+				  <b>${ res.temp }</b>
+				  <div>°</div>
+				  </span>
+				  </div>`
+						)
+					  )
+					})
+				  )
+		</script>
+		  
+</body>
+</html>
