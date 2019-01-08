@@ -124,7 +124,10 @@
       padding-left: 15px; } }
   @media (min-width: 1025px) {
     .main-section {
-      padding: 0 40px; } }
+      padding: 0 40px;
+      z-index: 12;
+      position: relative;
+      margin-bottom: 5px; } }
 
 .logo a img {
   max-width: 125px;
