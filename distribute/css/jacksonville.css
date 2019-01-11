@@ -64,7 +64,8 @@
   background: white;
   font-family: "Berthhold Condensed";
   width: 95%;
-  border: 0.5rem solid #003662; }
+  border-left: 0.5rem solid #003662;
+  border-top: 0.5rem solid #003662; }
   .main-menu-section #close-menu {
     display: flex;
     align-items: center;
@@ -96,7 +97,7 @@
       padding: 8px; }
   @media (min-width: 375px) {
     .main-menu-section {
-      width: 96.1%; } }
+      width: 97.94%; } }
   @media (min-width: 768px) {
     .main-menu-section {
       width: 97.9%; } }

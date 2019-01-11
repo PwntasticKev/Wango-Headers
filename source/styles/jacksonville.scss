@@ -83,7 +83,8 @@ $main-font: "Berthhold Condensed";
 	background: white;
 	font-family: $main-font;
 	width: 95%;
-	border: 0.5rem solid #003662;
+	border-left: 0.5rem solid #003662;
+    border-top: 0.5rem solid #003662;
 	#close-menu {
 		display: flex;
 		align-items: center;
@@ -118,7 +119,7 @@ $main-font: "Berthhold Condensed";
 		}
 	}
 	@media (min-width: 375px) {
-		width: 96.1%;
+		width: 97.94%;
 	}
 	@media (min-width: 768px) {
 		width: 97.9%;
