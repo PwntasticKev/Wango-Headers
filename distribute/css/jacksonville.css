@@ -259,10 +259,14 @@
   z-index: 3; }
 
 .icon {
-  fill: currentColor;
+  fill: white;
   height: 1.5rem;
   vertical-align: bottom;
   width: 1.5rem; }
+
+.page-social {
+  display: flex;
+  align-items: center; }
 
 .flex {
   display: flex;
