@@ -95,12 +95,17 @@
     width: calc(100% - 2rem); }
     .main-menu-section .menu-option .menu-text {
       padding: 8px; }
+    @media (min-width: 768px) {
+      .main-menu-section .menu-option {
+        width: auto; } }
   @media (min-width: 375px) {
     .main-menu-section {
       width: 97.94%; } }
   @media (min-width: 768px) {
     .main-menu-section {
-      width: 97.9%; } }
+      width: 99%;
+      margin-bottom: auto;
+      margin-top: 25vh; } }
 
 .lower-option {
   font-family: "Berthhold Condensed"; }
@@ -125,7 +130,7 @@
   text-align: center; }
   @media (min-width: 768px) {
     .lowerMenu {
-      padding: 8px 40px;
+      padding: 8px 100px;
       justify-content: space-around; } }
 
 .lower-menu-icons {
@@ -153,7 +158,8 @@
     .page-search__container {
       top: 86px;
       right: 0 !important;
-      left: auto; } }
+      left: auto;
+      max-width: 16.75rem; } }
   .page-search__container .search-btn {
     -webkit-appearance: none;
     background-color: #0074ae;
