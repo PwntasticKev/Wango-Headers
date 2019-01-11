@@ -119,6 +119,9 @@ $main-font: "Berthhold Condensed";
 		}
 		@media(min-width: 768px) {
 			width: auto;
+			border: none;
+			border-right: 1px solid #fcb133;
+			margin-bottom:0;
 		}
 	}
 	@media (min-width: 375px) {
@@ -189,6 +192,7 @@ $main-font: "Berthhold Condensed";
 		right: 0 !important;
 		left: auto;
 		max-width: 16.75rem;
+		border-right: 1px solid #063a65;
 	}
 	.search-btn {
 		-webkit-appearance: none;
@@ -243,10 +247,24 @@ $main-font: "Berthhold Condensed";
 	flex-direction: column;
 	padding: 1.5rem;
 	align-items: center;
+	list-style-type: none;
 	.upper-menu--section {
 		@media(min-width: 768px) {
-			flex-wrap: wrap;
-			flex-direction: column;
+			flex-flow: row wrap;
+			display: flex;
+			justify-content: space-around;
+			width: 100%;
+		}
+	}
+	.lower-menu--section {
+		margin-top:40px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+		@media(min-width: 768px ) {
+			flex-direction: row;
+			width: auto;
 		}
 	}
 }

@@ -97,7 +97,10 @@
       padding: 8px; }
     @media (min-width: 768px) {
       .main-menu-section .menu-option {
-        width: auto; } }
+        width: auto;
+        border: none;
+        border-right: 1px solid #fcb133;
+        margin-bottom: 0; } }
   @media (min-width: 375px) {
     .main-menu-section {
       width: 97.94%; } }
@@ -159,7 +162,8 @@
       top: 86px;
       right: 0 !important;
       left: auto;
-      max-width: 16.75rem; } }
+      max-width: 16.75rem;
+      border-right: 1px solid #063a65; } }
   .page-search__container .search-btn {
     -webkit-appearance: none;
     background-color: #0074ae;
@@ -207,11 +211,24 @@
   display: flex;
   flex-direction: column;
   padding: 1.5rem;
-  align-items: center; }
+  align-items: center;
+  list-style-type: none; }
   @media (min-width: 768px) {
     .menu-container--main .upper-menu--section {
-      flex-wrap: wrap;
-      flex-direction: column; } }
+      flex-flow: row wrap;
+      display: flex;
+      justify-content: space-around;
+      width: 100%; } }
+  .menu-container--main .lower-menu--section {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; }
+    @media (min-width: 768px) {
+      .menu-container--main .lower-menu--section {
+        flex-direction: row;
+        width: auto; } }
 
 .flex {
   display: flex;
