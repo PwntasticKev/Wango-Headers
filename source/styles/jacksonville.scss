@@ -238,6 +238,20 @@ $main-font: "Berthhold Condensed";
 	}
 }
 
+.menu-container--main {
+	display: flex;
+	flex-direction: column;
+	padding: 1.5rem;
+	align-items: center;
+	.upper-menu--section {
+		@media(min-width: 768px) {
+			flex-wrap: wrap;
+			flex-direction: column;
+		}
+	}
+}
+
+
 .flex {
 	display: flex;
 	align-items: center;

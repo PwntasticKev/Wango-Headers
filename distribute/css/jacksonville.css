@@ -203,6 +203,16 @@
     transition: box-shadow 0.5s, border-color 0.25s ease-in-out;
     width: 100%; }
 
+.menu-container--main {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  align-items: center; }
+  @media (min-width: 768px) {
+    .menu-container--main .upper-menu--section {
+      flex-wrap: wrap;
+      flex-direction: column; } }
+
 .flex {
   display: flex;
   align-items: center; }
