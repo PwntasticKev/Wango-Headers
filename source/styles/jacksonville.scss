@@ -157,6 +157,9 @@ $main-font: "Berthhold Condensed";
 		border: 8px solid #063a65 ;
 		z-index: 20000;
 	}
+	@media(min-width: 768px) {
+		width: 98.5%;
+	}
 }
 
 .lower-option {
@@ -278,9 +281,12 @@ $main-font: "Berthhold Condensed";
 	.upper-menu--section {
 		width:100%;
 		@media(min-width: 768px) {
-			flex-flow: row wrap;
+			// flex-flow: row wrap;
 			display: flex;
 			justify-content: space-around;
+		}
+		@media(min-width: 1026px) {
+			padding-top: 2rem;
 		}
 	}
 	.lower-menu--section {

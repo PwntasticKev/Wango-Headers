@@ -132,6 +132,9 @@
       border: none;
       border: 8px solid #063a65;
       z-index: 20000; } }
+  @media (min-width: 768px) {
+    .main-menu-section {
+      width: 98.5%; } }
 
 .lower-option {
   font-family: "Berthhold Condensed"; }
@@ -242,9 +245,11 @@
     width: 100%; }
     @media (min-width: 768px) {
       .menu-container--main .upper-menu--section {
-        flex-flow: row wrap;
         display: flex;
         justify-content: space-around; } }
+    @media (min-width: 1026px) {
+      .menu-container--main .upper-menu--section {
+        padding-top: 2rem; } }
   .menu-container--main .lower-menu--section {
     margin-top: 40px;
     display: flex;
