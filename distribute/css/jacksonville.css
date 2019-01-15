@@ -157,7 +157,8 @@
   display: flex;
   background: white;
   justify-content: center;
-  text-align: center; }
+  text-align: center;
+  border-bottom: 2px solid black; }
   @media (min-width: 768px) {
     .lowerMenu {
       padding: 8px 100px;
