@@ -34,6 +34,8 @@ $main-font: "Avant";
 	}
 	.logo-svg-a {
 		@media(min-width: 1025px) {
+			display: flex;
+		justify-content: center;
 			width: 490px;
 		}
 	}

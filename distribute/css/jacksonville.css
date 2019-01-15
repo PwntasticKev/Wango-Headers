@@ -22,6 +22,8 @@
     margin: 0; }
   @media (min-width: 1025px) {
     .main-header .logo-svg-a {
+      display: flex;
+      justify-content: center;
       width: 490px; } }
   .main-header .logo-svg {
     height: 3.1rem; }
