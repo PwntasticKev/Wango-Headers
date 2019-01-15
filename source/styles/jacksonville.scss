@@ -35,7 +35,6 @@ $main-font: "Avant";
 	.logo-svg-a {
 		@media(min-width: 1025px) {
 			display: flex;
-		justify-content: center;
 			width: 490px;
 		}
 	}
@@ -46,6 +45,7 @@ $main-font: "Avant";
 		}
 		@media (min-width: 1026px) {
 			width: 210px;
+			height:6.5rem;
 		}
 	}
 	@media (min-width: 768px) {
@@ -55,6 +55,7 @@ $main-font: "Avant";
 	}
 	@media(min-width:1026px) {
 		height: 7.575rem;
+		padding: 44px 0;
 	}
 }
 
@@ -67,7 +68,7 @@ $main-font: "Avant";
 	flex-direction: column;
 	align-items: center;
 	@media(min-width: 1025px) {
-		height: 77px;
+		height: 92px;
 	}
 .burger-container {
 	width: 31px;
@@ -316,8 +317,9 @@ $main-font: "Avant";
 }
 
 .menu-background-jv {
+	position: absolute;
 	width: 100%;
-    height: 100vh;
+    height: 117vh;
     top: -135px;
     background-color: rgba(0,25,49,.8);
 	z-index: 203;
