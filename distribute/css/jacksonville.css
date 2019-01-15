@@ -25,7 +25,7 @@
       display: flex;
       width: 490px; } }
   .main-header .logo-svg {
-    height: 3.1rem; }
+    height: 4.1rem; }
     @media (min-width: 768px) {
       .main-header .logo-svg {
         height: 5rem; } }
