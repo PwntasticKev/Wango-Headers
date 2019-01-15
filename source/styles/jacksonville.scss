@@ -68,7 +68,7 @@ $main-font: "Avant";
 	flex-direction: column;
 	align-items: center;
 	@media(min-width: 1025px) {
-		height: 92px;
+		height: 87px;
 	}
 .burger-container {
 	width: 31px;
@@ -151,7 +151,7 @@ $main-font: "Avant";
 	}
 	@media (min-width: 768px) {
 		margin-bottom: auto;
-		margin-top: 25vh;
+		margin-top: 30%;
 		border:none;
 		border: 8px solid #063a65 ;
 		z-index: 20000;

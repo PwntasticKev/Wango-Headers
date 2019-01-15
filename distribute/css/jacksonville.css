@@ -53,7 +53,7 @@
   align-items: center; }
   @media (min-width: 1025px) {
     .outer-burger-container {
-      height: 92px; } }
+      height: 87px; } }
   .outer-burger-container .burger-container {
     width: 31px;
     display: flex;
@@ -127,7 +127,7 @@
   @media (min-width: 768px) {
     .main-menu-section-jv {
       margin-bottom: auto;
-      margin-top: 25vh;
+      margin-top: 30%;
       border: none;
       border: 8px solid #063a65;
       z-index: 20000; } }
