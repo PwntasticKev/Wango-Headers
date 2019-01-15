@@ -1,21 +1,17 @@
 $main-color: #fcb133;
-$main-font: "Berthhold Condensed";
+$main-font: "Avant";
 
 @font-face {
-	font-family: "Berthhold Condensed";
-	src: url("../fonts/Block-Berthold-Condensed-Regular/Block-Berthold-Condensed-Regular.otf?#iefix")
+	font-family: "Avant";
+	src: url("../fonts/AvantGarde/AvantGarde-Book.otf?#iefix")
 			format("embedded-opentype"),
-		url("../fonts/Block-Berthold-Condensed-Regular/Block-Berthold-Condensed-Regular.otf")
+		url("../fonts/AvantGarde/ITC Avant Garde Gothic LT Bold.otf")
 			format("otf"),
-		url("../fonts/Block-Berthold-Condensed-Regular/Block-Berthold-Condensed-Regular.otf")
+		url("../fonts/AvantGarde/ITC Avant Garde Gothic Medium.otf")
 			format("truetype");
 }
 
-@font-face {
-	font-family: "Berthhold Condensed";
-	src: url("../fonts/Block-Berthold-Condensed-Regular/Block-Berthold-Condensed-Regular.otf")
-		format("otf");
-}
+
 
 .main-header {
 	display: flex;
@@ -164,6 +160,8 @@ $main-font: "Berthhold Condensed";
 
 .lower-option {
 	font-family: $main-font;
+	font-size: 18px;
+    text-transform: uppercase;
 }
 
 #Weather {
@@ -185,11 +183,11 @@ $main-font: "Berthhold Condensed";
 .lowerMenu {
 	display: flex;
 	background: white;
-	justify-content: space-between;
+	justify-content: center;
 	text-align: center;
 	@media (min-width: 768px) {
 		padding: 8px 100px;
-		justify-content: space-around;
+		justify-content: center;
 	}
 	@media (min-width: 1025px) {
 		padding: 8px 240px;
@@ -315,7 +313,11 @@ $main-font: "Berthhold Condensed";
 	fill: white;
     height: 1.5rem;
     vertical-align: bottom;
-    width: 1.5rem;
+	width: 1.5rem;
+	@media(min-width:1500px) {
+		height: 1.75rem;
+		width: 1.75rem;
+	}
 }
 
 .page-social {

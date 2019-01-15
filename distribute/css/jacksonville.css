@@ -1,10 +1,6 @@
 @font-face {
-  font-family: "Berthhold Condensed";
-  src: url("../fonts/Block-Berthold-Condensed-Regular/Block-Berthold-Condensed-Regular.otf?#iefix") format("embedded-opentype"), url("../fonts/Block-Berthold-Condensed-Regular/Block-Berthold-Condensed-Regular.otf") format("otf"), url("../fonts/Block-Berthold-Condensed-Regular/Block-Berthold-Condensed-Regular.otf") format("truetype"); }
-
-@font-face {
-  font-family: "Berthhold Condensed";
-  src: url("../fonts/Block-Berthold-Condensed-Regular/Block-Berthold-Condensed-Regular.otf") format("otf"); }
+  font-family: "Avant";
+  src: url("../fonts/AvantGarde/AvantGarde-Book.otf?#iefix") format("embedded-opentype"), url("../fonts/AvantGarde/ITC Avant Garde Gothic LT Bold.otf") format("otf"), url("../fonts/AvantGarde/ITC Avant Garde Gothic Medium.otf") format("truetype"); }
 
 .main-header {
   display: flex;
@@ -13,11 +9,11 @@
   align-items: center;
   justify-content: space-between;
   padding-left: 10px;
-  font-family: "Berthhold Condensed";
+  font-family: "Avant";
   background: #fcb133; }
   .main-header .menu-text {
     color: #fefefe;
-    font-family: "Berthhold Condensed", Arial, Segoe, sans-serif;
+    font-family: "Avant", Arial, Segoe, sans-serif;
     font-weight: 700;
     line-height: 1;
     margin-top: 0.25rem;
@@ -77,7 +73,7 @@
   top: 0;
   position: absolute;
   background: white;
-  font-family: "Berthhold Condensed";
+  font-family: "Avant";
   width: 95%;
   border-left: 0.5rem solid #003662;
   border-top: 0.5rem solid #003662;
@@ -106,7 +102,7 @@
   .main-menu-section .menu-option {
     display: flex;
     align-items: center;
-    font-family: "Berthhold Condensed";
+    font-family: "Avant";
     border: 1px solid #fcb133;
     border-left-width: 0.25rem;
     font-size: 1.2rem;
@@ -137,7 +133,9 @@
       width: 98.5%; } }
 
 .lower-option {
-  font-family: "Berthhold Condensed"; }
+  font-family: "Avant";
+  font-size: 18px;
+  text-transform: uppercase; }
 
 #Weather {
   display: none; }
@@ -155,12 +153,12 @@
 .lowerMenu {
   display: flex;
   background: white;
-  justify-content: space-between;
+  justify-content: center;
   text-align: center; }
   @media (min-width: 768px) {
     .lowerMenu {
       padding: 8px 100px;
-      justify-content: space-around; } }
+      justify-content: center; } }
   @media (min-width: 1025px) {
     .lowerMenu {
       padding: 8px 240px; } }
@@ -274,6 +272,10 @@
   height: 1.5rem;
   vertical-align: bottom;
   width: 1.5rem; }
+  @media (min-width: 1500px) {
+    .icon {
+      height: 1.75rem;
+      width: 1.75rem; } }
 
 .page-social {
   display: none; }
