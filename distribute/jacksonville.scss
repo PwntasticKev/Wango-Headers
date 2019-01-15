@@ -44,10 +44,18 @@ $main-font: "Berthhold Condensed";
 		text-transform: uppercase;
 		font-size: 11px;
 	}
+	.logo-svg-a {
+		@media(min-width: 1025px) {
+			width: 490px;
+		}
+	}
 	.logo-svg {
 		height: 3.1rem;
 		@media (min-width: 768px) {
 			height: 5rem;
+		}
+		@media (min-width: 1026px) {
+			width: 210px;
 		}
 	}
 	@media (min-width: 768px) {
@@ -57,6 +65,9 @@ $main-font: "Berthhold Condensed";
 		flex-direction: row;
 		padding-left: 0px;
 		padding-right: 10px;
+	}
+	@media(min-width:1026px) {
+		height: 6.575rem;
 	}
 }
 
@@ -77,6 +88,9 @@ $main-font: "Berthhold Condensed";
 	-webkit-box-align: center;
 	-ms-flex-align: center;
 	align-items: center;
+	@media(min-width: 1025px) {
+		height: 106px;
+	}
 .burger-container {
 	width: 31px;
 	display: -webkit-box;
@@ -102,6 +116,9 @@ $main-font: "Berthhold Condensed";
 		background: #fff;
 		-webkit-transition: all 0.5s ease-in-out;
 		transition: all 0.5s ease-in-out;
+		@media(min-width: 1025px) {
+			height:4px;
+		}
 	}
 	}
 }
@@ -114,7 +131,9 @@ $main-font: "Berthhold Condensed";
 	background: white;
 	font-family: $main-font;
 	width: 95%;
-	border: 0.5rem solid #003662;
+	border-left: 0.5rem solid #003662;
+	border-top: 0.5rem solid #003662;
+	z-index: 300;
 	#close-menu {
 		display: -webkit-box;
 		display: -ms-flexbox;
@@ -133,6 +152,10 @@ $main-font: "Berthhold Condensed";
 		right: 0;
 		top: 0;
 		width: 2rem;
+		@media(min-width: 768px) {
+			width:2.75rem;
+			height:2.75rem;
+		}
 	}
 	.nav-open-logo {
 		background-color: #0074ae;
@@ -153,17 +176,30 @@ $main-font: "Berthhold Condensed";
 		font-size: 1.2rem;
 		margin-bottom: 15px;
 		text-transform: uppercase;
-		width: -webkit-calc(100% - 2rem);
-		width: calc(100% - 2rem);
+		width: 100%;
 		.menu-text {
 			padding: 8px;
 		}
+		@media(min-width: 768px) {
+			width: auto;
+			border: none;
+			border-right: 1px solid #fcb133;
+			margin-bottom:0;
+		}
 	}
 	@media (min-width: 375px) {
-		width: 96.1%;
+		width: 97.94%;
 	}
 	@media (min-width: 768px) {
-		width: 97.9%;
+		width: 97.8%;
+		margin-bottom: auto;
+		margin-top: 25vh;
+		border:none;
+		border: 8px solid #063a65 ;
+		z-index: 20000;
+	}
+	@media(min-width: 768px) {
+		width: 98.5%;
 	}
 }
 
@@ -199,9 +235,12 @@ $main-font: "Berthhold Condensed";
 	justify-content: space-between;
 	text-align: center;
 	@media (min-width: 768px) {
-		padding: 8px 40px;
+		padding: 8px 100px;
 		-ms-flex-pack: distribute;
 		justify-content: space-around;
+	}
+	@media (min-width: 1025px) {
+		padding: 8px 240px;
 	}
 }
 .lower-menu-icons {
@@ -231,6 +270,7 @@ $main-font: "Berthhold Condensed";
 		top: 86px;
 		right: 0 !important;
 		left: auto;
+		max-width: 16.75rem;
 	}
 	.search-btn {
 		-webkit-appearance: none;
@@ -286,6 +326,99 @@ $main-font: "Berthhold Condensed";
 		width: 100%;
 	}
 }
+
+.menu-container--main {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	padding: 1.5rem;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	list-style-type: none;
+	.upper-menu--section {
+		width:100%;
+		@media(min-width: 768px) {
+			// flex-flow: row wrap;
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			-ms-flex-pack: distribute;
+			justify-content: space-around;
+		}
+		@media(min-width: 1026px) {
+			padding-top: 2rem;
+		}
+	}
+	.lower-menu--section {
+		margin-top:40px;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+		flex-direction: column;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+		width: 100%;
+		@media(min-width: 768px ) {
+			-webkit-box-orient: horizontal;
+			-webkit-box-direction: normal;
+			-ms-flex-direction: row;
+			flex-direction: row;
+			width: auto;
+		}
+	}
+}
+
+.menu-background {
+	width: 100%;
+    height: 100vh;
+    top: -135px;
+    background-color: rgba(0,25,49,.8);
+	position: relative;
+	z-index: 3;
+}
+
+.icon {
+	fill: white;
+    height: 1.5rem;
+    vertical-align: bottom;
+    width: 1.5rem;
+}
+
+.page-social {
+	display: none;
+	@media(min-width: 1025px) {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+	}
+}
+
+.page-social__link {
+	padding: .25rem .5rem;
+	opacity: .6
+}
+
+
+
+
+
+
+
+
+
+
 
 .flex {
 	display: -webkit-box;
