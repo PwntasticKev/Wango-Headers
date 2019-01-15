@@ -50,7 +50,7 @@
   align-items: center; }
   @media (min-width: 1025px) {
     .outer-burger-container {
-      height: 106px; } }
+      height: 77px; } }
   .outer-burger-container .burger-container {
     width: 31px;
     display: flex;
@@ -121,12 +121,8 @@
         border: none;
         border-right: 1px solid #fcb133;
         margin-bottom: 0; } }
-  @media (min-width: 375px) {
-    .main-menu-section-jv {
-      width: 97.94%; } }
   @media (min-width: 768px) {
     .main-menu-section-jv {
-      width: 97.8%;
       margin-bottom: auto;
       margin-top: 25vh;
       border: none;
@@ -190,10 +186,10 @@
   z-index: 10; }
   @media (min-width: 768px) {
     .page-search__container {
-      top: 86px;
+      top: 68px;
       right: 0 !important;
       left: auto;
-      max-width: 16.75rem; } }
+      max-width: 38rem; } }
   .page-search__container .search-btn {
     -webkit-appearance: none;
     background-color: #0074ae;
@@ -215,11 +211,17 @@
     transition: background-color 0.3s ease, color 0.3s ease;
     vertical-align: middle;
     will-change: background-color, color; }
+    @media (min-width: 768px) {
+      .page-search__container .search-btn {
+        padding: 1.7rem 2.9rem 1.5rem; } }
   .page-search__container .cancel-btn {
     background-color: transparent;
     border: 1px solid #686b6b;
     color: #686b6b;
     text-transform: uppercase; }
+    @media (min-width: 768px) {
+      .page-search__container .cancel-btn {
+        padding: 1.7rem 2.9rem 1.5rem; } }
   .page-search__container .page-search__input {
     background-color: #fefefe;
     border: 1px solid #cacaca;
@@ -236,6 +238,9 @@
     padding: 0.5rem;
     transition: box-shadow 0.5s, border-color 0.25s ease-in-out;
     width: 100%; }
+    @media (min-width: 768px) {
+      .page-search__container .page-search__input {
+        height: 4.4375rem; } }
 
 .jv-menu-container--main {
   display: flex;
@@ -277,8 +282,8 @@
   width: 1.5rem; }
   @media (min-width: 1300px) {
     .icon {
-      height: 1.75rem;
-      width: 1.75rem; } }
+      height: 2.75rem;
+      width: 2.75rem; } }
 
 .page-social {
   display: none; }

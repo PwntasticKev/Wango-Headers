@@ -65,7 +65,7 @@ $main-font: "Avant";
 	flex-direction: column;
 	align-items: center;
 	@media(min-width: 1025px) {
-		height: 106px;
+		height: 77px;
 	}
 .burger-container {
 	width: 31px;
@@ -146,11 +146,7 @@ $main-font: "Avant";
 			margin-bottom:0;
 		}
 	}
-	@media (min-width: 375px) {
-		width: 97.94%;
-	}
 	@media (min-width: 768px) {
-		width: 97.8%;
 		margin-bottom: auto;
 		margin-top: 25vh;
 		border:none;
@@ -224,10 +220,10 @@ $main-font: "Avant";
 	width: 100%;
 	z-index: 10;
 	@media (min-width: 768px) {
-		top: 86px;
+		top: 68px;
 		right: 0 !important;
 		left: auto;
-		max-width: 16.75rem;
+		max-width: 38rem;
 	}
 	.search-btn {
 		-webkit-appearance: none;
@@ -250,12 +246,18 @@ $main-font: "Avant";
 		transition: background-color 0.3s ease, color 0.3s ease;
 		vertical-align: middle;
 		will-change: background-color, color;
+		@media(min-width: 768px) {
+			padding: 1.7rem 2.9rem 1.5rem;
+		}
 	}
 	.cancel-btn {
 		background-color: transparent;
 		border: 1px solid #686b6b;
 		color: #686b6b;
 		text-transform: uppercase;
+		@media(min-width: 768px) {
+			padding: 1.7rem 2.9rem 1.5rem;
+		}
 	}
 
 	.page-search__input {
@@ -274,6 +276,9 @@ $main-font: "Avant";
 		padding: 0.5rem;
 		transition: box-shadow 0.5s, border-color 0.25s ease-in-out;
 		width: 100%;
+		@media(min-width: 768px) {
+			height: 4.4375rem;
+		}
 	}
 }
 
@@ -321,8 +326,8 @@ $main-font: "Avant";
     vertical-align: bottom;
 	width: 1.5rem;
 	@media(min-width:1300px) {
-		height: 1.75rem;
-		width: 1.75rem;
+		height: 2.75rem;
+		width: 2.75rem;
 	}
 }
 
