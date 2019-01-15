@@ -320,9 +320,12 @@ $main-font: "Avant";
 	position: absolute;
 	width: 100%;
     height: 117vh;
-    top: -135px;
+    top: 0;
     background-color: rgba(0,25,49,.8);
 	z-index: 2147483648;
+	@media(min-width:768px) {
+		top: -135px;
+	}
 }
 
 .icon {
