@@ -38,7 +38,7 @@
       padding-right: 10px; } }
   @media (min-width: 1026px) {
     .main-header {
-      height: 6.575rem; } }
+      height: 7.575rem; } }
 
 .outer-burger-container {
   justify-content: center;
@@ -170,8 +170,8 @@
 .lower-menu-icons {
   display: none;
   fill: black;
-  height: 1.5rem;
-  width: 1.5rem; }
+  height: 2.5rem;
+  width: 2.5rem; }
   @media (min-width: 768px) {
     .lower-menu-icons {
       display: block; } }
@@ -275,7 +275,7 @@
   height: 1.5rem;
   vertical-align: bottom;
   width: 1.5rem; }
-  @media (min-width: 1500px) {
+  @media (min-width: 1300px) {
     .icon {
       height: 1.75rem;
       width: 1.75rem; } }
@@ -290,6 +290,9 @@
 .page-social__link {
   padding: .25rem .5rem;
   opacity: .6;
+  list-style-type: none; }
+
+.page-social__item {
   list-style-type: none; }
 
 .flex {

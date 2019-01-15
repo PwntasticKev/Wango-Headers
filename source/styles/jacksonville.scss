@@ -52,7 +52,7 @@ $main-font: "Avant";
 		padding-right: 10px;
 	}
 	@media(min-width:1026px) {
-		height: 6.575rem;
+		height: 7.575rem;
 	}
 }
 
@@ -203,8 +203,8 @@ $main-font: "Avant";
 .lower-menu-icons {
 	display: none;
 	fill: black;
-	height: 1.5rem;
-	width: 1.5rem;
+	height: 2.5rem;
+	width: 2.5rem;
 	@media (min-width: 768px) {
 		display: block;
 	}
@@ -320,7 +320,7 @@ $main-font: "Avant";
     height: 1.5rem;
     vertical-align: bottom;
 	width: 1.5rem;
-	@media(min-width:1500px) {
+	@media(min-width:1300px) {
 		height: 1.75rem;
 		width: 1.75rem;
 	}
@@ -340,14 +340,9 @@ $main-font: "Avant";
 	list-style-type: none;
 }
 
-
-
-
-
-
-
-
-
+.page-social__item {
+	list-style-type: none;
+}
 
 
 .flex {
