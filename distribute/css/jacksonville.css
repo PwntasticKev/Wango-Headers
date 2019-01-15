@@ -269,12 +269,12 @@
         flex-direction: row;
         width: auto; } }
 
-.menu-background {
+.menu-background-jv {
   width: 100%;
   height: 100vh;
   top: -135px;
   background-color: rgba(0, 25, 49, 0.8);
-  z-index: 3; }
+  z-index: 203; }
 
 .icon {
   fill: white;

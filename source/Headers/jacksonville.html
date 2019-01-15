@@ -133,7 +133,7 @@
 			 </div>
 		   </section>
 		 </section>
-</header>
+
  <d class="lowerMenu">
   <div class='flex'>
 	  <div class='flex' style='justify-content: center'>
@@ -176,6 +176,7 @@
     </section>
   </form>
 </section>
+</header>
 
 
     <!-- javascript -->
@@ -183,12 +184,12 @@
     <script>
       $('#close-menu').on('click',function() {
         $('.main-menu-section-jv').hide()
-		$('.outer-open-section').removeClass('menu-background')
+		$('.outer-open-section').removeClass('menu-background-jv')
       })
       $('.burger-container').on('click',function() {
         $('.main-menu-section-jv').show()
 		$('.page-search__container').hide();
-		$('.outer-open-section').addClass('menu-background')
+		$('.outer-open-section').addClass('menu-background-jv')
       })
 
       $('.cancel-btn').on('click',function() {
@@ -198,7 +199,7 @@
         $('.page-search__container').toggle()
       })
 	//   $('.outer-open-section').on('click',function() {
-	// 	// $('.outer-open-section').removeClass('menu-background')
+	// 	// $('.outer-open-section').removeClass('menu-background-jv')
 	// 	$('.main-menu-section-jv').hide()
 	//   })
 
