@@ -11,17 +11,24 @@
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 		<script>
-		console.log('script loaded')
-		  function Weather() {
-		  let url = 'https://cors.io/?http://api.openweathermap.org/data/2.5/weather?lat=35&lon=139&APPID={KEYHERE}'
-		  console.log($.ajax({url: url,
+		  function Weather(options) {
+		  let lon = options.lon
+		  let lat = options.lat
+		  let city = options.city
+		  console.log(`${lat} ${lon}`)
+		  let url = `https://cors.io/?http://api.openweathermap.org/data/2.5/weather?q=${city}&units=Imperial&APPID={}`
+		
+		   $.ajax({url: url,
 			dataType: 'jsonp',
 			xhrFields: {
 			  withCredentials: true
-		   }}))
+		   }}).then(res => {
+			   console.log('res',res)
+			   console.log('options',options)
+		   })
 		  }
 		
-		 Weather()
+		 Weather({ city: 'herriman', lat: -111.950684, lon: 39.419220 })
 		
 		  </script>
 </body>
