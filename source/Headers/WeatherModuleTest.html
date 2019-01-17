@@ -22,7 +22,7 @@
 					dataType: 'jsonp',
 					xhrFields: {
 			  			withCredentials: true
-		   		}}).then(res => {
+		   		}}).done(function(res) {
 			   		console.log(res)
 				$("#Weather").append(
                		$(`<div class="tac-weather">
@@ -37,7 +37,7 @@
 		   })
 		  }
 
-		 Weather({ city: 'herriman', lat: -8.4218857, lon: 114.295067 })
+		 Weather({ city: 'herriman', lat: 40.7608, lon: -111.8910 })
 		
 		  </script>
 </body>
