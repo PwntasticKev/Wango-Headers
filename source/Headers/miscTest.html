@@ -7,20 +7,67 @@
 	<title>Document</title>
 </head>
 <body>
-	<div class="first-title-container container-fluid" style="margin-top: 5%; margin-left: auto; margin-right: auto; margin-bottom: 5px;">
-		<h2 id="first-title" class="text-center">Welcome to the Fort Worth Marketplace</h2>
-		<p style="font-weight: 400; font-size: 18px; color: #000;" class="text-center">Fort Worth welcomes visitors from around the world to experience the great American West and rich arts and culinary treasures.
-			There are more than 92 attractions in a 10-mile radius of downtown. The city offers the No. 1 downtown in America and is
-			located minutes from AT&T Stadium and DFW International Airport. As one visitor says, "unpretentious, laid-back, and charismatic
-			in all the right ways." For a weekend, a business meeting, sports or family reunion, Fort Worth offers experiences to last
-			a lifetime.
-			<br> Check out the Fort Worth Ale Trail and Worth Savings program and stay tuned for Museums and Family Fun offers coming soon!<br>
-		</p>
-	</div>
-	
-	<a href="#module-4762">
-		<br>See what's included <br>
-	</a>
+	<a id='Weather'></a>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		<script>
+				$(document).ready(_ => {
+				  $('#google_translate_element').click(_ => {
+					$('.language-menu').toggleClass('reveal-language-menu')
+				  });
+
+				  $('.faSearch').click(_ => {
+					$(".faSearch").hide()
+					$('.faX').show()
+					$('.searchInput').show()
+				  });
+
+				  $('.faX').click(_ => {
+					$(".faSearch").show()
+					$(".faX").hide()
+					$('.searchInput').hide()
+				  });
+
+				  $('.burger-menu').click(_ => {
+					$(".burger-menu").hide()
+					$('.X').show()
+					$('.mobile-nav-container').show()
+				  });
+			
+				  $('.X').click(_ => {
+					$(".burger-menu").show()
+					$(".X").hide()
+					$('.mobile-nav-container').hide()
+				  });
+			
+				  function Weather(options) {
+					  let lon = options.lon
+					  let lat = options.lat
+					  let city = options.city
+					  console.log(`${lat} ${lon}`)
+					  let url = `https://cors.io/?http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=Imperial&APPID=c7601ff83777c3708fa1e5f981963ac5`
+			
+					   $.ajax({	url: url,
+								dataType: 'jsonp',
+								xhrFields: {
+									  withCredentials: true
+							   }}).done(function(res) {
+								   console.log('res',res)
+							$("#Weather").html(
+								   $(`<a class="tac-weather" style="display: flex; align-items: center;" href='https://www.fortworth.com/about/weather/'>
+										 <img style='margin-right: 5px;'src="http://openweathermap.org/img/w/${res.weather[0].icon}.png" ></img>
+									  <span class="tac-weather" style="display: flex; align-items: center;">
+										  <b>${ res.main.temp }</b>
+										<div>°</div>
+									  </span>
+								 </a>`
+							)
+						  )
+					   }).fail(console.log)
+					  }
+			
+					 Weather({ lat: 40.7608, lon: -111.8910 })
+				})
+			  </script>
 				<!-- <p style="font-weight: 400; font-size: 18px; color: #000;" class="text-center"></p> -->
 </body>
 </html>
