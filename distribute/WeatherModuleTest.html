@@ -16,7 +16,7 @@
 		  let lat = options.lat
 		  let city = options.city
 		  console.log(`${lat} ${lon}`)
-		  let url = `https://cors.io/?http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=Imperial&APPID=`
+		  let url = `https://cors.io/?http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=Imperial&APPID=c7601ff83777c3708fa1e5f981963ac5`
 
 		   $.ajax({url: url,
 			dataType: 'jsonp',
@@ -26,9 +26,9 @@
 			   console.log(res)
 			$("#Weather").append(
                 $(`<div class="tac-weather">
-         					<i style='margin-right: 5px;' class="climacon i${ res.cod}">${res.cod}</i>
+         					<i style='margin-right: 5px;' class="climacon i${ res.cod }">${ res.cod }</i>
           				<span class="tac-weather">
-          					<b>${ res.main.temp}</b>
+          					<b>${ res.main.temp }</b>
         					<div>°</div>
           				</span>
          			</div>`
