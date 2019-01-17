@@ -15,6 +15,7 @@
 		  let lon = options.lon
 		  let lat = options.lat
 		  let city = options.city
+		  console.log(`${lat} ${lon}`)
 		  let url = `https://cors.io/?http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=Imperial&APPID=`
 
 		   $.ajax({	url: url,
@@ -24,9 +25,9 @@
 		   		}}).done(function(res) {
 			   		console.log(res)
 				$("#Weather").html(
-               		$(`<div class="tac-weather" style='display: flex; align-items: center;'>
-         					<img style='margin-right: 5px;' src='http://openweathermap.org/img/w/10d.png'></img>
-          				<span class="tac-weather" style='display: flex; align-items: center;'>
+               		$(`<div class="tac-weather" style="display: flex; align-items: center;">
+         					<img style='margin-right: 5px;'src="http://openweathermap.org/img/w/${res.weather[0].icon}.png" ></img>
+          				<span class="tac-weather" style="display: flex; align-items: center;">
           					<b>${ res.main.temp }</b>
         					<div>°</div>
           				</span>
