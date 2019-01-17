@@ -90,13 +90,13 @@ $montFont:"Montserrat", sans-serif;
 	border-width: 0;
 	cursor: pointer;
 	font-family: $montFont;
-	font-weight: normal;
 	line-height: normal;
 	position: relative;
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
-	font-size: 1rem;
+	font-size: 1.5rem;
+	font-weight:800;
 	color: #ffffff;
 	transition: background-color 300ms ease-out;
 }
@@ -135,6 +135,7 @@ $montFont:"Montserrat", sans-serif;
 
 .kala-mobile-search-close {
   padding: 9px;
+  font-weight: 700;
   background-color: lightgray;
   color:white;
   font-family: 'Montserrat', sans-serif;
