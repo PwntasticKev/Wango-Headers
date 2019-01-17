@@ -1,21 +1,17 @@
 $main-color: #fcb133;
-$main-font: "Berthhold Condensed";
+$main-font: "Avant";
 
 @font-face {
-	font-family: "Berthhold Condensed";
-	src: url("../fonts/Block-Berthold-Condensed-Regular/Block-Berthold-Condensed-Regular.otf?#iefix")
+	font-family: "Avant";
+	src: url("../fonts/AvantGarde/AvantGarde-Book.otf?#iefix")
 			format("embedded-opentype"),
-		url("../fonts/Block-Berthold-Condensed-Regular/Block-Berthold-Condensed-Regular.otf")
+		url("../fonts/AvantGarde/ITC Avant Garde Gothic LT Bold.otf")
 			format("otf"),
-		url("../fonts/Block-Berthold-Condensed-Regular/Block-Berthold-Condensed-Regular.otf")
+		url("../fonts/AvantGarde/ITC Avant Garde Gothic Medium.otf")
 			format("truetype");
 }
 
-@font-face {
-	font-family: "Berthhold Condensed";
-	src: url("../fonts/Block-Berthold-Condensed-Regular/Block-Berthold-Condensed-Regular.otf")
-		format("otf");
-}
+
 
 .main-header {
 	display: -webkit-box;
@@ -35,7 +31,7 @@ $main-font: "Berthhold Condensed";
 	padding-left: 10px;
 	font-family: $main-font;
 	background: $main-color;
-	.menu-text {
+	.menu-text-jv {
 		color: #fefefe;
 		font-family: $main-font, Arial, Segoe, sans-serif;
 		font-weight: 700;
@@ -43,19 +39,24 @@ $main-font: "Berthhold Condensed";
 		margin-top: 0.25rem;
 		text-transform: uppercase;
 		font-size: 11px;
+		margin: 0;
 	}
 	.logo-svg-a {
 		@media(min-width: 1025px) {
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
 			width: 490px;
 		}
 	}
 	.logo-svg {
-		height: 3.1rem;
+		height: 4.1rem;
 		@media (min-width: 768px) {
 			height: 5rem;
 		}
 		@media (min-width: 1026px) {
 			width: 210px;
+			height:6.5rem;
 		}
 	}
 	@media (min-width: 768px) {
@@ -67,7 +68,8 @@ $main-font: "Berthhold Condensed";
 		padding-right: 10px;
 	}
 	@media(min-width:1026px) {
-		height: 6.575rem;
+		height: 7.575rem;
+		padding: 44px 0;
 	}
 }
 
@@ -75,7 +77,7 @@ $main-font: "Berthhold Condensed";
 	-webkit-box-pack: center;
 	-ms-flex-pack: center;
 	justify-content: center;
-	height: 95px;
+	height: 58px;
 	width: 65px;
 	background: #f89d05;
 	display: -webkit-box;
@@ -89,7 +91,7 @@ $main-font: "Berthhold Condensed";
 	-ms-flex-align: center;
 	align-items: center;
 	@media(min-width: 1025px) {
-		height: 106px;
+		height: 87px;
 	}
 .burger-container {
 	width: 31px;
@@ -125,12 +127,13 @@ $main-font: "Berthhold Condensed";
 
 // main menu section
 
-.main-menu-section {
+.main-menu-section-jv {
 	top: 0;
+	left:0;
 	position: absolute;
 	background: white;
 	font-family: $main-font;
-	width: 95%;
+	width: 100%;
 	border-left: 0.5rem solid #003662;
 	border-top: 0.5rem solid #003662;
 	z-index: 300;
@@ -163,7 +166,7 @@ $main-font: "Berthhold Condensed";
 		margin: 0 auto;
 		padding: 4px 0.35rem;
 	}
-	.menu-option {
+	.menu-option-jv {
 		display: -webkit-box;
 		display: -ms-flexbox;
 		display: flex;
@@ -177,8 +180,10 @@ $main-font: "Berthhold Condensed";
 		margin-bottom: 15px;
 		text-transform: uppercase;
 		width: 100%;
-		.menu-text {
+		.menu-text-jv {
 			padding: 8px;
+			margin: 0;
+			color: black;
 		}
 		@media(min-width: 768px) {
 			width: auto;
@@ -187,13 +192,9 @@ $main-font: "Berthhold Condensed";
 			margin-bottom:0;
 		}
 	}
-	@media (min-width: 375px) {
-		width: 97.94%;
-	}
 	@media (min-width: 768px) {
-		width: 97.8%;
 		margin-bottom: auto;
-		margin-top: 25vh;
+		margin-top: 30%;
 		border:none;
 		border: 8px solid #063a65 ;
 		z-index: 20000;
@@ -205,6 +206,11 @@ $main-font: "Berthhold Condensed";
 
 .lower-option {
 	font-family: $main-font;
+	text-transform: uppercase;
+	font-size:12px;
+	@media(min-width:1025px) {
+		font-size: 18px;
+	}
 }
 
 #Weather {
@@ -218,9 +224,9 @@ $main-font: "Berthhold Condensed";
 
 .menu-icons {
 	fill: #747676;
-	height: 1.25rem;
+	height: 2.25rem;
 	vertical-align: text-top;
-	width: 1.25rem;
+	width: 2.25rem;
 	padding-left: 5px;
 }
 
@@ -230,24 +236,26 @@ $main-font: "Berthhold Condensed";
 	display: -ms-flexbox;
 	display: flex;
 	background: white;
-	-webkit-box-pack: justify;
-	-ms-flex-pack: justify;
-	justify-content: space-between;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
 	text-align: center;
+	border-bottom: 2px solid black;
 	@media (min-width: 768px) {
 		padding: 8px 100px;
-		-ms-flex-pack: distribute;
-		justify-content: space-around;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		justify-content: center;
 	}
 	@media (min-width: 1025px) {
-		padding: 8px 240px;
+		// padding: 8px 240px;
 	}
 }
 .lower-menu-icons {
 	display: none;
 	fill: black;
-	height: 1.5rem;
-	width: 1.5rem;
+	height: 2.5rem;
+	width: 2.5rem;
 	@media (min-width: 768px) {
 		display: block;
 	}
@@ -263,14 +271,14 @@ $main-font: "Berthhold Condensed";
 	max-width: 18.75rem;
 	padding: 1rem 1rem 0;
 	position: absolute;
-	top: 86px;
+	top: 59px;
 	width: 100%;
 	z-index: 10;
 	@media (min-width: 768px) {
-		top: 86px;
+		top: 68px;
 		right: 0 !important;
 		left: auto;
-		max-width: 16.75rem;
+		max-width: 38rem;
 	}
 	.search-btn {
 		-webkit-appearance: none;
@@ -295,12 +303,18 @@ $main-font: "Berthhold Condensed";
 		transition: background-color 0.3s ease, color 0.3s ease;
 		vertical-align: middle;
 		will-change: background-color, color;
+		@media(min-width: 768px) {
+			padding: 1.7rem 2.9rem 1.5rem;
+		}
 	}
 	.cancel-btn {
 		background-color: transparent;
 		border: 1px solid #686b6b;
 		color: #686b6b;
 		text-transform: uppercase;
+		@media(min-width: 768px) {
+			padding: 1.7rem 2.9rem 1.5rem;
+		}
 	}
 
 	.page-search__input {
@@ -324,10 +338,13 @@ $main-font: "Berthhold Condensed";
 		transition: box-shadow 0.5s, border-color 0.25s ease-in-out;
 		transition: box-shadow 0.5s, border-color 0.25s ease-in-out, -webkit-box-shadow 0.5s;
 		width: 100%;
+		@media(min-width: 768px) {
+			height: 4.4375rem;
+		}
 	}
 }
 
-.menu-container--main {
+.jv-menu-container--main {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -377,20 +394,27 @@ $main-font: "Berthhold Condensed";
 	}
 }
 
-.menu-background {
+.menu-background-jv {
+	position: absolute;
 	width: 100%;
-    height: 100vh;
-    top: -135px;
+    height: 117vh;
+    top: 0;
     background-color: rgba(0,25,49,.8);
-	position: relative;
-	z-index: 3;
+	z-index: 2147483648;
+	@media(min-width:768px) {
+		top: -135px;
+	}
 }
 
 .icon {
 	fill: white;
     height: 1.5rem;
     vertical-align: bottom;
-    width: 1.5rem;
+	width: 1.5rem;
+	@media(min-width:1300px) {
+		height: 2.75rem;
+		width: 2.75rem;
+	}
 }
 
 .page-social {
@@ -407,17 +431,13 @@ $main-font: "Berthhold Condensed";
 
 .page-social__link {
 	padding: .25rem .5rem;
-	opacity: .6
+	opacity: .6;
+	list-style-type: none;
 }
 
-
-
-
-
-
-
-
-
+.page-social__item {
+	list-style-type: none;
+}
 
 
 .flex {
@@ -428,3 +448,4 @@ $main-font: "Berthhold Condensed";
 	-ms-flex-align: center;
 	align-items: center;
 }
+

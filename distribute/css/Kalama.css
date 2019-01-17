@@ -79,13 +79,13 @@
   border-width: 0;
   cursor: pointer;
   font-family: "Montserrat", sans-serif;
-  font-weight: normal;
   line-height: normal;
   position: relative;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 1rem;
+  font-size: 1.5rem;
+  font-weight: 800;
   color: #ffffff;
   transition: background-color 300ms ease-out; }
 
@@ -115,6 +115,7 @@
 
 .kala-mobile-search-close {
   padding: 9px;
+  font-weight: 700;
   background-color: lightgray;
   color: white;
   font-family: 'Montserrat', sans-serif;
@@ -200,7 +201,7 @@
     padding: 11px 8px;
     position: relative;
     font-family: "Montserrat", sans-serif;
-    font-weight: 500;
+    font-weight: 400;
     cursor: pointer; }
     @media (min-width: 1024px) {
       .kala-menu-ul .kala-menu-option {
@@ -328,7 +329,7 @@
     .right-nav-desktop {
       width: 53%;
       padding-right: 35px;
-      font-size: 3.5rem; } }
+      font-size: 3.25rem; } }
   .right-nav-desktop .kala-menu-option a {
     color: white;
     cursor: pointer;
