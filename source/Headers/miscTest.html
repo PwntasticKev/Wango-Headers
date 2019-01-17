@@ -10,35 +10,6 @@
 	<a id='Weather'></a>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 		<script>
-				$(document).ready(_ => {
-				  $('#google_translate_element').click(_ => {
-					$('.language-menu').toggleClass('reveal-language-menu')
-				  });
-
-				  $('.faSearch').click(_ => {
-					$(".faSearch").hide()
-					$('.faX').show()
-					$('.searchInput').show()
-				  });
-
-				  $('.faX').click(_ => {
-					$(".faSearch").show()
-					$(".faX").hide()
-					$('.searchInput').hide()
-				  });
-
-				  $('.burger-menu').click(_ => {
-					$(".burger-menu").hide()
-					$('.X').show()
-					$('.mobile-nav-container').show()
-				  });
-			
-				  $('.X').click(_ => {
-					$(".burger-menu").show()
-					$(".X").hide()
-					$('.mobile-nav-container').hide()
-				  });
-			
 				  function Weather(options) {
 					  let lon = options.lon
 					  let lat = options.lat
