@@ -15,8 +15,7 @@
 		  let lon = options.lon
 		  let lat = options.lat
 		  let city = options.city
-		  console.log(`${lat} ${lon}`)
-		  let url = `https://cors.io/?http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=Imperial&APPID=c7601ff83777c3708fa1e5f981963ac5`
+		  let url = `https://cors.io/?http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=Imperial&APPID={key}`
 
 		   $.ajax({	url: url,
 					dataType: 'jsonp',
@@ -25,10 +24,10 @@
 		   		}}).done(function(res) {
 			   		console.log('res',res)
 				$("#Weather").html(
-               		$(`<div class="tac-weather" style="display: flex; align-items: center;">
-         					<img style='margin-right: 5px;'src="http://openweathermap.org/img/w/${res.weather[0].icon}.png" ></img>
-          				<span class="tac-weather" style="display: flex; align-items: center;">
-          					<b>${ res.main.temp }</b>
+               		$(`<div class="Weather" style="display: flex; align-items: center;">
+         					<img style='width: 40px; display: flex; align-items: center; margin-right: 5px;'src="http://openweathermap.org/img/w/${res.weather[0].icon}.png" ></img>
+          				<span class="Weather" style="display: flex; align-items: center; color: white;">
+          					<div>${ res.main.temp }</div>
         					<div>°</div>
           				</span>
          			</div>`
