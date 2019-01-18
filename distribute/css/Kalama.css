@@ -202,7 +202,8 @@
     position: relative;
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
-    cursor: pointer; }
+    cursor: pointer;
+    display: flex; }
     @media (min-width: 1024px) {
       .kala-menu-ul .kala-menu-option {
         content: '';
@@ -372,6 +373,11 @@
     #search-icon {
       height: 19px; } }
 
+.kal-align-icon {
+  width: 30px;
+  display: flex;
+  align-items: center; }
+
 .toggle-search-icon {
   border: 1px solid lightgray;
   border-style: solid;
@@ -380,3 +386,7 @@
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
   color: rgba(0, 0, 0, 0.75);
   border-left: none; }
+
+.flex-ai {
+  display: flex;
+  align-items: center; }
