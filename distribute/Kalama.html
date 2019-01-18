@@ -211,37 +211,35 @@
     $('.search-input-desktop').animate({ width: "toggle" });
   })
 
-     var Weather = function (options) {
-            let _queryUri, _unit, _lat, _lnt
-            _lnt = options.lnt
-            _lat = options.lat
-            _unit = options.unit ? options.unit : "c"
-            _queryUri = `https://query.yahooapis.com/v1/public/yql?q=select * from weather.forecast where u='${_unit}' AND woeid in (SELECT woeid FROM geo.places WHERE text="(${_lat},${_lnt})")&format=json`
-            return $.ajax(_queryUri).then(res => {
-              if (res.status >= 400) {
-                throw new Error("Bad response from server")
-              }
-              return res.query.results
-                ? res.query.results.channel.item.condition
-                : { code: "NA", temp: "NA" }
-            })
-          }
-          $("#Weather").append(
-            Weather({ lat: 42.299152, lnt: -85.591736, unit: "f" }).then(function (
-              res
-            ) {
-              $("#Weather").append(
-                $(`<div class="weather-container" style='display: flex;'>
-          <i style='margin-right: 5px;' class="climacon i${ res.code }"></i>
-          <span class="weather-temp-container">
-          <b>${ res.temp}</b>
-          <div>°</div>
-          </span>
-          </div>`
+  </script>
+  <script>
+		  function Weather(options) {
+		  let lon = options.lon
+		  let lat = options.lat
+		  let city = options.city
+		  let url = `https://cors.io/?http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=Imperial&APPID=c7601ff83777c3708fa1e5f981963ac5`
+
+		   $.ajax({	url: url,
+					dataType: 'jsonp',
+					xhrFields: {
+			  			withCredentials: true
+		   		}}).done(function(res) {
+			   		console.log('res',res)
+				$("#Weather").html(
+               		$(`<div class="Weather" style="display: flex; align-items: center;">
+         					<img style='width: 49px; display: flex; align-items: center; margin-right: 5px;'src="http://openweathermap.org/img/w/${res.weather[0].icon}.png" ></img>
+          				<span class="Weather" style="display: flex; align-items: center; color: black; font-family: 'open sans'; font-weight: 600; font-size:28px;">
+          					<div>${ res.main.temp }</div>
+        					<div>°</div>
+          				</span>
+         			</div>`
                 )
               )
-            })
-          )
-  </script>
+		   }).fail(console.log)
+		  }
+
+		 Weather({ lat: 42.2917, lon: 85.5872 })
+		
+		  </script>
 </body>
 </html>
