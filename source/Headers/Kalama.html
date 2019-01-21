@@ -226,7 +226,7 @@
 		   		}}).done(function(res) {
 			   		console.log('res',res)
 				$("#Weather").html(
-               		$(`<div class="Weather" style="display: flex; align-items: center;">
+               		$(`<div class="Weather" style="display: flex; align-items: center; font-family: 'Montserrat, sans-serif;'">
          					<img style='width: 49px; display: flex; align-items: center; margin-right: 5px;'src="http://openweathermap.org/img/w/${res.weather[0].icon}.png" ></img>
           				<span class="Weather" style="display: flex; align-items: center; color: black; font-family: 'open sans'; font-weight: 600; font-size:28px;">
           					<div>${ res.main.temp }</div>
