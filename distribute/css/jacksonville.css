@@ -22,15 +22,17 @@
     margin: 0; }
   @media (min-width: 1025px) {
     .main-header .logo-svg-a {
+      display: flex;
       width: 490px; } }
   .main-header .logo-svg {
-    height: 3.1rem; }
+    height: 4.1rem; }
     @media (min-width: 768px) {
       .main-header .logo-svg {
         height: 5rem; } }
     @media (min-width: 1026px) {
       .main-header .logo-svg {
-        width: 210px; } }
+        width: 210px;
+        height: 6.5rem; } }
   @media (min-width: 768px) {
     .main-header {
       flex-direction: row;
@@ -38,7 +40,8 @@
       padding-right: 10px; } }
   @media (min-width: 1026px) {
     .main-header {
-      height: 7.575rem; } }
+      height: 7.575rem;
+      padding: 44px 0; } }
 
 .outer-burger-container {
   justify-content: center;
@@ -50,7 +53,7 @@
   align-items: center; }
   @media (min-width: 1025px) {
     .outer-burger-container {
-      height: 77px; } }
+      height: 87px; } }
   .outer-burger-container .burger-container {
     width: 31px;
     display: flex;
@@ -124,7 +127,7 @@
   @media (min-width: 768px) {
     .main-menu-section-jv {
       margin-bottom: auto;
-      margin-top: 25vh;
+      margin-top: 30%;
       border: none;
       border: 8px solid #063a65;
       z-index: 20000; } }
@@ -269,12 +272,16 @@
         flex-direction: row;
         width: auto; } }
 
-.menu-background {
+.menu-background-jv {
+  position: absolute;
   width: 100%;
-  height: 100vh;
-  top: -135px;
+  height: 117vh;
+  top: 0;
   background-color: rgba(0, 25, 49, 0.8);
-  z-index: 3; }
+  z-index: 2147483648; }
+  @media (min-width: 768px) {
+    .menu-background-jv {
+      top: -135px; } }
 
 .icon {
   fill: white;

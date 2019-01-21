@@ -109,13 +109,13 @@ $montFont:"Montserrat", sans-serif;
 	border-width: 0;
 	cursor: pointer;
 	font-family: $montFont;
-	font-weight: normal;
 	line-height: normal;
 	position: relative;
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
-	font-size: 1rem;
+	font-size: 1.5rem;
+	font-weight:800;
 	color: #ffffff;
 	-webkit-transition: background-color 300ms ease-out;
 	transition: background-color 300ms ease-out;
@@ -156,6 +156,7 @@ $montFont:"Montserrat", sans-serif;
 
 .kala-mobile-search-close {
   padding: 9px;
+  font-weight: 700;
   background-color: lightgray;
   color:white;
   font-family: 'Montserrat', sans-serif;
@@ -274,7 +275,7 @@ box-shadow: 2px 9px 35px -9px rgba(0,0,0,0.47);
     padding: 11px 8px;
     position: relative;
     font-family: $montFont;
-    font-weight: 500;
+    font-weight: 400;
     cursor: pointer;
     // &:before {
     //   position: absolute;
@@ -467,7 +468,7 @@ box-shadow: 2px 9px 35px -9px rgba(0,0,0,0.47);
 	@media(min-width: 1600px) {
 		width: 53%;
 		padding-right: 35px;
-		font-size:3.5rem;
+		font-size:3.25rem;
 	}
 
 	.kala-menu-option {

@@ -178,9 +178,11 @@
     }
     @media(min-width: 1024px) {
       display: flex;
-      position: absolute;
+	  position: absolute;
+	  align-items: center;
       top: 17px;
-      right: -85px;
+	  right: -38px;
+	  
     }
     @media(min-width:1400px) {
       width: 35%;

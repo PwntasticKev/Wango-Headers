@@ -1,3 +1,18 @@
+
+@font-face {
+    font-family: 'Avenir-Next';
+    src: url("/fonts/AvenirNext/AvenirNextLTPro-Regular/AvenirNextLTPro-Regular.eot?#iefix") format('embedded-opentype'), 
+        url('/fonts/AvenirNext/AvenirNextLTPro-Regular/AvenirNextLTPro-Regular.woff') format('woff'), 
+        url('/fonts/AvenirNext/AvenirNextLTPro-Regular/AvenirNextLTPro-Regular.ttf')  format('truetype')
+}
+
+@font-face {
+    font-family: 'Avenir-Next-Condensed';
+    src: url("/fonts/AvenirNext/AvenirNextLTPro-Cn/AvenirNextLTPro-Cn.eot?#iefix") format('embedded-opentype'), 
+        url('/fonts/AvenirNext/AvenirNextLTPro-Cn/AvenirNextLTPro-Cn.woff') format('woff'), 
+        url('/fonts/AvenirNext/AvenirNextLTPro-Cn/AvenirNextLTPro-Cn.ttf')  format('truetype')
+}
+
 /* GLOBAL CSS  */
 .tac-flex {
 	display: flex;
