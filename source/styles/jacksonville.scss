@@ -16,7 +16,7 @@ $main-font: "Avant";
 .main-header {
 	display: flex;
 	flex-direction: row-reverse;
-	height: 5.9375rem;
+	height: 8.9375rem;
 	align-items: center;
 	justify-content: space-between;
 	padding-left: 10px;
@@ -29,7 +29,8 @@ $main-font: "Avant";
 		line-height: 1;
 		margin-top: 0.25rem;
 		text-transform: uppercase;
-		font-size: 11px;
+		font-size: 15px;
+    	font-weight: 100;
 		margin: 0;
 	}
 	.logo-svg-a {
@@ -39,7 +40,7 @@ $main-font: "Avant";
 		}
 	}
 	.logo-svg {
-		height: 4.1rem;
+		height: 5.1rem;
 		@media (min-width: 768px) {
 			height: 5rem;
 		}
@@ -164,7 +165,8 @@ $main-font: "Avant";
 .lower-option {
 	font-family: $main-font;
 	text-transform: uppercase;
-	font-size:12px;
+	font-size:13px;
+	margin: 0 5px;
 	@media(min-width:1025px) {
 		font-size: 18px;
 	}
@@ -355,6 +357,16 @@ $main-font: "Avant";
 
 .page-social__item {
 	list-style-type: none;
+}
+
+
+#Weather {
+	@media(min-width: 320px) {
+		display: none;
+	}
+	@media(min-width: 1026px) {
+		display: flex;
+	}
 }
 
 
