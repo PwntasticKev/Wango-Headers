@@ -194,6 +194,9 @@ $main-font: "Avant";
 	justify-content: center;
 	text-align: center;
 	border-bottom: 2px solid black;
+	@media(min-width: 375px) {
+		padding: 13px 0;
+	}
 	@media (min-width: 768px) {
 		padding: 8px 100px;
 		justify-content: center;
