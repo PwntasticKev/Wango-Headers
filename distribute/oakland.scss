@@ -204,9 +204,13 @@
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      position: absolute;
+	  position: absolute;
+	  -webkit-box-align: center;
+	  -ms-flex-align: center;
+	  align-items: center;
       top: 17px;
-      right: -85px;
+	  right: -38px;
+	  
     }
     @media(min-width:1400px) {
       width: 35%;

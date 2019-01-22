@@ -28,6 +28,7 @@
          					<img style='width: 40px; display: flex; align-items: center; margin-right: 5px;'src="http://openweathermap.org/img/w/${res.weather[0].icon}.png" ></img>
           				<span class="Weather" style="display: flex; align-items: center; color: white;">
           					<div>${ res.main.temp }</div>
+          					<div>${ ~~(res.main.temp * 9/5 - 459.67) }</div>
         					<div>°</div>
           				</span>
          			</div>`

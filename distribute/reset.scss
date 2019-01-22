@@ -109,6 +109,8 @@ section {
 }
 body {
 	line-height: 1;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
 }
 ol,
 ul {
