@@ -1,36 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Document</title>
-<link rel="stylesheet" href="../styles/climacons.scss">
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>dark sky</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-		<div id='Weather'></div>
+	
+<div id="Weather"></div>
 
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-		<script>
-			$(document).ready(function() { 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script>
+
+	$(document).ready(function() { 
 		  function Weather(options) {
 		  let lon = options.lon
 		  let lat = options.lat
 		  let city = options.city
-		  let url = `https://cors.io/?http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=Imperial&APPID=c7601ff83777c3708fa1e5f981963ac5`
+		  let yahoo = `https://weather-ydn-yql.media.yahoo.com/forecastrss?location=sunnyvale`
+		//   let salturl = `https://www.visitsaltlake.com/plugins/core/svapi/?service=weatherv2&endpoint=latlng&serviceArgs=%7B%22lat%22%3A40.7762691%2C%22lng%22%3A-112.2006695%2C%22unit%22%3A%22f%22%7D`
+		//   let darkurl = `https://api.darksky.net/forecast/bb542fff395b9bc5d3402e2512781d1c/37.8267,-122.4233`
+		//   let url = `https://cors.io/?http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=Imperial&APPID=c7601ff83777c3708fa1e5f981963ac5`
 
-		   $.ajax({	url: url,
+		   $.ajax({	url: yahoo,
 					dataType: 'jsonp',
 					xhrFields: {
 			  			withCredentials: true
 		   		}}).done(function(res) {
 			   		console.log('res',res)
-					   let iconArr = [];
-
-					   
 				$("#Weather").html(
                		$(`<div class="Weather" style="display: flex; align-items: center;">
-						<i style='margin-right: 5px; color: lightblue; display: flex;align-items: center;' class="climacon i${ res.weather[0].icon }">${ res.weather[0].icon }</i>
          					<img style='width: 40px; display: flex; align-items: center; margin-right: 5px;'src="http://openweathermap.org/img/w/${res.weather[0].icon}.png" ></img>
           				<span class="Weather" style="display: flex; align-items: center;">
           					<div>${ res.main.temp }</div>
@@ -45,10 +45,9 @@
 
 		 Weather({ lat: 40.7608, lon: -111.8910 })
 
-			})
+		 })
+</script>
+	
 
-						 $('.checkout-hero--title > br').replaceWith(`<div style="font-family: 'Hudson NY' "> DISFRUTA LO MEJOR DE HOUSTON  </div>`)
-		
-		  </script>
 </body>
 </html>
