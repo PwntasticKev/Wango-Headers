@@ -146,8 +146,11 @@ $main-font: "Avant";
 		@media(min-width: 768px) {
 			width: auto;
 			border: none;
+			height:768px;
 			border-right: 1px solid #fcb133;
 			margin-bottom:0;
+			font-size: 19px;
+			padding-top: 4px;
 		}
 	}
 	@media (min-width: 768px) {
@@ -169,6 +172,8 @@ $main-font: "Avant";
 	margin: 0 5px;
 	@media(min-width:1025px) {
 		font-size: 18px;
+    padding-top: 5px;
+    color: #003662;
 	}
 }
 
@@ -185,6 +190,7 @@ $main-font: "Avant";
 	vertical-align: text-top;
 	width: 2.25rem;
 	padding-left: 5px;
+	color: #003662;
 }
 
 //   LOWER MENU
@@ -269,6 +275,12 @@ $main-font: "Avant";
 		}
 	}
 
+	.search-icon-container {
+		@media(min-width: 1025px){
+			padding-right: 45px;
+		}
+	}
+
 	.page-search__input {
 		background-color: #fefefe;
 		border: 1px solid #cacaca;
@@ -299,6 +311,7 @@ $main-font: "Avant";
 	list-style-type: none;
 	.upper-menu--section {
 		width:100%;
+		max-width: 2015px;
 		@media(min-width: 768px) {
 			// flex-flow: row wrap;
 			display: flex;
