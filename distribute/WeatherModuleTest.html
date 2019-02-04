@@ -5,7 +5,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Document</title>
-<link rel="stylesheet" href="../styles/climacons.scss">
 </head>
 <body>
 		<div id='Weather'></div>
@@ -17,7 +16,7 @@
 		  let lon = options.lon
 		  let lat = options.lat
 		  let city = options.city
-		  let url = `https://cors.io/?http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=Imperial&APPID=c7601ff83777c3708fa1e5f981963ac5`
+		  let url = `https://cors.io/?http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=Imperial&APPID={key}`
 
 		   $.ajax({	url: url,
 					dataType: 'jsonp',
@@ -25,14 +24,10 @@
 			  			withCredentials: true
 		   		}}).done(function(res) {
 			   		console.log('res',res)
-					   let iconArr = [];
-
-					   
 				$("#Weather").html(
                		$(`<div class="Weather" style="display: flex; align-items: center;">
-						<i style='margin-right: 5px; color: lightblue; display: flex;align-items: center;' class="climacon i${ res.weather[0].icon }">${ res.weather[0].icon }</i>
          					<img style='width: 40px; display: flex; align-items: center; margin-right: 5px;'src="http://openweathermap.org/img/w/${res.weather[0].icon}.png" ></img>
-          				<span class="Weather" style="display: flex; align-items: center;">
+          				<span class="Weather" style="display: flex; align-items: center; color: white;">
           					<div>${ res.main.temp }</div>
           					<div>${ ~~(res.main.temp * 9/5 - 459.67) }</div>
         					<div>°</div>

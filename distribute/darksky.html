@@ -14,27 +14,24 @@
 <script>
 
 	$(document).ready(function() { 
-		  function Weather(options) {
-		  let lon = options.lon
-		  let lat = options.lat
-		  let city = options.city
-		  let yahoo = `https://weather-ydn-yql.media.yahoo.com/forecastrss?location=sunnyvale`
-		//   let salturl = `https://www.visitsaltlake.com/plugins/core/svapi/?service=weatherv2&endpoint=latlng&serviceArgs=%7B%22lat%22%3A40.7762691%2C%22lng%22%3A-112.2006695%2C%22unit%22%3A%22f%22%7D`
-		//   let darkurl = `https://api.darksky.net/forecast/bb542fff395b9bc5d3402e2512781d1c/37.8267,-122.4233`
+			function Weather(options) {
+			let lon = options.lon
+			let lat = options.lat
+			let city = options.city
+			let darkurl = `https://api.darksky.net/forecast/bb542fff395b9bc5d3402e2512781d1c/${lat},${lon}`
 		//   let url = `https://cors.io/?http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=Imperial&APPID=c7601ff83777c3708fa1e5f981963ac5`
 
-		   $.ajax({	url: yahoo,
+		   $.ajax({	url: darkurl,
 					dataType: 'jsonp',
 					xhrFields: {
 			  			withCredentials: true
 		   		}}).done(function(res) {
-			   		console.log('res',res)
+			   		console.log('res',res);
 				$("#Weather").html(
                		$(`<div class="Weather" style="display: flex; align-items: center;">
-         					<img style='width: 40px; display: flex; align-items: center; margin-right: 5px;'src="http://openweathermap.org/img/w/${res.weather[0].icon}.png" ></img>
+						<i id style='margin-right: 5px;' class="climacon i${ res.currently.code }"></i>
           				<span class="Weather" style="display: flex; align-items: center;">
-          					<div>${ res.main.temp }</div>
-          					<div>${ ~~(res.main.temp * 9/5 - 459.67) }</div>
+          					<div>${  ~~(res.currently.temperature) }</div>
         					<div>°</div>
           				</span>
          			</div>`
