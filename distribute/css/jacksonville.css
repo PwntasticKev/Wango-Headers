@@ -123,8 +123,11 @@
       .main-menu-section-jv .menu-option-jv {
         width: auto;
         border: none;
+        height: 28px;
         border-right: 1px solid #fcb133;
-        margin-bottom: 0; } }
+        margin-bottom: 0;
+        font-size: 19px;
+        padding-top: 4px; } }
   @media (min-width: 768px) {
     .main-menu-section-jv {
       margin-bottom: auto;
@@ -143,7 +146,9 @@
   margin: 0 5px; }
   @media (min-width: 1025px) {
     .lower-option {
-      font-size: 18px; } }
+      font-size: 18px;
+      padding-top: 5px;
+      color: #003662; } }
 
 #Weather {
   display: none; }
@@ -156,7 +161,8 @@
   height: 2.25rem;
   vertical-align: text-top;
   width: 2.25rem;
-  padding-left: 5px; }
+  padding-left: 5px;
+  color: #003662; }
 
 .lowerMenu {
   display: flex;
@@ -231,6 +237,9 @@
     @media (min-width: 768px) {
       .page-search__container .cancel-btn {
         padding: 1.7rem 2.9rem 1.5rem; } }
+  @media (min-width: 1025px) {
+    .page-search__container .search-icon-container {
+      padding-right: 45px; } }
   .page-search__container .page-search__input {
     background-color: #fefefe;
     border: 1px solid #cacaca;
@@ -258,7 +267,8 @@
   align-items: center;
   list-style-type: none; }
   .jv-menu-container--main .upper-menu--section {
-    width: 100%; }
+    width: 100%;
+    max-width: 2015px; }
     @media (min-width: 768px) {
       .jv-menu-container--main .upper-menu--section {
         display: flex;

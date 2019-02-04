@@ -235,7 +235,8 @@
           })
           // MAIN MENU CLICK
           $("#tac-menu-container").click(function () {
-            $('.tac-first-layer-menu').toggle({ opacity: "toggle" }, 200);
+			$('.tac-first-layer-menu').toggle({ opacity: "toggle" }, 200);
+			$('.tac-glass').toggleCss("color", "white")
           });
         }
         if (width >= 1200) {
