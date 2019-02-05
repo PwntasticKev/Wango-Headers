@@ -67,11 +67,7 @@
 
 						<a href="https://www.discoverschenectady.com/plan-your-visit/weather-average-temperatures/" class="header-toggle" title="Mostly Cloudy"
 						 id='weather-id'>
-							<i class="fas fa-cloud-sun"></i>
-							<span id="wthr-measure" class="wthr__measure"></span>
-							<span class="header-toggle-text header-toggle-text--weather" id="nav-span-weather">1
-								<sup class="wthr__deg">°</sup>
-							</span>
+							<div id="Weather"></div>
 						</a>
 
 					</section>
@@ -420,7 +416,8 @@
 				let lon = options.lon
 				let lat = options.lat
 				let city = options.city
-				let darkurl = `https://api.darksky.net/forecast/{key}/${lat},${lon}`
+				let key = 'b2789b7b01e6ec9fcc87c76e29d809c8'
+				let darkurl = `https://api.darksky.net/forecast/${key}/${lat},${lon}`
 				$.ajax({
 					url: darkurl,
 					dataType: 'jsonp',
@@ -431,7 +428,7 @@
 
 					console.log('res', res);
 					$("#Weather").html(
-						$(`<div class="Weather" style="display: flex; align-items: center;">
+						$(`<div class="Weather" style="display: flex; align-items: center; flex-direction: column">
 					<i style='margin-right: 5px;' class="climacon ${ res.daily.icon}"></i>
 					  <span class="Weather" style="display: flex; align-items: center;">
 						  <div>${  ~~(res.currently.temperature)}</div>
