@@ -742,8 +742,11 @@ html [type="button"] {
 		display: flex;
 		align-items: center;
 		flex-direction: row;
-    position: absolute;
-    bottom: 0;
+		position: absolute;
+		bottom: 8px;
+	}
+	.weather-icon {
+		font-size: 57px;
 	}
 	.calendar-text {
 		display: block;
