@@ -11,6 +11,7 @@
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 		<script>
+			$(document).ready(function() { 
 		  function Weather(options) {
 		  let lon = options.lon
 		  let lat = options.lat
@@ -28,6 +29,7 @@
          					<img style='width: 40px; display: flex; align-items: center; margin-right: 5px;'src="http://openweathermap.org/img/w/${res.weather[0].icon}.png" ></img>
           				<span class="Weather" style="display: flex; align-items: center; color: white;">
           					<div>${ res.main.temp }</div>
+          					<div>${ ~~(res.main.temp * 9/5 - 459.67) }</div>
         					<div>°</div>
           				</span>
          			</div>`
@@ -37,6 +39,10 @@
 		  }
 
 		 Weather({ lat: 40.7608, lon: -111.8910 })
+
+			})
+
+						 $('.checkout-hero--title > br').replaceWith(`<div style="font-family: 'Hudson NY' "> DISFRUTA LO MEJOR DE HOUSTON  </div>`)
 		
 		  </script>
 </body>

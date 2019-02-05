@@ -65,7 +65,7 @@ ul {
 
 .tac-top-line {
   transform: rotate(45deg);
-  transform-origin: 13% 197%;
+  transform-origin: 10% 230%;
   width: 18px; }
 
 .tac-mid-line {
@@ -385,7 +385,9 @@ ul {
   #tac-menu-container {
     width: 519px !important; }
   .tac-menu-option {
-    margin: 0 10px; }
+    margin: 0 10px;
+    font-weight: 500;
+    color: #333; }
   .tac-mobile-burger {
     display: none; }
   .border-slant-white {

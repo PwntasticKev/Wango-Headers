@@ -16,7 +16,7 @@ $main-font: "Avant";
 .main-header {
 	display: flex;
 	flex-direction: row-reverse;
-	height: 5.9375rem;
+	height: 8.9375rem;
 	align-items: center;
 	justify-content: space-between;
 	padding-left: 10px;
@@ -29,7 +29,8 @@ $main-font: "Avant";
 		line-height: 1;
 		margin-top: 0.25rem;
 		text-transform: uppercase;
-		font-size: 11px;
+		font-size: 15px;
+    	font-weight: 100;
 		margin: 0;
 	}
 	.logo-svg-a {
@@ -39,7 +40,7 @@ $main-font: "Avant";
 		}
 	}
 	.logo-svg {
-		height: 4.1rem;
+		height: 5.1rem;
 		@media (min-width: 768px) {
 			height: 5rem;
 		}
@@ -145,8 +146,11 @@ $main-font: "Avant";
 		@media(min-width: 768px) {
 			width: auto;
 			border: none;
+			height: 28px;
 			border-right: 1px solid #fcb133;
 			margin-bottom:0;
+			font-size: 19px;
+			padding-top: 4px;
 		}
 	}
 	@media (min-width: 768px) {
@@ -164,9 +168,12 @@ $main-font: "Avant";
 .lower-option {
 	font-family: $main-font;
 	text-transform: uppercase;
-	font-size:12px;
+	font-size:13px;
+	margin: 0 5px;
 	@media(min-width:1025px) {
 		font-size: 18px;
+    padding-top: 5px;
+    color: #003662;
 	}
 }
 
@@ -183,6 +190,7 @@ $main-font: "Avant";
 	vertical-align: text-top;
 	width: 2.25rem;
 	padding-left: 5px;
+	color: #003662;
 }
 
 //   LOWER MENU
@@ -192,6 +200,9 @@ $main-font: "Avant";
 	justify-content: center;
 	text-align: center;
 	border-bottom: 2px solid black;
+	@media(min-width: 375px) {
+		padding: 13px 0;
+	}
 	@media (min-width: 768px) {
 		padding: 8px 100px;
 		justify-content: center;
@@ -264,6 +275,12 @@ $main-font: "Avant";
 		}
 	}
 
+	.search-icon-container {
+		@media(min-width: 1025px){
+			padding-right: 45px;
+		}
+	}
+
 	.page-search__input {
 		background-color: #fefefe;
 		border: 1px solid #cacaca;
@@ -294,6 +311,7 @@ $main-font: "Avant";
 	list-style-type: none;
 	.upper-menu--section {
 		width:100%;
+		max-width: 2015px;
 		@media(min-width: 768px) {
 			// flex-flow: row wrap;
 			display: flex;
@@ -355,6 +373,16 @@ $main-font: "Avant";
 
 .page-social__item {
 	list-style-type: none;
+}
+
+
+#Weather {
+	@media(min-width: 320px) {
+		display: none;
+	}
+	@media(min-width: 1026px) {
+		display: flex;
+	}
 }
 
 
