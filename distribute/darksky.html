@@ -5,12 +5,14 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>dark sky</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" media="screen" href="css/darksky.css" />
 </head>
 <body>
 	
 <div id="Weather"></div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="https://rawgithub.com/darkskyapp/skycons/master/skycons.js"></script>
 <script>
 
 	$(document).ready(function() { 
@@ -19,17 +21,19 @@
 			let lat = options.lat
 			let city = options.city
 			let darkurl = `https://api.darksky.net/forecast/bb542fff395b9bc5d3402e2512781d1c/${lat},${lon}`
-		//   let url = `https://cors.io/?http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=Imperial&APPID=c7601ff83777c3708fa1e5f981963ac5`
-
-		   $.ajax({	url: darkurl,
-					dataType: 'jsonp',
-					xhrFields: {
-			  			withCredentials: true
-		   		}}).done(function(res) {
+			//   let url = `https://cors.io/?http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=Imperial&APPID=c7601ff83777c3708fa1e5f981963ac5`
+			
+			$.ajax({	url: darkurl,
+				dataType: 'jsonp',
+				xhrFields: {
+					withCredentials: true
+				}}).done(function(res) {
+					
 			   		console.log('res',res);
 				$("#Weather").html(
-               		$(`<div class="Weather" style="display: flex; align-items: center;">
-						<i id style='margin-right: 5px;' class="climacon i${ res.currently.code }"></i>
+					   $(`<div class="Weather" style="display: flex; align-items: center;">
+						
+						<i id style='margin-right: 5px;' class="climacon i${ res.currently.code }">${ res.currently.icon}</i>
           				<span class="Weather" style="display: flex; align-items: center;">
           					<div>${  ~~(res.currently.temperature) }</div>
         					<div>°</div>
@@ -44,6 +48,7 @@
 
 		 })
 </script>
+
 	
 
 </body>
