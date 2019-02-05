@@ -22,16 +22,12 @@
           <section class="mobile">
 
             <a href="https://www.discoverschenectady.com/plan-your-visit/weather-average-temperatures/" class="header-toggle" title="Mostly Cloudy">
-              <i class="fas fa-cloud-sun"></i>
-              <span id="wthr-measure" class="wthr__measure"></span>
-              <!-- <span class="header-toggle-text header-toggle-text--weather" id="nav-span-weather">1
-                <sup class="wthr__deg">°</sup>
-              </span> -->
+             <div id="Weather"></div>
             </a>
           </section>
           <section style='position: relative;'>
 
-            <!-- <div class='itin__svg-wrapper' id='map-icon'>
+            <div class='itin__svg-wrapper' id='map-icon'>
               <a href="https://www.discoverschenectady.com/itinerary/">
                 <svg viewBox="0 0 87.3 86.1" id="plan" width="100%" height="100%" style="fill: white">
                   <title>90all</title>
@@ -41,7 +37,7 @@
                 <span class="header-toggle-text header-toggle-text--weather" id='desktop-span'>PLAN YOUR VISIT
                 </span>
               </a>
-            </div> -->
+            </div>
           </section>
           <section class="desktop">
             <a href="https://www.iloveny.com/" class='ilovenewyork-nav'>
@@ -478,17 +474,41 @@
         $('#plan-your-visit-list ').toggle()
       });
 
-      var city = "Schenectady";
-      var searchtext = "select item.condition from weather.forecast where woeid in (select woeid from geo.places(1) where text='" + city + "') and u='f'"
-      //change city variable dynamically as required
-      $.getJSON("https://query.yahooapis.com/v1/public/yql?q=" + searchtext + "&format=json").then(function (data) {
-        console.log(data);
-        $('#nav-span-weather').html(data.query.results.channel.item.condition.temp + "°");
-      });
-
-
     })
   </script>
+
+  <script>
+$(document).ready(function() { 
+		function Weather(options) {
+		let lon = options.lon
+		let lat = options.lat
+		let city = options.city
+		let darkurl = `https://api.darksky.net/forecast/{key}/${lat},${lon}`
+		$.ajax({
+			url: darkurl,
+			dataType: 'jsonp',
+			xhrFields: {
+				withCredentials: true
+			}}).done(function(res) {
+				
+				   console.log('res',res);
+			$("#Weather").html(
+				   $(`<div class="Weather" style="display: flex; align-items: center;">
+					<i style='margin-right: 5px;' class="climacon ${ res.daily.icon }"></i>
+					  <span class="Weather" style="display: flex; align-items: center;">
+						  <div>${  ~~(res.currently.temperature) }</div>
+						<div>°</div>
+					  </span>
+				 </div>`
+			)
+		  )
+	   }).fail(console.log)
+	  }
+
+	 Weather({ lat: 40.7608, lon: -111.8910 })
+
+	 })
+</script>
 
 
 </body>
