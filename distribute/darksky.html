@@ -18,8 +18,8 @@
 			function Weather(options) {
 			let lon = options.lon
 			let lat = options.lat
-			let city = options.city
-			let darkurl = `https://api.darksky.net/forecast/{key}/${lat},${lon}`
+			let key = 'b2789b7b01e6ec9fcc87c76e29d809c8'
+			let darkurl = `https://api.darksky.net/forecast/${key}/${lat},${lon}`
 			$.ajax({
 				url: darkurl,
 				dataType: 'jsonp',

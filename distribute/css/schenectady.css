@@ -30,7 +30,8 @@
 #weather-id {
   text-decoration: none;
   color: white;
-  list-style-type: none; }
+  list-style-type: none;
+  position: relative; }
 
 .header-container-nav {
   background: #132f46; }
@@ -55,13 +56,14 @@
 
 .header-toggle--search {
   width: 40px;
-  font-size: 33px; }
+  font-size: 33px;
+  display: flex;
+  align-items: center; }
 
 .fas {
   font-size: 26px; }
 
 .itin__svg-wrapper {
-  display: inline-block;
   width: 30px;
   height: 28px;
   border: 2px solid transparent;
@@ -76,7 +78,7 @@
 
 .nav__logo--header {
   display: block;
-  width: 137px;
+  width: 160px;
   height: 58px;
   text-align: center;
   margin: 0 auto;
@@ -354,11 +356,36 @@ html [type="button"] {
   margin-top: 30px; }
 
 /* MEDIA QUERIES  */
+@media (min-width: 320px) {
+  .current-temp {
+    display: none; }
+  #weather2 {
+    display: none; }
+  .weather-icon {
+    font-size: 34px; }
+  .calendar-text {
+    display: none; } }
+
 @media (min-width: 768px) {
   .header-container-nav {
     max-width: 4000px !important;
     width: 100% !important;
     padding: 0 15px; }
+  #Weather {
+    display: none; }
+  .calendar-svg {
+    color: white;
+    width: 33px;
+    padding-bottom: 6px; }
+  .calendar-icon {
+    display: flex;
+    cursor: pointer;
+    flex-direction: column;
+    align-items: center;
+    transition: opacity .5s;
+    background: transparent;
+    color: #fff;
+    fill: white; }
   .main-menu-container {
     top: 100px;
     height: 64vh;
@@ -371,7 +398,7 @@ html [type="button"] {
   #logo-ny {
     width: 90px; }
   #map-icon {
-    width: 59px;
+    width: 90px;
     margin-bottom: 6px; }
   #ul-container-desktop li a {
     font-size: 11px;
@@ -469,8 +496,6 @@ html [type="button"] {
     justify-content: center;
     display: flex;
     left: 0; }
-  #events {
-    margin-top: 35px; }
   #plan-you-visit {
     margin-top: 35px; }
   .splotchybackground {
@@ -517,13 +542,14 @@ html [type="button"] {
   .col a {
     flex-direction: column; }
   .nav__logo--header {
-    width: 250px; }
+    width: 220px; }
   #desktop-span {
     position: absolute;
+    text-align: center;
     color: white;
-    font-size: 11px;
+    font-size: 13px;
     bottom: -21px;
-    left: -17px;
+    left: -23px;
     width: 100px;
     font-weight: bold;
     font-family: roboto, sans-serif; }
@@ -536,7 +562,7 @@ html [type="button"] {
   #nav-span-menu {
     position: absolute;
     bottom: 2px;
-    left: 9px;
+    left: 8px;
     font-weight: bold;
     font-family: roboto, sans-serif; }
   #nav-span-weather {
@@ -555,9 +581,32 @@ html [type="button"] {
     line-height: 1;
     padding-top: 8px; }
   #desktop-span {
-    display: block; }
-  .nav__logo--header {
-    width: 187px; } }
+    display: block; } }
+
+@media (min-width: 1026px) {
+  .weather-container {
+    display: flex; }
+  .current-temp {
+    display: flex !important;
+    align-items: center;
+    flex-direction: row;
+    position: absolute;
+    bottom: 8px; }
+  .weather-icon {
+    font-size: 57px; }
+  .calendar-text {
+    display: block;
+    position: absolute;
+    bottom: -20px;
+    left: 0; }
+  .header-toggle {
+    display: none; }
+  .desktop-weather {
+    display: flex; }
+  .calendar-container {
+    position: relative;
+    margin-left: 42px;
+    width: 100px; } }
 
 @media (min-width: 1199px) {
   .main-menu-container {
@@ -575,22 +624,8 @@ html [type="button"] {
     height: 60px; }
   .ais-search-box {
     width: 47%; }
-  #map-icon {
-    width: 56px; }
   .reveal-overlay {
     padding: 20px 69px; } }
-
-@media (min-width: 1230px) {
-  #map-icon {
-    width: 40px; } }
-
-@media (min-width: 1400px) {
-  #map-icon {
-    width: 50px; } }
-
-@media (min-width: 1475px) {
-  #map-icon {
-    width: 55px; } }
 
 @media (max-width: 767px) {
   .desktop {
