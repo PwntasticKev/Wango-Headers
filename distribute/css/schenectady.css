@@ -374,7 +374,9 @@ html [type="button"] {
   #Weather {
     display: none; }
   .calendar-svg {
-    color: white; }
+    color: white;
+    width: 33px;
+    padding-bottom: 6px; }
   .calendar-icon {
     display: flex;
     cursor: pointer;
@@ -384,8 +386,6 @@ html [type="button"] {
     background: transparent;
     color: #fff;
     fill: white; }
-  .calendar-text {
-    display: flex; }
   .main-menu-container {
     top: 100px;
     height: 64vh;

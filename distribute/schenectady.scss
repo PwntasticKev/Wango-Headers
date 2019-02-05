@@ -67,6 +67,12 @@
 .header-toggle--search {
 	width: 40px;
 	font-size: 33px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
 
 .fas {
@@ -98,7 +104,7 @@
 
 .nav__logo--header {
 	display: block;
-	width: 137px;
+	width: 160px;
 	height: 58px;
 	text-align: center;
 	margin: 0 auto;
@@ -475,11 +481,58 @@ html [type="button"] {
 
 /* MEDIA QUERIES  */
 
+@media (min-width: 320px){
+	.current-temp {
+		display: none;
+	}
+
+	#weather2 {
+		display: none;
+	}
+	.weather-icon {
+		font-size: 34px;
+	}
+	.calendar-text {
+		display: none;
+	}
+}
+
 @media (min-width: 768px) {
 	.header-container-nav {
 		max-width: 4000px !important;
 		width: 100% !important;
 		padding: 0 15px;
+	}
+
+	#Weather {
+		display: none;
+	}
+
+	.calendar-svg {
+		color:white;
+	}
+	.calendar-icon {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		cursor: pointer;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+		flex-direction: column;
+		-webkit-box-align:center;
+		-ms-flex-align:center;
+		align-items:center;  
+		-webkit-transition: opacity .5s;  
+		transition: opacity .5s;
+		background: transparent;
+		color: #fff;
+		fill: white;
+	}
+	.calendar-text {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
 	}
 
 	.main-menu-container {
@@ -737,7 +790,7 @@ html [type="button"] {
 		flex-direction: column;
 	}
 	.nav__logo--header {
-		width: 250px;
+		width: 220px;
 	}
 
 	#desktop-span {
@@ -788,9 +841,6 @@ html [type="button"] {
 
 	#desktop-span {
 		display: block;
-	}
-	.nav__logo--header {
-		width: 187px;
 	}
 }
 @media (min-width: 1199px) {
@@ -851,3 +901,6 @@ html [type="button"] {
 		display: none;
 	}
 }
+
+
+

@@ -429,6 +429,7 @@ html [type="button"] {
 	.calendar-text {
 		display: none;
 	}
+	
 }
 
 @media (min-width: 768px) {
@@ -444,6 +445,8 @@ html [type="button"] {
 
 	.calendar-svg {
 		color:white;
+		width: 33px;
+		padding-bottom: 6px;
 	}
 	.calendar-icon {
 		display: flex;
@@ -454,9 +457,6 @@ html [type="button"] {
 		background: transparent;
 		color: #fff;
 		fill: white;
-	}
-	.calendar-text {
-		display: flex;
 	}
 
 	.main-menu-container {
@@ -795,6 +795,4 @@ html [type="button"] {
 }
 
 
-
-///Weather
 
