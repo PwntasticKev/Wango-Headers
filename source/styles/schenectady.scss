@@ -61,6 +61,8 @@
 	transition: opacity 0.5s;
 }
 
+
+
 .header-toggle--search {
 	width: 40px;
 	font-size: 33px;
@@ -614,9 +616,6 @@ html [type="button"] {
 		display: flex;
 		left: 0;
 	}
-	#events {
-		margin-top: 35px;
-	}
 	#plan-you-visit {
 		margin-top: 35px;
 	}
@@ -686,7 +685,7 @@ html [type="button"] {
 	}
 
 	#desktop-span {
-		position: absolute;
+		text-align: center;
 		color: white;
 		font-size: 11px;
 		bottom: -21px;
@@ -733,6 +732,26 @@ html [type="button"] {
 
 	#desktop-span {
 		display: block;
+	}
+}
+@media(min-width: 1026px){
+	.weather-container {
+		display: flex;
+	}
+	.current-temp {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+	}
+	.calendar-text {
+		display: block;
+	}
+
+	.header-toggle {
+		display: none;
+	}
+	.desktop-weather {
+		display: flex;
 	}
 }
 @media (min-width: 1199px) {

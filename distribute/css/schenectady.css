@@ -496,8 +496,6 @@ html [type="button"] {
     justify-content: center;
     display: flex;
     left: 0; }
-  #events {
-    margin-top: 35px; }
   #plan-you-visit {
     margin-top: 35px; }
   .splotchybackground {
@@ -546,7 +544,7 @@ html [type="button"] {
   .nav__logo--header {
     width: 220px; }
   #desktop-span {
-    position: absolute;
+    text-align: center;
     color: white;
     font-size: 11px;
     bottom: -21px;
@@ -583,6 +581,20 @@ html [type="button"] {
     padding-top: 8px; }
   #desktop-span {
     display: block; } }
+
+@media (min-width: 1026px) {
+  .weather-container {
+    display: flex; }
+  .current-temp {
+    display: flex;
+    align-items: center;
+    flex-direction: column; }
+  .calendar-text {
+    display: block; }
+  .header-toggle {
+    display: none; }
+  .desktop-weather {
+    display: flex; } }
 
 @media (min-width: 1199px) {
   .main-menu-container {
