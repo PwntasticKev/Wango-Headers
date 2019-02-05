@@ -55,7 +55,9 @@
 
 .header-toggle--search {
   width: 40px;
-  font-size: 33px; }
+  font-size: 33px;
+  display: flex;
+  align-items: center; }
 
 .fas {
   font-size: 26px; }
@@ -517,7 +519,7 @@ html [type="button"] {
   .col a {
     flex-direction: column; }
   .nav__logo--header {
-    width: 250px; }
+    width: 217px; }
   #desktop-span {
     position: absolute;
     color: white;
@@ -555,9 +557,7 @@ html [type="button"] {
     line-height: 1;
     padding-top: 8px; }
   #desktop-span {
-    display: block; }
-  .nav__logo--header {
-    width: 187px; } }
+    display: block; } }
 
 @media (min-width: 1199px) {
   .main-menu-container {
