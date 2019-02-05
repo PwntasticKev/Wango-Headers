@@ -161,36 +161,35 @@
 	  </script>
 	
 	<script>
-	$(document).ready(function() { 
-				function Weather(options) {
-				let lon = options.lon
-				let lat = options.lat
-				let city = options.city
-				let darkurl = `https://api.darksky.net/forecast/bb542fff395b9bc5d3402e2512781d1c/${lat},${lon}`
-	
-			   $.ajax({	url: darkurl,
-						dataType: 'jsonp',
-						xhrFields: {
-							  withCredentials: true
-					   }}).done(function(res) {
-						   console.log('res',res);
-					$("#Weather").html(
-						   $(`<div class="Weather" style="display: flex; align-items: center;">
-								   <div style="color: black; font-size: 28px; margin: 0 5px;" class="climacon ${res.daily.icon}"></div>
-							<i id style='margin-right: 5px;' class="climacon i${ res.currently.code }"></i>
-							  <span class="Weather" style="display: flex; align-items: center;">
-								  <div>${  ~~(res.currently.temperature) }</div>
-								<div>°</div>
-							  </span>
-						 </div>`
-					)
-				  )
-			   }).fail(console.log)
-			  }
-	
-			Weather({ lat: 42.299152, lon: -85.591736 })
-	
-			 }) 
+		$(document).ready(function() { 
+			function Weather(options) {
+			let lon = options.lon
+			let lat = options.lat
+			let city = options.city
+			let darkurl = `https://api.darksky.net/forecast/bb542fff395b9bc5d3402e2512781d1c/${lat},${lon}`
+
+		   $.ajax({	url: darkurl,
+					dataType: 'jsonp',
+					xhrFields: {
+			  			withCredentials: true
+		   		}}).done(function(res) {
+			   		console.log('res',res);
+				$("#Weather").html(
+               		$(`<div class="Weather" style="display: flex; align-items: center;">
+               				<div style="color: lightblue; font-size: 34px; margin: 0 10px;" class="climacon ${res.daily.icon}"></div>
+          				<span class="Weather" style="display: flex; align-items: center;">
+          					<div style="font-weight:bold;">${  ~~(res.currently.temperature) }</div>
+        					<div>°</div>
+          				</span>
+         			</div>`
+                )
+              )
+		   }).fail(console.log)
+		  }
+
+		Weather({ lat: 37.804363, lon: -122.271111 })
+
+		 });
 	</script>
 </body>
 </html>
