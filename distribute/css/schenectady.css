@@ -373,6 +373,8 @@ html [type="button"] {
     padding: 0 15px; }
   #Weather {
     display: none; }
+  .calendar-svg {
+    color: white; }
   .calendar-icon {
     display: flex;
     cursor: pointer;
@@ -380,7 +382,8 @@ html [type="button"] {
     align-items: center;
     transition: opacity .5s;
     background: transparent;
-    color: #fff; }
+    color: #fff;
+    fill: white; }
   .calendar-text {
     display: flex; }
   .main-menu-container {

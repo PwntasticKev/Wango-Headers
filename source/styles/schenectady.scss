@@ -441,6 +441,10 @@ html [type="button"] {
 	#Weather {
 		display: none;
 	}
+
+	.calendar-svg {
+		color:white;
+	}
 	.calendar-icon {
 		display: flex;
 		cursor: pointer;
@@ -449,6 +453,7 @@ html [type="button"] {
 		transition: opacity .5s;
 		background: transparent;
 		color: #fff;
+		fill: white;
 	}
 	.calendar-text {
 		display: flex;
