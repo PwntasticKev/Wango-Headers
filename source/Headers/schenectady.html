@@ -19,7 +19,7 @@
 		<div class="header-container-nav" id='header-container'>
 			<div class="row1">
 				<div class="col1" id='col-flex'>
-					<section class="mobile">
+					<section class="">
 
 						<a href="https://www.discoverschenectady.com/plan-your-visit/weather-average-temperatures/" class="header-toggle" title="Mostly Cloudy">
 							<div id="Weather"></div>
@@ -429,8 +429,8 @@
 					console.log('res', res);
 					$("#Weather").html(
 						$(`<div class="Weather" style="display: flex; align-items: center; flex-direction: column">
-					<i style='margin-right: 5px;' class="climacon ${ res.daily.icon}"></i>
-					  <span class="Weather" style="display: flex; align-items: center;">
+					<i style='margin-right: 5px;' class="weather-icon climacon ${ res.daily.icon}"></i>
+					  <span class="current-temp">
 						  <div>${  ~~(res.currently.temperature)}</div>
 						<div>°</div>
 					  </span>

@@ -762,10 +762,19 @@ html [type="button"] {
 ///Weather
 
 @media(min-width: 320px){
-	
+	.current-temp {
+		display: none;
+	}
+	.weather-icon {
+		font-size: 34px;
+	}
 }
-@media(min-width: 320px){
-
+@media(min-width: 768px){
+	.current-temp {
+		display: flex; 
+		align-items: center;
+	}
+	
 }
 @media(min-width: 320px){
 

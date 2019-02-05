@@ -595,3 +595,14 @@ html [type="button"] {
 @media (max-width: 767px) {
   .desktop {
     display: none; } }
+
+@media (min-width: 320px) {
+  .current-temp {
+    display: none; }
+  .weather-icon {
+    font-size: 34px; } }
+
+@media (min-width: 768px) {
+  .current-temp {
+    display: flex;
+    align-items: center; } }
