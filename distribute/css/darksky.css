@@ -1,10 +1,8 @@
-body {
-  background: lightblue; }
-
 @font-face {
-  font-family: 'Comfortaa Regular';
-  src: url("Comfortaa.eot");
-  src: local("Comfortaa Regular"), local("Comfortaa"), url("Comfortaa.ttf") format("truetype"), url("Comfortaa.svg#font") format("svg"); }
+  font-family: 'sv-Climacons';
+  src: url(/fonts/climacons/sv_climacons_webfont.eot?#iefix) format("embedded-opentype"), url(/fonts/climacons/sv_climacons_webfont.svg#Climacons-Font) format("svg"), url(/fonts/climacons/sv_climacons_webfont.woff) format("woff"), url(/fonts/climacons/sv_climacons_webfont.ttf) format("truetype");
+  font-weight: 400;
+  font-style: normal; }
 
 .climacon:before {
   font-family: 'Climacons-Font';
