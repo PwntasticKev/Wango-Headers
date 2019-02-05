@@ -22,7 +22,7 @@
 					<a href="https://www.discoverschenectady.com/plan-your-visit/weather-average-temperatures/" class="header-toggle mobile-weather" title="Mostly Cloudy">
 						<div id="Weather"></div>
 					</a>
-					<section style='position: relative;'>
+					<section style='position: relative; width: 50px'>
 						<div class='itin__svg-wrapper' id='map-icon'>
 							<a href="https://www.discoverschenectady.com/itinerary/">
 								<svg viewBox="0 0 87.3 86.1" id="plan" width="100%" height="100%" style="fill: white">
@@ -445,7 +445,7 @@
 					$("#Weather2").html(
 						$(`<div class="weather-container" style="display: flex; align-items: center; flex-direction: column">
 					<i style='margin-right: 5px;' class="weather-icon climacon ${ res.daily.icon}"></i>
-					  <span class="current-temp" style="display: flex;">
+					  <span class="current-temp">
 						  <div>${  ~~(res.currently.temperature)}</div>
 						<div>°</div>
 					  </span>

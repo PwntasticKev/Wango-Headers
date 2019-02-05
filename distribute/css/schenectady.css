@@ -30,7 +30,8 @@
 #weather-id {
   text-decoration: none;
   color: white;
-  list-style-type: none; }
+  list-style-type: none;
+  position: relative; }
 
 .header-container-nav {
   background: #132f46; }
@@ -63,7 +64,6 @@
   font-size: 26px; }
 
 .itin__svg-wrapper {
-  display: inline-block;
   width: 30px;
   height: 28px;
   border: 2px solid transparent;
@@ -398,7 +398,7 @@ html [type="button"] {
   #logo-ny {
     width: 90px; }
   #map-icon {
-    width: 59px;
+    width: 90px;
     margin-bottom: 6px; }
   #ul-container-desktop li a {
     font-size: 11px;
@@ -588,7 +588,9 @@ html [type="button"] {
   .current-temp {
     display: flex;
     align-items: center;
-    flex-direction: column; }
+    flex-direction: row;
+    position: absolute;
+    bottom: 0; }
   .calendar-text {
     display: block; }
   .header-toggle {
@@ -612,22 +614,8 @@ html [type="button"] {
     height: 60px; }
   .ais-search-box {
     width: 47%; }
-  #map-icon {
-    width: 56px; }
   .reveal-overlay {
     padding: 20px 69px; } }
-
-@media (min-width: 1230px) {
-  #map-icon {
-    width: 40px; } }
-
-@media (min-width: 1400px) {
-  #map-icon {
-    width: 50px; } }
-
-@media (min-width: 1475px) {
-  #map-icon {
-    width: 55px; } }
 
 @media (max-width: 767px) {
   .desktop {
