@@ -544,11 +544,12 @@ html [type="button"] {
   .nav__logo--header {
     width: 220px; }
   #desktop-span {
+    position: absolute;
     text-align: center;
     color: white;
-    font-size: 11px;
+    font-size: 13px;
     bottom: -21px;
-    left: -17px;
+    left: -23px;
     width: 100px;
     font-weight: bold;
     font-family: roboto, sans-serif; }
@@ -561,7 +562,7 @@ html [type="button"] {
   #nav-span-menu {
     position: absolute;
     bottom: 2px;
-    left: 9px;
+    left: 8px;
     font-weight: bold;
     font-family: roboto, sans-serif; }
   #nav-span-weather {
@@ -586,7 +587,7 @@ html [type="button"] {
   .weather-container {
     display: flex; }
   .current-temp {
-    display: flex;
+    display: flex !important;
     align-items: center;
     flex-direction: row;
     position: absolute;
@@ -594,11 +595,18 @@ html [type="button"] {
   .weather-icon {
     font-size: 57px; }
   .calendar-text {
-    display: block; }
+    display: block;
+    position: absolute;
+    bottom: -20px;
+    left: 0; }
   .header-toggle {
     display: none; }
   .desktop-weather {
-    display: flex; } }
+    display: flex; }
+  .calendar-container {
+    position: relative;
+    margin-left: 42px;
+    width: 100px; } }
 
 @media (min-width: 1199px) {
   .main-menu-container {
