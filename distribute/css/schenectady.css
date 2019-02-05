@@ -78,7 +78,7 @@
 
 .nav__logo--header {
   display: block;
-  width: 159px;
+  width: 160px;
   height: 58px;
   text-align: center;
   margin: 0 auto;
@@ -519,7 +519,7 @@ html [type="button"] {
   .col a {
     flex-direction: column; }
   .nav__logo--header {
-    width: 217px; }
+    width: 220px; }
   #desktop-span {
     position: absolute;
     color: white;
