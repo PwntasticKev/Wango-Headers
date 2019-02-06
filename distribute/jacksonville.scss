@@ -1,5 +1,7 @@
 $main-color: #fcb133;
+$sub-color: #003662;
 $main-font: "Avant";
+$sub-font: "Berthold Condensed";
 
 @font-face {
 	font-family: "Avant";
@@ -10,6 +12,11 @@ $main-font: "Avant";
 		url("../fonts/AvantGarde/ITC Avant Garde Gothic Medium.otf")
 			format("truetype");
 }
+
+@font-face{
+	font-family:"Berthold Condensed";
+		  src: url("/fonts/Berthold-Akzidenz-Grotesk/AkzidenzGroteskBE-MdCn.otf") format("opentype");
+ }
 
 
 
@@ -33,7 +40,7 @@ $main-font: "Avant";
 	background: $main-color;
 	.menu-text-jv {
 		color: #fefefe;
-		font-family: $main-font, Arial, Segoe, sans-serif;
+		font-family: $sub-font, Arial, Segoe, sans-serif;
 		font-weight: 700;
 		line-height: 1;
 		margin-top: 0.25rem;
@@ -56,7 +63,7 @@ $main-font: "Avant";
 			height: 5rem;
 		}
 		@media (min-width: 1026px) {
-			width: 210px;
+			width: 300px;
 			height:6.5rem;
 		}
 	}
@@ -209,7 +216,7 @@ $main-font: "Avant";
 }
 
 .lower-option {
-	font-family: $main-font;
+	font-family: $sub-font;
 	text-transform: uppercase;
 	font-size:13px;
 	margin: 0 5px;
@@ -463,9 +470,10 @@ $main-font: "Avant";
 		display: none;
 	}
 	@media(min-width: 1026px) {
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
+		display: -webkit-box !important;
+		display: -ms-flexbox !important;
+		display: flex !important;
+		padding-right: 17px;
 	}
 }
 

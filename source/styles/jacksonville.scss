@@ -1,5 +1,7 @@
 $main-color: #fcb133;
+$sub-color: #003662;
 $main-font: "Avant";
+$sub-font: "Berthold Condensed";
 
 @font-face {
 	font-family: "Avant";
@@ -29,7 +31,7 @@ $main-font: "Avant";
 	background: $main-color;
 	.menu-text-jv {
 		color: #fefefe;
-		font-family: $main-font, Arial, Segoe, sans-serif;
+		font-family: $sub-font, Arial, Segoe, sans-serif;
 		font-weight: 700;
 		line-height: 1;
 		margin-top: 0.25rem;
@@ -67,7 +69,7 @@ $main-font: "Avant";
 
 .outer-burger-container {
 	justify-content: center;
-	height: 58px;
+	height: 89px;
 	width: 65px;
 	background: #f89d05;
 	display: flex;
@@ -118,6 +120,7 @@ $main-font: "Avant";
 		color: #fff;
 		cursor: pointer;
 		height: 2rem;
+		font-family: $sub-font;
 		position: absolute;
 		right: 0;
 		top: 0;
@@ -136,7 +139,7 @@ $main-font: "Avant";
 	.menu-option-jv {
 		display: flex;
 		align-items: center;
-		font-family: $main-font;
+		font-family: $sub-font;
 		border: 1px solid #fcb133;
 		border-left-width: 0.25rem;
 		font-size: 1.2rem;
@@ -171,7 +174,7 @@ $main-font: "Avant";
 }
 
 .lower-option {
-	font-family: $main-font;
+	font-family: $sub-font;
 	text-transform: uppercase;
 	font-size:13px;
 	margin: 0 5px;
@@ -281,9 +284,17 @@ $main-font: "Avant";
 	}
 
 	.search-icon-container {
+		display: flex; 
+		flex-direction: column; 
+		align-items: center; 
+		color: white;
 		@media(min-width: 1025px){
-			padding-right: 45px;
+			padding-right: 45px !important;
 		}
+	}
+
+	.main-menu-option {
+		color: $sub-color;
 	}
 
 	.page-search__input {

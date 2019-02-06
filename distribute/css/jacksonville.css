@@ -2,6 +2,10 @@
   font-family: "Avant";
   src: url("../fonts/AvantGarde/AvantGarde-Book.otf?#iefix") format("embedded-opentype"), url("../fonts/AvantGarde/ITC Avant Garde Gothic LT Bold.otf") format("otf"), url("../fonts/AvantGarde/ITC Avant Garde Gothic Medium.otf") format("truetype"); }
 
+@font-face {
+  font-family: "Berthold Condensed";
+  src: url("/fonts/Berthold-Akzidenz-Grotesk/AkzidenzGroteskBE-MdCn.otf") format("opentype"); }
+
 .main-header {
   display: flex;
   flex-direction: row-reverse;
@@ -13,7 +17,7 @@
   background: #fcb133; }
   .main-header .menu-text-jv {
     color: #fefefe;
-    font-family: "Avant", Arial, Segoe, sans-serif;
+    font-family: "Berthold Condensed", Arial, Segoe, sans-serif;
     font-weight: 700;
     line-height: 1;
     margin-top: 0.25rem;
@@ -32,7 +36,7 @@
         height: 5rem; } }
     @media (min-width: 1026px) {
       .main-header .logo-svg {
-        width: 210px;
+        width: 300px;
         height: 6.5rem; } }
   @media (min-width: 768px) {
     .main-header {
@@ -46,7 +50,7 @@
 
 .outer-burger-container {
   justify-content: center;
-  height: 58px;
+  height: 89px;
   width: 65px;
   background: #f89d05;
   display: flex;
@@ -92,6 +96,7 @@
     color: #fff;
     cursor: pointer;
     height: 2rem;
+    font-family: "Berthold Condensed";
     position: absolute;
     right: 0;
     top: 0;
@@ -108,7 +113,7 @@
   .main-menu-section-jv .menu-option-jv {
     display: flex;
     align-items: center;
-    font-family: "Avant";
+    font-family: "Berthold Condensed";
     border: 1px solid #fcb133;
     border-left-width: 0.25rem;
     font-size: 1.2rem;
@@ -140,7 +145,7 @@
       width: 98.5%; } }
 
 .lower-option {
-  font-family: "Avant";
+  font-family: "Berthold Condensed";
   text-transform: uppercase;
   font-size: 13px;
   margin: 0 5px; }
@@ -237,9 +242,16 @@
     @media (min-width: 768px) {
       .page-search__container .cancel-btn {
         padding: 1.7rem 2.9rem 1.5rem; } }
-  @media (min-width: 1025px) {
-    .page-search__container .search-icon-container {
-      padding-right: 45px; } }
+  .page-search__container .search-icon-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white; }
+    @media (min-width: 1025px) {
+      .page-search__container .search-icon-container {
+        padding-right: 45px !important; } }
+  .page-search__container .main-menu-option {
+    color: #003662; }
   .page-search__container .page-search__input {
     background-color: #fefefe;
     border: 1px solid #cacaca;
@@ -329,7 +341,8 @@
 
 @media (min-width: 1026px) {
   #Weather {
-    display: flex; } }
+    display: flex !important;
+    padding-right: 17px; } }
 
 .flex {
   display: flex;
