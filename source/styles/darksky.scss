@@ -22,9 +22,10 @@
   .climacon.cloud.sun:before {
 	  content: "\e001";
   }
+  .climacon.partly-cloudy-night:before,
   .climacon.cloud.moon:before {
-	  content: "\e002";
-  }
+    content: "\e002";
+}
   .climacon.rain:before,
   .climacon.rain.cloud:before {
 	  content: "\e003";

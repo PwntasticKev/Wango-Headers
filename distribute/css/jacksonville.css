@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Avant";
-  src: url("../fonts/AvantGarde/AvantGarde-Book.otf?#iefix") format("embedded-opentype"), url("../fonts/AvantGarde/ITC Avant Garde Gothic LT Bold.otf") format("otf"), url("../fonts/AvantGarde/ITC Avant Garde Gothic Medium.otf") format("truetype"); }
+  src: url("/fonts/AvantGarde/AvantGarde-Book.otf?#iefix") format("embedded-opentype"), url("/fonts/AvantGarde/ITC Avant Garde Gothic LT Bold.otf") format("otf"), url("/fonts/AvantGarde/ITC Avant Garde Gothic Medium.otf") format("truetype"); }
 
 @font-face {
   font-family: "Berthold Condensed";

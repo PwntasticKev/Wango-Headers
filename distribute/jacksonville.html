@@ -270,7 +270,7 @@
 				}}).done(function(res) {
 				$("#Weather").html(
 					   $(`<div class="Weather" style="color: white; display: flex; align-items: center; flex-direction: column;">
-						<i style='margin-right: 5px; font-size:43px; height: 43px;' class="climacon ${ res.daily.icon }"></i>
+						<i style='margin-right: 5px; font-size:43px; height: 43px;' class="climacon forcast-io-${ res.daily.icon } ${ res.daily.icon }"></i>
           				<span class="Weather" style="font-size: 19px;display: flex; align-items: center;">
           					<div>${  ~~(res.currently.temperature) }</div>
         					<div>°</div>
