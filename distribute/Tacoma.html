@@ -53,7 +53,7 @@
           </a>
       </div>
         <div class="desktop border-slant">
-          <div id="testWeather" class='desktop tac-weather-desktop'>
+          <div id="Weather" class='desktop tac-weather-desktop'>
           </div>
         </div>
         <div class="desktop tac-desktop-search-container " style='display: none;'>
@@ -252,62 +252,41 @@
         window.onresize = redesignScreen; // calling redesignScreen initially
         redesignScreen();
       })
-          var Weather = function (options) {
-            let _queryUri, _unit, _lat, _lnt
-            _lnt = options.lnt
-            _lat = options.lat
-            _unit = options.unit ? options.unit : "c"
-            _queryUri = `https://query.yahooapis.com/v1/public/yql?q=select * from weather.forecast where u='${_unit}' AND woeid in (SELECT woeid FROM geo.places WHERE text="(${_lat},${_lnt})")&format=json`
-            return $.ajax(_queryUri).then(res => {
-              if (res.status >= 400) {
-                throw new Error("Bad response from server")
-              }
-              return res.query.results
-                ? res.query.results.channel.item.condition
-                : { code: "NA", temp: "NA" }
-            })
-          }
-          $("#testWeather").append(
-            Weather({ lat: 47.1185, lnt: -122.5633, unit: "f" }).then(function (
-              res
-            ) {
-              console.log('this is my response', res)
-              $("#testWeather").append(
-                $(`<div class="tac-weather">
-          <i style='margin-right: 5px;' class="climacon i${ res.code}"></i>
-          <span class="tac-weather">
-          <b>${ res.temp}</b>
-          <div>°</div>
-          </span>
-          <span class="tac-weather tac-weather-text">${res.text}</span>
-          </div>`
-                )
-              )
-            })
-          )
-
-                  $("#tac-mobile-weather").append(
-            Weather({ lat: 47.1185, lnt: -122.5633, unit: "f" }).then(function (
-              res
-            ) {
-              console.log('this is my response', res)
-              $("#tac-mobile-weather").append(
-                $(
-                  `<div class="tac-weather">
-          <i class="climacon i${
-                  res.code
-                  }"></i>
-          <span class="tac-weather" style='margin: 0 5px;'><b>${
-                  res.temp
-                  }</b><div>°</div>
-          </span>
-          <span class="tac-weather tac-weather-text">${res.text}</span>
-          </div>`
-                )
-              )
-            })
-          )
-
 		</script>
+
+		<script>
+
+$(document).ready(function() { 
+		function Weather(options) {
+		let lon = options.lon
+		let lat = options.lat
+		let key = 'b2789b7b01e6ec9fcc87c76e29d809c8'
+		let darkurl = `https://api.darksky.net/forecast/${key}/${lat},${lon}`
+		$.ajax({
+			url: darkurl,
+			dataType: 'jsonp',
+			xhrFields: {
+				withCredentials: true
+			}}).done(function(res) {
+				
+				   console.log('res',res);
+			$("#Weather").html(
+				   $(`<div class="Weather" style="display: flex; align-items: center; color: lightblue;font-size: 24px;
+    font-weight: bold;">
+					<i style='margin-right: 5px; font-size: 32px;' class="climacon ${ res.daily.icon }"></i>
+					  <span class="Weather" style="display: flex; align-items: center;">
+						  <div>${  ~~(res.currently.temperature) }</div>
+						<div>°</div>
+					  </span>
+				 </div>`
+			)
+		  )
+	   }).fail(console.log)
+	  }
+
+	Weather({ lat: 47.1185, lon: -122.5633 });
+
+	 })
+</script>
 	</body>
 </html>
