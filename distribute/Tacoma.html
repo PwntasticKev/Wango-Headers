@@ -271,10 +271,10 @@ $(document).ready(function() {
 				
 				   console.log('res',res);
 			$("#Weather").html(
-				   $(`<div class="Weather" style="display: flex; align-items: center; color: lightblue;font-size: 24px;
+				   $(`<div class="Weather" style="display: flex; align-items: center; color: lightblue;
     font-weight: bold;">
-					<i style='margin-right: 5px; font-size: 32px;' class="climacon ${ res.daily.icon }"></i>
-					  <span class="Weather" style="display: flex; align-items: center;">
+					<i style='margin-right: 5px;padding-top: 8px;font-size: 30px;' class="climacon ${ res.daily.icon }"></i>
+					  <span class="Weather" style="display: flex; align-items: center;font-size: 24px;">
 						  <div>${  ~~(res.currently.temperature) }</div>
 						<div>°</div>
 					  </span>
