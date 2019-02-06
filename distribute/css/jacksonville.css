@@ -1,6 +1,10 @@
 @font-face {
   font-family: "Avant";
-  src: url("../fonts/AvantGarde/AvantGarde-Book.otf?#iefix") format("embedded-opentype"), url("../fonts/AvantGarde/ITC Avant Garde Gothic LT Bold.otf") format("otf"), url("../fonts/AvantGarde/ITC Avant Garde Gothic Medium.otf") format("truetype"); }
+  src: url("/fonts/AvantGarde/AvantGarde-Book.otf?#iefix") format("embedded-opentype"), url("/fonts/AvantGarde/ITC Avant Garde Gothic LT Bold.otf") format("otf"), url("/fonts/AvantGarde/ITC Avant Garde Gothic Medium.otf") format("truetype"); }
+
+@font-face {
+  font-family: "Berthold Condensed";
+  src: url("/fonts/Berthold-Akzidenz-Grotesk/AkzidenzGroteskBE-MdCn.otf") format("opentype"); }
 
 .main-header {
   display: flex;
@@ -13,7 +17,7 @@
   background: #fcb133; }
   .main-header .menu-text-jv {
     color: #fefefe;
-    font-family: "Avant", Arial, Segoe, sans-serif;
+    font-family: "Berthold Condensed", Arial, Segoe, sans-serif;
     font-weight: 700;
     line-height: 1;
     margin-top: 0.25rem;
@@ -32,7 +36,7 @@
         height: 5rem; } }
     @media (min-width: 1026px) {
       .main-header .logo-svg {
-        width: 210px;
+        width: 300px;
         height: 6.5rem; } }
   @media (min-width: 768px) {
     .main-header {
@@ -46,7 +50,7 @@
 
 .outer-burger-container {
   justify-content: center;
-  height: 58px;
+  height: 89px;
   width: 65px;
   background: #f89d05;
   display: flex;
@@ -92,6 +96,7 @@
     color: #fff;
     cursor: pointer;
     height: 2rem;
+    font-family: "Berthold Condensed";
     position: absolute;
     right: 0;
     top: 0;
@@ -108,7 +113,7 @@
   .main-menu-section-jv .menu-option-jv {
     display: flex;
     align-items: center;
-    font-family: "Avant";
+    font-family: "Berthold Condensed";
     border: 1px solid #fcb133;
     border-left-width: 0.25rem;
     font-size: 1.2rem;
@@ -140,7 +145,7 @@
       width: 98.5%; } }
 
 .lower-option {
-  font-family: "Avant";
+  font-family: "Berthold Condensed";
   text-transform: uppercase;
   font-size: 13px;
   margin: 0 5px; }
@@ -148,7 +153,8 @@
     .lower-option {
       font-size: 18px;
       padding-top: 5px;
-      color: #003662; } }
+      color: #003662;
+      fill: #003662; } }
 
 #Weather {
   display: none; }
@@ -163,6 +169,9 @@
   width: 2.25rem;
   padding-left: 5px;
   color: #003662; }
+  @media (min-width: 1026px) {
+    .menu-icons {
+      fill: #003662; } }
 
 .lowerMenu {
   display: flex;
@@ -180,12 +189,12 @@
 
 .lower-menu-icons {
   display: none;
-  fill: black;
+  fill: #003662;
   height: 2.5rem;
   width: 2.5rem; }
   @media (min-width: 768px) {
     .lower-menu-icons {
-      display: block; } }
+      display: flex; } }
 
 .page-search__container {
   background-color: #fefefe;
@@ -193,6 +202,7 @@
   border-left: 1px solid #063a65;
   border-right: 1px solid #063a65;
   left: 0;
+  font-family: "Berthold Condensed";
   max-width: 18.75rem;
   padding: 1rem 1rem 0;
   position: absolute;
@@ -237,10 +247,18 @@
     @media (min-width: 768px) {
       .page-search__container .cancel-btn {
         padding: 1.7rem 2.9rem 1.5rem; } }
+
+.search-icon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white; }
   @media (min-width: 1025px) {
-    .page-search__container .search-icon-container {
-      padding-right: 45px; } }
-  .page-search__container .page-search__input {
+    .search-icon-container {
+      padding-right: 45px !important; } }
+  .search-icon-container .main-menu-option {
+    color: #003662; }
+  .search-icon-container .page-search__input {
     background-color: #fefefe;
     border: 1px solid #cacaca;
     border-radius: 0;
@@ -257,7 +275,7 @@
     transition: box-shadow 0.5s, border-color 0.25s ease-in-out;
     width: 100%; }
     @media (min-width: 768px) {
-      .page-search__container .page-search__input {
+      .search-icon-container .page-search__input {
         height: 4.4375rem; } }
 
 .jv-menu-container--main {
@@ -265,7 +283,9 @@
   flex-direction: column;
   padding: 1.5rem;
   align-items: center;
-  list-style-type: none; }
+  list-style-type: none;
+  margin: 0 auto;
+  max-width: 898px; }
   .jv-menu-container--main .upper-menu--section {
     width: 100%;
     max-width: 2015px; }
@@ -316,8 +336,8 @@
       align-items: center; } }
 
 .page-social__link {
-  padding: .25rem .5rem;
-  opacity: .6;
+  padding: 0.25rem 0.5rem;
+  opacity: 0.6;
   list-style-type: none; }
 
 .page-social__item {
@@ -329,7 +349,14 @@
 
 @media (min-width: 1026px) {
   #Weather {
-    display: flex; } }
+    display: flex !important;
+    padding-right: 17px;
+    font-family: "Berthold Condensed";
+    padding-top: 6px; } }
+
+.fa-search {
+  padding-top: 12px;
+  margin-bottom: 11px; }
 
 .flex {
   display: flex;

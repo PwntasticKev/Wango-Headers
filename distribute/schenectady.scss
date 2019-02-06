@@ -38,6 +38,7 @@
 	text-decoration: none;
 	color: white;
 	list-style-type: none;
+	position: relative;
 }
 
 .header-container-nav {
@@ -64,6 +65,8 @@
 	transition: opacity 0.5s;
 }
 
+
+
 .header-toggle--search {
 	width: 40px;
 	font-size: 33px;
@@ -80,7 +83,7 @@
 }
 
 .itin__svg-wrapper {
-	display: inline-block;
+	// display: inline-block;
 	width: 30px;
 	height: 28px;
 	border: 2px solid transparent;
@@ -495,6 +498,7 @@ html [type="button"] {
 	.calendar-text {
 		display: none;
 	}
+	
 }
 
 @media (min-width: 768px) {
@@ -510,6 +514,8 @@ html [type="button"] {
 
 	.calendar-svg {
 		color:white;
+		width: 33px;
+		padding-bottom: 6px;
 	}
 	.calendar-icon {
 		display: -webkit-box;
@@ -528,11 +534,6 @@ html [type="button"] {
 		background: transparent;
 		color: #fff;
 		fill: white;
-	}
-	.calendar-text {
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
 	}
 
 	.main-menu-container {
@@ -553,8 +554,7 @@ html [type="button"] {
 	}
 
 	#map-icon {
-		width: 59px;
-
+		width: 90px;
 		margin-bottom: 6px;
 	}
 
@@ -715,9 +715,6 @@ html [type="button"] {
 		display: flex;
 		left: 0;
 	}
-	#events {
-		margin-top: 35px;
-	}
 	#plan-you-visit {
 		margin-top: 35px;
 	}
@@ -795,10 +792,11 @@ html [type="button"] {
 
 	#desktop-span {
 		position: absolute;
+		text-align: center;
 		color: white;
-		font-size: 11px;
+		font-size: 13px;
 		bottom: -21px;
-		left: -17px;
+		left: -23px;
 		width: 100px;
 		font-weight: bold;
 		font-family: roboto, sans-serif;
@@ -815,7 +813,7 @@ html [type="button"] {
 	#nav-span-menu {
 		position: absolute;
 		bottom: 2px;
-		left: 9px;
+		left: 8px;
 		font-weight: bold;
 		font-family: roboto, sans-serif;
 	}
@@ -843,6 +841,50 @@ html [type="button"] {
 		display: block;
 	}
 }
+@media(min-width: 1026px){
+	.weather-container {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+	}
+	.current-temp {
+		display: -webkit-box !important;
+		display: -ms-flexbox !important;
+		display: flex !important;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: row;
+		flex-direction: row;
+		position: absolute;
+		bottom: 8px;
+	}
+	.weather-icon {
+		font-size: 57px;
+	}
+	.calendar-text {
+		display: block;
+		position: absolute;
+		bottom: -20px;
+		left: 0;
+	}
+
+	.header-toggle {
+		display: none;
+	}
+	.desktop-weather {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+	}
+	.calendar-container {
+		position: relative;
+		margin-left: 42px;
+		width: 100px;
+	}
+}
 @media (min-width: 1199px) {
 	.main-menu-container {
 		top: 130px;
@@ -867,33 +909,9 @@ html [type="button"] {
 	.ais-search-box {
 		width: 47%;
 	}
-	#map-icon {
-		width: 56px;
-	}
 	.reveal-overlay {
 		padding: 20px 69px;
 	}
-}
-
-@media (min-width: 1230px) {
-	#map-icon {
-		width: 40px;
-	}
-}
-
-@media (min-width: 1400px) {
-	#map-icon {
-		width: 50px;
-	}
-}
-@media (min-width: 1475px) {
-	#map-icon {
-		width: 55px;
-	}
-}
-@media (min-width: 1580px) {
-}
-@media (min-width: 1850px) {
 }
 
 @media (max-width: 767px) {

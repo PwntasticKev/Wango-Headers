@@ -1,17 +1,22 @@
 $main-color: #fcb133;
+$sub-color: #003662;
 $main-font: "Avant";
+$sub-font: "Berthold Condensed";
 
 @font-face {
 	font-family: "Avant";
-	src: url("../fonts/AvantGarde/AvantGarde-Book.otf?#iefix")
+	src: url("/fonts/AvantGarde/AvantGarde-Book.otf?#iefix")
 			format("embedded-opentype"),
-		url("../fonts/AvantGarde/ITC Avant Garde Gothic LT Bold.otf")
-			format("otf"),
-		url("../fonts/AvantGarde/ITC Avant Garde Gothic Medium.otf")
+		url("/fonts/AvantGarde/ITC Avant Garde Gothic LT Bold.otf") format("otf"),
+		url("/fonts/AvantGarde/ITC Avant Garde Gothic Medium.otf")
 			format("truetype");
 }
 
-
+@font-face {
+	font-family: "Berthold Condensed";
+	src: url("/fonts/Berthold-Akzidenz-Grotesk/AkzidenzGroteskBE-MdCn.otf")
+		format("opentype");
+}
 
 .main-header {
 	display: flex;
@@ -24,17 +29,17 @@ $main-font: "Avant";
 	background: $main-color;
 	.menu-text-jv {
 		color: #fefefe;
-		font-family: $main-font, Arial, Segoe, sans-serif;
+		font-family: $sub-font, Arial, Segoe, sans-serif;
 		font-weight: 700;
 		line-height: 1;
 		margin-top: 0.25rem;
 		text-transform: uppercase;
 		font-size: 15px;
-    	font-weight: 100;
+		font-weight: 100;
 		margin: 0;
 	}
 	.logo-svg-a {
-		@media(min-width: 1025px) {
+		@media (min-width: 1025px) {
 			display: flex;
 			width: 490px;
 		}
@@ -45,8 +50,8 @@ $main-font: "Avant";
 			height: 5rem;
 		}
 		@media (min-width: 1026px) {
-			width: 210px;
-			height:6.5rem;
+			width: 300px;
+			height: 6.5rem;
 		}
 	}
 	@media (min-width: 768px) {
@@ -54,7 +59,7 @@ $main-font: "Avant";
 		padding-left: 0px;
 		padding-right: 10px;
 	}
-	@media(min-width:1026px) {
+	@media (min-width: 1026px) {
 		height: 7.575rem;
 		padding: 44px 0;
 	}
@@ -62,34 +67,34 @@ $main-font: "Avant";
 
 .outer-burger-container {
 	justify-content: center;
-	height: 58px;
+	height: 89px;
 	width: 65px;
 	background: #f89d05;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	@media(min-width: 1025px) {
+	@media (min-width: 1025px) {
 		height: 87px;
 	}
-.burger-container {
-	width: 31px;
-	display: flex;
-	align-items: center;
-	flex-direction: column;
-	justify-content: center;
-	.line {
-		content: "";
-		margin: 2.5px 0;
-		outline: none;
-		cursor: pointer;
-		height: 3px;
-		width: 23px;
-		background: #fff;
-		transition: all 0.5s ease-in-out;
-		@media(min-width: 1025px) {
-			height:4px;
+	.burger-container {
+		width: 31px;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		justify-content: center;
+		.line {
+			content: "";
+			margin: 2.5px 0;
+			outline: none;
+			cursor: pointer;
+			height: 3px;
+			width: 23px;
+			background: #fff;
+			transition: all 0.5s ease-in-out;
+			@media (min-width: 1025px) {
+				height: 4px;
+			}
 		}
-	}
 	}
 }
 
@@ -97,7 +102,7 @@ $main-font: "Avant";
 
 .main-menu-section-jv {
 	top: 0;
-	left:0;
+	left: 0;
 	position: absolute;
 	background: white;
 	font-family: $main-font;
@@ -113,13 +118,14 @@ $main-font: "Avant";
 		color: #fff;
 		cursor: pointer;
 		height: 2rem;
+		font-family: $sub-font;
 		position: absolute;
 		right: 0;
 		top: 0;
 		width: 2rem;
-		@media(min-width: 768px) {
-			width:2.75rem;
-			height:2.75rem;
+		@media (min-width: 768px) {
+			width: 2.75rem;
+			height: 2.75rem;
 		}
 	}
 	.nav-open-logo {
@@ -131,7 +137,7 @@ $main-font: "Avant";
 	.menu-option-jv {
 		display: flex;
 		align-items: center;
-		font-family: $main-font;
+		font-family: $sub-font;
 		border: 1px solid #fcb133;
 		border-left-width: 0.25rem;
 		font-size: 1.2rem;
@@ -143,12 +149,12 @@ $main-font: "Avant";
 			margin: 0;
 			color: black;
 		}
-		@media(min-width: 768px) {
+		@media (min-width: 768px) {
 			width: auto;
 			border: none;
 			height: 28px;
 			border-right: 1px solid #fcb133;
-			margin-bottom:0;
+			margin-bottom: 0;
 			font-size: 19px;
 			padding-top: 4px;
 		}
@@ -156,24 +162,25 @@ $main-font: "Avant";
 	@media (min-width: 768px) {
 		margin-bottom: auto;
 		margin-top: 30%;
-		border:none;
-		border: 8px solid #063a65 ;
+		border: none;
+		border: 8px solid #063a65;
 		z-index: 20000;
 	}
-	@media(min-width: 768px) {
+	@media (min-width: 768px) {
 		width: 98.5%;
 	}
 }
 
 .lower-option {
-	font-family: $main-font;
+	font-family: $sub-font;
 	text-transform: uppercase;
-	font-size:13px;
+	font-size: 13px;
 	margin: 0 5px;
-	@media(min-width:1025px) {
+	@media (min-width: 1025px) {
 		font-size: 18px;
-    padding-top: 5px;
-    color: #003662;
+		padding-top: 5px;
+		color: #003662;
+		fill: #003662;
 	}
 }
 
@@ -191,6 +198,9 @@ $main-font: "Avant";
 	width: 2.25rem;
 	padding-left: 5px;
 	color: #003662;
+	@media(min-width:1026px){
+		fill: #003662;
+	}
 }
 
 //   LOWER MENU
@@ -200,7 +210,7 @@ $main-font: "Avant";
 	justify-content: center;
 	text-align: center;
 	border-bottom: 2px solid black;
-	@media(min-width: 375px) {
+	@media (min-width: 375px) {
 		padding: 13px 0;
 	}
 	@media (min-width: 768px) {
@@ -213,11 +223,11 @@ $main-font: "Avant";
 }
 .lower-menu-icons {
 	display: none;
-	fill: black;
+	fill: $sub-color;
 	height: 2.5rem;
 	width: 2.5rem;
 	@media (min-width: 768px) {
-		display: block;
+		display: flex;
 	}
 }
 
@@ -228,6 +238,7 @@ $main-font: "Avant";
 	border-left: 1px solid #063a65;
 	border-right: 1px solid #063a65;
 	left: 0;
+	font-family: $sub-font;
 	max-width: 18.75rem;
 	padding: 1rem 1rem 0;
 	position: absolute;
@@ -261,7 +272,7 @@ $main-font: "Avant";
 		transition: background-color 0.3s ease, color 0.3s ease;
 		vertical-align: middle;
 		will-change: background-color, color;
-		@media(min-width: 768px) {
+		@media (min-width: 768px) {
 			padding: 1.7rem 2.9rem 1.5rem;
 		}
 	}
@@ -270,15 +281,23 @@ $main-font: "Avant";
 		border: 1px solid #686b6b;
 		color: #686b6b;
 		text-transform: uppercase;
-		@media(min-width: 768px) {
+		@media (min-width: 768px) {
 			padding: 1.7rem 2.9rem 1.5rem;
 		}
 	}
+}
 
-	.search-icon-container {
-		@media(min-width: 1025px){
-			padding-right: 45px;
-		}
+.search-icon-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: white;
+	@media (min-width: 1025px) {
+		padding-right: 45px !important;
+	}
+
+	.main-menu-option {
+		color: $sub-color;
 	}
 
 	.page-search__input {
@@ -297,7 +316,7 @@ $main-font: "Avant";
 		padding: 0.5rem;
 		transition: box-shadow 0.5s, border-color 0.25s ease-in-out;
 		width: 100%;
-		@media(min-width: 768px) {
+		@media (min-width: 768px) {
 			height: 4.4375rem;
 		}
 	}
@@ -309,25 +328,27 @@ $main-font: "Avant";
 	padding: 1.5rem;
 	align-items: center;
 	list-style-type: none;
+	margin: 0 auto;
+    max-width: 898px;
 	.upper-menu--section {
-		width:100%;
+		width: 100%;
 		max-width: 2015px;
-		@media(min-width: 768px) {
+		@media (min-width: 768px) {
 			// flex-flow: row wrap;
 			display: flex;
 			justify-content: space-around;
 		}
-		@media(min-width: 1026px) {
+		@media (min-width: 1026px) {
 			padding-top: 2rem;
 		}
 	}
 	.lower-menu--section {
-		margin-top:40px;
+		margin-top: 40px;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		width: 100%;
-		@media(min-width: 768px ) {
+		@media (min-width: 768px) {
 			flex-direction: row;
 			width: auto;
 		}
@@ -337,21 +358,21 @@ $main-font: "Avant";
 .menu-background-jv {
 	position: absolute;
 	width: 100%;
-    height: 117vh;
-    top: 0;
-    background-color: rgba(0,25,49,.8);
+	height: 117vh;
+	top: 0;
+	background-color: rgba(0, 25, 49, 0.8);
 	z-index: 2147483648;
-	@media(min-width:768px) {
+	@media (min-width: 768px) {
 		top: -135px;
 	}
 }
 
 .icon {
 	fill: white;
-    height: 1.5rem;
-    vertical-align: bottom;
+	height: 1.5rem;
+	vertical-align: bottom;
 	width: 1.5rem;
-	@media(min-width:1300px) {
+	@media (min-width: 1300px) {
 		height: 2.75rem;
 		width: 2.75rem;
 	}
@@ -359,15 +380,15 @@ $main-font: "Avant";
 
 .page-social {
 	display: none;
-	@media(min-width: 1025px) {
+	@media (min-width: 1025px) {
 		display: flex;
 		align-items: center;
 	}
 }
 
 .page-social__link {
-	padding: .25rem .5rem;
-	opacity: .6;
+	padding: 0.25rem 0.5rem;
+	opacity: 0.6;
 	list-style-type: none;
 }
 
@@ -375,19 +396,24 @@ $main-font: "Avant";
 	list-style-type: none;
 }
 
-
 #Weather {
-	@media(min-width: 320px) {
+	@media (min-width: 320px) {
 		display: none;
 	}
-	@media(min-width: 1026px) {
-		display: flex;
+	@media (min-width: 1026px) {
+		display: flex !important;
+		padding-right: 17px;
+		font-family: $sub-font;
+		padding-top: 6px;
 	}
 }
 
+.fa-search {
+	padding-top: 12px;
+    margin-bottom: 11px;
+}
 
 .flex {
 	display: flex;
 	align-items: center;
 }
-

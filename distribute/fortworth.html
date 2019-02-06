@@ -1,20 +1,4 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Page Title</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" media="screen" href="css/reset.css" />
-  <link rel="stylesheet" type="text/css" media="screen" href="css/fortworth.css" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
-    crossorigin="anonymous">
-</head>
-
-
-<body>
-  <section class='project-wrapper'>
+<section class='project-wrapper'>
 
 
     <header class='header-container'>
@@ -25,6 +9,7 @@
             .st0 {
               fill: #ffff;
             }
+
             .st1 {
               fill: #ffff;
             }
@@ -242,11 +227,9 @@
             </form>
           </div>
           <div class='language-container'>
-            <a href='https://www.fortworth.com/about/weather/' class='weather'>
-              <i class="fas fa-cloud-sun" id='sun-mobile'></i>
-              <div id="temp">70°</div>
+            <a  class='weather'  id='weather'>
             </a>
-            <i class="fas fa-globe-americas"></i>
+            <i class="fas fa-globe-americas" style='margin-left: 64px;'></i>
             <div style="position: relative;">
 
             </div>
@@ -357,10 +340,7 @@
                 </span>
               </div>
             </div>
-            <a href='https://www.fortworth.com/about/weather/' class='weather'>
-              <i class="fas fa-cloud-sun"></i>
-              <div id="temp">70°</div>
-            </a>
+          <a href="https://www.fortworth.com/about/weather/" id='Weather' classname="weather">1°</a>
 
           </div>
           <div class='faSearch'>
@@ -386,57 +366,76 @@
     </header>
   </section>
   <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-  <script>
-    $(document).ready(_ => {
-      $('#google_translate_element').click(_ => {
-        $('.language-menu').toggleClass('reveal-language-menu')
-      });
 
-      $('.faSearch').click(_ => {
-        $(".faSearch").hide()
-        $('.faX').show()
-        $('.searchInput').show()
-      });
 
-      $('.faX').click(_ => {
-        $(".faSearch").show()
-        $(".faX").hide()
-        $('.searchInput').hide()
-      });
-
-      $('.burger-menu').click(_ => {
-        $(".burger-menu").hide()
-        $('.X').show()
-        $('.mobile-nav-container').show()
-      });
-
-      $('.X').click(_ => {
-        $(".burger-menu").show()
-        $(".X").hide()
-        $('.mobile-nav-container').hide()
-      });
-
-      var city = "Fort Worth";
-      var searchtext = "select item.condition from weather.forecast where woeid in (select woeid from geo.places(1) where text='" + city + "') and u='f'"
-	  
-      //change city variable dynamically as required
-      $.getJSON("https://query.yahooapis.com/v1/public/yql?q=" + searchtext + "&format=json").then(function (data) {
-        console.log(data);
-        $('#temp').html(data.query.results.channel.item.condition.temp + "°");
-      });
-    })
-  </script>
-
-  
   <script type="text/javascript">
-    function googleTranslateElementInit() {
-      new google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE }, 'google_translate_element');
-    }
+$(document).ready(function() { 
+
+function googleTranslateElementInit() {
+new google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE }, 'google_translate_element');
+}
+
+$('#google_translate_element').click(_ => {
+  $('.language-menu').toggleClass('reveal-language-menu');
+});
+
+$('.faSearch').click(_ => {
+  $(".faSearch").hide();
+  $('.faX').show();
+  $('.searchInput').show();
+});
+
+$('.faX').click(_ => {
+  $(".faSearch").show();
+  $(".faX").hide();
+  $('.searchInput').hide();
+});
+
+$('.burger-menu').click(_ => {
+  $(".burger-menu").hide();
+  $('.X').show();
+  $('.mobile-nav-container').show();
+});
+
+$('.X').click(_ => {
+  $(".burger-menu").show();
+  $(".X").hide();
+  $('.mobile-nav-container').hide();
+});
+
+});
   </script>
+  
+    <script>
 
+$(document).ready(function() { 
+		function Weather(options) {
+		let lon = options.lon
+		let lat = options.lat
+		let key = 'b2789b7b01e6ec9fcc87c76e29d809c8'
+		let darkurl = `https://api.darksky.net/forecast/${key}/${lat},${lon}`
+		$.ajax({
+			url: darkurl,
+			dataType: 'jsonp',
+			xhrFields: {
+				withCredentials: true
+			}}).done(function(res) {
+				
+				   console.log('res',res);
+			$("#Weather").html(
+				   $(`<div class="Weather" style="display: flex; align-items: center; color: white; margin-left: 20px;padding-top: 4px;">
+					<i style='margin-right: 5px; font-size: 32px;' class="climacon ${ res.daily.icon }"></i>
+					  <span class="Weather" style="display: flex; align-items: center;">
+						  <div>${  ~~(res.currently.temperature) }</div>
+						<div>°</div>
+					  </span>
+				 </div>`
+			)
+		  )
+	   }).fail(console.log)
+	  }
 
+	Weather({ lat: 32.7555, lon: -97.3308 });
 
-</body>
-
-</html>
+	 })
+</script>
