@@ -268,8 +268,6 @@
 				xhrFields: {
 					withCredentials: true
 				}}).done(function(res) {
-					
-			   		console.log('res',res);
 				$("#Weather").html(
 					   $(`<div class="Weather" style="color: white; display: flex; align-items: center; flex-direction: column;">
 						<i style='margin-right: 5px;' class="climacon ${ res.daily.icon }"></i>
