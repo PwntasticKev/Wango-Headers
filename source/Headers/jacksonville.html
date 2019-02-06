@@ -217,7 +217,7 @@
 			<section class='page-search__container' style='display: none'>
 				<form id='page-search' method='get' action='https://www.visitjacksonville.com//search/'>
 					<div class="ais-search-box">
-						<input type="search" class="page-search__input js-psearch-input ais-search-box--input" id="page-search-input" name="keywords"
+						<input type="search" style="width: 100%; margin-bottom:10px;" class="page-search__input js-psearch-input ais-search-box--input" id="page-search-input" name="keywords"
 						 placeholder="Enter search term" required="required" autocomplete="off" value="" autocapitalize="off" autocorrect="off"
 						 role="textbox" spellcheck="false">
 					</div>
@@ -270,8 +270,8 @@
 				}}).done(function(res) {
 				$("#Weather").html(
 					   $(`<div class="Weather" style="color: white; display: flex; align-items: center; flex-direction: column;">
-						<i style='margin-right: 5px;' class="climacon ${ res.daily.icon }"></i>
-          				<span class="Weather" style="display: flex; align-items: center;">
+						<i style='margin-right: 5px; font-size:43px; height: 43px;' class="climacon ${ res.daily.icon }"></i>
+          				<span class="Weather" style="font-size: 19px;display: flex; align-items: center;">
           					<div>${  ~~(res.currently.temperature) }</div>
         					<div>°</div>
           				</span>
