@@ -254,5 +254,38 @@
 	// 	$('.main-menu-section-jv').hide()
 	//   })
     </script>
+
+	<script>
+		$(document).ready(function() { 
+			function Weather(options) {
+			let lon = options.lon
+			let lat = options.lat
+			let key = 'b2789b7b01e6ec9fcc87c76e29d809c8'
+			let darkurl = `https://api.darksky.net/forecast/${key}/${lat},${lon}`
+			$.ajax({
+				url: darkurl,
+				dataType: 'jsonp',
+				xhrFields: {
+					withCredentials: true
+				}}).done(function(res) {
+					
+			   		console.log('res',res);
+				$("#Weather").html(
+					   $(`<div class="Weather" style="color: white; display: flex; align-items: center; flex-direction: column;">
+						<i style='margin-right: 5px;' class="climacon ${ res.daily.icon }"></i>
+          				<span class="Weather" style="display: flex; align-items: center;">
+          					<div>${  ~~(res.currently.temperature) }</div>
+        					<div>°</div>
+          				</span>
+         			</div>`
+                )
+              )
+		   }).fail(console.log)
+		  }
+
+		 Weather({ lat: 30.332184, lon: -81.655647 })
+
+		 })
+	</script>
 </body>
 </html>
