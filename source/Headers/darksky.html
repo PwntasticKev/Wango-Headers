@@ -5,6 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>dark sky</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- <link rel="stylesheet" href="/css/headers/darkSkyWeather.css"> -->
 	<link rel="stylesheet" type="text/css" href="css/darksky.css" />
 </head>
 <body>
@@ -30,7 +31,7 @@
 			   		console.log('res',res);
 				$("#Weather").html(
 					   $(`<div class="Weather" style="display: flex; align-items: center;">
-						<i style='margin-right: 5px;' class="climacon ${ res.daily.icon }"></i>
+						<i style='margin-right: 5px;' class="climacon ${ res.currently.icon }"></i>
           				<span class="Weather" style="display: flex; align-items: center;">
           					<div>${  ~~(res.currently.temperature) }</div>
         					<div>°</div>
