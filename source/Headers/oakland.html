@@ -76,14 +76,15 @@
 		$(".nav-hit-cont")
 			.unbind("click")
 			.bind("click", function() {
-				$(".ae-img").animate({ opacity: "toggle" }, 250)
-				$(".upper-line").toggleClass("menubefore-active")
-				$(".lower-line").toggleClass("menuafter-active")
-				$(".logo").toggle()
-				$(".visit-oakland-menu").addClass("menu-title-active") // adds blue line underneath
-				$(".menu-title-container").toggleClass("menu-title-container--active") //puts the container in flex.
-				$(".industry-container-menu").hide()
-				$(".industry-menu").removeClass("menu-title-active") //removes blue line
+				$('.mobile-search-input').toggleClass('menu-is--active');
+				$(".ae-img").animate({ opacity: "toggle" }, 250);
+				$(".upper-line").toggleClass("menubefore-active");
+				$(".lower-line").toggleClass("menuafter-active");
+				$(".logo").toggle();
+				$(".visit-oakland-menu").addClass("menu-title-active"); // adds blue line underneath
+				$(".menu-title-container").toggleClass("menu-title-container--active"); //puts the container in flex.
+				$(".industry-container-menu").hide();
+				$(".industry-menu").removeClass("menu-title-active"); //removes blue line
 				if ($(".oakland-menu-container").hasClass("oakland-active")) {
 					$(".oakland-menu-container").removeClass("oakland-active")
 				} else if ($(".industry-container-menu").hasClass("industry-active")) {
@@ -98,7 +99,7 @@
 			$(".industry-menu").removeClass("menu-title-active") ////removes bue line
 			$(".oakland-menu-container").addClass("oakland-active")
 			$(".industry-container-menu").removeClass("industry-active")
-			$('.mobile-search-input').toggleClass('menu-is--active')
+			
 		})
 	
 		$(".industry-menu").on("click", function() {
