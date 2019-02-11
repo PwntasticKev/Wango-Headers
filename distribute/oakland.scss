@@ -164,7 +164,12 @@
     top: 16px;
     height: 26px;
     cursor:pointer;
-    background: white;
+	background: white;
+	font-family: 'Helvetica Neue LT W01_71488914', Arial, Helvetica, sans-serif;
+	::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+		color: black;
+		font-weight:bold;
+	  }
     // border: 1px solid lightgray;
     @media (min-width:768px) {
       display:block;
