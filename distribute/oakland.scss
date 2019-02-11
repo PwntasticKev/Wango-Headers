@@ -136,6 +136,7 @@
   }
 
   .menu-title {
+	font-family: 'Helvetica Neue LT W01_71488914', Arial, Helvetica, sans-serif;
     background-color: transparent;
     color: #1d1d1d;
     font-weight: bold;
@@ -164,7 +165,12 @@
     top: 16px;
     height: 26px;
     cursor:pointer;
-    background: white;
+	background: white;
+	font-family: 'Helvetica Neue LT W01_71488914', Arial, Helvetica, sans-serif;
+	::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+		color: black;
+		font-weight:bold;
+	  }
     // border: 1px solid lightgray;
     @media (min-width:768px) {
       display:block;
@@ -229,9 +235,10 @@
     }
   }
 
+  .menu-is--active {
+	  top:0;
+  }
 
- 
-  
   .lang-weather-container--active {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -323,7 +330,8 @@
     padding-left: 15px;
     background: white;
     display: none;
-    height: 100vh;
+	height: 100vh;
+	list-style-type: none;
     // opacity: .8;
     a{text-decoration: none;}
     .oakland-options {
