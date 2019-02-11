@@ -31,7 +31,7 @@
         max-height: 40px;
         @media(min-width:1025px) {
           max-width: 185px;
-          width:185px;
+          width:173px;
           max-height: 80px;
           padding-top: 10px;
         }
@@ -51,7 +51,8 @@
       opacity:1;
       @media(min-width:1025px) {
         width:32px;
-        left: -1px;
+		left: -1px;
+		top:-3px;
     position: absolute;
       }
     }
@@ -72,8 +73,9 @@
       position: absolute;
       background: #1d1d1d;
       @media(min-width:1025px) {
-        width: 35px;
-        left: -2px;
+		width: 35px;
+		left: -4px;
+   		top: -8px;
       }
     }
     .lower-line {
@@ -87,8 +89,8 @@
       transition: all ease .35s 0s;
       @media(min-width:1025px) {
         width: 35px;
-        top:40px;
-        left: -2px;
+        top:29px;
+        left: -4px;
       }
     }
 
@@ -122,11 +124,11 @@
       cursor: pointer;
       width: 24px;
       z-index: 2;
-      height: 34px;
+      height: 28px;
       -webkit-transition: all ease .35s .35s;
       transition: all ease .35s .35s;
       @media(min-width:1025px) {
-        width: 35px;
+        width: 30px;
       }
   }
 
