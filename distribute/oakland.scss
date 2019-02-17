@@ -31,7 +31,7 @@
         max-height: 40px;
         @media(min-width:1025px) {
           max-width: 185px;
-          width:173px;
+          width:185px;
           max-height: 80px;
           padding-top: 10px;
         }
@@ -51,8 +51,7 @@
       opacity:1;
       @media(min-width:1025px) {
         width:32px;
-		left: -1px;
-		top:-3px;
+        left: -1px;
     position: absolute;
       }
     }
@@ -73,9 +72,8 @@
       position: absolute;
       background: #1d1d1d;
       @media(min-width:1025px) {
-		width: 35px;
-		left: -4px;
-   		top: -8px;
+        width: 35px;
+        left: -2px;
       }
     }
     .lower-line {
@@ -89,8 +87,8 @@
       transition: all ease .35s 0s;
       @media(min-width:1025px) {
         width: 35px;
-        top:29px;
-        left: -4px;
+        top:40px;
+        left: -2px;
       }
     }
 
@@ -124,11 +122,11 @@
       cursor: pointer;
       width: 24px;
       z-index: 2;
-      height: 28px;
+      height: 34px;
       -webkit-transition: all ease .35s .35s;
       transition: all ease .35s .35s;
       @media(min-width:1025px) {
-        width: 30px;
+        width: 35px;
       }
   }
 
@@ -138,7 +136,6 @@
   }
 
   .menu-title {
-	font-family: 'Helvetica Neue LT W01_71488914', Arial, Helvetica, sans-serif;
     background-color: transparent;
     color: #1d1d1d;
     font-weight: bold;
@@ -167,12 +164,7 @@
     top: 16px;
     height: 26px;
     cursor:pointer;
-	background: white;
-	font-family: 'Helvetica Neue LT W01_71488914', Arial, Helvetica, sans-serif;
-	::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-		color: black;
-		font-weight:bold;
-	  }
+    background: white;
     // border: 1px solid lightgray;
     @media (min-width:768px) {
       display:block;
@@ -237,10 +229,9 @@
     }
   }
 
-  .menu-is--active {
-	  top:0;
-  }
 
+ 
+  
   .lang-weather-container--active {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -332,8 +323,7 @@
     padding-left: 15px;
     background: white;
     display: none;
-	height: 100vh;
-	list-style-type: none;
+    height: 100vh;
     // opacity: .8;
     a{text-decoration: none;}
     .oakland-options {
