@@ -21,7 +21,8 @@
   transition: transform 0.3s ease-in 0.3s, opacity 0.3s ease-in 0.3s; }
   @media (min-width: 768px) {
     .newFeatures--title {
-      font-size: 40px !important; } }
+      font-size: 40px !important;
+      margin-left: 21px; } }
 
 .content-container--lists {
   margin: 0 auto 25px; }
@@ -80,6 +81,9 @@
       width: 51.466666666667%;
       padding-right: 15px;
       line-height: 26px; } }
+  @media (min-width: 768px) {
+    .section--container {
+      line-height: 2; } }
 
 @media (min-width: 768px) {
   .container-wrapper--section {
