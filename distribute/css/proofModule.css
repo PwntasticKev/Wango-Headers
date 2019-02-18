@@ -3,6 +3,13 @@
   color: #3f3f3f !important;
   line-height: 2;
   padding: 50px 20px; }
+  @media (min-width: 768px) {
+    .new-features-section--container {
+      line-height: 26px; } }
+  @media (min-width: 1200px) {
+    .new-features-section--container {
+      line-height: 2;
+      padding: 90px 30px 30px 30px; } }
 
 .newFeatures--title {
   text-align: left;
@@ -34,6 +41,12 @@
   padding-bottom: 0px;
   padding-left: 20px;
   padding-right: 10px; }
+  @media (min-width: 768px) {
+    .image-container--newFeatures {
+      height: 35vh; } }
+  @media (min-width: 1200px) {
+    .image-container--newFeatures {
+      height: auto; } }
 
 .newFeatures--img {
   width: auto;
@@ -75,8 +88,13 @@
 .left-container {
   padding-right: 30px; }
 
-.right-container {
-  padding-right: 0; }
+@media (min-width: 768px) {
+  .right-container {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center; } }
 
 @media (min-width: 768px) {
   .br {
