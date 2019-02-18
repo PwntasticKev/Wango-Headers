@@ -3,11 +3,10 @@
   color: #3f3f3f !important;
   line-height: 2;
   padding: 50px 20px; }
-  @media (min-width: 768px) {
-    .new-features-section--container {
-      display: flex; } }
 
 .newFeatures--title {
+  text-align: left;
+  visibility: visible;
   font-size: 20px;
   font-weight: 400;
   margin-bottom: 0.75em;
@@ -66,4 +65,19 @@
   @media (min-width: 768px) {
     .section--container {
       width: 51.466666666667%;
-      padding: 0 15px; } }
+      padding-right: 15px;
+      line-height: 26px; } }
+
+@media (min-width: 768px) {
+  .container-wrapper--section {
+    display: flex; } }
+
+.left-container {
+  padding-right: 30px; }
+
+.right-container {
+  padding-right: 0; }
+
+@media (min-width: 768px) {
+  .br {
+    display: none; } }

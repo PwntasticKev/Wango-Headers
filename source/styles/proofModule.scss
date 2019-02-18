@@ -3,12 +3,12 @@
 	color: #3f3f3f !important;
 	line-height: 2;
 	padding: 50px 20px;
-	@media(min-width: 768px){
-		display: flex;
-	}
+	
 }
 
 .newFeatures--title {
+	text-align: left;
+    visibility: visible;
 	font-size: 20px;
 	font-weight:400;
 	margin-bottom: 0.75em;
@@ -75,6 +75,27 @@
 	margin: 0 auto 25px;
 	@media(min-width: 768px){
 		width: 51.466666666667%;
-		padding: 0 15px;
+		padding-right: 15px;
+		line-height:26px;
+	}
+}
+
+.container-wrapper--section{
+	@media(min-width: 768px){
+		display: flex;
+	}
+}
+
+.left-container {
+	padding-right:30px;
+}
+
+.right-container {
+	padding-right: 0;
+}
+
+.br {
+	@media(min-width: 768px){
+	display: none;
 	}
 }
