@@ -36,3 +36,9 @@
   text-decoration: underline;
   font-weight: bold;
   font-family: "Open Sans" !important; }
+
+.new-distilleries--container {
+  background-color: #e9e6b9;
+  background-image: none;
+  color: #3f3f3f;
+  font-family: "Open Sans"; }
