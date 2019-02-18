@@ -1,2 +1,38 @@
+.new-features-section--container {
+  font-family: "Montserrat";
+  color: #3f3f3f !important;
+  line-height: 2;
+  padding: 50px 20px; }
+
 .newFeatures--title {
-  font-size: 20px; }
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 0.75em; }
+
+.content-container--lists {
+  margin: 0 auto 25px; }
+
+.list-container--options {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px; }
+
+.image-container--newFeatures {
+  background-color: #e9cf76;
+  padding-top: 20px;
+  padding-bottom: 0px;
+  padding-left: 20px;
+  padding-right: 10px; }
+
+.newFeatures--img {
+  width: auto;
+  max-width: 100%; }
+
+.passport--faq-link {
+  text-decoration: underline;
+  font-weight: bold;
+  font-family: "Open Sans" !important; }
