@@ -10,9 +10,11 @@
 	vertical-align: middle;
 }
 .wsite-section {
-	display: table-cell;
 	width: 100%;
 	height: 230px;
+	@media(min-width: 768px){
+		display: table-cell;
+	}
 }
 .wsite-section-content {
 	position: relative;
@@ -1035,4 +1037,11 @@ hr.styled-hr {
 	-webkit-border-bottom-right-radius: 0px;
 	-moz-border-bottom-right-radius: 0px;
 	border-bottom-right-radius: 0px;
+  }
+
+  table td[class*="col-"] {
+	display: block;
+	  @media(min-width: 768px) {
+		  display: table-cell
+	  }
   }
