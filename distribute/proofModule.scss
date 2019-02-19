@@ -1043,3 +1043,10 @@ hr.styled-hr {
 	-moz-border-bottom-right-radius: 0px;
 	border-bottom-right-radius: 0px;
   }
+
+  table td[class*="col-"] {
+	display: block;
+	  @media(min-width: 768px) {
+		  display: table-cell
+	  }
+  }
