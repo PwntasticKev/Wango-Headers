@@ -10,12 +10,15 @@
   vertical-align: middle; }
 
 .wsite-section {
-  display: table-cell;
   width: 100%;
   height: 230px; }
+  @media (min-width: 768px) {
+    .wsite-section {
+      display: table-cell; } }
 
 .wsite-section-content {
-  position: relative; }
+  position: relative;
+  padding-top: 75px; }
 
 .container {
   width: 100%;
@@ -153,7 +156,8 @@ a img {
   border: 0px; }
 
 .wsite-image-border-none a img {
-  border-width: 0px !important; }
+  border-width: 0px !important;
+  display: inline-block; }
 
 img {
   vertical-align: middle;
@@ -968,3 +972,35 @@ label,
   .blog-sidebar .wsite-form-field label {
     font-size: 16px !important;
     line-height: 26px !important; } }
+
+#element-007aa355-7411-4972-8d15-b4adc0d52ab9 .colored-box-content {
+  clear: both;
+  float: left;
+  width: 100%;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: #e9cf76;
+  padding-top: 20px;
+  padding-bottom: 0px;
+  padding-left: 20px;
+  padding-right: 10px;
+  -webkit-border-top-left-radius: 0px;
+  -moz-border-top-left-radius: 0px;
+  border-top-left-radius: 0px;
+  -webkit-border-top-right-radius: 0px;
+  -moz-border-top-right-radius: 0px;
+  border-top-right-radius: 0px;
+  -webkit-border-bottom-left-radius: 0px;
+  -moz-border-bottom-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  -webkit-border-bottom-right-radius: 0px;
+  -moz-border-bottom-right-radius: 0px;
+  border-bottom-right-radius: 0px; }
+
+table td[class*="col-"] {
+  display: block; }
+  @media (min-width: 768px) {
+    table td[class*="col-"] {
+      display: table-cell; } }
