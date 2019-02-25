@@ -19,7 +19,7 @@
 }
 
 .cycle-card--left-img {
-	width: 300px; 
+	width: 375px; 
 	height: 200px;
 	@media(min-width:768px){
 		width:435px;
@@ -37,8 +37,11 @@
     flex-direction: column;
 	justify-content: center;
 	text-align: center;
-	margin-top: 27px;
 	padding: 0 20px;
+	margin-top: 27px;
+	@media(min-width:768px) {
+		margin-top: 0;
+	}
 	@media(min-width:1080px) {
 		padding: 0 55px;
 	}
@@ -60,13 +63,13 @@
 	background: white;
 	font-weight:bold;
 	margin-top:10px;
-	font-size: 16px;
 	cursor: pointer;
 	&:hover {
 		background:lightblue;
-		transition: background 1s ease-in-out;
+		transition: background .5s ease-in-out;
 	}
 	@media(min-width:1080px) {
+		font-size: 16px;
 		padding: 10px 70px;
 		margin-top:20px;
 	}
