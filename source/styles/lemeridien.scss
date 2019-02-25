@@ -1,139 +1,118 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700");
 
-.cycle-card--main-container {
-	display: flex;
-    flex-direction: column;
-	align-items: center;
-	font-family: 'Open Sans', sans-serif;
-	line-height: 22px;
-	@media(min-width:768px){
-		flex-direction: row;
-	}
-	@media(min-width:1080px){
-		justify-content: space-around;
-		border: 1px solid #9B9B9B;
-		max-width: 1500px;
-		margin: 0 auto;
-		margin-top:30px;
-	}
-}
-
-// .cycle-card--left-img {
-// 	width: 320px; 
-// 	height: 200px;
-// 	@media(min-width:768px){
-// 		width:435px;
-// 		height:auto;
-// 	}
-// 	@media(min-width:1080px) {
-// 		width: 717px;
-// 		height: 450px;
-// 	}
-// }
 
 .cycle-card--right {
 	align-items: center;
-    display: flex;
-    flex-direction: column;
+	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	text-align: center;
 	padding: 0 20px;
 	margin-top: 27px;
-	@media(min-width:768px) {
+	@media (min-width: 768px) {
 		margin-top: 0;
 	}
-	@media(min-width:1080px) {
+	@media (min-width: 1080px) {
 		padding: 0 55px;
 	}
 }
 
-.cycle-card--right-title {
-	font-size:17px; 
+//global
+
+.super-card--container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-family: "Open Sans", sans-serif;
+	line-height: 22px;
+	max-width: 1275px;
+	margin: 0 auto;
+	@media (min-width: 768px) {
+		flex-direction: row;
+	}
+}
+
+.super-card--title {
+	font-size: 17px;
 	font-weight: bold;
 	margin: 30px 0 5px 0;
 }
 
-.cycle-card--right-button {
-	color: #4E8BBD;
+.super-card--button {
+	color: #4e8bbd;
 	border: 1px solid lightgray;
-	padding:10px 35px;
+	padding: 10px 35px;
 	background: white;
-	font-weight:bold;
-	margin-top:10px;
+	font-weight: bold;
+	margin-top: 10px;
 	cursor: pointer;
 	&:hover {
-		background:lightblue;
-		transition: background .5s ease-in-out;
+		background: lightblue;
+		transition: background 0.5s ease-in-out;
 	}
-	@media(min-width:1080px) {
+	@media (min-width: 1080px) {
 		font-size: 16px;
-		padding: 10px 70px;
-		margin-top:20px;
-	}
-}
-
-
-
-// SECOND DESIGN
-
-.super-card--container {
-	display: flex;
-    flex-direction: column;
-	align-items: center;
-	font-family: 'Open Sans', sans-serif;
-	line-height: 22px;	
-	max-width: 1500px;
-	margin: 0 auto;
-	@media(min-width:768px){
-		flex-direction: row;
+		padding: 10px 40px;
+		margin-top: 20px;
 	}
 }
 
 .super-card--img {
 	width: 100%;
 	height: 200px;
-	@media(min-width:768px){
-		width:340px;
-		height:320px;
+	@media (min-width: 768px) {
+		width: 21rem;
+		height: 320px;
 	}
-	@media(min-width:1080px) {
-		width: 785px;
-		height: 470px;
+	@media (min-width: 972px) {
+		width: 21rem;
+		height: 320px;
+	}
+	@media (min-width: 1080px) {
+		width: 36rem;
+		height: 350px;
 	}
 }
 
 .super-card--title {
-	font-size:17px; 
+	font-size: 17px;
 	font-weight: bold;
 	margin: 30px 0 0px 0;
-	@media(min-width:768px){
+	@media (min-width: 768px) {
 		margin-top: 0;
 	}
 }
+//SEOCND STUFF
+
+.super-card--title-cycle {
+	margin: 20px 0;
+}
+
+
 .super-card--date-title {
-	font-size:15px; 
+	font-size: 15px;
 	font-weight: 600;
-	margin-bottom:10px;
+	margin-bottom: 10px;
 }
 
 .super-card--info-container {
 	display: flex;
-    flex-direction: column;
+	flex-direction: column;
 	align-items: center;
 	position: relative;
-	@media(min-width:768px){
-		padding: 0 100px;
+	@media (min-width: 768px) {
+		padding: 0 30px;
 	}
 }
 
 .super-card--button-container {
 	margin-top: 15px;
-	@media(min-width:1080px){
-		padding-top: 100px;
+	@media (min-width: 1080px) {
+		// padding-top: 100px;
 	}
 }
 
 .super-card--price {
 	width: 100%;
-    font-weight: 800;
+	font-weight: 800;
 }

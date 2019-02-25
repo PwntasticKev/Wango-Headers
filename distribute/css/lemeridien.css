@@ -1,21 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700");
-.cycle-card--main-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-family: 'Open Sans', sans-serif;
-  line-height: 22px; }
-  @media (min-width: 768px) {
-    .cycle-card--main-container {
-      flex-direction: row; } }
-  @media (min-width: 1080px) {
-    .cycle-card--main-container {
-      justify-content: space-around;
-      border: 1px solid #9B9B9B;
-      max-width: 1500px;
-      margin: 0 auto;
-      margin-top: 30px; } }
-
 .cycle-card--right {
   align-items: center;
   display: flex;
@@ -31,51 +14,55 @@
     .cycle-card--right {
       padding: 0 55px; } }
 
-.cycle-card--right-title {
+.super-card--container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Open Sans", sans-serif;
+  line-height: 22px;
+  max-width: 1275px;
+  margin: 0 auto; }
+  @media (min-width: 768px) {
+    .super-card--container {
+      flex-direction: row; } }
+
+.super-card--title {
   font-size: 17px;
   font-weight: bold;
   margin: 30px 0 5px 0; }
 
-.cycle-card--right-button {
-  color: #4E8BBD;
+.super-card--button {
+  color: #4e8bbd;
   border: 1px solid lightgray;
   padding: 10px 35px;
   background: white;
   font-weight: bold;
   margin-top: 10px;
   cursor: pointer; }
-  .cycle-card--right-button:hover {
+  .super-card--button:hover {
     background: lightblue;
-    transition: background .5s ease-in-out; }
+    transition: background 0.5s ease-in-out; }
   @media (min-width: 1080px) {
-    .cycle-card--right-button {
+    .super-card--button {
       font-size: 16px;
-      padding: 10px 70px;
+      padding: 10px 40px;
       margin-top: 20px; } }
-
-.super-card--container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-family: 'Open Sans', sans-serif;
-  line-height: 22px;
-  max-width: 1500px;
-  margin: 0 auto; }
-  @media (min-width: 768px) {
-    .super-card--container {
-      flex-direction: row; } }
 
 .super-card--img {
   width: 100%;
   height: 200px; }
   @media (min-width: 768px) {
     .super-card--img {
-      width: 340px;
+      width: 21rem;
+      height: 320px; } }
+  @media (min-width: 972px) {
+    .super-card--img {
+      width: 21rem;
       height: 320px; } }
   @media (min-width: 1080px) {
     .super-card--img {
-      width: 785px;
-      height: 470px; } }
+      width: 36rem;
+      height: 350px; } }
 
 .super-card--title {
   font-size: 17px;
@@ -84,6 +71,9 @@
   @media (min-width: 768px) {
     .super-card--title {
       margin-top: 0; } }
+
+.super-card--title-cycle {
+  margin: 20px 0; }
 
 .super-card--date-title {
   font-size: 15px;
@@ -97,13 +87,10 @@
   position: relative; }
   @media (min-width: 768px) {
     .super-card--info-container {
-      padding: 0 100px; } }
+      padding: 0 30px; } }
 
 .super-card--button-container {
   margin-top: 15px; }
-  @media (min-width: 1080px) {
-    .super-card--button-container {
-      padding-top: 100px; } }
 
 .super-card--price {
   width: 100%;
