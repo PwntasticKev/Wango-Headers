@@ -1,0 +1,23 @@
+.cycle-card--main-container {
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cycle-card--right {
+	align-items: center;
+    display: flex;
+    flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	margin-top: 27px;
+}
+
+.cycle-card-logo {
+	margin-bottom: 30px;
+}
+
+.cycle-card--right-title {
+	font-size:17px; 
+	font-weight: bold;
+}
