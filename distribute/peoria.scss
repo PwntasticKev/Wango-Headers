@@ -1,3 +1,24 @@
+#topBarSpan {
+	height: 66px;
+	z-index: 2;
+	position: absolute;
+	width: 100%;
+}
+#topBarContainer {
+	max-width: 1000px;
+}
+.temperature {
+	float: left;
+	width: 390px;
+	text-align: left;
+	color: rgb(255, 255, 255);
+	padding-top: 5px;
+	font-size: 14px;
+	text-shadow: rgb(0, 0, 0) 2px 2px 2px;
+}
+.weatherdisplay {
+	color: rgb(255, 255, 255);
+}
 .booked-weather-160x36 {
 	text-align: left;
 	background: url("//s.bookcdn.com/images/weather/wsmall.png") -4px 0px no-repeat;
@@ -12,6 +33,10 @@
 }
 .w160x36-01 {
 	background-position: 70px -1px !important;
+}
+a {
+	text-decoration: none;
+	color: rgb(122, 19, 21);
 }
 .booked-weather-160x36-city {
 	overflow: hidden;
@@ -39,6 +64,8 @@
 }
 .booked-weather-160x36-degree span {
 	vertical-align: top !important;
+}
+form {
 }
 .stButton {
 	position: relative;
@@ -135,6 +162,362 @@
 .fb_iframe_widget iframe {
 	position: absolute;
 }
+#topBarSpan {
+	height: 66px;
+	z-index: 2;
+	position: absolute;
+	width: 100%;
+}
+#topBarContainer {
+	max-width: 1000px;
+}
+.temperature {
+	float: left;
+	width: 390px;
+	text-align: left;
+	color: rgb(255, 255, 255);
+	padding-top: 5px;
+	font-size: 14px;
+	text-shadow: rgb(0, 0, 0) 2px 2px 2px;
+}
+.weatherdisplay {
+	color: rgb(255, 255, 255);
+}
+.booked-weather-160x36 {
+	text-align: left;
+	background: url("//s.bookcdn.com/images/weather/wsmall.png") -4px 0px no-repeat;
+	overflow: hidden;
+	border: 1px solid rgb(160, 161, 161);
+	margin: 0px auto;
+	direction: ltr;
+	width: 160px !important;
+	height: 36px !important;
+	font: 12px Tahoma, Geneva, sans-serif !important;
+	position: relative !important;
+}
+.w160x36-01 {
+	background-position: 70px -1px !important;
+}
+a {
+	text-decoration: none;
+	color: rgb(122, 19, 21);
+}
+.booked-weather-160x36-city {
+	overflow: hidden;
+	line-height: 30px;
+	color: rgb(8, 72, 141);
+	width: 65px !important;
+	display: block !important;
+	float: left !important;
+	padding: 3px 0px 0px 6px !important;
+	text-decoration: none !important;
+	font-weight: bold !important;
+}
+.booked-weather-160x36-degree {
+	float: right;
+	font-size: 18px !important;
+	line-height: 36px !important;
+	margin: 0px 6px 0px 0px !important;
+}
+.booked-weather-160x36-degree span {
+	background: none;
+	font-size: 12px !important;
+	line-height: 36px !important;
+	padding: 0px !important;
+	margin: 0px !important;
+}
+.booked-weather-160x36-degree span {
+	vertical-align: top !important;
+}
+form {
+}
+.stButton {
+	position: relative;
+	z-index: 1;
+	text-decoration: none;
+	color: rgb(0, 0, 0);
+	display: inline-block;
+	cursor: pointer;
+	margin-right: 3px;
+	margin-left: 3px;
+	font-size: 11px;
+	line-height: 16px;
+}
+.stButton .stFb,
+.stButton .stTwbutton,
+.stButton .stMainServices {
+	background-image: url("https://ws.sharethis.com/images/2017/facebook_counter.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: inline-block;
+	white-space: nowrap;
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size: 11px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	line-height: 16px;
+	width: auto;
+	position: relative;
+	-webkit-box-sizing: content-box !important;
+	box-sizing: content-box !important;
+	height: 16px !important;
+	min-height: 16px !important;
+}
+.st_email_hcount .stButton .st-email-counter,
+.st_facebook_hcount .stButton .st-facebook-counter,
+.st_pinterest_hcount .stButton .st-pinterest-counter,
+.st_sharethis_hcount .stButton .st-sharethis-counter,
+.st_twitter_hcount .stButton .st-twitter-counter {
+	height: 16px !important;
+}
+.stButton .st-twitter-counter,
+.stButton .st-facebook-counter {
+	width: 60px;
+}
+.stButton .stArrow {
+	padding-left: 3px;
+	margin-left: -1px;
+	background: url("https://ws.sharethis.com/secure/images/bubble_arrow.png") 3px
+		8px no-repeat;
+	line-height: 16px;
+	height: 14px;
+	display: inline-block;
+}
+.stButton .stButton_gradient {
+	border: 1px solid rgb(221, 221, 221);
+	padding: 2px;
+	font-family: serif;
+	border-radius: 4px;
+	display: inline-block;
+	height: 16px;
+	background: rgb(239, 239, 239);
+}
+.stButton .stButton_gradient:hover {
+	background: rgb(213, 213, 213);
+}
+.stButton .stHBubble {
+	background: rgb(255, 255, 255);
+	margin-left: 3px;
+	margin-right: 3px;
+	position: relative;
+	z-index: -1;
+	display: none;
+}
+.stButton .stBubble_hcount {
+	padding-left: 2px;
+	padding-right: 2px;
+	white-space: nowrap;
+	font-family: Helvetica, sans-serif;
+	font-size: 11px;
+	height: 16px;
+	line-height: 16px;
+	font-weight: bold;
+	color: rgb(85, 85, 85);
+}
+.fb_iframe_widget {
+	display: inline-block;
+	position: relative;
+}
+.fb_iframe_widget span {
+	display: inline-block;
+	position: relative;
+	text-align: justify;
+}
+.fb_iframe_widget iframe {
+	position: absolute;
+}
+#topBarSpan {
+	height: 66px;
+	z-index: 2;
+	position: absolute;
+	width: 100%;
+}
+#topBarContainer {
+	max-width: 1000px;
+}
+.temperature {
+	float: left;
+	width: 390px;
+	text-align: left;
+	color: rgb(255, 255, 255);
+	padding-top: 5px;
+	font-size: 14px;
+	text-shadow: rgb(0, 0, 0) 2px 2px 2px;
+}
+.weatherdisplay {
+	color: rgb(255, 255, 255);
+}
+.booked-weather-160x36 {
+	text-align: left;
+	background: url("//s.bookcdn.com/images/weather/wsmall.png") -4px 0px no-repeat;
+	overflow: hidden;
+	border: 1px solid rgb(160, 161, 161);
+	margin: 0px auto;
+	direction: ltr;
+	width: 160px !important;
+	height: 36px !important;
+	font: 12px Tahoma, Geneva, sans-serif !important;
+	position: relative !important;
+}
+.w160x36-01 {
+	background-position: 70px -1px !important;
+}
+a {
+	text-decoration: none;
+	color: rgb(122, 19, 21);
+}
+.booked-weather-160x36-city {
+	overflow: hidden;
+	line-height: 30px;
+	color: rgb(8, 72, 141);
+	width: 65px !important;
+	display: block !important;
+	float: left !important;
+	padding: 3px 0px 0px 6px !important;
+	text-decoration: none !important;
+	font-weight: bold !important;
+}
+.booked-weather-160x36-degree {
+	float: right;
+	font-size: 18px !important;
+	line-height: 36px !important;
+	margin: 0px 6px 0px 0px !important;
+}
+.booked-weather-160x36-degree span {
+	background: none;
+	font-size: 12px !important;
+	line-height: 36px !important;
+	padding: 0px !important;
+	margin: 0px !important;
+}
+.booked-weather-160x36-degree span {
+	vertical-align: top !important;
+}
+form {
+}
+.stButton {
+	position: relative;
+	z-index: 1;
+	text-decoration: none;
+	color: rgb(0, 0, 0);
+	display: inline-block;
+	cursor: pointer;
+	margin-right: 3px;
+	margin-left: 3px;
+	font-size: 11px;
+	line-height: 16px;
+}
+.stButton .stFb,
+.stButton .stTwbutton,
+.stButton .stMainServices {
+	background-image: url("https://ws.sharethis.com/images/2017/facebook_counter.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: inline-block;
+	white-space: nowrap;
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size: 11px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	line-height: 16px;
+	width: auto;
+	position: relative;
+	-webkit-box-sizing: content-box !important;
+	box-sizing: content-box !important;
+	height: 16px !important;
+	min-height: 16px !important;
+}
+.st_email_hcount .stButton .st-email-counter,
+.st_facebook_hcount .stButton .st-facebook-counter,
+.st_pinterest_hcount .stButton .st-pinterest-counter,
+.st_sharethis_hcount .stButton .st-sharethis-counter,
+.st_twitter_hcount .stButton .st-twitter-counter {
+	height: 16px !important;
+}
+.stButton .st-twitter-counter,
+.stButton .st-facebook-counter {
+	width: 60px;
+}
+.stButton .stArrow {
+	padding-left: 3px;
+	margin-left: -1px;
+	background: url("https://ws.sharethis.com/secure/images/bubble_arrow.png") 3px
+		8px no-repeat;
+	line-height: 16px;
+	height: 14px;
+	display: inline-block;
+}
+.stButton .stButton_gradient {
+	border: 1px solid rgb(221, 221, 221);
+	padding: 2px;
+	font-family: serif;
+	border-radius: 4px;
+	display: inline-block;
+	height: 16px;
+	background: rgb(239, 239, 239);
+}
+.stButton .stButton_gradient:hover {
+	background: rgb(213, 213, 213);
+}
+.stButton .stHBubble {
+	background: rgb(255, 255, 255);
+	margin-left: 3px;
+	margin-right: 3px;
+	position: relative;
+	z-index: -1;
+	display: none;
+}
+.stButton .stBubble_hcount {
+	padding-left: 2px;
+	padding-right: 2px;
+	white-space: nowrap;
+	font-family: Helvetica, sans-serif;
+	font-size: 11px;
+	height: 16px;
+	line-height: 16px;
+	font-weight: bold;
+	color: rgb(85, 85, 85);
+}
+.fb_iframe_widget {
+	display: inline-block;
+	position: relative;
+}
+.fb_iframe_widget span {
+	display: inline-block;
+	position: relative;
+	text-align: justify;
+}
+.fb_iframe_widget iframe {
+	position: absolute;
+}
+#mainPhotoSpan {
+	height: 80px;
+	z-index: 2;
+	position: absolute;
+	background-color: rgb(255, 255, 255);
+	width: 100%;
+	top: 80px;
+	border-top: 2px solid rgb(122, 19, 21);
+	border-bottom: 2px solid rgb(122, 19, 21);
+	text-align: center;
+	left: 0px;
+}
+.mainPhotoContainer {
+	max-width: 1000px;
+}
+.topNav {
+	color: rgb(122, 19, 21);
+	text-decoration: none;
+	padding: 0px 0px 0px 25px;
+}
+.Nav {
+	font-size: 20px;
+	float: right;
+	color: rgb(122, 19, 21);
+	text-decoration: none;
+	padding-top: 25px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
 ul#css3menu1,
 ul#css3menu1 ul {
 	margin: 0px;
@@ -201,22 +584,59 @@ ul#css3menu1 ul {
 ul#css3menu1 ul li {
 	float: none;
 }
+.secondlevel {
+	width: 440px;
+	height: 30px;
+	vertical-align: bottom;
+	text-align: left;
+	z-index: 5;
+	font-size: 18px;
+	margin-left: 0px;
+	padding-left: 5px;
+	margin-top: 70px;
+	font-weight: 500;
+	letter-spacing: normal;
+	color: rgb(255, 255, 255);
+	background-color: rgb(130, 130, 131);
+	opacity: 0.8;
+	position: absolute;
+	text-shadow: rgb(34, 34, 34) 2px 2px 2px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
 ul#css3menu1 ul a {
 	text-align: left;
 	background-image: none;
 	border-color: transparent;
 	text-decoration: none;
 }
-#galleria {
-	width: 2000px;
-	max-height: 600px;
-	min-height: 600px;
-	height: auto;
+.whiteLink {
+	color: rgb(255, 255, 255);
+	text-decoration: none;
+	opacity: 1;
 }
-.galleria-stage {
-	width: 2000px;
-	overflow: hidden;
-	max-height: 600px;
-	min-height: 600px;
-	height: auto;
+.dropBoxButton {
+	width: 180px;
+	height: 20px;
+	background-color: rgb(130, 130, 131);
+	margin: 5px 5px 0px;
+	float: right;
+	clear: both;
+	padding-top: 5px;
+	z-index: 10;
 }
+.dropFontIn {
+	font-size: 14px;
+	margin-left: 5px;
+	font-weight: normal;
+	letter-spacing: normal;
+	z-index: 10;
+	position: absolute;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+.dropFontOut {
+	font-size: 14px;
+	margin-left: 20px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+
