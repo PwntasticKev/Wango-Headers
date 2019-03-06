@@ -5,7 +5,7 @@
   padding-top: 30px;
   border-top: 1px solid #d0d0d0;
   margin: 30px 0 0;
-  @media(min-width: $screen-sm) {
+  @media(min-width: 375px) {
     margin: 50px 0 0;
   }
 }
@@ -69,9 +69,7 @@
   &:hover {
     box-shadow: 0 2px 4px 2px rgba(173, 173, 173, 0.35);
     transform: translate(0, -1px);
-    //a {
-    //  color: rbga(26,26,26, 0.5);
-    //}
+    
   }
 }
 
@@ -149,7 +147,7 @@
   @media screen and (min-width: 576px) and (max-width: 991px) {
     font-size: 30px;
   }
-  @media(min-width: $screen-lg) {
+  @media(min-width: 1025px) {
     max-width: 70px;
   }
 }
@@ -163,7 +161,7 @@
     padding-left: 25px;
     padding-right: 25px;
   }
-  @media(min-width: $screen-xs) {
+  @media(min-width: 320px) {
     padding: 30px 0;
   }
 }
@@ -185,7 +183,7 @@
       position: absolute;
       left: 0;
       top: 7.5px;
-      @media (min-width: 576px) and (max-width: $screen-md) {
+      @media (min-width: 576px) and (max-width: 768px) {
         top: 12.5px;
       }
     }
@@ -231,7 +229,7 @@
   .flex-col + .flex-col {
     margin-left: 10px;
   }
-  @media (min-width: $screen-xs) {
+  @media (min-width: 320px) {
     padding: 0 25px 25px;
   }
 }
@@ -263,9 +261,6 @@
 
 @media screen and (min-width: 768px) {
 
-  //.package-card--info {
-  //  height: 305px;
-  //}
 
   .package-card--info section {
     position: absolute;
