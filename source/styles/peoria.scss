@@ -639,6 +639,54 @@ ul#css3menu1 ul a {
 
 //mobile layout custom css 
 
+.mobile-layout {
+	display:flex;
+	justify-content: space-around;
+	align-items: center;
+    padding: 5px;
+}
+
+
+.burger {
+	width: 30px;
+	height: 30px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+
+div {
+    margin: 2.5px 0;
+    cursor: pointer;
+    height: 3px;
+    width: 25px;
+    background: darkgray;
+    display: block;
+    content: "";
+    box-shadow: none;
+    right: 4px;
+    top: 10px;
+    transition: all 0.5s ease-in-out;
+    @media(min-width:768px) {
+      height:4px;
+      width:25px;
+      color:white;
+    }
+  }
+}
+
+.mobile-menu-container {
+	position: absolute;
+	top:80px;
+	width: 100%;
+	padding: 0 25px;
+	
+		li {
+			padding: 5px 0;
+			font-size: 17px;
+		}
+	
+}
 
 
 

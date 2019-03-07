@@ -1044,7 +1044,33 @@
 		</section>
 
 		<section class="mobile-layout">
-			
+			<img src="http://www.peoria.org/images/enjoypeoria_logo.png"
+			width="263"
+			height="66"
+			alt="Enjoy Peoria Logo" class="mobile-logo">
+			<div class="burger">
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+			<section class="mobile-menu-container" style="display: none;">
+				<ul>
+					<li>planners</li>
+					<li>visitors</li>
+					<li>partners</li>
+					<li>media</li>
+					<li>about us</li>
+					<li>relocation</li>
+				</ul>
+			</section>
 		</section>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+		<script>
+			 $('.burger').on('click',function() {
+  				  $('.mobile-menu-container').fadeToggle()
+  			})
+		</script>
 	</body>
 </html>
