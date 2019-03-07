@@ -637,3 +637,16 @@ ul#css3menu1 ul a {
 }
 
 
+//mobile layout custom css 
+
+
+
+
+//MQ
+
+@media(min-width: 320px ) {
+	.desktop-layout {
+		display: none;
+	}
+}
+

@@ -2,126 +2,34 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link
+	rel="stylesheet"
+	type="text/css"
+	media="screen"
+	href="css/reset.css"
+/>
+<link
+	rel="stylesheet"
+	type="text/css"
+	media="screen"
+	href="css/peoria.css"
+/>
+<link
+	rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+	integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+	crossorigin="anonymous"
+/>
+<link
+	rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
+/>
 </head>
 <body>
-	<style>
-		.wi {
-		line-height: 1.4;
-		*padding: 15px;
-		font-size: 50px;
-	}
-/* openweathermap */
-.owm-01d:before {content: "\f00d";}
-.owm-02d:before {content: "\f002";}
-.owm-03d:before {content: "\f041";}
-.owm-04d:before {content: "\f013";}
-.owm-09d:before {content: "\f01a";}
-.owm-10d:before {content: "\f008";}
-.owm-11d:before {content: "\f01e";}/*f010*/
-.owm-13d:before {content: "\f01b";}
-.owm-50d:before {content: "\f003";}
-.owm-01n:before {content: "\f02e";}
-.owm-02n:before {content: "\f086";}
-.owm-03n:before {content: "\f041";}
-.owm-04n:before {content: "\f013";}
-.owm-09n:before {content: "\f01a";}
-.owm-10n:before {content: "\f028";}
-.owm-11n:before {content: "\f01e";}/*f02d*/
-.owm-13n:before {content: "\f01b";}
-.owm-50n:before {content: "\f04a";}
-		</style>
-		<h1>openweathermap lite</h1>
-		<i class="wi owm-01d"></i>
-		<i class="wi owm-02d"></i>
-		<i class="wi owm-03d"></i>
-		<i class="wi owm-04d"></i>
-		<i class="wi owm-09d"></i>
-		<i class="wi owm-10d"></i>
-		<i class="wi owm-11d"></i>
-		<i class="wi owm-13d"></i>
-		<i class="wi owm-50d"></i>
-		<br/>
-		<i class="wi owm-01n"></i>
-		<i class="wi owm-02n"></i>
-		<i class="wi owm-03n"></i>
-		<i class="wi owm-04n"></i>
-		<i class="wi owm-09n"></i>
-		<i class="wi owm-10n"></i>
-		<i class="wi owm-11n"></i>
-		<i class="wi owm-13n"></i>
-		<i class="wi owm-50n"></i>
-		
-		<h1>openweathermap</h1>
-		<i class="wi wi-owm-200"></i>
-		<i class="wi wi-owm-201"></i>
-		<i class="wi wi-owm-202"></i>
-		<i class="wi wi-owm-210"></i>
-		<i class="wi wi-owm-211"></i>
-		<i class="wi wi-owm-212"></i>
-		<i class="wi wi-owm-221"></i>
-		<i class="wi wi-owm-230"></i>
-		<i class="wi wi-owm-231"></i>
-		<i class="wi wi-owm-232"></i>
-		<i class="wi wi-owm-300"></i>
-		<i class="wi wi-owm-301"></i>
-		<i class="wi wi-owm-302"></i>
-		<i class="wi wi-owm-310"></i>
-		<i class="wi wi-owm-311"></i>
-		<i class="wi wi-owm-312"></i>
-		<i class="wi wi-owm-313"></i>
-		<i class="wi wi-owm-314"></i>
-		<i class="wi wi-owm-321"></i>
-		<i class="wi wi-owm-500"></i>
-		<i class="wi wi-owm-501"></i>
-		<i class="wi wi-owm-502"></i>
-		<i class="wi wi-owm-503"></i>
-		<i class="wi wi-owm-504"></i>
-		<i class="wi wi-owm-511"></i>
-		<i class="wi wi-owm-520"></i>
-		<i class="wi wi-owm-521"></i>
-		<i class="wi wi-owm-522"></i>
-		<i class="wi wi-owm-531"></i>
-		<i class="wi wi-owm-600"></i>
-		<i class="wi wi-owm-601"></i>
-		<i class="wi wi-owm-602"></i>
-		<i class="wi wi-owm-611"></i>
-		<i class="wi wi-owm-612"></i>
-		<i class="wi wi-owm-615"></i>
-		<i class="wi wi-owm-616"></i>
-		<i class="wi wi-owm-620"></i>
-		<i class="wi wi-owm-621"></i>
-		<i class="wi wi-owm-622"></i>
-		<i class="wi wi-owm-701"></i>
-		<i class="wi wi-owm-711"></i>
-		<i class="wi wi-owm-721"></i>
-		<i class="wi wi-owm-731"></i>
-		<i class="wi wi-owm-741"></i>
-		<i class="wi wi-owm-761"></i>
-		<i class="wi wi-owm-762"></i>
-		<i class="wi wi-owm-771"></i>
-		<i class="wi wi-owm-781"></i>
-		<i class="wi wi-owm-800"></i>
-		<i class="wi wi-owm-801"></i>
-		<i class="wi wi-owm-802"></i>
-		<i class="wi wi-owm-803"></i>
-		<i class="wi wi-owm-804"></i>
-		<i class="wi wi-owm-900"></i>
-		<i class="wi wi-owm-901"></i>
-		<i class="wi wi-owm-902"></i>
-		<i class="wi wi-owm-903"></i>
-		<i class="wi wi-owm-904"></i>
-		<i class="wi wi-owm-905"></i>
-		<i class="wi wi-owm-906"></i>
-		<i class="wi wi-owm-957"></i>
-		<h2>day</h2>
-		<i class="wi wi-owm-day-200"></i>
-		<h2>night</h2>
-		<i class="wi wi-owm-night-200"></i>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-		
-				<!-- <p style="font-weight: 400; font-size: 18px; color: #000;" class="text-center"></p> -->
+
+
 </body>
 </html>
