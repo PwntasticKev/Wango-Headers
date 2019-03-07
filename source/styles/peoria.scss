@@ -677,13 +677,23 @@ div {
 
 .mobile-menu-container {
 	position: absolute;
-	top:80px;
+	top: 90px;
 	width: 100%;
-	padding: 0 25px;
+	font-family: Verdana, Helvetica, sans-serif;
+	background: white;
+    z-index: 400;
+	// padding: 0 25px;
 	
 		li {
-			padding: 5px 0;
+			text-transform: capitalize;
+			padding: 5px 25px;
 			font-size: 17px;
+			&:hover {
+				background: lightgray;
+			}
+			&:hover {
+				color: #7A1315;
+			}
 		}
 	
 }
