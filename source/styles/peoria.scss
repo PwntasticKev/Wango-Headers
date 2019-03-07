@@ -686,7 +686,7 @@ div {
 	
 		li {
 			text-transform: capitalize;
-			padding: 5px 25px;
+			padding: 10px 25px;
 			font-size: 17px;
 			&:hover {
 				background: lightgray;
@@ -696,6 +696,27 @@ div {
 			}
 		}
 	
+}
+
+.animateBurgerIn {
+	transition: transform 1s ease-in-out;
+	transform: rotate(-90deg);
+}
+
+.animateBurgerOut {
+	transition: transform 1s ease-in-out;
+	transform: rotate(0deg);
+}
+
+.animateLine1 {
+	transform: translateY(9px);
+	transition: transform 1s ease-in-out;
+	transition-delay: 2s;
+}
+.animateLine3 {
+	transform: translateY(-9px);
+	transition: transform 1s ease-in-out;
+	transition-delay: 2s;
 }
 
 

@@ -662,12 +662,30 @@ ul#css3menu1 ul a {
   z-index: 400; }
   .mobile-menu-container li {
     text-transform: capitalize;
-    padding: 5px 25px;
+    padding: 10px 25px;
     font-size: 17px; }
     .mobile-menu-container li:hover {
       background: lightgray; }
     .mobile-menu-container li:hover {
       color: #7A1315; }
+
+.animateBurgerIn {
+  transition: transform 1s ease-in-out;
+  transform: rotate(-90deg); }
+
+.animateBurgerOut {
+  transition: transform 1s ease-in-out;
+  transform: rotate(0deg); }
+
+.animateLine1 {
+  transform: translateY(9px);
+  transition: transform 1s ease-in-out;
+  transition-delay: 2s; }
+
+.animateLine3 {
+  transform: translateY(-9px);
+  transition: transform 1s ease-in-out;
+  transition-delay: 2s; }
 
 @media (min-width: 320px) {
   .desktop-layout {
