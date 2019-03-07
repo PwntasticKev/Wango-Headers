@@ -659,15 +659,18 @@ ul#css3menu1 ul a {
   width: 100%;
   font-family: Verdana, Helvetica, sans-serif;
   background: white;
-  z-index: 400; }
-  .mobile-menu-container li {
-    text-transform: capitalize;
-    padding: 10px 25px;
-    font-size: 17px; }
-    .mobile-menu-container li:hover {
-      background: lightgray; }
-    .mobile-menu-container li:hover {
-      color: #7A1315; }
+  z-index: 400;
+  max-width: 576px; }
+  .mobile-menu-container a {
+    text-decoration: none; }
+    .mobile-menu-container a li {
+      text-transform: capitalize;
+      padding: 10px 25px;
+      font-size: 17px; }
+      .mobile-menu-container a li:hover {
+        background: lightgray; }
+      .mobile-menu-container a li:hover {
+        color: #7A1315; }
 
 .animateBurgerIn {
   transition: transform 1s ease-in-out;
@@ -689,4 +692,10 @@ ul#css3menu1 ul a {
 
 @media (min-width: 320px) {
   .desktop-layout {
+    display: none; } }
+
+@media (min-width: 1024px) {
+  .desktop-layout {
+    display: block; }
+  .mobile-layout {
     display: none; } }

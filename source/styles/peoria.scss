@@ -681,9 +681,12 @@ div {
 	width: 100%;
 	font-family: Verdana, Helvetica, sans-serif;
 	background: white;
-    z-index: 400;
+	z-index: 400;
+	max-width: 576px;
+
 	// padding: 0 25px;
-	
+	a {
+		text-decoration: none;
 		li {
 			text-transform: capitalize;
 			padding: 10px 25px;
@@ -695,6 +698,7 @@ div {
 				color: #7A1315;
 			}
 		}
+	}
 	
 }
 
@@ -725,6 +729,14 @@ div {
 
 @media(min-width: 320px ) {
 	.desktop-layout {
+		display: none;
+	}
+}
+@media(min-width: 1024px ) {
+	.desktop-layout {
+		display: block;
+	}
+	.mobile-layout {
 		display: none;
 	}
 }
