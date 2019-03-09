@@ -1,0 +1,3237 @@
+.js-slide-hidden {
+	position: absolute !important;
+	left: -9999px !important;
+	top: -9999px !important;
+	display: block !important;
+}
+@media all {
+	article,
+	aside,
+	details,
+	figcaption,
+	figure,
+	footer,
+	header,
+	hgroup,
+	main,
+	menu,
+	nav,
+	section,
+	summary {
+		display: block;
+	}
+}
+@media all {
+	*,
+	::before,
+	::after {
+		-webkit-box-sizing: inherit;
+		box-sizing: inherit;
+	}
+}
+@media all {
+	* {
+		max-height: 1e6px;
+	}
+}
+@media all {
+	#header {
+		padding: 16px 6px;
+		position: relative;
+		border-bottom: 4px solid rgb(250, 180, 26);
+		background: rgb(255, 255, 255);
+		-webkit-transition: all 0.3s ease-in-out 0s;
+		transition: all 0.3s ease-in-out 0s;
+	}
+}
+@media all {
+	*,
+	::before,
+	::after {
+		-webkit-box-sizing: inherit;
+		box-sizing: inherit;
+	}
+}
+@media all {
+	* {
+		max-height: 1e6px;
+	}
+}
+@media all {
+	.holder {
+		max-width: 1470px;
+		margin: 0px auto;
+		padding: 0px 30px;
+		width: 100%;
+	}
+}
+@media all {
+	.small-holder {
+		max-width: 1200px;
+		margin: 0px auto;
+		padding: 0px 10px;
+		width: 100%;
+	}
+}
+@media all {
+	*,
+	::before,
+	::after {
+		-webkit-box-sizing: inherit;
+		box-sizing: inherit;
+	}
+}
+@media all {
+	* {
+		max-height: 1e6px;
+	}
+}
+@media all {
+	.logo {
+		width: 145px;
+		height: 58px;
+		float: left;
+		overflow: hidden;
+		position: relative;
+		-webkit-transition: opacity 0.3s ease 0s;
+		transition: opacity 0.3s ease 0s;
+	}
+}
+@media all {
+	a {
+		background-color: transparent;
+	}
+}
+@media all {
+	*,
+	::before,
+	::after {
+		-webkit-box-sizing: inherit;
+		box-sizing: inherit;
+	}
+}
+@media all {
+	* {
+		max-height: 1e6px;
+	}
+}
+@media all {
+	a {
+		color: rgb(80, 165, 216);
+	}
+}
+@media all {
+	.logo a {
+		display: block;
+	}
+}
+@media all {
+	a {
+		text-decoration: none;
+	}
+}
+@media all {
+	img {
+		border: 0px;
+	}
+}
+@media all {
+	*,
+	::before,
+	::after {
+		-webkit-box-sizing: inherit;
+		box-sizing: inherit;
+	}
+}
+@media all {
+	* {
+		max-height: 1e6px;
+	}
+}
+@media all {
+	img {
+		max-width: 100%;
+		height: auto;
+	}
+}
+@media all {
+	.logo img {
+		max-width: none;
+		width: 100% !important;
+	}
+}
+@media all {
+	.nav-logo {
+		position: absolute;
+		left: 0px;
+		top: 0px;
+	}
+}
+@media all {
+	img {
+		border: 0px;
+	}
+}
+@media all {
+	*,
+	::before,
+	::after {
+		-webkit-box-sizing: inherit;
+		box-sizing: inherit;
+	}
+}
+@media all {
+	* {
+		max-height: 1e6px;
+	}
+}
+@media all {
+	img {
+		max-width: 100%;
+		height: auto;
+	}
+}
+@media all {
+	.logo img {
+		max-width: none;
+		width: 100% !important;
+	}
+}
+@media all {
+	.navopen-logo {
+		opacity: 0;
+		visibility: hidden;
+		-webkit-transition: opacity 0s ease 0s, height 0.3s ease 0s;
+		transition: opacity 0s ease 0s, height 0.3s ease 0s;
+		position: absolute;
+		left: 0px;
+		top: 0px;
+	}
+}
+@media all {
+	a {
+		background-color: transparent;
+	}
+}
+@media all {
+	*,
+	::before,
+	::after {
+		-webkit-box-sizing: inherit;
+		box-sizing: inherit;
+	}
+}
+@media all {
+	* {
+		max-height: 1e6px;
+	}
+}
+@media all {
+	a {
+		color: rgb(80, 165, 216);
+	}
+}
+@media all {
+	.search-opener {
+		position: absolute;
+		top: 37px;
+		right: 56px;
+		color: rgb(80, 165, 216);
+		text-decoration: none;
+		-webkit-transition: color 0.3s ease 0s;
+		transition: color 0.3s ease 0s;
+	}
+}
+@media all {
+	a {
+		text-decoration: none;
+	}
+}
+@media all {
+	*,
+	::before,
+	::after {
+		-webkit-box-sizing: inherit;
+		box-sizing: inherit;
+	}
+}
+@media all {
+	* {
+		max-height: 1e6px;
+	}
+}
+@media all {
+	[class^="icon-"],
+	[class*=" icon-"] {
+		font-family: icomoon;
+		speak: none;
+		font-style: normal;
+		font-weight: normal;
+		font-variant: normal;
+		text-transform: none;
+		line-height: 1;
+		-webkit-font-smoothing: antialiased;
+	}
+}
+@media all {
+	a {
+		background-color: transparent;
+	}
+}
+@media all {
+	*,
+	::before,
+	::after {
+		-webkit-box-sizing: inherit;
+		box-sizing: inherit;
+	}
+}
+@media all {
+	* {
+		max-height: 1e6px;
+	}
+}
+@media all {
+	a {
+		color: rgb(80, 165, 216);
+	}
+}
+@media all {
+	.nav-opener {
+		width: 25px;
+		height: 17px;
+		position: absolute;
+		top: 37px;
+		right: 16px;
+	}
+}
+@media all {
+	a {
+		text-decoration: none;
+	}
+}
+@media all {
+	*,
+	::before,
+	::after {
+		-webkit-box-sizing: inherit;
+		box-sizing: inherit;
+	}
+}
+@media all {
+	* {
+		max-height: 1e6px;
+	}
+}
+@media all {
+	.nav-opener span,
+	.nav-opener::before,
+	.nav-opener::after {
+		position: absolute;
+		top: 0px;
+		right: 0px;
+		width: 25px;
+		height: 3px;
+		background: rgb(80, 165, 216);
+		-webkit-transition: all 0.3s ease 0s;
+		transition: all 0.3s ease 0s;
+	}
+}
+@media all {
+	.nav-opener span {
+		top: 49%;
+		-webkit-transform: translateY(-50%);
+		-ms-transform: translateY(-50%);
+		transform: translateY(-50%);
+	}
+}
+@media all {
+	*,
+	::before,
+	::after {
+		-webkit-box-sizing: inherit;
+		box-sizing: inherit;
+	}
+}
+@media all {
+	* {
+		max-height: 1e6px;
+	}
+}
+@media all {
+	*,
+	::before,
+	::after {
+		-webkit-box-sizing: inherit;
+		box-sizing: inherit;
+	}
+}
+@media all {
+	* {
+		max-height: 1e6px;
+	}
+}
+@media all {
+	article,
+	aside,
+	details,
+	figcaption,
+	figure,
+	footer,
+	header,
+	hgroup,
+	main,
+	menu,
+	nav,
+	section,
+	summary {
+		display: block;
+	}
+}
+@media all {
+	*,
+	::before,
+	::after {
+		-webkit-box-sizing: inherit;
+		box-sizing: inherit;
+	}
+}
+@media all {
+	* {
+		max-height: 1e6px;
+	}
+}
+@media all {
+	#nav {
+		position: relative;
+		z-index: 99;
+	}
+}
+@media all {
+	*,
+	::before,
+	::after {
+		-webkit-box-sizing: inherit;
+		box-sizing: inherit;
+	}
+}
+@media all {
+	* {
+		max-height: 1e6px;
+	}
+}
+@media all {
+	#nav ul,
+	.left-nav ul,
+	.breadcrumb-list,
+	.about-info .members-list,
+	.events-info .events-list,
+	.news-details .news-list,
+	.product-block .product-list,
+	#aside .contact-list,
+	.social-networks {
+		margin: 0px;
+		padding: 0px;
+		list-style: none;
+	}
+}
+@media all {
+	*,
+	::before,
+	::after {
+		-webkit-box-sizing: inherit;
+		box-sizing: inherit;
+	}
+}
+@media all {
+	* {
+		max-height: 1e6px;
+	}
+}
+@media all {
+	ul,
+	ol,
+	dl,
+	p,
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6,
+	address,
+	form,
+	table,
+	blockquote,
+	applet,
+	embed,
+	object,
+	iframe,
+	frameset {
+		margin: 0px 0px 1.2em;
+	}
+}
+@media all {
+	ul,
+	ol {
+		padding-left: 3em;
+	}
+}
+@media all {
+	ul {
+		list-style-type: disc;
+	}
+}
+@media all {
+	#nav ul > li {
+		margin: 0px 25px;
+	}
+}
+@media all {
+	#nav ul > li:first-child {
+		margin-left: 0px;
+		margin-right: 18px;
+	}
+}
+@media all {
+	*,
+	::before,
+	::after {
+		-webkit-box-sizing: inherit;
+		box-sizing: inherit;
+	}
+}
+@media all {
+	* {
+		max-height: 1e6px;
+	}
+}
+@media all {
+	#nav ul > li {
+		font-size: 16px;
+		line-height: 20px;
+		text-transform: uppercase;
+	}
+}
+@media all {
+	#nav ul > li:first-child {
+		margin-left: 0px;
+	}
+}
+@media all {
+	a {
+		background-color: transparent;
+	}
+}
+@media all {
+	*,
+	::before,
+	::after {
+		-webkit-box-sizing: inherit;
+		box-sizing: inherit;
+	}
+}
+@media all {
+	* {
+		max-height: 1e6px;
+	}
+}
+@media all {
+	a {
+		color: rgb(80, 165, 216);
+	}
+}
+@media all {
+	#nav ul > li a {
+		text-decoration: none;
+		color: rgb(255, 255, 255);
+		padding: 11px 40px;
+		display: block;
+		-webkit-transition: color 0s ease 0s, background 0.3s ease 0s;
+		transition: color 0s ease 0s, background 0.3s ease 0s;
+	}
+}
+@media all {
+	a {
+		text-decoration: none;
+	}
+}
+@media all {
+	*,
+	::before,
+	::after {
+		-webkit-box-sizing: inherit;
+		box-sizing: inherit;
+	}
+}
+@media all {
+	* {
+		max-height: 1e6px;
+	}
+}
+@media all {
+	#nav ul .slide {
+		background: rgba(81, 90, 91, 0.95);
+	}
+}
+@media all {
+	*,
+	::before,
+	::after {
+		-webkit-box-sizing: inherit;
+		box-sizing: inherit;
+	}
+}
+@media all {
+	* {
+		max-height: 1e6px;
+	}
+}
+@media all {
+	#nav ul,
+	.left-nav ul,
+	.breadcrumb-list,
+	.about-info .members-list,
+	.events-info .events-list,
+	.news-details .news-list,
+	.product-block .product-list,
+	#aside .contact-list,
+	.social-networks {
+		margin: 0px;
+		padding: 0px;
+		list-style: none;
+	}
+}
+@media all {
+	*,
+	::before,
+	::after {
+		-webkit-box-sizing: inherit;
+		box-sizing: inherit;
+	}
+}
+@media all {
+	* {
+		max-height: 1e6px;
+	}
+}
+@media all {
+	ul,
+	ol,
+	dl,
+	p,
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6,
+	address,
+	form,
+	table,
+	blockquote,
+	applet,
+	embed,
+	object,
+	iframe,
+	frameset {
+		margin: 0px 0px 1.2em;
+	}
+}
+@media all {
+	ul,
+	ol {
+		padding-left: 3em;
+	}
+}
+@media all {
+	ul ul,
+	ul ol,
+	ol ul,
+	ol ol {
+		padding-left: 3em;
+		margin: 0px;
+	}
+}
+@media all {
+	ul {
+		list-style-type: disc;
+	}
+}
+@media all {
+	#nav ul .slide ul:last-child {
+		border: none;
+	}
+}
+@media all {
+	#nav ul > li {
+		margin: 0px 25px;
+	}
+}
+@media all {
+	#nav ul > li:first-child {
+		margin-left: 0px;
+		margin-right: 18px;
+	}
+}
+@media all {
+	*,
+	::before,
+	::after {
+		-webkit-box-sizing: inherit;
+		box-sizing: inherit;
+	}
+}
+@media all {
+	* {
+		max-height: 1e6px;
+	}
+}
+@media all {
+	#nav ul > li {
+		font-size: 16px;
+		line-height: 20px;
+		text-transform: uppercase;
+	}
+}
+@media all {
+	#nav ul > li:first-child {
+		margin-left: 0px;
+	}
+}
+@media all {
+	#nav ul .slide ul li {
+		font-size: 13px;
+		line-height: 17px;
+	}
+}
+@media all {
+	a {
+		background-color: transparent;
+	}
+}
+@media all {
+	*,
+	::before,
+	::after {
+		-webkit-box-sizing: inherit;
+		box-sizing: inherit;
+	}
+}
+@media all {
+	* {
+		max-height: 1e6px;
+	}
+}
+@media all {
+	a {
+		color: rgb(80, 165, 216);
+	}
+}
+@media all {
+	#nav ul > li a {
+		text-decoration: none;
+		color: rgb(255, 255, 255);
+		padding: 11px 40px;
+		display: block;
+		-webkit-transition: color 0s ease 0s, background 0.3s ease 0s;
+		transition: color 0s ease 0s, background 0.3s ease 0s;
+	}
+}
+@media all {
+	#nav ul .slide ul li a {
+		padding: 7px 20px;
+		background: none !important;
+	}
+}
+@media all {
+	a {
+		text-decoration: none;
+	}
+}
+@media all {
+	#nav ul > li {
+		margin: 0px 25px;
+	}
+}
+@media all {
+	*,
+	::before,
+	::after {
+		-webkit-box-sizing: inherit;
+		box-sizing: inherit;
+	}
+}
+@media all {
+	* {
+		max-height: 1e6px;
+	}
+}
+@media all {
+	#nav ul > li {
+		font-size: 16px;
+		line-height: 20px;
+		text-transform: uppercase;
+	}
+}
+@media all {
+	#nav ul .slide ul li {
+		font-size: 13px;
+		line-height: 17px;
+	}
+}
+@media all {
+	a {
+		background-color: transparent;
+	}
+}
+@media all {
+	*,
+	::before,
+	::after {
+		-webkit-box-sizing: inherit;
+		box-sizing: inherit;
+	}
+}
+@media all {
+	* {
+		max-height: 1e6px;
+	}
+}
+@media all {
+	a {
+		color: rgb(80, 165, 216);
+	}
+}
+@media all {
+	#nav ul > li a {
+		text-decoration: none;
+		color: rgb(255, 255, 255);
+		padding: 11px 40px;
+		display: block;
+		-webkit-transition: color 0s ease 0s, background 0.3s ease 0s;
+		transition: color 0s ease 0s, background 0.3s ease 0s;
+	}
+}
+@media all {
+	#nav ul .slide ul li a {
+		padding: 7px 20px;
+		background: none !important;
+	}
+}
+@media all {
+	a {
+		text-decoration: none;
+	}
+}
+@media all {
+	#nav ul > li {
+		margin: 0px 25px;
+	}
+}
+@media all {
+	*,
+	::before,
+	::after {
+		-webkit-box-sizing: inherit;
+		box-sizing: inherit;
+	}
+}
+@media all {
+	* {
+		max-height: 1e6px;
+	}
+}
+@media all {
+	#nav ul > li {
+		font-size: 16px;
+		line-height: 20px;
+		text-transform: uppercase;
+	}
+}
+@media all {
+	#nav ul .slide ul li {
+		font-size: 13px;
+		line-height: 17px;
+	}
+}
+@media all {
+	a {
+		background-color: transparent;
+	}
+}
+@media all {
+	*,
+	::before,
+	::after {
+		-webkit-box-sizing: inherit;
+		box-sizing: inherit;
+	}
+}
+@media all {
+	* {
+		max-height: 1e6px;
+	}
+}
+@media all {
+	a {
+		color: rgb(80, 165, 216);
+	}
+}
+@media all {
+	#nav ul > li a {
+		text-decoration: none;
+		color: rgb(255, 255, 255);
+		padding: 11px 40px;
+		display: block;
+		-webkit-transition: color 0s ease 0s, background 0.3s ease 0s;
+		transition: color 0s ease 0s, background 0.3s ease 0s;
+	}
+}
+@media all {
+	#nav ul .slide ul li a {
+		padding: 7px 20px;
+		background: none !important;
+	}
+}
+@media all {
+	a {
+		text-decoration: none;
+	}
+}
+@media all {
+	#nav ul > li {
+		margin: 0px 25px;
+	}
+}
+@media all {
+	*,
+	::before,
+	::after {
+		-webkit-box-sizing: inherit;
+		box-sizing: inherit;
+	}
+}
+@media all {
+	* {
+		max-height: 1e6px;
+	}
+}
+@media all {
+	#nav ul > li {
+		font-size: 16px;
+		line-height: 20px;
+		text-transform: uppercase;
+	}
+}
+@media all {
+	#nav ul .slide ul li {
+		font-size: 13px;
+		line-height: 17px;
+	}
+}
+@media all {
+	a {
+		background-color: transparent;
+	}
+}
+@media all {
+	*,
+	::before,
+	::after {
+		-webkit-box-sizing: inherit;
+		box-sizing: inherit;
+	}
+}
+@media all {
+	* {
+		max-height: 1e6px;
+	}
+}
+@media all {
+	a {
+		color: rgb(80, 165, 216);
+	}
+}
+@media all {
+	#nav ul > li a {
+		text-decoration: none;
+		color: rgb(255, 255, 255);
+		padding: 11px 40px;
+		display: block;
+		-webkit-transition: color 0s ease 0s, background 0.3s ease 0s;
+		transition: color 0s ease 0s, background 0.3s ease 0s;
+	}
+}
+@media all {
+	#nav ul .slide ul li a {
+		padding: 7px 20px;
+		background: none !important;
+	}
+}
+@media all {
+	a {
+		text-decoration: none;
+	}
+}
+@media all {
+	#nav ul > li {
+		margin: 0px 25px;
+	}
+}
+@media all {
+	*,
+	::before,
+	::after {
+		-webkit-box-sizing: inherit;
+		box-sizing: inherit;
+	}
+}
+@media all {
+	* {
+		max-height: 1e6px;
+	}
+}
+@media all {
+	#nav ul > li {
+		font-size: 16px;
+		line-height: 20px;
+		text-transform: uppercase;
+	}
+}
+@media all {
+	#nav ul .slide ul li {
+		font-size: 13px;
+		line-height: 17px;
+	}
+}
+@media all {
+	a {
+		background-color: transparent;
+	}
+}
+@media all {
+	*,
+	::before,
+	::after {
+		-webkit-box-sizing: inherit;
+		box-sizing: inherit;
+	}
+}
+@media all {
+	* {
+		max-height: 1e6px;
+	}
+}
+@media all {
+	a {
+		color: rgb(80, 165, 216);
+	}
+}
+@media all {
+	#nav ul > li a {
+		text-decoration: none;
+		color: rgb(255, 255, 255);
+		padding: 11px 40px;
+		display: block;
+		-webkit-transition: color 0s ease 0s, background 0.3s ease 0s;
+		transition: color 0s ease 0s, background 0.3s ease 0s;
+	}
+}
+@media all {
+	#nav ul .slide ul li a {
+		padding: 7px 20px;
+		background: none !important;
+	}
+}
+@media all {
+	a {
+		text-decoration: none;
+	}
+}
+@media all {
+	#nav ul > li {
+		margin: 0px 25px;
+	}
+}
+@media all {
+	*,
+	::before,
+	::after {
+		-webkit-box-sizing: inherit;
+		box-sizing: inherit;
+	}
+}
+@media all {
+	* {
+		max-height: 1e6px;
+	}
+}
+@media all {
+	#nav ul > li {
+		font-size: 16px;
+		line-height: 20px;
+		text-transform: uppercase;
+	}
+}
+@media all {
+	#nav ul .slide ul li {
+		font-size: 13px;
+		line-height: 17px;
+	}
+}
+@media all {
+	a {
+		background-color: transparent;
+	}
+}
+@media all {
+	*,
+	::before,
+	::after {
+		-webkit-box-sizing: inherit;
+		box-sizing: inherit;
+	}
+}
+@media all {
+	* {
+		max-height: 1e6px;
+	}
+}
+@media all {
+	a {
+		color: rgb(80, 165, 216);
+	}
+}
+@media all {
+	#nav ul > li a {
+		text-decoration: none;
+		color: rgb(255, 255, 255);
+		padding: 11px 40px;
+		display: block;
+		-webkit-transition: color 0s ease 0s, background 0.3s ease 0s;
+		transition: color 0s ease 0s, background 0.3s ease 0s;
+	}
+}
+@media all {
+	#nav ul .slide ul li a {
+		padding: 7px 20px;
+		background: none !important;
+	}
+}
+@media all {
+	a {
+		text-decoration: none;
+	}
+}
+@media all {
+	#nav ul > li {
+		margin: 0px 25px;
+	}
+}
+@media all {
+	*,
+	::before,
+	::after {
+		-webkit-box-sizing: inherit;
+		box-sizing: inherit;
+	}
+}
+@media all {
+	* {
+		max-height: 1e6px;
+	}
+}
+@media all {
+	#nav ul > li {
+		font-size: 16px;
+		line-height: 20px;
+		text-transform: uppercase;
+	}
+}
+@media all {
+	a {
+		background-color: transparent;
+	}
+}
+@media all {
+	*,
+	::before,
+	::after {
+		-webkit-box-sizing: inherit;
+		box-sizing: inherit;
+	}
+}
+@media all {
+	* {
+		max-height: 1e6px;
+	}
+}
+@media all {
+	a {
+		color: rgb(80, 165, 216);
+	}
+}
+@media all {
+	#nav ul > li a {
+		text-decoration: none;
+		color: rgb(255, 255, 255);
+		padding: 11px 40px;
+		display: block;
+		-webkit-transition: color 0s ease 0s, background 0.3s ease 0s;
+		transition: color 0s ease 0s, background 0.3s ease 0s;
+	}
+}
+@media all {
+	a {
+		text-decoration: none;
+	}
+}
+@media all {
+	*,
+	::before,
+	::after {
+		-webkit-box-sizing: inherit;
+		box-sizing: inherit;
+	}
+}
+@media all {
+	* {
+		max-height: 1e6px;
+	}
+}
+@media all {
+	#nav ul .slide {
+		background: rgba(81, 90, 91, 0.95);
+	}
+}
+@media all {
+	*,
+	::before,
+	::after {
+		-webkit-box-sizing: inherit;
+		box-sizing: inherit;
+	}
+}
+@media all {
+	* {
+		max-height: 1e6px;
+	}
+}
+@media all {
+	#nav ul,
+	.left-nav ul,
+	.breadcrumb-list,
+	.about-info .members-list,
+	.events-info .events-list,
+	.news-details .news-list,
+	.product-block .product-list,
+	#aside .contact-list,
+	.social-networks {
+		margin: 0px;
+		padding: 0px;
+		list-style: none;
+	}
+}
+@media all {
+	*,
+	::before,
+	::after {
+		-webkit-box-sizing: inherit;
+		box-sizing: inherit;
+	}
+}
+@media all {
+	* {
+		max-height: 1e6px;
+	}
+}
+@media all {
+	ul,
+	ol,
+	dl,
+	p,
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6,
+	address,
+	form,
+	table,
+	blockquote,
+	applet,
+	embed,
+	object,
+	iframe,
+	frameset {
+		margin: 0px 0px 1.2em;
+	}
+}
+@media all {
+	ul,
+	ol {
+		padding-left: 3em;
+	}
+}
+@media all {
+	ul ul,
+	ul ol,
+	ol ul,
+	ol ol {
+		padding-left: 3em;
+		margin: 0px;
+	}
+}
+@media all {
+	ul {
+		list-style-type: disc;
+	}
+}
+@media all {
+	#nav ul .slide ul:last-child {
+		border: none;
+	}
+}
+@media all {
+	#nav ul > li {
+		margin: 0px 25px;
+	}
+}
+@media all {
+	#nav ul > li:first-child {
+		margin-left: 0px;
+		margin-right: 18px;
+	}
+}
+@media all {
+	*,
+	::before,
+	::after {
+		-webkit-box-sizing: inherit;
+		box-sizing: inherit;
+	}
+}
+@media all {
+	* {
+		max-height: 1e6px;
+	}
+}
+@media all {
+	#nav ul > li {
+		font-size: 16px;
+		line-height: 20px;
+		text-transform: uppercase;
+	}
+}
+@media all {
+	#nav ul > li:first-child {
+		margin-left: 0px;
+	}
+}
+@media all {
+	#nav ul .slide ul li {
+		font-size: 13px;
+		line-height: 17px;
+	}
+}
+@media all {
+	a {
+		background-color: transparent;
+	}
+}
+@media all {
+	*,
+	::before,
+	::after {
+		-webkit-box-sizing: inherit;
+		box-sizing: inherit;
+	}
+}
+@media all {
+	* {
+		max-height: 1e6px;
+	}
+}
+@media all {
+	a {
+		color: rgb(80, 165, 216);
+	}
+}
+@media all {
+	#nav ul > li a {
+		text-decoration: none;
+		color: rgb(255, 255, 255);
+		padding: 11px 40px;
+		display: block;
+		-webkit-transition: color 0s ease 0s, background 0.3s ease 0s;
+		transition: color 0s ease 0s, background 0.3s ease 0s;
+	}
+}
+@media all {
+	#nav ul .slide ul li a {
+		padding: 7px 20px;
+		background: none !important;
+	}
+}
+@media all {
+	a {
+		text-decoration: none;
+	}
+}
+@media all {
+	#nav ul > li {
+		margin: 0px 25px;
+	}
+}
+@media all {
+	*,
+	::before,
+	::after {
+		-webkit-box-sizing: inherit;
+		box-sizing: inherit;
+	}
+}
+@media all {
+	* {
+		max-height: 1e6px;
+	}
+}
+@media all {
+	#nav ul > li {
+		font-size: 16px;
+		line-height: 20px;
+		text-transform: uppercase;
+	}
+}
+@media all {
+	#nav ul .slide ul li {
+		font-size: 13px;
+		line-height: 17px;
+	}
+}
+@media all {
+	a {
+		background-color: transparent;
+	}
+}
+@media all {
+	*,
+	::before,
+	::after {
+		-webkit-box-sizing: inherit;
+		box-sizing: inherit;
+	}
+}
+@media all {
+	* {
+		max-height: 1e6px;
+	}
+}
+@media all {
+	a {
+		color: rgb(80, 165, 216);
+	}
+}
+@media all {
+	#nav ul > li a {
+		text-decoration: none;
+		color: rgb(255, 255, 255);
+		padding: 11px 40px;
+		display: block;
+		-webkit-transition: color 0s ease 0s, background 0.3s ease 0s;
+		transition: color 0s ease 0s, background 0.3s ease 0s;
+	}
+}
+@media all {
+	#nav ul .slide ul li a {
+		padding: 7px 20px;
+		background: none !important;
+	}
+}
+@media all {
+	a {
+		text-decoration: none;
+	}
+}
+@media all {
+	#nav ul > li {
+		margin: 0px 25px;
+	}
+}
+@media all {
+	*,
+	::before,
+	::after {
+		-webkit-box-sizing: inherit;
+		box-sizing: inherit;
+	}
+}
+@media all {
+	* {
+		max-height: 1e6px;
+	}
+}
+@media all {
+	#nav ul > li {
+		font-size: 16px;
+		line-height: 20px;
+		text-transform: uppercase;
+	}
+}
+@media all {
+	#nav ul .slide ul li {
+		font-size: 13px;
+		line-height: 17px;
+	}
+}
+@media all {
+	a {
+		background-color: transparent;
+	}
+}
+@media all {
+	*,
+	::before,
+	::after {
+		-webkit-box-sizing: inherit;
+		box-sizing: inherit;
+	}
+}
+@media all {
+	* {
+		max-height: 1e6px;
+	}
+}
+@media all {
+	a {
+		color: rgb(80, 165, 216);
+	}
+}
+@media all {
+	#nav ul > li a {
+		text-decoration: none;
+		color: rgb(255, 255, 255);
+		padding: 11px 40px;
+		display: block;
+		-webkit-transition: color 0s ease 0s, background 0.3s ease 0s;
+		transition: color 0s ease 0s, background 0.3s ease 0s;
+	}
+}
+@media all {
+	#nav ul .slide ul li a {
+		padding: 7px 20px;
+		background: none !important;
+	}
+}
+@media all {
+	a {
+		text-decoration: none;
+	}
+}
+@media all {
+	#nav ul > li {
+		margin: 0px 25px;
+	}
+}
+@media all {
+	*,
+	::before,
+	::after {
+		-webkit-box-sizing: inherit;
+		box-sizing: inherit;
+	}
+}
+@media all {
+	* {
+		max-height: 1e6px;
+	}
+}
+@media all {
+	#nav ul > li {
+		font-size: 16px;
+		line-height: 20px;
+		text-transform: uppercase;
+	}
+}
+@media all {
+	a {
+		background-color: transparent;
+	}
+}
+@media all {
+	*,
+	::before,
+	::after {
+		-webkit-box-sizing: inherit;
+		box-sizing: inherit;
+	}
+}
+@media all {
+	* {
+		max-height: 1e6px;
+	}
+}
+@media all {
+	a {
+		color: rgb(80, 165, 216);
+	}
+}
+@media all {
+	#nav ul > li a {
+		text-decoration: none;
+		color: rgb(255, 255, 255);
+		padding: 11px 40px;
+		display: block;
+		-webkit-transition: color 0s ease 0s, background 0.3s ease 0s;
+		transition: color 0s ease 0s, background 0.3s ease 0s;
+	}
+}
+@media all {
+	a {
+		text-decoration: none;
+	}
+}
+@media all {
+	#nav ul > li {
+		margin: 0px 25px;
+	}
+}
+@media all {
+	*,
+	::before,
+	::after {
+		-webkit-box-sizing: inherit;
+		box-sizing: inherit;
+	}
+}
+@media all {
+	* {
+		max-height: 1e6px;
+	}
+}
+@media all {
+	#nav ul > li {
+		font-size: 16px;
+		line-height: 20px;
+		text-transform: uppercase;
+	}
+}
+@media all {
+	a {
+		background-color: transparent;
+	}
+}
+@media all {
+	*,
+	::before,
+	::after {
+		-webkit-box-sizing: inherit;
+		box-sizing: inherit;
+	}
+}
+@media all {
+	* {
+		max-height: 1e6px;
+	}
+}
+@media all {
+	a {
+		color: rgb(80, 165, 216);
+	}
+}
+@media all {
+	#nav ul > li a {
+		text-decoration: none;
+		color: rgb(255, 255, 255);
+		padding: 11px 40px;
+		display: block;
+		-webkit-transition: color 0s ease 0s, background 0.3s ease 0s;
+		transition: color 0s ease 0s, background 0.3s ease 0s;
+	}
+}
+@media all {
+	a {
+		text-decoration: none;
+	}
+}
+@media all {
+	*,
+	::before,
+	::after {
+		-webkit-box-sizing: inherit;
+		box-sizing: inherit;
+	}
+}
+@media all {
+	* {
+		max-height: 1e6px;
+	}
+}
+@media all {
+	#nav ul .slide {
+		background: rgba(81, 90, 91, 0.95);
+	}
+}
+@media all {
+	*,
+	::before,
+	::after {
+		-webkit-box-sizing: inherit;
+		box-sizing: inherit;
+	}
+}
+@media all {
+	* {
+		max-height: 1e6px;
+	}
+}
+@media all {
+	#nav ul,
+	.left-nav ul,
+	.breadcrumb-list,
+	.about-info .members-list,
+	.events-info .events-list,
+	.news-details .news-list,
+	.product-block .product-list,
+	#aside .contact-list,
+	.social-networks {
+		margin: 0px;
+		padding: 0px;
+		list-style: none;
+	}
+}
+@media all {
+	*,
+	::before,
+	::after {
+		-webkit-box-sizing: inherit;
+		box-sizing: inherit;
+	}
+}
+@media all {
+	* {
+		max-height: 1e6px;
+	}
+}
+@media all {
+	ul,
+	ol,
+	dl,
+	p,
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6,
+	address,
+	form,
+	table,
+	blockquote,
+	applet,
+	embed,
+	object,
+	iframe,
+	frameset {
+		margin: 0px 0px 1.2em;
+	}
+}
+@media all {
+	ul,
+	ol {
+		padding-left: 3em;
+	}
+}
+@media all {
+	ul ul,
+	ul ol,
+	ol ul,
+	ol ol {
+		padding-left: 3em;
+		margin: 0px;
+	}
+}
+@media all {
+	ul {
+		list-style-type: disc;
+	}
+}
+@media all {
+	#nav ul .slide ul:last-child {
+		border: none;
+	}
+}
+@media all {
+	#nav ul > li {
+		margin: 0px 25px;
+	}
+}
+@media all {
+	#nav ul > li:first-child {
+		margin-left: 0px;
+		margin-right: 18px;
+	}
+}
+@media all {
+	*,
+	::before,
+	::after {
+		-webkit-box-sizing: inherit;
+		box-sizing: inherit;
+	}
+}
+@media all {
+	* {
+		max-height: 1e6px;
+	}
+}
+@media all {
+	#nav ul > li {
+		font-size: 16px;
+		line-height: 20px;
+		text-transform: uppercase;
+	}
+}
+@media all {
+	#nav ul > li:first-child {
+		margin-left: 0px;
+	}
+}
+@media all {
+	#nav ul .slide ul li {
+		font-size: 13px;
+		line-height: 17px;
+	}
+}
+@media all {
+	a {
+		background-color: transparent;
+	}
+}
+@media all {
+	*,
+	::before,
+	::after {
+		-webkit-box-sizing: inherit;
+		box-sizing: inherit;
+	}
+}
+@media all {
+	* {
+		max-height: 1e6px;
+	}
+}
+@media all {
+	a {
+		color: rgb(80, 165, 216);
+	}
+}
+@media all {
+	#nav ul > li a {
+		text-decoration: none;
+		color: rgb(255, 255, 255);
+		padding: 11px 40px;
+		display: block;
+		-webkit-transition: color 0s ease 0s, background 0.3s ease 0s;
+		transition: color 0s ease 0s, background 0.3s ease 0s;
+	}
+}
+@media all {
+	#nav ul .slide ul li a {
+		padding: 7px 20px;
+		background: none !important;
+	}
+}
+@media all {
+	a {
+		text-decoration: none;
+	}
+}
+@media all {
+	#nav ul > li {
+		margin: 0px 25px;
+	}
+}
+@media all {
+	*,
+	::before,
+	::after {
+		-webkit-box-sizing: inherit;
+		box-sizing: inherit;
+	}
+}
+@media all {
+	* {
+		max-height: 1e6px;
+	}
+}
+@media all {
+	#nav ul > li {
+		font-size: 16px;
+		line-height: 20px;
+		text-transform: uppercase;
+	}
+}
+@media all {
+	#nav ul .slide ul li {
+		font-size: 13px;
+		line-height: 17px;
+	}
+}
+@media all {
+	a {
+		background-color: transparent;
+	}
+}
+@media all {
+	*,
+	::before,
+	::after {
+		-webkit-box-sizing: inherit;
+		box-sizing: inherit;
+	}
+}
+@media all {
+	* {
+		max-height: 1e6px;
+	}
+}
+@media all {
+	a {
+		color: rgb(80, 165, 216);
+	}
+}
+@media all {
+	#nav ul > li a {
+		text-decoration: none;
+		color: rgb(255, 255, 255);
+		padding: 11px 40px;
+		display: block;
+		-webkit-transition: color 0s ease 0s, background 0.3s ease 0s;
+		transition: color 0s ease 0s, background 0.3s ease 0s;
+	}
+}
+@media all {
+	#nav ul .slide ul li a {
+		padding: 7px 20px;
+		background: none !important;
+	}
+}
+@media all {
+	a {
+		text-decoration: none;
+	}
+}
+@media all {
+	#nav ul > li {
+		margin: 0px 25px;
+	}
+}
+@media all {
+	*,
+	::before,
+	::after {
+		-webkit-box-sizing: inherit;
+		box-sizing: inherit;
+	}
+}
+@media all {
+	* {
+		max-height: 1e6px;
+	}
+}
+@media all {
+	#nav ul > li {
+		font-size: 16px;
+		line-height: 20px;
+		text-transform: uppercase;
+	}
+}
+@media all {
+	#nav ul .slide ul li {
+		font-size: 13px;
+		line-height: 17px;
+	}
+}
+@media all {
+	a {
+		background-color: transparent;
+	}
+}
+@media all {
+	*,
+	::before,
+	::after {
+		-webkit-box-sizing: inherit;
+		box-sizing: inherit;
+	}
+}
+@media all {
+	* {
+		max-height: 1e6px;
+	}
+}
+@media all {
+	a {
+		color: rgb(80, 165, 216);
+	}
+}
+@media all {
+	#nav ul > li a {
+		text-decoration: none;
+		color: rgb(255, 255, 255);
+		padding: 11px 40px;
+		display: block;
+		-webkit-transition: color 0s ease 0s, background 0.3s ease 0s;
+		transition: color 0s ease 0s, background 0.3s ease 0s;
+	}
+}
+@media all {
+	#nav ul .slide ul li a {
+		padding: 7px 20px;
+		background: none !important;
+	}
+}
+@media all {
+	a {
+		text-decoration: none;
+	}
+}
+@media all {
+	#nav ul > li {
+		margin: 0px 25px;
+	}
+}
+@media all {
+	*,
+	::before,
+	::after {
+		-webkit-box-sizing: inherit;
+		box-sizing: inherit;
+	}
+}
+@media all {
+	* {
+		max-height: 1e6px;
+	}
+}
+@media all {
+	#nav ul > li {
+		font-size: 16px;
+		line-height: 20px;
+		text-transform: uppercase;
+	}
+}
+@media all {
+	#nav ul .slide ul li {
+		font-size: 13px;
+		line-height: 17px;
+	}
+}
+@media all {
+	a {
+		background-color: transparent;
+	}
+}
+@media all {
+	*,
+	::before,
+	::after {
+		-webkit-box-sizing: inherit;
+		box-sizing: inherit;
+	}
+}
+@media all {
+	* {
+		max-height: 1e6px;
+	}
+}
+@media all {
+	a {
+		color: rgb(80, 165, 216);
+	}
+}
+@media all {
+	#nav ul > li a {
+		text-decoration: none;
+		color: rgb(255, 255, 255);
+		padding: 11px 40px;
+		display: block;
+		-webkit-transition: color 0s ease 0s, background 0.3s ease 0s;
+		transition: color 0s ease 0s, background 0.3s ease 0s;
+	}
+}
+@media all {
+	#nav ul .slide ul li a {
+		padding: 7px 20px;
+		background: none !important;
+	}
+}
+@media all {
+	a {
+		text-decoration: none;
+	}
+}
+@media all {
+	#nav ul > li {
+		margin: 0px 25px;
+	}
+}
+@media all {
+	*,
+	::before,
+	::after {
+		-webkit-box-sizing: inherit;
+		box-sizing: inherit;
+	}
+}
+@media all {
+	* {
+		max-height: 1e6px;
+	}
+}
+@media all {
+	#nav ul > li {
+		font-size: 16px;
+		line-height: 20px;
+		text-transform: uppercase;
+	}
+}
+@media all {
+	a {
+		background-color: transparent;
+	}
+}
+@media all {
+	*,
+	::before,
+	::after {
+		-webkit-box-sizing: inherit;
+		box-sizing: inherit;
+	}
+}
+@media all {
+	* {
+		max-height: 1e6px;
+	}
+}
+@media all {
+	a {
+		color: rgb(80, 165, 216);
+	}
+}
+@media all {
+	#nav ul > li a {
+		text-decoration: none;
+		color: rgb(255, 255, 255);
+		padding: 11px 40px;
+		display: block;
+		-webkit-transition: color 0s ease 0s, background 0.3s ease 0s;
+		transition: color 0s ease 0s, background 0.3s ease 0s;
+	}
+}
+@media all {
+	a {
+		text-decoration: none;
+	}
+}
+@media all {
+	*,
+	::before,
+	::after {
+		-webkit-box-sizing: inherit;
+		box-sizing: inherit;
+	}
+}
+@media all {
+	* {
+		max-height: 1e6px;
+	}
+}
+@media all {
+	#nav ul .slide {
+		background: rgba(81, 90, 91, 0.95);
+	}
+}
+@media all {
+	*,
+	::before,
+	::after {
+		-webkit-box-sizing: inherit;
+		box-sizing: inherit;
+	}
+}
+@media all {
+	* {
+		max-height: 1e6px;
+	}
+}
+@media all {
+	#nav ul,
+	.left-nav ul,
+	.breadcrumb-list,
+	.about-info .members-list,
+	.events-info .events-list,
+	.news-details .news-list,
+	.product-block .product-list,
+	#aside .contact-list,
+	.social-networks {
+		margin: 0px;
+		padding: 0px;
+		list-style: none;
+	}
+}
+@media all {
+	*,
+	::before,
+	::after {
+		-webkit-box-sizing: inherit;
+		box-sizing: inherit;
+	}
+}
+@media all {
+	* {
+		max-height: 1e6px;
+	}
+}
+@media all {
+	ul,
+	ol,
+	dl,
+	p,
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6,
+	address,
+	form,
+	table,
+	blockquote,
+	applet,
+	embed,
+	object,
+	iframe,
+	frameset {
+		margin: 0px 0px 1.2em;
+	}
+}
+@media all {
+	ul,
+	ol {
+		padding-left: 3em;
+	}
+}
+@media all {
+	ul ul,
+	ul ol,
+	ol ul,
+	ol ol {
+		padding-left: 3em;
+		margin: 0px;
+	}
+}
+@media all {
+	ul {
+		list-style-type: disc;
+	}
+}
+@media all {
+	#nav ul .slide ul:last-child {
+		border: none;
+	}
+}
+@media all {
+	#nav ul > li {
+		margin: 0px 25px;
+	}
+}
+@media all {
+	#nav ul > li:first-child {
+		margin-left: 0px;
+		margin-right: 18px;
+	}
+}
+@media all {
+	*,
+	::before,
+	::after {
+		-webkit-box-sizing: inherit;
+		box-sizing: inherit;
+	}
+}
+@media all {
+	* {
+		max-height: 1e6px;
+	}
+}
+@media all {
+	#nav ul > li {
+		font-size: 16px;
+		line-height: 20px;
+		text-transform: uppercase;
+	}
+}
+@media all {
+	#nav ul > li:first-child {
+		margin-left: 0px;
+	}
+}
+@media all {
+	#nav ul .slide ul li {
+		font-size: 13px;
+		line-height: 17px;
+	}
+}
+@media all {
+	a {
+		background-color: transparent;
+	}
+}
+@media all {
+	*,
+	::before,
+	::after {
+		-webkit-box-sizing: inherit;
+		box-sizing: inherit;
+	}
+}
+@media all {
+	* {
+		max-height: 1e6px;
+	}
+}
+@media all {
+	a {
+		color: rgb(80, 165, 216);
+	}
+}
+@media all {
+	#nav ul > li a {
+		text-decoration: none;
+		color: rgb(255, 255, 255);
+		padding: 11px 40px;
+		display: block;
+		-webkit-transition: color 0s ease 0s, background 0.3s ease 0s;
+		transition: color 0s ease 0s, background 0.3s ease 0s;
+	}
+}
+@media all {
+	#nav ul .slide ul li a {
+		padding: 7px 20px;
+		background: none !important;
+	}
+}
+@media all {
+	a {
+		text-decoration: none;
+	}
+}
+@media all {
+	#nav ul > li {
+		margin: 0px 25px;
+	}
+}
+@media all {
+	*,
+	::before,
+	::after {
+		-webkit-box-sizing: inherit;
+		box-sizing: inherit;
+	}
+}
+@media all {
+	* {
+		max-height: 1e6px;
+	}
+}
+@media all {
+	#nav ul > li {
+		font-size: 16px;
+		line-height: 20px;
+		text-transform: uppercase;
+	}
+}
+@media all {
+	#nav ul .slide ul li {
+		font-size: 13px;
+		line-height: 17px;
+	}
+}
+@media all {
+	a {
+		background-color: transparent;
+	}
+}
+@media all {
+	*,
+	::before,
+	::after {
+		-webkit-box-sizing: inherit;
+		box-sizing: inherit;
+	}
+}
+@media all {
+	* {
+		max-height: 1e6px;
+	}
+}
+@media all {
+	a {
+		color: rgb(80, 165, 216);
+	}
+}
+@media all {
+	#nav ul > li a {
+		text-decoration: none;
+		color: rgb(255, 255, 255);
+		padding: 11px 40px;
+		display: block;
+		-webkit-transition: color 0s ease 0s, background 0.3s ease 0s;
+		transition: color 0s ease 0s, background 0.3s ease 0s;
+	}
+}
+@media all {
+	#nav ul .slide ul li a {
+		padding: 7px 20px;
+		background: none !important;
+	}
+}
+@media all {
+	a {
+		text-decoration: none;
+	}
+}
+@media all {
+	*,
+	::before,
+	::after {
+		-webkit-box-sizing: inherit;
+		box-sizing: inherit;
+	}
+}
+@media all {
+	* {
+		max-height: 1e6px;
+	}
+}
+@media all {
+	*,
+	::before,
+	::after {
+		-webkit-box-sizing: inherit;
+		box-sizing: inherit;
+	}
+}
+@media all {
+	* {
+		max-height: 1e6px;
+	}
+}
+@media all {
+	*,
+	::before,
+	::after {
+		-webkit-box-sizing: inherit;
+		box-sizing: inherit;
+	}
+}
+@media all {
+	* {
+		max-height: 1e6px;
+	}
+}
+@media all {
+	#nav ul,
+	.left-nav ul,
+	.breadcrumb-list,
+	.about-info .members-list,
+	.events-info .events-list,
+	.news-details .news-list,
+	.product-block .product-list,
+	#aside .contact-list,
+	.social-networks {
+		margin: 0px;
+		padding: 0px;
+		list-style: none;
+	}
+}
+@media all {
+	*,
+	::before,
+	::after {
+		-webkit-box-sizing: inherit;
+		box-sizing: inherit;
+	}
+}
+@media all {
+	* {
+		max-height: 1e6px;
+	}
+}
+@media all {
+	ul,
+	ol,
+	dl,
+	p,
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6,
+	address,
+	form,
+	table,
+	blockquote,
+	applet,
+	embed,
+	object,
+	iframe,
+	frameset {
+		margin: 0px 0px 1.2em;
+	}
+}
+@media all {
+	ul,
+	ol {
+		padding-left: 3em;
+	}
+}
+@media all {
+	ul {
+		list-style-type: disc;
+	}
+}
+@media all {
+	*,
+	::before,
+	::after {
+		-webkit-box-sizing: inherit;
+		box-sizing: inherit;
+	}
+}
+@media all {
+	* {
+		max-height: 1e6px;
+	}
+}
+@media all {
+	.left-nav ul li {
+		font-size: 16px;
+		line-height: 20px;
+		text-transform: uppercase;
+	}
+}
+@media all {
+	a {
+		background-color: transparent;
+	}
+}
+@media all {
+	*,
+	::before,
+	::after {
+		-webkit-box-sizing: inherit;
+		box-sizing: inherit;
+	}
+}
+@media all {
+	* {
+		max-height: 1e6px;
+	}
+}
+@media all {
+	a {
+		color: rgb(80, 165, 216);
+	}
+}
+@media all {
+	.left-nav ul a {
+		text-decoration: none;
+		color: rgb(255, 255, 255);
+		padding: 11px 40px;
+		display: block;
+		-webkit-transition: color 0.3s ease 0s;
+		transition: color 0.3s ease 0s;
+	}
+}
+@media all {
+	a {
+		text-decoration: none;
+	}
+}
+@media all {
+	*,
+	::before,
+	::after {
+		-webkit-box-sizing: inherit;
+		box-sizing: inherit;
+	}
+}
+@media all {
+	* {
+		max-height: 1e6px;
+	}
+}
+@media all {
+	.left-nav ul li {
+		font-size: 16px;
+		line-height: 20px;
+		text-transform: uppercase;
+	}
+}
+@media all {
+	a {
+		background-color: transparent;
+	}
+}
+@media all {
+	*,
+	::before,
+	::after {
+		-webkit-box-sizing: inherit;
+		box-sizing: inherit;
+	}
+}
+@media all {
+	* {
+		max-height: 1e6px;
+	}
+}
+@media all {
+	a {
+		color: rgb(80, 165, 216);
+	}
+}
+@media all {
+	.left-nav ul a {
+		text-decoration: none;
+		color: rgb(255, 255, 255);
+		padding: 11px 40px;
+		display: block;
+		-webkit-transition: color 0.3s ease 0s;
+		transition: color 0.3s ease 0s;
+	}
+}
+@media all {
+	a {
+		text-decoration: none;
+	}
+}
+@media all {
+	*,
+	::before,
+	::after {
+		-webkit-box-sizing: inherit;
+		box-sizing: inherit;
+	}
+}
+@media all {
+	* {
+		max-height: 1e6px;
+	}
+}
+@media all {
+	.left-nav ul li {
+		font-size: 16px;
+		line-height: 20px;
+		text-transform: uppercase;
+	}
+}
+@media all {
+	a {
+		background-color: transparent;
+	}
+}
+@media all {
+	*,
+	::before,
+	::after {
+		-webkit-box-sizing: inherit;
+		box-sizing: inherit;
+	}
+}
+@media all {
+	* {
+		max-height: 1e6px;
+	}
+}
+@media all {
+	a {
+		color: rgb(80, 165, 216);
+	}
+}
+@media all {
+	.left-nav ul a {
+		text-decoration: none;
+		color: rgb(255, 255, 255);
+		padding: 11px 40px;
+		display: block;
+		-webkit-transition: color 0.3s ease 0s;
+		transition: color 0.3s ease 0s;
+	}
+}
+@media all {
+	a {
+		text-decoration: none;
+	}
+}
+@media all {
+	*,
+	::before,
+	::after {
+		-webkit-box-sizing: inherit;
+		box-sizing: inherit;
+	}
+}
+@media all {
+	* {
+		max-height: 1e6px;
+	}
+}
+@media all {
+	.left-nav ul li {
+		font-size: 16px;
+		line-height: 20px;
+		text-transform: uppercase;
+	}
+}
+@media all {
+	a {
+		background-color: transparent;
+	}
+}
+@media all {
+	*,
+	::before,
+	::after {
+		-webkit-box-sizing: inherit;
+		box-sizing: inherit;
+	}
+}
+@media all {
+	* {
+		max-height: 1e6px;
+	}
+}
+@media all {
+	a {
+		color: rgb(80, 165, 216);
+	}
+}
+@media all {
+	.left-nav ul a {
+		text-decoration: none;
+		color: rgb(255, 255, 255);
+		padding: 11px 40px;
+		display: block;
+		-webkit-transition: color 0.3s ease 0s;
+		transition: color 0.3s ease 0s;
+	}
+}
+@media all {
+	a {
+		text-decoration: none;
+	}
+}
+@media all {
+	*,
+	::before,
+	::after {
+		-webkit-box-sizing: inherit;
+		box-sizing: inherit;
+	}
+}
+@media all {
+	* {
+		max-height: 1e6px;
+	}
+}
+@media all {
+	.right-nav {
+		position: relative;
+		z-index: 1;
+	}
+}
+@media all {
+	*,
+	::before,
+	::after {
+		-webkit-box-sizing: inherit;
+		box-sizing: inherit;
+	}
+}
+@media all {
+	* {
+		max-height: 1e6px;
+	}
+}
+@media all {
+	#nav ul,
+	.left-nav ul,
+	.breadcrumb-list,
+	.about-info .members-list,
+	.events-info .events-list,
+	.news-details .news-list,
+	.product-block .product-list,
+	#aside .contact-list,
+	.social-networks {
+		margin: 0px;
+		padding: 0px;
+		list-style: none;
+	}
+}
+@media all {
+	*,
+	::before,
+	::after {
+		-webkit-box-sizing: inherit;
+		box-sizing: inherit;
+	}
+}
+@media all {
+	* {
+		max-height: 1e6px;
+	}
+}
+@media all {
+	ul,
+	ol,
+	dl,
+	p,
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6,
+	address,
+	form,
+	table,
+	blockquote,
+	applet,
+	embed,
+	object,
+	iframe,
+	frameset {
+		margin: 0px 0px 1.2em;
+	}
+}
+@media all {
+	ul,
+	ol {
+		padding-left: 3em;
+	}
+}
+@media all {
+	ul {
+		list-style-type: disc;
+	}
+}
+@media all {
+	*,
+	::before,
+	::after {
+		-webkit-box-sizing: inherit;
+		box-sizing: inherit;
+	}
+}
+@media all {
+	* {
+		max-height: 1e6px;
+	}
+}
+@media all {
+	.social-networks li {
+		display: inline-block;
+		vertical-align: middle;
+	}
+}
+@media all {
+	a {
+		background-color: transparent;
+	}
+}
+@media all {
+	*,
+	::before,
+	::after {
+		-webkit-box-sizing: inherit;
+		box-sizing: inherit;
+	}
+}
+@media all {
+	* {
+		max-height: 1e6px;
+	}
+}
+@media all {
+	a {
+		color: rgb(80, 165, 216);
+	}
+}
+@media all {
+	a {
+		text-decoration: none;
+	}
+}
+@media all {
+	.social-networks a {
+		color: rgb(255, 255, 255);
+		text-decoration: none;
+		-webkit-transition: color 0.3s ease 0s;
+		transition: color 0.3s ease 0s;
+	}
+}
+@media all {
+	*,
+	::before,
+	::after {
+		-webkit-box-sizing: inherit;
+		box-sizing: inherit;
+	}
+}
+@media all {
+	* {
+		max-height: 1e6px;
+	}
+}
+@media all {
+	[class^="icon-"],
+	[class*=" icon-"] {
+		font-family: icomoon;
+		speak: none;
+		font-style: normal;
+		font-weight: normal;
+		font-variant: normal;
+		text-transform: none;
+		line-height: 1;
+		-webkit-font-smoothing: antialiased;
+	}
+}
+@media all {
+	*,
+	::before,
+	::after {
+		-webkit-box-sizing: inherit;
+		box-sizing: inherit;
+	}
+}
+@media all {
+	* {
+		max-height: 1e6px;
+	}
+}
+@media all {
+	.social-networks li {
+		display: inline-block;
+		vertical-align: middle;
+	}
+}
+@media all {
+	a {
+		background-color: transparent;
+	}
+}
+@media all {
+	*,
+	::before,
+	::after {
+		-webkit-box-sizing: inherit;
+		box-sizing: inherit;
+	}
+}
+@media all {
+	* {
+		max-height: 1e6px;
+	}
+}
+@media all {
+	a {
+		color: rgb(80, 165, 216);
+	}
+}
+@media all {
+	a {
+		text-decoration: none;
+	}
+}
+@media all {
+	.social-networks a {
+		color: rgb(255, 255, 255);
+		text-decoration: none;
+		-webkit-transition: color 0.3s ease 0s;
+		transition: color 0.3s ease 0s;
+	}
+}
+@media all {
+	*,
+	::before,
+	::after {
+		-webkit-box-sizing: inherit;
+		box-sizing: inherit;
+	}
+}
+@media all {
+	* {
+		max-height: 1e6px;
+	}
+}
+@media all {
+	[class^="icon-"],
+	[class*=" icon-"] {
+		font-family: icomoon;
+		speak: none;
+		font-style: normal;
+		font-weight: normal;
+		font-variant: normal;
+		text-transform: none;
+		line-height: 1;
+		-webkit-font-smoothing: antialiased;
+	}
+}
+@media all {
+	*,
+	::before,
+	::after {
+		-webkit-box-sizing: inherit;
+		box-sizing: inherit;
+	}
+}
+@media all {
+	* {
+		max-height: 1e6px;
+	}
+}
+@media all {
+	.social-networks li {
+		display: inline-block;
+		vertical-align: middle;
+	}
+}
+@media all {
+	a {
+		background-color: transparent;
+	}
+}
+@media all {
+	*,
+	::before,
+	::after {
+		-webkit-box-sizing: inherit;
+		box-sizing: inherit;
+	}
+}
+@media all {
+	* {
+		max-height: 1e6px;
+	}
+}
+@media all {
+	a {
+		color: rgb(80, 165, 216);
+	}
+}
+@media all {
+	a {
+		text-decoration: none;
+	}
+}
+@media all {
+	.social-networks a {
+		color: rgb(255, 255, 255);
+		text-decoration: none;
+		-webkit-transition: color 0.3s ease 0s;
+		transition: color 0.3s ease 0s;
+	}
+}
+@media all {
+	*,
+	::before,
+	::after {
+		-webkit-box-sizing: inherit;
+		box-sizing: inherit;
+	}
+}
+@media all {
+	* {
+		max-height: 1e6px;
+	}
+}
+@media all {
+	[class^="icon-"],
+	[class*=" icon-"] {
+		font-family: icomoon;
+		speak: none;
+		font-style: normal;
+		font-weight: normal;
+		font-variant: normal;
+		text-transform: none;
+		line-height: 1;
+		-webkit-font-smoothing: antialiased;
+	}
+}
+@media all {
+	*,
+	::before,
+	::after {
+		-webkit-box-sizing: inherit;
+		box-sizing: inherit;
+	}
+}
+@media all {
+	* {
+		max-height: 1e6px;
+	}
+}
+@media all {
+	.social-networks li {
+		display: inline-block;
+		vertical-align: middle;
+	}
+}
+@media all {
+	a {
+		background-color: transparent;
+	}
+}
+@media all {
+	*,
+	::before,
+	::after {
+		-webkit-box-sizing: inherit;
+		box-sizing: inherit;
+	}
+}
+@media all {
+	* {
+		max-height: 1e6px;
+	}
+}
+@media all {
+	a {
+		color: rgb(80, 165, 216);
+	}
+}
+@media all {
+	a {
+		text-decoration: none;
+	}
+}
+@media all {
+	.social-networks a {
+		color: rgb(255, 255, 255);
+		text-decoration: none;
+		-webkit-transition: color 0.3s ease 0s;
+		transition: color 0.3s ease 0s;
+	}
+}
+@media all {
+	*,
+	::before,
+	::after {
+		-webkit-box-sizing: inherit;
+		box-sizing: inherit;
+	}
+}
+@media all {
+	* {
+		max-height: 1e6px;
+	}
+}
+@media all {
+	[class^="icon-"],
+	[class*=" icon-"] {
+		font-family: icomoon;
+		speak: none;
+		font-style: normal;
+		font-weight: normal;
+		font-variant: normal;
+		text-transform: none;
+		line-height: 1;
+		-webkit-font-smoothing: antialiased;
+	}
+}
+@media all {
+	a {
+		background-color: transparent;
+	}
+}
+@media all {
+	*,
+	::before,
+	::after {
+		-webkit-box-sizing: inherit;
+		box-sizing: inherit;
+	}
+}
+@media all {
+	* {
+		max-height: 1e6px;
+	}
+}
+@media all {
+	a {
+		color: rgb(80, 165, 216);
+	}
+}
+@media all {
+	.networks-wrap .search-opener {
+		width: 33px;
+		height: 33px;
+		display: inline-block;
+		top: 0px;
+		right: 0px;
+		color: rgb(255, 255, 255);
+		background: rgb(80, 165, 216);
+		padding: 8px;
+		-webkit-transition: all 0.3s ease 0s;
+		transition: all 0.3s ease 0s;
+	}
+}
+@media all {
+	.search-opener {
+		position: absolute;
+		top: 37px;
+		right: 56px;
+		color: rgb(80, 165, 216);
+		text-decoration: none;
+		-webkit-transition: color 0.3s ease 0s;
+		transition: color 0.3s ease 0s;
+	}
+}
+@media all {
+	a {
+		text-decoration: none;
+	}
+}
+@media all {
+	*,
+	::before,
+	::after {
+		-webkit-box-sizing: inherit;
+		box-sizing: inherit;
+	}
+}
+@media all {
+	* {
+		max-height: 1e6px;
+	}
+}
+@media all {
+	[class^="icon-"],
+	[class*=" icon-"] {
+		font-family: icomoon;
+		speak: none;
+		font-style: normal;
+		font-weight: normal;
+		font-variant: normal;
+		text-transform: none;
+		line-height: 1;
+		-webkit-font-smoothing: antialiased;
+	}
+}
