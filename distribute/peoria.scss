@@ -696,15 +696,72 @@ div {
 
 .mobile-menu-container {
 	position: absolute;
-	top:80px;
+	top: 90px;
 	width: 100%;
-	padding: 0 25px;
-	
+	font-family: Verdana, Helvetica, sans-serif;
+	background: white;
+	z-index: 400;
+	max-width: 576px;
+
+	// padding: 0 25px;
+	a {
+		text-decoration: none;
 		li {
-			padding: 5px 0;
+			text-transform: capitalize;
+			padding: 10px 25px;
 			font-size: 17px;
+			&:hover {
+				background: lightgray;
+			}
+			&:hover {
+				color: #7A1315;
+			}
 		}
+	}
 	
+}
+
+.animateBurgerIn {
+	-webkit-transition: -webkit-transform 1s ease-in-out;
+	transition: -webkit-transform 1s ease-in-out;
+	transition: transform 1s ease-in-out;
+	transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
+	-webkit-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	transform: rotate(-90deg);
+}
+
+.animateBurgerOut {
+	-webkit-transition: -webkit-transform 1s ease-in-out;
+	transition: -webkit-transform 1s ease-in-out;
+	transition: transform 1s ease-in-out;
+	transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
+	-webkit-transform: rotate(0deg);
+	-ms-transform: rotate(0deg);
+	transform: rotate(0deg);
+}
+
+.animateLine1 {
+	-webkit-transform: translateY(9px);
+	-ms-transform: translateY(9px);
+	transform: translateY(9px);
+	-webkit-transition: -webkit-transform 1s ease-in-out;
+	transition: -webkit-transform 1s ease-in-out;
+	transition: transform 1s ease-in-out;
+	transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
+	-webkit-transition-delay: 2s;
+	transition-delay: 2s;
+}
+.animateLine3 {
+	-webkit-transform: translateY(-9px);
+	-ms-transform: translateY(-9px);
+	transform: translateY(-9px);
+	-webkit-transition: -webkit-transform 1s ease-in-out;
+	transition: -webkit-transform 1s ease-in-out;
+	transition: transform 1s ease-in-out;
+	transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
+	-webkit-transition-delay: 2s;
+	transition-delay: 2s;
 }
 
 
@@ -713,6 +770,14 @@ div {
 
 @media(min-width: 320px ) {
 	.desktop-layout {
+		display: none;
+	}
+}
+@media(min-width: 1024px ) {
+	.desktop-layout {
+		display: block;
+	}
+	.mobile-layout {
 		display: none;
 	}
 }
