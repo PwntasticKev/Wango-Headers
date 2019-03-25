@@ -25,7 +25,9 @@
   text-transform: uppercase;
   font-size: 15px;
   font-weight: 100;
-  margin: 0; }
+  margin: 0;
+  position: absolute;
+  bottom: 12px; }
 
 @media (min-width: 1025px) {
   .main-header .logo-svg-a {
@@ -57,6 +59,7 @@
 
 .outer-burger-container {
   justify-content: center;
+  position: relative;
   height: 89px;
   width: 65px;
   background: #f89d05;
@@ -134,7 +137,7 @@
   width: 100%; }
 
 .main-menu-section-jv .menu-option-jv .menu-text-jv {
-  margin: 0 0 0 10px;
+  margin: 1px 0 0 10px;
   color: black; }
 
 .Menu-nav-button {
@@ -144,9 +147,8 @@
   right: -2px;
   height: 20px;
   width: 31px;
-  transform: rotate(90deg); }
-  .Menu-nav-button svg {
-    color: lightgray; }
+  transform: rotate(90deg);
+  fill: lightgray; }
 
 #page-search-input {
   -webkit-appearance: none;
@@ -211,7 +213,7 @@
 
 .menu-icons {
   fill: #747676;
-  height: 1.5rem;
+  height: 2rem;
   vertical-align: text-top;
   width: 28px;
   padding-left: 5px;
@@ -234,7 +236,7 @@
 
 @media (min-width: 768px) {
   .lowerMenu {
-    padding: 8px 100px;
+    padding: 0px 100px;
     justify-content: center; } }
 
 .lower-menu-icons {
@@ -242,6 +244,9 @@
   fill: #003662;
   height: 2.5rem;
   width: 2.5rem; }
+
+.mobile-search-text {
+  position: initial !important; }
 
 @media (min-width: 768px) {
   .lower-menu-icons {
@@ -254,19 +259,19 @@
   border-right: 1px solid #063a65;
   left: 0;
   font-family: "Berthold Condensed";
-  max-width: 18.75rem;
+  width: 200px;
   padding: 1rem 1rem 0;
   position: absolute;
-  top: 113px;
+  top: 84px;
   width: 100%;
   z-index: 10; }
 
 @media (min-width: 768px) {
   .page-search__container {
-    top: 68px;
+    top: 130px;
     right: 0 !important;
     left: auto;
-    max-width: 38rem; } }
+    max-width: 24rem; } }
 
 .page-search__container .search-btn {
   -webkit-appearance: none;
@@ -289,7 +294,8 @@
   transition: background-color 0.3s ease, color 0.3s ease;
   vertical-align: middle;
   will-change: background-color, color;
-  font-family: "Berthold Condensed", Arial, Segoe, sans-serif; }
+  font-family: "Berthold Condensed", Arial, Segoe, sans-serif;
+  width: 75px; }
 
 @media (min-width: 768px) {
   .page-search__container .search-btn {
@@ -319,6 +325,11 @@
 .search-icon-container .main-menu-option {
   color: #003662; }
 
+.main-menu-options {
+  padding: 5px 0px; }
+  .main-menu-options:hover {
+    background: #FDD89C; }
+
 .search-icon-container .page-search__input {
   background-color: #fefefe;
   border: 1px solid #cacaca;
@@ -347,7 +358,7 @@
   align-items: center;
   list-style-type: none;
   margin: 0 auto;
-  max-width: 898px; }
+  max-width: 310px; }
 
 .jv-menu-container--main .upper-menu--section {
   width: 100%;
