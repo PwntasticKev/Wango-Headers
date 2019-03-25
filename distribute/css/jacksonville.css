@@ -29,6 +29,10 @@
   position: absolute;
   bottom: 12px; }
 
+@media (min-width: 1024px) {
+  p .menu-text-jv {
+    color: lightgray; } }
+
 @media (min-width: 1025px) {
   .main-header .logo-svg-a {
     display: flex;
@@ -101,7 +105,14 @@
   width: 100%;
   border-left: 0.5rem solid #003662;
   border-top: 0.5rem solid #003662;
-  z-index: 300; }
+  z-index: 300;
+  box-shadow: -1px 18px 24px -19px rgba(0, 0, 0, 0.75); }
+  @media (min-width: 1025px) {
+    .main-menu-section-jv {
+      max-width: 71%;
+      margin-left: 14%;
+      margin-top: 13%;
+      height: 280px; } }
 
 .main-menu-section-jv #close-menu {
   display: flex;
@@ -135,6 +146,9 @@
   margin-bottom: 15px;
   text-transform: uppercase;
   width: 100%; }
+  @media (min-width: 768px) {
+    .main-menu-section-jv .menu-option-jv {
+      font-size: 18px; } }
 
 .main-menu-section-jv .menu-option-jv .menu-text-jv {
   margin: 1px 0 0 10px;
@@ -168,10 +182,14 @@
   padding: .5rem;
   transition: box-shadow .5s,border-color .25s ease-in-out;
   width: 100%; }
+  @media (min-width: 1024px) {
+    #page-search-input {
+      height: 3.4375rem;
+      font-size: 19px; } }
 
 @media (min-width: 768px) {
   .main-menu-section-jv .menu-option-jv {
-    width: auto;
+    width: 150px;
     border: none;
     height: 28px;
     border-right: 1px solid #fcb133;
@@ -182,7 +200,7 @@
 @media (min-width: 768px) {
   .main-menu-section-jv {
     margin-bottom: auto;
-    margin-top: 30%;
+    margin-top: 14%;
     border: none;
     border: 8px solid #063a65;
     z-index: 20000; } }
@@ -221,7 +239,7 @@
 
 @media (min-width: 1026px) {
   .menu-icons {
-    fill: #003662; } }
+    fill: lightgray; } }
 
 .lowerMenu {
   display: flex;
@@ -262,13 +280,13 @@
   width: 200px;
   padding: 1rem 1rem 0;
   position: absolute;
-  top: 84px;
-  width: 100%;
+  top: 80px;
+  width: 200px;
   z-index: 10; }
 
 @media (min-width: 768px) {
   .page-search__container {
-    top: 130px;
+    top: 79px;
     right: 0 !important;
     left: auto;
     max-width: 24rem; } }
@@ -297,10 +315,6 @@
   font-family: "Berthold Condensed", Arial, Segoe, sans-serif;
   width: 75px; }
 
-@media (min-width: 768px) {
-  .page-search__container .search-btn {
-    padding: 1.7rem 2.9rem 1.5rem; } }
-
 .page-search__container .cancel-btn {
   background-color: transparent;
   border: 1px solid #686b6b;
@@ -310,7 +324,11 @@
 
 @media (min-width: 768px) {
   .page-search__container .cancel-btn {
-    padding: 1.7rem 2.9rem 1.5rem; } }
+    height: 37px;
+    font-size: 18px; }
+  .page-search__container .search-button {
+    height: 37px;
+    font-size: 18px; } }
 
 .search-icon-container {
   display: flex;
@@ -336,7 +354,7 @@
   border-radius: 0;
   box-shadow: inset 0 1px 2px rgba(40, 40, 40, 0.1);
   box-sizing: border-box;
-  color: #282828;
+  color: lightgray;
   display: block;
   font-family: inherit;
   font-size: 1rem;
@@ -345,7 +363,12 @@
   margin: 0 0 1rem;
   padding: 0.5rem;
   transition: box-shadow 0.5s, border-color 0.25s ease-in-out;
-  width: 100%; }
+  width: 100%;
+  font-size: 17px; }
+  @media (min-width: 1024px) {
+    .search-icon-container .page-search__input {
+      height: 3.4375rem;
+      font-size: 19px; } }
 
 @media (min-width: 768px) {
   .search-icon-container .page-search__input {
@@ -359,6 +382,15 @@
   list-style-type: none;
   margin: 0 auto;
   max-width: 310px; }
+  @media (min-width: 768px) {
+    .jv-menu-container--main {
+      max-width: 600px; } }
+  @media (min-width: 1024px) {
+    .jv-menu-container--main {
+      max-width: 700px; } }
+  @media (min-width: 1025px) {
+    .jv-menu-container--main {
+      max-width: 935px; } }
 
 .jv-menu-container--main .upper-menu--section {
   width: 100%;
@@ -367,6 +399,7 @@
 @media (min-width: 768px) {
   .jv-menu-container--main .upper-menu--section {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around; } }
 
 @media (min-width: 1026px) {
@@ -388,14 +421,10 @@
 .menu-background-jv {
   position: absolute;
   width: 100%;
-  height: 117vh;
+  height: 100vh;
   top: 0;
   background-color: rgba(0, 25, 49, 0.8);
   z-index: 2147483648; }
-
-@media (min-width: 768px) {
-  .menu-background-jv {
-    top: -135px; } }
 
 .icon {
   fill: white;
