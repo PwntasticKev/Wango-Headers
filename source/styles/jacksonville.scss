@@ -247,6 +247,9 @@
 	text-transform: uppercase;
 	font-size: 13px;
 	margin: 0 5px;
+	@media(min-width: 1150px) {
+		font-size:20px
+	}
 }
 @media (min-width: 1025px) {
 	.lower-option {
