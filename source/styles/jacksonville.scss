@@ -106,11 +106,7 @@
 	background: #fff;
 	transition: all 0.5s ease-in-out;
 }
-@media (min-width: 1025px) {
-	.outer-burger-container .burger-container .line {
-		height: 4px;
-	}
-}
+
 .main-menu-section-jv {
 	top: 0;
 	left: 0;
@@ -508,6 +504,7 @@
 	.page-social {
 		display: flex;
 		align-items: center;
+		padding-top: 17px;
 	}
 }
 .page-social__link {
@@ -528,7 +525,7 @@
 		display: flex !important;
 		padding-right: 17px;
 		font-family: "Berthold Condensed";
-		padding-top: 6px;
+		padding-top: 17px;
 	}
 }
 .fa-search {
