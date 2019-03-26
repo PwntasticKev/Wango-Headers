@@ -453,7 +453,8 @@
   .page-social {
     display: flex;
     align-items: center;
-    padding-top: 17px; } }
+    padding-top: 17px;
+    padding-left: 0; } }
 
 .page-social__link {
   padding: 0.25rem 0.5rem;
