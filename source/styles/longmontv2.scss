@@ -1,0 +1,131 @@
+@import "vendor/reset";
+@import "utils/reusableCss";
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700,900");
+
+.main-wrapper {
+	background-size: cover;
+	background: linear-gradient(to bottom, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0) 100%);
+	display: flex;
+    justify-content: space-between;
+	align-items: center;
+	padding: 15px;
+}
+
+.main-wrapper-img {
+	background: url("https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,g_xy_center,h_765,q_50,w_1665,x_2540,y_2020/v1/clients/longmontco/Visitors_Guide_Header_Gerardo_Brucker_2019_Cover_5e3e19ca-d58e-46e1-98d4-6c97db90e1c8.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	
+}
+
+.logo-img {
+	max-height: 50px;
+}
+
+.header-menu-container {
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hide {
+	display: none;
+}
+
+.nav-icons * {
+	margin: 0 5px;
+}
+
+//mobile menu
+
+.submit-form {
+	height: 40px;
+    width: 75px;
+    transition: none;
+    margin: 0;
+    padding: 0;
+    font-family: inherit;
+    font-size: 15px;
+	border: 0;
+	color: white;
+    background-color: #008CBA;
+}
+
+.mobile-menu {
+	background-color: #0c224c;
+	padding: 30px 10px;
+}
+
+.mobile-dd .dd-top {
+    padding: 15px 15px 25px;
+    border-bottom: 1px solid #121720;
+}
+
+.shared-form {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    font-family: 'Helvetica Neue LT W05_65 Medium';
+}
+
+.shared-form .input-label {
+    width: calc(100% - 78px);
+    font-family: inherit;
+    color: white;
+    font-size: 15px;
+}
+
+.shared-form input {
+    height: 40px;
+    width: 93%;
+    padding-left: 15px;
+    line-height: 40px;
+    margin: 5px 0 0;
+    box-shadow: 0px 0px;
+    border: 0;
+    transition: none;
+}
+
+.shared-form .submit-form {
+    height: 40px;
+    width: 75px;
+    transition: none;
+    margin: 0;
+    padding: 0;
+    font-family: inherit;
+    font-size: 15px;
+    border: 0;
+}
+
+.item-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+	background-color: #0c224c;
+	border-bottom: 1px solid #121720;
+	a {
+		text-decoration: none;
+		text-transform: uppercase;
+		font-family: 'Rockwell W01 Bold';
+		font-size: 20px;
+		line-height: 20px;
+		color: white;
+		text-transform: uppercase;
+	}
+}
+
+.fa-angle-right {
+    color: crimson;
+    font-size: 20px;
+}
+
+.secondary-mobile-nav {
+	margin-top:10px;
+	.item-inner a {
+			font-size: 20px;
+			color: #78acb3;
+			text-transform: uppercase;
+	}
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <base href="./" target="_blank">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{page.title}}</title>
+  {{> globals/styles page.styles}}
+
+
+</head>
+
+<body>
+	<section class="main-wrapper-img">
+		<header class="main-wrapper">
+			<img class="logo-img"
+				src="https://primary-longmontco.simpleviewcms.com/includes/public/assets/images/logo.svg"
+				alt="Longmont Colorado Logo">
+			<section class="header-menu-container">
+				<img src="https://primary-longmontco.simpleviewcms.com/includes/public/assets/images/search-icon.png"
+					alt="Search Icon">
+				<div class="nav-icons">
+					<img class="open"
+						src="https://primary-longmontco.simpleviewcms.com/includes/public/assets/images/bars.png"
+						alt="Navigation Icon">
+					<i class="close fas fa-times" style="display: none;"></i>
+				</div>
+			</section>
+		</header>
+	</section>
+
+	<section class="mobile-menu" style="display: none;">
+		<div class="dd-top" data-sv-search-mobile="">
+			<div class="mobile-search-cont" id="search_widget_headerbox_mobile_f5d6ebf3-9068-46fa-8ee8-92815c1ce68e">
+				<form data-sv-searchform="" action="/search/" method="GET" class="shared-form mobile">
+					<label class="input-label">
+						Start Your Search:
+						<input type="text" data-sv-searchinput="" name="q" autocomplete="off" autocorrect="off"
+							autocapitalize="off" placeholder="Search" value="">
+					</label>
+					<button class="submit-form" type="button" data-sv-searchbtn="">Search</button>
+				</form>
+			</div>
+		</div>
+
+		<ul style="padding-top: 15px;">
+			<div class="item-inner">
+				<a href="/events/" target="_self" title="">Events</a>
+				<i class="fas fa-angle-right" data-menu-toggle-parent=""></i>
+			</div>
+			<div class="item-inner">
+				<a href="/events/" target="_self" title="">Things To Do</a>
+				<i class="fas fa-angle-right" data-menu-toggle-parent=""></i>
+			</div>
+			<div class="item-inner">
+				<a href="/events/" target="_self" title="">Hotels</a>
+				<i class="fas fa-angle-right" data-menu-toggle-parent=""></i>
+			</div>
+			<div class="item-inner">
+				<a href="/events/" target="_self" title="">Restaurants</a>
+				<i class="fas fa-angle-right" data-menu-toggle-parent=""></i>
+			</div>
+			<div class="item-inner">
+				<a href="/events/" target="_self" title="">Breweries</a>
+				<i class="fas fa-angle-right" data-menu-toggle-parent=""></i>
+			</div>
+			<div class="item-inner">
+				<a href="/events/" target="_self" title="">Plan</a>
+				<i class="fas fa-angle-right" data-menu-toggle-parent=""></i>
+			</div>
+			<div class="item-inner">
+				<a href="/events/" target="_self" title="">Groups & Meetings</a>
+				<i class="fas fa-angle-right" data-menu-toggle-parent=""></i>
+			</div>
+			<div class="item-inner">
+				<a href="/events/" target="_self" title="">Weddings</a>
+				<i class="fas fa-angle-right" data-menu-toggle-parent=""></i>
+			</div>
+			<div class="item-inner">
+				<a href="/events/" target="_self" title="">Follow Us</a>
+				<section>
+					<div class="socialIcons"></div>
+					<div class="socialIcons"></div>
+					<div class="socialIcons"></div>
+					<div class="socialIcons"></div>
+				</section>
+			</div>
+		</ul>
+		<ul class="secondary-mobile-nav">
+			<div class="item-inner">
+				<a href="/events/" target="_self" title="">About</a>
+				<i class="fas fa-angle-right" data-menu-toggle-parent=""></i>
+			</div>
+			<div class="item-inner">
+				<a href="/events/" target="_self" title="">Media</a>
+			</div>
+			<div class="item-inner">
+				<a href="/events/" target="_self" title="">Contact</a>
+			</div>
+			<div class="item-inner">
+				<a href="/events/" target="_self" title="">Sitemap</a>
+			</div>
+			<div class="item-inner">
+				<a href="/events/" target="_self" title="">Privacy Policy</a>
+			</div>
+
+		</ul>
+	</section>
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+	<script>
+
+		$(".nav-icons").on("click",function() {
+			$(".mobile-menu").toggle()
+			$(".open").toggleClass("hide")
+			$(".close").toggle()
+		})
+	</script>
+</body>
+
+</html>
