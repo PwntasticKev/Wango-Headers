@@ -14,8 +14,8 @@
 </head>
 
 <body>
-	<section class="main-wrapper-img">
-		<header class="main-wrapper">
+	<section class="main-wrapper-img-longmont">
+		<header class="main-wrapper-longmont">
 			<img class="logo-img"
 				src="https://primary-longmontco.simpleviewcms.com/includes/public/assets/images/logo.svg"
 				alt="Longmont Colorado Logo">
@@ -65,7 +65,7 @@
 					<img class="open"
 						src="https://primary-longmontco.simpleviewcms.com/includes/public/assets/images/bars.png"
 						alt="Navigation Icon">
-					<i class="close fas fa-times" style="display: none;"></i>
+					<i class="close fas fa-times" style="display: none; color: white;"></i>
 				</div>
 			</section>
 		</section>
@@ -76,8 +76,8 @@
 		<div class="dd-top" data-sv-search-mobile="">
 			<div class="mobile-search-cont" id="search_widget_headerbox_mobile_f5d6ebf3-9068-46fa-8ee8-92815c1ce68e">
 				<form data-sv-searchform="" action="/search/" method="GET" class="shared-form mobile">
+					Start Your Search:
 					<label class="input-label">
-						Start Your Search:
 						<input type="text" data-sv-searchinput="" name="q" autocomplete="off" autocorrect="off"
 							autocapitalize="off" placeholder="Search" value="">
 					</label>
@@ -86,7 +86,7 @@
 			</div>
 		</div>
 
-		<ul style="padding-top: 15px;">
+		<ul style="padding:0; margin:0; padding-top: 15px;">
 			<div class="item-inner">
 				<a href="https://primary-longmontco.simpleviewcms.com/events" target="_self" title="">Events</a>
 				<i class="fas fa-angle-right" data-menu-toggle-parent=""></i>
@@ -129,7 +129,7 @@
 					</section>
 				</a>
 			</div>
-			<div id='Weather'></div>
+			<div id='Weather' style="padding-left:9px"></div>
 		</ul>
 		<ul class="secondary-mobile-nav">
 			<div class="item-inner">
@@ -179,29 +179,29 @@
 							}}).done(function(res) {
 								
 								   console.log('res',res);
-							$("#Weather").html(
-								   $(`<div class="Weather" style="display: flex; align-items: center; color: #FFFFFF;
-					font-weight: bold;">
-									<i style='margin-right: 5px;padding-top: 8px;font-size: 30px;' class="climacon ${ res.daily.icon }"></i>
-									  <span class="Weather" style="display: flex; align-items: center;font-size: 24px;">
-										  <div>${  ~~(res.currently.temperature) }</div>
-										<div>°</div>
-									  </span>
-								 </div>`
-							)
-						  )
+								   $("#Weather").html(
+				   $(`<div class="Weather" style="display: flex; align-items: center; color: white;
+    font-weight: bold;">
+					<i style='margin-right: 5px;padding-top: 8px;font-size: 30px;' class="climacon ${ res.daily.icon }"></i>
+					  <span class="Weather" style="display: flex; align-items: center;font-size: 24px;">
+						  <div>${  ~~(res.currently.temperature) }</div>
+						<div>°</div>
+					  </span>
+				 </div>`
+			)
+		  )
 							$("#Weather2").html(
-								   $(`<div class="Weather" style="display: flex; align-items: center; color: #FFFFFF;
-					font-weight: bold; justify-content: center;">
-									<i style='margin-right: 5px;padding-top: 8px;font-size: 30px;' class="climacon ${ res.daily.icon }"></i>
-									  <span class="Weather" style="display: flex; align-items: center;font-size: 24px;">
-										  <div>${  ~~(res.currently.temperature) }</div>
-										<div>°</div>
-									  </span>
-								 </div>`
-							)
-						  )
-					   }).fail(console.log)
+				   $(`<div class="Weather" style="display: flex; align-items: center; color: white;
+    font-weight: bold;">
+					<i style='margin-right: 5px;padding-top: 8px;font-size: 30px;' class="climacon ${ res.daily.icon }"></i>
+					  <span class="Weather" style="display: flex; align-items: center;font-size: 24px;">
+						  <div>${  ~~(res.currently.temperature) }</div>
+						<div>°</div>
+					  </span>
+				 </div>`
+			)
+		  )
+	   }).fail(console.log)
 					  }
 				
 					Weather({ lat: 40.1672, lon: -105.1019 });
