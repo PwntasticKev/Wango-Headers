@@ -1,0 +1,48 @@
+@mixin iphone {
+	@media only screen and (min-width: 375px) {
+		@content;
+	}
+}
+
+@mixin iphonePlus {
+	@media only screen and (min-width: 440px) {
+		@content;
+	}
+}
+
+@mixin ipad {
+	@media only screen and (min-width: 768px) {
+		@content;
+	}
+}
+
+@mixin ipadPro {
+	@media only screen and (min-width: 1024px) {
+		@content;
+	}
+}
+
+@mixin preDesktop {
+	@media only screen and (min-width: 1025px) {
+		@content;
+	}
+}
+
+@mixin desktop {
+	@media only screen and (min-width: 1350px) {
+		@content;
+	}
+}
+
+@mixin largeDesktop {
+	@media only screen and (min-width: 1400px) {
+		@content;
+	}
+}
+
+@mixin placeholder {
+	::-webkit-input-placeholder { @content;}
+	:-moz-placeholder           { @content;}
+	::-moz-placeholder          { @content;}
+	:-ms-input-placeholder      { @content;}
+ }
