@@ -48,3 +48,30 @@
     transition: all 0.5s ease-in-out;
     width: 22px;
     -webkit-transition: all 0.5s ease-in-out; }
+
+.main-header-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
+.hh-button {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px; }
+
+.hh-menu-button {
+  background: #F3575D; }
+
+.hh-search-button {
+  background: #3C7D93;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.hh-header-logo img {
+  max-height: 80px; }
+
+.burger .line {
+  color: white;
+  background: white;
+  height: 3px; }
