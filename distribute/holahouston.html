@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <base href="./" target="_blank">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hola Houston</title>
+  <link rel="stylesheet" type="text/css" media="screen" href="css/reset.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="css/holahouston.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://use.typekit.net/vxp3uzh.css">
+
+</head>
+
+<body>
+	
+	<section class="main-header-wrapper">
+		<!-- //Menu button -->
+		<section class="hh-menu-button-wrapper">
+			<div class="hh-menu-button">
+				<div class="burger"></div>
+			</div>
+			<div>Menu</div>
+		</section>
+
+		<!-- hola houston logo -->
+		<div class="hh-header-logo">
+			<img src="https://res.cloudinary.com/bandwango/image/upload/v1560978099/holahouston_xwjffx.png" alt="logo">
+		</div>
+	</section>
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+	<script>
+
+		$(".nav-icons").on("click",function() {
+			$(".mobile-menu").toggle()
+			$(".open").toggleClass("hide")
+			$(".close").toggle()
+		})
+
+		$(".Search").on("click",function() {
+			$(".Search-container-longmont").toggle()
+		})
+	</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<script>
+
+				$(document).ready(function() { 
+						function Weather(options) {
+						let lon = options.lon
+						let lat = options.lat
+						let key = 'b2789b7b01e6ec9fcc87c76e29d809c8'
+						let darkurl = `https://api.darksky.net/forecast/${key}/${lat},${lon}`
+						$.ajax({
+							url: darkurl,
+							dataType: 'jsonp',
+							xhrFields: {
+								withCredentials: true
+							}}).done(function(res) {
+								
+								   console.log('res',res);
+								   $("#Weather").html(
+				   $(`<div class="Weather" style="display: flex; align-items: center; color: white;
+    font-weight: bold;">
+					<i style='margin-right: 5px;padding-top: 8px;font-size: 30px;' class="climacon ${ res.daily.icon }"></i>
+					  <span class="Weather" style="display: flex; align-items: center;font-size: 24px;">
+						  <div>${  ~~(res.currently.temperature) }</div>
+						<div>°</div>
+					  </span>
+				 </div>`
+			)
+		  )
+							$("#Weather2").html(
+				   $(`<div class="Weather" style="display: flex; align-items: center; color: white;
+    font-weight: bold;">
+					<i style='margin-right: 5px;padding-top: 8px;font-size: 30px;' class="climacon ${ res.daily.icon }"></i>
+					  <span class="Weather" style="display: flex; align-items: center;font-size: 24px;">
+						  <div>${  ~~(res.currently.temperature) }</div>
+						<div>°</div>
+					  </span>
+				 </div>`
+			)
+		  )
+	   }).fail(console.log)
+					  }
+				
+					Weather({ lat: 40.1672, lon: -105.1019 });
+				
+					 })
+				</script>
+</body>
+
+</html>
