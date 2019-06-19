@@ -9,7 +9,7 @@
   <link rel="stylesheet" type="text/css" media="screen" href="css/longmontv2.css" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-
+	<link rel="stylesheet" href="https://use.typekit.net/vxp3uzh.css">
 
 </head>
 
@@ -57,10 +57,22 @@
 							<a href="https://primary-longmontco.simpleviewcms.com/plan/" target="_self" title="">Plan</a>
 							<i class="fas fa-angle-right" data-menu-toggle-parent=""></i>
 						</div>
-						<div id='Weather2'></div>
+						<div id='Weather2' style="margin: 0 25px;"></div>
 					</ul>
-				<img class="Search" src="https://primary-longmontco.simpleviewcms.com/includes/public/assets/images/search-icon.png"
-					alt="Search Icon">
+				<section style="position: relative;">
+					<img class="desktop Search" src="https://primary-longmontco.simpleviewcms.com/includes/public/assets/images/search-icon.png"
+						alt="Search Icon">
+						<section class="desktop Search-container-longmont" style="display: none;">
+							<form data-sv-searchform="" action="https://primary-longmontco.simpleviewcms.com/search/" method="GET" class="shared-form mobile">
+								<label class="input-label">
+									Start Your Search:
+									<input type="text" data-sv-searchinput="" name="q" autocomplete="off" autocorrect="off"
+										autocapitalize="off" placeholder="Search" value="">
+								</label>
+								<button class="submit-form" type="button" data-sv-searchbtn="">Search</button>
+							</form>
+						</section>
+				</section>
 				<div class="nav-icons">
 					<img class="open"
 						src="https://primary-longmontco.simpleviewcms.com/includes/public/assets/images/bars.png"
@@ -75,9 +87,9 @@
 	<section class="mobile-menu" style="display: none;">
 		<div class="dd-top" data-sv-search-mobile="">
 			<div class="mobile-search-cont" id="search_widget_headerbox_mobile_f5d6ebf3-9068-46fa-8ee8-92815c1ce68e">
-				<form data-sv-searchform="" action="/search/" method="GET" class="shared-form mobile">
-					Start Your Search:
+				<form data-sv-searchform="" action="https://primary-longmontco.simpleviewcms.com/search/" method="GET" class="shared-form mobile">
 					<label class="input-label">
+						Start Your Search:
 						<input type="text" data-sv-searchinput="" name="q" autocomplete="off" autocorrect="off"
 							autocapitalize="off" placeholder="Search" value="">
 					</label>
@@ -161,6 +173,10 @@
 			$(".mobile-menu").toggle()
 			$(".open").toggleClass("hide")
 			$(".close").toggle()
+		})
+
+		$(".Search").on("click",function() {
+			$(".Search-container-longmont").toggle()
 		})
 	</script>
 		<script>

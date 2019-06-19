@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400,700,900");
+@import url("https://use.typekit.net/vxp3uzh.css");
 .flex {
   display: flex; }
 
@@ -50,13 +51,23 @@
     width: 22px;
     -webkit-transition: all 0.5s ease-in-out; }
 
+@font-face {
+  font-family: 'HelveticaNueu';
+  src: url("/fonts/AvenirNext/AvenirNextLTPro-Regular/AvenirNextLTPro-Regular.eot?#iefix") format("embedded-opentype"), url("/fonts/AvenirNext/AvenirNextLTPro-Regular/AvenirNextLTPro-Regular.woff") format("woff"), url("/fonts/AvenirNext/AvenirNextLTPro-Regular/AvenirNextLTPro-Regular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'HelveticaNueu';
+  src: url("/fonts/helvetica-neue-5-cufonfonts-webfont/HelveticaNeue-MediumCond.woff.woff") format("woff"); }
+
 .main-wrapper-longmont {
   background-size: cover;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 100%);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px; }
+  padding: 15px;
+  font-family: rockwell, sans-serif;
+  font-weight: 700; }
 
 .main-wrapper-img-longmont {
   background: url("https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,g_xy_center,h_765,q_50,w_1665,x_2540,y_2020/v1/clients/longmontco/Visitors_Guide_Header_Gerardo_Brucker_2019_Cover_5e3e19ca-d58e-46e1-98d4-6c97db90e1c8.jpg");
@@ -64,7 +75,11 @@
   background-size: cover; }
 
 .Search {
-  margin: 0 10px; }
+  margin: 0 10px;
+  padding: 9px;
+  cursor: pointer; }
+  .Search:hover {
+    background: #182e58; }
   @media only screen and (min-width: 1025px) {
     .Search {
       padding-top: 5px;
@@ -79,7 +94,8 @@
 .header-menu-container {
   display: flex;
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+  font-family: rockwell, sans-serif; }
 
 .hide {
   display: none; }
@@ -100,7 +116,8 @@
   font-size: 15px;
   border: 0;
   color: white;
-  background-color: #008CBA; }
+  background-color: #008CBA;
+  font-family: rockwell, sans-serif; }
 
 .mobile-menu {
   background-color: #0c224c;
@@ -112,16 +129,19 @@
 
 .shared-form {
   position: relative;
+  z-index: 20;
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  font-family: 'Helvetica Neue LT W05_65 Medium'; }
+  font-family: HelveticaNueu, sans-serif; }
 
 .shared-form .input-label {
   width: calc(100% - 78px);
   font-family: inherit;
   color: white;
-  font-size: 15px; }
+  font-size: 15px;
+  font-family: rockwell, sans-serif;
+  margin: 0; }
 
 .shared-form input {
   height: 40px;
@@ -150,13 +170,15 @@
   padding: 15px;
   background-color: #0c224c;
   border-bottom: 1px solid #121720;
-  transition: all .5s ease-in-out; }
+  transition: all .5s ease-in-out;
+  font-family: rockwell, sans-serif;
+  cursor: pointer; }
   .item-inner:hover {
     background-color: #192f59; }
   .item-inner a {
     text-decoration: none;
     text-transform: uppercase;
-    font-family: 'Rockwell W01 Bold';
+    font-family: rockwell, sans-serif;
     font-size: 20px;
     line-height: 20px;
     color: white;
@@ -190,14 +212,20 @@
   .secondary-mobile-nav .item-inner a {
     font-size: 20px;
     color: #78acb3;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    font-weight: 700; }
 
 .desktop-upper-nav {
   display: flex;
   align-items: center;
   margin-right: 145px;
   justify-content: flex-end;
-  padding-top: 12px; }
+  padding-top: 12px;
+  text-transform: capitalize; }
+  .desktop-upper-nav .item-inner a {
+    text-transform: capitalize;
+    font-family: HelveticaNueu, sans-serif;
+    font-size: 17px; }
   .desktop-upper-nav button {
     position: fixed;
     top: 25px;
@@ -210,7 +238,8 @@
     border: 1px solid gainsboro;
     font-size: 12px;
     cursor: pointer;
-    z-index: 1; }
+    z-index: 1;
+    font-family: HelveticaNueu, sans-serif; }
     .desktop-upper-nav button:hover {
       background: #182e58; }
 
@@ -218,6 +247,15 @@
   color: white;
   font-size: 24px;
   margin: 0 2px; }
+
+.Search-container-longmont {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  width: 250px;
+  min-width: 400px;
+  padding: 25px 35px 40px;
+  background-color: #182e58; }
 
 .desktop {
   display: none; }
