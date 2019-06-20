@@ -1,8 +1,8 @@
 @import "utils/reusableCss";
-@import 'utils/screenSizesMqMixin';
+@import "utils/screenSizesMqMixin";
 
-$red: #F3575D;
-$blue: #3C7D93;
+$red: #f3575d;
+$blue: #3c7d93;
 $purple: #BA4896;
 
 .main-header-wrapper {
@@ -50,26 +50,26 @@ $purple: #BA4896;
 	color: $blue;
 }
 .txt-purple {
-	color: $purple;
+	color: $purple !important;
 }
 .txt-white {
-	color: white
+	color: white;
 }
-
 
 // MENU CSS ONLY
 
 .hh-menu-wrapper {
-    position: absolute;
-    width: 100%;
-    top: 0;
-    left: 0;
-    right: 0;
-	background: $red;
-	padding: 10px;
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
 }
 
 .upper-menu-header {
+	background: $red;
+	border-bottom: 5px solid $red;
+	padding: 20px 10px;
 	align-items: center;
 	display: flex;
 	justify-content: space-between;
@@ -84,7 +84,61 @@ $purple: #BA4896;
 	color: white;
 }
 
+.sub-reserv {
+	font-weight: bolder;
+	font-size: 15px;
+	text-transform: uppercase;
+	margin: 8px;
+	font-family: Roboto;
+}
 
+.menu-ul {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	font-family: roboto;
+	a {
+		display: flex;
+		justify-content: space-between; 
+		align-content: center;
+		text-decoration: none;
+		text-transform: uppercase;
+		font-weight: bolder;
+		padding: 10px;
+		margin: 5px 15px;
+		margin-right: 0;
+		border-bottom: 1px solid lightgray;
+		font-size: 18px;
+		&:last-child {
+			border-bottom: none;
+		}
+		.menu-li {
+			padding: 0;
+			margin: 0;
+		}
+		i {
+			color: $blue;
+			padding-right: 10px;
+		}
+	}
+}
+
+.menu-section-upper {
+	background: white;
+	border-bottom: 5px solid lightgray;
+}
+
+.menu-section-mid {
+	background: white;
+	padding: 20px 0;
+	border-bottom: 5px solid lightgray;
+	ul a {
+		border-bottom: none !important;
+	}
+	.mid-txt {
+		font-size: 15px !important;
+	}
+}
 
 // show hide stuff
 

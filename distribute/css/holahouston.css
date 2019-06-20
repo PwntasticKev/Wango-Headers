@@ -54,7 +54,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 10px;
-  border-bottom: 7px solid #F3575D; }
+  border-bottom: 7px solid #f3575d; }
 
 .hh-button {
   border-radius: 50%;
@@ -62,10 +62,10 @@
   height: 50px; }
 
 .hh-menu-button {
-  background: #F3575D; }
+  background: #f3575d; }
 
 .hh-search-button {
-  background: #3C7D93;
+  background: #3c7d93;
   display: flex;
   align-items: center;
   justify-content: center; }
@@ -79,13 +79,13 @@
   height: 3px; }
 
 .txt-red {
-  color: #F3575D; }
+  color: #f3575d; }
 
 .txt-blue {
-  color: #3C7D93; }
+  color: #3c7d93; }
 
 .txt-purple {
-  color: #BA4896; }
+  color: #BA4896 !important; }
 
 .txt-white {
   color: white; }
@@ -95,22 +95,69 @@
   width: 100%;
   top: 0;
   left: 0;
-  right: 0;
-  background: #F3575D;
-  padding: 10px; }
+  right: 0; }
 
 .upper-menu-header {
+  background: #f3575d;
+  border-bottom: 5px solid #f3575d;
+  padding: 20px 10px;
   align-items: center;
   display: flex;
   justify-content: space-between; }
 
 .close-hh-menu {
-  background: #F3575D;
+  background: #f3575d;
   border: 2px solid white;
   display: flex;
   align-items: center;
   justify-content: center;
   color: white; }
+
+.sub-reserv {
+  font-weight: bolder;
+  font-size: 15px;
+  text-transform: uppercase;
+  margin: 8px;
+  font-family: Roboto; }
+
+.menu-ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  font-family: roboto; }
+  .menu-ul a {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bolder;
+    padding: 10px;
+    margin: 5px 15px;
+    margin-right: 0;
+    border-bottom: 1px solid lightgray;
+    font-size: 18px; }
+    .menu-ul a:last-child {
+      border-bottom: none; }
+    .menu-ul a .menu-li {
+      padding: 0;
+      margin: 0; }
+    .menu-ul a i {
+      color: #3c7d93;
+      padding-right: 10px; }
+
+.menu-section-upper {
+  background: white;
+  border-bottom: 5px solid lightgray; }
+
+.menu-section-mid {
+  background: white;
+  padding: 20px 0;
+  border-bottom: 5px solid lightgray; }
+  .menu-section-mid ul a {
+    border-bottom: none !important; }
+  .menu-section-mid .mid-txt {
+    font-size: 15px !important; }
 
 .show-flex {
   display: flex !important; }
