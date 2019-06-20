@@ -24,6 +24,20 @@
 	padding: 15px;
 	font-family: rockwell, sans-serif;
 	font-weight: 700;
+
+	position: fixed;
+    width: 100%;
+    background: transparent;
+    z-index: 2000000;
+	&:before {
+		content: '';
+		width: 35%;
+		position: absolute;
+		height: 180px;
+   		top: 0;
+    	left: 0;
+		background: radial-gradient(ellipse at top left, rgba(255,255,255,1), rgba(255,255,255,0) 70%);
+	}
 }
 
 .main-wrapper-img-longmont {
@@ -32,6 +46,33 @@
 	background-size: cover;
 	
 }
+
+.follow-us-wrapper {
+	position: fixed;
+	z-index: 200;
+	.follow-us-wrapper-inner {
+		position: relative;
+		z-index: 20;
+		.follow-us-social-wrapper {
+			padding: 20px 30px;
+			display: flex;
+			align-items: center;
+			background: #182e58;
+			position: absolute;
+			top: 10px;
+			left: -88px;
+			z-index: 200;
+			a {
+				color: white;
+				margin: 0 10px;
+				i {
+					font-size: 25px;
+				}
+			}
+		}
+	}
+}
+
 
 .Search {
 		margin: 0 10px;
@@ -48,6 +89,7 @@
 
 .logo-img {
 	max-height: 50px;
+	z-index: 20;
 	@include preDesktop {
 		max-height: 75px;
 	}
@@ -58,6 +100,9 @@
     justify-content: space-between;
 	align-items: center;
 	font-family: rockwell, sans-serif;
+	z-index: 20;
+    position: relative;
+
 }
 
 .hide {
@@ -85,6 +130,7 @@
 	color: white;
 	background-color: #008CBA;
 	font-family: rockwell, sans-serif;
+	font-weight: bold;
 }
 
 .mobile-menu {
@@ -158,6 +204,7 @@
 		line-height: 20px;
 		color: white;
 		text-transform: uppercase;
+		font-weight: bold;
 
 	}
 	@include preDesktop {
@@ -223,7 +270,8 @@
 		font-size: 12px;
 		cursor: pointer;
 		z-index: 1;
-		font-family: HelveticaNueu, sans-serif;
+		font-family: sans-serif;
+		font-weight: bold;
 		&:hover{
 			background: #182e58;
 		}

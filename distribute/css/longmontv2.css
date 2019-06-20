@@ -67,12 +67,45 @@
   align-items: center;
   padding: 15px;
   font-family: rockwell, sans-serif;
-  font-weight: 700; }
+  font-weight: 700;
+  position: fixed;
+  width: 100%;
+  background: transparent;
+  z-index: 2000000; }
+  .main-wrapper-longmont:before {
+    content: '';
+    width: 35%;
+    position: absolute;
+    height: 180px;
+    top: 0;
+    left: 0;
+    background: radial-gradient(ellipse at top left, white, rgba(255, 255, 255, 0) 70%); }
 
 .main-wrapper-img-longmont {
   background: url("https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,g_xy_center,h_765,q_50,w_1665,x_2540,y_2020/v1/clients/longmontco/Visitors_Guide_Header_Gerardo_Brucker_2019_Cover_5e3e19ca-d58e-46e1-98d4-6c97db90e1c8.jpg");
   background-repeat: no-repeat;
   background-size: cover; }
+
+.follow-us-wrapper {
+  position: fixed;
+  z-index: 200; }
+  .follow-us-wrapper .follow-us-wrapper-inner {
+    position: relative;
+    z-index: 20; }
+    .follow-us-wrapper .follow-us-wrapper-inner .follow-us-social-wrapper {
+      padding: 20px 30px;
+      display: flex;
+      align-items: center;
+      background: #182e58;
+      position: absolute;
+      top: 10px;
+      left: -88px;
+      z-index: 200; }
+      .follow-us-wrapper .follow-us-wrapper-inner .follow-us-social-wrapper a {
+        color: white;
+        margin: 0 10px; }
+        .follow-us-wrapper .follow-us-wrapper-inner .follow-us-social-wrapper a i {
+          font-size: 25px; }
 
 .Search {
   margin: 0 10px;
@@ -86,7 +119,8 @@
       margin-left: 10px; } }
 
 .logo-img {
-  max-height: 50px; }
+  max-height: 50px;
+  z-index: 20; }
   @media only screen and (min-width: 1025px) {
     .logo-img {
       max-height: 75px; } }
@@ -95,7 +129,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-family: rockwell, sans-serif; }
+  font-family: rockwell, sans-serif;
+  z-index: 20;
+  position: relative; }
 
 .hide {
   display: none; }
@@ -117,7 +153,8 @@
   border: 0;
   color: white;
   background-color: #008CBA;
-  font-family: rockwell, sans-serif; }
+  font-family: rockwell, sans-serif;
+  font-weight: bold; }
 
 .mobile-menu {
   background-color: #0c224c;
@@ -182,7 +219,8 @@
     font-size: 20px;
     line-height: 20px;
     color: white;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    font-weight: bold; }
   @media only screen and (min-width: 1025px) {
     .item-inner {
       background: transparent;
@@ -239,7 +277,8 @@
     font-size: 12px;
     cursor: pointer;
     z-index: 1;
-    font-family: HelveticaNueu, sans-serif; }
+    font-family: sans-serif;
+    font-weight: bold; }
     .desktop-upper-nav button:hover {
       background: #182e58; }
 

@@ -1,8 +1,21 @@
 @import "utils/reusableCss";
 @import 'utils/screenSizesMqMixin';
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400,700,900");
+@import url("https://use.typekit.net/vxp3uzh.css");
 
-.main-wrapper {
+@font-face {
+    font-family: 'HelveticaNueu';
+    src: url("/fonts/AvenirNext/AvenirNextLTPro-Regular/AvenirNextLTPro-Regular.eot?#iefix") format('embedded-opentype'), 
+        url('/fonts/AvenirNext/AvenirNextLTPro-Regular/AvenirNextLTPro-Regular.woff') format('woff'), 
+        url('/fonts/AvenirNext/AvenirNextLTPro-Regular/AvenirNextLTPro-Regular.ttf')  format('truetype')
+}
+
+@font-face {
+	font-family: 'HelveticaNueu';
+	src: url('/fonts/helvetica-neue-5-cufonfonts-webfont/HelveticaNeue-MediumCond.woff.woff') format('woff'), /* Pretty Modern Browsers */
+  }
+
+.main-wrapper-longmont {
 	background-size: cover;
 	background: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.75)), to(rgba(0,0,0,0)));
 	background: -webkit-linear-gradient(top, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0) 100%);
@@ -17,19 +30,30 @@
 	-ms-flex-align: center;
 	align-items: center;
 	padding: 15px;
+	font-family: rockwell, sans-serif;
+	font-weight: 700;
 }
 
-.main-wrapper-img {
+.main-wrapper-img-longmont {
 	background: url("https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,g_xy_center,h_765,q_50,w_1665,x_2540,y_2020/v1/clients/longmontco/Visitors_Guide_Header_Gerardo_Brucker_2019_Cover_5e3e19ca-d58e-46e1-98d4-6c97db90e1c8.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	
 }
 
+.follow-us-social-wrapper {
+	background: #182e58;
+}
+
 .Search {
-	    margin: 0 10px;
+		margin: 0 10px;
+		padding: 9px;
+		cursor: pointer;
+		&:hover {
+			background: #182e58;
+		}
 	@include preDesktop {
-		padding-top: 16px;
+		padding-top: 5px;
 		margin-left: 10px;
 	}
 }
@@ -48,9 +72,10 @@
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	font-family: rockwell, sans-serif;
 }
 
 .hide {
@@ -77,7 +102,8 @@
     font-size: 15px;
 	border: 0;
 	color: white;
-    background-color: #008CBA;
+	background-color: #008CBA;
+	font-family: rockwell, sans-serif;
 }
 
 .mobile-menu {
@@ -91,7 +117,8 @@
 }
 
 .shared-form {
-    position: relative;
+	position: relative;
+	z-index: 20;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -101,7 +128,7 @@
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    font-family: 'Helvetica Neue LT W05_65 Medium';
+    font-family: HelveticaNueu, sans-serif;
 }
 
 .shared-form .input-label {
@@ -109,7 +136,9 @@
     width: calc(100% - 78px);
     font-family: inherit;
     color: white;
-    font-size: 15px;
+	font-size: 15px;
+	font-family: rockwell, sans-serif;
+	margin: 0;
 }
 
 .shared-form input {
@@ -152,17 +181,20 @@
 	border-bottom: 1px solid #121720;
 	-webkit-transition: all .5s ease-in-out;
 	transition: all .5s ease-in-out;
+	font-family: rockwell, sans-serif;
+	cursor: pointer;
 	&:hover {
 		background-color: #192f59;
 	}
 	a {
 		text-decoration: none;
 		text-transform: uppercase;
-		font-family: 'Rockwell W01 Bold';
+		font-family: rockwell, sans-serif;
 		font-size: 20px;
 		line-height: 20px;
 		color: white;
 		text-transform: uppercase;
+
 	}
 	@include preDesktop {
 		background: transparent;
@@ -172,6 +204,7 @@
 
 .desktop-lower-nav {
 	padding: 0;
+	list-style-type: none;
 }
 
 .fa-angle-right{
@@ -195,11 +228,15 @@
 }
 
 .secondary-mobile-nav {
+	margin: 0;
 	margin-top:10px;
+	padding: 0;
+	list-style-type: none;
 	.item-inner a {
 			font-size: 20px;
 			color: #78acb3;
 			text-transform: uppercase;
+			font-weight: 700;
 	}
 }
 
@@ -215,9 +252,15 @@
 	-ms-flex-pack: end;
 	justify-content: flex-end;
 	padding-top: 12px;
+	text-transform: capitalize;
+	.item-inner a {
+		text-transform: capitalize;
+		font-family: HelveticaNueu, sans-serif;
+		font-size: 17px;
+	}
 	button {
 		position: fixed;
-		top: 30px;
+		top: 25px;
 		right: 15px;
 		color: white;
 		padding: 12px 16px;
@@ -229,6 +272,7 @@
 		font-size: 12px;
 		cursor: pointer;
 		z-index: 1;
+		font-family: HelveticaNueu, sans-serif;
 		&:hover{
 			background: #182e58;
 		}
@@ -241,6 +285,16 @@
 		font-size: 24px;
 		margin: 0 2px;
 	}
+}
+
+.Search-container-longmont {
+	position: absolute;
+	top: 40px;
+	right: 0;
+	width: 250px;
+	min-width: 400px;
+    padding: 25px 35px 40px;
+    background-color: #182e58;
 }
 
 .desktop {
