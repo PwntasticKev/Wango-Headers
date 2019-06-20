@@ -23,7 +23,27 @@
 				<div class="line"></div>
 				<div class="line"></div>
 			</div>
-			<div>Menu</div>
+			<div style="text-align: center;">Menu</div>
+		</section>
+
+		<!-- MENU TOGGLE -->
+		<section class="hh-menu-wrapper" style="display: block;">
+			<!-- uppder-header -->
+			<section class="upper-menu-header">
+				<div class="hh-button close-hh-menu">
+					<i class="fas fa-times"></i>
+				</div>
+				<section class="flex-ai">
+					<div id="Weather"></div>
+					<i class="fas fa-share-square" style="color: white;"></i>
+				</section>
+			</section>
+			<section class="menu-section-upper txt-white">
+				<section class="flex-ai">
+					<div>Suscribete</div>
+					<div>reservaciones</div>
+				</section>
+			</section>
 		</section>
 
 		<!-- hola houston logo -->
@@ -33,36 +53,27 @@
 
 
 		<!-- Search icon -->
-		<section class="hh-button hh-search-button">
-			<img class="desktop Search" src="https://primary-longmontco.simpleviewcms.com/includes/public/assets/images/search-icon.png"
-						alt="Search Icon">
+		<section class="hh-search-button-wrapper">
+			<section class="hh-button hh-search-button">
+				<img class="desktop Search" src="https://primary-longmontco.simpleviewcms.com/includes/public/assets/images/search-icon.png" alt="Search Icon">
+			</section>
+			<div style="text-align: center;">Buscar</div>
 		</section>
 
-	</section>
+	</sectio>
 
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 
 	<script>
 
-		$(".nav-icons").on("click",function() {
-			$(".mobile-menu").toggle()
-			$(".open").toggleClass("hide")
-			$(".close").toggle()
+		$(".hh-menu-button").on("click",function() {
+			$(".hh-menu-wrapper").toggleClass("show-flex")
 		})
-
-		$(".Search").on("click",function() {
-			$(".Search-container-longmont").toggle()
+		$(".close-hh-menu").on("click",function() {
+			$(".hh-menu-wrapper").toggleClass("show-flex")
 		})
 	</script>
-
-
-
-
-
-
-
-
 
 
 
@@ -88,8 +99,8 @@
 								   $("#Weather").html(
 				   $(`<div class="Weather" style="display: flex; align-items: center; color: white;
     font-weight: bold;">
-					<i style='margin-right: 5px;padding-top: 8px;font-size: 30px;' class="climacon ${ res.daily.icon }"></i>
-					  <span class="Weather" style="display: flex; align-items: center;font-size: 24px;">
+					<i style='margin-right: 5px;padding-top: 8px;font-size: 20px;' class="climacon ${ res.daily.icon }"></i>
+					  <span class="Weather" style="display: flex; align-items: center;font-size: 14px;">
 						  <div>${  ~~(res.currently.temperature) }</div>
 						<div>°</div>
 					  </span>

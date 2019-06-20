@@ -9,8 +9,9 @@ $purple: #BA4896;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	padding: 10px;
+	border-bottom: 7px solid $red;
 }
-
 
 .hh-button {
 	border-radius: 50%;
@@ -30,7 +31,7 @@ $purple: #BA4896;
 }
 .hh-header-logo {
 	img {
-		max-height: 80px;
+		max-height: 70px;
 	}
 }
 
@@ -40,4 +41,53 @@ $purple: #BA4896;
 		background: white;
 		height: 3px;
 	}
+}
+
+.txt-red {
+	color: $red;
+}
+.txt-blue {
+	color: $blue;
+}
+.txt-purple {
+	color: $purple;
+}
+.txt-white {
+	color: white
+}
+
+
+// MENU CSS ONLY
+
+.hh-menu-wrapper {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+	background: $red;
+	padding: 10px;
+}
+
+.upper-menu-header {
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+}
+
+.close-hh-menu {
+	background: $red;
+	border: 2px solid white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+}
+
+
+
+// show hide stuff
+
+.show-flex {
+	display: flex !important;
 }

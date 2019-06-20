@@ -52,7 +52,9 @@
 .main-header-wrapper {
   display: flex;
   align-items: center;
-  justify-content: space-between; }
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 7px solid #F3575D; }
 
 .hh-button {
   border-radius: 50%;
@@ -69,9 +71,46 @@
   justify-content: center; }
 
 .hh-header-logo img {
-  max-height: 80px; }
+  max-height: 70px; }
 
 .burger .line {
   color: white;
   background: white;
   height: 3px; }
+
+.txt-red {
+  color: #F3575D; }
+
+.txt-blue {
+  color: #3C7D93; }
+
+.txt-purple {
+  color: #BA4896; }
+
+.txt-white {
+  color: white; }
+
+.hh-menu-wrapper {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #F3575D;
+  padding: 10px; }
+
+.upper-menu-header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between; }
+
+.close-hh-menu {
+  background: #F3575D;
+  border: 2px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white; }
+
+.show-flex {
+  display: flex !important; }
