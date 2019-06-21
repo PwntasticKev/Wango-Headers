@@ -32,6 +32,21 @@
 	padding: 15px;
 	font-family: rockwell, sans-serif;
 	font-weight: 700;
+
+	position: absolute;
+    width: 100%;
+    background: transparent;
+    z-index: 2000;
+	&:before {
+		content: '';
+		width: 35%;
+		position: absolute;
+		height: 180px;
+   		top: 0;
+    	left: 0;
+		background: -webkit-radial-gradient(top left, ellipse, rgba(255,255,255,1), rgba(255,255,255,0) 70%);
+		background: radial-gradient(ellipse at top left, rgba(255,255,255,1), rgba(255,255,255,0) 70%);
+	}
 }
 
 .main-wrapper-img-longmont {
@@ -41,9 +56,36 @@
 	
 }
 
-.follow-us-social-wrapper {
-	background: #182e58;
+.follow-us-wrapper {
+	position: fixed;
+	z-index: 200;
+	.follow-us-wrapper-inner {
+		position: relative;
+		z-index: 20;
+		.follow-us-social-wrapper {
+			padding: 20px 30px;
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-box-align: center;
+			-ms-flex-align: center;
+			align-items: center;
+			background: #182e58;
+			position: absolute;
+			top: 10px;
+			left: -88px;
+			z-index: 200;
+			a {
+				color: white;
+				margin: 0 10px;
+				i {
+					font-size: 25px;
+				}
+			}
+		}
+	}
 }
+
 
 .Search {
 		margin: 0 10px;
@@ -60,6 +102,7 @@
 
 .logo-img {
 	max-height: 50px;
+	z-index: 20;
 	@include preDesktop {
 		max-height: 75px;
 	}
@@ -76,6 +119,9 @@
 	-ms-flex-align: center;
 	align-items: center;
 	font-family: rockwell, sans-serif;
+	z-index: 20;
+    position: relative;
+
 }
 
 .hide {
@@ -87,6 +133,13 @@
 	@include preDesktop {
 		display: none
 	}
+}
+
+.close {
+	z-index: 200000;
+	position: absolute;
+	right: 10px; 
+	top: 10px
 }
 
 //mobile menu
@@ -104,11 +157,15 @@
 	color: white;
 	background-color: #008CBA;
 	font-family: rockwell, sans-serif;
+	font-weight: bold;
 }
 
 .mobile-menu {
 	background-color: #0c224c;
 	padding: 30px 10px;
+	z-index: 200000;
+    position: absolute;
+    width: 100%;
 }
 
 .mobile-dd .dd-top {
@@ -194,6 +251,7 @@
 		line-height: 20px;
 		color: white;
 		text-transform: uppercase;
+		font-weight: bold;
 
 	}
 	@include preDesktop {
@@ -272,7 +330,8 @@
 		font-size: 12px;
 		cursor: pointer;
 		z-index: 1;
-		font-family: HelveticaNueu, sans-serif;
+		font-family: sans-serif;
+		font-weight: bold;
 		&:hover{
 			background: #182e58;
 		}

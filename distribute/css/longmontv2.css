@@ -68,10 +68,10 @@
   padding: 15px;
   font-family: rockwell, sans-serif;
   font-weight: 700;
-  position: fixed;
+  position: absolute;
   width: 100%;
   background: transparent;
-  z-index: 2000000; }
+  z-index: 2000; }
   .main-wrapper-longmont:before {
     content: '';
     width: 35%;
@@ -142,6 +142,13 @@
     .nav-icons * {
       display: none; } }
 
+.close-x {
+  z-index: 200000;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  padding: 10px; }
+
 .submit-form {
   height: 40px;
   width: 75px;
@@ -158,7 +165,10 @@
 
 .mobile-menu {
   background-color: #0c224c;
-  padding: 30px 10px; }
+  padding: 30px 10px;
+  z-index: 200000;
+  position: absolute;
+  width: 100%; }
 
 .mobile-dd .dd-top {
   padding: 15px 15px 25px;

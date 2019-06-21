@@ -25,10 +25,10 @@
 	font-family: rockwell, sans-serif;
 	font-weight: 700;
 
-	position: fixed;
+	position: absolute;
     width: 100%;
     background: transparent;
-    z-index: 2000000;
+    z-index: 2000;
 	&:before {
 		content: '';
 		width: 35%;
@@ -116,6 +116,14 @@
 	}
 }
 
+.close-x {
+	z-index: 200000;
+	position: absolute;
+	right: 20px; 
+	top: 10px;
+	padding: 10px;
+}
+
 //mobile menu
 
 .submit-form {
@@ -136,6 +144,9 @@
 .mobile-menu {
 	background-color: #0c224c;
 	padding: 30px 10px;
+	z-index: 200000;
+    position: absolute;
+    width: 100%;
 }
 
 .mobile-dd .dd-top {

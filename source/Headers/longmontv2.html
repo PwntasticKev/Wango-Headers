@@ -87,14 +87,14 @@
 					<img class="open"
 						src="https://primary-longmontco.simpleviewcms.com/includes/public/assets/images/bars.png"
 						alt="Navigation Icon">
-					<i class="close fas fa-times" style="display: none; color: white;"></i>
 				</div>
 			</section>
 		</section>
-		</header>
-	</section>
+	</header>
+</section>
 
-	<section class="mobile-menu" style="display: none;">
+<section class="mobile-menu" style="display: none;">
+		<i class="fas fa-times close-x" style="color: white; "></i>
 		<div class="dd-top" data-sv-search-mobile="">
 			<div class="mobile-search-cont" id="search_widget_headerbox_mobile_f5d6ebf3-9068-46fa-8ee8-92815c1ce68e">
 				<form data-sv-searchform="" action="https://primary-longmontco.simpleviewcms.com/search/" method="GET" class="shared-form mobile">
@@ -179,10 +179,9 @@
 
 	<script>
 
-		$(".nav-icons").on("click",function() {
+		$(".nav-icons, .close-x").on("click",function() {
 			$(".mobile-menu").toggle()
 			$(".open").toggleClass("hide")
-			$(".close").toggle()
 		})
 
 		$(".Search").on("click",function() {
