@@ -64,23 +64,54 @@
     background-image: url("https://spanish19-houston.simpleviewcms.com/includes/public/assets/charcoal-border.svg");
     background-repeat: repeat-x;
     z-index: 5; }
+    @media only screen and (min-width: 1024px) {
+      .main-header-wrapper:before {
+        top: 125px; } }
+  @media only screen and (min-width: 1024px) {
+    .main-header-wrapper {
+      height: 120px; } }
+
+@media only screen and (min-width: 1024px) {
+  .hh-menu-button-wrapper {
+    display: none; } }
 
 .hh-button {
   border-radius: 50%;
-  width: 50px;
-  height: 50px; }
+  width: 60px;
+  height: 60px; }
 
 .hh-menu-button {
   background: #f3575d; }
 
+@media only screen and (min-width: 1024px) {
+  .hh-search-button-wrapper {
+    position: absolute;
+    right: 10px;
+    top: 35px; } }
+
 .hh-search-button {
-  background: #3c7d93;
+  height: 60px;
+  width: 60px;
+  border-radius: 30px;
   display: flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  font-size: 22px;
+  color: #fff;
+  background: #3c7d93;
+  border: 2px solid #d2c7c7; }
+
+@media only screen and (min-width: 1024px) {
+  .hh-header-logo {
+    position: absolute;
+    left: 10px;
+    top: 10px; } }
 
 .hh-header-logo img {
   max-height: 70px; }
+  @media only screen and (min-width: 1025px) {
+    .hh-header-logo img {
+      max-height: 90px; } }
 
 .burger .line {
   color: white;
@@ -199,8 +230,13 @@
   z-index: 3;
   top: 8px;
   left: -10px;
+  width: 100%;
   right: -10px;
-  padding-bottom: 5px; }
+  padding-bottom: 5px;
+  margin: 0 auto; }
+  @media only screen and (min-width: 1024px) {
+    .site-search-wrapper {
+      display: none; } }
 
 .site-search-dd form {
   display: flex;
@@ -255,3 +291,20 @@ input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-results-button,
 input[type="search"]::-webkit-search-results-decoration {
   -webkit-appearance: none; }
+
+@media only screen and (min-width: 1024px) {
+  .desktop-search-btn-wrapper {
+    margin-right: 70px; } }
+
+.desktop-right-image {
+  position: absolute;
+  right: -16px;
+  top: 33px;
+  transform: translateY(-50%);
+  width: 60px; }
+
+.desktop {
+  display: none; }
+  @media only screen and (min-width: 1024px) {
+    .desktop {
+      display: block; } }
