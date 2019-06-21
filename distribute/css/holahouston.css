@@ -99,11 +99,20 @@
 
 .upper-menu-header {
   background: #f3575d;
-  border-bottom: 5px solid #f3575d;
   padding: 20px 10px;
   align-items: center;
   display: flex;
   justify-content: space-between; }
+  .upper-menu-header:before {
+    content: '';
+    position: absolute;
+    top: 88px;
+    left: 0px;
+    right: 0px;
+    height: 9px;
+    background-image: url("https://spanish19-houston.simpleviewcms.com/includes/public/assets/charcoal-border.svg");
+    background-repeat: repeat-x;
+    z-index: 5; }
 
 .close-hh-menu {
   background: #f3575d;
@@ -158,6 +167,17 @@
     border-bottom: none !important; }
   .menu-section-mid .mid-txt {
     font-size: 15px !important; }
+
+.menu-section-bot {
+  background: #f3575d;
+  padding: 10px 0; }
+  .menu-section-bot ul a {
+    font-size: 14px;
+    border-bottom: none; }
+    .menu-section-bot ul a li {
+      color: white !important;
+      padding-bottom: 3px;
+      border-bottom: 1px solid white; }
 
 .show-flex {
   display: flex !important; }

@@ -68,11 +68,21 @@ $purple: #BA4896;
 
 .upper-menu-header {
 	background: $red;
-	border-bottom: 5px solid $red;
 	padding: 20px 10px;
 	align-items: center;
 	display: flex;
 	justify-content: space-between;
+	&:before {
+		content: '';
+		position: absolute;
+		top: 88px;
+		left: 0px;
+		right: 0px;
+		height: 9px;
+		background-image: url("https://spanish19-houston.simpleviewcms.com/includes/public/assets/charcoal-border.svg");
+		background-repeat: repeat-x;
+		z-index: 5;
+	}
 }
 
 .close-hh-menu {
@@ -140,6 +150,19 @@ $purple: #BA4896;
 	}
 }
 
+.menu-section-bot {
+	background: $red;
+	padding: 10px 0;
+	ul a {
+		font-size: 14px;
+		border-bottom: none;
+		li {
+			color: white !important;
+			padding-bottom:3px;
+			border-bottom: 1px solid white;
+		}
+	}
+}
 // show hide stuff
 
 .show-flex {
