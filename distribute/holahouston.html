@@ -118,9 +118,13 @@
 		<section class="site-search-wrapper">
 			<section class="site-search-dd">
 					<form class="site-search" data-sv-searchform="" action="https://spanish19-houston.simpleviewcms.com//search/" method="GET">
-						<input data-sv-searchinput="" name="q" type="search" class="searchInput" autocomplete="off" autocorrect="off" autocapitalize="off" placeholder="Buscar" value="">
-						<button data-sv-searchbtn="" type="submit" class="search-button" aria-label="submit search"><i class="fas fa-search"></i></button>
+						<input data-sv-searchinput="" name="q" type="search" class="searchInput" autocomplete="off" autocorrect="off" autocapitalize="off" placeholder="Buscar..." value="">
+						<button data-sv-searchbtn="" type="submit" class="search-button" aria-label="submit search">
+							<i class="fas fa-search"></i>
+						</button>
+						<i class="fas fa-close"></i>
 					</form>
+					
 			</section>
 		</section>
 
@@ -136,6 +140,14 @@
 		})
 		$(".close-hh-menu").on("click",function() {
 			$(".hh-menu-wrapper").toggleClass("show-flex")
+		})
+
+		
+		$(".hh-search-button-wrapper").on("click",function() {
+			$(".site-search-wrapper").toggle()
+		})
+		$(".fa-close").on("click",function() {
+			$(".site-search-wrapper").toggle()
 		})
 	</script>
 
