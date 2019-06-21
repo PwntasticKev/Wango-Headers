@@ -104,14 +104,14 @@
 @media only screen and (min-width: 1024px) {
   .hh-header-logo {
     position: absolute;
-    left: 10px;
-    top: 10px; } }
+    left: 25px;
+    top: 15px; } }
 
 .hh-header-logo img {
   max-height: 70px; }
   @media only screen and (min-width: 1025px) {
     .hh-header-logo img {
-      max-height: 90px; } }
+      max-height: 95px; } }
 
 .burger .line {
   color: white;
@@ -224,7 +224,6 @@
   display: flex !important; }
 
 .site-search-wrapper {
-  display: block;
   background-color: #fff;
   position: absolute;
   z-index: 3;
@@ -236,7 +235,9 @@
   margin: 0 auto; }
   @media only screen and (min-width: 1024px) {
     .site-search-wrapper {
-      display: none; } }
+      left: -311px;
+      width: 387px;
+      top: -3px; } }
 
 .site-search-dd form {
   display: flex;
@@ -278,7 +279,7 @@
   flex: 1 1 1%;
   max-width: 71%; }
 
-.fa-close {
+.close-input {
   color: #ba4896;
   background-color: rgba(0, 0, 0, 0);
   border: none;
@@ -291,6 +292,27 @@ input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-results-button,
 input[type="search"]::-webkit-search-results-decoration {
   -webkit-appearance: none; }
+
+.upper-desktop-nav {
+  align-items: center; }
+  .upper-desktop-nav a {
+    font-size: 12px; }
+
+.main-desktop-nav-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto; }
+
+.lower-desktop-nav .menu-li {
+  font-weight: bolder;
+  font-size: 21px; }
+
+.lower-desktop-nav, .upper-desktop-nav {
+  display: flex !important; }
+  .lower-desktop-nav a, .upper-desktop-nav a {
+    border-bottom: none; }
+    .lower-desktop-nav a i, .upper-desktop-nav a i {
+      display: none !important; }
 
 @media only screen and (min-width: 1024px) {
   .desktop-search-btn-wrapper {

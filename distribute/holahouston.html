@@ -106,6 +106,58 @@
 		</div>
 
 
+		<!-- Desktop Nav additions -->
+
+		
+		<section class="desktop main-desktop-nav-wrapper">
+				<ul class="desktop menu-ul upper-desktop-nav">
+					<a href="">
+						<li class="txt-purple mid-txt">Reuniones y convenciones</li>
+						<i class="txt-purple fas fa-chevron-down"></i>
+					</a>
+					<a href="">
+						<li class="txt-purple mid-txt">Prensa</li>
+						<i class="txt-purple fas fa-chevron-down"></i>
+					</a>
+					<a href="">
+						<li class="txt-purple mid-txt">Blog</li>
+					</a>
+					<a href="">
+						<li class="txt-red mid-txt">Suscribete</li>
+					</a>
+					<a href="">
+						<li class="txt-red mid-txt">reservaciones</li>
+					</a>
+					<div id="Weather2"></div>
+					<i class="fas fa-share-square" style="color: #f3575d; font-size: 12px;
+					margin-left: 15px;"></i>
+				</ul>
+
+		<ul class="desktop menu-ul lower-desktop-nav">
+				<a href="https://spanish19-houston.simpleviewcms.com/planea-tu-visita/">
+					<li class="txt-blue menu-li">Planea Tu Visita</li>
+					<i class="fas fa-chevron-down"></i>
+				</a>
+				<a href="">
+					<li class="txt-blue menu-li">Que Hacer</li>
+					<i class="fas fa-chevron-down"></i>
+				</a>
+				<a href="">
+					<li class="txt-blue menu-li">Eventos</li>
+					<i class="fas fa-chevron-down"></i>
+				</a>
+				<a href="">
+					<li class="txt-blue menu-li">Compras</li>
+					<i class="fas fa-chevron-down"></i>
+				</a>
+				<a href="">
+					<li class="txt-blue menu-li">Restaurantes y Bares</li>
+					<i class="fas fa-chevron-down"></i>
+				</a>
+			</ul>
+		</section>
+
+
 		<!-- Search icon -->
 		<section class="hh-search-button-wrapper">
 			<section class="desktop-search-btn-wrapper">
@@ -127,7 +179,7 @@
 						<button data-sv-searchbtn="" type="submit" class="search-button" aria-label="submit search">
 							<i class="fas fa-search"></i>
 						</button>
-						<i class="fas fa-close"></i>
+							<i class="fas fa-close close-input"></i>
 					</form>
 					
 			</section>
@@ -151,8 +203,9 @@
 		$(".hh-search-button-wrapper").on("click",function() {
 			$(".site-search-wrapper").toggle()
 		})
-		$(".fa-close").on("click",function() {
-			$(".site-search-wrapper").toggle()
+
+		$(".close-input").on("click",function() {
+			$(".site-search-wrapper").css("display", "none !important")
 		})
 	</script>
 
@@ -189,10 +242,10 @@
 			)
 		  )
 							$("#Weather2").html(
-				   $(`<div class="Weather" style="display: flex; align-items: center; color: white;
+				   $(`<div class="Weather" style="display: flex; align-items: center; color: #ba4896;
     font-weight: bold;">
-					<i style='margin-right: 5px;font-size: 30px;' class="climacon ${ res.daily.icon }"></i>
-					  <span class="Weather" style="display: flex; align-items: center;font-size: 24px;">
+					<i style='margin-right: 5px;font-size: 12px;' class="climacon ${ res.daily.icon }"></i>
+					  <span class="Weather" style="display: flex; align-items: center;font-size: 12px;">
 						  <div>${  ~~(res.currently.temperature) }</div>
 						<div>°</div>
 					  </span>
