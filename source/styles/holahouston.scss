@@ -217,6 +217,7 @@ $purple: #BA4896;
 // search form styles
 
 .site-search-wrapper {
+		display: none;
 		background-color: #fff;
 		position: absolute;
 		z-index: 3;
@@ -230,6 +231,7 @@ $purple: #BA4896;
 			left: -311px;
 			width: 387px;
 			top: -3px;
+			background: transparent;
 		}
 }
 
@@ -303,7 +305,7 @@ input[type="search"]::-webkit-search-results-decoration {
 .upper-desktop-nav {
 	align-items: center;
 	a {
-		font-size: 12px;
+		font-size: 14px;
 	}
 }
 
@@ -347,6 +349,21 @@ input[type="search"]::-webkit-search-results-decoration {
 
 
 //show hide stuff
+
+.hide {
+	display: none !important;
+}
+
+.index {
+	position: absolute;
+	z-index: 2;
+}
+
+.mobile {
+	@include preDesktop {
+		display: none;
+	}
+}
 
 .desktop {
 	display: none;

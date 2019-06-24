@@ -49,15 +49,15 @@
 						<li class="txt-blue menu-li">Planea Tu Visita</li>
 						<i class="fas fa-chevron-down"></i>
 					</a>
-					<a href="">
+					<a href="https://spanish19-houston.simpleviewcms.com/que-hacer/">
 						<li class="txt-blue menu-li">Que Hacer</li>
 						<i class="fas fa-chevron-down"></i>
 					</a>
-					<a href="">
+					<a href="https://spanish19-houston.simpleviewcms.com/eventos/">
 						<li class="txt-blue menu-li">Eventos</li>
 						<i class="fas fa-chevron-down"></i>
 					</a>
-					<a href="">
+					<a href="https://spanish19-houston.simpleviewcms.com/restaurantes-y-bares/guias-del-restaurante/">
 						<li class="txt-blue menu-li">Restaurantes y Bares</li>
 						<i class="fas fa-chevron-down"></i>
 					</a>
@@ -65,15 +65,15 @@
 			</section>
 			<section class="menu-section-mid">
 				<ul class="menu-ul">
-					<a href="">
+					<a href="https://spanish19-houston.simpleviewcms.com/reuniones-y-convenciones/">
 						<li class="txt-purple mid-txt">Reuniones y convenciones</li>
 						<i class="txt-purple fas fa-chevron-down"></i>
 					</a>
-					<a href="">
+					<a href="https://spanish19-houston.simpleviewcms.com/prensa/">
 						<li class="txt-purple mid-txt">Prensa</li>
 						<i class="txt-purple fas fa-chevron-down"></i>
 					</a>
-					<a href="">
+					<a href="https://spanish19-houston.simpleviewcms.com/blog/">
 						<li class="txt-purple mid-txt">Blog</li>
 					</a>
 				</ul>
@@ -110,7 +110,10 @@
 
 		
 		<section class="desktop main-desktop-nav-wrapper">
-				<ul class="desktop menu-ul upper-desktop-nav">
+			<ul class="desktop menu-ul upper-desktop-nav">
+					<a href="https://www.visithoustontexas.com/?_ga=2.204458128.146047617.1561389380-1622122596.1553190725">
+						<div style="margin-right: 30px" class="desktop">English</div>
+					</a>
 					<a href="">
 						<li class="txt-purple mid-txt">Reuniones y convenciones</li>
 						<i class="txt-purple fas fa-chevron-down"></i>
@@ -122,14 +125,14 @@
 					<a href="">
 						<li class="txt-purple mid-txt">Blog</li>
 					</a>
-					<a href="">
+					<a href="" style="margin-left: 50px">
 						<li class="txt-red mid-txt">Suscribete</li>
 					</a>
 					<a href="">
 						<li class="txt-red mid-txt">reservaciones</li>
 					</a>
-					<div id="Weather2"></div>
-					<i class="fas fa-share-square" style="color: #f3575d; font-size: 12px;
+					<div id="Weather2" style="margin-left: 50px;"></div>
+					<i class="fas fa-share-square" style="color: #f3575d;
 					margin-left: 15px;"></i>
 				</ul>
 
@@ -138,19 +141,19 @@
 					<li class="txt-blue menu-li">Planea Tu Visita</li>
 					<i class="fas fa-chevron-down"></i>
 				</a>
-				<a href="">
+				<a href="https://spanish19-houston.simpleviewcms.com/que-hacer/">
 					<li class="txt-blue menu-li">Que Hacer</li>
 					<i class="fas fa-chevron-down"></i>
 				</a>
-				<a href="">
+				<a href="https://spanish19-houston.simpleviewcms.com/eventos/">
 					<li class="txt-blue menu-li">Eventos</li>
 					<i class="fas fa-chevron-down"></i>
 				</a>
-				<a href="">
+				<a href="https://spanish19-houston.simpleviewcms.com/de-compras/">
 					<li class="txt-blue menu-li">Compras</li>
 					<i class="fas fa-chevron-down"></i>
 				</a>
-				<a href="">
+				<a href="https://spanish19-houston.simpleviewcms.com/restaurantes-y-bares/guias-del-restaurante/">
 					<li class="txt-blue menu-li">Restaurantes y Bares</li>
 					<i class="fas fa-chevron-down"></i>
 				</a>
@@ -164,7 +167,7 @@
 				<section class="hh-button hh-search-button">
 					<img class="desktop Search" src="https://primary-longmontco.simpleviewcms.com/includes/public/assets/images/search-icon.png" alt="Search Icon">
 				</section>
-				<div style="text-align: center;">Buscar</div>
+				<div style="text-align: center;" class="mobile">Buscar</div>
 			</section>
 			<section class="desktop desktop-right-image">
 					<img class="header-accent hide-medium-down" src="https://spanish19-houston.simpleviewcms.com/includes/public/assets/ornament-splash.svg" aria-disabled="true">
@@ -172,7 +175,7 @@
 		</sectio>
 
 		<!-- Search Container -->
-		<section class="site-search-wrapper" style="display: none;">
+		<section class="site-search-wrapper">
 			<section class="site-search-dd">
 					<form class="site-search" data-sv-searchform="" action="https://spanish19-houston.simpleviewcms.com//search/" method="GET">
 						<input data-sv-searchinput="" name="q" type="search" class="searchInput" autocomplete="off" autocorrect="off" autocapitalize="off" placeholder="Buscar..." value="">
@@ -200,13 +203,16 @@
 		})
 
 		
-		$(".hh-search-button-wrapper").on("click",function() {
-			$(".site-search-wrapper").toggle()
+		$(".hh-search-button").on("click",function() {
+			$(".site-search-wrapper").removeClass("hide")
+			$(".site-search-wrapper").show()
 		})
 
+		$(".close-input").unbind('click');
 		$(".close-input").on("click",function() {
-			$(".site-search-wrapper").css("display", "none !important")
+			$(".site-search-wrapper").addClass("hide")
 		})
+
 	</script>
 
 

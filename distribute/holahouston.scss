@@ -16,34 +16,76 @@ $purple: #BA4896;
 	-ms-flex-pack: justify;
 	justify-content: space-between;
 	padding: 10px;
-	border-bottom: 7px solid $red;
+	&:before {
+		content: '';
+		position: absolute;
+		top: 88px;
+		left: 0px;
+		right: 0px;
+		height: 9px;
+		background-image: url("https://spanish19-houston.simpleviewcms.com/includes/public/assets/charcoal-border.svg");
+		background-repeat: repeat-x;
+		z-index: 5;
+		@include ipadPro {
+			top: 125px;
+		}
+	}
+	@include ipadPro{
+		height: 120px
+	}
 }
-
+.hh-menu-button-wrapper {
+	@include ipadPro {
+		display: none;
+	}
+}
 .hh-button {
 	border-radius: 50%;
-	width: 50px;
-	height: 50px;
+	width: 60px;
+	height: 60px;
 }
 
 .hh-menu-button {
 	background: $red;
 }
 
+.hh-search-button-wrapper {
+	@include ipadPro {
+		position: absolute;
+		right: 10px;
+		top: 35px;
+	}
+}
+
 .hh-search-button {
-	background: $blue;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	align-items: center;
-	-webkit-box-pack: center;
-	-ms-flex-pack: center;
-	justify-content: center;
+	height: 60px;
+    width: 60px;
+    border-radius: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    font-size: 22px;
+    color: #fff;
+    background: #3c7d93;
+    border: 2px solid #d2c7c7;
 }
 .hh-header-logo {
+	@include ipadPro {
+		position: absolute;
+		left: 25px;
+		top: 15px;
+	}
 	img {
 		max-height: 70px;
+		@include preDesktop {
+			max-height: 95px;
+		}
 	}
 }
 
@@ -76,11 +118,14 @@ $purple: #BA4896;
 	top: 0;
 	left: 0;
 	right: 0;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
 }
 
 .upper-menu-header {
 	background: $red;
-	border-bottom: 5px solid $red;
 	padding: 20px 10px;
 	-webkit-box-align: center;
 	-ms-flex-align: center;
@@ -91,6 +136,17 @@ $purple: #BA4896;
 	-webkit-box-pack: justify;
 	-ms-flex-pack: justify;
 	justify-content: space-between;
+	&:before {
+		content: '';
+		position: absolute;
+		top: 88px;
+		left: 0px;
+		right: 0px;
+		height: 9px;
+		background-image: url("https://spanish19-houston.simpleviewcms.com/includes/public/assets/charcoal-border.svg");
+		background-repeat: repeat-x;
+		z-index: 5;
+	}
 }
 
 .close-hh-menu {
@@ -159,8 +215,7 @@ $purple: #BA4896;
 
 .menu-section-mid {
 	background: white;
-	padding: 20px 0;
-	border-bottom: 5px solid lightgray;
+	padding: 10px 0;
 	ul a {
 		border-bottom: none !important;
 	}
@@ -169,10 +224,196 @@ $purple: #BA4896;
 	}
 }
 
+.menu-section-bot {
+	background: $red;
+	padding: 10px 0;
+	ul a {
+		text-transform: capitalize !important;
+		font-size: 14px;
+		border-bottom: none;
+		li {
+			color: white !important;
+			padding-bottom:3px;
+			border-bottom: 1px solid white;
+		}
+	}
+}
 // show hide stuff
 
 .show-flex {
 	display: -webkit-box !important;
 	display: -ms-flexbox !important;
 	display: flex !important;
+}
+
+
+
+// search form styles
+
+.site-search-wrapper {
+		background-color: #fff;
+		position: absolute;
+		z-index: 3;
+		top: 8px;
+		left: -10px;
+		width:100%;
+		right: -10px;
+		padding-bottom: 5px;
+		margin: 0 auto;
+		@include ipadPro {
+			left: -311px;
+			width: 387px;
+			top: -3px;
+		}
+}
+
+.site-search-dd form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    max-width: 1230px;
+    height: 100%;
+	margin: 3px 15px;
+	padding:3px;
+    border: 2px solid #d2c7c7;
+    border-radius: 17px;
+    background-color: #f9f9f9;
+}
+
+.site-search-dd form button.search-button {
+    height: 60px;
+    width: 60px;
+    border-radius: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    font-size: 22px;
+    color: #fff;
+    background: #3c7d93;
+	border: 2px solid #d2c7c7;
+	// margin-right: 50px;
+}
+
+
+.buscar-input {
+	color: $purple !important;
+}
+
+.site-search-dd form input, header .site-search-dd form input:focus {
+    border: none;
+    background-color: rgba(0,0,0,0);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    padding: 0px 0px 0px 20px;
+    margin: 0px;
+    font: 800 24px/1 "Avenir Next LT W01 Bold", sans-serif;
+    height: auto;
+    color: #ba4896;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 1%;
+    flex: 1 1 1%;
+    max-width: 71%;
+}
+
+.close-input {
+	// position: absolute;
+	// z-index: 2000000;
+    color: #ba4896;
+    background-color: rgba(0,0,0,0);
+    border: none;
+    margin-bottom: 0px;
+	padding: 13px;
+	font-size: 25px;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  -webkit-appearance:none;
+}
+
+
+//desktop nav bar 
+
+.upper-desktop-nav {
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	a {
+		font-size: 12px;
+	}
+}
+
+.main-desktop-nav-wrapper {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	margin: 0 auto;
+}
+
+.lower-desktop-nav {
+	.menu-li {
+		font-weight: bolder;
+    	font-size: 21px;
+	}
+}
+
+.lower-desktop-nav, .upper-desktop-nav {
+	display: -webkit-box !important;
+	display: -ms-flexbox !important;
+	display: flex !important;
+	a {
+		border-bottom: none;
+		i {
+			display: none !important;
+		}
+	}
+}
+
+.desktop-search-btn-wrapper {
+	@include ipadPro {
+		margin-right: 70px;
+	}
+}
+
+.desktop-right-image {	
+	position: absolute;
+    right: -16px;
+    top: 33px;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 60px;
+}
+
+
+
+//show hide stuff
+
+.desktop {
+	display: none;
+	@include ipadPro {
+		display: block
+	}
 }
