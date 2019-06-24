@@ -50,31 +50,24 @@
     -webkit-transition: all 0.5s ease-in-out; }
 
 @font-face {
-  font-family: 'MyWebFont';
-  src: url("webfont.eot");
-  /* IE9 Compat Modes */
-  src: url("webfont.eot?#iefix") format("embedded-opentype"), url("webfont.woff2") format("woff2"), url("webfont.woff") format("woff"), url("webfont.ttf") format("truetype"), url("webfont.svg#svgFontName") format("svg");
-  /* Legacy iOS */ }
+  font-family: 'AXIS-ExtraBold';
+  src: url("/fonts/Axis/AXIS-ExtraBold.ttf") format("truetype"), url("/fonts/Axis/AXIS-ExtraBold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
 
 @font-face {
-  font-family: 'MyWebFont';
-  src: url("webfont.eot");
-  /* IE9 Compat Modes */
-  src: url("webfont.eot?#iefix") format("embedded-opentype"), url("webfont.woff2") format("woff2"), url("webfont.woff") format("woff"), url("webfont.ttf") format("truetype"), url("webfont.svg#svgFontName") format("svg");
-  /* Legacy iOS */ }
-
-@font-face {
-  font-family: 'MyWebFont';
-  src: url("webfont.eot");
-  /* IE9 Compat Modes */
-  src: url("webfont.eot?#iefix") format("embedded-opentype"), url("webfont.woff2") format("woff2"), url("webfont.woff") format("woff"), url("webfont.ttf") format("truetype"), url("webfont.svg#svgFontName") format("svg");
-  /* Legacy iOS */ }
+  font-family: 'axis_extrabold_copy-webfont';
+  src: url("axis_extrabold_copy-webfont.eot");
+  src: url("axis_extrabold_copy-webfont.eot?#iefix") format("embedded-opentype"), url("axis_extrabold_copy-webfont.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal; }
 
 .hh-main-header-wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px; }
+  padding: 10px;
+  font-family: "AXIS-ExtraBold", roboto; }
   .hh-main-header-wrapper:before {
     content: '';
     position: absolute;
@@ -193,13 +186,13 @@
   font-size: 15px;
   text-transform: uppercase;
   margin: 8px;
-  font-family: Roboto; }
+  font-family: "AXIS-ExtraBold", roboto; }
 
 .menu-ul {
   padding: 0;
   margin: 0;
   list-style-type: none;
-  font-family: roboto; }
+  font-family: "AXIS-ExtraBold", roboto; }
   .menu-ul a {
     display: flex;
     justify-content: space-between;
@@ -220,6 +213,9 @@
     .menu-ul a i {
       color: #3c7d93;
       padding-right: 10px; }
+    @media only screen and (min-width: 1024px) {
+      .menu-ul a {
+        padding: 6px; } }
 
 .menu-section-upper {
   background: white;

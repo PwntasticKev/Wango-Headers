@@ -7,33 +7,20 @@ $purple: #BA4896;
 
 
 @font-face {
-	font-family: 'MyWebFont';
-	src: url('webfont.eot'); /* IE9 Compat Modes */
-	src: url('webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-		 url('webfont.woff2') format('woff2'), /* Super Modern Browsers */
-		 url('webfont.woff') format('woff'), /* Pretty Modern Browsers */
-		 url('webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
-		 url('webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+	font-family: 'AXIS-ExtraBold';
+	src: url('/fonts/Axis/AXIS-ExtraBold.ttf') format('truetype'),
+		 url('/fonts/Axis/AXIS-ExtraBold.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
   }
-
+  
   @font-face {
-	font-family: 'MyWebFont';
-	src: url('webfont.eot'); /* IE9 Compat Modes */
-	src: url('webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-		 url('webfont.woff2') format('woff2'), /* Super Modern Browsers */
-		 url('webfont.woff') format('woff'), /* Pretty Modern Browsers */
-		 url('webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
-		 url('webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
-  }
-
-  @font-face {
-	font-family: 'MyWebFont';
-	src: url('webfont.eot'); /* IE9 Compat Modes */
-	src: url('webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-		 url('webfont.woff2') format('woff2'), /* Super Modern Browsers */
-		 url('webfont.woff') format('woff'), /* Pretty Modern Browsers */
-		 url('webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
-		 url('webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+	font-family: 'axis_extrabold_copy-webfont';
+	src: url('axis_extrabold_copy-webfont.eot');
+	src: url('axis_extrabold_copy-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('axis_extrabold_copy-webfont.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
   }
 
 .hh-main-header-wrapper {
@@ -41,6 +28,7 @@ $purple: #BA4896;
 	align-items: center;
 	justify-content: space-between;
 	padding: 10px;
+	font-family: "AXIS-ExtraBold", roboto;
 	&:before {
 		content: '';
 		position: absolute;
@@ -177,14 +165,14 @@ $purple: #BA4896;
 	font-size: 15px;
 	text-transform: uppercase;
 	margin: 8px;
-	font-family: Roboto;
+	font-family: "AXIS-ExtraBold", roboto;
 }
 
 .menu-ul {
 	padding: 0;
 	margin: 0;
 	list-style-type: none;
-	font-family: roboto;
+	font-family: "AXIS-ExtraBold", roboto;
 	a {
 		display: flex;
 		justify-content: space-between; 
@@ -207,6 +195,9 @@ $purple: #BA4896;
 		i {
 			color: $blue;
 			padding-right: 10px;
+		}
+		@include ipadPro {
+			padding: 6px;
 		}
 	}
 }
