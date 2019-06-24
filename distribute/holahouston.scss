@@ -5,7 +5,25 @@ $red: #f3575d;
 $blue: #3c7d93;
 $purple: #BA4896;
 
-.main-header-wrapper {
+
+@font-face {
+	font-family: 'AXIS-ExtraBold';
+	src: url('/fonts/Axis/AXIS-ExtraBold.ttf') format('truetype'),
+		 url('/fonts/Axis/AXIS-ExtraBold.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+  }
+  
+  @font-face {
+	font-family: 'axis_extrabold_copy-webfont';
+	src: url('axis_extrabold_copy-webfont.eot');
+	src: url('axis_extrabold_copy-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('axis_extrabold_copy-webfont.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+  }
+
+.hh-main-header-wrapper {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -16,10 +34,11 @@ $purple: #BA4896;
 	-ms-flex-pack: justify;
 	justify-content: space-between;
 	padding: 10px;
+	font-family: "AXIS-ExtraBold", roboto;
 	&:before {
 		content: '';
 		position: absolute;
-		top: 88px;
+		top: 97px;
 		left: 0px;
 		right: 0px;
 		height: 9px;
@@ -27,7 +46,7 @@ $purple: #BA4896;
 		background-repeat: repeat-x;
 		z-index: 5;
 		@include ipadPro {
-			top: 125px;
+			top: 119px;
 		}
 	}
 	@include ipadPro{
@@ -78,8 +97,8 @@ $purple: #BA4896;
 .hh-header-logo {
 	@include ipadPro {
 		position: absolute;
-		left: 25px;
-		top: 15px;
+		left: 31px;
+		top: 13px;
 	}
 	img {
 		max-height: 70px;
@@ -109,12 +128,16 @@ $purple: #BA4896;
 .txt-white {
 	color: white;
 }
+.txt-darkred {
+	color: #d0454b;
+}
 
 // MENU CSS ONLY
 
 .hh-menu-wrapper {
 	position: absolute;
 	width: 100%;
+	z-index: 3000;
 	top: 0;
 	left: 0;
 	right: 0;
@@ -169,14 +192,14 @@ $purple: #BA4896;
 	font-size: 15px;
 	text-transform: uppercase;
 	margin: 8px;
-	font-family: Roboto;
+	font-family: "AXIS-ExtraBold", roboto;
 }
 
 .menu-ul {
 	padding: 0;
 	margin: 0;
 	list-style-type: none;
-	font-family: roboto;
+	font-family: "AXIS-ExtraBold", roboto;
 	a {
 		display: -webkit-box;
 		display: -ms-flexbox;
@@ -205,6 +228,9 @@ $purple: #BA4896;
 			color: $blue;
 			padding-right: 10px;
 		}
+		@include ipadPro {
+			padding: 6px;
+		}
 	}
 }
 
@@ -229,8 +255,9 @@ $purple: #BA4896;
 	padding: 10px 0;
 	ul a {
 		text-transform: capitalize !important;
-		font-size: 14px;
+		font-size: 13px;
 		border-bottom: none;
+		padding: 0;
 		li {
 			color: white !important;
 			padding-bottom:3px;
@@ -251,6 +278,7 @@ $purple: #BA4896;
 // search form styles
 
 .site-search-wrapper {
+		display: none;
 		background-color: #fff;
 		position: absolute;
 		z-index: 3;
@@ -263,7 +291,8 @@ $purple: #BA4896;
 		@include ipadPro {
 			left: -311px;
 			width: 387px;
-			top: -3px;
+			top: -9px;
+			background: transparent;
 		}
 }
 
@@ -356,8 +385,11 @@ input[type="search"]::-webkit-search-results-decoration {
 	-webkit-box-align: center;
 	-ms-flex-align: center;
 	align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
 	a {
-		font-size: 12px;
+		font-size: 14px;
 	}
 }
 
@@ -400,7 +432,7 @@ input[type="search"]::-webkit-search-results-decoration {
 .desktop-right-image {	
 	position: absolute;
     right: -16px;
-    top: 33px;
+    top: 26px;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
@@ -411,9 +443,127 @@ input[type="search"]::-webkit-search-results-decoration {
 
 //show hide stuff
 
+.hide {
+	display: none !important;
+}
+
+.index {
+	position: absolute;
+	z-index: 2;
+}
+
+.mobile {
+	@include preDesktop {
+		display: none;
+	}
+}
+
 .desktop {
 	display: none;
 	@include ipadPro {
 		display: block
 	}
+}
+
+
+// reservations pop up
+
+form.reservation-container {
+	position: absolute;
+	right: 10%;
+    top: 117px;
+    width: 80%;
+    border: 4px solid #fff;
+    -webkit-box-shadow: 0px 0px 20px rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.5);
+    padding: 25px 15px;
+    border-radius: 0px 0px 20px 20px;
+    display: none;
+    text-align: center;
+	z-index: 5000;
+	background-image: -webkit-linear-gradient(330deg, #5f0a87 0%, #a4508b 100%);
+	background-image: linear-gradient(120deg, #5f0a87 0%, #a4508b 100%);
+	@include preDesktop {
+		width: 400px;
+		top: 96px;
+	}
+
+	h3 {
+		font: 600 35px/1.1 "AvenirNextLTW01-Medium", sans-serif;
+	color: #f0595d;
+    margin-bottom: 20px;
+	}
+
+	label {
+		font: 400 16px/1 "AvenirNextLTW01-Regular", sans-serif;
+		color: #fff;
+		margin-bottom: 12px;
+		text-align: left;
+	}
+
+	.fa-calendar-alt {
+		position: absolute;
+		top: 47px;
+    	right: 13px;
+		font-size: 23px;
+		color: #3c7d93;
+		z-index: 30;
+	}
+
+	.form-group {
+		position: relative;
+		text-align: left;
+		width: 100%;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+		flex-direction: column;
+	}
+	.sh-grad-orange {
+		background-image: -webkit-gradient(linear, left top, right top, from(#FF512F), color-stop(51%, #DD2476), to(#FF512F));
+		background-image: -webkit-linear-gradient(left, #FF512F 0%, #DD2476 51%, #FF512F 100%);
+		background-image: linear-gradient(to right, #FF512F 0%, #DD2476 51%, #FF512F 100%);
+		font-weight: bold;
+	}
+
+	.close-reservation-container {
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		padding: 10px;
+		color: white
+
+	}
+	
+}
+
+.sh-hover:hover {
+	-webkit-transition: 0.5s;
+	transition: 0.5s;
+    background-size: 200% auto;
+}
+
+.reservation-container input {
+    font: 900 16px/1 "Avenir Next LT W01 Bold", sans-serif;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: none;
+    border-radius: 8px;
+    padding: 21.5px 19px;
+    margin-bottom: 30px;
+}
+
+form.reservation-container button.submit {
+    padding: 17px 30px;
+    border: 1px solid;
+    border-radius: 8px;
+    margin: auto;
+    text-transform: uppercase;
+    color: #fff;
 }
