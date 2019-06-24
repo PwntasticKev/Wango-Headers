@@ -49,15 +49,36 @@
     width: 22px;
     -webkit-transition: all 0.5s ease-in-out; }
 
-.main-header-wrapper {
+@font-face {
+  font-family: 'MyWebFont';
+  src: url("webfont.eot");
+  /* IE9 Compat Modes */
+  src: url("webfont.eot?#iefix") format("embedded-opentype"), url("webfont.woff2") format("woff2"), url("webfont.woff") format("woff"), url("webfont.ttf") format("truetype"), url("webfont.svg#svgFontName") format("svg");
+  /* Legacy iOS */ }
+
+@font-face {
+  font-family: 'MyWebFont';
+  src: url("webfont.eot");
+  /* IE9 Compat Modes */
+  src: url("webfont.eot?#iefix") format("embedded-opentype"), url("webfont.woff2") format("woff2"), url("webfont.woff") format("woff"), url("webfont.ttf") format("truetype"), url("webfont.svg#svgFontName") format("svg");
+  /* Legacy iOS */ }
+
+@font-face {
+  font-family: 'MyWebFont';
+  src: url("webfont.eot");
+  /* IE9 Compat Modes */
+  src: url("webfont.eot?#iefix") format("embedded-opentype"), url("webfont.woff2") format("woff2"), url("webfont.woff") format("woff"), url("webfont.ttf") format("truetype"), url("webfont.svg#svgFontName") format("svg");
+  /* Legacy iOS */ }
+
+.hh-main-header-wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 10px; }
-  .main-header-wrapper:before {
+  .hh-main-header-wrapper:before {
     content: '';
     position: absolute;
-    top: 88px;
+    top: 97px;
     left: 0px;
     right: 0px;
     height: 9px;
@@ -65,10 +86,10 @@
     background-repeat: repeat-x;
     z-index: 5; }
     @media only screen and (min-width: 1024px) {
-      .main-header-wrapper:before {
-        top: 125px; } }
+      .hh-main-header-wrapper:before {
+        top: 119px; } }
   @media only screen and (min-width: 1024px) {
-    .main-header-wrapper {
+    .hh-main-header-wrapper {
       height: 120px; } }
 
 @media only screen and (min-width: 1024px) {
@@ -105,7 +126,7 @@
   .hh-header-logo {
     position: absolute;
     left: 25px;
-    top: 15px; } }
+    top: 13px; } }
 
 .hh-header-logo img {
   max-height: 70px; }
@@ -130,9 +151,13 @@
 .txt-white {
   color: white; }
 
+.txt-darkred {
+  color: #d0454b; }
+
 .hh-menu-wrapper {
   position: absolute;
   width: 100%;
+  z-index: 3000;
   top: 0;
   left: 0;
   right: 0;
@@ -238,7 +263,7 @@
     .site-search-wrapper {
       left: -311px;
       width: 387px;
-      top: -3px;
+      top: -9px;
       background: transparent; } }
 
 .site-search-dd form {
@@ -323,7 +348,7 @@ input[type="search"]::-webkit-search-results-decoration {
 .desktop-right-image {
   position: absolute;
   right: -16px;
-  top: 33px;
+  top: 26px;
   transform: translateY(-50%);
   width: 60px; }
 

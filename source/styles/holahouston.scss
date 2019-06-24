@@ -5,7 +5,38 @@ $red: #f3575d;
 $blue: #3c7d93;
 $purple: #BA4896;
 
-.main-header-wrapper {
+
+@font-face {
+	font-family: 'MyWebFont';
+	src: url('webfont.eot'); /* IE9 Compat Modes */
+	src: url('webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		 url('webfont.woff2') format('woff2'), /* Super Modern Browsers */
+		 url('webfont.woff') format('woff'), /* Pretty Modern Browsers */
+		 url('webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+		 url('webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+  }
+
+  @font-face {
+	font-family: 'MyWebFont';
+	src: url('webfont.eot'); /* IE9 Compat Modes */
+	src: url('webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		 url('webfont.woff2') format('woff2'), /* Super Modern Browsers */
+		 url('webfont.woff') format('woff'), /* Pretty Modern Browsers */
+		 url('webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+		 url('webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+  }
+
+  @font-face {
+	font-family: 'MyWebFont';
+	src: url('webfont.eot'); /* IE9 Compat Modes */
+	src: url('webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		 url('webfont.woff2') format('woff2'), /* Super Modern Browsers */
+		 url('webfont.woff') format('woff'), /* Pretty Modern Browsers */
+		 url('webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+		 url('webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+  }
+
+.hh-main-header-wrapper {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -13,7 +44,7 @@ $purple: #BA4896;
 	&:before {
 		content: '';
 		position: absolute;
-		top: 88px;
+		top: 97px;
 		left: 0px;
 		right: 0px;
 		height: 9px;
@@ -21,7 +52,7 @@ $purple: #BA4896;
 		background-repeat: repeat-x;
 		z-index: 5;
 		@include ipadPro {
-			top: 125px;
+			top: 119px;
 		}
 	}
 	@include ipadPro{
@@ -67,7 +98,7 @@ $purple: #BA4896;
 	@include ipadPro {
 		position: absolute;
 		left: 25px;
-		top: 15px;
+		top: 13px;
 	}
 	img {
 		max-height: 70px;
@@ -97,12 +128,16 @@ $purple: #BA4896;
 .txt-white {
 	color: white;
 }
+.txt-darkred {
+	color: #d0454b;
+}
 
 // MENU CSS ONLY
 
 .hh-menu-wrapper {
 	position: absolute;
 	width: 100%;
+	z-index: 3000;
 	top: 0;
 	left: 0;
 	right: 0;
@@ -230,7 +265,7 @@ $purple: #BA4896;
 		@include ipadPro {
 			left: -311px;
 			width: 387px;
-			top: -3px;
+			top: -9px;
 			background: transparent;
 		}
 }
@@ -341,7 +376,7 @@ input[type="search"]::-webkit-search-results-decoration {
 .desktop-right-image {	
 	position: absolute;
     right: -16px;
-    top: 33px;
+    top: 26px;
     transform: translateY(-50%);
     width: 60px;
 }
