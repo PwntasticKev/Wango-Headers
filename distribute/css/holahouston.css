@@ -424,7 +424,8 @@ form.reservation-container {
     top: 10px;
     right: 10px;
     padding: 10px;
-    color: white; }
+    color: white;
+    cursor: pointer; }
 
 .sh-hover:hover {
   transition: 0.5s;
@@ -439,7 +440,7 @@ form.reservation-container {
   margin-bottom: 30px; }
 
 form.reservation-container button.submit {
-  padding: 17px 30px;
+  padding: 12px 30px;
   border: 1px solid;
   border-radius: 8px;
   margin: auto;

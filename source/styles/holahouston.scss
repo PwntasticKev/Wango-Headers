@@ -471,7 +471,8 @@ form.reservation-container {
 		top: 10px;
 		right: 10px;
 		padding: 10px;
-		color: white
+		color: white;
+		cursor: pointer;
 
 	}
 	
@@ -492,7 +493,7 @@ form.reservation-container {
 }
 
 form.reservation-container button.submit {
-    padding: 17px 30px;
+    padding: 12px 30px;
     border: 1px solid;
     border-radius: 8px;
     margin: auto;
