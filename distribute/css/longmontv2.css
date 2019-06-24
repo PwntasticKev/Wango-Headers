@@ -82,6 +82,9 @@
     top: 0;
     left: 0;
     background: radial-gradient(ellipse at top left, white, rgba(255, 255, 255, 0) 70%); }
+    @media only screen and (min-width: 1350px) {
+      .main-wrapper-longmont:before {
+        background: none; } }
 
 .main-wrapper-img-longmont {
   background: url("https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,g_xy_center,h_765,q_50,w_1665,x_2540,y_2020/v1/clients/longmontco/Visitors_Guide_Header_Gerardo_Brucker_2019_Cover_5e3e19ca-d58e-46e1-98d4-6c97db90e1c8.jpg");
@@ -123,11 +126,13 @@
       margin-left: 10px; } }
 
 .logo-img {
+  width: 135px;
   max-height: 50px;
   z-index: 20; }
   @media only screen and (min-width: 1025px) {
     .logo-img {
-      max-height: 75px; } }
+      max-height: 75px;
+      width: 300px; } }
 
 .header-menu-container {
   display: flex;
