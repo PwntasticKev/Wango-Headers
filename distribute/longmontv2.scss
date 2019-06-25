@@ -53,6 +53,9 @@
     	left: 0;
 		background: -webkit-radial-gradient(top left, ellipse, rgba(255,255,255,1), rgba(255,255,255,0) 70%);
 		background: radial-gradient(ellipse at top left, rgba(255,255,255,1), rgba(255,255,255,0) 70%);
+	@include desktop {
+		background: none;
+	}
 	}
 }
 
@@ -110,10 +113,12 @@
 }
 
 .logo-img {
+	width: 135px;
 	max-height: 50px;
 	z-index: 20;
 	@include preDesktop {
 		max-height: 75px;
+		width: 300px;
 	}
 }
 

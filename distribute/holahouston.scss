@@ -95,6 +95,7 @@ $purple: #BA4896;
     border: 2px solid #d2c7c7;
 }
 .hh-header-logo {
+	cursor: pointer;
 	@include ipadPro {
 		position: absolute;
 		left: 31px;
@@ -468,6 +469,19 @@ input[type="search"]::-webkit-search-results-decoration {
 
 // reservations pop up
 
+.desktop-reserve {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
 form.reservation-container {
 	position: absolute;
 	right: 10%;
@@ -537,7 +551,8 @@ form.reservation-container {
 		top: 10px;
 		right: 10px;
 		padding: 10px;
-		color: white
+		color: white;
+		cursor: pointer;
 
 	}
 	
@@ -560,7 +575,7 @@ form.reservation-container {
 }
 
 form.reservation-container button.submit {
-    padding: 17px 30px;
+    padding: 12px 30px;
     border: 1px solid;
     border-radius: 8px;
     margin: auto;
