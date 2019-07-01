@@ -1,10 +1,28 @@
 @import "utils/reusableCss";
 @import "utils/screenSizesMqMixin";
 
+@font-face {
+	font-family: "Proxima-Nova-Lt";
+	src: url('/fonts/ProximaNova/ProximaNova-Light-webfont.eot');
+	src: url("/fonts/ProximaNova/ProximaNova-Light-webfont.eot?#iefix") format("embedded-opentype"),
+		url('/fonts/ProximaNova/ProximaNova-Light-webfont.woff') format("woff");
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Proxima-Nova-Rg";
+	src: url('/fonts/ProximaNova/ProximaNova-Reg-webfont.eot');
+	src: url("/fonts/ProximaNova/ProximaNova-Reg-webfont.eot?#iefix") format("embedded-opentype"),
+		url('/fonts/ProximaNova/ProximaNova-Reg-webfont.woff') format("woff");
+	font-weight: 700;
+	font-style: normal;
+}
+
 .main-header-wrapper {
 	background-color: hsl(213, 27%, 29%);
-    background: url('https://www.beginatbothell.com/wp-content/themes/bothell/images/header_bg.png');
-    background-repeat: no-repeat;
+	background: url("https://www.beginatbothell.com/wp-content/themes/bothell/images/header_bg.png");
+	background-repeat: no-repeat;
+	background-size: cover;
 	-webkit-transition: 0.5s ease-in-out;
 	transition: 0.5s ease-in-out;
 	display: -webkit-box;
@@ -17,12 +35,14 @@
 	-ms-flex-pack: justify;
 	justify-content: space-between;
 	padding: 0 20px;
+	margin: 0 auto;
+    max-width: 1450px;
 
 	.b-logo {
 		max-width: 178px;
 		width: 100px;
-		padding: 10px 0;
-		@include preDesktop{
+		padding: 20px 0;
+		@include preDesktop {
 			width: 178px;
 		}
 	}
@@ -36,7 +56,7 @@
 		padding: 7px;
 		.line {
 			background: white;
-			width: 18px;
+			width: 16px;
 			margin: 1.5px 0;
 		}
 		@include preDesktop {
@@ -45,19 +65,19 @@
 	}
 	@include preDesktop {
 		padding: 0 25px;
+		padding-bottom: 10px;
 	}
-
 }
 
 .mob_navigation {
 	position: fixed;
-    background: url('https://www.beginatbothell.com/wp-content/themes/bothell/images/four_col_bg.png');
-    background-position: center center;
-    right: -100%;
-    width: 85%;
-    -webkit-transition: 1s ease-in-out;
-    transition: 1s ease-in-out;
-    top: 0;
+	background: url("https://www.beginatbothell.com/wp-content/themes/bothell/images/four_col_bg.png");
+	background-position: center center;
+	right: -100%;
+	width: 85%;
+	-webkit-transition: 1s ease-in-out;
+	transition: 1s ease-in-out;
+	top: 0;
 	height: 100vh;
 	z-index: 2000;
 	.close-mobile-menu {
@@ -83,7 +103,6 @@
 	}
 }
 
-
 //menu css
 
 .mobile-content-container {
@@ -92,7 +111,12 @@
 
 .mobile-nav-section {
 	width: 50%;
-    padding: 0 20px;
+	padding: 0 20px;
+	ul {
+		list-style-type: none;
+		padding: 0;
+		margin: 0;
+	}
 	a {
 		text-decoration: none;
 		color: white;
@@ -103,7 +127,10 @@
 	border-left: 2px solid #507480;
 	.right-item {
 		margin: 0px 20px 30px;
-		font-size: 20px;
+		font-size: 22px;
+		font-weight: 600;
+		text-transform: uppercase;
+		letter-spacing: 3px;
 		line-height: 18px;
 		&:first-child {
 			margin: 0;
@@ -112,7 +139,9 @@
 }
 
 .left-items {
-    font-size: 12px;
+	font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 	li {
 		text-align: right;
 		margin: 12px 12px;
@@ -152,29 +181,43 @@
 //desktop nav
 
 .desktop-nav-container {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
 	-ms-flex-direction: column;
 	flex-direction: column;
 	color: white;
 	.desktop-menu {
+		font-family: "Proxima-Nova-Rg";
+		list-style-type: none;
+		padding: 0;
+		margin: 0;
 		a {
 			color: white;
 			text-transform: uppercase;
 			text-decoration: none;
+			-webkit-transition: 0.5s ease-in-out;
+			transition: 0.5s ease-in-out;
+			&:hover {
+				color: #6aa1a1;
+			}
 		}
+	}
+	@include preDesktop {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
 	}
 }
 
 .upper-desktop-nav {
-	margin-bottom: 32px;
+	font-family: "Proxima-Nova-Lt";
 	.nav-item-desktop {
+		font-family: "Proxima-Nova-Lt";
 		margin: 0px 8px;
 		font-size: 10px;
 		letter-spacing: 2px;
+		color: white;
+		font-weight: bold;
 	}
 	.social-icon {
 		display: inline-block;
@@ -190,11 +233,20 @@
 		line-height: 1;
 		margin: 0 3px;
 		cursor: pointer;
+		-webkit-transition: 0.5s ease-in-out;
+		transition: 0.5s ease-in-out;
+		&:hover {
+			background: #35475d;
+			color: #639696;
+		}
 	}
 }
 
 .lower-desktop-nav {
+	font-family: "Proxima-Nova-Rg";
+	margin-top: 32px !important;
 	.nav-item-desktop {
+		font-family: "Proxima-Nova-Rg";
 		margin: 0px 23px;
 		letter-spacing: 3px;
 		font-size: 18px;
@@ -204,11 +256,18 @@
 
 .survey_cont {
 	background: #6aa1a1;
-    display: inline-block;
-    padding: 2px 25px;
-    border-radius: 30px;
-    font-weight: 600;
-    font-size: 12px;
+	display: inline-block;
+	padding: 2px 25px;
+	border-radius: 30px;
+	font-weight: 900;
+	font-size: 12px;
 	letter-spacing: 1px;
-	margin: 0 5px;
+	-webkit-transition: 0.5s ease-in-out;
+	transition: 0.5s ease-in-out;
+	&:hover {
+		background: #fff;
+		a {
+			color: #35475d !important;
+		}
+	}
 }
