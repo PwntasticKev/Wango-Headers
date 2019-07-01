@@ -210,10 +210,10 @@
 
 			<section class="v2-search-container" style="display: none;">
 				<label for="p-search-input">Search Term</label>
-				<div class="ais-search-box">
+				<form class="site-search" data-sv-searchform="" action="https://www.visitstockton.org/search/" method="GET">
 					<input
 						type="search"
-						class="search__input js-psearch-input ais-search-box--input"
+						class="search-input-v2"
 						id="p-search-input"
 						name="keywords"
 						required="required"
@@ -228,12 +228,13 @@
 					<button
 						id="p-search-submit"
 						type="submit"
-						class="btn search__submit"
+						class="btn search__submit search-button-v2"
 						aria-label="Submit Search"
 					>
 						Search
 					</button>
-				</div>
+				</form>
+				
 				<svg
 					class="close-search-menu"
 					xmlns="http://www.w3.org/2000/svg"
@@ -249,7 +250,7 @@
 			<!-- Open Menu Container -->
 			<section class="open-menu-container" style="display: none;">
 				<section class="upper-menu-section flex-ai flex-sb">
-					<a href="/" class="nav__logo logo--header-menu" aria-label="Home">
+					<a href="https://www.visitstockton.org/" class="nav__logo logo--header-menu" aria-label="Home">
 						<svg
 							width="467px"
 							height="116px"
@@ -401,50 +402,50 @@
 
 				<section class="nav-section yellow-section">
 					<ul>
-						<a class="flex-ai flex-sb" target="_blank" href="">
+						<a class="flex-ai flex-sb" target="_blank" href="https://www.visitstockton.org/events/">
 							<section class="flex-ai">
 								<i class="menu-icons-v2 far fa-calendar-alt"></i>
 								<li>Events</li>
 							</section>
 							<i class="fas fa-chevron-right"></i>
 						</a>
-						<a class="flex-ai flex-sb" target="_blank" href="">
+						<a class="flex-ai flex-sb" target="_blank" href="https://www.visitstockton.org/things-to-do/">
 							<section class="flex-ai">
 								<i class="menu-icons-v2 fas fa-binoculars"></i>
 								<li>Things to do</li>
 							</section>
 							<i class="fas fa-chevron-right"></i>
 						</a>
-						<a class="flex-ai flex-sb" target="_blank" href="">
+						<a class="flex-ai flex-sb" target="_blank" href="https://www.visitstockton.org/restaurants/">
 							<section class="flex-ai">
 								<i class="menu-icons-v2 fas fa-utensils"></i>
 								<li>Restaurants</li>
 							</section>
 							<i class="fas fa-chevron-right"></i>
 						</a>
-						<a class="flex-ai" target="_blank" href="">
+						<a class="flex-ai" target="_blank" href="https://savingspass.visitstockton.org/checkout/36/visit-stockton/79/stockton-savings-pass">
 							<i class="menu-icons-v2 fas fa-dollar-sign"></i>
 							<li>Stock savings Pass</li>
 						</a>
-						<a class="flex-ai" target="_blank" href="">
+						<a class="flex-ai" target="_blank" href="https://www.visitstockton.org/hotels/">
 							<i class="menu-icons-v2 fas fa-concierge-bell"></i>
 							<li>Hotels</li>
 						</a>
-						<a class="flex-ai flex-sb" target="_blank" href="">
+						<a class="flex-ai flex-sb" target="_blank" href="https://www.visitstockton.org/sports/">
 							<section class="flex-ai">
 								<i class="menu-icons-v2 fas fa-baseball-ball"></i>
 								<li>Sports</li>
 							</section>
 							<i class="fas fa-chevron-right"></i>
 						</a>
-						<a class="flex-ai flex-sb" target="_blank" href="">
+						<a class="flex-ai flex-sb" target="_blank" href="https://www.visitstockton.org/meetings-groups/">
 							<section class="flex-ai">
 								<i class="menu-icons-v2 fas fa-suitcase"></i>
 								<li>Meetings</li>
 							</section>
 							<i class="fas fa-chevron-right"></i>
 						</a>
-						<a class="flex-ai" target="_blank" href="">
+						<a class="flex-ai" target="_blank" href="https://www.visitstockton.org/blog/">
 								<i class="menu-icons-v2 fas fa-blog"></i>
 							<li>Blog</li>
 						</a>
@@ -518,7 +519,7 @@
 				</section>
 
 				<section class="flex-ai" style=" position: relative;">
-					<button href="https://visitstockton.visitwidget.com/" class="plan-your-trip-button">PLAN YOUR TRIP</button>
+					<button class="plan-your-trip-button"><a target="_blank" href="https://visitstockton.visitwidget.com/">PLAN YOUR TRIP</a></button>
 	
 					<a
 					href="https://www.visitstockton.org/"
