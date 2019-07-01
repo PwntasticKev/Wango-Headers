@@ -149,6 +149,9 @@ font-style: normal;
 		left: 0;
     	top: 84px;
 	}
+	@include desktop{
+		left: 5%;
+	}
 	@include largeDesktop{
 		left: 17%;
 	}
