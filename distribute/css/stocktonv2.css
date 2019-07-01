@@ -52,7 +52,10 @@
 .v2-main-wrapper {
   background: #ffa124;
   justify-content: space-between;
-  padding: 0 15px; }
+  padding: 0 15px;
+  font-family: titling-gothic-fb, sans-serif;
+  font-weight: 700;
+  font-style: normal; }
   @media only screen and (min-width: 1025px) {
     .v2-main-wrapper {
       background-color: #182338;
@@ -75,6 +78,10 @@
     height: 2rem;
     width: 2rem;
     fill: white; }
+    @media only screen and (min-width: 1025px) {
+      .search__cta svg {
+        height: 3rem;
+        width: 3rem; } }
   .search__cta:hover {
     transform: rotate(30deg); }
 
@@ -104,7 +111,11 @@
   color: #fff;
   width: 100%;
   max-width: 18.75rem;
-  padding: 1rem 1rem 0; }
+  min-width: 300px;
+  padding: 1rem 1rem 0;
+  font-family: titling-gothic-fb, sans-serif;
+  font-weight: 400;
+  font-style: normal; }
   .v2-search-container div input {
     display: block;
     box-sizing: border-box;
@@ -148,11 +159,11 @@
     align-items: center;
     position: absolute;
     border: none;
-    top: 36px;
-    right: 18px;
+    top: 39px;
+    right: 13px;
     margin: 0;
-    padding: .5rem;
-    font-size: .75rem; }
+    padding: 9px;
+    font-size: 12px; }
   .v2-search-container .close-search-menu {
     width: 25px;
     height: 25px;
@@ -162,6 +173,12 @@
     padding: 6px;
     background: #3e60a3;
     fill: white; }
+    .v2-search-container .close-search-menu:hover {
+      border: 2px solid white; }
+  @media only screen and (min-width: 1025px) {
+    .v2-search-container {
+      left: 0;
+      top: 84px; } }
 
 .rotate-search {
   transform: rotate(30deg); }
@@ -196,10 +213,12 @@
         height: 3.75rem; }
         @media only screen and (min-width: 1025px) {
           .open-menu-container .upper-menu-section .logo--header-menu svg {
-            max-width: 26rem;
-            height: 11.75rem; } }
+            max-width: 43rem;
+            height: 11.75rem;
+            margin-bottom: 35px; } }
     .open-menu-container .upper-menu-section .close-v2-menu {
-      font-size: 35px; }
+      font-size: 35px;
+      cursor: pointer; }
       @media only screen and (min-width: 1025px) {
         .open-menu-container .upper-menu-section .close-v2-menu {
           position: absolute;
@@ -216,8 +235,8 @@
     -webkit-flex-flow: column;
     flex-flow: column;
     margin: 0 auto;
+    max-width: 912px;
     width: 100%;
-    max-width: 64rem;
     -webkit-justify-content: flex-start;
     justify-content: flex-start;
     -webkit-align-items: flex-start;
@@ -269,6 +288,8 @@
         @media only screen and (min-width: 1025px) {
           .open-menu-container .nav-section ul a li {
             margin-top: 13px; } }
+        .open-menu-container .nav-section ul a:hover {
+          color: #ffa124; }
       @media only screen and (min-width: 1025px) {
         .open-menu-container .nav-section ul .fa-chevron-right {
           transform: rotate(90deg);
@@ -285,6 +306,9 @@
 
 .blue-section {
   background: rgba(62, 96, 163, 0.9); }
+  @media only screen and (min-width: 1025px) {
+    .blue-section ul {
+      padding: 0 120px !important; } }
   .blue-section ul a {
     font-size: 11px !important; }
     .blue-section ul a .menu-icons-v2 {
@@ -292,7 +316,8 @@
   @media only screen and (min-width: 1025px) {
     .blue-section {
       border-top: 5px solid #ffa124;
-      background: transparent; } }
+      background: transparent;
+      padding: 0 120px; } }
 
 .social-icons-container {
   width: 100%;
@@ -326,19 +351,32 @@
 
 .plan-your-trip-button {
   position: absolute;
-  left: -180px;
+  font-family: titling-gothic-fb, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  left: -220px;
   display: flex;
   justify-content: center;
   cursor: pointer;
   background-color: #ffa124;
   color: #fff;
   border: 2px solid #e6e6e6;
-  padding: 7px 22px;
+  padding: 7px;
   font-weight: bold;
-  transition: background-color .3s ease; }
+  transition: background-color .3s ease;
+  font-size: 12px; }
   .plan-your-trip-button:hover {
     background-color: #ffb757;
     color: #fff; }
+
+.desktop-header {
+  max-width: 1450px;
+  margin: 0 auto;
+  padding: 0 25px; }
+
+.desktop-header-background {
+  background-color: #182338;
+  width: 100%; }
 
 .desktop-left-section button {
   background: transparent;

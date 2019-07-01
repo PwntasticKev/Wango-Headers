@@ -5,6 +5,9 @@
 	background: #ffa124;
 	justify-content: space-between;
 	padding: 0 15px;
+	font-family: titling-gothic-fb, sans-serif;
+	font-weight: 700;
+	font-style: normal;
 	@include preDesktop {
 		background-color: #182338;
 		padding: 0 25px;
@@ -30,6 +33,10 @@
 		height: 2rem;
 		width: 2rem;
 		fill: white;
+		@include preDesktop {
+			height: 3rem;
+			width: 3rem;
+		}
 	}
 	&:hover {
 		transform: rotate(30deg);
@@ -64,8 +71,14 @@
     background-color: #182338;
     color: #fff;
     width: 100%;
-    max-width: 18.75rem;
+	max-width: 18.75rem;
+	min-width: 300px;
 	padding: 1rem 1rem 0;
+	font-family: titling-gothic-fb, sans-serif;
+
+font-weight: 400;
+
+font-style: normal;
 	div input {
 		display: block;
 		box-sizing: border-box;
@@ -110,11 +123,11 @@
 		align-items: center;
 		position: absolute;
 		border: none;
-		top: 36px;
-		right: 18px;
+		top: 39px;
+		right: 13px;
 		margin: 0;
-		padding: .5rem;
-		font-size: .75rem;
+		padding: 9px;
+		font-size: 12px;
 	}
 	.close-search-menu {
 		width: 25px;
@@ -125,6 +138,13 @@
 		padding: 6px;
 		background: #3e60a3;
 		fill: white;
+		&:hover {
+			border: 2px solid white;
+		}
+	}
+	@include preDesktop {
+		left: 0;
+    	top: 84px;
 	}
 }
 
@@ -161,13 +181,15 @@
 				max-width: 10rem;
 				height: 3.75rem;
 				@include preDesktop {
-					max-width: 26rem;
+					max-width: 43rem;
 					height: 11.75rem;
+					margin-bottom: 35px;
 				}
 			}
 		}
 		.close-v2-menu {
 			font-size: 35px;
+			cursor: pointer;
 			@include preDesktop {
 				position: absolute;
 				top: 36px;
@@ -187,8 +209,8 @@
 		-webkit-flex-flow: column;
 		flex-flow: column;
 		margin: 0 auto;
+    	max-width: 912px;
 		width: 100%;
-		max-width: 64rem;
 		-webkit-justify-content: flex-start;
 		justify-content: flex-start;
 		-webkit-align-items: flex-start;
@@ -246,6 +268,9 @@
 						margin-top: 13px;
 					}
 				}
+				&:hover {
+					color: #ffa124;
+				}
 			}
 			.fa-chevron-right {
 				@include preDesktop {
@@ -271,6 +296,9 @@
 .blue-section {
 	background: rgba(62,96,163,.9);
 	ul {
+		@include preDesktop {
+			padding: 0 120px !important;
+		}
 		a {
 			font-size: 11px !important;
 			.menu-icons-v2 {
@@ -281,6 +309,7 @@
 	@include preDesktop {
 		border-top: 5px solid #ffa124;
 		background: transparent;
+		padding: 0 120px;
 	}
 }
 
@@ -321,20 +350,35 @@
 
 .plan-your-trip-button {
 	position: absolute;
-	left: -180px;
+	font-family: titling-gothic-fb, sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	left: -220px;
 	display: flex;
 	justify-content: center;
     cursor: pointer;
     background-color: #ffa124;
     color: #fff;
 	border: 2px solid #e6e6e6;
-	padding: 7px 22px;
+	padding: 7px;
 	font-weight: bold;
 	transition: background-color .3s ease;
+	font-size: 12px;
 	&:hover {
 		background-color: #ffb757;
 		color: #fff;
 	}
+}
+
+.desktop-header {
+	max-width: 1450px;
+		margin: 0 auto;
+		padding: 0 25px;
+}
+
+.desktop-header-background {
+	background-color: #182338;
+	width:100%;
 }
 
 .desktop-left-section {
