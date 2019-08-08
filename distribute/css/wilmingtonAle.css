@@ -49,8 +49,24 @@
     width: 22px;
     -webkit-transition: all 0.5s ease-in-out; }
 
+body {
+  font-family: "Open Sans", Arial, sans-serif; }
+
+.desktop {
+  display: none; }
+  @media (min-width: 981px) {
+    .desktop {
+      display: flex; } }
+
+@media (min-width: 981px) {
+  .mobile {
+    display: none !important; } }
+
 #logo {
-  width: 150px; }
+  width: 130px; }
+  @media (min-width: 981px) {
+    #logo {
+      width: 121px; } }
 
 .search-container {
   position: absolute;
@@ -62,7 +78,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 20; }
+  z-index: 20;
+  padding: 0 10px; }
+  @media (min-width: 981px) {
+    .search-container {
+      max-width: 688px;
+      top: 3px;
+      right: 94px;
+      width: 65%;
+      justify-content: flex-start; } }
 
 .et-search-field {
   height: 60px;
@@ -70,25 +94,44 @@
   outline: none;
   font-size: 12px;
   position: relative; }
+  @media (min-width: 981px) {
+    .et-search-field {
+      border: none;
+      outline: none;
+      width: 501px; } }
 
 .main-header-section {
   justify-content: space-around; }
+  @media (min-width: 981px) {
+    .main-header-section {
+      justify-content: center; } }
 
 .fa-bars {
   color: #2EA3F2; }
 
 .fa-times {
   position: absolute;
-  right: 0;
-  top: 25%;
+  right: 10px;
+  top: 22px;
+  padding: 10px;
   cursor: pointer; }
 
 .search-container--ale i {
   margin: 0 20px;
   font-size: 25px; }
+  @media (min-width: 981px) {
+    .search-container--ale i {
+      font-size: 11px;
+      margin: 0 9px;
+      color: rgba(0, 0, 0, 0.6); } }
+
+@media (min-width: 981px) {
+  .search-container--ale .fa-search {
+    font-size: 16px; } }
 
 .mobile-menu-dropdown {
   position: absolute;
+  display: none;
   z-index: 9999;
   left: 0;
   width: 100%;
@@ -108,6 +151,19 @@
   color: #666;
   background-color: rgba(0, 0, 0, 0.03);
   font-weight: 700; }
+
+.desktop-menu-container {
+  font-size: 12px; }
+  .desktop-menu-container a {
+    display: flex;
+    align-items: center;
+    margin: 0 11.75px;
+    text-decoration: none;
+    color: #666; }
+    .desktop-menu-container a:hover {
+      color: #2ea3f2; }
+  .desktop-menu-container:hover {
+    color: #2ea3f2; }
 
 input[type=search]::-ms-clear {
   display: none;
