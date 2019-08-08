@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>kalamazoo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="css/reset.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="css/wilmingtonAle.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">	
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+<body>
+	<!-- Main Header Area -->
+	<section class="main-header-section flex-ai">
+		<a href="https://wilmingtonaletrail.com/">
+			<img src="http://wilmingtonaletrail.com/wp-content/uploads/2015/06/Wilm-Ale-Trail-Logo-Side1.png" alt="Wilmington Ale Trail" id="logo" data-height-percentage="100" data-actual-width="414" data-actual-height="271" scale="0">
+		</a>
+		<section class="flex-ai flex-sb search-container--ale">
+			<i class="fas fa-search"></i>
+			<i class="fas fa-bars burger-ale"></i>
+		</section>
+	</section>
+
+	<!-- OPen Mobile mmenu  -->
+	<section class="mobile-menu-dropdown">
+		<ul class="mobile-menu-link-container">
+			<a href="https://wilmingtonaletrail.com/" class="mobile-menu-links" style="background: white">
+				<li>Home</li>
+			</a>
+			<a href="https://wilmingtonaletrail.com/wilmington-breweries/" class="mobile-menu-links">
+				<li>Wilmington Breweries</li>
+			</a>
+			<a href="https://wilmingtonaletrail.com/bottleshops/" class="mobile-menu-links">
+				<li>BottleShops</li>
+			</a>
+			<a href="https://wilmingtonaletrail.com/restaurants/" class="mobile-menu-links">
+				<li>Restaurants and Bars</li>
+			</a>
+			<a href="https://wilmingtonaletrail.com/wilmington-beer-events/" class="mobile-menu-links">
+				<li>Events</li>
+			</a>
+		</ul>
+	</section>
+
+	<!-- SEARHC CONTAINER -->
+	<section class="search-container">
+		<form role="search" method="get" class="et-search-form" action="https://wilmingtonaletrail.com/" style="max-width: 172px;">
+			<input type="search" class="et-search-field" placeholder="Search …" value="" name="s" title="Search for:">
+			<i class="fas fa-times"></i>
+		</form>
+	</section>
+
+  <!-- JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+ 
+  <script>
+	  $( document ).ready(function(){
+
+		$(".burger-ale").on("click",function(){
+			$('.search-container').delay(100).fadeOut()
+			$(".mobile-menu-dropdown").delay(100).animate({ height: 'toggle', opacity: 'toggle' }, 'fast');
+		})
+		$(".fa-search, .fa-times").on("click",function(){
+
+			$('.mobile-menu-dropdown').delay(100).fadeOut()
+			$('.search-container').delay(100).animate({ height: 'toggle', opacity: 'toggle' }, 'slow');
+		})
+
+	  })
+  </script>
+		 
+</body>
+</html>

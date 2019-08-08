@@ -7,6 +7,9 @@
 	-ms-flex-pack: justify;
 	justify-content: space-between;
 	padding: 0 15px;
+	font-family: titling-gothic-fb, sans-serif;
+	font-weight: 700;
+	font-style: normal;
 	@include preDesktop {
 		background-color: #182338;
 		padding: 0 25px;
@@ -28,11 +31,18 @@
 .search__cta {
 	-webkit-transition: all .3s ease;
 	transition: all .3s ease;
+	background: transparent;
+	border: none;
+	outline: none;
 	svg {
 		margin: 0 auto;
 		height: 2rem;
 		width: 2rem;
 		fill: white;
+		@include preDesktop {
+			height: 3rem;
+			width: 3rem;
+		}
 	}
 	&:hover {
 		-webkit-transform: rotate(30deg);
@@ -70,8 +80,14 @@
     background-color: #182338;
     color: #fff;
     width: 100%;
-    max-width: 18.75rem;
+	max-width: 18.75rem;
+	min-width: 300px;
 	padding: 1rem 1rem 0;
+	font-family: titling-gothic-fb, sans-serif;
+
+font-weight: 400;
+
+font-style: normal;
 	div input {
 		display: block;
 		-webkit-box-sizing: border-box;
@@ -127,11 +143,11 @@
 		align-items: center;
 		position: absolute;
 		border: none;
-		top: 36px;
-		right: 18px;
+		top: 35px;
+		right: 19px;
 		margin: 0;
-		padding: .5rem;
-		font-size: .75rem;
+		padding: 9px;
+		font-size: 12px;
 	}
 	.close-search-menu {
 		width: 25px;
@@ -142,6 +158,19 @@
 		padding: 6px;
 		background: #3e60a3;
 		fill: white;
+		&:hover {
+			border: 2px solid white;
+		}
+	}
+	@include preDesktop {
+		left: 0;
+    	top: 84px;
+	}
+	@include desktop{
+		left: 5%;
+	}
+	@include largeDesktop{
+		left: 17%;
 	}
 }
 
@@ -189,10 +218,26 @@
 			svg {
 				max-width: 10rem;
 				height: 3.75rem;
+				@include preDesktop {
+					max-width: 43rem;
+					height: 11.75rem;
+					margin-bottom: 35px;
+				}
 			}
 		}
 		.close-v2-menu {
 			font-size: 35px;
+			cursor: pointer;
+			@include preDesktop {
+				position: absolute;
+				top: 36px;
+				left: 50px;
+			}
+		}
+		@include preDesktop    {
+			-webkit-box-pack: center;
+			-ms-flex-pack: center;
+			justify-content: center;
 		}
 	}
 
@@ -207,8 +252,8 @@
 		-ms-flex-flow: column;
 		flex-flow: column;
 		margin: 0 auto;
+    	max-width: 912px;
 		width: 100%;
-		max-width: 64rem;
 		-webkit-box-pack: start;
 		-ms-flex-pack: start;
 		justify-content: flex-start;
@@ -221,7 +266,24 @@
 			list-style-type: none;
 			padding: 0;
 			margin: 0;
+			@include preDesktop {
+				display: -webkit-box;
+				display: -ms-flexbox;
+				display: flex;
+				-webkit-box-align: start;
+				-ms-flex-align: start;
+				align-items: flex-start;
+				-webkit-box-pack: justify;
+				-ms-flex-pack: justify;
+				justify-content: space-between;
+			}
 			a {
+				display: -webkit-box;
+				display: -ms-flexbox;
+				display: flex;
+				-webkit-box-align: center;
+				-ms-flex-align: center;
+				align-items: center;
 				color: white;
 				text-decoration: none;
 				margin: .46875rem 0;
@@ -236,9 +298,55 @@
 				font-size: 16px;
 				.menu-icons-v2 {
 					margin-right: 10px;
+					@include preDesktop {
+						font-size: 35px;
+						margin-right: 0;
+					}
 				}
 				.fa-dollar-sign {
 					margin-right: 15px;
+				}
+				@include preDesktop {
+					display: -webkit-box;
+					display: -ms-flexbox;
+					display: flex;
+					-webkit-box-align: center;
+					-ms-flex-align: center;
+					align-items: center;
+					-webkit-box-orient: vertical !important;
+					-webkit-box-direction: normal !important;
+					-ms-flex-direction: column !important;
+					flex-direction: column !important;
+				}
+				section {
+					@include preDesktop {
+						display: -webkit-box;
+						display: -ms-flexbox;
+						display: flex;
+						-webkit-box-align: center;
+						-ms-flex-align: center;
+						align-items: center;
+						-webkit-box-orient: vertical !important;
+						-webkit-box-direction: normal !important;
+						-ms-flex-direction: column !important;
+						flex-direction: column !important;
+					}
+				}
+				li {
+					@include preDesktop {
+						margin-top: 13px;
+					}
+				}
+				&:hover {
+					color: #ffa124;
+				}
+			}
+			.fa-chevron-right {
+				@include preDesktop {
+					-webkit-transform: rotate(90deg);
+					-ms-transform: rotate(90deg);
+					transform: rotate(90deg);
+					margin-top: 13px;
 				}
 			}
 		}
@@ -247,20 +355,34 @@
 	.yellow-section {
 		background: rgba(255,161,36,.9);
 		@include preDesktop {
-			// background: transparent;
+			background: transparent;
 		}
 	}
 	@include preDesktop {
 		position: absolute;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		justify-content: center;
 	}
 }
 
 .blue-section {
 	background: rgba(62,96,163,.9);
 	ul {
+		@include preDesktop {
+			padding: 0 120px !important;
+		}
 		a {
 			font-size: 11px !important;
+			.menu-icons-v2 {
+				font-size: 18px !important;
+			}
 		}
+	}
+	@include preDesktop {
+		border-top: 5px solid #ffa124;
+		background: transparent;
+		padding: 0 120px;
 	}
 }
 
@@ -280,6 +402,9 @@
 		color: #bed1f2;
 		margin: 0 9px;
 		font-size: 23px;
+	}
+	@include preDesktop {
+		padding: 25px 0;
 	}
 }
 
@@ -308,7 +433,10 @@
 
 .plan-your-trip-button {
 	position: absolute;
-	left: -180px;
+	font-family: titling-gothic-fb, sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	left: -220px;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -319,14 +447,30 @@
     background-color: #ffa124;
     color: #fff;
 	border: 2px solid #e6e6e6;
-	padding: 7px 22px;
+	padding: 7px;
 	font-weight: bold;
 	-webkit-transition: background-color .3s ease;
 	transition: background-color .3s ease;
+	font-size: 12px;
 	&:hover {
 		background-color: #ffb757;
 		color: #fff;
 	}
+	a {
+		text-decoration: none;
+		color: white;
+	}
+}
+
+.desktop-header {
+	width: 100%;
+	max-width: 1450px;
+		margin: 0 auto;
+		padding: 20px 25px;
+}
+
+.desktop-header-background {
+	background-color: #182338;
 }
 
 .desktop-left-section {
@@ -341,4 +485,68 @@
 	#Weather * {
 		margin: 0
 	}
+}
+
+
+.search-input-v2 {
+	display: block;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    height: 2.4375rem;
+    margin: 0 0 1rem;
+    padding: .5rem;
+    border: 1px solid #959595;
+    border-radius: 0;
+    background-color: #fff;
+    -webkit-box-shadow: inset 0 1px 2px rgba(10, 10, 10, 0.1);
+    box-shadow: inset 0 1px 2px rgba(10, 10, 10, 0.1);
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #0a0a0a;
+    -webkit-transition: border-color .25s ease-in-out,-webkit-box-shadow .5s;
+    transition: border-color .25s ease-in-out,-webkit-box-shadow .5s;
+    transition: box-shadow .5s,border-color .25s ease-in-out;
+    transition: box-shadow .5s,border-color .25s ease-in-out,-webkit-box-shadow .5s;
+    -webkit-appearance: none;
+    text-align: left;
+    padding: 22px .9375rem 23px;
+}
+
+.search-button-v2 {
+	-webkit-appearance: none;
+    border-radius: 0;
+    -webkit-transition: background-color .5s ease,color .5s ease;
+    transition: background-color .5s ease,color .5s ease;
+    font-size: .75rem;
+    letter-spacing: .075rem;
+    font-family: titling-gothic-fb-condensed,sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 2;
+    text-align: center;
+    cursor: pointer;
+    background-color: #304a7e;
+    color: #fff;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: absolute;
+    border: none;
+    top: 40px;
+    right: 13px;
+    margin: 0;
+    padding: 9px;
+    font-size: 12px;
 }

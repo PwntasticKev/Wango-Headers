@@ -1,0 +1,22 @@
+@import "utils/reusableCss";
+@import "utils/screenSizesMqMixin";
+
+#logo {
+	width: 150px;
+}
+
+.main-header-section {
+	-ms-flex-pack: distribute;
+	justify-content: space-around;
+}
+
+.fa-bars {
+	color: #2EA3F2;
+}
+
+.search-container--ale {
+	i {
+		margin: 0 10px;
+		font-size: 25px;
+	}
+}
