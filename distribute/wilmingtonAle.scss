@@ -22,6 +22,9 @@ body {
 
 #logo {
 	width: 130px;
+	@media(min-width: 981px) {
+		width: 121px;
+	}
 }
 
 .search-container {
@@ -44,9 +47,9 @@ body {
 	padding: 0 10px;
 	@media(min-width: 981px ) {
 		max-width: 688px;
-		top: 3px;
-		right: 94px;
-		width: 65%;
+		top: 0;
+		right: 73px;
+ 		width: 100%;
 		-webkit-box-pack: start;
 		-ms-flex-pack: start;
 		justify-content: flex-start;
@@ -70,6 +73,7 @@ body {
 .main-header-section {
 	-ms-flex-pack: distribute;
 	justify-content: space-around;
+	border-bottom: 1px solid lightgray;
 	@media(min-width: 981px ) {
 		-webkit-box-pack: center;
 		-ms-flex-pack: center;
@@ -93,6 +97,13 @@ body {
 	i {
 		margin: 0 20px;
 		font-size: 25px;
+		@media(min-width: 981px ) {
+			font-size: 11px;
+			margin: 0 9px;
+			color: rgba(0,0,0,.6);
+		}
+	}
+	.fa-search {
 		@media(min-width: 981px ) {
 			font-size: 16px;
 		}
@@ -129,6 +140,7 @@ body {
 
 .desktop-menu-container {
 	font-size: 12px;
+	list-style-type: none;
 	a {
 		display: -webkit-box;
 		display: -ms-flexbox;
@@ -136,13 +148,16 @@ body {
 		-webkit-box-align: center;
 		-ms-flex-align: center;
 		align-items: center;
-		margin: 0 11.5px;
+		margin: 0 11.75px;
 		text-decoration: none;
 		color: #666;
 		&:hover {
 			color: #2ea3f2;
 		}
 	}
+		&:hover {
+			color: #2ea3f2;
+		}
 }
 
 
