@@ -20,6 +20,12 @@ body {
 	}
 }
 
+#logo-a {
+	@include desktop {
+		margin-right: 21%;
+	}
+}
+
 #logo {
 	width: 130px;
 	@media(min-width: 981px) {
@@ -33,7 +39,7 @@ body {
     right: 0;
     background: white;
     width: 50%;
-    height: 81px;
+    height: 79px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -49,12 +55,16 @@ body {
 		max-width: 688px;
 		top: 0;
 		right: 73px;
- 		width: 100%;
+		width: 100%;
 		-webkit-box-pack: start;
 		-ms-flex-pack: start;
 		justify-content: flex-start;
 
 	}
+							@media(min-width: 981px ) {
+								max-width: 888px;
+							}
+
 }
 
 .et-search-field {
@@ -63,6 +73,7 @@ body {
 	outline: none;
 	font-size: 12px;
 	position: relative;
+	border: none;
 	@media(min-width: 981px) {
 		border: none;
 		outline: none;
@@ -127,6 +138,8 @@ body {
 }
 
 .mobile-menu-link-container {
+	list-style-type: none;
+	padding: 0;
 	a {
 		text-decoration: none;
 		display: block;
@@ -141,6 +154,9 @@ body {
 .desktop-menu-container {
 	font-size: 12px;
 	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	font-weight: 600;
 	a {
 		display: -webkit-box;
 		display: -ms-flexbox;
@@ -151,6 +167,8 @@ body {
 		margin: 0 11.75px;
 		text-decoration: none;
 		color: #666;
+		-webkit-transition: all 1s ease-in-out;
+		transition: all 1s ease-in-out;
 		&:hover {
 			color: #2ea3f2;
 		}

@@ -1,0 +1,52 @@
+@import "utils/reusableCss";
+@import "utils/screenSizesMqMixin";
+
+.desktop {
+	display: none;
+	@include preDesktop {
+		display: block
+	}
+}
+
+#logo {
+	color: white;
+	fill: white;
+}
+
+.main-header-section {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 100%;
+	padding: 15px;
+	
+	position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    min-width: 100%;
+    outline: none;
+    background: rgba(11,129,129,.9);
+}
+
+.circle-menu {
+	.circle {
+		display: block;
+		position: absolute;
+		width: 45%;
+		height: 45%;
+		border-radius: 50%;
+		border: 5px solid #fff;
+		-webkit-transform: translate(0);
+		-ms-transform: translate(0);
+		transform: translate(0);
+		-webkit-transition: all .35s linear;
+		transition: all .35s linear;
+	}
+}
