@@ -1,11 +1,19 @@
 @import "utils/reusableCss";
 @import "utils/screenSizesMqMixin";
 
+body {
+	font-family: 'Josefin Sans', sans-serif;
+}
+
 .desktop {
 	display: none;
 	@include preDesktop {
 		display: block
 	}
+}
+
+.nav__logo--header {
+	width: 105px;
 }
 
 #logo {
@@ -36,6 +44,10 @@
 }
 
 .circle-menu {
+	position: relative;
+    width: 40px;
+	height: 40px;
+	cursor: pointer;
 	.circle {
 		display: block;
 		position: absolute;
@@ -48,5 +60,227 @@
 		transform: translate(0);
 		-webkit-transition: all .35s linear;
 		transition: all .35s linear;
+		&:nth-child(1) {
+			left: 0;
+			top: 0;
+		}
+		&:nth-child(2) {
+			right: 0;
+			top: 0;
+		}
+		&:nth-child(3) {
+			left: 0;
+			bottom: 0;
+		}
+		&:nth-child(4) {
+			right: 0;
+			bottom: 0;
+		}
 	}
+}
+
+.center-circle {
+	-webkit-transform: translate(-50%,-50%) !important;
+	-ms-transform: translate(-50%,-50%) !important;
+	transform: translate(-50%,-50%) !important;
+    top: 50% !important;
+    left: 50% !important;
+}
+
+.oc-search-icon {
+	font-size: 31px;
+	color: white;
+}
+
+.menu-container {
+	visibility: none;
+	position: absolute;
+    z-index: 2000;
+    top: 95px;
+	outline: none;
+    height: auto;
+    min-height: 0;
+    max-width: 92%;
+    overflow: visible;
+	background: #0b8181;
+	border: 10px solid #e3e2d4;
+    left: 0;
+    right: 0;
+    margin: auto;
+	.close-menu {
+		border: 3px solid white;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+		position: absolute;
+		top: -25px;
+		right: -25px;
+		width: 40px;
+		height: 40px;
+		color: #fff;
+		padding: 12px;
+		cursor: pointer;
+		border-radius: 50%;
+		background: #79c6ad;
+	}
+	@include preDesktop {
+		padding: 40px;
+	}
+}
+
+
+.menu-nav {
+	padding: 0;
+	margin: 0;
+	text-transform: uppercase;
+	font-weight: 700;
+	a {
+		color: white;
+		text-decoration: none;
+		list-style-type: none;
+	}
+}
+
+.nav--primary {
+	border-bottom: 1px solid #fff;
+	margin-bottom: 20px;
+	li {
+		border-top: 1px solid #fff;
+		padding: 10px;
+		@include preDesktop {
+			border: none;
+		}
+		&:hover {
+			color: #131313;
+		}
+	}
+	@include preDesktop {
+		border: none;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: justify;
+		-ms-flex-pack: justify;
+		justify-content: space-between;
+	}
+}
+
+.search-container {
+	position: absolute;
+	top: 75px;
+	visibility: visible;
+    left: 0;
+    background-color: #e3e2d4;
+    width: 100%;
+    max-width: 300px;
+	padding: 16px;
+	input {
+		display: block;
+		width: 100%!important;
+		height: auto!important;
+		padding: 5px 15px 1px;
+		margin-bottom: 10px;
+		outline: none;
+		border: 1px solid #dedede;
+		background: #fff;
+		-webkit-box-shadow: none;
+		box-shadow: none;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		font-family: Josefin Sans,sans-serif;
+		font-size: .875rem;
+		line-height: 1.8;
+		-webkit-transition: border-color .5s;
+		transition: border-color .5s;
+		min-height: 35px;
+	}
+	button {
+		border: 1px solid black;
+		color: black;
+		width:47%;
+		padding: 5px;
+	}
+}
+
+.nav--secondary {
+	text-transform: capitalize !important;
+	margin-bottom: 20px;
+	a {
+		font-weight: 600;
+		li {
+			padding: 15px 15px 12px;
+			&:hover {
+				color: #131313;
+			}
+		}
+	}
+	@include preDesktop {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+		li {
+			padding: 12px 10px 10px;
+			font-size: 18px;
+			font-weight: 400;
+			&:hover {
+				color: #131313;
+			}
+			&:after {
+				content: "    /"
+			}
+		}
+	}
+}
+
+.nav--third {
+	padding-bottom: 20px;
+	@include preDesktop {
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+	}
+	li {
+		@include preDesktop {
+			margin: 0 10px;
+		}	
+	}
+}
+
+.social-container {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	background-color: #79c6ad;
+	padding: 10px 0;
+	 a {
+		 text-decoration: none;
+		 color: white;
+		 i {
+			 font-size: 19px;
+			 margin: 0 5px;
+		 }
+	 }
+}
+
+.svg-icon-nav--third {
+	width: 18px;
+	height: 18px;
+	fill: #79c6ad;;
 }

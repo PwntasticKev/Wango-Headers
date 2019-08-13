@@ -120,7 +120,7 @@ body {
   color: white; }
 
 .menu-container {
-  visibility: none;
+  display: none;
   position: absolute;
   z-index: 2000;
   top: 95px;
@@ -151,9 +151,6 @@ body {
     cursor: pointer;
     border-radius: 50%;
     background: #79c6ad; }
-  @media only screen and (min-width: 1025px) {
-    .menu-container {
-      padding: 40px; } }
 
 .menu-nav {
   padding: 0;
@@ -164,6 +161,9 @@ body {
     color: white;
     text-decoration: none;
     list-style-type: none; }
+  @media only screen and (min-width: 1025px) {
+    .menu-nav {
+      justify-content: center; } }
 
 .nav--primary {
   border-bottom: 1px solid #fff;
@@ -173,7 +173,8 @@ body {
     padding: 10px; }
     @media only screen and (min-width: 1025px) {
       .nav--primary li {
-        border: none; } }
+        border: none;
+        font-size: 18px; } }
     .nav--primary li:hover {
       color: #131313; }
   @media only screen and (min-width: 1025px) {
@@ -185,7 +186,7 @@ body {
 .search-container {
   position: absolute;
   top: 75px;
-  visibility: visible;
+  display: none;
   left: 0;
   background-color: #e3e2d4;
   width: 100%;
@@ -221,7 +222,7 @@ body {
   .nav--secondary a {
     font-weight: 600; }
     .nav--secondary a li {
-      padding: 15px 15px 12px; }
+      padding: 15px 11px 12px; }
       .nav--secondary a li:hover {
         color: #131313; }
   @media only screen and (min-width: 1025px) {
@@ -247,6 +248,10 @@ body {
     .nav--third li {
       margin: 0 10px; } }
 
+@media only screen and (min-width: 1025px) {
+  .iconed-menu {
+    margin: 0 5px; } }
+
 .social-container {
   display: flex;
   align-items: center;
@@ -257,10 +262,15 @@ body {
     text-decoration: none;
     color: white; }
     .social-container a i {
-      font-size: 19px;
+      font-size: 21px;
       margin: 0 5px; }
 
 .svg-icon-nav--third {
   width: 18px;
   height: 18px;
   fill: #79c6ad; }
+
+.page-search:hover {
+  background: black;
+  color: white;
+  transition: 1s ease-in-out; }
