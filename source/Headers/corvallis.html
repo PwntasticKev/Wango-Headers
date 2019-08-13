@@ -33,44 +33,90 @@
 		<!-- Main Header Area -->
 		<header class="main-header-container">
 			<img class="burger-menu" src="https://www.visitcorvallis.com/images/mobile-menu.png" style="position: absolute; left:25px; top:45px; cursor: pointer;">
-			<a href="https://www.visitcorvallis.com/"><img src="https://www.visitcorvallis.com/images/corvallis-logo-1.png" style="max-width: 200px; margin-top: 30px; margin-bottom: 20px;"></a>
+			<section class="flex-ai" style="position: relative;">
+				<a class="logo-corv" href="https://www.visitcorvallis.com/"><img src="https://www.visitcorvallis.com/images/corvallis-logo-1.png" style="max-width: 200px; margin-top: 30px; margin-bottom: 20px;"></a>
+				<section class="desktop social-container flex-ai">
+						<a href="https://www.facebook.com/VisitCorvallisOregon/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+						<a href="https://twitter.com/visitcorvallis/" target="_blank"><i class="fab fa-twitter"></i></a>
+						<a class='social-link' href="https://www.youtube.com/user/VisitCorvallis/"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+						<a href="https://www.instagram.com/visitcorvallisoregon/" target="_blank"><i class="fab fa-instagram"></i></a>
+				</section>
+			</section><section class="desktop desktop-header-container">
+				<div class="searchIcon"></div>
+				<ul class="flex-ai upper-menu-container menu-link-container">
+					<a href="https://www.visitcorvallis.com/relocate">
+						<li>Relocate</li>
+					</a>
+					<a href="https://www.visitcorvallis.com/about-visit-corvallis">
+						<li>About Us</li>
+					</a>
+					<a href="https://www.visitcorvallis.com/contact-visit-corvallis">
+						<li>Contact Us</li>
+					</a>
+					<a href="https://www.visitcorvallis.com/articles">
+						<li>Article</li>
+					</a>
+				</ul>
+				<ul class="flex-ai lower-menu-container menu-link-container">
+					<a href="https://www.visitcorvallis.com/things-to-do">
+						<li>Things to Do</li>
+					</a>
+					<a href="https://www.visitcorvallis.com/restaurants">
+						<li>Wine and Dine</li>
+					</a>
+					<a href="https://www.visitcorvallis.com/events">
+						<li>Events</li>
+					</a>
+					<a href="https://www.visitcorvallis.com/planning">
+						<li>Planning</li>
+					</a>
+					<a href="https://www.visitcorvallis.com/stay">
+						<li>Stay</li>
+					</a>
+					<a href="https://www.visitcorvallis.com/contact-visit-corvallis">
+						<li>Contact Visit Corvallis</li>
+					</a>
+				</ul>
+			</section>
 		</header>
 
 		<!-- OPen Mobile mmenu  -->
-		<section class="open-mobile-menu" style="display: block;">
-			<div class="close-x">X</div>
-			<ul class="menu-link-container">
-				<a href="">
-					<li>Home</li>
-				</a>
-				<a href="">
-					<li>About Visit Corvallis</li>
-				</a>
-				<a href="">
-					<li>Relocate</li>
-				</a>
-				<a href="">
-					<li>Groups and Meetings</li>
-				</a>
-				<a href="">
-					<li>Stay</li>
-				</a>
-				<a href="">
-					<li>Planning</li>
-				</a>
-				<a href="">
-					<li>Events</li>
-				</a>
-				<a href="">
-					<li>Wine and Dine</li>
-				</a>
-				<a href="">
-					<li>Things to Do</li>
-				</a>
-				<a href="">
-					<li>Contact Visit Corvallis</li>
-				</a>
-			</ul>
+		<section class="open-menu-overlay">
+			<section class="open-mobile-menu">
+				<div class="close-x">X</div>
+				<ul class="menu-link-container">
+					<a href="https://www.visitcorvallis.com/home">
+						<li>Home</li>
+					</a>
+					<a href="https://www.visitcorvallis.com/about-visit-corvallis">
+						<li>About Visit Corvallis</li>
+					</a>
+					<a href="https://www.visitcorvallis.com/relocate">
+						<li>Relocate</li>
+					</a>
+					<a href="https://www.visitcorvallis.com/groups-and-meetings">
+						<li>Groups and Meetings</li>
+					</a>
+					<a href="https://www.visitcorvallis.com/stay">
+						<li>Stay</li>
+					</a>
+					<a href="https://www.visitcorvallis.com/planning">
+						<li>Planning</li>
+					</a>
+					<a href="https://www.visitcorvallis.com/events">
+						<li>Events</li>
+					</a>
+					<a href="https://www.visitcorvallis.com/restaurants">
+						<li>Wine and Dine</li>
+					</a>
+					<a href="https://www.visitcorvallis.com/things-to-do">
+						<li>Things to Do</li>
+					</a>
+					<a href="https://www.visitcorvallis.com/contact-visit-corvallis">
+						<li>Contact Visit Corvallis</li>
+					</a>
+				</ul>
+			</section>
 		</section>
 		
 		<!-- SEARCH CONTAINER -->
@@ -83,9 +129,11 @@
 				
 				$('.burger-menu').click(function() {
 					$('.open-mobile-menu').animate({width:'toggle'},250);
+					$(".open-menu-overlay").addClass('open-menu-active')
 				});
 				$('.close-x').click(function() {
 					$('.open-mobile-menu').animate({width:'toggle'},250);
+					$(".open-menu-overlay").removeClass('open-menu-active')
 				});
 			});
 		</script>
