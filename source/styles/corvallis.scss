@@ -1,0 +1,42 @@
+@import "utils/reusableCss";
+@import "utils/screenSizesMqMixin";
+
+.main-header-container{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.open-mobile-menu {
+	width: 250px;
+	font-family: 'Anton', sans-serif;
+	background: rgb(255, 255, 255);
+	background: lightgray;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 5000;
+	overflow-y: scroll;
+	// transition: all 2s linear;
+	.close-x {
+		right: 5px;
+		font-family: 'Open Sans', sans-serif;
+		top: 5px;
+		font-size: 17px;
+		position: absolute;
+	}
+	.menu-link-container {
+		list-style-type: none;
+		padding: 0;
+		margin: 0;
+		a {
+			text-decoration: none;
+			color: #595A5C;
+			padding: 5px;
+			border-bottom: 1px solid #aaa;
+			font-family: 'Anton', sans-serif;
+			font-size: 20px;
+		}
+	}
+}
