@@ -427,13 +427,12 @@
 																				<td style="font-family: 'Roboto', Helvetica, sans-serif; font-size: 12px; line-height: 16px; padding-left:10px;">
 																					{{customerName}}<br/>
 																					{{customerEmail}}<br/>
-																					{{customerPhone}}
+																					{{customerPhone}}<br/>
+																					{{#if customerAddress}}
+																						{{customerAddress}}
+																					{{/if}}
+																					
 																				</td>
-																				{{#if customerAddress}}
-																				<td>
-																					{{customerAddress}}
-																				</td>
-																				{{/if}}
 																			</tr>
 																			<tr>
 																				<td height="15" style="line-height: 0; font-size: 0;"><img src="https://checkout.bandwango.com/img/receipt/blank.gif" alt="" width="1" height="1"/></td>
